@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_boots"
+        },
+        "title": [
+            {"text": "Welcome to ", "color": "gold"},
+            {"text": "Project ", "color": "white"},
+            {"text": "Run ", "color": "green"},
+            {"text": "2", "color": "yellow"}
+        ],
+        "frame": "task",
+        "background": "minecraft:textures/block/moss_block.png",
+        "description": [
+            {"text": "Complete sections to gain these advancements!", "color":"green"}
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

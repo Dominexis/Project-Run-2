@@ -1,0 +1,14 @@
+{
+    "pack": {
+        "description": "Project Run 2 Core",
+        "pack_format": 10
+    },
+	"filter": {
+	    "block": [
+	        {
+	            "namespace": "minecraft",
+	            "path": "advancements/.*"
+	        }
+	    ]
+	}
+}

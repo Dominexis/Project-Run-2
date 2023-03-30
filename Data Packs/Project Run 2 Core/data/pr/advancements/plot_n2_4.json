@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "title": [
+            {
+                "text": "Section -2, 4",
+                "color": "white"
+            }
+        ],
+        "frame": "goal",
+        "description": [
+            {
+                "text": "Complete this section",
+                "color": "green"
+            }
+        ],
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "pr:plot_n2_3",
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
