@@ -37,6 +37,16 @@ Do not use teams for players as the core uses `pr.player` and `pr.spectator` to 
 # World border
 Do not modify the world border whatsoever. It is used to track time accurately for the leaderboard system.
 
+# Game rules
+Do not modify the game rules whatsoever. These are used to govern global behavior across the map and must stay the same at all times.
+
+# Data pack requirements
+Every contributor who uses a data pack will provide their own data pack. You will not be modifying the core but you will be adding your own data pack.
+
+The namespaces in your data pack must be unique. They should contain your name and not be generic like `parkour` or `puzzle`. Similar namespaces must be used in scoreboard objective names, tags, bossbar IDs, storage IDs, etc.
+
+Do not use the `#minecraft:tick` or `#minecraft:load` function tags. Instead, your functions will be hooked into the core and executed by it.
+
 # Resource pack requirements
 Any textures/models that you add to the resource pack must be added via custom item models. This means you cannot modify block models/textures, entity textures, UI textures, etc.
 
