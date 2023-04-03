@@ -72,7 +72,7 @@ team add pr.spectator
 team modify pr.spectator displayName {"text":"Spectator","color":"gray"}
 team modify pr.spectator color gray
 team modify pr.spectator friendlyFire false
-team modify pr.spectator collisionRule pushOwnTeam
+team modify pr.spectator collisionRule never
 
 
 
