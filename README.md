@@ -48,7 +48,7 @@ The namespaces in your data pack must be unique. They should contain your name a
 Do not use the `#minecraft:tick` or `#minecraft:load` function tags. Instead, your functions will be hooked into the core and executed by it.
 
 # Resource pack requirements
-Any textures/models that you add to the resource pack must be added via custom item models. This means you cannot modify block models/textures, entity textures, UI textures, etc.
+Any textures/models that you add to the resource pack must be added via custom item models. This means you cannot modify block models/textures, entity textures, UI textures, etc. All CustomModelData values must be 6-digits long. The first 3 digits will be a unique value to you, the last 3 digits will be used between your models. The first 3 digits acts as a sort of numeric namespace.
 
 You may add custom sounds and translation strings. You may add custom fonts, but do not modify the default font.
 
@@ -58,3 +58,5 @@ The assets that you use must not radically change the vanilla style but must com
 Use `/trigger coords` to get the plot coordinates of where you're standing. This is useful for finding function references in the core which are plot-specific.
 
 Use `/trigger warp` to teleport between the main build zone and the temporary build zone. The temporary build zone is where builders will put their stuff together before it is approved and integrated into the main build.
+
+Use `/trigger plot` to teleport between the lobby minimap and the plots.

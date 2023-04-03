@@ -29,6 +29,7 @@ scoreboard players enable @a warp
 scoreboard players enable @a coords
 scoreboard players enable @a checkpoint
 scoreboard players enable @a spectate
+scoreboard players enable @a plot
 
 scoreboard players add #global pr.ticks 1
 scoreboard players add @a pr.ticks 1
@@ -45,6 +46,7 @@ execute as @a[scores={warp=1..}] run function pr:player/warp
 execute as @a[scores={coords=1..}] run function pr:player/coords
 execute as @a[scores={checkpoint=1..}] run function pr:player/checkpoint/send_to
 execute as @a[scores={spectate=1..}] run function pr:player/spectate
+execute as @a[scores={plot=1..}] at @s run function pr:player/plot/warp/main
 
 effect give @a saturation 1000000 0 true
 

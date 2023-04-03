@@ -18,6 +18,7 @@ scoreboard objectives add warp trigger
 scoreboard objectives add coords trigger
 scoreboard objectives add checkpoint trigger
 scoreboard objectives add spectate trigger
+scoreboard objectives add plot trigger
 
 
 
@@ -33,6 +34,7 @@ scoreboard players set #20 pr.value 20
 scoreboard players set #60 pr.value 60
 scoreboard players set #96 pr.value 96
 
+scoreboard players set #4 pr.value 4
 scoreboard players set #64 pr.value 64
 scoreboard players set #65536 pr.value 65536
 
