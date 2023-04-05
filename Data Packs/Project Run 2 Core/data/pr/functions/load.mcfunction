@@ -19,6 +19,7 @@ scoreboard objectives add coords trigger
 scoreboard objectives add checkpoint trigger
 scoreboard objectives add spectate trigger
 scoreboard objectives add plot trigger
+scoreboard objectives add relative trigger
 
 
 

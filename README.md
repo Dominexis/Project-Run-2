@@ -60,3 +60,5 @@ Use `/trigger coords` to get the plot coordinates of where you're standing. This
 Use `/trigger warp` to teleport between the main build zone and the temporary build zone. The temporary build zone is where builders will put their stuff together before it is approved and integrated into the main build.
 
 Use `/trigger plot` to teleport between the lobby minimap and the plots.
+
+Use `/trigger relative` to get your relative coordinates to the plot's origin.
