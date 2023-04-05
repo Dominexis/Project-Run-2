@@ -6,7 +6,7 @@ The map consists of a series of 80x80 chunk-aligned plots. Each plot will have a
 
 - `plot_on`: This function will run when a player enters your plot after there was no one in it. Use this to initialize your plot (create scoreboard objectives, spawn entities, prepare the blocks, etc.).
 - `plot_off`: This function will run when the last player leaves your plot, leaving it empty. Use this to completely reset your plot (remove laggy entities, return blocks to the way they were originally, etc.).
-- `tick`: This function will run every tick while there are players in your plot.
+- `tick_plot`: This function will run every tick while there are players in your plot.
 - `enter`: This function will run as a player who enters your plot.
 - `exit`: This function will run as a player who exits your plot. Make sure you remove any tags, items, effects etc. from them when they leave.
 
