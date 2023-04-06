@@ -1,7 +1,15 @@
 {
     "pack": {
-        "description": "Project Run 2 Core",
-        "pack_format": 10
+        "pack_format": 12,
+        "description": [
+            "",
+            { "text": "Project Run 2", "color": "gold", "bold": true },
+            "\n",
+            { "text": "By ", "color": "gray" },
+            { "text": "Minigame Makers", "color": "blue" },
+            { "text": " - ", "color": "gray" },
+            { "text": "0.0.0", "color": "gold" }
+        ]
     },
 	"filter": {
 	    "block": [

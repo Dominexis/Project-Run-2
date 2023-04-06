@@ -84,3 +84,4 @@ team modify pr.spectator collisionRule never
 # Set gamerules
 
 gamerule doImmediateRespawn true
+gamerule mobGriefing false
