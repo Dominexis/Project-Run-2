@@ -176,15 +176,17 @@ for coordinate in coordinates:
 
     commands.append(
         f'scoreboard players set #plot pr.value {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
-        f'execute positioned {coordinate[0]*4 + 40 - 96} -46 {coordinate[1]*4 + 40} run function pr:leaderboard/spawn'
+        f'execute positioned {coordinate[0]*4 + 40 - 96} -46 {coordinate[1]*4 + 40} run function pr:leaderboard/spawn/main'
     )
 
 with (PROGRAM_PATH / "Project Run 2 Core" / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
         "# Reset leaderboard\n\n" +
-        "kill @e[type=armor_stand,tag=pr.leaderboard]\n\n" +
+        "kill @e[type=armor_stand ,tag=pr.leaderboard]\n\n" +
+        "kill @e[type=text_display,tag=pr.leaderboard]\n\n" +
+        "kill @e[type=marker      ,tag=pr.leaderboard]\n\n" +
         "scoreboard players operation #plot pr.value = #spawn_plot pr.value\n" +
-        f"execute positioned {36 - 96} -46 40 run function pr:leaderboard/spawn\n\n" +
+        f"execute positioned {36 - 96} -46 40 run function pr:leaderboard/spawn/main\n\n" +
         "\n".join(commands)
     )
 
