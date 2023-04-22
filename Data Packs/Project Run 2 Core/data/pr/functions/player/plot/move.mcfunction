@@ -1,3 +1,14 @@
+# Prepare player for relocation
+
+tag @s remove pr.hide_timer
+tag @s remove pr.temp_checkpoint
+
+
+
+
+
+
+
 # Exit current plot
 
 function pr:plot/exit

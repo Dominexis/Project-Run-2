@@ -25,10 +25,10 @@ execute if score #world_border_reset_timer pr.value matches 200.. run scoreboard
 # Player functions
 
 scoreboard players enable @a lobby
+scoreboard players enable @a spectate
+scoreboard players enable @a checkpoint
 scoreboard players enable @a warp
 scoreboard players enable @a coords
-scoreboard players enable @a checkpoint
-scoreboard players enable @a spectate
 scoreboard players enable @a plot
 scoreboard players enable @a relative
 
@@ -43,14 +43,14 @@ scoreboard players operation #previous_time pr.value = #time pr.value
 
 execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
 execute as @a[scores={lobby=1..}] run function pr:player/checkpoint/lobby
+execute as @a[scores={spectate=1..}] run function pr:player/spectate
+execute as @a[scores={checkpoint=1..}] run function pr:player/checkpoint/send_to
 execute as @a[scores={warp=1..}] run function pr:player/warp
 execute as @a[scores={coords=1..}] run function pr:player/coords
-execute as @a[scores={checkpoint=1..}] run function pr:player/checkpoint/send_to
-execute as @a[scores={spectate=1..}] run function pr:player/spectate
 execute as @a[scores={plot=1..}] at @s run function pr:player/plot/warp/main
 execute as @a[scores={relative=1..}] at @s run function pr:player/relative
 
-effect give @a saturation 1000000 0 true
+effect give @a saturation infinite 0 true
 
 
 
@@ -61,3 +61,13 @@ effect give @a saturation 1000000 0 true
 # Tick plots
 
 function pr:plot/main
+
+
+
+
+
+
+
+# Move plots
+
+execute as @e[type=marker,tag=pr.plot_mover] at @s run function pr:plot/move/main

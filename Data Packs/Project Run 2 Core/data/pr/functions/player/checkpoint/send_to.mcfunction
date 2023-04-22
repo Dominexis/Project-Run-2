@@ -17,7 +17,8 @@ execute if score #boolean pr.value matches 1 run function pr:player/checkpoint/l
 
 # Teleport player to location
 
-execute positioned 0 0 0 run function pr:player/checkpoint/x
+execute if entity @s[tag=!pr.temp_checkpoint] positioned 0 0 0 run function pr:player/checkpoint/x
+execute if entity @s[tag= pr.temp_checkpoint] run function pr:player/checkpoint/temp/main
 
 
 

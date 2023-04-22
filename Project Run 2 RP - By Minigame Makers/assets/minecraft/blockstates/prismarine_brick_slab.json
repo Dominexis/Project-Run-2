@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "minecraft:block/prismarine_brick_slab"
+		},
+		"type=double,waterlogged=false": {
+			"model": "minecraft:block/prismarine_bricks"
+		},
+		"type=double,waterlogged=true": {
+			"model": "pr:block/light_blue"
+		},
+		"type=top": {
+			"model": "minecraft:block/prismarine_brick_slab_top"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "minecraft:block/smooth_quartz_slab"
+		},
+		"type=double,waterlogged=false": {
+			"model": "minecraft:block/smooth_quartz"
+		},
+		"type=double,waterlogged=true": {
+			"model": "pr:block/white"
+		},
+		"type=top": {
+			"model": "minecraft:block/smooth_quartz_slab_top"
+		}
+	}
+}

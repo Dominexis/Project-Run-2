@@ -1,0 +1,6 @@
+{
+	"parent": "pr:block/background",
+	"textures": {
+		"texture": "pr:block/black"
+	}
+}

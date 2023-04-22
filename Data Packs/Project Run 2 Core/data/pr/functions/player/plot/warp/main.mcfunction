@@ -10,8 +10,9 @@ scoreboard players set @s plot 0
 
 # Get coordinates
 
-execute store result score #x pr.value run data get entity @s Pos[0]
-execute store result score #z pr.value run data get entity @s Pos[2]
+data modify storage pr:data tag.Pos set from entity @s Pos
+execute store result score #x pr.value run data get storage pr:data tag.Pos[0]
+execute store result score #z pr.value run data get storage pr:data tag.Pos[2]
 
 scoreboard players operation #zone pr.value = #x pr.value
 scoreboard players add #zone pr.value 32768

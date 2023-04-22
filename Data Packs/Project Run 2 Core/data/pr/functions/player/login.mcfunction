@@ -20,7 +20,9 @@ function pr:player/title
 
 # Send to checkpoint
 
+tag @s remove pr.temp_checkpoint
 function pr:player/checkpoint/send_to
+function pr:player/plot/move
 
 
 

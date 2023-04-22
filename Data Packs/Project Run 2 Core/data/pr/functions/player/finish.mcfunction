@@ -13,11 +13,12 @@ tellraw @s ["",{"text":"You finished in ","color":"green"},{"nbt":"tag.minutes",
 # Manage placement on leaderboards
 
 tag @s add pr.leaderboard_placement
+scoreboard players operation #player_time pr.value = @s pr.time
 
 scoreboard players operation #plot pr.value = #spawn_plot pr.value
-function pr:leaderboard/placement
+function pr:leaderboard/placement/main
 scoreboard players operation #plot pr.value = @s pr.plot
-function pr:leaderboard/placement
+function pr:leaderboard/placement/main
 
 tag @s remove pr.leaderboard_placement
 

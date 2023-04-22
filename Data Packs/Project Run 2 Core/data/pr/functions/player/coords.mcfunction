@@ -1,7 +1,8 @@
 # Get coordinates
 
-execute store result score #x pr.value run data get entity @s Pos[0]
-execute store result score #z pr.value run data get entity @s Pos[2]
+data modify storage pr:data tag.Pos set from entity @s Pos
+execute store result score #x pr.value run data get storage pr:data tag.Pos[0]
+execute store result score #z pr.value run data get storage pr:data tag.Pos[2]
 
 scoreboard players add #x pr.value 32768
 scoreboard players add #z pr.value 32768

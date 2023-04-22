@@ -7,8 +7,8 @@ The map consists of a series of 80x80 chunk-aligned plots. Each plot will have a
 - `plot_on`: This function will run when a player enters your plot after there was no one in it. Use this to initialize your plot (create scoreboard objectives, spawn entities, prepare the blocks, etc.).
 - `plot_off`: This function will run when the last player leaves your plot, leaving it empty. Use this to completely reset your plot (remove laggy entities, return blocks to the way they were originally, etc.).
 - `tick_plot`: This function will run every tick while there are players in your plot.
-- `enter`: This function will run as a player who enters your plot.
-- `exit`: This function will run as a player who exits your plot. Make sure you remove any tags, items, effects etc. from them when they leave.
+- `enter`: This function will run as a player who enters your plot. This also runs as players that log into your plot.
+- `exit`: This function will run as a player who exits your plot. Make sure you remove any tags, items, effects etc. from them when they leave. This runs as players when they log back in after having been in your plot.
 
 While the functions `plot_on`, `plot_off`, and `tick` run, every entity (other than spectating players) will have the tag `pr.target`. Use this tag in every target selector (other than `@s`) to ensure that your plot does not interfere with any other plot. Avoid referencing other entities in the `enter` and `exit` functions.
 
@@ -18,7 +18,7 @@ The functions `plot_on`, `plot_off`, and `tick` execute at the center X,Z in you
 Do not use absolute coordinates (e.g. `/setblock 1 2 3 dirt`). Instead, use relative coordinates (e.g. `/setblock ~1 ~2 ~3 dirt`). This is so that plots can be moved with minimal headaches.
 
 # Checkpoints
-The core handles checkpoints automatically. There is one checkpoint per plot which is at the entrance of the plot (for plots with multiple entrances, the checkpoint is at the entrance that they came through). A player will be sent back to their previous checkpoint if they die, relog, or run `/trigger checkpoint`. You can have your own checkpoints within your plot by teleporting them, but changing their spawnpoint won't have an effect as the built-in checkpoint system uses teleports.
+The core handles checkpoints automatically. There is one checkpoint per plot which is at the entrance of the plot (for plots with multiple entrances, the checkpoint is at the entrance that they came through). A player will be sent back to their previous checkpoint if they die, relog, or run `/trigger checkpoint`. You can have your own checkpoints within your plot by running `/function pr:player/checkpoint/mark` as the player. This will setup a temporary checkpoint which will last as long as the player is in your plot. If they leave your plot or relog, the temporary checkpoint will be reset.
 
 All entrances and exits on your plot must use the provided doorway templates, be aligned to the horizontal center of the walls, and be on one of the following Y values: 0, 16, 32, 48, 64.
 
@@ -62,3 +62,10 @@ Use `/trigger warp` to teleport between the main build zone and the temporary bu
 Use `/trigger plot` to teleport between the lobby minimap and the plots.
 
 Use `/trigger relative` to get your relative coordinates to the plot's origin.
+
+# Moving plots between zones
+On the server, everyone is building in the temp build zone (65536 blocks to the east of 0,0). Once the plots are done, they will be moved to the main build zone at 0,0. The functions `/function pr:plot/move/to_main` and `/function pr:plot/move/to_temp` can be used to move plots between the zones.
+
+When you are testing your plot's data pack in singleplayer, you can bring your plot into its natural position via a world download which you can request, then you can run one of these functions to bring your plot into its intended position. Running the function will cause a lagspike of about 5-10 seconds, and is irreversible without a backup of the world, so use with caution!
+
+Do not, I repeat, DO NOT run these functions on the server. Moving plots will be handled by the project leads.

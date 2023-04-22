@@ -11,6 +11,11 @@ scoreboard objectives add pr.plot_z dummy
 scoreboard objectives add pr.checkpoint_y dummy
 scoreboard objectives add pr.checkpoint_side dummy
 
+scoreboard objectives add pr.temp_checkpoint_x dummy
+scoreboard objectives add pr.temp_checkpoint_y dummy
+scoreboard objectives add pr.temp_checkpoint_z dummy
+scoreboard objectives add pr.temp_checkpoint_yaw dummy
+
 scoreboard objectives add pr.death deathCount
 
 scoreboard objectives add lobby trigger
@@ -33,7 +38,9 @@ scoreboard players set #1000 pr.value 1000
 
 scoreboard players set #20 pr.value 20
 scoreboard players set #60 pr.value 60
+scoreboard players set #90 pr.value 90
 scoreboard players set #96 pr.value 96
+scoreboard players set #360 pr.value 360
 
 scoreboard players set #4 pr.value 4
 scoreboard players set #64 pr.value 64
@@ -85,3 +92,15 @@ team modify pr.spectator collisionRule never
 
 gamerule doImmediateRespawn true
 gamerule mobGriefing false
+gamerule commandModificationBlockLimit 2147483647
+gamerule maxCommandChainLength 2147483647
+
+
+
+
+
+
+
+# Initialize storage
+
+data modify storage pr:data tag set value {}
