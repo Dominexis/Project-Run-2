@@ -8,6 +8,21 @@ scoreboard players operation @s pr.ticks = #global pr.ticks
 
 
 
+# Get UUID
+
+data modify storage pr:data tag.UUID set from entity @s UUID
+
+execute store result score @s pr.uuid_0 run data get storage pr:data tag.UUID[0]
+execute store result score @s pr.uuid_1 run data get storage pr:data tag.UUID[1]
+execute store result score @s pr.uuid_2 run data get storage pr:data tag.UUID[2]
+execute store result score @s pr.uuid_3 run data get storage pr:data tag.UUID[3]
+
+
+
+
+
+
+
 # Send title
 
 function pr:player/title

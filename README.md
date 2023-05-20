@@ -25,6 +25,9 @@ All entrances and exits on your plot must use the provided doorway templates, be
 # Command blocks
 It is highly advised that you avoid using command blocks. You may use impulse command blocks sparingly, but do not use redstone clocks or ticking command blocks. Anything that ticks must be hooked into the core data pack. You may be asked to migrate your command blocks to a data pack if it causes issues such as lag.
 
+# Scheduling functions
+It is highly advised that you don't use the `/schedule` command. Even if this seems more convenient than using a scoreboard clock in your ticking function, it can cause unforeseen issues with losing execution context (which desynchronizes it from the main tick function), and if the plot turns off before the function executes.
+
 # Endings
 The endings are unique plots as they do not have exits. When a player reaches the end of your section, execute the function `pr:player/finish` as them to send them back to the lobby and record their time to the leaderboard. This means that these sections can have more customized endings.
 
@@ -62,6 +65,21 @@ Use `/trigger warp` to teleport between the main build zone and the temporary bu
 Use `/trigger plot` to teleport between the lobby minimap and the plots.
 
 Use `/trigger relative` to get your relative coordinates to the plot's origin.
+
+# Player motion system
+You can apply motion to the player using scoreboards through the player launch functions from the Nexus. This is the closest we have to a true `/motion` command until Mojang actually adds it.
+
+`/function pr:player/launch/apply/vector`: Assign these fakeplayer scores, which represent a motion vector scaled up 1000 times:
+- `#entity_mot_x pr.value`
+- `#entity_mot_x pr.value`
+- `#entity_mot_x pr.value`
+Then run the function as the player to apply motion to them.
+
+`/function pr:player/launch/apply/gimbal`: Assign these fakeplayer scores, which represent angles scaled up 10 times and a magnitude scalar scaled up 1000 times:
+- `#entity_yaw pr.value`
+- `#entity_pitch pr.value`
+- `#entity_mot pr.value`
+Then run the function as the player to apply motion to them.
 
 # Moving plots between zones
 On the server, everyone is building in the temp build zone (65536 blocks to the east of 0,0). Once the plots are done, they will be moved to the main build zone at 0,0. The functions `/function pr:plot/move/to_main` and `/function pr:plot/move/to_temp` can be used to move plots between the zones.

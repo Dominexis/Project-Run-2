@@ -36,6 +36,7 @@ scoreboard players add #global pr.ticks 1
 scoreboard players add @a pr.ticks 1
 execute as @a unless score @s pr.ticks = #global pr.ticks at @s run function pr:player/login
 execute as @a unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute as @a unless score @s pr.id = @s pr.id store result score @s pr.id run scoreboard players add #global pr.id 1
 
 execute as @a if score @s pr.plot = #spawn_plot pr.value run scoreboard players set @s pr.time 0
 execute as @a unless score @s pr.plot = #spawn_plot pr.value run function pr:player/time/tick
@@ -51,6 +52,11 @@ execute as @a[scores={plot=1..}] at @s run function pr:player/plot/warp/main
 execute as @a[scores={relative=1..}] at @s run function pr:player/relative
 
 effect give @a saturation infinite 0 true
+
+execute as @a[scores={pr.stop_launch_sound=1..}] run stopsound @a[distance=..32] block minecraft:entity.generic.explode
+scoreboard players remove @a[scores={pr.stop_launch_sound=1..}] pr.stop_launch_sound 1
+
+execute as @a[tag=pr.launch_test] at @s run function pr:player/launch/apply/forward
 
 
 

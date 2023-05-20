@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "damage": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:bat",
+                    "nbt": "{Tags:[\"pr.launch.post\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pr:player/launch/post/main"
+    }
+}
