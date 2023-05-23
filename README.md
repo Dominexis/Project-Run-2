@@ -71,8 +71,9 @@ You can apply motion to the player using scoreboards through the player launch f
 
 `/function pr:player/launch/apply/vector`: Assign these fakeplayer scores, which represent a motion vector scaled up 1000 times:
 - `#entity_mot_x pr.value`
-- `#entity_mot_x pr.value`
-- `#entity_mot_x pr.value`
+- `#entity_mot_y pr.value`
+- `#entity_mot_z pr.value`
+
 Then run the function as the player to apply motion to them.
 
 `/function pr:player/launch/apply/gimbal`: Assign these fakeplayer scores, which represent angles scaled up 10 times and a magnitude scalar scaled up 1000 times:
