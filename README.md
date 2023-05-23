@@ -80,6 +80,7 @@ Then run the function as the player to apply motion to them.
 - `#entity_yaw pr.value`
 - `#entity_pitch pr.value`
 - `#entity_mot pr.value`
+
 Then run the function as the player to apply motion to them.
 
 # Moving plots between zones
