@@ -191,6 +191,7 @@ gamerule doImmediateRespawn true
 gamerule mobGriefing false
 gamerule commandModificationBlockLimit 2147483647
 gamerule maxCommandChainLength 2147483647
+gamerule randomTickSpeed 0
 
 
 

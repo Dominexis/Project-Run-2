@@ -1,5 +1,6 @@
 {
 	"ambientocclusion": false,
+	"parent": "minecraft:block/block",
 	"textures": {
 		"particle": "#texture"
 	},
