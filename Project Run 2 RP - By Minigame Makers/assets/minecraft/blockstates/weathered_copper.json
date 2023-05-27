@@ -1,7 +1,7 @@
 {
-  "variants": {
-    "": {
-      "model": "pr:block/light_blue"
+    "variants": {
+        "": {
+            "model": "pr:block/light_blue"
+        }
     }
-  }
 }
