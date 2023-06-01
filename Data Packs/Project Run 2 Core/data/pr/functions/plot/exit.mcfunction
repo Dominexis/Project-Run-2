@@ -103,6 +103,17 @@
 
 
 
+# Clear things off of the player
+
+clear @s
+effect clear @s
+
+
+
+
+
+
+
 # Send message when they start their run
 
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {"text":"Your run has begun","color":"gold"}

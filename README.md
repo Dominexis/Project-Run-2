@@ -8,7 +8,8 @@ The map consists of a series of 80x80 chunk-aligned plots. Each plot will have a
 - `plot_off`: This function will run when the last player leaves your plot, leaving it empty. Use this to completely reset your plot (remove laggy entities, return blocks to the way they were originally, etc.).
 - `tick_plot`: This function will run every tick while there are players in your plot.
 - `enter`: This function will run as a player who enters your plot. This also runs as players that log into your plot.
-- `exit`: This function will run as a player who exits your plot. Make sure you remove any tags, items, effects etc. from them when they leave. This runs as players when they log back in after having been in your plot.
+- `exit`: This function will run as a player who exits your plot. Make sure you remove any tags, items, effects etc. from them when they leave. This also runs as players when they log back in after having been in your plot.
+- `recall`: This function will run as a player who is sent back to a previous checkpoint in your plot. This one is optional. Use it to reset the player to a previous state if their items/scores/tags evolved while in your plot.
 
 While the functions `plot_on`, `plot_off`, and `tick` run, every entity (other than spectating players) will have the tag `pr.target`. Use this tag in every target selector (other than `@s`) to ensure that your plot does not interfere with any other plot. Avoid referencing other entities in the `enter` and `exit` functions.
 

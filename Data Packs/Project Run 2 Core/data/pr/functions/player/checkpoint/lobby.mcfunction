@@ -1,7 +1,7 @@
 # Set checkpoint scores
 
 scoreboard players operation @s pr.plot = #spawn_plot pr.value
-scoreboard players operation @s pr.plot_previous = @s pr.plot
+execute unless score @s pr.plot_previous = @s pr.plot_previous run scoreboard players operation @s pr.plot_previous = @s pr.plot
 scoreboard players set @s pr.checkpoint_y -4
 scoreboard players set @s pr.checkpoint_side -1
 

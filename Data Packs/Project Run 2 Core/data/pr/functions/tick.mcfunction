@@ -56,7 +56,8 @@ effect give @a saturation infinite 0 true
 execute as @a[scores={pr.stop_launch_sound=1..}] run stopsound @a[distance=..32] block minecraft:entity.generic.explode
 scoreboard players remove @a[scores={pr.stop_launch_sound=1..}] pr.stop_launch_sound 1
 
-execute as @a[tag=pr.launch_test] at @s run function pr:player/launch/apply/forward
+tag @a remove pr.spectator
+tag @a[team=pr.spectator] add pr.spectator
 
 
 

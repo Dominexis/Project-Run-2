@@ -8,6 +8,7 @@ import json
 # Initialize variables
 
 PROGRAM_PATH = Path(__file__).parent
+DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 
 
 
@@ -35,19 +36,19 @@ print(coordinates)
 commands: list[str] = []
 for coordinate in coordinates:
     commands.append(
-        f'execute store result score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 if entity @a[dx=95,dy=383,dz=95,team=!pr.spectator,limit=1]\n' +
-        f'#execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 run tag @e[dx=95,dy=383,dz=95,team=!pr.spectator] add pr.target\n' +
+        f'execute store result score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]\n' +
+        f'#execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
         f'#execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function namespace:plot_on\n' +
         f'#execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function namespace:plot_off\n' +
         f'#execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @e[tag=pr.target] remove pr.target\n' +
         f'scoreboard players operation #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value = #plot_player_{coordinate[0]}_{coordinate[1]} pr.value\n' +
-        f'execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 -  4}.0 -64 {coordinate[1]*96 -  4}.0 run scoreboard players set @a[dx=91,dy=383,dz=91,team=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
-        f'#execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 -  8}.0 run tag @e[dx=95,dy=383,dz=95,team=!pr.spectator] add pr.target\n' +
+        f'execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 -  4}.0 -64 {coordinate[1]*96 -  4}.0 run scoreboard players set @a[dx=91,dy=383,dz=91,tag=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
+        f'#execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 -  8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
         f'#execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function namespace:tick_plot\n' +
         f'#execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
     )
 
-with (PROGRAM_PATH / "Project Run 2 Core" / "data" / "pr" / "functions" / "plot" / "main.mcfunction").open("w", encoding="utf-8") as file:
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "main.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
         "# Tick plots\n\n" +
         "\n\n\n\n".join(commands)
@@ -85,7 +86,7 @@ for coordinate in coordinates:
         side
     )
 
-with (PROGRAM_PATH / "Project Run 2 Core" / "data" / "pr" / "functions" / "plot" / "enter.mcfunction").open("w", encoding="utf-8") as file:
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "enter.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
         "# Execute enter functions\n\n" +
         "\n\n\n".join(commands)
@@ -101,16 +102,35 @@ for coordinate in coordinates:
         f'#execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function namespace:exit'
     )
 
-with (PROGRAM_PATH / "Project Run 2 Core" / "data" / "pr" / "functions" / "plot" / "exit.mcfunction").open("w", encoding="utf-8") as file:
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
         "# Execute exit functions\n\n" +
         "\n".join(commands) + "\n"*8 +
+        "# Clear things off of the player\n\n" +
+        "clear @s\n" +
+        "effect clear @s" + "\n"*8 +
         "# Send message when they start their run\n\n" +
         f'execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {{"text":"Your run has begun","color":"gold"}}\n' +
         f'execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{{"text":"Use ","color":"gray"}},{{"text":"/trigger lobby","color":"white"}},{{"text":" to return to the lobby","color":"gray"}}]\n' +
         f'execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{{"text":"Use ","color":"gray"}},{{"text":"/trigger checkpoint","color":"white"}},{{"text":" to go to the previous checkpoint","color":"gray"}}]' + "\n"*8 +
         "# Grant advancements\n\n" +
         "function pr:plot/advancement"
+    )
+
+
+
+# Generate recall function
+
+commands: list[str] = []
+for coordinate in coordinates:
+    commands.append(
+        f'#execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function namespace:recall'
+    )
+
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "player" / "checkpoint" / "recall.mcfunction").open("w", encoding="utf-8") as file:
+    file.write(
+        "# Execute recall functions\n\n" +
+        "\n".join(commands)
     )
 
 
@@ -123,7 +143,7 @@ for coordinate in coordinates:
         f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} unless score @s pr.plot = #spawn_plot pr.value run advancement grant @s only pr:plot_{str(coordinate[0]).replace("-", "n")}_{str(coordinate[1]).replace("-", "n")}'
     )
 
-with (PROGRAM_PATH / "Project Run 2 Core" / "data" / "pr" / "functions" / "plot" / "advancement.mcfunction").open("w", encoding="utf-8") as file:
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "advancement.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
         "# Grant advancements\n\n" +
         "\n".join(commands)
@@ -154,7 +174,7 @@ for coordinate in coordinates:
             f'execute if score #plot pr.value matches {(coordinate[0] + 16) + (coordinate[1] + 16)*64} run data modify storage pr:data tag.leaderboard_name set value \'{{"text":"{coordinate[0]}, {coordinate[1]} Ending"}}\''
         )
 
-with (PROGRAM_PATH / "Project Run 2 Core" / "data" / "pr" / "functions" / "leaderboard" / "name.mcfunction").open("w", encoding="utf-8") as file:
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "name.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
         "# Set name\n\n" +
         "\n".join(commands)
@@ -179,7 +199,7 @@ for coordinate in coordinates:
         f'execute positioned {coordinate[0]*4 + 40 - 96} -46 {coordinate[1]*4 + 40} run function pr:leaderboard/spawn/main'
     )
 
-with (PROGRAM_PATH / "Project Run 2 Core" / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfunction").open("w", encoding="utf-8") as file:
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
         "# Reset leaderboard\n\n" +
         "kill @e[type=armor_stand ,tag=pr.leaderboard]\n\n" +
@@ -226,7 +246,7 @@ for coordinate in coordinates:
     else:
         parent = f"pr:plot_{parent[0]}_{parent[1]}".replace("-", "n")
 
-    with (PROGRAM_PATH / "Project Run 2 Core" / "data" / "pr" / "advancements" / f'plot_{coordinate[0]}_{coordinate[1]}.json'.replace("-", "n")).open("w", encoding="utf-8") as file:
+    with (DATA_PACK_PATH / "data" / "pr" / "advancements" / f'plot_{coordinate[0]}_{coordinate[1]}.json'.replace("-", "n")).open("w", encoding="utf-8") as file:
         json.dump(
             {
                 "display": {

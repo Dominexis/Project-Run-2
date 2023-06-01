@@ -1,7 +1,9 @@
 # Reset leaderboard
 
 kill @e[type=armor_stand ,tag=pr.leaderboard]
+
 kill @e[type=text_display,tag=pr.leaderboard]
+
 kill @e[type=marker      ,tag=pr.leaderboard]
 
 scoreboard players operation #plot pr.value = #spawn_plot pr.value

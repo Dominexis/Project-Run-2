@@ -30,3 +30,13 @@ execute if entity @s[tag= pr.temp_checkpoint] run function pr:player/checkpoint/
 
 execute if score @s checkpoint matches 1.. run tellraw @s {"text":"You've been sent to the previous checkpoint","color":"gold"}
 scoreboard players set @s checkpoint 0
+
+
+
+
+
+
+
+# Run recall function
+
+execute at @s run function pr:player/checkpoint/recall
