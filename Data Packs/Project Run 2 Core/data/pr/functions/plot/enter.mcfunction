@@ -1,6 +1,6 @@
 # Execute enter functions
 
-#execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -6 run function namespace:enter
+execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -6 run function eosand:enter
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -6 run scoreboard players set @s pr.checkpoint_y 0
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -6 run scoreboard players set @s pr.checkpoint_side 2
 

@@ -10,6 +10,7 @@ import json
 PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 NAMESPACES = {
+    (-2,-6): ("eosand", 0),
     (-1,-3): ("itspungpond98", 0),
     (-1,5): ("funkytoc_moon", 1)
 }
