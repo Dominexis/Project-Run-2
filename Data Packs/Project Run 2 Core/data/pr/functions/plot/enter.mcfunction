@@ -454,8 +454,8 @@ execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 5 run sco
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 5 run scoreboard players set @s pr.checkpoint_side 3
 
 
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 5 run function namespace:enter
-execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 5 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 5 run function funkytoc_moon:enter
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 5 run scoreboard players set @s pr.checkpoint_y 1
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 5 run scoreboard players set @s pr.checkpoint_side 3
 
 

@@ -1171,15 +1171,15 @@ execute if score #plot_tick_-2_5 pr.value matches 1 positioned -196.0 -64 476.0 
 
 
 execute store result score #plot_player_-1_5 pr.value positioned -104.0 -64 472.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
-#execute unless score #plot_player_-1_5 pr.value = #plot_tick_-1_5 pr.value positioned -104.0 -64 472.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute if score #plot_player_-1_5 pr.value matches 1 if score #plot_tick_-1_5 pr.value matches 0 positioned -56 0 520 run function namespace:plot_on
-#execute if score #plot_player_-1_5 pr.value matches 0 if score #plot_tick_-1_5 pr.value matches 1 positioned -56 0 520 run function namespace:plot_off
-#execute unless score #plot_player_-1_5 pr.value = #plot_tick_-1_5 pr.value run tag @e[tag=pr.target] remove pr.target
+execute unless score #plot_player_-1_5 pr.value = #plot_tick_-1_5 pr.value positioned -104.0 -64 472.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute if score #plot_player_-1_5 pr.value matches 1 if score #plot_tick_-1_5 pr.value matches 0 positioned -56 0 520 run function funkytoc_moon:plot_on
+execute if score #plot_player_-1_5 pr.value matches 0 if score #plot_tick_-1_5 pr.value matches 1 positioned -56 0 520 run function funkytoc_moon:plot_off
+execute unless score #plot_player_-1_5 pr.value = #plot_tick_-1_5 pr.value run tag @e[tag=pr.target] remove pr.target
 scoreboard players operation #plot_tick_-1_5 pr.value = #plot_player_-1_5 pr.value
 execute if score #plot_tick_-1_5 pr.value matches 1 positioned -100.0 -64 476.0 run scoreboard players set @a[dx=91,dy=383,dz=91,tag=!pr.spectator] pr.plot 1359
-#execute if score #plot_tick_-1_5 pr.value matches 1 positioned -104.0 -64 472.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute if score #plot_tick_-1_5 pr.value matches 1 positioned -56 0 520 run function namespace:tick_plot
-#execute if score #plot_tick_-1_5 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+execute if score #plot_tick_-1_5 pr.value matches 1 positioned -104.0 -64 472.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute if score #plot_tick_-1_5 pr.value matches 1 positioned -56 0 520 run function funkytoc_moon:tick_plot
+execute if score #plot_tick_-1_5 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
 
