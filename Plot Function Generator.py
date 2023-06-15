@@ -9,6 +9,10 @@ import json
 
 PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
+NAMESPACES = {
+    (-1,-3): ("itspungpond98", 0),
+    (-1,5): ("funkytoc_moon", 1)
+}
 
 
 
@@ -35,17 +39,25 @@ print(coordinates)
 
 commands: list[str] = []
 for coordinate in coordinates:
+    if coordinate in NAMESPACES:
+        namespace = NAMESPACES[coordinate][0]
+        comment = ""
+    else:
+        namespace = "namespace"
+        comment = "#"
+
     commands.append(
         f'execute store result score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]\n' +
-        f'#execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
-        f'#execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function namespace:plot_on\n' +
-        f'#execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function namespace:plot_off\n' +
-        f'#execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @e[tag=pr.target] remove pr.target\n' +
+        f'{comment}execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_on\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_off\n' +
+        f'{comment}execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @e[tag=pr.target] remove pr.target\n' +
         f'scoreboard players operation #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value = #plot_player_{coordinate[0]}_{coordinate[1]} pr.value\n' +
         f'execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 -  4}.0 -64 {coordinate[1]*96 -  4}.0 run scoreboard players set @a[dx=91,dy=383,dz=91,tag=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
-        f'#execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 -  8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
-        f'#execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function namespace:tick_plot\n' +
-        f'#execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
+        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 -  8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
+        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move\n' +
+        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:tick_plot\n' +
+        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
     )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "main.mcfunction").open("w", encoding="utf-8") as file:
@@ -60,6 +72,15 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "main.mcfunction")
 
 commands: list[str] = []
 for coordinate in coordinates:
+    if coordinate in NAMESPACES:
+        namespace = NAMESPACES[coordinate][0]
+        checkpoint_y = NAMESPACES[coordinate][1]
+        comment = ""
+    else:
+        namespace = "namespace"
+        checkpoint_y = 0
+        comment = "#"
+
     east  = plots[coordinate[1]*2 + 32    ][coordinate[0]*2 + 32 + 1] == "<"
     west  = plots[coordinate[1]*2 + 32    ][coordinate[0]*2 + 32 - 1] == ">"
     south = plots[coordinate[1]*2 + 32 + 1][coordinate[0]*2 + 32    ] == "^"
@@ -81,8 +102,8 @@ for coordinate in coordinates:
         side = f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run scoreboard players set @s pr.checkpoint_side -1'
 
     commands.append(
-        f'#execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function namespace:enter\n' +
-        f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run scoreboard players set @s pr.checkpoint_y {"-4" if coordinate == (-1, 0) else "0"}\n' +
+        f'{comment}execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function {namespace}:enter\n' +
+        f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run scoreboard players set @s pr.checkpoint_y {"-4" if coordinate == (-1, 0) else checkpoint_y}\n' +
         side
     )
 
@@ -98,8 +119,15 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "enter.mcfunction"
 
 commands: list[str] = []
 for coordinate in coordinates:
+    if coordinate in NAMESPACES:
+        namespace = NAMESPACES[coordinate][0]
+        comment = ""
+    else:
+        namespace = "namespace"
+        comment = "#"
+
     commands.append(
-        f'#execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function namespace:exit'
+        f'{comment}execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function {namespace}:exit'
     )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction").open("w", encoding="utf-8") as file:
@@ -123,8 +151,15 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction")
 
 commands: list[str] = []
 for coordinate in coordinates:
+    if coordinate in NAMESPACES:
+        namespace = NAMESPACES[coordinate][0]
+        comment = ""
+    else:
+        namespace = "namespace"
+        comment = "#"
+
     commands.append(
-        f'#execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function namespace:recall'
+        f'{comment}execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function {namespace}:recall'
     )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "player" / "checkpoint" / "recall.mcfunction").open("w", encoding="utf-8") as file:
