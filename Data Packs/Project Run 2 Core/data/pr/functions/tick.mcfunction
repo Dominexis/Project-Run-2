@@ -87,4 +87,4 @@ execute as @e[type=marker,tag=pr.plot_mover] at @s run function pr:plot/move/mai
 
 # Make paintings and item frames invulnerable
 
-execute positioned 0 0 0 as @e[type=#pr:hangable,distance=..1000,tag=!pr.invulnerable] run function pr:generic/invulnerable
+execute positioned 0 0 0 as @e[type=#pr:family/hangable,distance=..1000,tag=!pr.invulnerable] run function pr:generic/invulnerable
