@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:clock"
         },
         "title": [
             {
-                "text": "Section -2, -1",
+                "text": "Time Stream",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section",
+                "text": "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't die!",
                 "color": "green"
             }
         ],
