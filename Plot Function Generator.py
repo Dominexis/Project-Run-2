@@ -11,10 +11,11 @@ PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 # namespace, y coordinate, icon, name, description
 NAMESPACES = {
-    (-2,-6): ("eosand", 0, "minecraft:diamond", "USE_COORDS", "Complete this section"),
-    (-1,-3): ("itspungpond98", 0, "minecraft:diamond", "USE_COORDS", "Complete this section"),
-    (-1,5): ("funkytoc_moon", 1, "minecraft:diamond", "USE_COORDS", "Complete this section"),
-    (1,3): ("theswagunicorn", 0, "minecraft:diamond", "USE_COORDS", "Complete this section"),
+    (-2,-6): ("eosand", 0),
+    (-2,-1): ("time_stream", 0),
+    (-1,-3): ("itspungpond98", 0),
+    (-1,5): ("funkytoc_moon", 1),
+    (1,3): ("theswagunicorn", 0),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels")
 }
 
@@ -194,10 +195,8 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "advancement.mcfun
 
 commands: list[str] = []
 for coordinate in coordinates:
-    if coordinate in NAMESPACES:
+    if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 2:
         name = NAMESPACES[coordinate][3]
-        if name == "USE_COORDS":
-            name = f'{coordinate[0]}, {coordinate[1]} Ending'
     else:
         name = f'{coordinate[0]}, {coordinate[1]} Ending'
 
@@ -261,11 +260,9 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfu
 # Generate advancements
 
 for coordinate in coordinates:
-    if coordinate in NAMESPACES:
+    if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 2:
         item = NAMESPACES[coordinate][2]
         name = NAMESPACES[coordinate][3]
-        if name == "USE_COORDS":
-            name = f"Section {coordinate[0]}, {coordinate[1]}"
         description = NAMESPACES[coordinate][4]
     else:
         item = "minecraft:diamond"
@@ -335,3 +332,4 @@ for coordinate in coordinates:
 
 
 print("Functions generated")
+input()

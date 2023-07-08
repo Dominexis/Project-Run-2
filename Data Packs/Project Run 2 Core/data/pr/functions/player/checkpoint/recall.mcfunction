@@ -37,7 +37,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -3 run fu
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -1 run function namespace:recall
 #execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run function namespace:recall
 #execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run function namespace:recall
-#execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -1 run function namespace:recall
+execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -1 run function time_stream:recall
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function namespace:recall
 #execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -1 run function namespace:recall
 #execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -1 run function namespace:recall
