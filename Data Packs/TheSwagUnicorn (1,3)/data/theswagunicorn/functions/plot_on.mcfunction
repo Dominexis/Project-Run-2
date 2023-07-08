@@ -1,4 +1,5 @@
 setblock ~-7 ~11 ~-17 redstone_block
+setblock ~-7 ~11 ~-17 black_concrete
 setblock ~-8 ~8 ~-10 redstone_block
 
 scoreboard objectives add TimerForSwag dummy
