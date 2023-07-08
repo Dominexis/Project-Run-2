@@ -11,3 +11,8 @@ scoreboard players set Conveyor1 TimerForSwag 0
 scoreboard players set Conveyor2 TimerForSwag 8
 scoreboard players set MiscExplosion TimerForSwag 0
 
+summon marker ~10 ~2 ~20 {Tags:["pr.target","Conveyor1"]}
+summon marker ~22 ~3 ~20 {Tags:["pr.target","Conveyor2"]}
+summon marker ~-11 ~4 ~0 {Tags:["pr.target","Swag_Misc_Explosion"]}
+summon marker ~-31 ~7 ~24 {Tags:["pr.target","Swag_Misc_Explosion"]}
+summon marker ~-18.0 ~7.5 ~-13.25 {Tags:["pr.target","Swag_Misc_Explosion"]}
