@@ -9,12 +9,13 @@ import json
 
 PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
+# namespace, y coordinate, icon, name, description
 NAMESPACES = {
-    (-2,-6): ("eosand", 0),
-    (-1,-3): ("itspungpond98", 0),
-    (-1,5): ("funkytoc_moon", 1),
-    (1,3): ("theswagunicorn", 0),
-    (2,3): ("eli_marie", 1)
+    (-2,-6): ("eosand", 0, "minecraft:diamond", "USE_COORDS", "Complete this section"),
+    (-1,-3): ("itspungpond98", 0, "minecraft:diamond", "USE_COORDS", "Complete this section"),
+    (-1,5): ("funkytoc_moon", 1, "minecraft:diamond", "USE_COORDS", "Complete this section"),
+    (1,3): ("theswagunicorn", 0, "minecraft:diamond", "USE_COORDS", "Complete this section"),
+    (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels")
 }
 
 
@@ -193,6 +194,13 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "advancement.mcfun
 
 commands: list[str] = []
 for coordinate in coordinates:
+    if coordinate in NAMESPACES:
+        name = NAMESPACES[coordinate][3]
+        if name == "USE_COORDS":
+            name = f'{coordinate[0]}, {coordinate[1]} Ending'
+    else:
+        name = f'{coordinate[0]}, {coordinate[1]} Ending'
+
     if (
         plots[coordinate[1]*2 + 32    ][coordinate[0]*2 + 32 + 1] == ">" or
         plots[coordinate[1]*2 + 32    ][coordinate[0]*2 + 32 - 1] == "<" or
@@ -209,7 +217,7 @@ for coordinate in coordinates:
     else: 
         commands.append(
             f'# {coordinate[0]}, {coordinate[1]}\n' +
-            f'execute if score #plot pr.value matches {(coordinate[0] + 16) + (coordinate[1] + 16)*64} run data modify storage pr:data tag.leaderboard_name set value \'{{"text":"{coordinate[0]}, {coordinate[1]} Ending"}}\''
+            f'execute if score #plot pr.value matches {(coordinate[0] + 16) + (coordinate[1] + 16)*64} run data modify storage pr:data tag.leaderboard_name set value \'{{"text":"{name}"}}\''
         )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "name.mcfunction").open("w", encoding="utf-8") as file:
@@ -253,6 +261,17 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfu
 # Generate advancements
 
 for coordinate in coordinates:
+    if coordinate in NAMESPACES:
+        item = NAMESPACES[coordinate][2]
+        name = NAMESPACES[coordinate][3]
+        if name == "USE_COORDS":
+            name = f"Section {coordinate[0]}, {coordinate[1]}"
+        description = NAMESPACES[coordinate][4]
+    else:
+        item = "minecraft:diamond"
+        name = f"Section {coordinate[0]}, {coordinate[1]}"
+        description = "Complete this section"
+
     if coordinate == (-1, 0):
         continue
 
@@ -289,14 +308,14 @@ for coordinate in coordinates:
             {
                 "display": {
                     "icon": {
-                        "item": "minecraft:diamond"
+                        "item": item
                     },
                     "title": [
-                        {"text": f"Section {coordinate[0]}, {coordinate[1]}", "color": "white"}
+                        {"text": name, "color": "white"}
                     ],
                     "frame": frame,
                     "description": [
-                        {"text": "Complete this section", "color":"green"}
+                        {"text": description, "color":"green"}
                     ],
                     "show_toast": (True if exit_count == 0 else False),
                     "announce_to_chat": False,

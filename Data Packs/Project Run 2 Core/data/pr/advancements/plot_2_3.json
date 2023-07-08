@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:red_mushroom"
         },
         "title": [
             {
-                "text": "Section 2, 3",
+                "text": "Mushylands",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section",
+                "text": "Fun in the tunnels",
                 "color": "green"
             }
         ],
