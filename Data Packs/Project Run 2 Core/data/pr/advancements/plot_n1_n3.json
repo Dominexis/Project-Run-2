@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:verdant_froglight"
         },
         "title": [
             {
-                "text": "Section -1, -3",
+                "text": "The Froglight Town",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section",
+                "text": "Find the froglights by following the trails, and exit through the gates",
                 "color": "green"
             }
         ],
