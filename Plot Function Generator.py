@@ -15,6 +15,7 @@ NAMESPACES = {
     (-2,-1): ("time_stream", 0, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!"),
     (-1,-3): ("itspungpond98", 0, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates."),
     (-1,5): ("funkytoc_moon", 1),
+    (1,-2): ("sliceoflife", 0),
     (1,3): ("theswagunicorn", 0),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!")
 }
