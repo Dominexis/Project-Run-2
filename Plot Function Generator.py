@@ -17,7 +17,8 @@ NAMESPACES = {
     (-1,5): ("funkytoc_moon", 1),
     (1,-2): ("sliceolife", 0),
     (1,3): ("theswagunicorn", 0),
-    (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!")
+    (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!"),
+    (4,-2): ("ykw", 3)
 }
 
 

@@ -31,7 +31,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -3 run fu
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -2 run function namespace:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -2 run function sliceolife:exit
 #execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -2 run function namespace:exit
-#execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -2 run function namespace:exit
+execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -2 run function ykw:exit
 #execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches -2 run function namespace:exit
 #execute if score @s pr.plot_x matches 6 if score @s pr.plot_z matches -2 run function namespace:exit
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -1 run function namespace:exit

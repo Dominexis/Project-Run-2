@@ -1,0 +1,1 @@
+give @s[nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] carrot_on_a_stick{CustomModelData:429001,display:{Name:'{"text":"Warden Tendrils","color":"dark_aqua","bold":true,"italic":false}'}} 1
