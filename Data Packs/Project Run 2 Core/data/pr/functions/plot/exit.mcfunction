@@ -19,7 +19,7 @@ execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -6 run fu
 #execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -3 run function namespace:exit
 #execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -3 run function namespace:exit
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -3 run function itspungpond98:exit
-#execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -3 run function namespace:exit
+execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -3 run function evilgodloki:exit
 #execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -3 run function namespace:exit
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -3 run function namespace:exit
 #execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -3 run function namespace:exit

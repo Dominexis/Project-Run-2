@@ -11,9 +11,9 @@ execute as @a[tag=!lokidoor,tag=pr.target] at @s if block ~ ~-1 ~ gray_wool run 
 execute as @a[tag=!lokidoor,tag=pr.target] at @s if block ~ ~-1 ~ gray_wool run tag @s add lokidoor
 
 execute if score tick lokicode matches 1.. run scoreboard players remove tick lokicode 1
-execute if score tick lokicode matches 0 run kill @e[tag=lokierror]
+execute if score tick lokicode matches 0 run kill @e[tag=lokierror,tag=pr.target]
 
-execute as @e[tag=lokik] if score @s lokicode matches 1 at @s run tp @s ^ ^ ^0.05
-execute as @e[tag=lokik] if score @s lokicode matches 1.. run scoreboard players remove @s lokicode 1
+execute as @e[tag=lokik,tag=pr.target] if score @s lokicode matches 1 at @s run tp @s ^ ^ ^0.05
+execute as @e[tag=lokik,tag=pr.target] if score @s lokicode matches 1.. run scoreboard players remove @s lokicode 1
 
 
