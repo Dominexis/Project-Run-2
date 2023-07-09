@@ -14,6 +14,7 @@ NAMESPACES = {
     (-3,5): ("simondmc", 2, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!"),
     (-2,-6): ("eosand", 0),
     (-2,-1): ("time_stream", 0, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!"),
+    (-2,3): ("stabily_time_tower_parkour", 1),
     (-1,-3): ("itspungpond98", 0, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates."),
     (-1,5): ("funkytoc_moon", 1),
     (1,-2): ("sliceolife", 0),
