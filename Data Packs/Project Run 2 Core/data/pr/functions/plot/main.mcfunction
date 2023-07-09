@@ -408,14 +408,14 @@ execute if score #plot_tick_-1_-2 pr.value matches 1 positioned -102.0 -64 -198.
 
 execute store result score #plot_player_1_-2 pr.value positioned 88.0 -64 -200.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
 execute unless score #plot_player_1_-2 pr.value = #plot_tick_1_-2 pr.value positioned 88.0 -64 -200.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-execute if score #plot_player_1_-2 pr.value matches 1 if score #plot_tick_1_-2 pr.value matches 0 positioned 136 0 -152 run function sliceoflife:plot_on
-execute if score #plot_player_1_-2 pr.value matches 0 if score #plot_tick_1_-2 pr.value matches 1 positioned 136 0 -152 run function sliceoflife:plot_off
+execute if score #plot_player_1_-2 pr.value matches 1 if score #plot_tick_1_-2 pr.value matches 0 positioned 136 0 -152 run function sliceolife:plot_on
+execute if score #plot_player_1_-2 pr.value matches 0 if score #plot_tick_1_-2 pr.value matches 1 positioned 136 0 -152 run function sliceolife:plot_off
 execute unless score #plot_player_1_-2 pr.value = #plot_tick_1_-2 pr.value run tag @e[tag=pr.target] remove pr.target
 scoreboard players operation #plot_tick_1_-2 pr.value = #plot_player_1_-2 pr.value
 execute if score #plot_tick_1_-2 pr.value matches 1 positioned 90.0 -64 -198.0 run scoreboard players set @a[dx=93,dy=383,dz=93,tag=!pr.spectator] pr.plot 913
 execute if score #plot_tick_1_-2 pr.value matches 1 positioned 90.0 -64 -198.0 run tag @e[dx=93,dy=383,dz=93,tag=!pr.spectator] add pr.target
 execute if score #plot_tick_1_-2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-execute if score #plot_tick_1_-2 pr.value matches 1 positioned 136 0 -152 run function sliceoflife:tick_plot
+execute if score #plot_tick_1_-2 pr.value matches 1 positioned 136 0 -152 run function sliceolife:tick_plot
 execute if score #plot_tick_1_-2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
