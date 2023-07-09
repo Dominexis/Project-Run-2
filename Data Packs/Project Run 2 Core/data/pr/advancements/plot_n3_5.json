@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:big_dripleaf"
         },
         "title": [
             {
-                "text": "Section -3, 5",
+                "text": "Drip Jump",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Leaf us a review!",
                 "color": "green"
             }
         ],

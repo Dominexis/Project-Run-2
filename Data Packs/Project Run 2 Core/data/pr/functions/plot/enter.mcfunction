@@ -444,8 +444,8 @@ execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 4 run scor
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 4 run scoreboard players set @s pr.checkpoint_side 1
 
 
-#execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 5 run function namespace:enter
-execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 5 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 5 run function simondmc:enter
+execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 5 run scoreboard players set @s pr.checkpoint_y 2
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 5 run scoreboard players set @s pr.checkpoint_side 3
 
 
