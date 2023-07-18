@@ -83,10 +83,3 @@ Then run the function as the player to apply motion to them.
 - `#entity_mot pr.value`
 
 Then run the function as the player to apply motion to them.
-
-# Moving plots between zones
-On the server, everyone is building in the temp build zone (65536 blocks to the east of 0,0). Once the plots are done, they will be moved to the main build zone at 0,0. The functions `/function pr:plot/move/to_main` and `/function pr:plot/move/to_temp` can be used to move plots between the zones.
-
-When you are testing your plot's data pack in singleplayer, you can bring your plot into its natural position via a world download which you can request, then you can run one of these functions to bring your plot into its intended position. Running the function will cause a lagspike of about 5-10 seconds, and is irreversible without a backup of the world, so use with caution!
-
-Do not, I repeat, DO NOT run these functions on the server. Moving plots will be handled by the project leads.
