@@ -216,8 +216,8 @@ execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -1 run sco
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -1 run scoreboard players set @s pr.checkpoint_side 1
 
 
-#execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -1 run function namespace:enter
-execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -1 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -1 run function rooftop_adventure_ra:enter
+execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -1 run scoreboard players set @s pr.checkpoint_y 1
 execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -1 run scoreboard players set @s pr.checkpoint_side 2
 
 
