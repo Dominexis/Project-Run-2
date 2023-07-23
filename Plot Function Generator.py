@@ -23,6 +23,7 @@ NAMESPACES = {
     (1,4): ("rex_saltus_neon", 4, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night."),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!"),
     (4,-2): ("ykw", 3),
+    (4,-1): ("rooftop_adventure_ra", 1),
     (4,0): ("cygnus_switch_palace", 0)
 }
 
