@@ -12,7 +12,7 @@ execute if score @s ykw.cooldown matches 0 run scoreboard players reset @s ykw.c
 execute if score @s ykw.cooldown matches 1.. run scoreboard players remove @s ykw.cooldown 1
 
 # Cooldown text
-title @s[tag=pr.hide_timer] actionbar [{"text":"Cooldown: ","color":"dark_aqua"},{"score":{"name":"@s","objective":"ykw.cooldown_s"}},{"text":"s  Timer: "}, {"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+title @s[tag=pr.hide_timer] actionbar [{"text":"Cooldown: ","color":"dark_aqua"},{"score":{"name":"@s","objective":"ykw.cooldown_s"}},{"text":"s  Timer: "}, {"nbt":"tag.minutes","storage":"pr:data","interpret":true},":",{"nbt":"tag.seconds","storage":"pr:data","interpret":true},".",{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
 scoreboard players operation @s ykw.cooldown_s = @s ykw.cooldown
 scoreboard players operation @s ykw.cooldown_s /= 20 ykw.cooldown_s
 
@@ -30,4 +30,4 @@ execute if block ~ ~-1 ~ barrier run function ykw:events/player_jump_start
 execute at @s positioned ~ ~1 ~ as @e[type=item,tag=pr.target,distance=..2] at @s run function ykw:player/return_item
 
 # Tp
-execute if entity @s[gamemode=!spectator] if block ~ ~-1 ~ black_concrete run tp @s @e[type=marker,tag=pr.target,tag=ykw.start,limit=1]
+execute if entity @s[gamemode=!spectator] if block ~ ~-1 ~ oxidized_copper run tp @s @e[type=marker,tag=pr.target,tag=ykw.start,limit=1]

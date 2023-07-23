@@ -7,3 +7,6 @@ execute if score @s ykw.visible_for matches 1.. run scoreboard players remove @s
 
 # Countup
 execute if score @s ykw.countup matches 0.. run scoreboard players add @s ykw.countup 1
+
+# Color
+execute if score plot ykw.cooldown matches 0 run team join ykw.color @s

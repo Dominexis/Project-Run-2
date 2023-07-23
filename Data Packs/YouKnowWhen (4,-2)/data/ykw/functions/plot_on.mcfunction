@@ -13,20 +13,18 @@ scoreboard players set plot ykw.cooldown 20
 scoreboard objectives add ykw.cooldown_s dummy
 scoreboard players set 20 ykw.cooldown_s 20
 
+# Team for color
+team add ykw.color
+team modify ykw.color color dark_aqua
 
 scoreboard objectives add ykw.ecolocation minecraft.used:minecraft.carrot_on_a_stick
 scoreboard players set duration ykw.ecolocation 100
 
-setblock ~-40 ~12 ~-24 structure_block[mode=load]{name:"ykw:start",posY:0,mode:"LOAD"}
-setblock ~-40 ~12 ~24 structure_block[mode=load]{name:"ykw:start_right",posY:0,mode:"LOAD"}
-setblock ~-24 ~12 ~-24 structure_block[mode=load]{name:"ykw:center",posY:0,mode:"LOAD"}
-setblock ~-24 ~12 ~-40 structure_block[mode=load]{name:"ykw:end_left",posY:0,mode:"LOAD"}
-setblock ~-24 ~12 ~24 structure_block[mode=load]{name:"ykw:end_right",posY:0,mode:"LOAD"}
-setblock ~24 ~12 ~-24 structure_block[mode=load]{name:"ykw:end_front",posY:0,mode:"LOAD"}
+place template ykw:start ~-40 ~12 ~-24
+place template ykw:start_right ~-40 ~12 ~23
+place template ykw:center ~-24 ~12 ~-24
+place template ykw:end_left ~-24 ~12 ~-40
+place template ykw:end_right ~-24 ~12 ~24
+place template ykw:end_front ~23 ~11 ~-24
 
-setblock ~-40 ~11 ~-24 redstone_block
-setblock ~-40 ~11 ~24 redstone_block
-setblock ~-24 ~11 ~-24 redstone_block
-setblock ~-24 ~11 ~-40 redstone_block
-setblock ~-24 ~11 ~24 redstone_block
-setblock ~24 ~11 ~-24 redstone_block
+summon marker ~-28 ~31 ~3 {Tags:["ykw.start","ykw"]}
