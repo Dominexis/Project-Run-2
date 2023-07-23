@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/phantom_membrane"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 757000
+      },
+      "model": "cygnus_switch_palace:item/cygnus_yellow_outline"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 757001
+      },
+      "model": "cygnus_switch_palace:item/cygnus_purple_outline"
+    }
+  ]
+}
