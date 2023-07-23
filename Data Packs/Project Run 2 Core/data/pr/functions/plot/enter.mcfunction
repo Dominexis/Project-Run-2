@@ -268,8 +268,8 @@ execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 1 run sco
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_side 3
 
 
-#execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 1 run function namespace:enter
-execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 1 run function aljaz:enter
+execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_y 4
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_side 0
 
 
