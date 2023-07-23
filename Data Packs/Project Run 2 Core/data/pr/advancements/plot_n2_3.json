@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:ladder"
         },
         "title": [
             {
-                "text": "Section -2, 3",
+                "text": "Time Tower Parkour",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Climbing to the future!",
                 "color": "green"
             }
         ],
