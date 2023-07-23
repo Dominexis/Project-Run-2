@@ -2,12 +2,12 @@
 
 
 
-execute as @a[tag=!lokicave,tag=pr.target] at @s if block ~ ~-2 ~ orange_wool run playsound ambient.cave player @s ~ ~ ~ 1 1 1
+execute as @a[tag=!lokicave,tag=pr.target] at @s if block ~ ~-2 ~ orange_wool run playsound ambient.cave player @s ~ ~ ~ 1 1 0
 execute as @a[tag=!lokicave,tag=pr.target] at @s if block ~ ~-2 ~ orange_wool run tag @s add lokicave
 
 execute as @a[tag=pr.target] at @s if block ~ ~-2 ~ black_wool run tp @s ~ 1 ~26 0 0
 
-execute as @a[tag=!lokidoor,tag=pr.target] at @s if block ~ ~-1 ~ gray_wool run playsound block.iron_door.close player @s ~ ~ ~ 1 1 1
+execute as @a[tag=!lokidoor,tag=pr.target] at @s if block ~ ~-1 ~ gray_wool run playsound block.iron_door.close player @s ~ ~ ~ 1 1 0
 execute as @a[tag=!lokidoor,tag=pr.target] at @s if block ~ ~-1 ~ gray_wool run tag @s add lokidoor
 
 execute if score tick lokicode matches 1.. run scoreboard players remove tick lokicode 1
