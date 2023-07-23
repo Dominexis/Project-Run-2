@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:light_blue_concrete"
         },
         "title": [
             {
-                "text": "Section 1, 4",
+                "text": "NEON",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Cubes light up the night.",
                 "color": "green"
             }
         ],
