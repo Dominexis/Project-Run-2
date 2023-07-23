@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:purple_concrete"
         },
         "title": [
             {
-                "text": "Section 4, 0",
+                "text": "Switch Palace",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.",
                 "color": "green"
             }
         ],
