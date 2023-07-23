@@ -8,6 +8,9 @@ scoreboard players set @s pr.checkpoint_side -1
 tag @s remove pr.hide_timer
 tag @s remove pr.temp_checkpoint
 
+clear @s
+effect clear @s
+
 function pr:player/plot/coords_from_id
 
 execute if score @s lobby matches 1.. run function pr:player/checkpoint/send_to
