@@ -1,0 +1,66 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "pr_motor_course:item/road_moving",
+		"1": "pr_motor_course:item/wall_moving",
+		"2": "pr_motor_course:item/ceiling_moving",
+		"3": "pr_motor_course:item/walkway_moving"
+	},
+	"elements": [
+		{
+			"from": [-12, 6, -12],
+			"to": [28, 8, 28],
+			"faces": {
+				"up": {"uv": [-0.015, -0.015, 16.015, 16.015], "texture": "#0"}
+			}
+		},
+		{
+			"from": [27.49, 8, -12],
+			"to": [28, 12.04, 28],
+			"faces": {
+				"west": {"uv": [0, 0, 16, 1.62025], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-12, 11.53, -12],
+			"to": [28, 13, 28],
+			"faces": {
+				"down": {"uv": [-0.015, 16.015, 16.015, -0.015], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"from": [10, 8, -12],
+			"to": [10.79, 12.04, 28],
+			"faces": {
+				"east": {"uv": [16, 0, 0, 1.62025], "texture": "#1"}
+			}
+		},
+		{
+			"from": [10.79, 10.267, -12],
+			"to": [11.8, 10.53, 28],
+			"faces": {
+				"east": {"uv": [0, 0.40506, 16, 0.50633], "texture": "#3"},
+				"up": {"uv": [0, 0, 16, 0.40506], "rotation": 270, "texture": "#3"},
+				"down": {"uv": [16, 0, 0, 0.4051], "rotation": 270, "texture": "#3"}
+			}
+		},
+		{
+			"from": [10.79, 10.01, -12],
+			"to": [11.3, 10.267, 28],
+			"faces": {
+				"east": {"uv": [0, 0.50633, 16, 0.60759], "texture": "#3"},
+				"down": {"uv": [16, 0, 0, 0.20257], "rotation": 270, "texture": "#3"}
+			}
+		},
+		{
+			"name": "glass",
+			"from": [11.51, 10.53, -12],
+			"to": [11.58, 11.04, 28],
+			"faces": {
+				"east": {"uv": [0, 0.6076, 16, 0.81013], "texture": "#3"},
+				"west": {"uv": [16, 0.60759, 0, 0.81009], "texture": "#3"},
+				"up": {"uv": [0, 0.81013, 16, 0.91013], "rotation": 270, "texture": "#3"}
+			}
+		}
+	]
+}

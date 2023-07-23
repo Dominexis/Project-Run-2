@@ -1,0 +1,83 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "pr_motor_course:item/me",
+		"0": "pr_motor_course:item/brosephmc_poster"
+	},
+	"elements": [
+		{
+			"name": "player",
+			"from": [4, 0, 6],
+			"to": [12, 12, 10],
+			"faces": {
+				"north": {"uv": [11, 8, 13, 11], "texture": "#1"},
+				"east": {"uv": [10, 8, 11, 11], "texture": "#1"},
+				"south": {"uv": [13, 12, 15, 15], "texture": "#1"},
+				"west": {"uv": [13, 8, 14, 11], "texture": "#1"}
+			}
+		},
+		{
+			"name": "player",
+			"from": [0, 12, 6],
+			"to": [16, 24, 10],
+			"faces": {
+				"north": {"uv": [1, 5, 5, 8], "texture": "#1"},
+				"east": {"uv": [0, 5, 1, 8], "texture": "#1"},
+				"south": {"uv": [6, 5, 10, 8], "texture": "#1"},
+				"west": {"uv": [5, 5, 6, 8], "texture": "#1"},
+				"up": {"uv": [1, 4, 5, 5], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [1, 8, 5, 9], "texture": "#1"}
+			}
+		},
+		{
+			"name": "player",
+			"from": [4, 24, 4],
+			"to": [12, 32, 12],
+			"faces": {
+				"north": {"uv": [2, 2, 4, 4], "texture": "#1"},
+				"east": {"uv": [0, 2, 2, 4], "texture": "#1"},
+				"south": {"uv": [6, 2, 8, 4], "texture": "#1"},
+				"west": {"uv": [4, 2, 6, 4], "texture": "#1"},
+				"up": {"uv": [2, 0, 4, 2], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [4, 0, 6, 2], "texture": "#1"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [-7, 4, 1],
+			"to": [23, 19, 2],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8], "texture": "#0"},
+				"east": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"south": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"west": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"up": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"down": {"uv": [0, 15, 1, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [6, 0, 1],
+			"to": [10, 4, 2],
+			"faces": {
+				"north": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"east": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"south": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"west": {"uv": [0, 15, 1, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [-7.5, 3.5, 0],
+			"to": [0.5, 7.5, 1],
+			"faces": {
+				"north": {"uv": [0, 8, 8, 12], "texture": "#0"},
+				"east": {"uv": [0, 8, 0.1, 12], "texture": "#0"},
+				"south": {"uv": [0, 8, 0.1, 8.1], "texture": "#0"},
+				"west": {"uv": [7.9, 8, 8, 12], "texture": "#0"},
+				"up": {"uv": [0, 8, 8, 8.1], "texture": "#0"},
+				"down": {"uv": [0, 8, 8, 8.1], "texture": "#0"}
+			}
+		}
+	]
+}

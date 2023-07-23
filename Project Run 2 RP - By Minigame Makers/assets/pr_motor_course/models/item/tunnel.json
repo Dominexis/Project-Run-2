@@ -1,0 +1,25 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "pr_motor_course:item/back",
+		"1": "pr_motor_course:item/front"
+	},
+	"elements": [
+		{
+			"name": "tunnel_back",
+			"from": [10.79, 8, 27.48],
+			"to": [27.49, 11.6, 28],
+			"faces": {
+				"north": {"uv": [0.1, 6.0, 15.925, 9.4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "tunnel_front",
+			"from": [10.79, 8, -12],
+			"to": [27.49, 11.6, -11.48],
+			"faces": {
+				"south": {"uv": [0.1, 6.0, 15.925, 9.4], "texture": "#1"}
+			}
+		}
+	]
+}

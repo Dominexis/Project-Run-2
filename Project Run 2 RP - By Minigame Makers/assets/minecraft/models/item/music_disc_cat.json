@@ -1,0 +1,11 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+ "layer0": "minecraft:item/music_disc_cat"
+ },
+ "overrides": [
+  {"predicate": {"custom_model_data": 295002}, "model": "pr_motor_course:item/road"},
+  {"predicate": {"custom_model_data": 295003}, "model": "pr_motor_course:item/tunnel"},
+  {"predicate": {"custom_model_data": 295004}, "model": "pr_motor_course:item/me"}
+ ]
+}
