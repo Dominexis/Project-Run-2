@@ -12,3 +12,5 @@ scoreboard players operation @s pr.temp_checkpoint_yaw *= #90 pr.value
 scoreboard players operation @s pr.temp_checkpoint_yaw %= #360 pr.value
 
 tag @s add pr.temp_checkpoint
+
+execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~

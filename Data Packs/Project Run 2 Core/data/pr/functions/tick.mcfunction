@@ -35,12 +35,6 @@ scoreboard players enable @a relative
 scoreboard players add #global pr.ticks 1
 scoreboard players add @a pr.ticks 1
 execute as @a unless score @s pr.ticks = #global pr.ticks at @s run function pr:player/login
-execute as @a unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-execute as @a unless score @s pr.id = @s pr.id store result score @s pr.id run scoreboard players add #global pr.id 1
-
-execute as @a if score @s pr.plot = #spawn_plot pr.value run scoreboard players set @s pr.time 0
-execute as @a unless score @s pr.plot = #spawn_plot pr.value run function pr:player/time/tick
-scoreboard players operation #previous_time pr.value = #time pr.value
 
 execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
 execute as @a[scores={lobby=1..}] run function pr:player/checkpoint/lobby
@@ -50,6 +44,13 @@ execute as @a[scores={warp=1..}] run function pr:player/warp
 execute as @a[scores={coords=1..}] run function pr:player/coords
 execute as @a[scores={plot=1..}] at @s run function pr:player/plot/warp/main
 execute as @a[scores={relative=1..}] at @s run function pr:player/relative
+
+execute as @a unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute as @a unless score @s pr.id = @s pr.id store result score @s pr.id run scoreboard players add #global pr.id 1
+
+execute as @a if score @s pr.plot = #spawn_plot pr.value run scoreboard players set @s pr.time 0
+execute as @a unless score @s pr.plot = #spawn_plot pr.value run function pr:player/time/tick
+scoreboard players operation #previous_time pr.value = #time pr.value
 
 effect give @a saturation infinite 0 true
 
