@@ -1,4 +1,4 @@
-scoreboard players set @a cygnus_jump 0
+scoreboard players set @a[tag=pr.target] cygnus_jump 0
 
 # switch state:
 # 0 : yellow ON, purple OFF
