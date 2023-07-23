@@ -701,16 +701,16 @@ execute if score #plot_tick_3_0 pr.value matches 1 positioned 282.0 -64 -6.0 run
 
 
 execute store result score #plot_player_4_0 pr.value positioned 376.0 -64 -8.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
-#execute unless score #plot_player_4_0 pr.value = #plot_tick_4_0 pr.value positioned 376.0 -64 -8.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute if score #plot_player_4_0 pr.value matches 1 if score #plot_tick_4_0 pr.value matches 0 positioned 424 0 40 run function namespace:plot_on
-#execute if score #plot_player_4_0 pr.value matches 0 if score #plot_tick_4_0 pr.value matches 1 positioned 424 0 40 run function namespace:plot_off
-#execute unless score #plot_player_4_0 pr.value = #plot_tick_4_0 pr.value run tag @e[tag=pr.target] remove pr.target
+execute unless score #plot_player_4_0 pr.value = #plot_tick_4_0 pr.value positioned 376.0 -64 -8.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute if score #plot_player_4_0 pr.value matches 1 if score #plot_tick_4_0 pr.value matches 0 positioned 424 0 40 run function cygnus_switch_palace:plot_on
+execute if score #plot_player_4_0 pr.value matches 0 if score #plot_tick_4_0 pr.value matches 1 positioned 424 0 40 run function cygnus_switch_palace:plot_off
+execute unless score #plot_player_4_0 pr.value = #plot_tick_4_0 pr.value run tag @e[tag=pr.target] remove pr.target
 scoreboard players operation #plot_tick_4_0 pr.value = #plot_player_4_0 pr.value
 execute if score #plot_tick_4_0 pr.value matches 1 positioned 378.0 -64 -6.0 run scoreboard players set @a[dx=93,dy=383,dz=93,tag=!pr.spectator] pr.plot 1044
-#execute if score #plot_tick_4_0 pr.value matches 1 positioned 378.0 -64 -6.0 run tag @e[dx=93,dy=383,dz=93,tag=!pr.spectator] add pr.target
-#execute if score #plot_tick_4_0 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-#execute if score #plot_tick_4_0 pr.value matches 1 positioned 424 0 40 run function namespace:tick_plot
-#execute if score #plot_tick_4_0 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+execute if score #plot_tick_4_0 pr.value matches 1 positioned 378.0 -64 -6.0 run tag @e[dx=93,dy=383,dz=93,tag=!pr.spectator] add pr.target
+execute if score #plot_tick_4_0 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute if score #plot_tick_4_0 pr.value matches 1 positioned 424 0 40 run function cygnus_switch_palace:tick_plot
+execute if score #plot_tick_4_0 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
 

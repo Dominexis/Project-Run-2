@@ -21,7 +21,8 @@ NAMESPACES = {
     (1,-2): ("sliceolife", 0),
     (1,3): ("theswagunicorn", 0, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines."),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!"),
-    (4,-2): ("ykw", 3)
+    (4,-2): ("ykw", 3),
+    (4,0): ("cygnus_switch_palace", 0)
 }
 
 
