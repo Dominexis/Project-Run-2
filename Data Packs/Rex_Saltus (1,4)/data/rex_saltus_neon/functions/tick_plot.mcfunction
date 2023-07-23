@@ -1,5 +1,9 @@
 # This function will run every tick while players are in your plot on the center block at Y=0
 
+# Graceful falling
+# grants fall damage immunity to players jumping down from the start tube.
+
+execute positioned ~-10 ~64 ~-2 run effect give @a[dx=0,dy=4,dz=4,tag=pr.target] resistance 5 5 true
 
 # killzones
 # kills every player that falls in the zone, to make them return to their checkpoint.
