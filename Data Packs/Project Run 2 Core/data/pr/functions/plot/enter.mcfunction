@@ -419,7 +419,7 @@ execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run sco
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run scoreboard players set @s pr.checkpoint_side 3
 
 
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 4 run function namespace:enter
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 4 run function brosephmc_mc_pr:enter
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 4 run scoreboard players set @s pr.checkpoint_y 0
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 4 run scoreboard players set @s pr.checkpoint_side 0
 

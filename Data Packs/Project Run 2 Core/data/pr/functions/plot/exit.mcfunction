@@ -83,7 +83,7 @@ execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 3 run func
 #execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 3 run function namespace:exit
 #execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 4 run function namespace:exit
 #execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run function namespace:exit
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 4 run function namespace:exit
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 4 run function brosephmc_mc_pr:exit
 #execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 4 run function namespace:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 4 run function rex_saltus_neon:exit
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 4 run function namespace:exit
