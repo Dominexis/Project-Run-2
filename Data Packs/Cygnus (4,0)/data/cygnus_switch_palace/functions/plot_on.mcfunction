@@ -188,6 +188,7 @@ summon marker ~-1 ~32 ~34 {Tags:["cygnus_entity","cygnus_yellow"]}
 
 scoreboard objectives add cygnus_data dummy
 scoreboard players set $cygnus_switch_state cygnus_data 0
-scoreboard objectives add cygnus_jump minecraft.custom:jump
+#scoreboard objectives add cygnus_jump minecraft.custom:jump
+scoreboard players set $cygnus_timer cygnus_data 0
 
 function cygnus_switch_palace:switch/change_blocks
