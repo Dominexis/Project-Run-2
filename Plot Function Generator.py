@@ -11,6 +11,7 @@ PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 # namespace, y coordinate, icon, name, description
 NAMESPACES = {
+    (-3,0): ("anikey_plot", 4),
     (-3,1): ("aljaz", 0),
     (-3,5): ("simondmc", 2, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!"),
     (-2,-6): ("eosand", 0),
