@@ -85,9 +85,9 @@ execute at @e[tag=lokitemp,tag=pr.target] run function evilgodloki:answer
 kill @e[tag=lokitemp,tag=pr.target]
 
 summon interaction ~ ~9 ~16 {Tags:["lokibarr","pr.target"]}
-summon interaction ~6.5 ~8 ~21.5 {width:4.1f,height:3f,Tags:["lokibarr","pr.target"]}
+summon interaction ~6.5 ~8 ~21.5 {width:5f,height:3f,Tags:["lokibarr","pr.target"]}
 summon painting ~ ~8 ~12 {facing:2b,Invulnerable:1b,Tags:["loki","pr.target"],variant:"minecraft:wanderer"}
-summon text_display ~ ~3.3 ~-11.49 {Tags:["loki","pr.target"],text:'{"text":"Find at least 5 sets of codes hidden in this building.","color":"dark_red","bold":true}',background:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.65f,0.65f,0.65f]}}
+summon text_display ~ ~3.3 ~-11.49 {Tags:["loki","pr.target"],text:'{"text":"Find at least 2 sets of codes hidden in this building.","color":"dark_red","bold":true}',background:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.65f,0.65f,0.65f]}}
 summon text_display ~ ~2 ~-39 {view_range:0.2f,Tags:["loki","pr.target"],text:'[{"text":"【EXIT】\\n\\n ","color":"gold","bold":true},{"text":"Congratulations! \\n\\n","color":"dark_green","bold":true},{"text":"Did you find all 17 codes?","color":"dark_blue","bold":true}]',background:0}
 summon text_display ~-0.02 ~2.02 ~-38.9999 {view_range:0.2f,Tags:["loki","pr.target"],text:'[{"text":"【EXIT】\\n\\n ","color":"yellow","bold":true},{"text":"Congratulations! \\n\\n","color":"green","bold":true},{"text":"Did you find all 17 codes?","color":"blue","bold":true}]',background:0}
 setblock ~-15 ~-1 ~-9 redstone_torch
