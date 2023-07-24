@@ -293,8 +293,8 @@ execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 1 run scor
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_side 1
 
 
-#execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run function namespace:enter
-execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run function subchronos:enter
+execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_y 3
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_side 1
 
 
