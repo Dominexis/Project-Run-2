@@ -1,0 +1,20 @@
+[
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+		"name": {
+			"text": "Mk. III Suit",
+			"color": "gold",
+			"bold": false,
+			"italic": false
+		}
+	},
+	{
+		"function": "minecraft:reference",
+		"name": "inquognito:suits/common"
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{Trim:{material:\"minecraft:amethyst\",pattern:\"minecraft:silence\"}}"
+	}
+]

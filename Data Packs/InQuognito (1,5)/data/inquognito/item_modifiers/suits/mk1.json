@@ -1,0 +1,20 @@
+[
+	{
+		"function": "minecraft:set_name",
+		"entity": "this",
+		"name": {
+			"text": "Mk. I Suit",
+			"color": "white",
+			"bold": false,
+			"italic": false
+		}
+	},
+	{
+		"function": "minecraft:reference",
+		"name": "inquognito:suits/common"
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{Trim:{material:\"minecraft:netherite\",pattern:\"minecraft:dune\"}}"
+	}
+]
