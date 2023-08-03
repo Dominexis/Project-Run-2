@@ -20,18 +20,18 @@ execute as @e[tag=lokitemp,tag=pr.target] at @s run summon block_display ^-0.062
 execute as @e[tag=lokitemp,tag=pr.target] at @s run summon block_display ^0.125 ^-0.4365 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["lokiv","loki","lokik","pr.target"],brightness:{sky:15,block:15}}
 
 #hitbox
-execute as @e[tag=loki1,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki11","pr.target"]}
-execute as @e[tag=loki2,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki22","pr.target"]}
-execute as @e[tag=loki3,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki33","pr.target"]}
-execute as @e[tag=loki4,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki44","pr.target"]}
-execute as @e[tag=loki5,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki55","pr.target"]}
-execute as @e[tag=loki6,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki66","pr.target"]}
-execute as @e[tag=loki7,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki77","pr.target"]}
-execute as @e[tag=loki8,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki88","pr.target"]}
-execute as @e[tag=loki9,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki99","pr.target"]}
-execute as @e[tag=lokix,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","lokixx","pr.target"]}
-execute as @e[tag=loki0,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki00","pr.target"]}
-execute as @e[tag=lokiv,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","lokivv","pr.target"]}
+execute as @e[tag=loki1,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki11","pr.target","lokihit"]}
+execute as @e[tag=loki2,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki22","pr.target","lokihit"]}
+execute as @e[tag=loki3,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki33","pr.target","lokihit"]}
+execute as @e[tag=loki4,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki44","pr.target","lokihit"]}
+execute as @e[tag=loki5,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki55","pr.target","lokihit"]}
+execute as @e[tag=loki6,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki66","pr.target","lokihit"]}
+execute as @e[tag=loki7,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki77","pr.target","lokihit"]}
+execute as @e[tag=loki8,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki88","pr.target","lokihit"]}
+execute as @e[tag=loki9,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki99","pr.target","lokihit"]}
+execute as @e[tag=lokix,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","lokixx","pr.target","lokihit"]}
+execute as @e[tag=loki0,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","loki00","pr.target","lokihit"]}
+execute as @e[tag=lokiv,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["loki","lokivv","pr.target","lokihit"]}
 
 #number
 execute as @e[tag=loki1,tag=pr.target] at @s run summon text_display ^0.055 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₁","color":"black","bold":false}]',background:0,Tags:["loki","loki1","lokik","pr.target"]}

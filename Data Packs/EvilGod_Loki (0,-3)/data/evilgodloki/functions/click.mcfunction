@@ -1,7 +1,4 @@
 #player click keypad
+execute at @e[tag=loki55,tag=pr.target] run playsound ui.button.click block @a[tag=pr.target] ~ ~ ~ 0.3 2 0
 
-tag @s add lokiclick
 function evilgodloki:code
-playsound ui.button.click block @a ~ ~ ~ 0.3 2 0
-advancement revoke @s only evilgodloki:left_click
-advancement revoke @s only evilgodloki:right_click

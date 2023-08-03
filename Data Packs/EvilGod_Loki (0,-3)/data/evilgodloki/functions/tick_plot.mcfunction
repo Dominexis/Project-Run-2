@@ -2,6 +2,7 @@
 
 
 
+
 execute as @a[tag=!lokicave,tag=pr.target] at @s if block ~ ~-2 ~ orange_wool run playsound ambient.cave player @s ~ ~ ~ 1 1 0
 execute as @a[tag=!lokicave,tag=pr.target] at @s if block ~ ~-2 ~ orange_wool run tag @s add lokicave
 
@@ -16,4 +17,9 @@ execute if score tick lokicode matches 0 run kill @e[tag=lokierror,tag=pr.target
 execute as @e[tag=lokik,tag=pr.target] if score @s lokicode matches 1 at @s run tp @s ^ ^ ^0.05
 execute as @e[tag=lokik,tag=pr.target] if score @s lokicode matches 1.. run scoreboard players remove @s lokicode 1
 
+#===========================================================================================
 
+execute as @e[tag=lokihit,tag=pr.target] on target run tag @s add lokiclick
+execute as @e[tag=lokihit,tag=pr.target] on attacker run tag @s add lokiclick
+
+execute as @a[tag=pr.target,tag=lokiclick] at @s run function evilgodloki:click
