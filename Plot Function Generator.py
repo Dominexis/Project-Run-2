@@ -21,7 +21,7 @@ NAMESPACES = {
     (-1,4): ("brosephmc_mc_pr", 0),
     (-1,5): ("funkytoc_moon", 1),
     (0,-3): ("evilgodloki", 1),
-    (1,-2): ("sliceolife", 0),
+    (1,-2): ("sliceolife", 0, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!"),
     (1,3): ("theswagunicorn", 0, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines."),
     (1,4): ("rex_saltus_neon", 4, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night."),
     (1,5): ("inquognito", 3),

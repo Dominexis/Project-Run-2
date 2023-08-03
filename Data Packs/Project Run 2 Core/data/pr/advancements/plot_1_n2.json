@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:gray_concrete"
         },
         "title": [
             {
-                "text": "Section 1, -2",
+                "text": "Slice o' Life",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Navigate a bustling city!",
                 "color": "green"
             }
         ],
