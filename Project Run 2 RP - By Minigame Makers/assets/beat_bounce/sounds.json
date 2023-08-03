@@ -1,0 +1,9 @@
+{
+	"music.club_mix": {
+		"sounds": [{
+			"name": "beat_bounce:music/club_mix",
+			"stream": true,
+			"preload": true
+		}]
+	}
+}

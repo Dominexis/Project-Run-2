@@ -1,0 +1,76 @@
+{
+	"providers":[
+	    {
+            "type": "bitmap",
+            "file": "beat_bounce:font/tempo_off.png",
+            "ascent": 8,
+            "height": 16,
+            "chars": ["\uEaa0"]
+        },
+	    {
+            "type": "bitmap",
+            "file": "beat_bounce:font/tempo_on.png",
+            "ascent": 8,
+            "height": 16,
+            "chars": ["\uEaa1"]
+        },
+	    {
+            "type": "bitmap",
+            "file": "beat_bounce:font/tempo_blank.png",
+            "ascent": 15,
+            "height": 32,
+            "chars": ["\uEccB"]
+        },
+	    {
+            "type": "bitmap",
+            "file": "beat_bounce:font/tempo_0.png",
+            "ascent": 15,
+            "height": 32,
+            "chars": ["\uEcc0"]
+        },
+	    {
+            "type": "bitmap",
+            "file": "beat_bounce:font/tempo_1.png",
+            "ascent": 15,
+            "height": 32,
+            "chars": ["\uEcc1"]
+        },
+	    {
+            "type": "bitmap",
+            "file": "beat_bounce:font/tempo_2.png",
+            "ascent": 15,
+            "height": 32,
+            "chars": ["\uEcc2"]
+        },
+	    {
+            "type": "bitmap",
+            "file": "beat_bounce:font/tempo_3.png",
+            "ascent": 15,
+            "height": 32,
+            "chars": ["\uEcc3"]
+        },
+	    {
+            "type": "bitmap",
+            "file": "beat_bounce:font/tempo_4.png",
+            "ascent": 15,
+            "height": 32,
+            "chars": ["\uEcc4"]
+        },
+		{
+            "type": "bitmap",
+            "file": "beat_bounce:font/black_fade.png",
+            "ascent": 128,
+            "height": 256,
+            "chars": ["\uEFFF"]
+        },
+		{
+            "type": "space",
+            "advances":{
+				"\uE000":8,
+				"\uE010":4,
+				"\uE001":95,
+				"\uE002":40
+			}
+        }
+	]
+}
