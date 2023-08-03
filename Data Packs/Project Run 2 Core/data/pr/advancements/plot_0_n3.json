@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:dark_oak_door"
         },
         "title": [
             {
-                "text": "Section 0, -3",
+                "text": "Password Anxiety",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.",
                 "color": "green"
             }
         ],
