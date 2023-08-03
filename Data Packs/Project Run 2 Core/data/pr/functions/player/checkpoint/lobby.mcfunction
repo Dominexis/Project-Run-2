@@ -1,15 +1,14 @@
 # Set checkpoint scores
 
-scoreboard players operation @s pr.plot = #spawn_plot pr.value
-execute unless score @s pr.plot_previous = @s pr.plot_previous run scoreboard players operation @s pr.plot_previous = @s pr.plot
-scoreboard players set @s pr.checkpoint_y -4
-scoreboard players set @s pr.checkpoint_side -1
-
 tag @s remove pr.hide_timer
 tag @s remove pr.temp_checkpoint
 
-clear @s
-effect clear @s
+function pr:plot/exit
+
+scoreboard players operation @s pr.plot = #spawn_plot pr.value
+scoreboard players operation @s pr.plot_previous = @s pr.plot
+scoreboard players set @s pr.checkpoint_y -4
+scoreboard players set @s pr.checkpoint_side -1
 
 function pr:player/plot/coords_from_id
 

@@ -116,9 +116,9 @@ effect clear @s
 
 # Send message when they start their run
 
-execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s[team=!pr.spectator] {"text":"Your run has begun","color":"gold"}
-execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
-execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
+execute unless score @s lobby matches 1.. unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {"text":"Your run has begun","color":"gold"}
+execute unless score @s lobby matches 1.. unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
+execute unless score @s lobby matches 1.. unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
 
 
 
@@ -128,4 +128,4 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tel
 
 # Grant advancements
 
-function pr:plot/advancement
+execute unless score @s lobby matches 1.. unless score @s spectate matches 1.. run function pr:plot/advancement
