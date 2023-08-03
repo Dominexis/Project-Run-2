@@ -5,4 +5,4 @@ tag @s remove pr.hide_timer
 effect clear @s
 clear @s minecraft:carrot_on_a_stick
 
-stopsound @a record beat_bounce:music.club_mix
+stopsound @s record beat_bounce:music.club_mix
