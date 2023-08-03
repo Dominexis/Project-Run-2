@@ -116,9 +116,9 @@ effect clear @s
 
 # Send message when they start their run
 
-execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {"text":"Your run has begun","color":"gold"}
-execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
-execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s[team=!pr.spectator] {"text":"Your run has begun","color":"gold"}
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
 
 
 
