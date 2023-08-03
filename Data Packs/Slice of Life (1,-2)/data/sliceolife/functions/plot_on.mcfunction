@@ -11,4 +11,4 @@ execute positioned ~21 ~-45 ~17 summon marker run function sliceolife:placecheck
 execute positioned ~-24 ~-42 ~14 summon marker run function sliceolife:placecheckpoint
 execute positioned ~29 ~50 ~1 summon marker run function sliceolife:placecheckpoint
 
-setblock ~-6 ~-12 ~12 redstone_block
+setblock ~-5 ~-13 ~-3 redstone_block
