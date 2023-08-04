@@ -14,6 +14,7 @@ execute if score @s ykw.cooldown matches 1.. run scoreboard players remove @s yk
 # Cooldown text
 title @s[tag=pr.hide_timer] actionbar [{"text":"Cooldown: ","color":"dark_aqua"},{"score":{"name":"@s","objective":"ykw.cooldown_s"}},{"text":"s  Timer: "}, {"nbt":"tag.minutes","storage":"pr:data","interpret":true},":",{"nbt":"tag.seconds","storage":"pr:data","interpret":true},".",{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
 scoreboard players operation @s ykw.cooldown_s = @s ykw.cooldown
+scoreboard players add @s ykw.cooldown_s 19
 scoreboard players operation @s ykw.cooldown_s /= 20 ykw.cooldown_s
 
 # Splash trigger
