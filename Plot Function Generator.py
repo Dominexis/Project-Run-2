@@ -31,7 +31,8 @@ NAMESPACES = {
     (3,-1): ("prisonbreak", 0),
     (4,-2): ("ykw", 3),
     (4,-1): ("rooftop_adventure_ra", 1),
-    (4,0): ("cygnus_switch_palace", 0, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.")
+    (4,0): ("cygnus_switch_palace", 0, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks."),
+    (6,-2): ("ganymede", 0)
 }
 
 
