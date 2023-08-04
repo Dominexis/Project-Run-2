@@ -28,6 +28,7 @@ NAMESPACES = {
     (1,5): ("inquognito", 3),
     (2,1): ("subchronos", 3, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits."),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!"),
+    (3,-1): ("prisonbreak", 0),
     (4,-2): ("ykw", 3),
     (4,-1): ("rooftop_adventure_ra", 1),
     (4,0): ("cygnus_switch_palace", 0, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.")
