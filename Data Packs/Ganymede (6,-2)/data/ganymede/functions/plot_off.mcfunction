@@ -8,7 +8,7 @@ kill @e[tag=ganymede.idisplay,tag=pr.target]
 kill @e[tag=ganymede.painting,tag=pr.target]
 fill ~-20 ~2 ~1 ~-20 ~1 ~-1 oxidized_copper
 fill ~-13 ~4 ~8 ~-16 ~1 ~8 stripped_oak_wood replace air
-fill -20 3 11 -18 1 11 oxidized_copper
+fill ~-20 ~3 ~11 ~-18 ~1 ~11 oxidized_copper
 fill ~-27 ~1 ~22 ~-27 ~2 ~22 oxidized_copper
 fill ~-21 ~4 ~26 ~-21 ~1 ~28 oxidized_copper
 fill ~-8 ~1 ~16 ~-8 ~2 ~16 stripped_oak_wood

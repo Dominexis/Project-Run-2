@@ -20,3 +20,5 @@ execute at @a[nbt={SelectedItem:{tag:{Tags:[ganymede.bluelens]}}},tag=pr.target]
 execute at @a[nbt={SelectedItem:{tag:{Tags:[ganymede.yellowlens]}}},tag=pr.target] at @e[tag=ganymede.yellow,distance=..5,tag=pr.target] run setblock ~ ~ ~ minecraft:moving_piston
 execute at @a[nbt={SelectedItem:{tag:{Tags:[ganymede.redlens]}}},tag=pr.target] at @e[tag=ganymede.red,distance=..5,tag=pr.target] run setblock ~ ~ ~ minecraft:moving_piston
 execute at @e[tag=ganymede.end_point] as @a[distance=...75] run function pr:player/finish
+
+execute positioned ~-26 ~-8 ~27 run tp @a[tag=pr.target,distance=..3] ~-28 ~1 ~23 0 0

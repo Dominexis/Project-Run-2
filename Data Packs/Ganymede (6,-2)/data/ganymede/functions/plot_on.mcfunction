@@ -39,6 +39,8 @@ summon marker ~-9 ~-7 ~-27 {Tags:["ganymede.red","ganymede.lens_block"]}
 summon marker ~-5 ~-7 ~-27 {Tags:["ganymede.red","ganymede.lens_block"]}
 summon marker ~14 ~-8 ~-8 {Tags:["ganymede.red","ganymede.lens_block"]}
 summon marker ~14 ~-7 ~-8 {Tags:["ganymede.red","ganymede.lens_block"]}
+summon marker ~-26 ~3 ~33 {Tags:["ganymede.red","ganymede.lens_block"]}
+summon marker ~-26 ~4 ~33 {Tags:["ganymede.red","ganymede.lens_block"]}
 summon marker ~-39 ~2 ~-7 {Tags:["ganymede.yellow","ganymede.lens_block"]}
 summon marker ~-30 ~2 ~-8 {Tags:["ganymede.yellow","ganymede.lens_block"]}
 summon marker ~-11 ~3 ~4 {Tags:["ganymede.yellow","ganymede.lens_block"]}
