@@ -217,7 +217,7 @@ summon minecraft:painting ~-16.0 ~-5.0 ~-22.0 {facing:3b,Invulnerable:1b,variant
 summon minecraft:painting ~-18.0 ~-5.0 ~-17.0 {facing:1b,Invulnerable:1b,variant:"minecraft:pool",Tags:["ganymede.painting"]}
 summon minecraft:painting ~-18.0 ~-4.0 ~-17.0 {facing:1b,Invulnerable:1b,variant:"minecraft:courbet",Tags:["ganymede.painting"]}
 summon minecraft:painting ~-18.0 ~-5.0 ~-18.0 {facing:1b,Invulnerable:1b,variant:"minecraft:wanderer",Tags:["ganymede.painting"]}
-summon minecraft:painting ~-18.0 ~-5.0 ~8.0 {facing:1b,Invulnerable:1b,variant:"minecraft:sunset",Tags:["ganymede.painting"]}
+summon minecraft:painting ~-18.0 ~-5.0 ~-22.0 {facing:1b,Invulnerable:1b,variant:"minecraft:sunset",Tags:["ganymede.painting"]}
 summon minecraft:painting ~-18.0 ~-4.0 ~-22.0 {facing:1b,Invulnerable:1b,variant:"minecraft:sea",Tags:["ganymede.painting"]}
 summon minecraft:painting ~-18.0 ~-5.0 ~-20.0 {facing:1b,Invulnerable:1b,variant:"minecraft:graham",Tags:["ganymede.painting"]}
 summon minecraft:painting ~-3.0 ~-5.0 ~-17.0 {facing:1b,Invulnerable:1b,variant:"minecraft:plant",Tags:["ganymede.painting"]}
