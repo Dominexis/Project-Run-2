@@ -14,4 +14,4 @@ scoreboard objectives remove zombie_idplayer
 scoreboard objectives remove zombie_reload
 
 #kill entites
-kill @e[tag=zombiePlot]
+kill @e[tag=zombiePlot,tag=pr.target]
