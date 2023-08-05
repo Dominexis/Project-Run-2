@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:white_stained_glass_pane"
         },
         "title": [
             {
-                "text": "Section 6, -2",
+                "text": "Colorblind",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Navigate through several enigmatic rooms using special colored lenses to reveal hidden paths.",
                 "color": "green"
             }
         ],
