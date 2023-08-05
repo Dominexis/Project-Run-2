@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:white_glazed_terracotta"
         },
         "title": [
             {
-                "text": "Section -3, 0",
+                "text": "Mirror Travel",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Jumping in a Gothic building, try to go though it!",
                 "color": "green"
             }
         ],
