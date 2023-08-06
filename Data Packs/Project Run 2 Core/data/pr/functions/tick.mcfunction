@@ -59,6 +59,7 @@ scoreboard players remove @a[scores={pr.stop_launch_sound=1..}] pr.stop_launch_s
 
 tag @a remove pr.spectator
 tag @a[team=pr.spectator] add pr.spectator
+tag @a remove pr.leaderboard_placement
 
 
 
