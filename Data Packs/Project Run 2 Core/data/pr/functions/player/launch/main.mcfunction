@@ -11,9 +11,12 @@ execute anchored eyes run summon marker ^ ^ ^ {Tags:["pr.entity","pr.player.laun
 
 # Compute force from creeper explosions
 
-scoreboard players set #creeper_power pr.value 1810
-execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..1.28] run scoreboard players set #creeper_power pr.value 1635
-execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..0.41] run scoreboard players set #creeper_power pr.value 1200
+#scoreboard players set #creeper_power pr.value 1810
+#execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..1.28] run scoreboard players set #creeper_power pr.value 1635
+#execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..0.41] run scoreboard players set #creeper_power pr.value 1200
+scoreboard players set #creeper_power pr.value 730
+execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..1.28] run scoreboard players set #creeper_power pr.value 786
+execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..0.41] run scoreboard players set #creeper_power pr.value 931
 
 scoreboard players operation #math_00 pr.value = #creeper_power pr.value
 scoreboard players operation #math_00 pr.value *= #2 pr.value

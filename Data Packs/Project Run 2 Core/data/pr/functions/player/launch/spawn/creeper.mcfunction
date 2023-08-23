@@ -1,6 +1,6 @@
 # Spawn creeper
 
-summon creeper ~ ~8192 ~ {Tags:["pr.launch","pr.entity.target.launch"],Team:"pr.no_collision",Silent:1b,Invulnerable:1b,ExplosionRadius:-1b,Fuse:0s,PersistenceRequired:1b}
+summon creeper ~ ~8192 ~ {Tags:["pr.launch","pr.entity.target.launch"],Team:"pr.no_collision",Silent:1b,Invulnerable:1b,ExplosionRadius:3b,Fuse:0s,PersistenceRequired:1b}
 
 
 

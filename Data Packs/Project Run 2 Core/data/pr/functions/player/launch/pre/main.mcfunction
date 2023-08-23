@@ -18,7 +18,7 @@ scoreboard players set @s[gamemode=spectator] pr.gamemode 3
 gamemode creative @s
 
 tag @s add pr.player.launch.target
-execute as @a[tag=!pr.player.launch.target,distance=..5] run function pr:player/launch/pre/gamemode
+execute as @a[tag=!pr.player.launch.target,distance=..10] run function pr:player/launch/pre/gamemode
 tag @s remove pr.player.launch.target
 
 
@@ -29,7 +29,7 @@ tag @s remove pr.player.launch.target
 
 # Manage entities
 
-execute as @e[type=#pr:family/mob,distance=..5] run function pr:player/launch/pre/entity
+execute as @e[type=#pr:family/mob,distance=..10] run function pr:player/launch/pre/entity
 
 
 
