@@ -8,6 +8,6 @@ execute as @a[tag=teleporting,scores={timerCDs=20},tag=pr.target] run function c
 #the levitation effect is removed 
 execute as @a[tag=teleporting,scores={timerCDs=20},tag=pr.target] run effect clear @s minecraft:levitation
 #this teleport the player to their active checkpoint if it exists, if not the player is not teleported and this effect can be used to progress the plot if the player has not reached any checkpoint
-execute as @a[tag=teleporting,scores={timerCDs=2},tag=pr.target] if @s[tag=check] run scoreboard players set @s pr.death 1
+execute as @a[tag=teleporting,scores={timerCDs=2},tag=pr.target] if entity @s[tag=check] run scoreboard players set @s pr.death 1
 #removes the tag to end the functions and avoid repetition
 execute as @a[tag=teleporting,scores={timerCDs=2},tag=pr.target] run tag @s remove teleporting
