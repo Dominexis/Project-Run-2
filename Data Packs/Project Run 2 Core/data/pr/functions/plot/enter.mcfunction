@@ -181,7 +181,7 @@ execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run sc
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run scoreboard players set @s pr.checkpoint_side 2
 
 
-#execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run function namespace:enter
+execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run function cds28:enter
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run scoreboard players set @s pr.checkpoint_y 0
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run scoreboard players set @s pr.checkpoint_side 0
 

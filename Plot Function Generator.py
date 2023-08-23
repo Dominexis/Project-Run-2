@@ -12,6 +12,7 @@ DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 # namespace, y coordinate, icon, name, description
 NAMESPACES = {
     (-4,-1): ("warshito", 4),
+    (-3,-1): ("cds28", 0),
     (-3,0): ("anikey_plot", 4, "minecraft:white_glazed_terracotta", "Mirror Travel", "Jumping in a Gothic building, try to go though it!"),
     (-3,1): ("aljaz", 0),
     (-3,4): ("zombie1111", 0),
