@@ -35,7 +35,7 @@ execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -2 run fun
 #execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches -2 run function namespace:exit
 execute if score @s pr.plot_x matches 6 if score @s pr.plot_z matches -2 run function ganymede:exit
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -1 run function namespace:exit
-#execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run function namespace:exit
+execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run function warshito:exit
 #execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run function namespace:exit
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -1 run function time_stream:exit
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function namespace:exit

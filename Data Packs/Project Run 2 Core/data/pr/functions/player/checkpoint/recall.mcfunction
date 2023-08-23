@@ -35,7 +35,7 @@ execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -2 run fun
 #execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches -2 run function namespace:recall
 execute if score @s pr.plot_x matches 6 if score @s pr.plot_z matches -2 run function ganymede:recall
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -1 run function namespace:recall
-#execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run function namespace:recall
+execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run function warshito:recall
 #execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run function namespace:recall
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -1 run function time_stream:recall
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function namespace:recall
