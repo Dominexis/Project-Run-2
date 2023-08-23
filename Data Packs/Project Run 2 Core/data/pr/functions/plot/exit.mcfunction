@@ -107,6 +107,7 @@ execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 5 run func
 
 clear @s
 effect clear @s
+attribute @s minecraft:generic.max_health base set 20
 
 
 
