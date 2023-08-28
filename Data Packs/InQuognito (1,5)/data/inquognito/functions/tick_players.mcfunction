@@ -2,10 +2,6 @@ function inquognito:logic/tick/abilities
 
 execute if score @s inquognito.dialogue.intro matches 421.. run function inquognito:logic/tick/pickups
 
-# Elevator
-execute if block ~-3 ~58 ~15 #minecraft:buttons[powered=true] run function inquognito:logic/elevator/down
-execute if block ~-5 ~3 ~14 #minecraft:buttons[powered=true] run function inquognito:logic/elevator/up
-
 # Dialogue
 scoreboard players add @s[scores={inquognito.dialogue.intro=1..420}] inquognito.dialogue.intro 1
 tellraw @s[scores={inquognito.dialogue.intro=60}] [{"text":"Simaris | ","color":"aqua"},{"text":"Hunter. We have arrived at the facility.","color":"white"}]

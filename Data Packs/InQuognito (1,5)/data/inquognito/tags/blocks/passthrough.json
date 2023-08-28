@@ -1,0 +1,19 @@
+{
+	"values": [
+		"#minecraft:banners",
+		"#minecraft:buttons",
+		"#minecraft:fences",
+		"#minecraft:signs",
+		"#minecraft:wall_signs",
+		"#minecraft:wool_carpets",
+		"minecraft:air",
+		"minecraft:barrier",
+		"minecraft:iron_bars",
+		"minecraft:ladder",
+		"minecraft:light",
+		"minecraft:player_head",
+		"minecraft:player_wall_head",
+		"minecraft:structure_void",
+		"minecraft:torch"
+	]
+}

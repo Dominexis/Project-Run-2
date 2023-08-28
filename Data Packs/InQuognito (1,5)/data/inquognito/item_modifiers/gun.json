@@ -205,7 +205,7 @@
 					"condition": "minecraft:entity_properties",
 					"entity": "this",
 					"predicate": {
-						"nbt": "{Tags:[\"inquognito.gun.behemoth\"]}"
+						"nbt": "{Tags:[\"inquognito.gun.nova\"]}"
 					}
 				}
 			}
@@ -222,7 +222,7 @@
 				"italic": false,
 				"extra": [
 					{
-						"text": "Behemoth",
+						"text": "Nova",
 						"color": "red",
 						"bold": false,
 						"italic": false
@@ -236,7 +236,7 @@
 				"condition": "minecraft:entity_properties",
 				"entity": "this",
 				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.behemoth\"]}"
+					"nbt": "{Tags:[\"inquognito.gun.nova\"]}"
 				}
 			}
 		]
