@@ -166,9 +166,9 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction")
         "experience set @s 0 levels\n" +
         "experience set @s 0 points" + "\n"*8 +
         "# Send message when they start their run\n\n" +
-        f'execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {{"text":"Your run has begun","color":"gold"}}\n' +
-        f'execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{{"text":"Use ","color":"gray"}},{{"text":"/trigger lobby","color":"white"}},{{"text":" to return to the lobby","color":"gray"}}]\n' +
-        f'execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{{"text":"Use ","color":"gray"}},{{"text":"/trigger checkpoint","color":"white"}},{{"text":" to go to the previous checkpoint","color":"gray"}}]' + "\n"*8 +
+        f'execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {{"text":"Your run has begun","color":"gold"}}\n' +
+        f'execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{{"text":"Use ","color":"gray"}},{{"text":"/trigger lobby","color":"white"}},{{"text":" to return to the lobby","color":"gray"}}]\n' +
+        f'execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{{"text":"Use ","color":"gray"}},{{"text":"/trigger checkpoint","color":"white"}},{{"text":" to go to the previous checkpoint","color":"gray"}}]' + "\n"*8 +
         "# Grant advancements\n\n" +
         "function pr:plot/advancement"
     )
