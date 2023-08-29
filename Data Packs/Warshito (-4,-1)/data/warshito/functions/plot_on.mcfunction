@@ -11,3 +11,5 @@ scoreboard objectives add warshito.DialogueTicks2 dummy
 #Return doors
 clone ~-5 ~65 ~36 ~-5 ~66 ~37 ~3 ~65 ~37
 clone ~-37 ~65 ~-5 ~-36 ~66 ~-5 ~-38 ~65 ~3
+
+fill ~-1 ~65 ~35 ~-1 ~68 ~33 glass_pane
