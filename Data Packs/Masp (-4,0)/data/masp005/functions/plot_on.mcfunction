@@ -41,16 +41,16 @@ summon armor_stand ~34.489 ~-6 ~-7.46 {Tags:["masp005.testtube"],Rotation:[0f,0f
 
 summon armor_stand ~9.7 ~59 ~4 {Rotation:[90f,0f],ArmorItems:[{},{},{id:"minecraft:elytra",Count:1b}],Tags:["masp005.elytra"],DisabledSlots:4144959,Invisible:1b}
 
-summon armor_stand ~20.800 ~53 ~12.8 {ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:5b}}],Pose:{Head:[40f,47f,0f]},Tags:["masp005.cover"],DisabledSlots:4144959,Invisible:1b,NoGravity:1b}
+summon armor_stand ~20.800 ~53 ~12.8 {ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:10055}}],Pose:{Head:[40f,47f,0f]},Tags:["masp005.cover"],DisabledSlots:4144959,Invisible:1b,NoGravity:1b}
 
-execute as @e[tag=masp005.pallet] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:4b}}],DisabledSlots:4144959}
+execute as @e[tag=masp005.pallet] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:10054}}],DisabledSlots:4144959}
 execute as @e[tag=masp005.pallet] at @s run tp @s ~ ~-1.4 ~
-execute as @e[tag=masp005.carton] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:2b}}],DisabledSlots:4144959}
+execute as @e[tag=masp005.carton] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:10052}}],DisabledSlots:4144959}
 execute as @e[tag=masp005.carton] at @s run tp @s ~ ~-1.4 ~
-execute as @e[tag=masp005.alarm] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:1b}}],DisabledSlots:4144959,Pose:{Head:[90f,0f,0f]}}
+execute as @e[tag=masp005.alarm] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:10051}}],DisabledSlots:4144959,Pose:{Head:[90f,0f,0f]}}
 execute as @e[tag=masp005.alarm] at @s run tp @s ^ ^ ^.27 ~180 ~
-execute as @e[tag=masp005.storage] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:6b}}],DisabledSlots:4144959}
-execute as @e[tag=masp005.testtube] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:7b}}],DisabledSlots:4144959}
+execute as @e[tag=masp005.storage] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:10056}}],DisabledSlots:4144959}
+execute as @e[tag=masp005.testtube] run data merge entity @s {NoGravity:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:white_dye",Count:1b,tag:{CustomModelData:10057}}],DisabledSlots:4144959}
 execute as @e[tag=masp005.testtube] at @s run tp @s ~ ~-1.4 ~
 
 scoreboard objectives add masp005.val dummy

@@ -1,0 +1,36 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "minecraft:item/white_dye"
+	},
+	"overrides": [
+		{
+			"predicate": { "custom_model_data": 10051 },
+			"model": "masp005:alarm_light"
+		},
+		{
+			"predicate": { "custom_model_data": 10052 },
+			"model": "masp005:carton"
+		},
+		{
+			"predicate": { "custom_model_data": 10053 },
+			"model": "masp005:barricade"
+		},
+		{
+			"predicate": { "custom_model_data": 10054 },
+			"model": "masp005:pallet"
+		},
+		{
+			"predicate": { "custom_model_data": 10055 },
+			"model": "masp005:cover"
+		},
+		{
+			"predicate": { "custom_model_data": 10056 },
+			"model": "masp005:storage_rack"
+		},
+		{
+			"predicate": { "custom_model_data": 10057 },
+			"model": "masp005:test_tube"
+		}
+	]
+}
