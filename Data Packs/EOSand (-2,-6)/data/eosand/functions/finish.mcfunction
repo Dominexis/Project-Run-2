@@ -14,6 +14,6 @@ execute as @s[scores={eosand.timer=40}] run tellraw @s ["",{"text":"<","color":"
 execute as @s[scores={eosand.timer=40}] run playsound minecraft:block.piston.contract block @a[tag=eosand] ~ ~ ~ 1.0 2.0
 
 execute as @s[scores={eosand.timer=50}] run effect clear @s blindness
+execute as @s[scores={eosand.timer=50}] run function pr:player/finish
 execute as @s[scores={eosand.timer=50}] run scoreboard players set @s eosand.cutscenes 0
 execute as @s[scores={eosand.timer=50}] run scoreboard players set @s eosand.timer 0
-execute as @s[scores={eosand.timer=50}] run function pr:player/finish
