@@ -25,4 +25,9 @@ execute if entity @s[scores={eosand.timer=46}] run particle poof ~1.5 ~1.5 ~-0.5
 
 execute as @s[scores={eosand.timer=51}] run tellraw @s ["",{"text":"<","color":"white"},{"text":"EOS/COM","color":"gray"},"> ",{"text":"LAUNCH!","color":"aqua"}]
 execute as @s[scores={eosand.timer=51}] run playsound minecraft:entity.generic.explode block @s ~ ~ ~ 1.0 2.0
+
+# Summon armor stand and mount player
+execute as @s[scores={eosand.timer=51}] run summon armor_stand ~ ~-1 ~ {NoGravity:1b,Invisible:1b,Invulnerable:1b}
+execute as @s[scores={eosand.timer=51}] run ride @s mount @e[type=armor_stand,distance=..1,limit=1]
+
 execute as @s[scores={eosand.timer=51}] run scoreboard players set @s eosand.pipe_num 1

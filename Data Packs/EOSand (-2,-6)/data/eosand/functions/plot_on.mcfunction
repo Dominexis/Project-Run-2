@@ -8,6 +8,7 @@ scoreboard objectives add eosand.timer dummy
 scoreboard objectives add eosand.door dummy
 scoreboard objectives add eosand.timer_door dummy
 scoreboard objectives add eosand.cutscenes dummy
+scoreboard objectives add eosand.junctions dummy
 
 bossbar add eosand:section_1 ["",{"text":"SECTION 1/4: ","bold":true},{"text":"█ ","color":"red"},{"text":"█ ","color":"dark_purple"},{"text":"█ ","color":"light_purple"},{"text":"█","color":"green"}]
 bossbar set eosand:section_1 max 5

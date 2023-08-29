@@ -8,3 +8,4 @@ scoreboard objectives remove eosand.timer
 scoreboard objectives remove eosand.door
 scoreboard objectives remove eosand.timer
 scoreboard objectives remove eosand.cutscenes
+scoreboard objectives remove eosand.junctions

@@ -47,8 +47,11 @@ execute as @s[scores={eosand.timer=640}] at @s run playsound minecraft:block.pis
 execute as @s[scores={eosand.timer=740}] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"EOS/COM","color":"gray"},"> ",{"text":"YOUR DIRECTION WILL ONLY CHANGE DEPENDING ON WHERE YOU FACE IN A JUNCTION. SHOULD YOU CHOOSE INCORRECTLY, YOU WILL BE TRANSPORTED TO THE START.","color":"aqua"}]
 execute as @s[scores={eosand.timer=740}] at @s run playsound minecraft:block.piston.contract block @s ~ ~ ~ 1.0 2.0
 
-execute as @s[scores={eosand.timer=840}] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"EOS/COM","color":"gray"},"> ",{"text":"THAT IS ALL. PROCEED TO THE DOOR WHEN YOU ARE READY. GOOD LUCK.","color":"aqua"}]
+execute as @s[scores={eosand.timer=840}] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"EOS/COM","color":"gray"},"> ",{"text":"DO NOT DISMOUNT OR ELSE YOU WILL BE TRANSPORTED TO THE START.","color":"aqua"}]
 execute as @s[scores={eosand.timer=840}] at @s run playsound minecraft:block.piston.contract block @s ~ ~ ~ 1.0 2.0
+
+execute as @s[scores={eosand.timer=940}] at @s run tellraw @s ["",{"text":"<","color":"white"},{"text":"EOS/COM","color":"gray"},"> ",{"text":"THAT IS ALL. PROCEED TO THE DOOR WHEN YOU ARE READY. GOOD LUCK.","color":"aqua"}]
+execute as @s[scores={eosand.timer=940}] at @s run playsound minecraft:block.piston.contract block @s ~ ~ ~ 1.0 2.0
 
 # display color code
 # execute as @s[scores={eosand.timer=860}] run tellraw @a[tag=eosand,scores={eosand.timer=860}] ["",{"text":"COLOR COMBINATION:\n>>> ","color":"gray","bold":true},{"text":"█ ","color":"red"},{"text":"█ ","color":"dark_purple"},{"text":"█ ","color":"light_purple"},{"text":"█","color":"green"}]
@@ -56,9 +59,11 @@ execute as @s[scores={eosand.timer=840}] at @s run playsound minecraft:block.pis
 
 # give P tag for phase 1
 # execute as @s[scores={eosand.timer=860}] run scoreboard players set @a[tag=eosand,scores={eosand.timer=860}] eosand.pads 1
-execute as @s[scores={eosand.timer=938}] run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1.0 1.0
-execute as @s[scores={eosand.timer=940}] run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1.0 2.0
 
-execute as @s[scores={eosand.timer=940}] run scoreboard players set @s eosand.pipes 1
-execute as @s[scores={eosand.timer=940}] run scoreboard players set @s eosand.cutscenes 0
-execute as @s[scores={eosand.timer=940}] run scoreboard players set @s eosand.timer 0
+# execute as @s[scores={eosand.timer=1038}] run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1.0 1.0
+# execute as @s[scores={eosand.timer=1040}] run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1.0 2.0
+execute as @s[scores={eosand.timer=1040}] run playsound minecraft:block.end_portal.spawn player @s ~ ~2 ~-7 1.0 2.0
+
+execute as @s[scores={eosand.timer=1040}] run scoreboard players set @s eosand.pipes 1
+execute as @s[scores={eosand.timer=1040}] run scoreboard players set @s eosand.cutscenes 0
+execute as @s[scores={eosand.timer=1040}] run scoreboard players set @s eosand.timer 0
