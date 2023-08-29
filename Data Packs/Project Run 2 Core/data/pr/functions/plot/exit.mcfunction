@@ -107,6 +107,8 @@ execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 5 run func
 
 clear @s
 effect clear @s
+experience set @s 0 levels
+experience set @s 0 points
 
 
 
