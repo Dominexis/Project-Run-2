@@ -7,3 +7,8 @@ scoreboard objectives add 2_sn_timer dummy
 scoreboard objectives add 3_sn_timer dummy
 scoreboard objectives add 4_sn_timer dummy
 scoreboard objectives add aljaz.hotbar_timer dummy
+
+function aljaz:aljaz14/snake/snake1/summon
+function aljaz:aljaz14/snake/snake2/summon
+function aljaz:aljaz14/snake/snake3/summon
+function aljaz:aljaz14/snake/snake4/summon
