@@ -3,7 +3,7 @@
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -6 run function eosand:recall
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -6 run function namespace:recall
 #execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -5 run function namespace:recall
-#execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -5 run function namespace:recall
+execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -5 run function ronanemperor:recall
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -5 run function namespace:recall
 #execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -5 run function namespace:recall
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -5 run function namespace:recall
