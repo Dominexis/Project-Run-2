@@ -3,6 +3,11 @@
         {
             "type": "single",
             "resource": "ykw:warden_tendrils"
+        },
+        {
+            "type": "directory",
+            "source": "custom",
+            "prefix": "custom/"
         }
     ]
 }

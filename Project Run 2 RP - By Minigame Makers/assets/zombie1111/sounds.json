@@ -1,0 +1,23 @@
+{
+    "zombie_sounds.laser_shoot": {
+        "category": "master",
+        "sounds": [
+            {
+                "name": "zombie1111:zombie_sounds/laser_shoot1",
+                "stream": "false"
+            },
+            {
+                "name": "zombie1111:zombie_sounds/laser_shoot2",
+                "stream": "false"
+            },
+            {
+                "name": "zombie1111:zombie_sounds/laser_shoot3",
+                "stream": "false"
+            },
+            {
+                "name": "zombie1111:zombie_sounds/laser_shoot4",
+                "stream": "false"
+            }
+        ]
+    }
+}
