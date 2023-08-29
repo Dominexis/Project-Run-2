@@ -1,18 +1,18 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:gold_block"
         },
         "title": [
             {
-                "text": "Section 0, 0",
+                "text": "Cubed Prologue",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Begin your run with parkour by Cubed!",
                 "color": "green"
             }
         ],

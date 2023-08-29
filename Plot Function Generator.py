@@ -26,6 +26,7 @@ NAMESPACES = {
     (-1,-3): ("itspungpond98", 0, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates."),
     (-1,4): ("brosephmc_mc_pr", 0),
     (-1,5): ("funkytoc_moon", 1),
+    (0,0): ("cubed", 0, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!"),
     (0,-3): ("evilgodloki", 1, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building."),
     (1,-2): ("sliceolife", 0, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!"),
     (1,3): ("theswagunicorn", 0, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines."),
