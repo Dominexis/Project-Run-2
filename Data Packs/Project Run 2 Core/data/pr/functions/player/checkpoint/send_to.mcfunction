@@ -39,6 +39,16 @@ execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
 
 
 
+# Set cooldown
+
+scoreboard players set @s pr.checkpoint_cooldown 20
+
+
+
+
+
+
+
 # Run recall function
 
 execute at @s run function pr:player/checkpoint/recall

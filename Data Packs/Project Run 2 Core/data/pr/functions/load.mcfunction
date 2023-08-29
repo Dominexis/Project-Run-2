@@ -11,6 +11,7 @@ scoreboard objectives add pr.plot_x dummy
 scoreboard objectives add pr.plot_z dummy
 scoreboard objectives add pr.checkpoint_y dummy
 scoreboard objectives add pr.checkpoint_side dummy
+scoreboard objectives add pr.checkpoint_cooldown dummy
 
 scoreboard objectives add pr.temp_checkpoint_x dummy
 scoreboard objectives add pr.temp_checkpoint_y dummy
