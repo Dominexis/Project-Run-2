@@ -7,7 +7,7 @@ execute at @e[scores={2_sn_timer=4},tag=pr.target] run tag @e[tag=snake_2,tag=!e
 execute at @e[type=armor_stand,scores={2_sn_timer=15},tag=pr.target] run setblock ~ ~1 ~ orange_terracotta
 execute at @e[type=armor_stand,scores={2_sn_timer=29},tag=pr.target] run setblock ~ ~1 ~ orange_terracotta
 execute at @e[type=armor_stand,scores={2_sn_timer=45},tag=pr.target] run setblock ~ ~1 ~ yellow_terracotta
-execute at @e[type=armor_stand,scores={2_sn_timer=60},tag=pr.target] run setblock ~ ~1 ~ honey_block
+execute at @e[type=armor_stand,scores={2_sn_timer=60},tag=pr.target] run setblock ~ ~1 ~ honeycomb_block
 execute at @e[type=armor_stand,scores={2_sn_timer=71},tag=pr.target] run setblock ~ ~1 ~ yellow_terracotta
 execute at @e[type=armor_stand,scores={2_sn_timer=110},tag=pr.target] run setblock ~ ~1 ~ orange_terracotta
 

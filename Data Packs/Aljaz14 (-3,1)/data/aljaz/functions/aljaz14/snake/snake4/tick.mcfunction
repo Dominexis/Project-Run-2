@@ -8,9 +8,9 @@ execute at @e[type=armor_stand,scores={4_sn_timer=15},tag=pr.target] run setbloc
 execute at @e[type=armor_stand,scores={4_sn_timer=49},tag=pr.target] run setblock ~ ~1 ~ pink_concrete
 execute at @e[type=armor_stand,scores={4_sn_timer=74},tag=pr.target] run setblock ~ ~1 ~ pink_stained_glass
 execute at @e[type=armor_stand,scores={4_sn_timer=100},tag=pr.target] run setblock ~ ~1 ~ pink_concrete
-execute at @e[type=armor_stand,scores={4_sn_timer=131},tag=pr.target] run setblock ~ ~1 ~ pink_stained_glass
-execute at @e[type=armor_stand,scores={4_sn_timer=160},tag=pr.target] run setblock ~ ~1 ~ pink_concrete
-execute at @e[type=armor_stand,scores={4_sn_timer=181},tag=pr.target] run setblock ~ ~1 ~ pink_stained_glass
+execute at @e[type=armor_stand,scores={4_sn_timer=141},tag=pr.target] run setblock ~ ~1 ~ pink_stained_glass
+execute at @e[type=armor_stand,scores={4_sn_timer=200},tag=pr.target] run setblock ~ ~1 ~ pink_concrete
+execute at @e[type=armor_stand,scores={4_sn_timer=260},tag=pr.target] run setblock ~ ~1 ~ pink_stained_glass
 
 tag @e[scores={4_sn_timer=200},tag=pr.target] add endSnake
 execute at @e[tag=endSnake,tag=aljaza.snake,tag=pr.target] run setblock ~ ~1 ~ air 

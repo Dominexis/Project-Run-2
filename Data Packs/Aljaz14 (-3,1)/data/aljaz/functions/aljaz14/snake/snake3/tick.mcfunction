@@ -7,10 +7,10 @@ execute at @e[scores={3_sn_timer=4},tag=pr.target] run tag @e[tag=snake_3,tag=!e
 execute at @e[type=armor_stand,scores={3_sn_timer=15},tag=pr.target] run setblock ~ ~1 ~ cyan_concrete
 execute at @e[type=armor_stand,scores={3_sn_timer=49},tag=pr.target] run setblock ~ ~1 ~ cyan_concrete
 execute at @e[type=armor_stand,scores={3_sn_timer=75},tag=pr.target] run setblock ~ ~1 ~ cyan_stained_glass
-execute at @e[type=armor_stand,scores={3_sn_timer=100},tag=pr.target] run setblock ~ ~1 ~ cyan_concrete
-execute at @e[type=armor_stand,scores={3_sn_timer=151},tag=pr.target] run setblock ~ ~1 ~ cyan_stained_glass
-execute at @e[type=armor_stand,scores={3_sn_timer=180},tag=pr.target] run setblock ~ ~1 ~ cyan_concrete
-execute at @e[type=armor_stand,scores={3_sn_timer=211},tag=pr.target] run setblock ~ ~1 ~ cyan_stained_glass
+execute at @e[type=armor_stand,scores={3_sn_timer=120},tag=pr.target] run setblock ~ ~1 ~ cyan_concrete
+execute at @e[type=armor_stand,scores={3_sn_timer=190},tag=pr.target] run setblock ~ ~1 ~ cyan_stained_glass
+execute at @e[type=armor_stand,scores={3_sn_timer=240},tag=pr.target] run setblock ~ ~1 ~ cyan_concrete
+execute at @e[type=armor_stand,scores={3_sn_timer=300},tag=pr.target] run setblock ~ ~1 ~ cyan_stained_glass
 
 
 tag @e[scores={3_sn_timer=240},tag=pr.target] add endSnake
