@@ -1,0 +1,1 @@
+scoreboard players set @s cubed.checkpoint 0
