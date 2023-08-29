@@ -162,7 +162,9 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction")
         "\n".join(commands) + "\n"*8 +
         "# Clear things off of the player\n\n" +
         "clear @s\n" +
-        "effect clear @s" + "\n"*8 +
+        "effect clear @s\n" +
+        "experience set @s 0 levels\n" +
+        "experience set @s 0 points" + "\n"*8 +
         "# Send message when they start their run\n\n" +
         f'execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {{"text":"Your run has begun","color":"gold"}}\n' +
         f'execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{{"text":"Use ","color":"gray"}},{{"text":"/trigger lobby","color":"white"}},{{"text":" to return to the lobby","color":"gray"}}]\n' +
