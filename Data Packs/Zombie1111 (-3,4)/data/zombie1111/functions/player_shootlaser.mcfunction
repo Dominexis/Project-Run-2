@@ -2,7 +2,7 @@
 
 
 #runs as player that shoot in my plot
-scoreboard players remove @s zombie_reload 10
+scoreboard players remove @s zombie_reload 5
 playsound minecraft:zombie_sounds.laser_shoot player @a ~ ~ ~ 1 0.4
 scoreboard players set @s zombie_shootlaser 0
 summon armor_stand ~ ~1 ~ {Tags:["zombiePlot","zombieBullet","zombieNew","pr.target"],NoGravity:1b,Invisible:1b,Invulnerable:1b}

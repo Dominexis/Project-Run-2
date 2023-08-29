@@ -1,7 +1,7 @@
 
 
 scoreboard players set secTimer zombie_rngV 0
-execute as @a[tag=zombiePlotPlayer,tag=pr.target] at @s run function zombie1111:player_sec
+execute positioned ~43 ~1 ~0 as @a[tag=zombiePlotPlayer,tag=pr.target,distance=5..] at @s run function zombie1111:player_sec
 #execute positioned 65307.01 6.00 437.70 rotated -1620.25 -1.04 run function zombie1111:summon_try
 execute positioned ~19 ~6 ~13 rotated -1620.25 -1.04 run function zombie1111:summon_try
 #execute positioned 65288.49 3.00 456.42 rotated -2699.37 -0.57 run function zombie1111:summon_try
