@@ -7,8 +7,12 @@ scoreboard objectives add warshito.Sph dummy
 scoreboard objectives add warshito.DialogueTicks dummy
 scoreboard objectives add warshito.DialogueTicks2 dummy
 
+scoreboard players set Pl3 warshito.ticks 0
+scoreboard players set Pl4 warshito.ticks 80
+scoreboard players set Pl5 warshito.ticks 40
 
-#Return doors
+# Return doors
+
 clone ~-5 ~65 ~36 ~-5 ~66 ~37 ~3 ~65 ~37
 clone ~-37 ~65 ~-5 ~-36 ~66 ~-5 ~-38 ~65 ~3
 

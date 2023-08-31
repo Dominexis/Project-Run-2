@@ -13,6 +13,7 @@ execute as @a[tag=pr.target,tag=dropper] at @s if block ~ ~-0.1 ~ powder_snow ru
 execute as @a[tag=pr.target,tag=dropper] at @s if block ~ ~-0.1 ~ powder_snow run tag @s remove Red
 execute as @a[tag=pr.target,tag=dropper] at @s if block ~ ~-0.1 ~ powder_snow run tag @s remove Blue
 execute as @a[tag=pr.target,tag=dropper] at @s if block ~ ~-0.1 ~ powder_snow run tag @s remove Green
+execute as @a[tag=pr.target,tag=dropper] at @s if block ~ ~-0.1 ~ powder_snow run tag @s remove pr.hide_timer
 execute as @a[tag=pr.target,tag=dropper] at @s if block ~ ~-0.1 ~ powder_snow run clear @s
 execute as @a[tag=pr.target,tag=dropper] at @s if block ~ ~-0.1 ~ powder_snow run effect give @s resistance infinite 200 true
 execute as @a[tag=pr.target,tag=dropper] at @s if block ~ ~-0.1 ~ powder_snow run attribute @s generic.max_health base set 20
