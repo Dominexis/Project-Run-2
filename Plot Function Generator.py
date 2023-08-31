@@ -15,7 +15,7 @@ NAMESPACES = {
     (-4,0): ("masp005", 3),
     (-3,-1): ("cds28", 0),
     (-3,0): ("anikey_plot", 4, "minecraft:white_glazed_terracotta", "Mirror Travel", "Jumping in a Gothic building, try to go though it!"),
-    (-3,1): ("aljaz", 0),
+    (-3,1): ("aljaz", 0, "minecraft:player_head", "Snake Madness", "Scale the snakes and escape the maze!", '{SkullOwner:{Id:[I;2098679158,-283884171,-1425129158,-1065654650],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA1MDNiODFhYzAyMGM2N2MzNzc4N2I0NWM5YTI2MjIzZjliYzI2YmNhMjdmODFhZjMyZjJjZjU1ZTI0NDBiNyJ9fX0="}]}}}'),
     (-3,4): ("zombie1111", 0),
     (-3,5): ("simondmc", 2, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!"),
     (-2,-6): ("eosand", 0),
@@ -288,10 +288,15 @@ for coordinate in coordinates:
         item = NAMESPACES[coordinate][2]
         name = NAMESPACES[coordinate][3]
         description = NAMESPACES[coordinate][4]
+        if len(NAMESPACES[coordinate]) >= 6:
+            nbt = NAMESPACES[coordinate][5]
+        else:
+            nbt = ""
     else:
         item = "minecraft:diamond"
         name = f"Section {coordinate[0]}, {coordinate[1]}"
         description = "Complete this section."
+        nbt = ""
 
     if coordinate == (-1, 0):
         continue
@@ -329,7 +334,8 @@ for coordinate in coordinates:
             {
                 "display": {
                     "icon": {
-                        "item": item
+                        "item": item,
+                        "nbt": nbt
                     },
                     "title": [
                         {"text": name, "color": "white"}

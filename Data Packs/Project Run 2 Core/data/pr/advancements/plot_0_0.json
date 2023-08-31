@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:gold_block"
+            "item": "minecraft:gold_block",
+            "nbt": ""
         },
         "title": [
             {

@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:dark_oak_door"
+            "item": "minecraft:dark_oak_door",
+            "nbt": ""
         },
         "title": [
             {

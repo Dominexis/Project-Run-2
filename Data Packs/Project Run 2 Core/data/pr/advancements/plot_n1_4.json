@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:diamond",
+            "nbt": ""
         },
         "title": [
             {

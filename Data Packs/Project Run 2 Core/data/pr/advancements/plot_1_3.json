@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:creeper_spawn_egg"
+            "item": "minecraft:creeper_spawn_egg",
+            "nbt": ""
         },
         "title": [
             {

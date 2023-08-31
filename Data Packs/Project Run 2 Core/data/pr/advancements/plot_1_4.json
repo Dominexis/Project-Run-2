@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:light_blue_concrete"
+            "item": "minecraft:light_blue_concrete",
+            "nbt": ""
         },
         "title": [
             {

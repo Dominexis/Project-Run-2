@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:verdant_froglight"
+            "item": "minecraft:verdant_froglight",
+            "nbt": ""
         },
         "title": [
             {

@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:clock"
+            "item": "minecraft:clock",
+            "nbt": ""
         },
         "title": [
             {

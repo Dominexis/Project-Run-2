@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:big_dripleaf"
+            "item": "minecraft:big_dripleaf",
+            "nbt": ""
         },
         "title": [
             {
