@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:sculk_shrieker",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -2, -5",
+                "text": "Warden's Domain",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour through the dangerous underground to reach the Warden's Domain.",
                 "color": "green"
             }
         ],

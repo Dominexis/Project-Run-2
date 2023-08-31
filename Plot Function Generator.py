@@ -19,7 +19,7 @@ NAMESPACES = {
     (-3,4): ("zombie1111", 0),
     (-3,5): ("simondmc", 2, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!"),
     (-2,-6): ("eosand", 0),
-    (-2,-5): ("ronanemperor", 2),
+    (-2,-5): ("ronanemperor", 2, "minecraft:sculk_shrieker", "Warden's Domain", "Parkour through the dangerous underground to reach the Warden's Domain."),
     (-2,-3): ("technodono_plot_-2_-3", 0),
     (-2,-1): ("time_stream", 0, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!"),
     (-2,3): ("stabily_time_tower_parkour", 1, "minecraft:ladder", "Time Tower", "Climbing to the future!"),
@@ -356,7 +356,8 @@ for coordinate in coordinates:
                 }
             },
             file,
-            indent=4
+            indent=4,
+            ensure_ascii=False
         )
 
 
