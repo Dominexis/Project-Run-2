@@ -28,6 +28,7 @@ NAMESPACES = {
     (-1,5): ("funkytoc_moon", 1),
     (0,0): ("cubed", 0, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!"),
     (0,-3): ("evilgodloki", 1, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building."),
+    (1,-4): ("klue007", -1),
     (1,-2): ("sliceolife", 0, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!"),
     (1,3): ("theswagunicorn", 0, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines."),
     (1,4): ("rex_saltus_neon", 4, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night."),
