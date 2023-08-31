@@ -291,12 +291,12 @@ for coordinate in coordinates:
         if len(NAMESPACES[coordinate]) >= 6:
             nbt = NAMESPACES[coordinate][5]
         else:
-            nbt = ""
+            nbt = "{}"
     else:
         item = "minecraft:diamond"
         name = f"Section {coordinate[0]}, {coordinate[1]}"
         description = "Complete this section."
-        nbt = ""
+        nbt = "{}"
 
     if coordinate == (-1, 0):
         continue

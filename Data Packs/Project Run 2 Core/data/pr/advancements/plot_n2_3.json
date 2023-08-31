@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:ladder",
-            "nbt": ""
+            "nbt": "{}"
         },
         "title": [
             {

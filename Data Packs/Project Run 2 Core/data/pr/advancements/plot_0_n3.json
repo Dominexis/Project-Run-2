@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:dark_oak_door",
-            "nbt": ""
+            "nbt": "{}"
         },
         "title": [
             {

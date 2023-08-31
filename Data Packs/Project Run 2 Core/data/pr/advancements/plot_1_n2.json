@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:gray_concrete",
-            "nbt": ""
+            "nbt": "{}"
         },
         "title": [
             {

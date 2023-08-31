@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:white_glazed_terracotta",
-            "nbt": ""
+            "nbt": "{}"
         },
         "title": [
             {

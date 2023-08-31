@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:red_mushroom",
-            "nbt": ""
+            "nbt": "{}"
         },
         "title": [
             {

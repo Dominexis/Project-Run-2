@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:honeycomb_block",
-            "nbt": ""
+            "nbt": "{}"
         },
         "title": [
             {

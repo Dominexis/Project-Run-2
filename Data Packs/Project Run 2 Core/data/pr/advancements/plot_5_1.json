@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:diamond",
-            "nbt": ""
+            "nbt": "{}"
         },
         "title": [
             {
