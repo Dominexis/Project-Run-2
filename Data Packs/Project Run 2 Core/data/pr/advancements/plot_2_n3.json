@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:jungle_leaves",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 2, -3",
+                "text": "Dripleaf Jungle",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour deep into the heart of the jungle. Will you make it out alive?",
                 "color": "green"
             }
         ],

@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:bricks",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -3, 4",
+                "text": "Monster City",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour through the city and fight the monsters!",
                 "color": "green"
             }
         ],

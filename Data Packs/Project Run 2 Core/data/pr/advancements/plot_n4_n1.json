@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:player_head",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -4, -1",
+                "text": "Chromatic Climb",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ==\"}]}}}",
                 "color": "green"
             }
         ],

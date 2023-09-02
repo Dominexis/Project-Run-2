@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
-            "nbt": "{}"
+            "item": "minecraft:potion",
+            "nbt": "{Potion:\"minecraft:luck\"}"
         },
         "title": [
             {
-                "text": "Section -4, 0",
+                "text": "Lab Rush",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Dash through the abandoned laboratory and make your way out the twisted corridors.",
                 "color": "green"
             }
         ],

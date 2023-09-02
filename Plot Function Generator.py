@@ -11,12 +11,12 @@ PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 # namespace, y coordinate, icon, name, description
 NAMESPACES = {
-    (-4,-1): ("warshito", 4),
-    (-4,0): ("masp005", 3),
+    (-4,-1): ("warshito", 4, "minecraft:player_head", "Chromatic Climb", '{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ=="}]}}}'),
+    (-4,0): ("masp005", 3, "minecraft:potion", "Lab Rush", "Dash through the abandoned laboratory and make your way out the twisted corridors.", '{Potion:"minecraft:luck"}'),
     (-3,-1): ("cds28", 0),
     (-3,0): ("anikey_plot", 4, "minecraft:white_glazed_terracotta", "Mirror Travel", "Jumping in a Gothic building, try to go though it!"),
     (-3,1): ("aljaz", 0, "minecraft:player_head", "Snake Madness", "Scale the snakes and escape the maze!", '{SkullOwner:{Id:[I;2098679158,-283884171,-1425129158,-1065654650],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA1MDNiODFhYzAyMGM2N2MzNzc4N2I0NWM5YTI2MjIzZjliYzI2YmNhMjdmODFhZjMyZjJjZjU1ZTI0NDBiNyJ9fX0="}]}}}'),
-    (-3,4): ("zombie1111", 0),
+    (-3,4): ("zombie1111", 0, "minecraft:bricks", "Monster City", "Parkour through the city and fight the monsters!"),
     (-3,5): ("simondmc", 2, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!"),
     (-2,-6): ("eosand", 0),
     (-2,-5): ("ronanemperor", 2, "minecraft:sculk_shrieker", "Warden's Domain", "Parkour through the dangerous underground to reach the Warden's Domain."),
@@ -33,7 +33,7 @@ NAMESPACES = {
     (1,3): ("theswagunicorn", 0, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines."),
     (1,4): ("rex_saltus_neon", 4, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night."),
     (1,5): ("inquognito", 3),
-    (2,-3): ("intjungle", 1),
+    (2,-3): ("intjungle", 1, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?"),
     (2,1): ("subchronos", 3, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits."),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!"),
     (3,-1): ("prisonbreak", 0),
