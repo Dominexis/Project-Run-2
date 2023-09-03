@@ -1,0 +1,1 @@
+tp @s @e[tag=tuntan.spawn,limit=1,tag=pr.target]
