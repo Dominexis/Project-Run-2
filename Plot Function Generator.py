@@ -24,6 +24,7 @@ NAMESPACES = {
     (-2,-1): ("time_stream", 0, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
     (-2,3): ("stabily_time_tower_parkour", 1, "minecraft:ladder", "Time Tower", "Climbing to the future!\n\n§6Stabily Waqular"),
     (-1,-3): ("itspungpond98", 0, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates.\n\n§6ItsPungpond98"),
+    (-1,-2): ("maze_escape", 2),
     (-1,4): ("brosephmc_mc_pr", 0, "minecraft:minecart", "Car Tunnel", "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC"),
     (-1,5): ("funkytoc_moon", 1),
     (0,0): ("cubed", 0, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
