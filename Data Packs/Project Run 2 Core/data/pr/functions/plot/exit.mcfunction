@@ -57,7 +57,7 @@ execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 1 run fun
 #execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 1 run function namespace:exit
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 1 run function namespace:exit
 #execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 1 run function namespace:exit
-#execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 1 run function namespace:exit
+execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 1 run function risely:exit
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run function subchronos:exit
 #execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 1 run function namespace:exit
 #execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 1 run function namespace:exit

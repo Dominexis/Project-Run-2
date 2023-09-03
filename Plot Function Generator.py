@@ -31,6 +31,7 @@ NAMESPACES = {
     (0,-3): ("evilgodloki", 1, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),
     (1,-4): ("klue007", -1),
     (1,-2): ("sliceolife", 0, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!\n\n§6MegaMinerDL & mmmmmaaaaaxxxxx"),
+    (1,1): ("risely", 1),
     (1,3): ("theswagunicorn", 0, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines.\n\n§6_TheSwagUnicorn_ "),
     (1,4): ("rex_saltus_neon", 4, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night.\n\n§6Rex_Saltus & xherax"),
     (1,5): ("inquognito", 3),
