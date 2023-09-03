@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:nametag",
+            "item": "minecraft:name_tag",
             "nbt": "{}"
         },
         "title": [
