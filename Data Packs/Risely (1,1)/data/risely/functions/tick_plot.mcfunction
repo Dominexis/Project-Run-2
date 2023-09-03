@@ -1,7 +1,7 @@
 execute as @a[tag=pr.target] store result score @s risely.item_count run clear @s tripwire_hook 0
 
-execute positioned ~-19 ~16 ~24 if entity @a[distance=..5,tag=pr.target,scores={risely.item_count=1..}] run setblock ~-19 ~14 ~24 minecraft:redstone_torch
-execute positioned ~-19 ~16 ~24 unless entity @a[distance=..5,tag=pr.target,scores={risely.item_count=1..}] run setblock ~-19 ~14 ~24 stone
+execute positioned ~-19 ~16 ~24 if entity @a[distance=..5,tag=pr.target,scores={risely.item_count=1..}] run setblock ~ ~ ~ minecraft:redstone_torch
+execute positioned ~-19 ~16 ~24 unless entity @a[distance=..5,tag=pr.target,scores={risely.item_count=1..}] run setblock ~ ~ ~ stone
 execute positioned ~-19 ~16 ~25 as @a[dx=0,dy=0,dz=0,tag=pr.target] positioned ~ ~ ~-1 unless entity @s[dx=0,dy=0,dz=0] run clear @s minecraft:tripwire_hook
 
 scoreboard players add #chest_reset_timer risely.value 1
