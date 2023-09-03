@@ -1,0 +1,1 @@
+kill @e[type=armor_stand,tag=pr.target,tag=LucumaExitDoor]

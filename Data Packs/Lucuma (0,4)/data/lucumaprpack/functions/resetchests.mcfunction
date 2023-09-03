@@ -1,0 +1,11 @@
+# Coordinates are broken
+
+setblock 65589 13 296 air
+setblock 65589 13 296 chest[facing=east]{Items:[{Slot:2b,id:"minecraft:writable_book",Count:1b,tag:{pages:[""]}},{Slot:7b,id:"minecraft:book",Count:2b},{Slot:10b,id:"minecraft:paper",Count:2b},{Slot:13b,id:"minecraft:string",Count:3b},{Slot:14b,id:"minecraft:book",Count:3b},{Slot:18b,id:"minecraft:string",Count:2b},{Slot:20b,id:"minecraft:paper",Count:1b},{Slot:22b,id:"minecraft:lever",Count:1b},{Slot:25b,id:"minecraft:paper",Count:1b}]} replace
+
+setblock 65576 18 447 air
+setblock 65576 18 447 chest[facing=north]{Items:[{Slot:0b,id:"minecraft:sugar",Count:1b},{Slot:2b,id:"minecraft:sugar",Count:1b},{Slot:3b,id:"minecraft:cookie",Count:1b},{Slot:4b,id:"minecraft:cookie",Count:1b},{Slot:5b,id:"minecraft:cookie",Count:1b},{Slot:6b,id:"minecraft:sugar",Count:1b},{Slot:8b,id:"minecraft:sugar",Count:1b},{Slot:9b,id:"minecraft:cookie",Count:1b},{Slot:10b,id:"minecraft:cookie",Count:1b},{Slot:11b,id:"minecraft:cookie",Count:1b},{Slot:12b,id:"minecraft:cookie",Count:1b},{Slot:13b,id:"minecraft:writable_book",Count:1b,tag:{display:{Name:'{"text":"Munchies"}'},pages:["                                                                                                                                                                        C-=-H-=-O-=-M-=-P"]}},{Slot:14b,id:"minecraft:cookie",Count:1b},{Slot:15b,id:"minecraft:cookie",Count:1b},{Slot:16b,id:"minecraft:cookie",Count:1b},{Slot:17b,id:"minecraft:cookie",Count:1b},{Slot:18b,id:"minecraft:sugar",Count:1b},{Slot:20b,id:"minecraft:sugar",Count:1b},{Slot:21b,id:"minecraft:cookie",Count:1b},{Slot:22b,id:"minecraft:cookie",Count:1b},{Slot:23b,id:"minecraft:cookie",Count:1b},{Slot:24b,id:"minecraft:sugar",Count:1b},{Slot:26b,id:"minecraft:sugar",Count:1b}]} replace
+
+
+setblock 65576 2 456 air
+setblock 65576 2 456 barrel[facing=south]{Items:[{Slot:13b,id:"minecraft:writable_book",Count:1b,tag:{CanPlaceOn:["minecraft:lectern"],display:{Name:'{"text":"Library How-To"}'},pages:["                                                                                                                                                                                      B  O  O  K"]}}]} replace
