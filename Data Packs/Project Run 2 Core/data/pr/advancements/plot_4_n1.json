@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:cobweb",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 4, -1",
+                "text": "Rooftop Adventure",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour across an abandoned city.\n\n§6ed1ska",
                 "color": "green"
             }
         ],

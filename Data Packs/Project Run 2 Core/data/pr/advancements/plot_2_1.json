@@ -13,7 +13,7 @@
         "frame": "task",
         "description": [
             {
-                "text": "Enter the beehive and avoid falling to the honey pits.",
+                "text": "Enter the beehive and avoid falling to the honey pits.\n\n§6SubChronos",
                 "color": "green"
             }
         ],

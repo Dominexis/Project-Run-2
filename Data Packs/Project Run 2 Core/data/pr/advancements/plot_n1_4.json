@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:minecart",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -1, 4",
+                "text": "Car Tunnel",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC",
                 "color": "green"
             }
         ],

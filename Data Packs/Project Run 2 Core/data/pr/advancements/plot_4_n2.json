@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:sculk_sensor",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 4, -2",
+                "text": "Warden Vision",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Let sound guide you out of the darkness.\n\n§6YouKnowWhen",
                 "color": "green"
             }
         ],
