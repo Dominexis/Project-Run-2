@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:nametag",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 1, 1",
+                "text": "Your Ticket Please!",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Exit through the basement or parkour your way out of the abandoned train station.\n\n§6Risely",
                 "color": "green"
             }
         ],
