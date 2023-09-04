@@ -6,7 +6,7 @@ title @a[tag=pr.target] actionbar [{"text":"Points: ","color":"yellow"},{"score"
 effect clear @e[tag=pr.target] levitation
 execute positioned ~-19 ~121 ~-19 run effect give @e[dx=38,dz=38,dy=17,tag=pr.target] levitation infinite 69 true
 execute as @a[tag=pr.target,predicate=tuntan:onred] run function tuntan:tostart
-item replace entity @a[tag=pr.target] weapon.offhand with firework_rocket{Fireworks:{Flight:1b}}
+item replace entity @a[tag=pr.target,tag=tuntan.started] weapon.offhand with firework_rocket{Fireworks:{Flight:1b}}
 kill @e[type=item,tag=pr.target]
 
 
@@ -22,7 +22,7 @@ execute at @e[tag=tuntan.finish,tag=pr.target,tag=!tuntan.teleport] run particle
 
 tag @a[tag=pr.target,tag=!tuntan.temp1] remove tuntan.temp2
 tag @a[tag=pr.target] remove tuntan.temp1
-execute at @e[tag=tuntan.finish0,tag=pr.target] as @a[distance=..3.5,tag=pr.target] run function tuntan:tostart
+execute at @e[tag=tuntan.finish0,tag=pr.target] as @a[distance=..3.5,tag=pr.target] run function tuntan:finish/0
 execute at @e[tag=tuntan.finish1,tag=pr.target] as @a[distance=..3.5,tag=pr.target] run function tuntan:finish/1
 execute at @e[tag=tuntan.finish2,tag=pr.target] as @a[distance=..3.5,tag=pr.target] run function tuntan:finish/2
 execute at @e[tag=tuntan.finish3,tag=pr.target] as @a[distance=..2.5,tag=pr.target] run function tuntan:finish/3

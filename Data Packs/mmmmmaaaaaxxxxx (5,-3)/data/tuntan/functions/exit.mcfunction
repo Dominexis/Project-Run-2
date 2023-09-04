@@ -16,3 +16,6 @@ tag @s remove tuntan.finished8
 tag @s remove tuntan.finished9
 tag @s remove tuntan.finished10
 tag @s remove tuntan.enoughpoints
+tag @s remove tuntan.started
+tag @s remove tuntan.temp1
+tag @s remove tuntan.temp2
