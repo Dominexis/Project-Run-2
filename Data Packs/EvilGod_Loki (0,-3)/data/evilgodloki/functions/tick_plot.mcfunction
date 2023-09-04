@@ -1,6 +1,6 @@
 # This function will run every tick while players are in your plot on the center block at Y=0
 
-
+clear @a[tag=pr.target]
 
 
 execute as @a[tag=!lokicave,tag=pr.target] at @s if block ~ ~-2 ~ orange_wool run playsound ambient.cave player @s ~ ~ ~ 1 1 0

@@ -18,5 +18,5 @@ execute if score goal lokicode matches 2 at @e[tag=lokig4,tag=pr.target] run set
 #execute if score goal lokicode matches 4 at @e[tag=lokig4,tag=pr.target] run setblock ~ ~ ~ redstone_block
 #execute if score goal lokicode matches 5 at @e[tag=lokig5,tag=pr.target] run setblock ~ ~ ~ redstone_block
 execute if score goal lokicode matches 2 run playsound block.beacon.activate block @a[tag=pr.target] ~ ~ ~ 1 1 1
-execute if score goal lokicode matches 2 run tellraw @a[tag=lokitell,tag=pr.target] {"text":"Door is open!","bold":true,"color":"dark_purple"}
-execute if score goal lokicode matches 17 run tellraw @a[tag=lokitell,tag=pr.target] {"text":"You did it! Or you just try all combinations?","bold":true,"color":"aqua"}
+execute if score goal lokicode matches 2 run tellraw @a[tag=pr.target] {"text":"Door is open!","bold":true,"color":"dark_purple"}
+execute if score goal lokicode matches 17 run tellraw @a[tag=pr.target] {"text":"You did it! Or you just try all combinations?","bold":true,"color":"aqua"}
