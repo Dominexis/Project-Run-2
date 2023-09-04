@@ -1,0 +1,1 @@
+scoreboard objectives add rambini.checkpoint dummy

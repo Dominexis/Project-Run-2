@@ -1,0 +1,1 @@
+scoreboard players set @s rambini.checkpoint 0
