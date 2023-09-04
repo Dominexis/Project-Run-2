@@ -62,7 +62,7 @@ tag @a remove pr.spectator
 tag @a[team=pr.spectator] add pr.spectator
 tag @a remove pr.leaderboard_placement
 
-effect give @a[team=pr.spectator,gamemode=spectator] night_vision 2 0 true
+effect give @a[team=pr.spectator,gamemode=spectator] night_vision 5 0 true
 
 
 
