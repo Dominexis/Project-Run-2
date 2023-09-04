@@ -105,6 +105,7 @@ execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 5 run func
 
 # Clear things off of the player
 
+tag @s remove pr.target
 clear @s
 effect clear @s
 experience set @s 0 levels

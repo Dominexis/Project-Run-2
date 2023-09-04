@@ -142,7 +142,8 @@ for coordinate in coordinates:
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "enter.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
         "# Execute enter functions\n\n" +
-        "\n\n\n".join(commands)
+        "\n\n\n".join(commands) +
+        "\n\n\n\ntag @s add pr.target"
     )
 
 
@@ -167,6 +168,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction")
         "# Execute exit functions\n\n" +
         "\n".join(commands) + "\n"*8 +
         "# Clear things off of the player\n\n" +
+        "tag @s remove pr.target\n" +
         "clear @s\n" +
         "effect clear @s\n" +
         "experience set @s 0 levels\n" +
