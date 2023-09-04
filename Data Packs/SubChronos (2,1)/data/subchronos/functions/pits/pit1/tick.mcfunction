@@ -9,7 +9,7 @@ execute if score pit1 subchronos_hive matches 235 run function subchronos:pits/p
 execute if score pit1 subchronos_hive matches 360.. run scoreboard players reset pit1 subchronos_hive
 
 #SFX
-execute if score pit1_moving subchronos_hive matches 1 run playsound minecraft:block.honey_block.slide master @a ~ ~ ~ 1000 1
+execute if score pit1_moving subchronos_hive matches 1 run playsound minecraft:block.honey_block.slide master @a[tag=pr.target] ~ ~ ~ 5 1
 
 #Death if falls
 execute as @a[scores={subchronos_y=51},tag=subchronos_pit1,tag=pr.target] at @a[scores={subchronos_y=51},tag=subchronos_pit1,tag=pr.target] if block ~ ~-1 ~ yellow_concrete run damage @s 1000 minecraft:sting
