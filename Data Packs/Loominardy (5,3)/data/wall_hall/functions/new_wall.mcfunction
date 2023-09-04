@@ -1,4 +1,4 @@
-scoreboard players remove new_wall wall_hall 40
+scoreboard players remove new_wall loom.wall_hall 40
 summon armor_stand ~39 ~-3 ~9 {Invulnerable:1b,Invisible:1b,Tags:["NewWall","WallHall"]}
 summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall1","PossibleWall"]}
 summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall2","PossibleWall"]}
@@ -80,5 +80,5 @@ execute if entity @e[type=marker,tag=Color14,tag=Selected] run fill ~39 ~ ~9 ~39
 execute if entity @e[type=marker,tag=Color15,tag=Selected] run fill ~39 ~ ~9 ~39 ~4 ~23 magenta_concrete replace stone
 execute if entity @e[type=marker,tag=Color16,tag=Selected] run fill ~39 ~ ~9 ~39 ~4 ~23 pink_concrete replace stone
 kill @e[tag=PossibleColor]
-execute as @e[type=armor_stand,tag=NewWall,tag=WallHall] store result score @s wall_hall_prev_x_pos run data get entity @s Pos[0]
+execute as @e[type=armor_stand,tag=NewWall,tag=WallHall] store result score @s loom.wall_hall_prev_x_pos run data get entity @s Pos[0]
 #tag @e[tag=NewWall] remove NewWall
