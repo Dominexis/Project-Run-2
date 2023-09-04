@@ -15,7 +15,7 @@ execute if score #plot pr.value matches 723 run data modify storage pr:data tag.
 # -5, -3
 execute if score #plot pr.value matches 843 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-5, -3 Ending"}'
 # 5, -3
-execute if score #plot pr.value matches 853 run data modify storage pr:data tag.leaderboard_name set value '{"text":"5, -3 Ending"}'
+execute if score #plot pr.value matches 853 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Tunnel Tangle"}'
 # -6, -2
 execute if score #plot pr.value matches 906 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-6, -2 Ending"}'
 # 6, -2

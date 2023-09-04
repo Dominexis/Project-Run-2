@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:elytra",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 5, -3",
+                "text": "Tunnel Tangle",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Fly through tight tunnels to escape the maze!\n\n§6mmmmmaaaaaxxxxx",
                 "color": "green"
             }
         ],
