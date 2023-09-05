@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:spruce_wood",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 1, -4",
+                "text": "Spruce Town",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Complete parkour in a town surrounded by snowy mountains.\n\n§6klue",
                 "color": "green"
             }
         ],
