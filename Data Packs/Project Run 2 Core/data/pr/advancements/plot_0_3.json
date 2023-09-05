@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:rooted_dirt",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 0, 3",
+                "text": "Crack in The World",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini",
                 "color": "green"
             }
         ],

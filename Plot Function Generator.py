@@ -29,7 +29,7 @@ NAMESPACES = {
     (-1,5): ("funkytoc_moon", 1),
     (0,-3): ("evilgodloki", 1, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),
     (0,0): ("cubed", 0, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
-    (0,3): ("rambini", 0),
+    (0,3): ("rambini", 0, "minecraft:rooted_dirt", "Crack in The World", "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini"),
     (1,-4): ("klue007", -1),
     (1,-2): ("sliceolife", 0, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!\n\n§6MegaMinerDL & mmmmmaaaaaxxxxx"),
     (1,1): ("risely", 1, "minecraft:name_tag", "Your Ticket Please!", "Exit through the basement or parkour your way out of the abandoned train station.\n\n§6Risely"),
