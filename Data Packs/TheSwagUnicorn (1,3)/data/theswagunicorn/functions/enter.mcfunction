@@ -1,1 +1,1 @@
-effect give @s[tag=pr.target] resistance infinite 255 true
+effect give @s resistance infinite 255 true
