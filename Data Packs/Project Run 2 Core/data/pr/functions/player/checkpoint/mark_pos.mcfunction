@@ -1,6 +1,7 @@
 # Mark checkpoint
 
 execute unless score @s pr.checkpoint_cooldown matches 1.. run summon marker ~ ~ ~ {Tags:["pr.checkpoint"]}
+execute unless score @s pr.checkpoint_cooldown matches 1.. run teleport @e[type=marker,tag=pr.checkpoint] ~ ~ ~ ~ ~
 execute unless score @s pr.checkpoint_cooldown matches 1.. run data modify storage pr:data tag set from entity @e[type=marker,tag=pr.checkpoint,limit=1] {}
 execute unless score @s pr.checkpoint_cooldown matches 1.. store result score @s pr.temp_checkpoint_x run data get storage pr:data tag.Pos[0]
 execute unless score @s pr.checkpoint_cooldown matches 1.. store result score @s pr.temp_checkpoint_y run data get storage pr:data tag.Pos[1]
