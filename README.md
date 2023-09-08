@@ -67,6 +67,8 @@ Use `/trigger plot` to teleport between the lobby minimap and the plots.
 
 Use `/trigger relative` to get your relative coordinates to the plot's origin.
 
+Use `/trigger night_vision` to toggle spectator night vision.
+
 # Player motion system
 You can apply motion to the player using scoreboards through the player launch functions from the Nexus. This is the closest we have to a true `/motion` command until Mojang actually adds it.
 

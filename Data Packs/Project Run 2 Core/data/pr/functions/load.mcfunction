@@ -31,6 +31,8 @@ scoreboard objectives add pr.stored_invulnerable dummy
 scoreboard objectives add pr.gamemode dummy
 scoreboard objectives add pr.stop_launch_sound dummy
 
+scoreboard objectives add pr.night_vision dummy
+
 scoreboard objectives add pr.uuid_0 dummy
 scoreboard objectives add pr.uuid_1 dummy
 scoreboard objectives add pr.uuid_2 dummy
@@ -43,6 +45,7 @@ scoreboard objectives add checkpoint trigger
 scoreboard objectives add spectate trigger
 scoreboard objectives add plot trigger
 scoreboard objectives add relative trigger
+scoreboard objectives add night_vision trigger
 
 
 

@@ -31,10 +31,14 @@ scoreboard players enable @a warp
 scoreboard players enable @a coords
 scoreboard players enable @a plot
 scoreboard players enable @a relative
+scoreboard players enable @a night_vision
 
 scoreboard players add #global pr.ticks 1
 scoreboard players add @a pr.ticks 1
 execute as @a unless score @s pr.ticks = #global pr.ticks at @s run function pr:player/login
+
+execute as @a unless score @s pr.night_vision = @s pr.night_vision run scoreboard players set @s pr.night_vision 1
+effect give @a[team=pr.spectator,scores={pr.night_vision=1}] night_vision infinite 0 true
 
 execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
 execute as @a[scores={lobby=1..}] run function pr:player/checkpoint/lobby
@@ -44,6 +48,7 @@ execute as @a[scores={warp=1..}] run function pr:player/warp
 execute as @a[scores={coords=1..}] run function pr:player/coords
 execute as @a[scores={plot=1..}] at @s run function pr:player/plot/warp/main
 execute as @a[scores={relative=1..}] at @s run function pr:player/relative
+execute as @a[scores={night_vision=1..}] at @s run function pr:player/night_vision
 
 execute as @a unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
 execute as @a unless score @s pr.id = @s pr.id store result score @s pr.id run scoreboard players add #global pr.id 1
@@ -61,8 +66,6 @@ scoreboard players remove @a[scores={pr.checkpoint_cooldown=1..}] pr.checkpoint_
 tag @a remove pr.spectator
 tag @a[team=pr.spectator] add pr.spectator
 tag @a remove pr.leaderboard_placement
-
-effect give @a[team=pr.spectator,gamemode=spectator] night_vision 5 0 true
 
 
 
