@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:quartz_block",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -4, -3",
+                "text": "Lab Leap",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_",
                 "color": "green"
             }
         ],
