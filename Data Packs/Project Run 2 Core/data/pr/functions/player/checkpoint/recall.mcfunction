@@ -15,7 +15,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -5 run fu
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -4 run function klue007:recall
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -4 run function namespace:recall
 #execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -4 run function namespace:recall
-#execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -3 run function namespace:recall
+execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -3 run function bowshot:recall
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -3 run function xekyt:recall
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -3 run function technodono_plot_-2_-3:recall
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -3 run function itspungpond98:recall

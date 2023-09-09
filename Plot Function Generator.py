@@ -13,6 +13,7 @@ DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 NAMESPACES = {
     (-6,-2): ("andreyhero", 0),
     (-6,2): ("corruptide_city", 0),
+    (-5,-3): ("bowshot", 0),
     (-5,1): ("dtplayers", 0, "minecraft:end_stone", "Space Escape", "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers"),
     (-4,-3): ("xekyt", 0, "minecraft:quartz_block", "Lab Leap", "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_"),
     (-4,-2): ("fuzzbearplush", 0, "minecraft:lime_wool", "Koopa Course", "Jump your way to the flag pole!\n\n§6Fuzzbearplush"),
@@ -95,8 +96,8 @@ for coordinate in coordinates:
         f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_off\n' +
         f'{comment}execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @e[tag=pr.target] remove pr.target\n' +
         f'scoreboard players operation #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value = #plot_player_{coordinate[0]}_{coordinate[1]} pr.value\n' +
-        f'execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 6}.0 -64 {coordinate[1]*96 - 6}.0 run scoreboard players set @a[dx=91,dy=383,dz=91,tag=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
-        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 6}.0 -64 {coordinate[1]*96 - 6}.0 run tag @e[dx=91,dy=383,dz=91,tag=!pr.spectator] add pr.target\n' +
+        f'execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
+        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target\n' +
         f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move\n' +
         f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:tick_plot\n' +
         f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
