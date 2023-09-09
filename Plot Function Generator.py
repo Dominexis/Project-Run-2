@@ -13,6 +13,7 @@ DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 NAMESPACES = {
     (-6,-2): ("andreyhero", 0),
     (-6,2): ("corruptide_city", 0),
+    (-5,1): ("dtplayers", 0),
     (-4,-1): ("warshito", 4, "minecraft:player_head", "Chromatic Climb", "Follow your color, collect the orb, and save the world!\n\n§6Warshito & Jalafito", '{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ=="}]}}}'),
     (-4,2): ("flying_dragon", 1, "minecraft:decorated_pot", "History Unearthed", "Learn about the factory history and discover the magic of nature!\n\n§6FlyingDragon"),
     (-4,0): ("masp005", 3, "minecraft:potion", "Lab Rush", "Dash through the abandoned laboratory and make your way out the twisted corridors.\n\n§6MaSp005", '{Potion:"minecraft:luck"}'),
