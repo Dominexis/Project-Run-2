@@ -1,7 +1,7 @@
 # Set name
 
 # -2, -6
-execute if score #plot pr.value matches 654 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-2, -6 Ending"}'
+execute if score #plot pr.value matches 654 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Pipeline Pandemonium"}'
 # 2, -6
 execute if score #plot pr.value matches 658 run data modify storage pr:data tag.leaderboard_name set value '{"text":"2, -6 Ending"}'
 # -3, -5

@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:end_crystal",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -2, -6",
+                "text": "Pipeline Pandemonium",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.§6\n\nEOSand",
                 "color": "green"
             }
         ],
