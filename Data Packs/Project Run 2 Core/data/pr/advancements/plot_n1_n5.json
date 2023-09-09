@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:purple_concrete_powder",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -1, -5",
+                "text": "Pixels",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox",
                 "color": "green"
             }
         ],
