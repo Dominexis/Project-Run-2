@@ -368,7 +368,7 @@ execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 3 run sco
 execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 3 run scoreboard players set @s pr.checkpoint_side 0
 
 
-#execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 3 run function namespace:enter
+execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 3 run function fabulousfox:enter
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 3 run scoreboard players set @s pr.checkpoint_y 0
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 3 run scoreboard players set @s pr.checkpoint_side 3
 
