@@ -1,1 +1,1 @@
-kill @e[type=!minecraft:player,tag=inquognito,tag=pr.target]
+kill @e[type=!minecraft:player,tag=inquognito]

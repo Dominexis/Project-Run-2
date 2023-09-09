@@ -11,5 +11,3 @@ item modify entity @s armor.head inquognito:suits/mk1
 item modify entity @s armor.chest inquognito:suits/mk1
 item modify entity @s armor.legs inquognito:suits/mk1
 item modify entity @s armor.feet inquognito:suits/mk1
-
-tellraw @s [{"text":"WARNING: Compound has been breached. Emergency lockdown activated.","color":"red"}]

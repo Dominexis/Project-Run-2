@@ -3,7 +3,7 @@
 		"function": "minecraft:set_name",
 		"entity": "this",
 		"name": {
-			"text": "Mk. I Suit",
+			"text": "E.P.S",
 			"color": "white",
 			"bold": false,
 			"italic": false

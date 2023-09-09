@@ -1,3 +1,5 @@
+tag @s add pr.hide_timer
+
 scoreboard players set @s inquognito.suit 3
 
 scoreboard players operation @s inquognito.energy = energy inquognito.values
@@ -15,6 +17,6 @@ item modify entity @s armor.legs inquognito:suits/mk3
 item modify entity @s armor.feet inquognito:suits/mk3
 
 tellraw @s [{"text":"Item acquired: ","color":"yellow"},{"text":"???","color":"light_purple"}]
-tellraw @s [{"text":"Simaris | ","color":"aqua"},{"text":"--e you there? Hunter, I lost contact momentarily. What happened? It appears an unknown substance has merged with your suit. I cannot yet determine the full effects of this.","color":"white"}]
+tellraw @s [{"text":"Incoming Transmission (Unknown Substance) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 7"}}]
 
 playsound minecraft:entity.player.levelup master @s

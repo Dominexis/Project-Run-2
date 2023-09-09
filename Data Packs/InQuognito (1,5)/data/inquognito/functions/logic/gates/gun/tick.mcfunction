@@ -1,3 +1,7 @@
-particle minecraft:dust 1.0 0.0 0.0 2.0 ~ ~ ~ 0.0 1.0 0.0 0.0 25 normal @a[tag=pr.target,scores={inquognito.clearance=0}]
+scoreboard players add @s inquognito.temp 1
+scoreboard players operation #modulo inquognito.temp = @s inquognito.temp
+scoreboard players operation #modulo inquognito.temp %= #3 pr.value
 
-execute align xyz positioned ^ ^-3 ^ as @a[tag=pr.target,scores={inquognito.clearance=0},dy=6] positioned ~0.5 ~ ~ run function inquognito:logic/gates/block
+execute if score #modulo inquognito.temp matches 0 as @a[tag=pr.target,scores={inquognito.floor=0,inquognito.clearance=0}] run function inquognito:logic/gates/gun/particles
+
+execute align xyz positioned ^ ^-3 ^ as @a[tag=pr.target,scores={inquognito.floor=0,inquognito.clearance=0},dy=6] positioned ~0.5 ~ ~ run function inquognito:logic/gates/block

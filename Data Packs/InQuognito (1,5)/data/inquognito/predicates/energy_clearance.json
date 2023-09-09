@@ -1,0 +1,22 @@
+{
+	"condition": "minecraft:all_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_scores",
+			"entity": "this",
+			"scores": {
+				"inquognito.clearance.energy": 0
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"nbt": "{Tags:[\"inquognito.upgrade.energy\"]}"
+				}
+			}
+		}
+	]
+}

@@ -6,4 +6,4 @@ setblock ~28 ~65 ~-26 minecraft:redstone_block
 
 fill ~23 ~66 ~-20 ~25 ~66 ~-20 minecraft:waxed_copper_block
 
-scoreboard players set pistons inquognito.temp 0
+scoreboard players reset pistons inquognito.temp

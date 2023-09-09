@@ -1,4 +1,4 @@
-tellraw @s [{"text":"Simaris | ","color":"aqua"},{"text":"Hunter, I have synthesized a passcode for you. The facility's operator has granted you technician clearance. There appears to have been a barrier in the main room you should now have access to. Check it out at your earliest convenience.","color":"white"}]
+tellraw @s [{"text":"Incoming Transmission (Security Clearance Gained) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 4"}}]
 
 scoreboard players set @s inquognito.clearance 1
 

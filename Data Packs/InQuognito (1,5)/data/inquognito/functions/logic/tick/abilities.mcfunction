@@ -3,3 +3,5 @@ execute if entity @s[tag=inquognito.gun] at @s run function inquognito:logic/abi
 execute if score @s inquognito.suit matches 2.. at @s run function inquognito:logic/abilities/double_jump/check
 
 execute if score @s inquognito.suit matches 3 at @s run function inquognito:logic/abilities/jetpack/tick/always
+
+effect give @s[tag=inquognito.nightVisionScope] minecraft:night_vision infinite 0 true

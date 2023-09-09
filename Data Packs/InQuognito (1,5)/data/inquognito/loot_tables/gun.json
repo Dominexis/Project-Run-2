@@ -12,7 +12,7 @@
 							"function": "minecraft:set_name",
 							"entity": "this",
 							"name": {
-								"text": "Varia Rifle",
+								"text": "Varia Beam",
 								"color": "gold",
 								"bold": true,
 								"italic": false
