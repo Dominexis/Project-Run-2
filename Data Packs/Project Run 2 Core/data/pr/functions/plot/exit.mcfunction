@@ -26,7 +26,7 @@ execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -3 run fun
 execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches -3 run function tuntan:exit
 execute if score @s pr.plot_x matches -6 if score @s pr.plot_z matches -2 run function andreyhero:exit
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -2 run function namespace:exit
-#execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -2 run function namespace:exit
+execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -2 run function fuzzbearplush:exit
 #execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -2 run function namespace:exit
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -2 run function maze_escape:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -2 run function sliceolife:exit
