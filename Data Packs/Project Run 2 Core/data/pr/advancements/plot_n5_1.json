@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:end_stone",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -5, 1",
+                "text": "Space Escape",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers",
                 "color": "green"
             }
         ],

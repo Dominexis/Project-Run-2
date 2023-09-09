@@ -27,7 +27,7 @@ execute if score #plot pr.value matches 981 run data modify storage pr:data tag.
 # -1, 0
 execute if score #plot pr.value matches 1039 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Main"}'
 # -5, 1
-execute if score #plot pr.value matches 1099 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-5, 1 Ending"}'
+execute if score #plot pr.value matches 1099 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Space Escape"}'
 # 5, 1
 execute if score #plot pr.value matches 1109 run data modify storage pr:data tag.leaderboard_name set value '{"text":"5, 1 Ending"}'
 # -6, 2

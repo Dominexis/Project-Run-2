@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:gilded_blackstone",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 1, -1",
+                "text": "Bastion Build-Up",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Traverse your way through the Piglins' impressive construction of a massive beacon using the gold they processed in this factory.\n\n§6_TheSwagUnicorn_",
                 "color": "green"
             }
         ],
