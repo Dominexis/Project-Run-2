@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:decorated_pot",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -4, 2",
+                "text": "History Unearthed",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Learn about the factory history and discover the magic of nature!\n\n§6FlyingDragon",
                 "color": "green"
             }
         ],
