@@ -11,6 +11,10 @@ execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard player
 execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players operation @s pr.temp_checkpoint_yaw *= #90 pr.value
 execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players operation @s pr.temp_checkpoint_yaw %= #360 pr.value
 
+execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players set @s pr.temp_checkpoint_sub_x 500
+execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players set @s pr.temp_checkpoint_sub_y 0
+execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players set @s pr.temp_checkpoint_sub_z 500
+
 execute unless score @s pr.checkpoint_cooldown matches 1.. run tag @s add pr.temp_checkpoint
 
 execute unless score @s pr.checkpoint_cooldown matches 1.. at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~

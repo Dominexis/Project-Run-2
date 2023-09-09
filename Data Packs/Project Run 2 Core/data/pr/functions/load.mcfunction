@@ -16,9 +16,16 @@ scoreboard objectives add pr.checkpoint_cooldown dummy
 scoreboard objectives add pr.temp_checkpoint_x dummy
 scoreboard objectives add pr.temp_checkpoint_y dummy
 scoreboard objectives add pr.temp_checkpoint_z dummy
+scoreboard objectives add pr.temp_checkpoint_sub_x dummy
+scoreboard objectives add pr.temp_checkpoint_sub_y dummy
+scoreboard objectives add pr.temp_checkpoint_sub_z dummy
 scoreboard objectives add pr.temp_checkpoint_yaw dummy
 
 scoreboard objectives add pr.death deathCount
+
+scoreboard objectives add pr.click minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add pr.load_checkpoint_item dummy
+scoreboard objectives add pr.save_checkpoint_item dummy
 
 scoreboard objectives add pr.mot_x dummy
 scoreboard objectives add pr.mot_y dummy

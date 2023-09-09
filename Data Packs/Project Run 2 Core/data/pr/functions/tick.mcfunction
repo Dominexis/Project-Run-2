@@ -40,6 +40,14 @@ execute as @a unless score @s pr.ticks = #global pr.ticks at @s run function pr:
 execute as @a unless score @s pr.night_vision = @s pr.night_vision run scoreboard players set @s pr.night_vision 1
 effect give @a[team=pr.spectator,scores={pr.night_vision=1}] night_vision infinite 0 true
 
+clear @a[tag=!pr.self_checkpoint,scores={pr.load_checkpoint_item=1..}] warped_fungus_on_a_stick{load_checkpoint:1b}
+clear @a[tag=!pr.self_checkpoint,scores={pr.save_checkpoint_item=1..}] warped_fungus_on_a_stick{save_checkpoint:1b}
+scoreboard players set @a[tag=!pr.self_checkpoint,scores={pr.load_checkpoint_item=1..}] pr.load_checkpoint_item 0
+scoreboard players set @a[tag=!pr.self_checkpoint,scores={pr.save_checkpoint_item=1..}] pr.save_checkpoint_item 0
+
+execute as @a[tag=pr.self_checkpoint] at @s run function pr:player/checkpoint/self
+scoreboard players set @a pr.click 0
+
 execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
 execute as @a[scores={lobby=1..}] run function pr:player/checkpoint/lobby
 execute as @a[scores={spectate=1..}] run function pr:player/spectate
@@ -86,3 +94,7 @@ function pr:plot/main
 # Make paintings and item frames invulnerable
 
 execute positioned 0 0 0 as @e[type=#pr:family/hangable,distance=..1000,tag=!pr.invulnerable] run function pr:generic/invulnerable
+
+# Kill checkpoint items
+
+execute as @e[type=item,tag=!pr.item_processed] run function pr:generic/process_item

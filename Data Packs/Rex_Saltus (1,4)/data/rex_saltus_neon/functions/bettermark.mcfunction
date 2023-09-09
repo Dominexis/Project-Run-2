@@ -16,3 +16,7 @@ scoreboard players operation @s pr.temp_checkpoint_yaw %= #360 pr.value
 scoreboard players operation @s pr.temp_checkpoint_yaw *= #90 pr.value
 scoreboard players operation @s pr.temp_checkpoint_yaw /= #90 pr.value
 tag @s add pr.temp_checkpoint
+
+scoreboard players set @s pr.temp_checkpoint_sub_x 500
+scoreboard players set @s pr.temp_checkpoint_sub_y 0
+scoreboard players set @s pr.temp_checkpoint_sub_z 500

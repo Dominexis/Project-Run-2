@@ -2,6 +2,7 @@
 
 tag @s remove pr.hide_timer
 tag @s remove pr.temp_checkpoint
+tag @s remove pr.self_checkpoint
 
 
 
