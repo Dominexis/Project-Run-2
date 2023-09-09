@@ -337,16 +337,16 @@ execute if score #plot_tick_5_-3 pr.value matches 1 run tag @e[tag=pr.target] re
 
 
 execute store result score #plot_player_-6_-2 pr.value positioned -584.0 -64 -200.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
-#execute unless score #plot_player_-6_-2 pr.value = #plot_tick_-6_-2 pr.value positioned -584.0 -64 -200.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute if score #plot_player_-6_-2 pr.value matches 1 if score #plot_tick_-6_-2 pr.value matches 0 positioned -536 0 -152 run function namespace:plot_on
-#execute if score #plot_player_-6_-2 pr.value matches 0 if score #plot_tick_-6_-2 pr.value matches 1 positioned -536 0 -152 run function namespace:plot_off
-#execute unless score #plot_player_-6_-2 pr.value = #plot_tick_-6_-2 pr.value run tag @e[tag=pr.target] remove pr.target
+execute unless score #plot_player_-6_-2 pr.value = #plot_tick_-6_-2 pr.value positioned -584.0 -64 -200.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute if score #plot_player_-6_-2 pr.value matches 1 if score #plot_tick_-6_-2 pr.value matches 0 positioned -536 0 -152 run function andreyhero:plot_on
+execute if score #plot_player_-6_-2 pr.value matches 0 if score #plot_tick_-6_-2 pr.value matches 1 positioned -536 0 -152 run function andreyhero:plot_off
+execute unless score #plot_player_-6_-2 pr.value = #plot_tick_-6_-2 pr.value run tag @e[tag=pr.target] remove pr.target
 scoreboard players operation #plot_tick_-6_-2 pr.value = #plot_player_-6_-2 pr.value
 execute if score #plot_tick_-6_-2 pr.value matches 1 positioned -582.0 -64 -198.0 run scoreboard players set @a[dx=91,dy=383,dz=91,tag=!pr.spectator] pr.plot 906
-#execute if score #plot_tick_-6_-2 pr.value matches 1 positioned -582.0 -64 -198.0 run tag @e[dx=91,dy=383,dz=91,tag=!pr.spectator] add pr.target
-#execute if score #plot_tick_-6_-2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-#execute if score #plot_tick_-6_-2 pr.value matches 1 positioned -536 0 -152 run function namespace:tick_plot
-#execute if score #plot_tick_-6_-2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+execute if score #plot_tick_-6_-2 pr.value matches 1 positioned -582.0 -64 -198.0 run tag @e[dx=91,dy=383,dz=91,tag=!pr.spectator] add pr.target
+execute if score #plot_tick_-6_-2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute if score #plot_tick_-6_-2 pr.value matches 1 positioned -536 0 -152 run function andreyhero:tick_plot
+execute if score #plot_tick_-6_-2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
 
@@ -869,16 +869,16 @@ execute if score #plot_tick_5_1 pr.value matches 1 positioned 474.0 -64 90.0 run
 
 
 execute store result score #plot_player_-6_2 pr.value positioned -584.0 -64 184.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
-#execute unless score #plot_player_-6_2 pr.value = #plot_tick_-6_2 pr.value positioned -584.0 -64 184.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute if score #plot_player_-6_2 pr.value matches 1 if score #plot_tick_-6_2 pr.value matches 0 positioned -536 0 232 run function namespace:plot_on
-#execute if score #plot_player_-6_2 pr.value matches 0 if score #plot_tick_-6_2 pr.value matches 1 positioned -536 0 232 run function namespace:plot_off
-#execute unless score #plot_player_-6_2 pr.value = #plot_tick_-6_2 pr.value run tag @e[tag=pr.target] remove pr.target
+execute unless score #plot_player_-6_2 pr.value = #plot_tick_-6_2 pr.value positioned -584.0 -64 184.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute if score #plot_player_-6_2 pr.value matches 1 if score #plot_tick_-6_2 pr.value matches 0 positioned -536 0 232 run function corruptide_city:plot_on
+execute if score #plot_player_-6_2 pr.value matches 0 if score #plot_tick_-6_2 pr.value matches 1 positioned -536 0 232 run function corruptide_city:plot_off
+execute unless score #plot_player_-6_2 pr.value = #plot_tick_-6_2 pr.value run tag @e[tag=pr.target] remove pr.target
 scoreboard players operation #plot_tick_-6_2 pr.value = #plot_player_-6_2 pr.value
 execute if score #plot_tick_-6_2 pr.value matches 1 positioned -582.0 -64 186.0 run scoreboard players set @a[dx=91,dy=383,dz=91,tag=!pr.spectator] pr.plot 1162
-#execute if score #plot_tick_-6_2 pr.value matches 1 positioned -582.0 -64 186.0 run tag @e[dx=91,dy=383,dz=91,tag=!pr.spectator] add pr.target
-#execute if score #plot_tick_-6_2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-#execute if score #plot_tick_-6_2 pr.value matches 1 positioned -536 0 232 run function namespace:tick_plot
-#execute if score #plot_tick_-6_2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+execute if score #plot_tick_-6_2 pr.value matches 1 positioned -582.0 -64 186.0 run tag @e[dx=91,dy=383,dz=91,tag=!pr.spectator] add pr.target
+execute if score #plot_tick_-6_2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute if score #plot_tick_-6_2 pr.value matches 1 positioned -536 0 232 run function corruptide_city:tick_plot
+execute if score #plot_tick_-6_2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
 

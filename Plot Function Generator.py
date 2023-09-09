@@ -11,6 +11,8 @@ PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 # namespace, y coordinate, icon, name, description
 NAMESPACES = {
+    (-6,-2): ("andreyhero", 0),
+    (-6,2): ("corruptide_city", 0),
     (-4,-1): ("warshito", 4, "minecraft:player_head", "Chromatic Climb", "Follow your color, collect the orb, and save the world!\n\n§6Warshito & Jalafito", '{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ=="}]}}}'),
     (-4,2): ("flying_dragon", 1, "minecraft:decorated_pot", "History Unearthed", "Learn about the factory history and discover the magic of nature!\n\n§6FlyingDragon"),
     (-4,0): ("masp005", 3, "minecraft:potion", "Lab Rush", "Dash through the abandoned laboratory and make your way out the twisted corridors.\n\n§6MaSp005", '{Potion:"minecraft:luck"}'),
@@ -24,9 +26,9 @@ NAMESPACES = {
     (-2,-3): ("technodono_plot_-2_-3", 0),
     (-2,-1): ("time_stream", 0, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
     (-2,3): ("stabily_time_tower_parkour", 1, "minecraft:ladder", "Time Tower", "Climbing to the future!\n\n§6Stabily Waqular"),
-    (-1,-5): ("spinat", 0, "minecraft:purple_concrete_powder", "Pixels", "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox"),
+    (-1,-5): ("spinat", 0, "minecraft:purple_concrete_powder", "25 Pixels", "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox"),
     (-1,-3): ("itspungpond98", 0, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates.\n\n§6ItsPungpond98"),
-    (-1,-2): ("maze_escape", 2),
+    (-1,-2): ("maze_escape", 2, "minecraft:zombie_head", "Maze Escape", "Explore through the maze and search for the exit.\n\n§6Anas099"),
     (-1,4): ("brosephmc_mc_pr", 0, "minecraft:minecart", "Car Tunnel", "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC"),
     (-1,5): ("funkytoc_moon", 1),
     (0,-3): ("evilgodloki", 1, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),

@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:zombie_head",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -1, -2",
+                "text": "Maze Escape",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Explore through the maze and search for the exit.\n\n§6Anas099",
                 "color": "green"
             }
         ],

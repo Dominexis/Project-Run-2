@@ -7,7 +7,7 @@ execute if score #plot pr.value matches 658 run data modify storage pr:data tag.
 # -3, -5
 execute if score #plot pr.value matches 717 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-3, -5 Ending"}'
 # -1, -5
-execute if score #plot pr.value matches 719 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Pixels"}'
+execute if score #plot pr.value matches 719 run data modify storage pr:data tag.leaderboard_name set value '{"text":"25 Pixels"}'
 # 1, -5
 execute if score #plot pr.value matches 721 run data modify storage pr:data tag.leaderboard_name set value '{"text":"1, -5 Ending"}'
 # 3, -5
