@@ -5,6 +5,67 @@
 	},
 	"overrides": [
 		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "cluckshroom_animated_java_rig:item/right_leg"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "cluckshroom_animated_java_rig:item/left_leg2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "animated_java:item/maze_npc/bone3"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "animated_java:item/maze_npc/bone4"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "animated_java:item/maze_npc/bone2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 7
+			},
+			"model": "animated_java:item/maze_npc/bone"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 8
+			},
+			"model": "animated_java:item/maze_npc/head"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 9
+			},
+			"model": "animated_java:item/maze_npc/body"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 10
+			},
+			"model": "animated_java:item/maze_npc/steve"
+		},
+
+		{
 			"predicate": { "custom_model_data": 10051 },
 			"model": "masp005:alarm_light"
 		},

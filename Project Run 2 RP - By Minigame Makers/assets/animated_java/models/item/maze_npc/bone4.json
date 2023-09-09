@@ -1,0 +1,97 @@
+{
+	"textures": {
+		"2": "animated_java:item/maze_npc/anas_npc"
+	},
+	"elements": [
+		{
+			"from": [
+				6.228260000000001,
+				6.53067,
+				-2.36271
+			],
+			"to": [
+				10.22826,
+				10.53067,
+				9.63729
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					8.22826,
+					8.53067,
+					8.63729
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						7,
+						12,
+						6,
+						13
+					],
+					"rotation": 180,
+					"texture": "#2"
+				},
+				"east": {
+					"uv": [
+						4,
+						13,
+						5,
+						16
+					],
+					"rotation": 270,
+					"texture": "#2"
+				},
+				"south": {
+					"uv": [
+						6,
+						13,
+						5,
+						12
+					],
+					"texture": "#2"
+				},
+				"west": {
+					"uv": [
+						6,
+						13,
+						7,
+						16
+					],
+					"rotation": 90,
+					"texture": "#2"
+				},
+				"up": {
+					"uv": [
+						5,
+						13,
+						6,
+						16
+					],
+					"rotation": 180,
+					"texture": "#2"
+				},
+				"down": {
+					"uv": [
+						7,
+						13,
+						8,
+						16
+					],
+					"texture": "#2"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}
