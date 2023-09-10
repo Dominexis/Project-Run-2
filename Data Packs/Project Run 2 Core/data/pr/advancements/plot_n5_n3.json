@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:moss_block",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -5, -3",
+                "text": "Wasteland",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Be careful of the toxic waste!\n\n§6Bowshot",
                 "color": "green"
             }
         ],
