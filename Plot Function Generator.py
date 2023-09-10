@@ -49,6 +49,7 @@ NAMESPACES = {
     (2,-3): ("intjungle", 1, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?\n\n§6Interstellar_1"),
     (2,1): ("subchronos", 3, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits.\n\n§6SubChronos"),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),
+    (3,-5): ("shadoweeq", 0),
     (3,-1): ("prisonbreak", 0),
     (4,-2): ("ykw", 3, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),
     (4,-1): ("rooftop_adventure_ra", 1, "minecraft:cobweb", "Rooftop Adventure", "Parkour across an abandoned city.\n\n§6ed1ska"),
