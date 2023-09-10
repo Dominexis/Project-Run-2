@@ -1,0 +1,81 @@
+{
+    "belt": {
+        "sounds": [
+            {"name": "rko:custom/belt"}
+        ]
+    },
+    "ambient.factory": {
+        "sounds": [
+            {"name": "rko:custom/ambient_factory", "stream": true}
+        ]
+    },
+    "chains": {
+        "sounds": [
+            {"name": "rko:custom/chains", "pitch": 1.0, "weight": 3},
+            {"name": "rko:custom/chains", "pitch": 0.8, "weight": 2},
+            {"name": "rko:custom/chains", "pitch": 1.2, "weight": 1},
+            {"name": "rko:custom/chains", "pitch": 1.1, "weight": 3}
+        ]
+    },
+	"gate.open": {
+        "sounds": [
+            {"name": "rko:custom/gate_open"}
+        ]
+    },
+	"gate.close": {
+        "sounds": [
+            {"name": "rko:custom/gate_close"}
+        ]
+    },
+	"flame": {
+        "sounds": [
+            {"name": "rko:custom/flame"}
+        ]
+    },
+	"fan": {
+        "sounds": [
+            {"name": "rko:custom/fan"}
+        ]
+    },
+	"ambient.pipes": {
+        "sounds": [
+            {"name": "rko:custom/ambient_pipes", "stream": true}
+        ]
+    },
+	"riser": {
+        "sounds": [
+            {"name": "rko:custom/riser"}
+        ]
+    },
+	"water": {
+        "sounds": [
+            {"name": "rko:custom/water"}
+        ]
+    },
+	"wheel": {
+        "sounds": [
+            {"name": "rko:custom/wheel"}
+        ]
+    },
+	"piston.extend": {
+        "sounds": [
+            {"name": "rko:custom/piston_extend"}
+        ]
+    },
+	"piston.contract": {
+        "sounds": [
+            {"name": "rko:custom/piston_contract"}
+        ]
+    },
+	"flame_retract": {
+        "sounds": [
+            {"name": "rko:custom/flame_retract"}
+        ]
+    },
+	"splash": {
+        "sounds": [
+            {"name": "rko:custom/splash", "weight": 1},
+            {"name": "rko:custom/splash2", "weight": 1}
+        ]
+    }
+}

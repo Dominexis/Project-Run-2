@@ -25,8 +25,8 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -5 run sc
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -5 run scoreboard players set @s pr.checkpoint_side 2
 
 
-#execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -5 run function namespace:enter
-execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -5 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -5 run function rko:enter
+execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -5 run scoreboard players set @s pr.checkpoint_y 1
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -5 run scoreboard players set @s pr.checkpoint_side 2
 
 

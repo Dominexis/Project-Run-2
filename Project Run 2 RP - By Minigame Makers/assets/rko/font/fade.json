@@ -1,0 +1,11 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "rko:custom/fade.png",
+			"ascent": 200,
+			"height": 500,
+			"chars": ["\uF100"]
+		}
+	]
+}

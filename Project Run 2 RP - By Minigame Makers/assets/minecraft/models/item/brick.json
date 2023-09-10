@@ -1,0 +1,21 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "minecraft:item/brick"
+ },
+ 
+ "overrides": [
+  {"predicate": {"custom_model_data":721000}, "model": "rko:custom/box"},
+  {"predicate": {"custom_model_data":721001}, "model": "rko:custom/factory_gear"},
+  {"predicate": {"custom_model_data":721002}, "model": "rko:custom/factory_fan"},
+  {"predicate": {"custom_model_data":721003}, "model": "rko:custom/factory_hook"},
+  {"predicate": {"custom_model_data":721004}, "model": "rko:custom/box/1"},
+  {"predicate": {"custom_model_data":721005}, "model": "rko:custom/box/2"},
+  {"predicate": {"custom_model_data":721006}, "model": "rko:custom/box/3"},
+  {"predicate": {"custom_model_data":721007}, "model": "rko:custom/box/4"},
+  {"predicate": {"custom_model_data":721008}, "model": "rko:custom/box/5"},
+  {"predicate": {"custom_model_data":721009}, "model": "rko:custom/box/6"},
+  {"predicate": {"custom_model_data":721010}, "model": "rko:custom/fire"},
+  {"predicate": {"custom_model_data":721011}, "model": "rko:custom/gear_texture"}
+ ]
+}
