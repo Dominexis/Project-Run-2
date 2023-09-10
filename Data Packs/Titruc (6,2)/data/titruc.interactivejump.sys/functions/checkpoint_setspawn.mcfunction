@@ -1,0 +1,1 @@
+execute positioned ~ ~ ~ run function pr:player/checkpoint/mark
