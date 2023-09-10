@@ -1,0 +1,1 @@
+execute at @p run kill @e[tag=afterjump,sort=nearest,limit=1]
