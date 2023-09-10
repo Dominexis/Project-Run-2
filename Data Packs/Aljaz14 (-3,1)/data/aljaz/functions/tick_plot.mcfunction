@@ -2,7 +2,7 @@
 #execute positioned 65288 0 136 run function pr:aljaz14/tick
 execute as @a[tag=pr.target] at @s if block ~ ~-0.03 ~ cobweb run kill @s
 execute as @a[tag=pr.target] at @s if block ~ ~-0.03 ~ honey_block run kill @s
-execute as @a[tag=pr.target] at @s if block ~ ~ ~ structure_void run kill @s
+execute positioned ~-40 -64 ~-40 as @a[tag=pr.target,dx=80,dy=32,dz=80] at @s if block ~ ~ ~ structure_void run kill @s
 execute as @a[tag=pr.target,y=-60,dy=12] at @s run kill @s
 
 function aljaz:aljaz14/tp/tick
