@@ -24,6 +24,7 @@ NAMESPACES = {
     (-3,-1): ("cds28", 0),
     (-3,0): ("anikey_plot", 4, "minecraft:white_glazed_terracotta", "Mirror Travel", "Jumping in a Gothic building, try to go though it!\n\n§6Anikey_Chang"),
     (-3,1): ("aljaz", 0, "minecraft:player_head", "Snake Madness", "Scale the snakes and escape the maze!\n\n§6Aljaz14", '{SkullOwner:{Id:[I;2098679158,-283884171,-1425129158,-1065654650],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA1MDNiODFhYzAyMGM2N2MzNzc4N2I0NWM5YTI2MjIzZjliYzI2YmNhMjdmODFhZjMyZjJjZjU1ZTI0NDBiNyJ9fX0="}]}}}'),
+    (-3,2): ("boss586", 3),
     (-3,4): ("zombie1111", 0, "minecraft:bricks", "Monster City", "Parkour through the city and fight the monsters!\n\n§6Zombie1111 & _Elton"),
     (-3,5): ("simondmc", 2, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!\n\n§6SimonDMC & EurekaX"),
     (-2,-6): ("eosand", 0, "minecraft:end_crystal", "Pipeline Pandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.§6\n\nEOSand"),

@@ -65,7 +65,7 @@ execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run func
 execute if score @s pr.plot_x matches -6 if score @s pr.plot_z matches 2 run function corruptide_city:exit
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 2 run function namespace:exit
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 2 run function flying_dragon:exit
-#execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 2 run function namespace:exit
+execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 2 run function boss586:exit
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 2 run function namespace:exit
 #execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 2 run function namespace:exit
 #execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 2 run function namespace:exit
