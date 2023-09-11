@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:oxidized_copper",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -1, -4",
+                "text": "Stellar Adventure",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Leap through outer space from world to world!\n\n§6kirnt2027 & Minigame Makers",
                 "color": "green"
             }
         ],

@@ -50,8 +50,8 @@ execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -4 run sc
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -4 run scoreboard players set @s pr.checkpoint_side 2
 
 
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -4 run function namespace:enter
-execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -4 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -4 run function kirnt:enter
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -4 run scoreboard players set @s pr.checkpoint_y 1
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -4 run scoreboard players set @s pr.checkpoint_side 0
 
 
