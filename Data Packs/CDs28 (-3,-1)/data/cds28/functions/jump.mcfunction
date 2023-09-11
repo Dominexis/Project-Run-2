@@ -1,9 +1,7 @@
-#summon a negative radius creeper 67 blocks under the bumper block (empty space) and teleports the player 67 blocks under to catch the impulse from the explosion (next part executed in function rejump)
-# summon minecraft:creeper ~ ~-67 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:-1b,Fuse:0s,PersistenceRequired:1b,Tags:["pr.target"]}
-summon minecraft:creeper ~ ~-67 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0s,PersistenceRequired:1b,Tags:["pr.target"]}
-summon minecraft:creeper ~ ~-67 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0s,PersistenceRequired:1b,Tags:["pr.target"]}
-summon minecraft:creeper ~ ~-67 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0s,PersistenceRequired:1b,Tags:["pr.target"]}
-tag @s add jumping
+#summon two creepers (1 and 2 radius) 1 block above the bumper block and teleports the player 1 block above to catch the impulse from the explosion, avoiding the obstacle of the block
+execute at @s run tp @s ~ ~1 ~
+summon minecraft:creeper ~ ~1 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:1b,Fuse:0s,PersistenceRequired:1b}
+summon minecraft:creeper ~ ~1 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0s,PersistenceRequired:1b}
 scoreboard players add @s timerCDs 12
-playsound minecraft:entity.firework_rocket.blast block @a[tag=pr.target] ~ ~ ~ 10 0.8
-execute at @s run tp @s ~ ~-67 ~
+playsound minecraft:entity.firework_rocket.launch ambient @a ~ ~ ~ 1 1.2
+particle minecraft:end_rod ~ ~0.5 ~ 0 0 0 0.3 100 force
