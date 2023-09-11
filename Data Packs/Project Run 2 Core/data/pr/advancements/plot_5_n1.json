@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:calcite",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 5, -1",
+                "text": "The Maze of The Sky",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos",
                 "color": "green"
             }
         ],
