@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:spruce_log",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 3, 1",
+                "text": "Mountain View",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Keep your momentum on the ice!\n\n§6BlackCB & Dominexis",
                 "color": "green"
             }
         ],

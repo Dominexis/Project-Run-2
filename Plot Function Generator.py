@@ -56,6 +56,7 @@ NAMESPACES = {
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),
     (3,-5): ("shadoweeq", 0, "minecraft:player_head", "Skyreach Mega Tower", "Explore changing city scenes as you make your way up to reach the top of the tower.\n\n§6shadoweeq", '{SkullOwner:{Id:[I;1543298721,250171001,-2086573174,-871347001],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY2YmIzYWQ4ZGFmMGMxNDk5YjVlNDZkY2Y0MTc2YzgzNDU0MzU1M2ExYTgxODAwOWU3Njc1ZTg5NjI5NWUxYSJ9fX0="}]}}}'),
     (3,-1): ("prisonbreak", 0),
+    (3,1): ("blackcb", 1, "minecraft:spruce_log", "Mountain View", "Keep your momentum on the ice!\n\n§6BlackCB & Dominexis"),
     (4,-2): ("ykw", 3, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),
     (4,-1): ("rooftop_adventure_ra", 1, "minecraft:cobweb", "Rooftop Adventure", "Parkour across an abandoned city.\n\n§6ed1ska"),
     (4,0): ("cygnus_switch_palace", 0, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.\n\n§6Cygnus"),
