@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:clock",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -2, 5",
+                "text": "Factory Frenzy",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Don't fall off, you're sure to get lost. Follow the carpets if you're ever uncertain.\n\n§6CaptainArgus",
                 "color": "green"
             }
         ],

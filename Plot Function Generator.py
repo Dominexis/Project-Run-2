@@ -32,6 +32,7 @@ NAMESPACES = {
     (-2,-3): ("technodono_plot_-2_-3", 0),
     (-2,-1): ("time_stream", 0, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
     (-2,3): ("stabily_time_tower_parkour", 1, "minecraft:ladder", "Time Tower", "Climbing to the future!\n\n§6Stabily Waqular"),
+    (-2,5): ("captainargus", 3, "minecraft:clock", "Factory Frenzy", "Don't fall off, you're sure to get lost. Follow the carpets if you're ever uncertain.\n\n§6CaptainArgus"),
     (-1,-5): ("spinat", 0, "minecraft:purple_concrete_powder", "25 Pixels", "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox"),
     (-1,-3): ("itspungpond98", 0, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates.\n\n§6ItsPungpond98"),
     (-1,-2): ("maze_escape", 2, "minecraft:zombie_head", "Maze Escape", "Explore through the maze and search for the exit.\n\n§6Anas099"),
