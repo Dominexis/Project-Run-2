@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "brown_stained_glass_pane",
 	"textures": {
 		"0": "zombie1111:custom/gray",
 		"2": "zombie1111:custom/black",

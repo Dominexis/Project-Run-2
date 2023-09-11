@@ -37,7 +37,9 @@ function pr:player/title
 
 tag @s[team=!pr.spectator] remove pr.temp_checkpoint
 execute if entity @s[team=!pr.spectator] run function pr:player/checkpoint/send_to
-execute if entity @s[team=!pr.spectator] run function pr:player/plot/move
+execute if entity @s[team=!pr.spectator] run scoreboard players set @s pr.plot 1041
+execute if entity @s[team=!pr.spectator] run scoreboard players operation @s pr.plot_previous = @s pr.plot
+execute if entity @s[team=!pr.spectator] run function pr:player/plot/coords_from_id
 
 
 

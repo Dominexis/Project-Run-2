@@ -75,7 +75,7 @@ execute if score @s pr.plot_x matches 6 if score @s pr.plot_z matches 2 run func
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 3 run function namespace:exit
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 3 run function fabulousfox:exit
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 3 run function stabily_time_tower_parkour:exit
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 3 run function namespace:exit
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 3 run function woutbelt:exit
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 3 run function rambini:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 3 run function theswagunicorn:exit
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 3 run function eli_marie:exit

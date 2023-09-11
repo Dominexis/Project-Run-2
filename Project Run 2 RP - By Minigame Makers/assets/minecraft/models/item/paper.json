@@ -1,0 +1,10 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/paper"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":121001},"model": "woutbelt:woutbelt/red_flag"},
+		{"predicate": {"custom_model_data":121002},"model": "woutbelt:woutbelt/blue_flag"}
+	]
+}

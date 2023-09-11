@@ -8,6 +8,14 @@
             "type": "directory",
             "source": "custom",
             "prefix": "custom/"
+        },
+	{
+            "type": "single",
+            "resource": "woutbelt:model/woutbelt/flag"
+        },
+        {
+            "type": "single",
+            "resource": "woutbelt:model/woutbelt/beam"
         }
     ]
 }

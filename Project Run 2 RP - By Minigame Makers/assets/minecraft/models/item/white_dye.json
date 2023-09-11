@@ -12,18 +12,6 @@
 		},
 		{
 			"predicate": {
-				"custom_model_data": 2
-			},
-			"model": "cluckshroom_animated_java_rig:item/right_leg"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 3
-			},
-			"model": "cluckshroom_animated_java_rig:item/left_leg2"
-		},
-		{
-			"predicate": {
 				"custom_model_data": 4
 			},
 			"model": "animated_java:item/maze_npc/bone3"

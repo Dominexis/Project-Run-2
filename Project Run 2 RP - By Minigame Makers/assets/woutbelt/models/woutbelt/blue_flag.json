@@ -1,0 +1,54 @@
+{
+	"credit": "Wouter",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "woutbelt:model/woutbelt/flag",
+		"1": "woutbelt:model/woutbelt/beam",
+		"particle": "woutbelt:model/woutbelt/flag"
+	},
+	"elements": [
+		{
+			"from": [5, 19, 0],
+			"to": [12, 26, 2],
+			"faces": {
+				"north": {"uv": [0, 0, 7, 7], "texture": "#1"},
+				"east": {"uv": [0, 0, 2, 7], "texture": "#1"},
+				"south": {"uv": [0, 0, 7, 7], "texture": "#1"},
+				"west": {"uv": [0, 0, 2, 7], "texture": "#1"},
+				"up": {"uv": [0, 0, 7, 2], "texture": "#1"},
+				"down": {"uv": [0, 0, 7, 2], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8, 22, 2],
+			"to": [9, 23, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#1"},
+				"east": {"uv": [0, 0, 14, 1], "texture": "#1"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#1"},
+				"west": {"uv": [0, 0, 14, 1], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 14], "texture": "#1"},
+				"down": {"uv": [0, 0, 1, 14], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.5, 0, 3],
+			"to": [8.5, 23, 15],
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"east": {"uv": [5.25, 0, 10.5, 10.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"west": {"uv": [5.25, 0, 10.5, 10.5], "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 12], "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 12], "texture": "#missing"}
+			}
+		}
+	],
+	"display": {
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"translation": [1.75, -50, -18.5],
+			"scale": [3.45, 3.45, 3]
+		}
+	}
+}

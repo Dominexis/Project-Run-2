@@ -1,0 +1,32 @@
+{
+	"providers": [
+	{
+		"type": "bitmap",
+		"file": "woutbelt:titles/portal_blue.png",
+		"ascent": 8,
+		"height": 350,
+		"chars": ["❋"]
+	},
+	{
+		"type": "bitmap",
+		"file": "woutbelt:titles/portal_red.png",
+		"ascent": 8,
+		"height": 350,
+		"chars": ["❤"]
+	},
+	{
+		"type": "bitmap",
+		"file": "woutbelt:titles/portal_red.png",
+		"ascent": 8,
+		"height": 25,
+		"chars": ["✷"]
+	},
+	{
+		"type": "bitmap",
+		"file": "woutbelt:titles/portal_blue.png",
+		"ascent": 8,
+		"height": 25,
+		"chars": ["ᕯ"]
+	}]
+
+}
