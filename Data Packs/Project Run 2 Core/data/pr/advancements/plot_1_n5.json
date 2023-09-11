@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
-            "nbt": "{}"
+            "item": "minecraft:brick",
+            "nbt": "{CustomModelData:721011}"
         },
         "title": [
             {
-                "text": "Section 1, -5",
+                "text": "RKO Factory",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour your way through a vast and old factory on moving machinery and conquer the challenge awaiting you.\n\n§6Rajdi & Kassar & Owca",
                 "color": "green"
             }
         ],

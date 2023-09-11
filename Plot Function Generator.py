@@ -42,7 +42,7 @@ NAMESPACES = {
     (0,-3): ("evilgodloki", 1, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),
     (0,0): ("cubed", 0, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
     (0,3): ("rambini", 0, "minecraft:rooted_dirt", "Crack in The World", "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini"),
-    (1,-5): ("rko", 1),
+    (1,-5): ("rko", 1, "minecraft:brick", "RKO Factory", "Parkour your way through a vast and old factory on moving machinery and conquer the challenge awaiting you.\n\n§6Rajdi & Kassar & Owca", "{CustomModelData:721011}"),
     (1,-4): ("klue007", -1, "minecraft:spruce_wood", "Spruce Town", "Complete parkour in a town surrounded by snowy mountains.\n\n§6klue"),
     (1,-2): ("sliceolife", 0, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!\n\n§6MegaMinerDL & mmmmmaaaaaxxxxx"),
     (1,-1): ("theswagunicorn2", 0, "minecraft:gilded_blackstone", "Bastion Build-Up", "Traverse your way through the Piglins' impressive construction of a massive beacon using the gold they processed in this factory.\n\n§6_TheSwagUnicorn_"),

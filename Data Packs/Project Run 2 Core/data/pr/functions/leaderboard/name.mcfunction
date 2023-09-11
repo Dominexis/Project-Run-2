@@ -9,7 +9,7 @@ execute if score #plot pr.value matches 717 run data modify storage pr:data tag.
 # -1, -5
 execute if score #plot pr.value matches 719 run data modify storage pr:data tag.leaderboard_name set value '{"text":"25 Pixels"}'
 # 1, -5
-execute if score #plot pr.value matches 721 run data modify storage pr:data tag.leaderboard_name set value '{"text":"1, -5 Ending"}'
+execute if score #plot pr.value matches 721 run data modify storage pr:data tag.leaderboard_name set value '{"text":"RKO Factory"}'
 # 3, -5
 execute if score #plot pr.value matches 723 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Skyreach Mega Tower"}'
 # -5, -3
