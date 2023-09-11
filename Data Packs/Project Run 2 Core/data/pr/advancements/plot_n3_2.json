@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:amethyst_block",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -3, 2",
+                "text": "Mystical House",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour your way through a mysterious mystical cave under a house.\n\n§6Boss586 & mmmmmaaaaaxxxxx",
                 "color": "green"
             }
         ],

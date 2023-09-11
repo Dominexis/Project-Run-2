@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:reinforced_deepslate",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -4, 3",
+                "text": "Cavern Shift",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "A treacherous cave parkour map! Jump from moving platforms to floating obstacles and navigate through the dark depths.\n\n§6FabulousFox",
                 "color": "green"
             }
         ],

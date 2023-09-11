@@ -18,43 +18,43 @@ scoreboard objectives add fabulousfox_platform_dir dummy
 scoreboard players set x fabulousfox_spawn_args 0
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 4
-execute positioned ~-12 ~2 ~-1 run function fabulousfox:spawn/platform2x2
+execute positioned ~-12 ~2 ~-1 positioned ~ ~ ~1 run function fabulousfox:spawn/platform2x2
 
 # Lower 2
 scoreboard players set x fabulousfox_spawn_args -8
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 0
-execute positioned ~-6 ~5 ~17 run function fabulousfox:spawn/platform2x2
+execute positioned ~-6 ~5 ~17 positioned ~ ~ ~1 run function fabulousfox:spawn/platform2x2
 
 # Lower 3
 scoreboard players set x fabulousfox_spawn_args 8
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 0
-execute positioned ~10 ~13 ~-17 run function fabulousfox:spawn/platform2x2
+execute positioned ~10 ~13 ~-17 positioned ~ ~ ~1 run function fabulousfox:spawn/platform2x2
 
 # Lower 4
 scoreboard players set x fabulousfox_spawn_args 4
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 0
-execute positioned ~18 ~20 ~0 run function fabulousfox:spawn/platform2x2
+execute positioned ~18 ~20 ~0 positioned ~ ~ ~1 run function fabulousfox:spawn/platform2x2
 
 # Upper 1
 scoreboard players set x fabulousfox_spawn_args 4
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 0
-execute positioned ~-2 ~28 ~-3 run function fabulousfox:spawn/platform2x2
+execute positioned ~-2 ~28 ~-3 positioned ~ ~ ~1 run function fabulousfox:spawn/platform2x2
 
 # Upper 2
 scoreboard players set x fabulousfox_spawn_args 0
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 1
-execute positioned ~-4 ~29 ~1 run function fabulousfox:spawn/platform2x2
+execute positioned ~-4 ~29 ~1 positioned ~ ~ ~1 run function fabulousfox:spawn/platform2x2
 
 # Upper 3
 scoreboard players set x fabulousfox_spawn_args 4
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 0
-execute positioned ~-7 ~29 ~5 run function fabulousfox:spawn/platform2x2
+execute positioned ~-7 ~29 ~5 positioned ~ ~ ~1 run function fabulousfox:spawn/platform2x2
 
 # Top 1
 scoreboard players set x fabulousfox_spawn_args -7
@@ -66,4 +66,4 @@ execute positioned ~-20 ~30 ~-1 run function fabulousfox:spawn/platform1x1
 scoreboard players set x fabulousfox_spawn_args 7
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 0
-execute positioned ~-21 ~30 ~-1 run function fabulousfox:spawn/platform1x1
+execute positioned ~-21 ~30 ~-1 positioned ~ ~ ~1 run function fabulousfox:spawn/platform1x1
