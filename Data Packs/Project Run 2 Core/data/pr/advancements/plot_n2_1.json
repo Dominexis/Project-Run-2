@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:feather",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -2, 1",
+                "text": "Flappy Fowl",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "2014 was a great year!\n\n§6_TheSwagUnicorn_",
                 "color": "green"
             }
         ],

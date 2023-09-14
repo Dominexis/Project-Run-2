@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:gold_ore",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 3, -4",
+                "text": "Mine Skyisland",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "There were many people who came for the treasure, and now it's empty.\n\n§6mc_Kevin_Creeper",
                 "color": "green"
             }
         ],
