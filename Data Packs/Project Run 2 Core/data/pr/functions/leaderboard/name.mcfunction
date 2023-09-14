@@ -49,4 +49,4 @@ execute if score #plot pr.value matches 1363 run data modify storage pr:data tag
 # -2, 6
 execute if score #plot pr.value matches 1422 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-2, 6 Ending"}'
 # 2, 6
-execute if score #plot pr.value matches 1426 run data modify storage pr:data tag.leaderboard_name set value '{"text":"2, 6 Ending"}'
+execute if score #plot pr.value matches 1426 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Blast Burner"}'

@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:blast_furnace",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 2, 6",
+                "text": "Blast Burner",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Phew! Sure is hot in here!\n\n§6Lifeely & Dominexis",
                 "color": "green"
             }
         ],

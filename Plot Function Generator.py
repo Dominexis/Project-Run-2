@@ -56,6 +56,7 @@ NAMESPACES = {
     (2,-3): ("intjungle", 1, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?\n\n§6Interstellar_1"),
     (2,1): ("subchronos", 3, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits.\n\n§6SubChronos"),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),
+    (2,6): ("lifeely", 0, "minecraft:blast_furnace", "Blast Burner", "Phew! Sure is hot in here!\n\n§6Lifeely & Dominexis"),
     (3,-5): ("shadoweeq", 0, "minecraft:player_head", "Skyreach Mega Tower", "Explore changing city scenes as you make your way up to reach the top of the tower.\n\n§6shadoweeq", '{SkullOwner:{Id:[I;1543298721,250171001,-2086573174,-871347001],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY2YmIzYWQ4ZGFmMGMxNDk5YjVlNDZkY2Y0MTc2YzgzNDU0MzU1M2ExYTgxODAwOWU3Njc1ZTg5NjI5NWUxYSJ9fX0="}]}}}'),
     (3,-4): ("kevinc", 0),
     (3,-1): ("prisonbreak", 0),

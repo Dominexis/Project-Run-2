@@ -479,7 +479,7 @@ execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 6 run sco
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 6 run scoreboard players set @s pr.checkpoint_side 3
 
 
-#execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run function namespace:enter
+execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run function lifeely:enter
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run scoreboard players set @s pr.checkpoint_y 0
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run scoreboard players set @s pr.checkpoint_side 3
 

@@ -1,0 +1,5 @@
+kill @e[type=marker,tag=pr.target]
+kill @e[type=arrow,tag=pr.target]
+kill @e[type=villager,tag=pr.target]
+kill @e[type=minecart,tag=pr.target]
+kill @e[type=item,tag=pr.target]
