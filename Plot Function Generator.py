@@ -41,6 +41,7 @@ NAMESPACES = {
     (-1,3): ("woutbelt", 0),
     (-1,4): ("brosephmc_mc_pr", 0, "minecraft:minecart", "Car Tunnel", "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC"),
     (-1,5): ("funkytoc_moon", 1),
+    (0,-4): ("sparkour", 0),
     (0,-3): ("evilgodloki", 1, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),
     (0,0): ("cubed", 0, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
     (0,3): ("rambini", 0, "minecraft:rooted_dirt", "Crack in The World", "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini"),
