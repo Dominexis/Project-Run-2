@@ -52,6 +52,7 @@ NAMESPACES = {
     (1,3): ("theswagunicorn", 0, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines.\n\n§6_TheSwagUnicorn_"),
     (1,4): ("rex_saltus_neon", 4, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night.\n\n§6Rex_Saltus & xherax"),
     (1,5): ("inquognito", 3),
+    (2,-5): ("decimate", 0, "minecraft:chest", "The Skyblock Experience", "Say hi to Jerry on the way!\n\n§6DecimateJSY97a & _TheSwagUnicorn_ & Masp005 & JPMagic"),
     (2,-3): ("intjungle", 1, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?\n\n§6Interstellar_1"),
     (2,1): ("subchronos", 3, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits.\n\n§6SubChronos"),
     (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),

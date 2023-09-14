@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:chest",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 2, -5",
+                "text": "The Skyblock Experience",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Say hi to Jerry on the way!\n\n§6DecimateJSY97a & _TheSwagUnicorn_ & Masp005 & JPMagic",
                 "color": "green"
             }
         ],
