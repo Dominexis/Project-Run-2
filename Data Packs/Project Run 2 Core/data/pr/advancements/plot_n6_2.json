@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:black_glazed_terracotta",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -6, 2",
+                "text": "Corruptide City",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n§6CoreOptd",
                 "color": "green"
             }
         ],

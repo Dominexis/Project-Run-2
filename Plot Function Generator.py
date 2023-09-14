@@ -12,7 +12,7 @@ DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 # namespace, y coordinate, icon, name, description
 NAMESPACES = {
     (-6,-2): ("andreyhero", 0),
-    (-6,2): ("corruptide_city", 0),
+    (-6,2): ("corruptide_city", 0, "minecraft:black_glazed_terracotta", "Corruptide City", "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n§6CoreOptd"),
     (-5,-3): ("bowshot", 0, "minecraft:moss_block", "Wasteland", "Be careful of the toxic waste!\n\n§6Bowshot"),
     (-5,1): ("dtplayers", 0, "minecraft:end_stone", "Space Escape", "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers"),
     (-4,-3): ("xekyt", 0, "minecraft:quartz_block", "Lab Leap", "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_"),
