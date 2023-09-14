@@ -1,0 +1,13 @@
+[
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "spider"
+      }
+    },
+    {
+      "condition": "minecraft:killed_by_player"
+    }
+  ]
+  
