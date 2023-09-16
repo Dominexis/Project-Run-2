@@ -26,7 +26,7 @@ function pr:plot/exit
 scoreboard players operation @s pr.plot_previous = @s pr.plot
 function pr:player/plot/coords_from_id
 
-execute at @s align xyz run spawnpoint @s ~0.5 ~1 ~0.5 ~
+execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
 
 
 

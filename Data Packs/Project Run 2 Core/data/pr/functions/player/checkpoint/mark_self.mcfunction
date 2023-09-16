@@ -8,7 +8,7 @@ execute store result score @s pr.temp_checkpoint_yaw run data get storage pr:dat
 
 tag @s add pr.temp_checkpoint
 
-execute at @s align xyz run spawnpoint @s ~0.5 ~1 ~0.5 ~
+execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
 scoreboard players set @s pr.checkpoint_cooldown 20
 
 scoreboard players operation @s pr.temp_checkpoint_sub_x = @s pr.temp_checkpoint_x

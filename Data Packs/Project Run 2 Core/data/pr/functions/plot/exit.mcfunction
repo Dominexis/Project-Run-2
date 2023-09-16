@@ -66,8 +66,8 @@ execute if score @s pr.plot_x matches -6 if score @s pr.plot_z matches 2 run fun
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 2 run function namespace:exit
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 2 run function flying_dragon:exit
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 2 run function boss586:exit
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 2 run function namespace:exit
-#execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 2 run function namespace:exit
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 2 run function applecake:exit
+execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 2 run function minerman:exit
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 2 run function im1294:exit
 #execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 2 run function namespace:exit
 #execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 2 run function namespace:exit

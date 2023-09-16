@@ -1,0 +1,1 @@
+scoreboard objectives add painting_parkour dummy
