@@ -110,6 +110,7 @@ clear @s
 effect clear @s
 experience set @s 0 levels
 experience set @s 0 points
+attribute @s minecraft:generic.max_health base set 20.0
 
 
 

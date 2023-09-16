@@ -150,18 +150,6 @@ scoreboard players operation #lcg pr.value = #output pr.value
 
 
 
-# Add teams
-
-team add pr.no_collision
-team modify pr.no_collision collisionRule never
-team modify pr.no_collision seeFriendlyInvisibles false
-
-
-
-
-
-
-
 # Initialize world border timer
 
 scoreboard players add #world_border_reset_timer pr.value 0
@@ -189,6 +177,10 @@ team modify pr.spectator displayName {"text":"Spectator","color":"gray"}
 team modify pr.spectator color gray
 team modify pr.spectator friendlyFire false
 team modify pr.spectator collisionRule never
+
+team add pr.no_collision
+team modify pr.no_collision collisionRule never
+team modify pr.no_collision seeFriendlyInvisibles false
 
 
 

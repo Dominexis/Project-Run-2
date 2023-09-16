@@ -45,7 +45,7 @@ execute positioned ~-25 ~0 ~-19 as @a[tag=pr.target,distance=..2] at @s run func
 execute as @e[type=marker,tag=lifeely.minecart,tag=pr.target] at @s run function lifeely:minecart
 execute as @e[type=minecart,tag=pr.target] at @s if block ~ ~ ~ powered_rail run data merge entity @s {Motion:[0.0d,0.0d,0.5d]}
 execute as @e[type=minecart,tag=pr.target] at @s if block ~ ~-0.1 ~ slime_block run data merge entity @s {Motion:[0.0d,0.6d,0.6d]}
-execute as @e[type=minecart,tag=pr.target] at @s run tag @a[tag=pr.target,tag=!lifeely.mount,distance=..0.9] add lifeely.minecart_lock
+execute as @e[type=minecart,tag=pr.target] at @s positioned ~ ~ ~0.3 run tag @a[tag=pr.target,tag=!lifeely.mount,distance=..0.7] add lifeely.minecart_lock
 
 execute as @a[tag=pr.target,tag=!lifeely.mount,tag=lifeely.minecart_lock] at @s run ride @s mount @e[type=minecart,tag=pr.target,distance=..3,sort=nearest,limit=1]
 
@@ -59,6 +59,8 @@ execute as @a[tag=pr.target] at @s if block ~ ~-0.1 ~ light_blue_wool run effect
 execute as @a[tag=pr.target,tag=!lifeely.speed_sound] at @s if block ~ ~-0.1 ~ light_blue_wool run playsound minecraft:entity.wither.shoot master @a
 execute as @a[tag=pr.target,tag=!lifeely.speed_sound] at @s if block ~ ~-0.1 ~ light_blue_wool run tag @s add lifeely.speed_sound
 execute as @a[tag=pr.target,tag=lifeely.speed_sound] at @s unless block ~ ~-0.1 ~ light_blue_wool run tag @s remove lifeely.speed_sound
+
+execute positioned ~-31 ~45 ~-12 run clear @a[tag=pr.target,distance=..6]
 
 
 

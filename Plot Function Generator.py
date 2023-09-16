@@ -11,66 +11,66 @@ PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 # namespace, y coordinate, icon, name, description
 NAMESPACES = {
-    (-6,-2): ("andreyhero", 0),
-    (-6,2): ("corruptide_city", 0, "minecraft:black_glazed_terracotta", "Corruptide City", "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n§6CoreOptd"),
-    (-5,-3): ("bowshot", 0, "minecraft:moss_block", "Wasteland", "Be careful of the toxic waste!\n\n§6Bowshot"),
-    (-5,1): ("dtplayers", 0, "minecraft:end_stone", "Space Escape", "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers"),
-    (-4,-3): ("xekyt", 0, "minecraft:quartz_block", "Lab Leap", "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_"),
-    (-4,-2): ("fuzzbearplush", 0, "minecraft:lime_wool", "Koopa Course", "Jump your way to the flag pole!\n\n§6Fuzzbearplush"),
-    (-4,-1): ("warshito", 4, "minecraft:player_head", "Chromatic Climb", "Follow your color, collect the orb, and save the world!\n\n§6Warshito & Jalafito", '{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ=="}]}}}'),
-    (-4,0): ("masp005", 3, "minecraft:potion", "Lab Rush", "Dash through the abandoned laboratory and make your way out the twisted corridors.\n\n§6MaSp005", '{Potion:"minecraft:luck"}'),
-    (-4,2): ("flying_dragon", 1, "minecraft:decorated_pot", "History Unearthed", "Learn about the factory history and discover the magic of nature!\n\n§6FlyingDragon"),
-    (-4,3): ("fabulousfox", 0, "minecraft:reinforced_deepslate", "Cavern Shift", "A treacherous cave parkour map! Jump from moving platforms to floating obstacles and navigate through the dark depths.\n\n§6FabulousFox"),
-    (-3,-1): ("cds28", 0),
-    (-3,0): ("anikey_plot", 4, "minecraft:white_glazed_terracotta", "Mirror Travel", "Jumping in a Gothic building, try to go though it!\n\n§6Anikey_Chang"),
-    (-3,1): ("aljaz", 0, "minecraft:player_head", "Snake Madness", "Scale the snakes and escape the maze!\n\n§6Aljaz14", '{SkullOwner:{Id:[I;2098679158,-283884171,-1425129158,-1065654650],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA1MDNiODFhYzAyMGM2N2MzNzc4N2I0NWM5YTI2MjIzZjliYzI2YmNhMjdmODFhZjMyZjJjZjU1ZTI0NDBiNyJ9fX0="}]}}}'),
-    (-3,2): ("boss586", 3, "minecraft:amethyst_block", "Mystical House", "Parkour your way through a mysterious mystical cave under a house.\n\n§6Boss586 & mmmmmaaaaaxxxxx"),
-    (-3,4): ("zombie1111", 0, "minecraft:bricks", "Monster City", "Parkour through the city and fight the monsters!\n\n§6Zombie1111 & _Elton"),
-    (-3,5): ("simondmc", 2, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!\n\n§6SimonDMC & EurekaX"),
-    (-2,-6): ("eosand", 0, "minecraft:end_crystal", "Pipeline Pandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.§6\n\nEOSand"),
-    (-2,-5): ("ronanemperor", 2, "minecraft:sculk_shrieker", "Warden's Domain", "Parkour through the dangerous underground to reach the Warden's Domain.\n\n§6RonanEmperor"),
-    (-2,-3): ("technodono_plot_-2_-3", 0),
-    (-2,-1): ("time_stream", 0, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
-    (-2,1): ("theswagunicorn3", 0, "minecraft:feather", "Flappy Fowl", "2014 was a great year!\n\n§6_TheSwagUnicorn_"),
-    (-2,3): ("stabily_time_tower_parkour", 1, "minecraft:ladder", "Time Tower", "Climbing to the future!\n\n§6Stabily Waqular"),
-    (-2,5): ("captainargus", 3, "minecraft:clock", "Factory Frenzy", "Don't fall off, you're sure to get lost. Follow the carpets if you're ever uncertain.\n\n§6CaptainArgus"),
-    (-1,-5): ("spinat", 0, "minecraft:purple_concrete_powder", "25 Pixels", "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox"),
-    (-1,-4): ("kirnt", 1, "minecraft:oxidized_copper", "Stellar Adventure", "Leap through outer space from world to world!\n\n§6kirnt2027 & Minigame Makers"),
-    (-1,-3): ("itspungpond98", 0, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates.\n\n§6ItsPungpond98"),
-    (-1,-2): ("maze_escape", 2, "minecraft:zombie_head", "Maze Escape", "Explore through the maze and search for the exit.\n\n§6Anas099"),
-    (-1,3): ("woutbelt", 0),
-    (-1,4): ("brosephmc_mc_pr", 0, "minecraft:minecart", "Car Tunnel", "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC"),
-    (-1,5): ("funkytoc_moon", 1),
-    (0,-4): ("sparkour", 0),
-    (0,-3): ("evilgodloki", 1, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),
-    (0,0): ("cubed", 0, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
-    (0,3): ("rambini", 0, "minecraft:rooted_dirt", "Crack in The World", "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini"),
-    (1,-5): ("rko", 1, "minecraft:brick", "RKO Factory", "Parkour your way through a vast and old factory on moving machinery and conquer the challenge awaiting you.\n\n§6Rajdi & Kassar & Owca", "{CustomModelData:721011}"),
-    (1,-4): ("klue007", -1, "minecraft:spruce_wood", "Spruce Town", "Complete parkour in a town surrounded by snowy mountains.\n\n§6klue"),
-    (1,-2): ("sliceolife", 0, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!\n\n§6MegaMinerDL & mmmmmaaaaaxxxxx"),
-    (1,-1): ("theswagunicorn2", 0, "minecraft:gilded_blackstone", "Bastion Build-Up", "Traverse your way through the Piglins' impressive construction of a massive beacon using the gold they processed in this factory.\n\n§6_TheSwagUnicorn_"),
-    (1,1): ("risely", 1, "minecraft:name_tag", "Your Ticket Please!", "Exit through the basement or parkour your way out of the abandoned train station.\n\n§6Risely"),
-    (1,3): ("theswagunicorn", 0, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines.\n\n§6_TheSwagUnicorn_"),
-    (1,4): ("rex_saltus_neon", 4, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night.\n\n§6Rex_Saltus & xherax"),
-    (1,5): ("inquognito", 3),
-    (2,-5): ("decimate", 0, "minecraft:chest", "The Skyblock Experience", "Say hi to Jerry on the way!\n\n§6DecimateJSY97a & _TheSwagUnicorn_ & Masp005 & JPMagic"),
-    (2,-3): ("intjungle", 1, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?\n\n§6Interstellar_1"),
-    (2,1): ("subchronos", 3, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits.\n\n§6SubChronos"),
-    (2,3): ("eli_marie", 1, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),
-    (2,6): ("lifeely", 0, "minecraft:blast_furnace", "Blast Burner", "Phew! Sure is hot in here!\n\n§6Lifeely & Dominexis"),
-    (3,-5): ("shadoweeq", 0, "minecraft:player_head", "Skyreach Mega Tower", "Explore changing city scenes as you make your way up to reach the top of the tower.\n\n§6shadoweeq", '{SkullOwner:{Id:[I;1543298721,250171001,-2086573174,-871347001],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY2YmIzYWQ4ZGFmMGMxNDk5YjVlNDZkY2Y0MTc2YzgzNDU0MzU1M2ExYTgxODAwOWU3Njc1ZTg5NjI5NWUxYSJ9fX0="}]}}}'),
-    (3,-4): ("kevinc", 0, "minecraft:gold_ore", "Mine Skyisland", "There were many people who came for the treasure, and now it's empty.\n\n§6mc_Kevin_Creeper"),
-    (3,-1): ("prisonbreak", 0),
-    (3,1): ("blackcb", 1, "minecraft:spruce_log", "Mountain View", "Keep your momentum on the ice!\n\n§6BlackCB & Dominexis"),
-    (3,2): ("im1294", 1),
-    (4,-2): ("ykw", 3, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),
-    (4,-1): ("rooftop_adventure_ra", 1, "minecraft:cobweb", "Rooftop Adventure", "Parkour across an abandoned city.\n\n§6ed1ska"),
-    (4,0): ("cygnus_switch_palace", 0, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.\n\n§6Cygnus"),
-    (5,-3): ("tuntan", 4, "minecraft:elytra", "Tunnel Tangle", "Fly through tight tunnels to escape the maze!\n\n§6mmmmmaaaaaxxxxx"),
-    (5,-1): ("frostcobra", 0, "minecraft:calcite", "Cloud Maze", "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos"),
-    (5,3): ("wall_hall", 0),
-    (6,-2): ("ganymede", 0, "minecraft:white_stained_glass_pane", "Colorblind", "Navigate through several enigmatic rooms using special colored lenses to reveal hidden paths.\n\n§6Ganymede & mmmmmaaaaaxxxxx"),
-    (6,2): ("titruc.interactivejump.sys", 0)
+    (-6,-2): ("andreyhero", 0, False),
+    (-6,2): ("corruptide_city", 0, True, "minecraft:black_glazed_terracotta", "Corruptide City", "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n§6CoreOptd"),
+    (-5,-3): ("bowshot", 0, False, "minecraft:moss_block", "Wasteland", "Be careful of the toxic waste!\n\n§6Bowshot"),
+    (-5,1): ("dtplayers", 0, True, "minecraft:end_stone", "Space Escape", "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers"),
+    (-4,-3): ("xekyt", 0, False, "minecraft:quartz_block", "Lab Leap", "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_"),
+    (-4,-2): ("fuzzbearplush", 0, False, "minecraft:lime_wool", "Koopa Course", "Jump your way to the flag pole!\n\n§6Fuzzbearplush"),
+    (-4,-1): ("warshito", 4, True, "minecraft:player_head", "Chromatic Climb", "Follow your color, collect the orb, and save the world!\n\n§6Warshito & Jalafito", '{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ=="}]}}}'),
+    (-4,0): ("masp005", 3, True, "minecraft:potion", "Lab Rush", "Dash through the abandoned laboratory and make your way out the twisted corridors.\n\n§6MaSp005", '{Potion:"minecraft:luck"}'),
+    (-4,2): ("flying_dragon", 1, False, "minecraft:decorated_pot", "History Unearthed", "Learn about the factory history and discover the magic of nature!\n\n§6FlyingDragon"),
+    (-4,3): ("fabulousfox", 0, True, "minecraft:reinforced_deepslate", "Cavern Shift", "A treacherous cave parkour map! Jump from moving platforms to floating obstacles and navigate through the dark depths.\n\n§6FabulousFox"),
+    (-3,-1): ("cds28", 0, True),
+    (-3,0): ("anikey_plot", 4, True, "minecraft:white_glazed_terracotta", "Mirror Travel", "Jumping in a Gothic building, try to go though it!\n\n§6Anikey_Chang"),
+    (-3,1): ("aljaz", 0, True, "minecraft:player_head", "Snake Madness", "Scale the snakes and escape the maze!\n\n§6Aljaz14", '{SkullOwner:{Id:[I;2098679158,-283884171,-1425129158,-1065654650],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA1MDNiODFhYzAyMGM2N2MzNzc4N2I0NWM5YTI2MjIzZjliYzI2YmNhMjdmODFhZjMyZjJjZjU1ZTI0NDBiNyJ9fX0="}]}}}'),
+    (-3,2): ("boss586", 3, False, "minecraft:amethyst_block", "Mystical House", "Parkour your way through a mysterious mystical cave under a house.\n\n§6Boss586 & mmmmmaaaaaxxxxx"),
+    (-3,4): ("zombie1111", 0, True, "minecraft:bricks", "Monster City", "Parkour through the city and fight the monsters!\n\n§6Zombie1111 & _Elton"),
+    (-3,5): ("simondmc", 2, True, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!\n\n§6SimonDMC & EurekaX"),
+    (-2,-6): ("eosand", 0, True, "minecraft:end_crystal", "Pipeline Pandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.§6\n\nEOSand"),
+    (-2,-5): ("ronanemperor", 2, True, "minecraft:sculk_shrieker", "Warden's Domain", "Parkour through the dangerous underground to reach the Warden's Domain.\n\n§6RonanEmperor"),
+    (-2,-3): ("technodono_plot_-2_-3", 0, False),
+    (-2,-1): ("time_stream", 0, False, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
+    (-2,1): ("theswagunicorn3", 0, False, "minecraft:feather", "Flappy Fowl", "2014 was a great year!\n\n§6_TheSwagUnicorn_"),
+    (-2,3): ("stabily_time_tower_parkour", 1, False, "minecraft:ladder", "Time Tower", "Climbing to the future!\n\n§6Stabily Waqular"),
+    (-2,5): ("captainargus", 3, False, "minecraft:clock", "Factory Frenzy", "Don't fall off, you're sure to get lost. Follow the carpets if you're ever uncertain.\n\n§6CaptainArgus"),
+    (-1,-5): ("spinat", 0, False, "minecraft:purple_concrete_powder", "25 Pixels", "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox"),
+    (-1,-4): ("kirnt", 1, False, "minecraft:oxidized_copper", "Stellar Adventure", "Leap through outer space from world to world!\n\n§6kirnt2027 & Minigame Makers"),
+    (-1,-3): ("itspungpond98", 0, True, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates.\n\n§6ItsPungpond98"),
+    (-1,-2): ("maze_escape", 2, True, "minecraft:zombie_head", "Maze Escape", "Explore through the maze and search for the exit.\n\n§6Anas099"),
+    (-1,3): ("woutbelt", 0, True),
+    (-1,4): ("brosephmc_mc_pr", 0, True, "minecraft:minecart", "Car Tunnel", "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC"),
+    (-1,5): ("funkytoc_moon", 1, False),
+    (0,-4): ("sparkour", 0, False),
+    (0,-3): ("evilgodloki", 1, True, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),
+    (0,0): ("cubed", 0, False, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
+    (0,3): ("rambini", 0, False, "minecraft:rooted_dirt", "Crack in The World", "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini"),
+    (1,-5): ("rko", 1, True, "minecraft:brick", "RKO Factory", "Parkour your way through a vast and old factory on moving machinery and conquer the challenge awaiting you.\n\n§6Rajdi & Kassar & Owca", "{CustomModelData:721011}"),
+    (1,-4): ("klue007", -1, False, "minecraft:spruce_wood", "Spruce Town", "Complete parkour in a town surrounded by snowy mountains.\n\n§6klue"),
+    (1,-2): ("sliceolife", 0, True, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!\n\n§6MegaMinerDL & mmmmmaaaaaxxxxx"),
+    (1,-1): ("theswagunicorn2", 0, True, "minecraft:gilded_blackstone", "Bastion Build-Up", "Traverse your way through the Piglins' impressive construction of a massive beacon using the gold they processed in this factory.\n\n§6_TheSwagUnicorn_"),
+    (1,1): ("risely", 1, False, "minecraft:name_tag", "Your Ticket Please!", "Exit through the basement or parkour your way out of the abandoned train station.\n\n§6Risely"),
+    (1,3): ("theswagunicorn", 0, True, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines.\n\n§6_TheSwagUnicorn_"),
+    (1,4): ("rex_saltus_neon", 4, False, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night.\n\n§6Rex_Saltus & xherax"),
+    (1,5): ("inquognito", 3, True),
+    (2,-5): ("decimate", 0, False, "minecraft:chest", "The Skyblock Experience", "Say hi to Jerry on the way!\n\n§6DecimateJSY97a & _TheSwagUnicorn_ & Masp005 & JPMagic"),
+    (2,-3): ("intjungle", 1, False, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?\n\n§6Interstellar_1"),
+    (2,1): ("subchronos", 3, True, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits.\n\n§6SubChronos"),
+    (2,3): ("eli_marie", 1, False, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),
+    (2,6): ("lifeely", 0, True, "minecraft:blast_furnace", "Blast Burner", "Phew! Sure is hot in here!\n\n§6Lifeely & Dominexis"),
+    (3,-5): ("shadoweeq", 0, False, "minecraft:player_head", "Skyreach Mega Tower", "Explore changing city scenes as you make your way up to reach the top of the tower.\n\n§6shadoweeq", '{SkullOwner:{Id:[I;1543298721,250171001,-2086573174,-871347001],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY2YmIzYWQ4ZGFmMGMxNDk5YjVlNDZkY2Y0MTc2YzgzNDU0MzU1M2ExYTgxODAwOWU3Njc1ZTg5NjI5NWUxYSJ9fX0="}]}}}'),
+    (3,-4): ("kevinc", 0, False, "minecraft:gold_ore", "Mine Skyisland", "There were many people who came for the treasure, and now it's empty.\n\n§6mc_Kevin_Creeper"),
+    (3,-1): ("prisonbreak", 0, False),
+    (3,1): ("blackcb", 1, False, "minecraft:spruce_log", "Mountain View", "Keep your momentum on the ice!\n\n§6BlackCB & Dominexis"),
+    (3,2): ("im1294", 1, True),
+    (4,-2): ("ykw", 3, True, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),
+    (4,-1): ("rooftop_adventure_ra", 1, False, "minecraft:cobweb", "Rooftop Adventure", "Parkour across an abandoned city.\n\n§6ed1ska"),
+    (4,0): ("cygnus_switch_palace", 0, True, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.\n\n§6Cygnus"),
+    (5,-3): ("tuntan", 4, True, "minecraft:elytra", "Tunnel Tangle", "Fly through tight tunnels to escape the maze!\n\n§6mmmmmaaaaaxxxxx"),
+    (5,-1): ("frostcobra", 0, True, "minecraft:calcite", "Cloud Maze", "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos"),
+    (5,3): ("wall_hall", 0, True),
+    (6,-2): ("ganymede", 0, True, "minecraft:white_stained_glass_pane", "Colorblind", "Navigate through several enigmatic rooms using special colored lenses to reveal hidden paths.\n\n§6Ganymede & mmmmmaaaaaxxxxx"),
+    (6,2): ("titruc.interactivejump.sys", 0, True)
 }
 
 
@@ -100,23 +100,46 @@ commands: list[str] = []
 for coordinate in coordinates:
     if coordinate in NAMESPACES:
         namespace = NAMESPACES[coordinate][0]
+        forceload_bool = NAMESPACES[coordinate][2]
         comment = ""
     else:
         namespace = "namespace"
+        forceload_bool = False
         comment = "#"
+
+    forceload_coord_x_1 = coordinate[0]*96 + 16
+    forceload_coord_x_2 = coordinate[0]*96 + 48
+    forceload_coord_z_1 = coordinate[1]*96 + 16
+    forceload_coord_z_2 = coordinate[1]*96 + 48
 
     commands.append(
         f'execute store result score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]\n' +
-        f'{comment}execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
-        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_on\n' +
-        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_off\n' +
-        f'{comment}execute unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @e[tag=pr.target] remove pr.target\n' +
-        f'scoreboard players operation #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value = #plot_player_{coordinate[0]}_{coordinate[1]} pr.value\n' +
-        f'execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
-        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target\n' +
-        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move\n' +
-        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:tick_plot\n' +
-        f'{comment}execute if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
+
+        (
+        f'{comment}scoreboard players set #check_loaded_bool pr.value 1\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 run scoreboard players set #check_loaded_bool pr.value 0\n' +
+        f'{comment}scoreboard players set #chunk_loaded_bool pr.value 0\n' +
+        f'{comment}execute if score #check_loaded_bool pr.value matches 1 if loaded {forceload_coord_x_1} 0 {forceload_coord_z_1} if loaded {forceload_coord_x_2} 0 {forceload_coord_z_1} if loaded {forceload_coord_x_1} 0 {forceload_coord_z_2} if loaded {forceload_coord_x_2} 0 {forceload_coord_z_2} run scoreboard players set #chunk_loaded_bool pr.value 1\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 run forceload add {forceload_coord_x_1} {forceload_coord_z_1}\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 run forceload add {forceload_coord_x_2} {forceload_coord_z_1}\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 run forceload add {forceload_coord_x_1} {forceload_coord_z_2}\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 run forceload add {forceload_coord_x_2} {forceload_coord_z_2}\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run forceload remove {forceload_coord_x_1} {forceload_coord_z_1}\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run forceload remove {forceload_coord_x_2} {forceload_coord_z_1}\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run forceload remove {forceload_coord_x_1} {forceload_coord_z_2}\n' +
+        f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run forceload remove {forceload_coord_x_2} {forceload_coord_z_2}\n'
+        if forceload_bool else '') +
+
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_on\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_off\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @e[tag=pr.target] remove pr.target\n' +
+        f'{"execute if score #chunk_loaded_bool pr.value matches 1 run " if forceload_bool else ""}scoreboard players operation #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value = #plot_player_{coordinate[0]}_{coordinate[1]} pr.value\n' +
+        f'execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:tick_plot\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
     )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "main.mcfunction").open("w", encoding="utf-8") as file:
@@ -199,7 +222,8 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction")
         "clear @s\n" +
         "effect clear @s\n" +
         "experience set @s 0 levels\n" +
-        "experience set @s 0 points" + "\n"*8 +
+        "experience set @s 0 points\n" +
+        "attribute @s minecraft:generic.max_health base set 20.0" + "\n"*8 +
         "# Send message when they start their run\n\n" +
         f'execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {{"text":"Your run has begun","color":"gold"}}\n' +
         f'execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{{"text":"Use ","color":"gray"}},{{"text":"/trigger lobby","color":"white"}},{{"text":" to return to the lobby","color":"gray"}}]\n' +
@@ -253,8 +277,8 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "advancement.mcfun
 
 commands: list[str] = []
 for coordinate in coordinates:
-    if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 2:
-        name = NAMESPACES[coordinate][3]
+    if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 3:
+        name = NAMESPACES[coordinate][4]
     else:
         name = f'{coordinate[0]}, {coordinate[1]} Ending'
 
@@ -318,12 +342,12 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfu
 # Generate advancements
 
 for coordinate in coordinates:
-    if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 2:
-        item = NAMESPACES[coordinate][2]
-        name = NAMESPACES[coordinate][3]
-        description = NAMESPACES[coordinate][4]
-        if len(NAMESPACES[coordinate]) >= 6:
-            nbt = NAMESPACES[coordinate][5]
+    if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 3:
+        item = NAMESPACES[coordinate][3]
+        name = NAMESPACES[coordinate][4]
+        description = NAMESPACES[coordinate][5]
+        if len(NAMESPACES[coordinate]) >= 7:
+            nbt = NAMESPACES[coordinate][6]
         else:
             nbt = "{}"
     else:
