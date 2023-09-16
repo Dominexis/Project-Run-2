@@ -5,4 +5,4 @@ scoreboard objectives remove timerCDs
 execute at @e[type=marker,tag=bumper,tag=pr.target] as @e[type=minecraft:slime,tag=pr.target,distance=..1] at @s run tp @s ~ -500 ~
 kill @e[type=marker,tag=bumper,tag=pr.target]
 kill @e[type=marker,tag=check,tag=pr.target]
-kill @e[type=block_display,tag=conduit,tag=pr.target]
+# kill @e[type=block_display,tag=conduit,tag=pr.target]

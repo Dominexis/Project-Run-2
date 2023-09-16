@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:heart_of_the_sea",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -3, -1",
+                "text": "Pinball",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour across the pinball machine. Will you set a new score record?\n\n§6CDs28",
                 "color": "green"
             }
         ],
