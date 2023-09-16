@@ -29,7 +29,7 @@ NAMESPACES = {
     (-3,5): ("simondmc", 2, True, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!\n\n§6SimonDMC & EurekaX"),
     (-2,-6): ("eosand", 0, True, "minecraft:end_crystal", "Pipeline Pandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.§6\n\nEOSand"),
     (-2,-5): ("ronanemperor", 2, True, "minecraft:sculk_shrieker", "Warden's Domain", "Parkour through the dangerous underground to reach the Warden's Domain.\n\n§6RonanEmperor"),
-    (-2,-3): ("technodono_plot_-2_-3", 0, False),
+    (-2,-3): ("technodono_plot_-2_-3", 0, True),
     (-2,-1): ("time_stream", 0, False, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
     (-2,1): ("theswagunicorn3", 0, False, "minecraft:feather", "Flappy Fowl", "2014 was a great year!\n\n§6_TheSwagUnicorn_"),
     (-2,3): ("stabily_time_tower_parkour", 1, False, "minecraft:ladder", "Time Tower", "Climbing to the future!\n\n§6Stabily Waqular"),
