@@ -2,3 +2,4 @@
 # Use this to remove any scores/tags/effects/items from the player
 clear @s
 effect clear @s
+#scoreboard objectives setdisplay sidebar.team.green

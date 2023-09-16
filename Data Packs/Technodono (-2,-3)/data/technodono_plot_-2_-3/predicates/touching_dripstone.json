@@ -1,0 +1,30 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "offsetY": 2,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:pointed_dripstone",
+            "minecraft:dripstone_block"
+          ]
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "stepping_on": {
+          "block": {
+            "blocks": [
+              "minecraft:pointed_dripstone"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

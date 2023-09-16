@@ -6,3 +6,4 @@ scoreboard players set @s technodono_plot.music_timer 0
 scoreboard players set @s technodono_plot.gneric_timer 0
 scoreboard players set @s technodono_plot.r-click_counter 0
 tag @s add technodono_plot.is_in_plot
+tag @s add pr.plate_checkpoint

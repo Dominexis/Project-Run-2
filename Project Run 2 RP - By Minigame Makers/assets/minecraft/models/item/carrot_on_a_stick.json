@@ -4,7 +4,8 @@
 		"layer0": "item/carrot_on_a_stick"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 429001}, "model": "ykw:warden_tendrils" },
+		{ "predicate": { "custom_model_data": 102031}, "model": "beat_bounce:item/double_jump"},
+		{ "predicate": { "custom_model_data": 429001}, "model": "ykw:warden_tendrils"},
 		{ "predicate": { "custom_model_data":1111690}, "model": "zombie1111:custom/laser_gun"}
 	]
 }
