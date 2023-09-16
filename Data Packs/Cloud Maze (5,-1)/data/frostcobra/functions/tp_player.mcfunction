@@ -1,6 +1,6 @@
 # Finding exit (using temporary scoreboard to test equality)
 
-scoreboard players operation @a[tag=pr.target] frostcobra.tp2 = @a[tag=pr.target] frostcobra.tp
+execute as @a[tag=pr.target] run scoreboard players operation @s frostcobra.tp2 = @s frostcobra.tp
 scoreboard players operation @a[tag=pr.target] frostcobra.tp2 -= @s frostcobra.portals
 tag @a[tag=pr.target,scores={frostcobra.tp2=0}] add frostcobra.teleported
 

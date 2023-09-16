@@ -4,7 +4,7 @@ execute positioned ~ ~0.3 ~ run tag @a[tag=pr.target,distance=..0.7] add frostco
 
 # Testing inequality of last checkpoint (using temporary scoreboard), so the same checkpoint doesn't trigger every tick
 
-scoreboard players operation @a[tag=pr.target,tag=frostcobra.closePlayer] frostcobra.lastCp2 = @a[tag=pr.target] frostcobra.lastCp
+execute as @a[tag=pr.target,tag=frostcobra.closePlayer] run scoreboard players operation @s frostcobra.lastCp2 = @s frostcobra.lastCp
 scoreboard players operation @a[tag=pr.target,tag=frostcobra.closePlayer] frostcobra.lastCp2 -= @s frostcobra.cpId
 tag @a[tag=pr.target,tag=frostcobra.closePlayer,scores={frostcobra.lastCp2=..-1}] add frostcobra.addCheckpoint
 tag @a[tag=pr.target,tag=frostcobra.closePlayer,scores={frostcobra.lastCp2=1..}] add frostcobra.addCheckpoint
