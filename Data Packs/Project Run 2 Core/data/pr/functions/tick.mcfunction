@@ -48,13 +48,14 @@ scoreboard players set @a[tag=!pr.self_checkpoint,scores={pr.save_checkpoint_ite
 execute as @a[tag=pr.self_checkpoint] at @s run function pr:player/checkpoint/self
 scoreboard players set @a pr.click 0
 
+execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
+
 execute as @a[tag=pr.plate_checkpoint,tag=!pr.plate_checkpoint_cooldown] at @s if block ~ ~ ~ light_weighted_pressure_plate run function pr:player/checkpoint/plate
 execute as @a[tag=pr.plate_checkpoint,tag=pr.plate_checkpoint_cooldown] at @s unless block ~ ~ ~ light_weighted_pressure_plate run tag @s remove pr.plate_checkpoint_cooldown
 
 execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s lobby 1
 execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s checkpoint 0
 
-execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
 execute as @a[scores={lobby=1..}] run function pr:player/checkpoint/lobby
 execute as @a[scores={spectate=1..}] run function pr:player/spectate
 execute as @a[scores={checkpoint=1..}] run function pr:player/checkpoint/send_to

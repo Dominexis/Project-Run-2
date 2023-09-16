@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:pointed_dripstone",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -1, 1",
+                "text": "Dropper Depths",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Keep on falling, keep on falling...\n\n§6Pytich & _TheSwagUnicorn_",
                 "color": "green"
             }
         ],

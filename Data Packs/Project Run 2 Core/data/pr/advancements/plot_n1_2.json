@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:waxed_cut_copper",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -1, 2",
+                "text": "Steampunk Factory",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Compliant with safety regulations.\n\n§6Applecake",
                 "color": "green"
             }
         ],
