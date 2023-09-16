@@ -1,7 +1,5 @@
-tp @s @s
-tp @s @s
-tp @s @s
-tp @s @s
+summon minecraft:boat ~ ~-0.5 ~ {Tags:["technodono_plot.object.boat"],Type:"acacia",NoGravity:1b}
+summon minecraft:boat ~ ~-1 ~ {Tags:["technodono_plot.object.boat"],Type:"acacia",NoGravity:1b}
 effect give @a[tag=pr.target,tag=technodono_plot.playing] minecraft:levitation 1 75 true
 particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0 10 normal @s
 tag @s add technodono_plot.single_jump
