@@ -12,6 +12,6 @@ execute positioned ~4 ~59 ~30 as @a[tag=pr.target,dx=16,dy=6,dz=10] at @s if blo
 execute positioned ~6 ~56 ~14 as @a[tag=pr.target,dx=7,dy=2,dz=6] at @s if block ~ ~ ~ water run scoreboard players set @s pr.death 1
 execute positioned ~-10 ~-4 ~-32 as @a[tag=pr.target,dx=36,dy=57,dz=63] at @s if block ~ ~ ~ water run scoreboard players set @s pr.death 1
 
-execute as @a[tag=pr.target] at @s if block ~ ~ ~ light_weighted_pressure_plate run function pr:player/checkpoint/mark
+# execute as @a[tag=pr.target] at @s if block ~ ~ ~ light_weighted_pressure_plate run function pr:player/checkpoint/mark
 
 execute at @e[tag=masp005.elytra] as @a[tag=pr.target,tag=!masp005.equipped,distance=..1] at @s run function masp005:equip

@@ -3,4 +3,4 @@ playsound minecraft:block.beacon.activate master @s
 playsound minecraft:particle.soul_escape master @s
 playsound minecraft:item.trident.return master @s
 tag @s add masp005.equipped
-tellraw @s {"text":"Elytra equipped","color":"gold"}
+tellraw @s ["",{"text":"You have picked up a ","color":"gold"},{"text":"Elytra","bold":true,"color":"green"},{"text":"!","color":"gold"}]
