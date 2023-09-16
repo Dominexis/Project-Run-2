@@ -2,7 +2,7 @@
 execute as @a[tag=pr.target] store result score @s swag.fall_flying run data get entity @s FallFlying
 execute as @a[tag=pr.target] store result score @s swag.elytra_count run clear @s elytra 0
 
-execute as @a[tag=pr.target,scores={swag.fall_flying=0,swag.elytra_count=0}] run item replace entity @s armor.chest with elytra
+execute as @a[tag=pr.target,scores={swag.fall_flying=0,swag.elytra_count=0}] run item replace entity @s armor.chest with elytra{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute as @a[tag=pr.target,scores={swag.fall_flying=1}] at @s run particle cloud ~ ~-1 ~ 0 0 0 0 15 force @a
 execute as @a[tag=pr.target,scores={swag.fall_flying=1}] run effect give @s levitation 1 10 true
 execute as @a[tag=pr.target,scores={swag.fall_flying=1}] run scoreboard players set @s swag.HalfSec 10
