@@ -1,4 +1,2 @@
-scoreboard players set Zombies im1294.kill_count 1
-
-fill ~ ~ ~ ~10 ~10 ~10 air replace pink_wool
-clone 0 0 0 10 10 10 ~ ~ ~ filtered red_wool normal
+fill ~-39 ~17 ~-39 ~39 ~59 ~39 air replace pink_wool
+clone ~-39 ~-48 ~-39 ~39 ~-6 ~39 ~-39 ~17 ~-39 filtered red_wool normal

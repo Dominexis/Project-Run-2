@@ -9,6 +9,9 @@ scoreboard objectives add im1294.kill_count dummy {"text": "Mob Counter"}
 scoreboard players set Zombies im1294.kill_count 0
 scoreboard players set Skeletons im1294.kill_count 0
 scoreboard players set Spiders im1294.kill_count 0
+scoreboard players set ZombiesChange im1294.kill_count 0
+scoreboard players set SkeletonsChange im1294.kill_count 0
+scoreboard players set SpidersChange im1294.kill_count 0
 scoreboard players set im1294.two im1294.kill_count 2
 
 scoreboard objectives add im1294.zombie_kills killed:zombie

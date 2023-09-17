@@ -21,7 +21,7 @@ execute store result score im1294.Skeletons im1294.floor_left if entity @e[type=
 execute store result score im1294.Skeletons im1294.entrance_left if entity @e[type=skeleton,tag=pr.target,tag=im1294.entrance_left]
 execute store result score im1294.Skeletons im1294.central if entity @e[type=skeleton,tag=pr.target,tag=im1294.central]
 
-execute store result score im1294.Strays im1294.central if entity @e[type=zombie,tag=pr.target,tag=im1294.central]
+execute store result score im1294.Strays im1294.central if entity @e[type=stray,tag=pr.target,tag=im1294.central]
 
 execute store result score im1294.Spiders im1294.wall_right if entity @e[type=spider,tag=pr.target,tag=im1294.wall_right]
 execute store result score im1294.Spiders im1294.floor_right if entity @e[type=spider,tag=pr.target,tag=im1294.floor_right]
