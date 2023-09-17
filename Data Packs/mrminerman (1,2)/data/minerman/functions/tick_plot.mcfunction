@@ -33,13 +33,8 @@ execute positioned ~-12 ~-63 ~15 if score $campfire painting_parkour matches 79 
 execute positioned ~-12 ~-63 ~16 if score $campfire painting_parkour matches 79 run setblock ~-6 ~11 ~-4 campfire[lit=true] replace
 
 #fire
-execute positioned ~-14 ~-63 ~-33 if score $fire painting_parkour matches 19 run fill ~2 ~12 ~7 ~4 ~12 ~8 fire
-execute positioned ~-15 ~-63 ~-33 if score $fire painting_parkour matches 19 run fill ~10 ~13 ~11 ~8 ~13 ~10 fire
-execute positioned ~-16 ~-63 ~-33 if score $fire painting_parkour matches 19 run fill ~6 ~13 ~19 ~4 ~13 ~17 fire
-
-execute positioned ~-15 ~-63 ~-36 if score $fire painting_parkour matches 39 run fill ~3 ~12 ~9 ~5 ~12 ~11 air
-execute positioned ~-15 ~-63 ~-36 if score $fire painting_parkour matches 39 run fill ~11 ~13 ~14 ~9 ~13 ~12 air
-execute positioned ~-15 ~-63 ~-36 if score $fire painting_parkour matches 39 run fill ~7 ~13 ~22 ~5 ~13 ~19 air
+execute if score $fire painting_parkour matches 19 run fill ~-12 ~-52 ~-28 ~-5 ~-49 ~-12 fire replace structure_void
+execute if score $fire painting_parkour matches 39 run fill ~-12 ~-52 ~-28 ~-5 ~-49 ~-12 structure_void replace fire
 
 #tp's up
 execute positioned ~1 ~-50 ~-3 as @a[tag=pr.target,dx=1,dy=1,dz=0,gamemode=!spectator] at @s run tp @s ~0 ~51 ~-24
