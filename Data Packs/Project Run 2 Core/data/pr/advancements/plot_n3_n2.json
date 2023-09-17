@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:beacon",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -3, -2",
+                "text": "Skyborne Metropolis",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Navigate the captivating skies of a floating city!\n\n§6REUGE",
                 "color": "green"
             }
         ],
