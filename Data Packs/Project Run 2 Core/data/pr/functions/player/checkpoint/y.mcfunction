@@ -1,6 +1,6 @@
 # Execute function at certain Y level
 
-execute if score @s pr.checkpoint_y matches -4 positioned ~40 0 ~40 positioned ~-17 1 ~1 align xz positioned ~0.5 ~ ~0.5 run function pr:player/checkpoint/tp
+execute if score @s pr.checkpoint_y matches -4 positioned ~40 0 ~40 positioned ~-17 1 ~ align xz positioned ~0.5 ~ ~0.5 run function pr:player/checkpoint/tp
 #execute if score @s pr.checkpoint_y matches 00 positioned ~40 -64 ~40 run function pr:player/checkpoint/tp
 execute if score @s pr.checkpoint_y matches -1 positioned ~40 -16 ~40 run function pr:player/checkpoint/tp
 execute if score @s pr.checkpoint_y matches 00 positioned ~40 000 ~40 run function pr:player/checkpoint/tp

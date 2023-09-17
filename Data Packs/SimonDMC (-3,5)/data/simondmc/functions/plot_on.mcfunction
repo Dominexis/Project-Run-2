@@ -9,6 +9,9 @@ summon text_display ~4 ~30.65 ~-20 {billboard:"center",default_background:1b,tex
 # Display crossbow (Level 2)
 summon item ~7 ~31 ~7 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-crossbow"],Item:{id:"minecraft:crossbow",Count:1b,tag:{Enchantments:[{}],ChargedProjectiles:[{},{id:"minecraft:arrow",Count:1b},{}],Charged:1b}},Invulnerable:1b}
 summon text_display ~7 ~31.65 ~7 {billboard:"center",default_background:1b,text:'{"text":"Crossbow"}',Tags:["sdmc.display-name"]}
+# Display bone meal (Level 3)
+summon item ~27 ~27 ~20 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-bone-meal"],Item:{id:"minecraft:bone_meal",Count:1b},Invulnerable:1b}
+summon text_display ~27 ~27.65 ~20 {billboard:"center",default_background:1b,text:'{"text":"Bone Meal"}',Tags:["sdmc.display-name"]}
 # Display arrow (Level 5)
 summon item ~2 ~1 ~19 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-arrow"],Item:{id:"minecraft:arrow",Count:1b},Invulnerable:1b}
 summon text_display ~2 ~1.65 ~19 {billboard:"center",default_background:1b,text:'{"text":"Arrow"}',Tags:["sdmc.display-name"]}
@@ -19,9 +22,6 @@ summon interaction ~-3 ~33 ~-33 {width:1.3f,height:1.3f,Tags:["sdmc.click-block"
 # Glow berries (Level 4)
 summon interaction ~15 ~32 ~21 {width:1.0f,height:2.0f,Tags:["sdmc.click-block"]}
 summon interaction ~12 ~32 ~19 {width:1.0f,height:2.0f,Tags:["sdmc.click-block"]}
-
-# Summon bone meal click entity
-summon interaction ~27 ~25 ~17 {width:1.2f,height:2f,Tags:["sdmc.bone-meal-click"]}
 
 # Summon level text displays
 summon text_display ~1 ~27 ~-11.5 {Rotation:[180F,0F],Tags:["sdmc.floor","sdmc.floor-1"],transformation:{left_rotation:[-0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},text:'{"text":"Level 1:\\nThe Drop","color":"#C4C4C4"}',background:16711680} 
@@ -39,10 +39,21 @@ scoreboard objectives add sdmc.sys dummy
 scoreboard objectives add sdmc.item-pickup-timer dummy
 scoreboard objectives add sdmc.item-despawn-timer dummy
 scoreboard objectives add sdmc.arrow-timer dummy
+scoreboard objectives add sdmc.bone-meal-timeout dummy
 scoreboard objectives add sdmc.axolotl-timer dummy
 scoreboard objectives add sdmc.item-counter dummy
 scoreboard objectives add sdmc.start-jingle dummy
 scoreboard objectives add sdmc.end-jingle dummy
+
+scoreboard objectives add sdmc.item.crossbow dummy
+scoreboard objectives add sdmc.item.arrow dummy
+scoreboard objectives add sdmc.item.bone_meal dummy
+scoreboard objectives add sdmc.item.bucket dummy
+scoreboard objectives add sdmc.item.water_bucket dummy
+scoreboard objectives add sdmc.item.axolotl_bucket dummy
+scoreboard objectives add sdmc.item.bucket_2 dummy
+scoreboard objectives add sdmc.item.water_bucket_2 dummy
+scoreboard objectives add sdmc.item.axolotl_bucket_2 dummy
 
 # Scoreboard constants
 scoreboard players set sdmc.const.1 sdmc.item-counter 1

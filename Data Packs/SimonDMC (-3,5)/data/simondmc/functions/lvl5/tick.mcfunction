@@ -1,12 +1,14 @@
 ### Level 5
 
 # Give back crossbow while picking up arrow if player somehow lost it
-execute at @e[tag=pr.target,tag=sdmc.display-arrow] as @a[distance=..1.3,tag=pr.target,nbt=!{Inventory:[{id:"minecraft:crossbow"}]}] run give @s crossbow{display:{Lore:['{"text":"Flame","color":"gray","italic":false}']},HideFlags:37,Unbreakable:1b,Enchantments:[{id:"minecraft:quick_charge",lvl:3s}]}
+execute at @e[tag=pr.target,tag=sdmc.display-arrow] as @a[distance=..1.3,tag=pr.target] store result score @s sdmc.item.crossbow run clear @s crossbow 0
+execute at @e[tag=pr.target,tag=sdmc.display-arrow] as @a[distance=..1.3,tag=pr.target,scores={sdmc.item.crossbow=0}] run give @s crossbow{display:{Lore:['{"text":"Flame","color":"gray","italic":false}']},HideFlags:37,Unbreakable:1b,Enchantments:[{id:"minecraft:quick_charge",lvl:3s}]}
 
 # Pick up arrow (next tick, otherwise given arrow is ghost for some reason)
 execute as @a[tag=pr.target,tag=sdmc.give-arrow] run give @s arrow
 tag @a[tag=pr.target,tag=sdmc.give-arrow] remove sdmc.give-arrow
-execute at @e[tag=pr.target,tag=sdmc.display-arrow] as @a[distance=..1.3,tag=pr.target,nbt=!{Inventory:[{id:"minecraft:arrow"}]}] run tag @s add sdmc.give-arrow
+execute at @e[tag=pr.target,tag=sdmc.display-arrow] as @a[distance=..1.3,tag=pr.target] store result score @s sdmc.item.arrow run clear @s arrow 0
+execute at @e[tag=pr.target,tag=sdmc.display-arrow] as @a[distance=..1.3,tag=pr.target,scores={sdmc.item.arrow=0}] run tag @s add sdmc.give-arrow
 
 # Flaming arrows
 execute as @e[type=arrow,tag=pr.target] run data merge entity @s {Fire:1000}

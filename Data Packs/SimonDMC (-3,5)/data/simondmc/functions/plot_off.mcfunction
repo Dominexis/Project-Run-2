@@ -11,9 +11,6 @@ kill @e[tag=sdmc.display-name]
 # Remove click blocking entities
 kill @e[tag=sdmc.click-block]
 
-# Remove bone meal click entity
-kill @e[tag=sdmc.bone-meal-click]
-
 # Remove level text displays
 kill @e[tag=sdmc.floor]
 
