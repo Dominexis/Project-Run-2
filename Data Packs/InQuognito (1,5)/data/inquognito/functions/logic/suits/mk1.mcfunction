@@ -1,7 +1,5 @@
 scoreboard players set @s inquognito.suit 1
 
-attribute @s minecraft:generic.armor base set 4.0
-
 item replace entity @s armor.head with minecraft:iron_helmet
 item replace entity @s armor.chest with minecraft:iron_chestplate
 item replace entity @s armor.legs with minecraft:iron_leggings{Enchantments:[{id:"minecraft:swift_sneak",lvl:1}]}

@@ -1,5 +1,7 @@
 {
     "values": [
+		"minecraft:creeper",
+		"minecraft:drowned",
 		"minecraft:zombie_villager"
 	]
 }

@@ -39,7 +39,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{inquognito.gun:1,Unbreakable:1b,HideFlags:255}"
+							"tag": "{inquognito.gun:1,CustomModelData:201831,Unbreakable:1b,HideFlags:255}"
 						}
 					]
 				}

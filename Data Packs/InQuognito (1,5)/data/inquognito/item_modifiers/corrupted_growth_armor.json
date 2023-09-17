@@ -1,0 +1,6 @@
+[
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{Trim:{pattern:\"inquognito:enemies/corrupted_growth\",material:\"minecraft:quartz\"},Unbreakable:1b}"
+	}
+]

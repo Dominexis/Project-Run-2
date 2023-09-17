@@ -1,3 +1,7 @@
-data merge entity @s {VillagerData:{type:"swamp",profession:"butcher",level:99},IsBaby:0b,DeathLootTable:"inquognito:empty"}
+attribute @s minecraft:generic.max_health base set 4.0
+attribute @s minecraft:generic.attack_damage base set 3.0
+attribute @s minecraft:generic.movement_speed base set 0.25
 
-function inquognito:logic/enemies/common
+data merge entity @s {VillagerData:{type:"swamp",profession:"butcher",level:99}}
+
+function inquognito:logic/enemies/common/modifiers/undead

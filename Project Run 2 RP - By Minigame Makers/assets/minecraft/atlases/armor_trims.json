@@ -1,0 +1,17 @@
+{
+	"sources": [
+		{
+			"type": "paletted_permutations",
+			"textures": [
+				"pr:trims/models/armor/chainmail",
+				"pr:trims/models/armor/chainmail_leggings",
+				"inquognito:trims/models/armor/enemies/corrupted_growth",
+				"inquognito:trims/models/armor/enemies/corrupted_growth_leggings"
+			],
+			"palette_key": "trims/color_palettes/trim_palette",
+			"permutations": {
+				"quartz": "trims/color_palettes/quartz"
+			}
+		}
+	]
+}

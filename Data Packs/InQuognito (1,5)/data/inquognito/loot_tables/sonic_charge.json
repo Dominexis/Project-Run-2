@@ -1,0 +1,69 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:tnt",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"entity": "this",
+							"name": {
+								"text": "Sonic Charge",
+								"color": "aqua",
+								"bold": true,
+								"italic": false
+							}
+						},
+						{
+							"function": "minecraft:set_lore",
+							"entity": "this",
+							"lore": [
+								{
+									"text": "Emits an extremely loud sonic pulse.",
+									"color": "gray",
+									"italic": false
+								},
+								{
+									"text": "WARNING: ",
+									"color": "dark_red",
+									"bold": true,
+									"italic": false,
+									"extra": [
+										{
+											"text": "Exercise extreme caution when activating!",
+											"color": "red",
+											"bold": false,
+											"italic": false
+										}
+									]
+								},
+								{
+									"text": "Users without proper ear protection",
+									"color": "red",
+									"bold": false,
+									"italic": false
+								},
+								{
+									"text": "may experience permanent damage.",
+									"color": "red",
+									"bold": false,
+									"italic": false
+								}
+							],
+							"replace": true
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions": [
+		{
+			"function": "minecraft:set_nbt",
+			"tag": "{inquognito.sonic_charge:1}"
+		}
+	]
+}

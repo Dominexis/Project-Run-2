@@ -5,6 +5,14 @@
 	},
 	"overrides": [
 		{ "predicate": { "custom_model_data": 102031}, "model": "beat_bounce:item/double_jump"},
+		{ "predicate": { "custom_model_data": 201831 }, "model": "inquognito:items/gun/xxx" },
+		{ "predicate": { "custom_model_data": 201832 }, "model": "inquognito:items/gun/axx" },
+		{ "predicate": { "custom_model_data": 201833 }, "model": "inquognito:items/gun/xbx" },
+		{ "predicate": { "custom_model_data": 201834 }, "model": "inquognito:items/gun/xxc" },
+		{ "predicate": { "custom_model_data": 201835 }, "model": "inquognito:items/gun/abx" },
+		{ "predicate": { "custom_model_data": 201836 }, "model": "inquognito:items/gun/axc" },
+		{ "predicate": { "custom_model_data": 201837 }, "model": "inquognito:items/gun/xbc" },
+		{ "predicate": { "custom_model_data": 201838 }, "model": "inquognito:items/gun/abc" },
 		{ "predicate": { "custom_model_data": 429001}, "model": "ykw:warden_tendrils"},
 		{ "predicate": { "custom_model_data":1111690}, "model": "zombie1111:custom/laser_gun"}
 	]

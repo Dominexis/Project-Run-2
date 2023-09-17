@@ -16,6 +16,21 @@
         {
             "type": "single",
             "resource": "woutbelt:model/woutbelt/beam"
-        }
+        },
+	{
+		"type": "directory",
+		"source": "enemies",
+		"prefix": "enemies/"
+	},
+	{
+		"type": "directory",
+		"source": "items",
+		"prefix": "items/"
+	},
+	{
+		"type": "directory",
+		"source": "miscellaneous",
+		"prefix": "miscellaneous/"
+	}
     ]
 }

@@ -11,6 +11,8 @@ execute at @e[type=minecraft:item_display,tag=inquognito.code.1] run particle mi
 execute at @e[type=minecraft:item_display,tag=inquognito.code.2] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.code.2]
 execute at @e[type=minecraft:item_display,tag=inquognito.code.3] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.code.3]
 
+execute at @e[type=minecraft:item_display,tag=inquognito.code.sewer] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.clearance.sewer]
+
 execute at @e[type=minecraft:item_display,tag=inquognito.nightVisionScope] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.nightVisionScope]
 
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.energy] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.energy]
@@ -24,7 +26,13 @@ execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.health.5] run p
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.damage.1] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.damage.1]
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.damage.2] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.damage.2]
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.damage.3] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.damage.3]
+execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.damage.4] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.damage.4]
+execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.damage.5] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.damage.5]
 
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.fireRate.1] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.fireRate.1]
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.fireRate.2] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.fireRate.2]
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.fireRate.3] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.fireRate.3]
+execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.fireRate.4] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.fireRate.4]
+execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.fireRate.5] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[tag=!inquognito.upgrade.fireRate.5]
+
+execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[nbt=!{Inventory:[{tag:{inquognito.sonic_charge:1}}]}]
