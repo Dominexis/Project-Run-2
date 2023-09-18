@@ -1107,16 +1107,28 @@ execute if score #plot_tick_4_1 pr.value matches 1 positioned 380.0 -64 92.0 run
 
 
 execute store result score #plot_player_5_1 pr.value positioned 472.0 -64 88.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
-#execute unless score #plot_player_5_1 pr.value = #plot_tick_5_1 pr.value positioned 472.0 -64 88.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute if score #plot_player_5_1 pr.value matches 1 if score #plot_tick_5_1 pr.value matches 0 positioned 520 0 136 run function namespace:plot_on
-#execute if score #plot_player_5_1 pr.value matches 0 if score #plot_tick_5_1 pr.value matches 1 positioned 520 0 136 run function namespace:plot_off
-#execute unless score #plot_player_5_1 pr.value = #plot_tick_5_1 pr.value run tag @e[tag=pr.target] remove pr.target
-scoreboard players operation #plot_tick_5_1 pr.value = #plot_player_5_1 pr.value
-execute if score #plot_tick_5_1 pr.value matches 1 positioned 476.0 -64 92.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot 1109
-#execute if score #plot_tick_5_1 pr.value matches 1 positioned 476.0 -64 92.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target
-#execute if score #plot_tick_5_1 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-#execute if score #plot_tick_5_1 pr.value matches 1 positioned 520 0 136 run function namespace:tick_plot
-#execute if score #plot_tick_5_1 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+scoreboard players set #check_loaded_bool pr.value 1
+execute if score #plot_player_5_1 pr.value matches 0 if score #plot_tick_5_1 pr.value matches 0 run scoreboard players set #check_loaded_bool pr.value 0
+scoreboard players set #chunk_loaded_bool pr.value 0
+execute if score #check_loaded_bool pr.value matches 1 if loaded 496 0 112 if loaded 528 0 112 if loaded 496 0 144 if loaded 528 0 144 run scoreboard players set #chunk_loaded_bool pr.value 1
+execute if score #plot_player_5_1 pr.value matches 1 if score #plot_tick_5_1 pr.value matches 0 run forceload add 496 112
+execute if score #plot_player_5_1 pr.value matches 1 if score #plot_tick_5_1 pr.value matches 0 run forceload add 528 112
+execute if score #plot_player_5_1 pr.value matches 1 if score #plot_tick_5_1 pr.value matches 0 run forceload add 496 144
+execute if score #plot_player_5_1 pr.value matches 1 if score #plot_tick_5_1 pr.value matches 0 run forceload add 528 144
+execute if score #plot_player_5_1 pr.value matches 0 if score #plot_tick_5_1 pr.value matches 1 run forceload remove 496 112
+execute if score #plot_player_5_1 pr.value matches 0 if score #plot_tick_5_1 pr.value matches 1 run forceload remove 528 112
+execute if score #plot_player_5_1 pr.value matches 0 if score #plot_tick_5_1 pr.value matches 1 run forceload remove 496 144
+execute if score #plot_player_5_1 pr.value matches 0 if score #plot_tick_5_1 pr.value matches 1 run forceload remove 528 144
+execute if score #chunk_loaded_bool pr.value matches 1 unless score #plot_player_5_1 pr.value = #plot_tick_5_1 pr.value positioned 472.0 -64 88.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_player_5_1 pr.value matches 1 if score #plot_tick_5_1 pr.value matches 0 positioned 520 0 136 run function marcostrk-icy-boat-parkour:plot_on
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_player_5_1 pr.value matches 0 if score #plot_tick_5_1 pr.value matches 1 positioned 520 0 136 run function marcostrk-icy-boat-parkour:plot_off
+execute if score #chunk_loaded_bool pr.value matches 1 unless score #plot_player_5_1 pr.value = #plot_tick_5_1 pr.value run tag @e[tag=pr.target] remove pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 run scoreboard players operation #plot_tick_5_1 pr.value = #plot_player_5_1 pr.value
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_5_1 pr.value matches 1 positioned 476.0 -64 92.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot 1109
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_5_1 pr.value matches 1 positioned 476.0 -64 92.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_5_1 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_5_1 pr.value matches 1 positioned 520 0 136 run function marcostrk-icy-boat-parkour:tick_plot
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_5_1 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
 

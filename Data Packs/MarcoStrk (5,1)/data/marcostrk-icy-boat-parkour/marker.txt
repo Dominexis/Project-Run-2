@@ -1,0 +1,5 @@
+# Checkpoint
+summon marker ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:0b,CustomName:'{"text":"marcostrk-icy-boat-parkour-Checkpoint"}'}
+
+# Finish
+summon marker ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,CustomNameVisible:0b,CustomName:'{"text":"marcostrk-icy-boat-parkour-Finish"}'}

@@ -308,8 +308,8 @@ execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 1 run scor
 execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_side 3
 
 
-#execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run function namespace:enter
-execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run function marcostrk-icy-boat-parkour:enter
+execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_y 1
 execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run scoreboard players set @s pr.checkpoint_side 1
 
 

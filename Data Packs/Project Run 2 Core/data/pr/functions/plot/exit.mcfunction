@@ -61,7 +61,7 @@ execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 1 run func
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run function subchronos:exit
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 1 run function blackcb:exit
 #execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 1 run function namespace:exit
-#execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run function namespace:exit
+execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run function marcostrk-icy-boat-parkour:exit
 execute if score @s pr.plot_x matches -6 if score @s pr.plot_z matches 2 run function corruptide_city:exit
 #execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 2 run function namespace:exit
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 2 run function flying_dragon:exit

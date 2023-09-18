@@ -72,6 +72,7 @@ NAMESPACES = {
     (4,0): ("cygnus_switch_palace", 0, True, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.\n\n§6Cygnus"),
     (5,-3): ("tuntan", 4, True, "minecraft:elytra", "Tunnel Tangle", "Fly through tight tunnels to escape the maze!\n\n§6mmmmmaaaaaxxxxx"),
     (5,-1): ("frostcobra", 0, True, "minecraft:calcite", "Cloud Maze", "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos"),
+    (5,1): ("marcostrk-icy-boat-parkour", 1, True),
     (5,3): ("wall_hall", 0, True),
     (6,-2): ("ganymede", 0, True, "minecraft:white_stained_glass_pane", "Colorblind", "Navigate through several enigmatic rooms using special colored lenses to reveal hidden paths.\n\n§6Ganymede & mmmmmaaaaaxxxxx"),
     (6,2): ("titruc.interactivejump.sys", 0, True)
