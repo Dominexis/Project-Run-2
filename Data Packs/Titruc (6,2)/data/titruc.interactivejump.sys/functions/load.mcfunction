@@ -13,5 +13,4 @@ scoreboard players set titruc.interactivejump.variable.20 titruc.interactivejump
 scoreboard players set titruc.interactivejump.variable.0 titruc.interactivejump.variable 0
 scoreboard players set titruc.interactivejump.variable.4 titruc.interactivejump.variable 4
 execute positioned ~ ~ ~ run function titruc.interactivejump.sys:enter/enter_marker
-say g
 summon marker ~ ~ ~ {Tags:["pr.target","titruc.interactivejump.ishere"]}

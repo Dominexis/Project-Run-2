@@ -7,6 +7,8 @@
     "minecraft:lime_stained_glass",
     "minecraft:yellow_stained_glass",
     "minecraft:polished_deepslate",
-    "minecraft:light"
+    "minecraft:light",
+    "minecraft:heavy_weighted_pressure_plate",
+    "minecraft:lime_concrete"
   ]
 }

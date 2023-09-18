@@ -145,4 +145,4 @@ summon minecraft:marker ~-12 ~-23 ~23 {Tags:["pr.target","titruc.interactivejump
 summon minecraft:marker ~-12 ~-23 ~27 {Tags:["pr.target","titruc.interactivejump.greenblock.block"]}
 summon minecraft:marker ~-11 ~-22 ~30 {Tags:["pr.target","titruc.interactivejump.redblock.block"]}
 summon minecraft:marker ~-10 ~-23 ~33 {Tags:["pr.target","titruc.interactivejump.block"]}
-summon minecraft:marker -24 0 -4 {Tags:["pr.target","titruc.interactivejump.block"]}
+summon minecraft:marker ~-24 ~0 ~-4 {Tags:["pr.target","titruc.interactivejump.block"]}

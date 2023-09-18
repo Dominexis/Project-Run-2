@@ -113,7 +113,7 @@ execute as @e[type=marker,tag=pr.target,tag=titruc.interactivejump.checkpoint] a
 execute as @e[type=marker,tag=pr.target,tag=titruc.interactivejump.checkpoint] at @s if block ~ ~ ~ minecraft:white_stained_glass unless entity @a[tag=pr.target,distance=..7] run fill ~ ~3 ~ ~ ~-2 ~ air
 execute as @e[type=marker,tag=pr.target,tag=titruc.interactivejump.checkpoint] at @s if entity @e[type=item,tag=pr.target,distance=..2] unless entity @a[tag=pr.target,distance=..7] run kill @e[type=item,distance=..2]
 
-execute as @e[type=marker,tag=titruc.interactivejump.checkpoint,tag=pr.target] at @s if block ~ ~1 ~ minecraft:heavy_weighted_pressure_plate[power=1] as @a[tag=pr.target,distance=..2] at @s run function titruc.interactivejump.sys:checkpoint_setspawn
+execute as @e[type=marker,tag=titruc.interactivejump.checkpoint,tag=pr.target] at @s if block ~ ~1 ~ minecraft:heavy_weighted_pressure_plate[power=1] as @a[tag=pr.target,distance=..2] positioned ~ ~2 ~ run function titruc.interactivejump.sys:checkpoint_setspawn
 
 #block noir
 
@@ -124,7 +124,7 @@ execute as @e[type=marker,tag=pr.target,tag=titruc.interactivejump.blackblock.bl
 
 #kill
 
-execute as @a[tag=pr.target,predicate=titruc.interactivejump.sys:onground] unless block ~ ~ ~ structure_void unless block ~ ~-1 ~ #titruc.interactivejump.sys:allowed at @s run function titruc.interactivejump.sys:kill/kill
-execute as @a[tag=pr.target] if block ~ ~ ~ #titruc.interactivejump.sys:innoallowed run function titruc.interactivejump.sys:kill/kill
+execute as @a[tag=pr.target,predicate=titruc.interactivejump.sys:onground] at @s unless block ~ ~ ~ structure_void unless block ~ ~-1 ~ #titruc.interactivejump.sys:allowed at @s run function titruc.interactivejump.sys:kill/kill
+execute as @a[tag=pr.target] at @s if block ~ ~ ~ #titruc.interactivejump.sys:innoallowed run function titruc.interactivejump.sys:kill/kill
 
 execute as @a[tag=pr.target] at @s if entity @e[type=marker,tag=pr.target,tag=titruc.fin,distance=..4] run function pr:player/finish
