@@ -1,43 +1,43 @@
 scoreboard players remove new_wall loom.wall_hall 40
-summon armor_stand ~38 ~-3 ~9 {Invulnerable:1b,Invisible:1b,Tags:["NewWall","WallHall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall1","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall2","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall3","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall4","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall5","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall6","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall7","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall8","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall9","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall10","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall11","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall12","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall13","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall14","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall15","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall16","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall17","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall18","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall19","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall20","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall21","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Wall22","PossibleWall"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color1","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color2","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color3","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color4","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color5","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color6","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color7","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color8","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color9","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color10","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color11","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color12","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color13","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color14","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color15","PossibleColor"]}
-summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["pr.target","Color16","PossibleColor"]}
+summon armor_stand ~38 ~-3 ~9 {Invulnerable:1b,Invisible:1b,Tags:["NewWall","WallHall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall1","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall2","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall3","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall4","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall5","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall6","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall7","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall8","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall9","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall10","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall11","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall12","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall13","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall14","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall15","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall16","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall17","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall18","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall19","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall20","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall21","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Wall22","PossibleWall","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color1","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color2","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color3","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color4","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color5","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color6","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color7","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color8","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color9","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color10","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color11","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color12","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color13","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color14","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color15","PossibleColor","pr.target"]}
+summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["Color16","PossibleColor","pr.target"]}
 tag @e[tag=PossibleWall,tag=pr.target,sort=random,limit=1] add Selected 
 execute if entity @e[type=marker,tag=pr.target,tag=Wall1,tag=Selected] run clone ~-39 ~-63 ~-39 ~-39 ~-59 ~-25 ~38 ~ ~9
 execute if entity @e[type=marker,tag=pr.target,tag=Wall2,tag=Selected] run clone ~-38 ~-63 ~-39 ~-38 ~-59 ~-25 ~38 ~ ~9
@@ -80,5 +80,4 @@ execute if entity @e[type=marker,tag=pr.target,tag=Color14,tag=Selected] run fil
 execute if entity @e[type=marker,tag=pr.target,tag=Color15,tag=Selected] run fill ~38 ~ ~9 ~38 ~4 ~23 magenta_concrete replace stone
 execute if entity @e[type=marker,tag=pr.target,tag=Color16,tag=Selected] run fill ~38 ~ ~9 ~38 ~4 ~23 pink_concrete replace stone
 kill @e[tag=PossibleColor,tag=pr.target]
-execute as @e[type=armor_stand,tag=pr.target,tag=NewWall,tag=WallHall] store result score @s loom.wall_hall_prev_x_pos run data get entity @s Pos[0]
-#tag @e[tag=NewWall] remove NewWall
+execute as @e[type=armor_stand,tag=NewWall,tag=WallHall,tag=pr.target] store result score @s loom.wall_hall_prev_x_pos run data get entity @s Pos[0]
