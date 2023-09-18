@@ -435,16 +435,16 @@ execute if score #plot_tick_-6_-2 pr.value matches 1 run tag @e[tag=pr.target] r
 
 
 execute store result score #plot_player_-5_-2 pr.value positioned -488.0 -64 -200.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
-#execute unless score #plot_player_-5_-2 pr.value = #plot_tick_-5_-2 pr.value positioned -488.0 -64 -200.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute if score #plot_player_-5_-2 pr.value matches 1 if score #plot_tick_-5_-2 pr.value matches 0 positioned -440 0 -152 run function namespace:plot_on
-#execute if score #plot_player_-5_-2 pr.value matches 0 if score #plot_tick_-5_-2 pr.value matches 1 positioned -440 0 -152 run function namespace:plot_off
-#execute unless score #plot_player_-5_-2 pr.value = #plot_tick_-5_-2 pr.value run tag @e[tag=pr.target] remove pr.target
+execute unless score #plot_player_-5_-2 pr.value = #plot_tick_-5_-2 pr.value positioned -488.0 -64 -200.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute if score #plot_player_-5_-2 pr.value matches 1 if score #plot_tick_-5_-2 pr.value matches 0 positioned -440 0 -152 run function artem:plot_on
+execute if score #plot_player_-5_-2 pr.value matches 0 if score #plot_tick_-5_-2 pr.value matches 1 positioned -440 0 -152 run function artem:plot_off
+execute unless score #plot_player_-5_-2 pr.value = #plot_tick_-5_-2 pr.value run tag @e[tag=pr.target] remove pr.target
 scoreboard players operation #plot_tick_-5_-2 pr.value = #plot_player_-5_-2 pr.value
 execute if score #plot_tick_-5_-2 pr.value matches 1 positioned -484.0 -64 -196.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot 907
-#execute if score #plot_tick_-5_-2 pr.value matches 1 positioned -484.0 -64 -196.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target
-#execute if score #plot_tick_-5_-2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-#execute if score #plot_tick_-5_-2 pr.value matches 1 positioned -440 0 -152 run function namespace:tick_plot
-#execute if score #plot_tick_-5_-2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+execute if score #plot_tick_-5_-2 pr.value matches 1 positioned -484.0 -64 -196.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target
+execute if score #plot_tick_-5_-2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute if score #plot_tick_-5_-2 pr.value matches 1 positioned -440 0 -152 run function artem:tick_plot
+execute if score #plot_tick_-5_-2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
 

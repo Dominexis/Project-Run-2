@@ -14,6 +14,7 @@ NAMESPACES = {
     (-6,-2): ("andreyhero", 0, False),
     (-6,2): ("corruptide_city", 0, True, "minecraft:black_glazed_terracotta", "§kO§r Corruptide City §kO§r", "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n§6CoreOptd"),
     (-5,-3): ("bowshot", 0, False, "minecraft:moss_block", "Wasteland", "Be careful of the toxic waste!\n\n§6Bowshot"),
+    (-5,-2): ("artem", 0, False),
     (-5,1): ("dtplayers", 0, True, "minecraft:end_stone", "Space Escape", "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers"),
     (-4,-3): ("xekyt", 0, False, "minecraft:quartz_block", "Lab Leap", "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_"),
     (-4,-2): ("fuzzbearplush", 0, False, "minecraft:lime_wool", "Koopa Course", "Jump your way to the flag pole!\n\n§6Fuzzbearplush"),
