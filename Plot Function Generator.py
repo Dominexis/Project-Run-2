@@ -65,7 +65,7 @@ NAMESPACES = {
     (2,6): ("lifeely", 0, True, "minecraft:blast_furnace", "Blast Burner", "Phew! Sure is hot in here!\n\n§6Lifeely & Dominexis"),
     (3,-5): ("shadoweeq", 0, False, "minecraft:player_head", "Skyreach Mega Tower", "Explore changing city scenes as you make your way up to reach the top of the tower.\n\n§6shadoweeq", '{SkullOwner:{Id:[I;1543298721,250171001,-2086573174,-871347001],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY2YmIzYWQ4ZGFmMGMxNDk5YjVlNDZkY2Y0MTc2YzgzNDU0MzU1M2ExYTgxODAwOWU3Njc1ZTg5NjI5NWUxYSJ9fX0="}]}}}'),
     (3,-4): ("kevinc", 0, False, "minecraft:gold_ore", "Mine Skyisland", "There were many people who came for the treasure, and now it's empty.\n\n§6mc_Kevin_Creeper"),
-    (3,-1): ("prisonbreak", 0, False),
+    (3,-1): ("dominexis", 4, False, "minecraft:slime_block", "Slime Cave", "Careful! That stuff will kill ya!\n\n§6Dominexis"),
     (3,1): ("blackcb", 1, False, "minecraft:spruce_log", "Mountain View", "Keep your momentum on the ice!\n\n§6BlackCB & Dominexis"),
     (3,2): ("im1294", 1, True),
     (4,-2): ("ykw", 3, True, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),

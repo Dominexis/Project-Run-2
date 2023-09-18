@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:slime_block",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 3, -1",
+                "text": "Slime Cave",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Careful! That stuff will kill ya!\n\n§6Dominexis",
                 "color": "green"
             }
         ],
