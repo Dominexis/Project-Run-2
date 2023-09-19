@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:dead_bubble_coral_block",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -1, 5",
+                "text": "Rock and Dust",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "A breathtaking experience!\n\n§6FunkyToc & _TheSwagUnicorn_",
                 "color": "green"
             }
         ],

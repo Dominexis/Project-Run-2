@@ -36,7 +36,7 @@ execute if score im1294.Zombies im1294.wall_right matches ..3 run summon zombie 
 execute if score im1294.Skeletons im1294.wall_right matches ..2 run summon skeleton ~-18 ~40 ~3 {Tags:["pr.target","im1294.wall_right"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}],HandItems:[{id:"bow",Count:1}],HandDropChances:[0.00f]}
 #execute if score im1294.Spiders im1294.wall_right matches ..3 run summon spider ~-18 ~39 ~10 {Tags:["pr.target","im1294.wall_right"]}
 
-execute if score im1294.Zombies im1294.floor_right matches ..5 run summon zombie ~-31 ~27 ~4 {Tags:["pr.target","im1294.floor_right"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}]}
+execute if score im1294.Zombies im1294.floor_right matches ..3 run summon zombie ~-31 ~27 ~4 {Tags:["pr.target","im1294.floor_right"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}]}
 execute if score im1294.Skeletons im1294.floor_right matches ..2 run summon skeleton ~-37 ~27 ~6 {Tags:["pr.target","im1294.floor_right"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}],HandItems:[{id:"bow",Count:1}],HandDropChances:[0.00f]}
 #execute if score im1294.Spiders im1294.floor_right matches ..5 run summon spider ~-27 ~30 ~16 {Tags:["pr.target","im1294.floor_right"]}
 
@@ -48,7 +48,7 @@ execute if score im1294.Zombies im1294.wall_left matches ..2 run summon zombie ~
 execute if score im1294.Skeletons im1294.wall_left matches ..2 run summon skeleton ~25 ~41 ~21 {Tags:["pr.target","im1294.wall_left"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}],HandItems:[{id:"bow",Count:1}],HandDropChances:[0.00f]}
 execute if score im1294.Spiders im1294.wall_left matches ..2 run summon spider ~25 ~41 ~21 {Tags:["pr.target","im1294.wall_left"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}]}
 
-execute if score im1294.Zombies im1294.floor_left matches ..5 run summon zombie ~32 ~33 ~10 {Tags:["pr.target","im1294.floor_left"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}]}
+execute if score im1294.Zombies im1294.floor_left matches ..3 run summon zombie ~32 ~33 ~10 {Tags:["pr.target","im1294.floor_left"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}]}
 execute if score im1294.Skeletons im1294.floor_left matches ..2 run summon skeleton ~36 ~34 ~18 {Tags:["pr.target","im1294.floor_left"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}],HandItems:[{id:"bow",Count:1}],HandDropChances:[0.00f]}
 execute if score im1294.Spiders im1294.floor_left matches ..2 run summon spider ~31 ~39 ~34 {Tags:["pr.target","im1294.floor_left"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}]}
 
@@ -63,6 +63,4 @@ execute if score im1294.Spiders im1294.central matches ..2 run summon spider ~12
 execute if score im1294.Zombies im1294.summit matches ..3 run summon zombie ~1 ~75 ~6 {Tags:["pr.target","im1294.summit"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}]}
 execute if score im1294.Strays im1294.summit matches ..2 run summon stray ~12 ~69 ~11 {Tags:["pr.target","im1294.summit"],ActiveEffects:[{Id:12,ShowParticles:0b,Duration:9999}],ArmorItems:[{},{},{},{id:"stone_button",Count:1}],HandItems:[{id:"bow",Count:1}],HandDropChances:[0.00f]}
 
-execute if score im1294.Wardens im1294.central matches ..3 run summon warden ~-15 ~1 ~1 {Tags:["pr.target","im1294.central"],Invulnerable:1,PersistenceRequired:1,Silent:1}
-execute if score im1294.Wardens im1294.central matches ..3 run summon warden ~-20 ~4 ~7 {Tags:["pr.target","im1294.central"],Invulnerable:1,PersistenceRequired:1,Silent:1}
-execute if score im1294.Wardens im1294.central matches ..3 run summon warden ~-15 ~1 ~13 {Tags:["pr.target","im1294.central"],Invulnerable:1,PersistenceRequired:1,Silent:1}
+execute if entity @p[tag=pr.target,y=10,dy=-30] run function im1294:spawn_warden

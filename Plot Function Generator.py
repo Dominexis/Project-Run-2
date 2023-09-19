@@ -44,7 +44,7 @@ NAMESPACES = {
     (-1,2): ("applecake", 2, True, "minecraft:waxed_cut_copper", "Steampunk Factory", "Compliant with safety regulations.\n\n§6Applecake"),
     (-1,3): ("woutbelt", 0, True),
     (-1,4): ("brosephmc_mc_pr", 0, True, "minecraft:minecart", "Car Tunnel", "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC"),
-    (-1,5): ("funkytoc_moon", 1, False),
+    (-1,5): ("funkytoc_moon", 1, False, "minecraft:dead_bubble_coral_block", "Rock and Dust", "A breathtaking experience!\n\n§6FunkyToc & _TheSwagUnicorn_"),
     (0,-4): ("sparkour", 0, False),
     (0,-3): ("evilgodloki", 1, True, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),
     (0,0): ("cubed", 0, False, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
