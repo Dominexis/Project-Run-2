@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:note_block",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -2, -3",
+                "text": "Beat Bounce",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "When your grooving to music what do you do? You bounce of course!\nIn this parkour map your jumping is out of your control, bounce to the beat and try escape the abandoned laboratory as fast as possible!\n\n§6Technodono & BrandShei",
                 "color": "green"
             }
         ],
