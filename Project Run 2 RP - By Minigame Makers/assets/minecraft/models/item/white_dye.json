@@ -80,6 +80,14 @@
 		{
 			"predicate": { "custom_model_data": 10057 },
 			"model": "masp005:test_tube"
-		}
+		},
+		{"predicate": {"custom_model_data":77001}, "model": "mrminerman:item/brickpile"},
+		{"predicate": {"custom_model_data":77002}, "model": "mrminerman:item/paintroller"},
+		{"predicate": {"custom_model_data":77003}, "model": "mrminerman:item/wetfloor"},
+		{"predicate": {"custom_model_data":77004}, "model": "mrminerman:item/creeperplush"},
+		{"predicate": {"custom_model_data":77005}, "model": "mrminerman:item/gwpainting"},
+		{"predicate": {"custom_model_data":77006}, "model": "mrminerman:item/mnrpainting"},
+		{"predicate": {"custom_model_data":77007}, "model": "mrminerman:item/mnrpaintingyt"},
+		{"predicate": {"custom_model_data":77008}, "model": "mrminerman:item/minerstatue"}
 	]
 }
