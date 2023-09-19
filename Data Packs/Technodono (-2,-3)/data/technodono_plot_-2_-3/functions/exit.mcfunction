@@ -4,7 +4,10 @@ tag @s remove technodono_plot.is_in_plot
 tag @s remove technodono_plot.beat_bounce
 tag @s remove pr.plate_checkpoint
 
-execute as @s at @s run function technodono_plot_-2_-3:movement/jump_cancel
+tag @s remove technodono_plot.jump_delay
+tag @s remove technodono_plot.double_jump
+tag @s remove technodono_plot.single_jump
+tag @s remove technodono_plot.jump
 
 scoreboard players set @s technodono_plot.jump_counter -1
 scoreboard players set @s technodono_plot.music_timer 0
