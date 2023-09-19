@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=pr.target,tag=Platform] at @s run function platform:time/platdestroy

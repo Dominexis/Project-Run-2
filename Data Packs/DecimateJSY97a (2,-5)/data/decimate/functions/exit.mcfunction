@@ -1,1 +1,1 @@
-# tag @s remove pr.plate_checkpoint
+tag @s remove pr.plate_checkpoint

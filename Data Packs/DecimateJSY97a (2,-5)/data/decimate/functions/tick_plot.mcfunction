@@ -1,1 +1,1 @@
-# execute positioned ~-9 ~-1 ~25 as @a[tag=pr.target] unless entity @s[dx=19,dy=2,dz=15] at @s if block ~ ~ ~ dark_oak_slab run trigger checkpoint
+execute as @a[tag=pr.target] at @s if block ~ ~ ~ dark_oak_slab run trigger checkpoint

@@ -414,8 +414,8 @@ execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 4 run sco
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 4 run scoreboard players set @s pr.checkpoint_side 0
 
 
-#execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run function namespace:enter
-execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run function platform:enter
+execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run scoreboard players set @s pr.checkpoint_y 2
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run scoreboard players set @s pr.checkpoint_side 3
 
 
