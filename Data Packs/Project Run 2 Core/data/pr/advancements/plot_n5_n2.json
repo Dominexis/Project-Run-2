@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
-            "nbt": "{}"
+            "item": "minecraft:blue_dye",
+            "nbt": "{CustomModelData:1985}"
         },
         "title": [
             {
-                "text": "Section -5, -2",
+                "text": "Muddy Place",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour through swamp islands.\n\n§6Artem & _TheSwagUnicorn_",
                 "color": "green"
             }
         ],

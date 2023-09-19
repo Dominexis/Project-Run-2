@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:painting",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 1, 2",
+                "text": "Portrait Planting",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Look around and find the secrets of the museum.\n\n§6mrminerman21 & Aspookabie",
                 "color": "green"
             }
         ],
