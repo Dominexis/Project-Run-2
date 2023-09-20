@@ -39,7 +39,7 @@ execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run fu
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run function cds28:exit
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -1 run function time_stream:exit
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function namespace:exit
-#execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -1 run function namespace:exit
+execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -1 run function snakerattler:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -1 run function theswagunicorn2:exit
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -1 run function namespace:exit
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -1 run function dominexis:exit

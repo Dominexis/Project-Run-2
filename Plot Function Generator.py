@@ -48,6 +48,7 @@ NAMESPACES = {
     (-1,5): ("funkytoc_moon", 1, False, "minecraft:dead_bubble_coral_block", "Rock and Dust", "A breathtaking experience!\n\n§6FunkyToc & _TheSwagUnicorn_"),
     (0,-4): ("sparkour", 0, False),
     (0,-3): ("evilgodloki", 1, True, "minecraft:dark_oak_door", "Password Anxiety", "There are a lot of hidden codes in this building, find at least 2 of them to escape from the building.\n\n§6EvilGod_Loki"),
+    (0,-1): ("snakerattler", 0, False),
     (0,0): ("cubed", 0, False, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
     (0,3): ("rambini", 0, False, "minecraft:rooted_dirt", "Crack in The World", "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini"),
     (1,-5): ("rko", 1, True, "minecraft:brick", "RKO Factory", "Parkour your way through a vast and old factory on moving machinery and conquer the challenge awaiting you.\n\n§6Rajdi & Kassar & Owca", "{CustomModelData:721011}"),
