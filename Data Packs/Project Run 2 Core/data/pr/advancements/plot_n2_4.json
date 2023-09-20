@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:green_stained_glass",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -2, 4",
+                "text": "Magical Platforms",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Experience the ability to conjure glass platforms, they may last for a little longer than usual.\n\n§6P2ime & Dominexis",
                 "color": "green"
             }
         ],

@@ -1,0 +1,3 @@
+scoreboard objectives remove SnakeRattler.TimeSwitch
+scoreboard objectives remove SnakeRattler.TimeTracker
+scoreboard objectives remove SnakeRattler.TimeWarpCounter

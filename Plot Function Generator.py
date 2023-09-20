@@ -35,7 +35,7 @@ NAMESPACES = {
     (-2,-1): ("time_stream", 0, False, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
     (-2,1): ("theswagunicorn3", 0, False, "minecraft:feather", "Flappy Fowl", "2014 was a great year!\n\n§6_TheSwagUnicorn_"),
     (-2,3): ("stabily_time_tower_parkour", 1, False, "minecraft:ladder", "Time Tower", "Climbing to the future!\n\n§6Stabily Waqular"),
-    (-2,4): ("platform", 2, False),
+    (-2,4): ("platform", 2, False, "minecraft:green_stained_glass", "Magical Platforms", "Experience the ability to conjure glass platforms, they may last for a little longer than usual.\n\n§6P2ime & Dominexis"),
     (-2,5): ("captainargus", 3, False, "minecraft:clock", "Factory Frenzy", "Don't fall off, you're sure to get lost. Follow the carpets if you're ever uncertain.\n\n§6CaptainArgus"),
     (-1,-5): ("spinat", 0, False, "minecraft:purple_concrete_powder", "25 Pixels", "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox"),
     (-1,-4): ("kirnt", 1, False, "minecraft:oxidized_copper", "Stellar Adventure", "Leap through outer space from world to world!\n\n§6kirnt2027 & Minigame Makers"),
