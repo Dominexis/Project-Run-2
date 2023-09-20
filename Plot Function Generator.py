@@ -11,7 +11,7 @@ PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
 # namespace, y coordinate, icon, name, description
 NAMESPACES = {
-    (-6,-2): ("andreyhero", 0, False),
+    (-6,-2): ("andreyhero", 0, False, "minecraft:grass_block", "Parkour Cube Mini", "Enjoy nostalgic parkour, just relax, and chill.\n\n§6AndreyHero & Spaghetti099 & Sk0ck0 & Bindabash79"),
     (-6,2): ("corruptide_city", 0, True, "minecraft:black_glazed_terracotta", "§kO§r Corruptide City §kO§r", "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n§6CoreOptd"),
     (-5,-3): ("bowshot", 0, False, "minecraft:moss_block", "Wasteland", "Be careful of the toxic waste!\n\n§6Bowshot"),
     (-5,-2): ("artem", 0, False, "minecraft:blue_dye", "Muddy Place", "Parkour through swamp islands.\n\n§6Artem & _TheSwagUnicorn_", '{CustomModelData:1985}'),
@@ -74,6 +74,7 @@ NAMESPACES = {
     (4,-2): ("ykw", 3, True, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),
     (4,-1): ("rooftop_adventure_ra", 1, False, "minecraft:cobweb", "Rooftop Adventure", "Parkour across an abandoned city.\n\n§6ed1ska"),
     (4,0): ("cygnus_switch_palace", 0, True, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.\n\n§6Cygnus"),
+    (4,2): ("hhyes", 0, False),
     (5,-3): ("tuntan", 4, True, "minecraft:elytra", "Tunnel Tangle", "Fly through tight tunnels to escape the maze!\n\n§6mmmmmaaaaaxxxxx"),
     (5,-1): ("frostcobra", 0, True, "minecraft:calcite", "Cloud Maze", "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos"),
     (5,1): ("marcostrk-icy-boat-parkour", 1, True),

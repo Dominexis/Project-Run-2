@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:grass_block",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -6, -2",
+                "text": "Parkour Cube Mini",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Enjoy nostalgic parkour, just relax, and chill.\n\n§6AndreyHero & Spaghetti099 & Sk0ck0 & Bindabash79",
                 "color": "green"
             }
         ],
