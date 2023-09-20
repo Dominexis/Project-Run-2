@@ -87,7 +87,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 4 run fun
 #execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 4 run function namespace:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 4 run function rex_saltus_neon:exit
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 4 run function namespace:exit
-#execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 4 run function namespace:exit
+execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 4 run function proxxchf:exit
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 5 run function simondmc:exit
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 5 run function captainargus:exit
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 5 run function funkytoc_moon:exit
