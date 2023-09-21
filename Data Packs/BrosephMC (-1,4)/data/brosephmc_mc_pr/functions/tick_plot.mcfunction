@@ -50,6 +50,7 @@ particle minecraft:portal ~25 ~19 ~30 0.1 0.3 0.1 0.4 2 force
 execute as @a[tag=pr.target] positioned ~25 ~19 ~30 if entity @s[distance=..1] run stopsound @s ambient
 execute as @a[tag=pr.target] positioned ~25 ~19 ~30 if entity @s[distance=..1] align xyz run playsound minecraft:entity.enderman.teleport player @a[tag=pr.target] ~-24.5 ~0 ~-0.5 5
 execute as @a[tag=pr.target] positioned ~25 ~19 ~30 if entity @s[distance=..1] align xyz run particle minecraft:campfire_cosy_smoke ~-24.5 ~1.5 ~-0.5 0.1 0.1 0.1 0.1 100
+execute as @a[tag=pr.target] positioned ~25 ~19 ~30 if entity @s[distance=..1] align xyz run tellraw @s [{"text":"Thanks for playing! ","color":"green"},{"text":"Motor Course level by BrosephMC","color":"dark_green"}]
 execute as @a[tag=pr.target] positioned ~25 ~19 ~30 if entity @s[distance=..1] align xyz run tp @s ~-24.5 ~0.1 ~-0.5
 
 #bats
