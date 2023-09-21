@@ -237,7 +237,7 @@ execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 0 run sco
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 0 run scoreboard players set @s[predicate=pr:side/north] pr.checkpoint_side 3
 
 
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run function namespace:enter
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run function lobby:enter
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run scoreboard players set @s pr.checkpoint_y -4
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run scoreboard players set @s pr.checkpoint_side -1
 

@@ -112,6 +112,6 @@ execute as @e[type=item,tag=!pr.item_processed] run function pr:generic/process_
 
 
 
-# Lobby functionality
+# Octopus pit
 
 execute positioned -16 -8 16 run tp @a[team=pr.player,dx=15,dy=2,dz=47] -19 1 40 -90 0

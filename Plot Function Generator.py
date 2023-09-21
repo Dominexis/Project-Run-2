@@ -30,7 +30,7 @@ NAMESPACES = {
     (-3,2): ("boss586", 3, False, "minecraft:amethyst_block", "Mystical House", "Parkour your way through a mysterious mystical cave under a house.\n\n§6Boss586 & mmmmmaaaaaxxxxx"),
     (-3,4): ("zombie1111", 0, True, "minecraft:bricks", "Monster City", "Parkour through the city and fight the monsters!\n\n§6Zombie1111 & _Elton"),
     (-3,5): ("simondmc", 2, True, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!\n\n§6SimonDMC & EurekaX"),
-    (-2,-6): ("eosand", 0, True, "minecraft:end_crystal", "Pipeline Pandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.§6\n\nEOSand"),
+    (-2,-6): ("eosand", 0, True, "minecraft:end_crystal", "Pipeline Pandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.\n\n§6EOSand"),
     (-2,-5): ("ronanemperor", 2, True, "minecraft:sculk_shrieker", "Warden's Domain", "Parkour through the dangerous underground to reach the Warden's Domain.\n\n§6RonanEmperor"),
     (-2,-3): ("technodono_plot_-2_-3", 0, True, "minecraft:note_block", "Beat Bounce", "When your grooving to music what do you do? You bounce of course!\nIn this parkour map your jumping is out of your control, bounce to the beat and try escape the abandoned laboratory as fast as possible!\n\n§6Technodono & BrandShei"),
     (-2,-1): ("time_stream", 0, False, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
@@ -42,6 +42,7 @@ NAMESPACES = {
     (-1,-4): ("kirnt", 1, False, "minecraft:oxidized_copper", "Stellar Adventure", "Leap through outer space from world to world!\n\n§6kirnt2027 & Minigame Makers"),
     (-1,-3): ("itspungpond98", 0, True, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates.\n\n§6ItsPungpond98"),
     (-1,-2): ("maze_escape", 2, True, "minecraft:zombie_head", "Maze Escape", "Explore through the maze and search for the exit.\n\n§6Anas099"),
+    (-1,0): ("lobby", -4, False, "minecraft:air", "Lobby", "Project Run 2 Lobby.\n\n§6SnakeRattler"),
     (-1,1): ("pytich_dropper", 0, False, "minecraft:pointed_dripstone", "Dropper Depths", "Keep on falling, keep on falling...\n\n§6Pytich & _TheSwagUnicorn_"),
     (-1,2): ("applecake", 2, True, "minecraft:waxed_cut_copper", "Steampunk Factory", "Compliant with safety regulations.\n\n§6Applecake"),
     (-1,3): ("woutbelt", 0, True),
@@ -95,7 +96,7 @@ with (PROGRAM_PATH / "Plots.txt").open("r", encoding="utf-8") as file:
 
 # Compile list of plot coords
 
-coordinates: list[tuple[int]] = []
+coordinates: list[tuple[int, int]] = []
 for z in range(-16, 17):
     for x in range(-16, 17):
         if plots[2*z + 32][2*x + 32] == "0":
@@ -273,7 +274,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "player" / "checkpoint" / "
 commands: list[str] = []
 for coordinate in coordinates:
     commands.append(
-        f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} unless score @s pr.spectate matches 1.. unless score @s pr.plot = #spawn_plot pr.value run advancement grant @s only pr:plot_{str(coordinate[0]).replace("-", "n")}_{str(coordinate[1]).replace("-", "n")}'
+        f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} unless score @s spectate matches 1.. unless score @s pr.plot = #spawn_plot pr.value run advancement grant @s only pr:plot_{str(coordinate[0]).replace("-", "n")}_{str(coordinate[1]).replace("-", "n")}'
     )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "advancement.mcfunction").open("w", encoding="utf-8") as file:
@@ -336,6 +337,19 @@ for coordinate in coordinates:
         f'scoreboard players set #plot pr.value {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
         f'execute positioned {coordinate[0]*4 + 40 - 96} -46 {coordinate[1]*4 + 40} run function pr:leaderboard/spawn/main'
     )
+commands.append("\n\n")
+for coordinate in coordinates:
+    if coordinate not in NAMESPACES:
+        continue
+    plot = NAMESPACES[coordinate]
+    if len(plot) < 6:
+        continue
+    name = plot[4].replace("'", "\\'")
+    newline_char = "\\\\n"
+    line_count = len(plot[5].split("§6")[-1].split(" & ")) + 2
+    commands.append(
+        f'summon text_display {coordinate[0]*4 - 55.5 + line_count*0.125} -46.99 {coordinate[1]*4 + 40.5} {{text:\'[{{"text":"{name}","color":"black","bold":true}},{{"text":"\\\\n\\\\n{newline_char.join(plot[5].split("§6")[-1].split(" & "))}","color":"black","bold":false}}]\',Tags:["pr.leaderboard"],background:0,transformation:{{right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],left_rotation:[-0.5f,0.5f,0.5f,0.5f],translation:[0.0f,0.0f,0.0f]}}}}'
+    )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
@@ -344,7 +358,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfu
         "kill @e[type=text_display,tag=pr.leaderboard]\n\n" +
         "kill @e[type=marker      ,tag=pr.leaderboard]\n\n" +
         "scoreboard players operation #plot pr.value = #spawn_plot pr.value\n" +
-        f"execute positioned {36 - 96} -46 40 run function pr:leaderboard/spawn/main\n\n" +
+        f"execute positioned {35 - 96} -46 40 run function pr:leaderboard/spawn/main\n\n" +
         "\n".join(commands)
     )
 
@@ -428,6 +442,26 @@ for coordinate in coordinates:
             indent=4,
             ensure_ascii=False
         )
+
+
+
+# Generate particle function
+
+commands = []
+for coordinate in coordinates:
+    if coordinate == (-1,0):
+        continue
+    location = f'{coordinate[0]}_{coordinate[1]}'.replace("-", "n")
+    commands.append(
+        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 - 1.5} -47 {coordinate[1]*4 + 40.5 - 1.5} 0 0 0 0 1 force @s\n'
+        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 - 1.5} -47 {coordinate[1]*4 + 40.5 + 1.5} 0 0 0 0 1 force @s\n'
+        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 + 1.5} -47 {coordinate[1]*4 + 40.5 - 1.5} 0 0 0 0 1 force @s\n'
+        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 + 1.5} -47 {coordinate[1]*4 + 40.5 + 1.5} 0 0 0 0 1 force @s'
+    )
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "particles.mcfunction").open("w", encoding="utf-8") as file:
+    file.write(
+        "\n".join(commands)
+    )
 
 
 
