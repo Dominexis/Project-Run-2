@@ -22,6 +22,7 @@ NAMESPACES = {
     (-4,0): ("masp005", 3, True, "minecraft:potion", "Lab Rush", "Dash through the abandoned laboratory and make your way out the twisted corridors.\n\n§6MaSp005", '{Potion:"minecraft:luck"}'),
     (-4,2): ("flying_dragon", 1, False, "minecraft:decorated_pot", "History Unearthed", "Learn about the factory history and discover the magic of nature!\n\n§6FlyingDragon"),
     (-4,3): ("fabulousfox", 0, True, "minecraft:reinforced_deepslate", "Cavern Shift", "A treacherous cave parkour map! Jump from moving platforms to floating obstacles and navigate through the dark depths.\n\n§6FabulousFox"),
+    (-3,-5): ("ischool04_plot", 0, True),
     (-3,-2): ("reuge", 0, False, "minecraft:beacon", "Skyborne Metropolis", "Navigate the captivating skies of a floating city!\n\n§6REUGE"),
     (-3,-1): ("cds28", 0, True, "minecraft:heart_of_the_sea", "Pinball", "Parkour across the pinball machine. Will you set a new score record?\n\n§6CDs28"),
     (-3,0): ("anikey_plot", 4, True, "minecraft:white_glazed_terracotta", "Mirror Travel", "Jumping in a Gothic building, try to go though it!\n\n§6Anikey_Chang"),

@@ -2,7 +2,7 @@
 
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -6 run function eosand:exit
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -6 run function namespace:exit
-#execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -5 run function namespace:exit
+execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -5 run function ischool04_plot:exit
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -5 run function ronanemperor:exit
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -5 run function spinat:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -5 run function rko:exit

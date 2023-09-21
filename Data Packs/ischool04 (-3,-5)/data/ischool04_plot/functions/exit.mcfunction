@@ -22,5 +22,3 @@ tag @s remove plvl2
 tag @s remove kmc
 tag @s remove ridingS
 tag @s remove started.ride
-execute at @s run kill @e[tag=Rzg,limit=1,sort=nearest]
-execute at @s run kill @e[tag=Czg,limit=1,sort=nearest]
