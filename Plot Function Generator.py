@@ -70,7 +70,7 @@ NAMESPACES = {
     (3,-4): ("kevinc", 0, False, "minecraft:gold_ore", "Mine Skyisland", "There were many people who came for the treasure, and now it's empty.\n\n§6mc_Kevin_Creeper"),
     (3,-1): ("dominexis", 4, False, "minecraft:slime_block", "Slime Cave", "Careful! That stuff will kill ya!\n\n§6Dominexis"),
     (3,1): ("blackcb", 1, False, "minecraft:spruce_log", "Mountain View", "Keep your momentum on the ice!\n\n§6BlackCB & Dominexis"),
-    (3,2): ("im1294", 1, True),
+    (3,2): ("im1294", 1, True, "minecraft:white_wool", "Mob Hop Scotch", "Only one swap per mob. But now that you killed it: did that help you?\n\n§6IceMaster1294"),
     (3,4): ("proxxchf", 0, True, "minecraft:amethyst_cluster", "Crystalline Caverns", "Scale the scaffolds!\n\n§6PROxxCHF & Warshito"),
     (4,-2): ("ykw", 3, True, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),
     (4,-1): ("rooftop_adventure_ra", 1, False, "minecraft:cobweb", "Rooftop Adventure", "Parkour across an abandoned city.\n\n§6ed1ska"),

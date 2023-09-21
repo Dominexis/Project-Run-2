@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:white_wool",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 3, 2",
+                "text": "Mob Hop Scotch",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Only one swap per mob. But now that you killed it: did that help you?\n\n§6IceMaster1294",
                 "color": "green"
             }
         ],
