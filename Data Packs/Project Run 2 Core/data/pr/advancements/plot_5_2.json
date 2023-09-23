@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:slime_block",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 5, 2",
+                "text": "Tomfoolery",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Bounce around and make your way to the finish!\n\n§6flcme & MaSp005",
                 "color": "green"
             }
         ],
