@@ -1,0 +1,23 @@
+{
+	"ambience.jungle_start": {
+		"sounds": [{
+			"name": "bansed:ambience/jungle_start",
+			"stream": true,
+			"preload": true
+		}]
+	},
+	"ambience.jungle_loop": {
+		"sounds": [{
+			"name": "bansed:ambience/jungle_loop",
+			"stream": true,
+			"preload": true
+		}]
+	},
+	"ambience.jungle_end": {
+		"sounds": [{
+			"name": "bansed:ambience/jungle_end",
+			"stream": true,
+			"preload": true
+		}]
+	}
+}

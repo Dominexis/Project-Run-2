@@ -1,0 +1,3 @@
+execute unless score @p[tag=pr.target] bnsd.1Pos matches 0 if block ~ ~-.1 ~ grass_block run particle minecraft:block grass_block ^ ^ ^-.5 0 0 0 0 1 normal @a
+execute if score @p[tag=pr.target] bnsd.sneak matches 1.. run data merge entity @s {Pose:{Body:[50f,0f,0f],Head:[62f,0f,0f],LeftLeg:[116f,0f,0f],RightLeg:[116f,0f,0f],LeftArm:[325f,0f,0f],RightArm:[325f,0f,0f]}}
+execute if score @p[tag=pr.target] bnsd.sneak matches 0 run data merge entity @s {Pose:{Body:[0f,0f,0f],Head:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f]}}

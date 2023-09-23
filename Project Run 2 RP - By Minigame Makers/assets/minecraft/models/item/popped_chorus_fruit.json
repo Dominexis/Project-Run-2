@@ -1,0 +1,27 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+	  "layer0": "minecraft:item/popped_chorus_fruit"
+	},
+	"overrides": [
+	  {
+		"predicate": {
+		  "custom_model_data": 492001
+		},
+		"model": "bansed:item/npc_cry"
+	  },
+	  {
+		"predicate": {
+		  "custom_model_data": 492002
+		},
+		"model": "bansed:item/door"
+	  },
+	  {
+		"predicate": {
+		  "custom_model_data": 492003
+		},
+		"model": "bansed:item/npc_cry2"
+	  }
+	]
+  }
+  

@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "bansed:custom/dark.png",
+            "ascent": 128,
+            "height": 256,
+            "chars": ["\uF846"]
+        }
+    ]
+}

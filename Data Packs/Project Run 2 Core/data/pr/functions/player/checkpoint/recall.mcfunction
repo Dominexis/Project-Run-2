@@ -41,7 +41,7 @@ execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -1 run fu
 #execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function namespace:recall
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -1 run function snakerattler:recall
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -1 run function theswagunicorn2:recall
-#execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -1 run function namespace:recall
+execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -1 run function bansed:recall
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -1 run function dominexis:recall
 execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -1 run function rooftop_adventure_ra:recall
 execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches -1 run function frostcobra:recall
