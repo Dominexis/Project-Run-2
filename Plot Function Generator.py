@@ -45,7 +45,7 @@ NAMESPACES = {
     (-1,0): ("lobby", -4, False, "minecraft:air", "Lobby", "Project Run 2 Lobby.\n\n§6SnakeRattler"),
     (-1,1): ("pytich_dropper", 0, False, "minecraft:pointed_dripstone", "Dropper Depths", "Keep on falling, keep on falling...\n\n§6Pytich & _TheSwagUnicorn_"),
     (-1,2): ("applecake", 2, True, "minecraft:waxed_cut_copper", "Steampunk Factory", "Compliant with safety regulations.\n\n§6Applecake"),
-    (-1,3): ("woutbelt", 0, True, "minecraft:respawn_anchor", "Portal of Ages", "Navigate the currents of time to discover your path to the exit.\n\n§6WoutBelt"),
+    (-1,3): ("woutbelt", 0, True, "minecraft:polished_blackstone", "Portal of Ages", "Navigate the currents of time to discover your path to the exit.\n\n§6WoutBelt"),
     (-1,4): ("brosephmc_mc_pr", 0, True, "minecraft:minecart", "Car Tunnel", "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC"),
     (-1,5): ("funkytoc_moon", 1, False, "minecraft:dead_bubble_coral_block", "Rock and Dust", "A breathtaking experience!\n\n§6FunkyToc & _TheSwagUnicorn_"),
     (0,-4): ("sparkour", 0, False),
