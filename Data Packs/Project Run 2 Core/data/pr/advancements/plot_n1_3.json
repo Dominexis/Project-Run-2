@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:respawn_anchor",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -1, 3",
+                "text": "Portal of Ages",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Navigate the currents of time to discover your path to the exit.\n\n§6WoutBelt",
                 "color": "green"
             }
         ],
