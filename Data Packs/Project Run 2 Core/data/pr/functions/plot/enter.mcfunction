@@ -247,8 +247,8 @@ execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 0 run scor
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 0 run scoreboard players set @s pr.checkpoint_side 1
 
 
-#execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run function namespace:enter
-execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run function duality:enter
+execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run scoreboard players set @s pr.checkpoint_y 4
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run scoreboard players set @s[predicate=pr:side/south] pr.checkpoint_side 2
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run scoreboard players set @s[predicate=pr:side/north] pr.checkpoint_side 3
 

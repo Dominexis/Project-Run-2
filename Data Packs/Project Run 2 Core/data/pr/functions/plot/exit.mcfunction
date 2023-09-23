@@ -49,7 +49,7 @@ execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 0 run fun
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 0 run function anikey_plot:exit
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run function lobby:exit
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 0 run function cubed:exit
-#execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run function namespace:exit
+execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run function duality:exit
 execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 0 run function cygnus_switch_palace:exit
 execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 1 run function dtplayers:exit
 #execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 1 run function namespace:exit
