@@ -1,3 +1,3 @@
-tag @s add inquognito.upgrade.damage.5
+advancement grant @s only inquognito:plot/pickups/damage/5
 
 function inquognito:logic/pickups/damage/apply

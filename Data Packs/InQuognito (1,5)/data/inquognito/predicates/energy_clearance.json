@@ -14,7 +14,12 @@
 				"condition": "minecraft:entity_properties",
 				"entity": "this",
 				"predicate": {
-					"nbt": "{Tags:[\"inquognito.upgrade.energy\"]}"
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"inquognito:plot/pickups/energy_cell": true
+						}
+					}
 				}
 			}
 		}

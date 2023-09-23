@@ -4,7 +4,7 @@
 		"layer0": "minecraft:item/sugar"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 201831 }, "model": "inquognito:misc/captive_scientist" },
-		{ "predicate": { "custom_model_data": 201832 }, "model": "inquognito:misc/camera" }
+		{ "predicate": { "custom_model_data": 201831 }, "model": "inquognito:miscellaneous/captive_scientist" },
+		{ "predicate": { "custom_model_data": 201832 }, "model": "inquognito:miscellaneous/camera" }
 	]
 }

@@ -1,4 +1,4 @@
-tag @s add inquognito.nightVisionScope
+advancement grant @s only inquognito:plot/pickups/night_vision_scope
 
 function inquognito:logic/pickups/acquire
 

@@ -1,3 +1,5 @@
+advancement revoke @s through inquognito:groups/all
+
 scoreboard players reset @s inquognito.id
 
 scoreboard players reset @s inquognito.jump
@@ -8,7 +10,10 @@ scoreboard players reset @s inquognito.health
 scoreboard players reset @s inquognito.suit
 scoreboard players reset @s inquognito.upgrades
 
+scoreboard players reset @s inquognito.dialogue
+scoreboard players reset @s inquognito.dialogue.tick
 scoreboard players reset @s inquognito.boss.health
+scoreboard players reset @s inquognito.boss.heartbeat
 
 scoreboard players reset @s inquognito.clearance
 scoreboard players reset @s inquognito.clearance.1.codes
@@ -46,12 +51,17 @@ tag @s remove inquognito.gun.nova
 tag @s remove inquognito.gun.trinity
 
 tag @s remove inquognito.boss.start
+tag @s remove inquognito.boss.darkness
+tag @s remove inquognito.boss.darkness_particles
+
+tag @s remove inquognito.win
 
 tag @s remove inquognito.code.1
 tag @s remove inquognito.code.2
 tag @s remove inquognito.code.3
 
 tag @s remove inquognito.clearance.sewer
+tag @s remove inquognito.clearance.nova
 
 tag @s remove inquognito.target.bounce_pad_room.1
 tag @s remove inquognito.target.bounce_pad_room.2
@@ -68,29 +78,5 @@ tag @s remove inquognito.target.office
 tag @s remove inquognito.target.office.1
 tag @s remove inquognito.target.office.2
 tag @s remove inquognito.target.office.3
-
-tag @s remove inquognito.transmission.captive_scientist
-
-tag @s remove inquognito.nightVisionScope
-
-tag @s remove inquognito.upgrade.energy
-
-tag @s remove inquognito.upgrade.health.1
-tag @s remove inquognito.upgrade.health.2
-tag @s remove inquognito.upgrade.health.3
-tag @s remove inquognito.upgrade.health.4
-tag @s remove inquognito.upgrade.health.5
-
-tag @s remove inquognito.upgrade.damage.1
-tag @s remove inquognito.upgrade.damage.2
-tag @s remove inquognito.upgrade.damage.3
-tag @s remove inquognito.upgrade.damage.4
-tag @s remove inquognito.upgrade.damage.5
-
-tag @s remove inquognito.upgrade.fireRate.1
-tag @s remove inquognito.upgrade.fireRate.2
-tag @s remove inquognito.upgrade.fireRate.3
-tag @s remove inquognito.upgrade.fireRate.4
-tag @s remove inquognito.upgrade.fireRate.5
 
 clear @s

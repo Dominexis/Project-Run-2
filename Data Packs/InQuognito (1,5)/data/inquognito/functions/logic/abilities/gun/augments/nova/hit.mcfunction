@@ -4,3 +4,5 @@ scoreboard players operation damage inquognito.temp *= #2 pr.value
 function inquognito:logic/abilities/gun/damage_loop
 
 execute as @a[tag=pr.target,limit=1] at @s run playsound minecraft:entity.arrow.hit_player player @s
+
+say hit

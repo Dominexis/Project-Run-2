@@ -1,3 +1,3 @@
-tag @s add inquognito.upgrade.health.5
+advancement grant @s only inquognito:plot/pickups/health/5
 
 function inquognito:logic/pickups/health/apply

@@ -4,7 +4,7 @@ function inquognito:logic/tick/abilities
 
 function inquognito:logic/tick/pickups
 
-execute if score @s inquognito.drop_item matches 1.. run function inquognito:logic/drop_item
+execute if score @s inquognito.drop_item matches 1.. at @s run function inquognito:logic/drop_item
 
 # Start
 execute positioned ~-2 ~49 ~-36 if entity @s[dx=4,dy=4,scores={inquognito.clearance=-1}] run function inquognito:logic/start
@@ -30,8 +30,26 @@ execute if score @s inquognito.clearance.office.3 matches 1.. run function inquo
 # Boss Room
 execute positioned ~-6 ~-20 ~-25 if entity @s[tag=!inquognito.boss.start,dx=2,dy=0,dz=2] run function inquognito:logic/plot/boss/start
 
-execute positioned ~-7.5 ~-35 ~-20.9 if entity @s[tag=!inquognito.transmission.captive_scientist,distance=..3] run function inquognito:logic/plot/captive_scientist
+execute if entity @s[tag=inquognito.boss.start] run function inquognito:logic/plot/boss/particles/ambient
+
 execute positioned ~-5 ~-31 ~31 if entity @s[nbt={Inventory:[{tag:{inquognito.sonic_charge:1}}]},dx=0] run function inquognito:logic/plot/boss/damage
+
+scoreboard players add sculk_particles inquognito.temp 1
+scoreboard players operation sculk_particles inquognito.temp %= #15 pr.value
+execute if score sculk_particles inquognito.temp matches 0 if entity @s[tag=inquognito.boss.darkness_particles] run function inquognito:logic/plot/boss/particles/darkness
+
+execute if entity @s[tag=inquognito.win] positioned ~-15 ~-62 ~15 run function inquognito:logic/plot/post_game/tick
+
+execute if score @s inquognito.dialogue matches -1 run function inquognito:logic/plot/boss/dialogue/captive_scientist
+execute if score @s inquognito.dialogue matches 1 run function inquognito:logic/plot/boss/dialogue/1
+execute if score @s inquognito.dialogue matches 2 run function inquognito:logic/plot/boss/dialogue/2
+execute if score @s inquognito.dialogue matches 3 run function inquognito:logic/plot/boss/dialogue/3
+execute if score @s inquognito.dialogue matches 4 run function inquognito:logic/plot/boss/dialogue/4
+
+execute if score @s inquognito.dialogue matches 1..4 if score @s inquognito.dialogue.tick matches 1..20 run particle minecraft:shriek 0 ~-5 ~-31 ~31 0.0 0.0 0.0 0.0 1 normal @s
+
+execute if score @s inquognito.dialogue matches 90 run function inquognito:logic/plot/post_game/default
+execute if score @s inquognito.dialogue matches 99 run function inquognito:logic/plot/post_game/perfection
 
 # Transmissions
 execute if score @s inquognito.transmission.tick matches 1.. unless score @s inquognito.transmission = @s inquognito.transmission.current run function inquognito:logic/transmissions/reset
@@ -60,11 +78,6 @@ execute if score @s inquognito.transmission matches 22 run function inquognito:l
 execute if score @s inquognito.transmission matches 24 run function inquognito:logic/transmissions/clearance/office/3
 execute if score @s inquognito.transmission matches 25 run function inquognito:logic/transmissions/clearance/sector_4/1
 execute if score @s inquognito.transmission matches 27 run function inquognito:logic/transmissions/clearance/sector_4/3
-execute if score @s inquognito.transmission matches 100 run function inquognito:logic/transmissions/captive_scientist
-execute if score @s inquognito.transmission matches 101 run function inquognito:logic/transmissions/boss/state/1
-execute if score @s inquognito.transmission matches 102 run function inquognito:logic/transmissions/boss/state/2
-execute if score @s inquognito.transmission matches 103 run function inquognito:logic/transmissions/boss/state/3
-execute if score @s inquognito.transmission matches 999 run function inquognito:logic/transmissions/perfection
 
 scoreboard players enable @s inquognito.transmission
 

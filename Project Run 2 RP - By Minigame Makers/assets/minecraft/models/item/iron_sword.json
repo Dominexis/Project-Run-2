@@ -4,6 +4,6 @@
 		"layer0": "minecraft:item/iron_sword"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 201831 }, "model": "inquognito:misc/propeller" }
+		{ "predicate": { "custom_model_data": 201831 }, "model": "inquognito:miscellaneous/propeller" }
 	]
 }

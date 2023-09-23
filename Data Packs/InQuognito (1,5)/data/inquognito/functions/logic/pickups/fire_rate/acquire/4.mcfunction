@@ -1,3 +1,3 @@
-tag @s add inquognito.upgrade.fireRate.4
+advancement grant @s only inquognito:plot/pickups/fire_rate/4
 
 function inquognito:logic/pickups/fire_rate/apply

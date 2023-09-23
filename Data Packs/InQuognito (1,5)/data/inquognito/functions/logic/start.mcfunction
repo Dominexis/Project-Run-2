@@ -11,6 +11,7 @@ scoreboard players set @s inquognito.clearance.sector_4 0
 
 scoreboard players set @s inquognito.floor 0
 
+scoreboard players set @s inquognito.upgrades 0
 scoreboard players set @s inquognito.gun.augments 0
 
 tellraw @s [{"text":"WARNING: Compound has been breached. Emergency lockdown activated.","color":"red"}]

@@ -16,6 +16,8 @@ scoreboard objectives add inquognito.health dummy
 scoreboard objectives add inquognito.suit dummy
 scoreboard objectives add inquognito.upgrades dummy
 
+scoreboard objectives add inquognito.dialogue dummy
+scoreboard objectives add inquognito.dialogue.tick dummy
 scoreboard objectives add inquognito.boss.health dummy
 scoreboard objectives add inquognito.boss.heartbeat dummy
 
@@ -51,8 +53,17 @@ scoreboard objectives add inquognito.jetpack.cooldown dummy
 scoreboard objectives add inquognito.jetpack.duration dummy
 scoreboard objectives add inquognito.jetpack.fuel dummy
 
+scoreboard objectives add inquognito.keypad dummy
+
 scoreboard players set energy inquognito.values 20
 scoreboard players set max_upgrades inquognito.values 18
+
+scoreboard players set key.1 inquognito.keypad 0
+scoreboard players set key.2 inquognito.keypad 0
+scoreboard players set key.3 inquognito.keypad 0
+scoreboard players set key.4 inquognito.keypad 0
+scoreboard players set correct inquognito.keypad 0
+scoreboard players set goal inquognito.keypad 0
 
 scoreboard players set 20 inquognito.values 20
 scoreboard players set 30 inquognito.values 30
@@ -167,6 +178,10 @@ summon minecraft:marker ~-5 ~3.5 ~-17 {Tags:["inquognito","inquognito.gate","inq
 summon minecraft:marker ~-5 ~4.5 ~-17 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.3"],Rotation:[0f,0f]}
 summon minecraft:marker ~-5 ~5.5 ~-17 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.3"],Rotation:[0f,0f]}
 
+summon minecraft:marker ~-22 ~-3.5 ~-34 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90f,0f]}
+summon minecraft:marker ~-22 ~-3.5 ~-33 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90f,0f]}
+summon minecraft:marker ~-22 ~-3.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90f,0f]}
+
 # Targets
 summon minecraft:marker ~21.25 ~62.5 ~-34 {Tags:["inquognito","inquognito.target","inquognito.target.small","inquognito.target.energy"]}
 
@@ -225,105 +240,92 @@ summon minecraft:text_display ~-7 ~58.25 ~-31.49 {Tags:["inquognito"],text:'[{"t
 summon minecraft:text_display ~-11 ~58.25 ~-32.51 {Tags:["inquognito"],text:'[{"text":"SUB-ZERO\\n"},{"text":"CONTAINMENT\\n\\n"},{"text":"Temp: ","color":"white"},{"text":"-40°C","color":"aqua","bold":true}]',Rotation:[180f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
 
 # Enemies
+## Red Sector
 summon minecraft:marker ~15 ~43 ~-36 {Tags:["inquognito","inquognito.enemy_spawn.1"]}
 summon minecraft:marker ~20 ~43 ~-32 {Tags:["inquognito","inquognito.enemy_spawn.2"]}
 summon minecraft:marker ~25 ~43 ~-36 {Tags:["inquognito","inquognito.enemy_spawn.3"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.1,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/1
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.2,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/2
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.3,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/3
 
+## Trash Room
 summon minecraft:marker ~-21 ~52 ~-29 {Tags:["inquognito","inquognito.enemy_spawn.4"]}
 summon minecraft:marker ~-24 ~52 ~-31 {Tags:["inquognito","inquognito.enemy_spawn.5"]}
 summon minecraft:marker ~-27 ~52 ~-33 {Tags:["inquognito","inquognito.enemy_spawn.6"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.4,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/4
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.5,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/5
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.6,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/6
 
+## Sewer - Entrance
 summon minecraft:marker ~-15 ~40 ~6 {Tags:["inquognito","inquognito.enemy_spawn.11"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.11,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/11
 
+## Sewer - Puddle
 summon minecraft:marker ~0 ~27 ~-32 {Tags:["inquognito","inquognito.enemy_spawn.12"]}
 summon minecraft:marker ~0 ~27 ~-26 {Tags:["inquognito","inquognito.enemy_spawn.13"]}
 summon minecraft:marker ~2 ~27 ~-29 {Tags:["inquognito","inquognito.enemy_spawn.14"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.12,limit=1] summon minecraft:drowned run function inquognito:logic/enemies/12
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.13,limit=1] summon minecraft:drowned run function inquognito:logic/enemies/13
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.14,limit=1] summon minecraft:drowned run function inquognito:logic/enemies/14
 
+## Sector 4
 summon minecraft:marker ~-35 ~-9 ~6 {Tags:["inquognito","inquognito.enemy_spawn.15"]}
 summon minecraft:marker ~-29 ~-9 ~6 {Tags:["inquognito","inquognito.enemy_spawn.16"]}
 summon minecraft:marker ~-36 ~-9 ~-13 {Tags:["inquognito","inquognito.enemy_spawn.17"]}
 summon minecraft:marker ~-27 ~-9 ~-8 {Tags:["inquognito","inquognito.enemy_spawn.18"]}
 summon minecraft:marker ~-37 ~-9 ~-4 {Tags:["inquognito","inquognito.enemy_spawn.19"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.15,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/15
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.16,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/16
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.17,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/17
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.18,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/18
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.19,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/19
 
-summon minecraft:marker ~18 ~-21 ~17 {Tags:["inquognito","inquognito.enemy_spawn.20"]}
-summon minecraft:marker ~18 ~-21 ~11 {Tags:["inquognito","inquognito.enemy_spawn.21"]}
-summon minecraft:marker ~22 ~-27 ~14 {Tags:["inquognito","inquognito.enemy_spawn.22"]}
-summon minecraft:marker ~18 ~-27 ~18 {Tags:["inquognito","inquognito.enemy_spawn.23"]}
-summon minecraft:marker ~15 ~-33 ~13 {Tags:["inquognito","inquognito.enemy_spawn.24"]}
-summon minecraft:marker ~18 ~-33 ~17 {Tags:["inquognito","inquognito.enemy_spawn.25"]}
+## Boss Room - Parkour Area
+summon minecraft:marker ~18 ~-21 ~11 {Tags:["inquognito","inquognito.enemy_spawn.20"]}
+summon minecraft:marker ~18 ~-21 ~17 {Tags:["inquognito","inquognito.enemy_spawn.21"]}
+summon minecraft:marker ~18 ~-27 ~18 {Tags:["inquognito","inquognito.enemy_spawn.22"]}
+summon minecraft:marker ~15 ~-33 ~13 {Tags:["inquognito","inquognito.enemy_spawn.23"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.20,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/20
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.21,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/21
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.22,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/22
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.23,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/23
 
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.1] summon minecraft:zombie_villager run function inquognito:logic/enemies/1
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.2] summon minecraft:zombie_villager run function inquognito:logic/enemies/2
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.3] summon minecraft:zombie_villager run function inquognito:logic/enemies/3
+## Sewer - Infested Scientists
+summon minecraft:marker ~-16 ~30 ~-26 {Tags:["inquognito","inquognito.enemy_spawn.24"]}
+summon minecraft:marker ~-15 ~30 ~-12 {Tags:["inquognito","inquognito.enemy_spawn.25"]}
+summon minecraft:marker ~-8 ~30 ~-32 {Tags:["inquognito","inquognito.enemy_spawn.26"]}
+summon minecraft:marker ~1 ~30 ~-14 {Tags:["inquognito","inquognito.enemy_spawn.27"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.24,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/24
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.25,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/25
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.26,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/26
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.27,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/27
 
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.4] summon minecraft:zombie_villager run function inquognito:logic/enemies/4
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.5] summon minecraft:zombie_villager run function inquognito:logic/enemies/5
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.6] summon minecraft:zombie_villager run function inquognito:logic/enemies/6
+## Sector 6
+summon minecraft:marker ~19 ~13 ~-21 {Tags:["inquognito","inquognito.enemy_spawn.28"]}
+summon minecraft:marker ~19 ~17 ~-16 {Tags:["inquognito","inquognito.enemy_spawn.29"]}
+summon minecraft:marker ~23 ~9 ~-21 {Tags:["inquognito","inquognito.enemy_spawn.30"]}
+summon minecraft:marker ~23 ~21 ~-18 {Tags:["inquognito","inquognito.enemy_spawn.31"]}
+summon minecraft:marker ~31 ~21 ~-10 {Tags:["inquognito","inquognito.enemy_spawn.32"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.28,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/28
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.29,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/29
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.30,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/30
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.31,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/31
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.32,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/32
 
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.11] summon minecraft:zombie_villager run function inquognito:logic/enemies/11
+## Boss Room - Battle Area
+summon minecraft:marker ~-32 ~-21 ~-10 {Tags:["inquognito","inquognito.enemy_spawn.33"]}
+summon minecraft:marker ~-24 ~-27 ~-8 {Tags:["inquognito","inquognito.enemy_spawn.34"]}
+summon minecraft:marker ~-24 ~-21 ~-17 {Tags:["inquognito","inquognito.enemy_spawn.35"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.33,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/33
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.34,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/34
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.35,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/35
+summon minecraft:marker ~-24 ~-27 ~-16 {Tags:["inquognito","inquognito.enemy_spawn.36"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.36,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/36
 
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.12] summon minecraft:drowned run function inquognito:logic/enemies/12
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.13] summon minecraft:drowned run function inquognito:logic/enemies/13
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.14] summon minecraft:drowned run function inquognito:logic/enemies/14
+# Keypad
+summon minecraft:item_frame ~-25 ~-4 ~-35 {Tags:["inquognito","inquognito.keypad.setup"],Facing:3b,Invisible:1b}
+execute as @e[type=minecraft:item_frame,tag=inquognito.keypad.setup,limit=1] at @s run function inquognito:logic/plot/keypad/init/frame
 
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.15] summon minecraft:zombie_villager run function inquognito:logic/enemies/15
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.16] summon minecraft:zombie_villager run function inquognito:logic/enemies/16
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.17] summon minecraft:zombie_villager run function inquognito:logic/enemies/17
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.18] summon minecraft:zombie_villager run function inquognito:logic/enemies/18
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.19] summon minecraft:zombie_villager run function inquognito:logic/enemies/19
+function inquognito:logic/plot/keypad/setup
 
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.20] summon minecraft:zombie_villager run function inquognito:logic/enemies/20
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.21] summon minecraft:zombie_villager run function inquognito:logic/enemies/21
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.22] summon minecraft:zombie_villager run function inquognito:logic/enemies/22
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.23] summon minecraft:zombie_villager run function inquognito:logic/enemies/23
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.24] summon minecraft:zombie_villager run function inquognito:logic/enemies/24
-execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.25] summon minecraft:zombie_villager run function inquognito:logic/enemies/25
-
-
-#button
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.25 ^0.125 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito1","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.0625 ^0.125 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito2","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^0.125 ^0.125 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito3","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.25 ^-0.0625 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito4","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.0625 ^-0.0625 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito5","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^0.125 ^-0.0625 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito6","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.25 ^-0.25 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito7","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.0625 ^-0.25 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito8","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^0.125 ^-0.25 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito9","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.25 ^-0.4365 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognitox","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.0625 ^-0.4365 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognito0","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^0.125 ^-0.4365 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.0625f]},block_state:{Name:"minecraft:iron_block"},Tags:["inquognitov","inquognito","inquognitok"],brightness:{sky:15,block:15}}
-
-#hitbox
-execute as @e[type=minecraft:marker,tag=inquognito1,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito11","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito2,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito22","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito3,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito33","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito4,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito44","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito5,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito55","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito6,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito66","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito7,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito77","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito8,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito88","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito9,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito99","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognitox,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognitoxx","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognito0,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognito00","inquognitohit"]}
-execute as @e[type=minecraft:marker,tag=inquognitov,tag=pr.target] at @s run summon interaction ^0.0625 ^-0.0025 ^ {width:0.13f,height:0.13f,Tags:["inquognito","inquognitovv","inquognitohit"]}
-
-#number
-execute as @e[type=minecraft:marker,tag=inquognito1,tag=pr.target] at @s run summon text_display ^0.055 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₁","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito1","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito2,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₂","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito2","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito3,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₃","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito3","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito4,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₄","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito4","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito5,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₅","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito5","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito6,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₆","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito6","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito7,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₇","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito7","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito8,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₈","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito8","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito9,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₉","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito9","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognitox,tag=pr.target] at @s run summon text_display ^0.052 ^-0.041 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"x","color":"dark_red","bold":false}]',background:0,Tags:["inquognito","inquognitox","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognito0,tag=pr.target] at @s run summon text_display ^0.053 ^-0.023 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"₀","color":"black","bold":false}]',background:0,Tags:["inquognito","inquognito0","inquognitok"]}
-execute as @e[type=minecraft:marker,tag=inquognitov,tag=pr.target] at @s run summon text_display ^0.052 ^-0.041 ^0.0625 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.8f,0.75f,0.8f]},text:'[{"text":"v","color":"dark_green","bold":false}]',background:0,Tags:["inquognito","inquognitov","inquognitok"]}
-
-#black back
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^0.21875 ^0.3125 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.01f]},block_state:{Name:"minecraft:black_concrete"},Tags:["inquognito","inquognitod"]}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^0.03125 ^0.3125 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.01f]},block_state:{Name:"minecraft:black_concrete"},Tags:["inquognito","inquognitoc"]}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.15625 ^0.3125 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.01f]},block_state:{Name:"minecraft:black_concrete"},Tags:["inquognito","inquognitob"]}
-execute as @e[type=minecraft:marker,tag=inquognito.keypad.marker] at @s run summon block_display ^-0.34375 ^0.3125 ^-0.031 {shadow_radius:0f,width:0.2f,height:0.2f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.125f,0.125f,0.01f]},block_state:{Name:"minecraft:black_concrete"},Tags:["inquognito","inquognitoa"]}
+function inquognito:logic/plot/keypad/answer
