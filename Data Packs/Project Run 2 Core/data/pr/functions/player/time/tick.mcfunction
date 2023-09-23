@@ -2,7 +2,7 @@
 
 scoreboard players operation #time_increment pr.value = #time pr.value
 scoreboard players operation #time_increment pr.value -= #previous_time pr.value
-scoreboard players operation @s pr.time += #time_increment pr.value
+scoreboard players operation @s[tag=!pr.pause_timer] pr.time += #time_increment pr.value
 
 
 
