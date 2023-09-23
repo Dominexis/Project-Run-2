@@ -56,7 +56,7 @@ execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 1 run fun
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 1 run function aljaz:recall
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 1 run function theswagunicorn3:recall
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 1 run function pytich_dropper:recall
-#execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 1 run function namespace:recall
+execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 1 run function eelaa:recall
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 1 run function risely:recall
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 1 run function subchronos:recall
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 1 run function blackcb:recall

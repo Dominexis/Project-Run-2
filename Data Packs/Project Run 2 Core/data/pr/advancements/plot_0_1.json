@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
-            "nbt": "{}"
+            "item": "minecraft:trident",
+            "nbt": "{Enchantments:[{}]}"
         },
         "title": [
             {
-                "text": "Section 0, 1",
+                "text": "Torrential Tridents",
                 "color": "white"
             }
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Navigate through the torrential lands with your trusty trident.\n\n§6EELAA & Lazybrush2",
                 "color": "green"
             }
         ],
