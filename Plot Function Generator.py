@@ -9,7 +9,7 @@ import json
 
 PROGRAM_PATH = Path(__file__).parent
 DATA_PACK_PATH = PROGRAM_PATH / "Data Packs" / "Project Run 2 Core"
-# namespace, y coordinate, icon, name, description
+# namespace, y coordinate, forceload bool, icon, name, description, item NBT
 NAMESPACES = {
     (-6,-2): ("andreyhero", 0, False, "minecraft:grass_block", "Parkour Cube Mini", "Enjoy nostalgic parkour, just relax, and chill.\n\n§6AndreyHero & Spaghetti099 & Sk0ck0 & Bindabash79"),
     (-6,2): ("corruptide_city", 0, True, "minecraft:black_glazed_terracotta", "§kO§r Corruptide City §kO§r", "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n§6CoreOptd"),
@@ -58,7 +58,7 @@ NAMESPACES = {
     (1,-2): ("sliceolife", 0, True, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!\n\n§6MegaMinerDL & mmmmmaaaaaxxxxx"),
     (1,-1): ("theswagunicorn2", 0, True, "minecraft:gilded_blackstone", "Bastion Build-Up", "Traverse your way through the Piglins' impressive construction of a massive beacon using the gold they processed in this factory.\n\n§6_TheSwagUnicorn_"),
     (1,1): ("risely", 1, False, "minecraft:name_tag", "Your Ticket Please!", "Exit through the basement or parkour your way out of the abandoned train station.\n\n§6Risely"),
-    (1,2): ("minerman", 0, False, "minecraft:painting", "Portrait Planting", "Look around and find the secrets of the museum.\n\n§6mrminerman21 & Aspookabie"),
+    (1,2): ("minerman", 0, False, "minecraft:painting", "Portrait Planting", "Look around and find the secrets of the museum.\n\n§6mrminerman21 & aspookabie"),
     (1,3): ("theswagunicorn", 0, True, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines.\n\n§6_TheSwagUnicorn_"),
     (1,4): ("rex_saltus_neon", 4, False, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night.\n\n§6Rex_Saltus & xherax"),
     (1,5): ("inquognito", 3, True),
@@ -144,15 +144,19 @@ for coordinate in coordinates:
         f'{comment}execute if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run forceload remove {forceload_coord_x_2} {forceload_coord_z_2}\n'
         if forceload_bool else '') +
 
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 run tag @a[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value positioned {coordinate[0]*96 - 8}.0 -64 {coordinate[1]*96 - 8}.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 1 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 0 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_on\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value matches 0 if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:plot_off\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @a[tag=pr.target] remove pr.target\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @e[tag=pr.target] remove pr.target\n' +
         f'{"execute if score #chunk_loaded_bool pr.value matches 1 run " if forceload_bool else ""}scoreboard players operation #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value = #plot_player_{coordinate[0]}_{coordinate[1]} pr.value\n' +
         f'execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @a[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:tick_plot\n' +
+        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @a[tag=pr.target] remove pr.target\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
     )
 

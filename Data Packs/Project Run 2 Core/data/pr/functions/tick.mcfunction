@@ -16,6 +16,8 @@ execute if score #world_border_reset_timer pr.value matches 1.. run scoreboard p
 scoreboard players add #world_border_reset_timer pr.value 1
 execute if score #world_border_reset_timer pr.value matches 200.. run scoreboard players set #world_border_reset_timer pr.value 0
 
+scoreboard players operation #time_start pr.value = #time pr.value
+
 
 
 
@@ -115,3 +117,20 @@ execute as @e[type=item,tag=!pr.item_processed] run function pr:generic/process_
 # Octopus pit
 
 execute positioned -16 -8 16 run tp @a[team=pr.player,dx=15,dy=2,dz=47] -19 1 40 -90 0
+
+
+
+
+
+
+
+# Compute MSPT
+
+function pr:time/get
+
+scoreboard players operation #mspt pr.value = #time pr.value
+scoreboard players operation #mspt pr.value -= #time_start pr.value
+execute if score #mspt pr.value matches ..20 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"pr.value"},"color":"green"}]
+execute if score #mspt pr.value matches 21..40 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"pr.value"},"color":"yellow"}]
+execute if score #mspt pr.value matches 41..50 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"pr.value"},"color":"gold"}]
+execute if score #mspt pr.value matches 51.. run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"pr.value"},"color":"red"}]

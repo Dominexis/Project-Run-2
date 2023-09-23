@@ -1,5 +1,5 @@
-execute as @a[tag=pr.target] at @s if score @s PlatCreate matches 1.. if entity @e[type=armor_stand,tag=Platform,distance=..2] run function platform:fail
-execute as @a[tag=pr.target] at @s if score @s PlatCreate matches 1.. unless entity @e[type=armor_stand,tag=Platform,distance=..2] run function platform:time/platcreate
+execute as @a[tag=pr.target] at @s if score @s PlatCreate matches 1.. if entity @e[type=armor_stand,tag=pr.target,tag=Platform,distance=..1.7] run function platform:fail
+execute as @a[tag=pr.target] at @s if score @s PlatCreate matches 1.. unless entity @e[type=armor_stand,tag=pr.target,tag=Platform,distance=..1.7] run function platform:time/platcreate
 scoreboard players add @e[tag=Platform,tag=pr.target] PlatTime 1
 execute as @e[tag=Platform,tag=pr.target] at @s if score @s PlatTime matches 90.. run function platform:time/platdestroy
 scoreboard players set @a[tag=pr.target] PlatCreate 0
