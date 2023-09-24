@@ -1,5 +1,5 @@
 execute if score @s marcostrk-icy-boat-parkour-inside_boat matches 0 run tellraw @s {"text":"You have to drive a boat","color":"red"}
-execute if entity @s[tag=marcostrk-icy-boat-parkour-Plot] run trigger checkpoint
+trigger checkpoint
 
 # Fail save when respawn system fails
 scoreboard players add @s marcostrk-icy-boat-parkour-died 1

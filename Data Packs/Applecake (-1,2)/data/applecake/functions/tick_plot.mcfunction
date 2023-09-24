@@ -28,7 +28,7 @@ execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] run scoreboard playe
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 0..140 run tp @s ~0.4 ~ ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 141..185 run tp @s ~ ~1 ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 170..280 run tp @s ~-0.4 ~ ~
-execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3,type=armor_stand] at @s if score @s ac.temp matches 186 run tp @s ~-2.5 ~ ~
+execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3,type=armor_stand] at @s if score @s ac.temp matches 186 run tp @s ~-3.5 ~ ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 280.. run tp @s ~ ~1 ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3,type=armor_stand] at @s if score @s ac.temp matches 280.. run tp @s ~ 0 ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3,type=armor_stand] at @s if score @s ac.temp matches 280.. run kill @s
