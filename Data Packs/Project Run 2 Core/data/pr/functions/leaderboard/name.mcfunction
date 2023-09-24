@@ -29,7 +29,7 @@ execute if score #plot pr.value matches 1039 run data modify storage pr:data tag
 # -5, 1
 execute if score #plot pr.value matches 1099 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Space Escape"}'
 # 5, 1
-execute if score #plot pr.value matches 1109 run data modify storage pr:data tag.leaderboard_name set value '{"text":"5, 1 Ending"}'
+execute if score #plot pr.value matches 1109 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Icy Boat Parkour"}'
 # -6, 2
 execute if score #plot pr.value matches 1162 run data modify storage pr:data tag.leaderboard_name set value '{"text":"§kO§r Corruptide City §kO§r"}'
 # 6, 2

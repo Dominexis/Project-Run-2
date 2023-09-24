@@ -82,7 +82,7 @@ NAMESPACES = {
     (4,2): ("hhyes", 0, False),
     (5,-3): ("tuntan", 4, True, "minecraft:elytra", "Tunnel Tangle", "Fly through tight tunnels to escape the maze!\n\n§6mmmmmaaaaaxxxxx"),
     (5,-1): ("frostcobra", 0, True, "minecraft:calcite", "Cloud Maze", "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos"),
-    (5,1): ("marcostrk-icy-boat-parkour", 1, True),
+    (5,1): ("marcostrk-icy-boat-parkour", 1, True, "minecraft:oak_boat", "Icy Boat Parkour", "Stay snug in your boat and glide gracefully across the slippery ice.\n\n§6MarcoStrk & TimoStr"),
     (5,2): ("flcme", 0, False, "minecraft:slime_block", "Tomfoolery", "Bounce around and make your way to the finish!\n\n§6flcme & MaSp005"),
     (5,3): ("wall_hall", 0, True),
     (6,-2): ("ganymede", 0, True, "minecraft:white_stained_glass_pane", "Colorblind", "Navigate through several enigmatic rooms using special colored lenses to reveal hidden paths.\n\n§6Ganymede & mmmmmaaaaaxxxxx"),

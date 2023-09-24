@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:oak_boat",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section 5, 1",
+                "text": "Icy Boat Parkour",
                 "color": "white"
             }
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Stay snug in your boat and glide gracefully across the slippery ice.\n\n§6MarcoStrk & TimoStr",
                 "color": "green"
             }
         ],
