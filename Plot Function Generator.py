@@ -461,10 +461,10 @@ for coordinate in coordinates:
         continue
     location = f'{coordinate[0]}_{coordinate[1]}'.replace("-", "n")
     commands.append(
-        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 - 1.5} -47 {coordinate[1]*4 + 40.5 - 1.5} 0 0 0 0 1 force @s\n'
-        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 - 1.5} -47 {coordinate[1]*4 + 40.5 + 1.5} 0 0 0 0 1 force @s\n'
-        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 + 1.5} -47 {coordinate[1]*4 + 40.5 - 1.5} 0 0 0 0 1 force @s\n'
-        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 + 1.5} -47 {coordinate[1]*4 + 40.5 + 1.5} 0 0 0 0 1 force @s'
+        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 - 1.5} -47 {coordinate[1]*4 + 40.5 - 1.5} 0 0 0 0 1 normal @s\n'
+        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 - 1.5} -47 {coordinate[1]*4 + 40.5 + 1.5} 0 0 0 0 1 normal @s\n'
+        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 + 1.5} -47 {coordinate[1]*4 + 40.5 - 1.5} 0 0 0 0 1 normal @s\n'
+        f'execute if entity @s[advancements={{pr:plot_{location}=true}}] run particle dust 1 0.66666 0 1 {coordinate[0]*4 - 55.5 + 1.5} -47 {coordinate[1]*4 + 40.5 + 1.5} 0 0 0 0 1 normal @s'
     )
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "particles.mcfunction").open("w", encoding="utf-8") as file:
     file.write(
