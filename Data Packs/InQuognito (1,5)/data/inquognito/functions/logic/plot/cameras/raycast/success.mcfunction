@@ -1,4 +1,4 @@
-execute at @s facing entity @p[predicate=inquognito:player] eyes run teleport @s ~ ~ ~ ~ ~
+execute at @s facing entity @p[tag=pr.target] eyes run teleport @s ~ ~ ~ ~ ~
 
 data modify storage inquognito:cameras Head set value [0f,0f,0f]
 
