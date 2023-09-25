@@ -4,7 +4,7 @@
 		"layer0": "item/warped_fungus_on_a_stick"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 82, "model": "minecraft:item/clock" } },
+		{ "predicate": { "custom_model_data": 82 }   , "model": "minecraft:item/clock" },
 		{ "predicate": { "custom_model_data": 314101}, "model": "pr:item/load_checkpoint" },
 		{ "predicate": { "custom_model_data": 314102}, "model": "pr:item/save_checkpoint" }
 	]
