@@ -171,12 +171,14 @@ team modify pr.player displayName {"text":"Player","color":"green"}
 team modify pr.player color green
 team modify pr.player friendlyFire false
 team modify pr.player collisionRule pushOwnTeam
+team modify pr.player seeFriendlyInvisibles false
 
 team add pr.spectator
 team modify pr.spectator displayName {"text":"Spectator","color":"gray"}
 team modify pr.spectator color gray
 team modify pr.spectator friendlyFire false
 team modify pr.spectator collisionRule never
+team modify pr.spectator seeFriendlyInvisibles false
 
 team add pr.no_collision
 team modify pr.no_collision collisionRule never

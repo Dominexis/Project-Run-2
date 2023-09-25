@@ -52,7 +52,7 @@ execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 0 run func
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 0 run function duality:recall
 execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 0 run function cygnus_switch_palace:recall
 execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 1 run function dtplayers:recall
-#execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 1 run function namespace:recall
+execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 1 run function lazybrush:recall
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 1 run function aljaz:recall
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 1 run function theswagunicorn3:recall
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 1 run function pytich_dropper:recall

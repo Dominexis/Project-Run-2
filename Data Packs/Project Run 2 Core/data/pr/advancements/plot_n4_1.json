@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:barrier",
             "nbt": "{}"
         },
         "title": [
             {
-                "text": "Section -4, 1",
+                "text": "No",
                 "color": "white"
             }
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Why even play this?\n\n§6Lazybrush2",
                 "color": "green"
             }
         ],
