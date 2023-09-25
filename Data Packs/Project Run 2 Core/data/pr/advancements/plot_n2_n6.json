@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Pipeline Pandemonium",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Pipeline Pandemonium",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

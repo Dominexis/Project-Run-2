@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Blast Burner",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Blast Burner",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

@@ -5,10 +5,15 @@
             "nbt": "{Potion:\"minecraft:luck\"}"
         },
         "title": [
-            {
-                "text": "Lab Rush",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Lab Rush",
+                    "color": "white"
+                },
+                {
+                    "text": "    "
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Magical Platforms",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Magical Platforms",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Mirror Travel",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Mirror Travel",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

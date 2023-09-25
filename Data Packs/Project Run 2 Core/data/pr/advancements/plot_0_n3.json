@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Password Anxiety",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Password Anxiety",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

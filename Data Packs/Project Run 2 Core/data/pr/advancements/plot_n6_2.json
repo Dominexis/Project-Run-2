@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "§kO§r Corruptide City §kO§r",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "§kO§r Corruptide City §kO§r",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

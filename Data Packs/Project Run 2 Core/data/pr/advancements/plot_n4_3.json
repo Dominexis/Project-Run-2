@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Cavern Shift",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Cavern Shift",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

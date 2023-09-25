@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Pinball",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Pinball",
+                    "color": "white"
+                },
+                {
+                    "text": "     "
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

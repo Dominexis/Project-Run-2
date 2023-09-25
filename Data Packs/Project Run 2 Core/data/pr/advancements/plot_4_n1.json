@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Rooftop Adventure",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Rooftop Adventure",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

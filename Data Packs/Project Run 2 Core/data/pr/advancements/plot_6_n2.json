@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Colorblind",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Colorblind",
+                    "color": "white"
+                },
+                {
+                    "text": "  "
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

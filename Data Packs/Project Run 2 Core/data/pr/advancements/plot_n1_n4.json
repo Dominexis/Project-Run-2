@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Stellar Adventure",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Stellar Adventure",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

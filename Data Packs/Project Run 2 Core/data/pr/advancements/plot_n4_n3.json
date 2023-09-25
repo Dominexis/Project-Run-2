@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Lab Leap",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Lab Leap",
+                    "color": "white"
+                },
+                {
+                    "text": "    "
+                }
+            ]
         ],
         "frame": "task",
         "description": [

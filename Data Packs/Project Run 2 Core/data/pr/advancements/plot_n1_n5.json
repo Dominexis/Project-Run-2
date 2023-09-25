@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "25 Pixels",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "25 Pixels",
+                    "color": "white"
+                },
+                {
+                    "text": "   "
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

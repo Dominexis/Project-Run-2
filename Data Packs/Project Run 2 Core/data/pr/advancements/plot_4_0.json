@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Switch Palace",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Switch Palace",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

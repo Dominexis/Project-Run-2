@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Cubed Prologue",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Cubed Prologue",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

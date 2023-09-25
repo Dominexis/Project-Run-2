@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Bastion Build-Up",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Bastion Build-Up",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

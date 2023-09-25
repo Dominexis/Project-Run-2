@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Your Ticket Please!",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Your Ticket Please!",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

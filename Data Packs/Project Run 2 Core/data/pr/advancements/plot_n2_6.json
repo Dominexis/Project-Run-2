@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Section -2, 6",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Section -2, 6",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Slime Cave",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Slime Cave",
+                    "color": "white"
+                },
+                {
+                    "text": "  "
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

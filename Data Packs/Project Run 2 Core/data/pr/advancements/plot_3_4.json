@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Crystalline Caverns",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Crystalline Caverns",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

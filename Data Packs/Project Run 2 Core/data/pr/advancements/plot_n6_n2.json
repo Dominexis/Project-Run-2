@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Parkour Cube Mini",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Parkour Cube Mini",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

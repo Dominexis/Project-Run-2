@@ -5,10 +5,15 @@
             "nbt": "{CustomModelData:721011}"
         },
         "title": [
-            {
-                "text": "RKO Factory",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "RKO Factory",
+                    "color": "white"
+                },
+                {
+                    "text": " "
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Factory Frenzy",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Factory Frenzy",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

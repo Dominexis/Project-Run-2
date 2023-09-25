@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Mob Hop Scotch",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Mob Hop Scotch",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

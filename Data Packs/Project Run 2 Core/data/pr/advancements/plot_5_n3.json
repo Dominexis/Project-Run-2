@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Tunnel Tangle",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Tunnel Tangle",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

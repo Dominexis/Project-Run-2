@@ -5,10 +5,15 @@
             "nbt": "{Enchantments:[{}]}"
         },
         "title": [
-            {
-                "text": "Torrential Tridents",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Torrential Tridents",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "goal",
         "description": [

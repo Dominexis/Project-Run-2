@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Maze Escape",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Maze Escape",
+                    "color": "white"
+                },
+                {
+                    "text": " "
+                }
+            ]
         ],
         "frame": "task",
         "description": [

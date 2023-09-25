@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Cloud Maze",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Cloud Maze",
+                    "color": "white"
+                },
+                {
+                    "text": "  "
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

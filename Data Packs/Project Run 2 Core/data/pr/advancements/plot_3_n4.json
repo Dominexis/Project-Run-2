@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Mine Skyisland",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Mine Skyisland",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

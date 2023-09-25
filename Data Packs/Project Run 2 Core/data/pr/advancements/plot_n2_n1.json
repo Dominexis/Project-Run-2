@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Time Stream",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Time Stream",
+                    "color": "white"
+                },
+                {
+                    "text": " "
+                }
+            ]
         ],
         "frame": "task",
         "description": [

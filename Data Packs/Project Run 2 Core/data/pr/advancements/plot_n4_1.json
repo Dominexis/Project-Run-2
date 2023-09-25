@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "No",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "No",
+                    "color": "white"
+                },
+                {
+                    "text": "          "
+                }
+            ]
         ],
         "frame": "task",
         "description": [

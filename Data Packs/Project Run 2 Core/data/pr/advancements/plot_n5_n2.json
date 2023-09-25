@@ -5,10 +5,15 @@
             "nbt": "{CustomModelData:1985}"
         },
         "title": [
-            {
-                "text": "Muddy Place",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Muddy Place",
+                    "color": "white"
+                },
+                {
+                    "text": " "
+                }
+            ]
         ],
         "frame": "task",
         "description": [

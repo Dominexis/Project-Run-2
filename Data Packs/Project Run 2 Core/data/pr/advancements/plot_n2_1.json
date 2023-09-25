@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Flappy Fowl",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Flappy Fowl",
+                    "color": "white"
+                },
+                {
+                    "text": " "
+                }
+            ]
         ],
         "frame": "task",
         "description": [

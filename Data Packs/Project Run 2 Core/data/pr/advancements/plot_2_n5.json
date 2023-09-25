@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "The Skyblock Experience",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "The Skyblock Experience",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

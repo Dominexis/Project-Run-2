@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Icy Boat Parkour",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Icy Boat Parkour",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

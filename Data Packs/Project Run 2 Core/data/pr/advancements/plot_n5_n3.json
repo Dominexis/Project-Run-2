@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Wasteland",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Wasteland",
+                    "color": "white"
+                },
+                {
+                    "text": "   "
+                }
+            ]
         ],
         "frame": "challenge",
         "description": [

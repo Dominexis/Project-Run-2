@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Steampunk Factory",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Steampunk Factory",
+                    "color": "white"
+                },
+                {
+                    "text": ""
+                }
+            ]
         ],
         "frame": "task",
         "description": [

@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "The Beehive",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "The Beehive",
+                    "color": "white"
+                },
+                {
+                    "text": " "
+                }
+            ]
         ],
         "frame": "task",
         "description": [

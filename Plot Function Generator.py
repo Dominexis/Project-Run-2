@@ -430,7 +430,7 @@ for coordinate in coordinates:
                         "nbt": nbt
                     },
                     "title": [
-                        {"text": name, "color": "white"}
+                        [{"text": name, "color": "white"},{"text": " "*(12-len(name))}]
                     ],
                     "frame": frame,
                     "description": [

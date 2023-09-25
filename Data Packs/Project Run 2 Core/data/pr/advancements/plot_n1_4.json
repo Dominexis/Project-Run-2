@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Car Tunnel",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Car Tunnel",
+                    "color": "white"
+                },
+                {
+                    "text": "  "
+                }
+            ]
         ],
         "frame": "task",
         "description": [

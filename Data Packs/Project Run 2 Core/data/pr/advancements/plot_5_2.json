@@ -5,10 +5,15 @@
             "nbt": "{}"
         },
         "title": [
-            {
-                "text": "Tomfoolery",
-                "color": "white"
-            }
+            [
+                {
+                    "text": "Tomfoolery",
+                    "color": "white"
+                },
+                {
+                    "text": "  "
+                }
+            ]
         ],
         "frame": "task",
         "description": [
