@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:birch_wood",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 3, 0",
+                    "text": "Duality",
                     "color": "white"
                 },
                 {
-                    "text": ""
+                    "text": "     "
                 }
             ]
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Choose your path of either light or dark and take on a scenic parkour adventure!\n\n§6ShadowCreeperr",
                 "color": "green"
             }
         ],

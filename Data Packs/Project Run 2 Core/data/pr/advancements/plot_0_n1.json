@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
-            "nbt": "{}"
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;2147172735,-1468380994,-1893618298,-1175039205],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDlmN2NlYzAwYWZlOWY3YzYyNGFlOGRmNWMwMzNjYjQxOWY2ZWE0MTAxNzAyMWI5YmVmZDkxOTcwYjgzM2E1YyJ9fX0=\"}]}}}"
         },
         "title": [
             [
                 {
-                    "text": "Section 0, -1",
+                    "text": "A Time of War",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "As you parkour around the remnants of a kingdom, time warp from time zones to get to the exits.\n\n§6SnakeRattler & _TheSwagUnicorn_",
                 "color": "green"
             }
         ],
