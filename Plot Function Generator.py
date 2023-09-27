@@ -16,6 +16,7 @@ NAMESPACES = {
     (-5,-3): ("bowshot", 0, False, "minecraft:moss_block", "Wasteland", "Be careful of the toxic waste!\n\n§6Bowshot"),
     (-5,-2): ("artem", 0, False, "minecraft:blue_dye", "Muddy Place", "Parkour through swamp islands.\n\n§6Artem & _TheSwagUnicorn_", '{CustomModelData:1985}'),
     (-5,1): ("dtplayers", 0, True, "minecraft:end_stone", "Space Escape", "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers"),
+    (-5,2): ("lory", 0, True),
     (-4,-3): ("xekyt", 0, False, "minecraft:quartz_block", "Lab Leap", "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_"),
     (-4,-2): ("fuzzbearplush", 0, False, "minecraft:lime_wool", "Koopa Course", "Jump your way to the flag pole!\n\n§6Fuzzbearplush"),
     (-4,-1): ("warshito", 4, True, "minecraft:player_head", "Chromatic Climb", "Follow your color, collect the orb, and save the world!\n\n§6Warshito & Jalafito", '{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ=="}]}}}'),
