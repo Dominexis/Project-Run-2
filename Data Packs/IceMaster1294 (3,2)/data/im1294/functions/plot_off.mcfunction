@@ -4,6 +4,8 @@
 kill @e[type=minecraft:zombie,tag=pr.target]
 kill @e[type=minecraft:skeleton,tag=pr.target]
 kill @e[type=minecraft:drowned,tag=pr.target]
+kill @e[type=minecraft:spider,tag=pr.target]
+kill @e[type=minecraft:stray,tag=pr.target]
 kill @e[type=minecraft:warden,tag=pr.target]
 kill @e[type=minecraft:arrow,tag=pr.target]
 kill @e[type=item,tag=pr.target]
