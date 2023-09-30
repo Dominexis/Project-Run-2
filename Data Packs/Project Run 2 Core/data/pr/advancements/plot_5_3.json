@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:smooth_stone_slab",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 5, 3",
+                    "text": "Up Against the Walls",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Make your way through the hall of moving walls!\n\n§6Loominardy",
                 "color": "green"
             }
         ],

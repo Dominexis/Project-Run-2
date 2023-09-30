@@ -37,7 +37,7 @@ execute if score #plot pr.value matches 1174 run data modify storage pr:data tag
 # -5, 3
 execute if score #plot pr.value matches 1227 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-5, 3 Ending"}'
 # 5, 3
-execute if score #plot pr.value matches 1237 run data modify storage pr:data tag.leaderboard_name set value '{"text":"5, 3 Ending"}'
+execute if score #plot pr.value matches 1237 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Up Against the Walls"}'
 # -3, 5
 execute if score #plot pr.value matches 1357 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Drip Jump"}'
 # -1, 5
