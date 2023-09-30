@@ -10,4 +10,4 @@ execute if score $cygnus_timer cygnus_data matches 10 run execute as @a[tag=pr.t
 execute if score $cygnus_timer cygnus_data matches 20 run execute as @a[tag=pr.target] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 0.35 1 
 execute if score $cygnus_timer cygnus_data matches 30 run execute as @a[tag=pr.target] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 0.35 1 
 execute if score $cygnus_timer cygnus_data matches 40 run execute as @a[tag=pr.target] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 0.35 2
-execute if score $cygnus_timer cygnus_data matches 40.. run execute as @a[tag=pr.target] at @s run function cygnus_switch_palace:switch/jump
+execute if score $cygnus_timer cygnus_data matches 40.. run function cygnus_switch_palace:switch/jump
