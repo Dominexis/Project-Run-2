@@ -1,3 +1,4 @@
-execute if entity @s[tag=flcme.jumphint] unless score @s flcme.jumptimer matches 0 run title @s subtitle [{"text":"Hint: ","color":"gold"},{"text":"Jump consecutively for a higher jump","color":"yellow"}]
-title @s title ""
+execute if entity @s[tag=flcme.jumphint] run title @s subtitle {"text":"Jump on the red bubbles consecutively, but not immediately.","color":"yellow"}
+execute if entity @s[tag=flcme.jumphint] run title @s times 0 40 10
+execute if entity @s[tag=flcme.jumphint] run title @s title {"text":"Hint:","color":"gold"}
 trigger checkpoint
