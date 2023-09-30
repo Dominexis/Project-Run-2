@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:water_bucket",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section -5, 2",
+                    "text": "The Pit",
                     "color": "white"
                 },
                 {
-                    "text": ""
+                    "text": "     "
                 }
             ]
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour out of the pit, but don't fall into the water!\n\n§6ReynTheStrange & _Lory44 & mmmmmaaaaaxxxxx",
                 "color": "green"
             }
         ],

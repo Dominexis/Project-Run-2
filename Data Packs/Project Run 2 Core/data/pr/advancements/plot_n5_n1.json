@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:stone_bricks",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section -5, -1",
+                    "text": "Upside-down Town",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "\"Don't look down\" and \"Don't stare at the sun\" mean the same thing around here.\n\n§6Mathtriqueur",
                 "color": "green"
             }
         ],

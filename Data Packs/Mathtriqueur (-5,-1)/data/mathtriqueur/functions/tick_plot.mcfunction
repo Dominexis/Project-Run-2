@@ -1,0 +1,1 @@
+execute positioned ~-35 ~37 ~-1 as @a[tag=pr.target,dx=0,dy=1,dz=1] at @s run function pr:player/finish
