@@ -1,1 +1,1 @@
-function lory:die
+# function lory:die
