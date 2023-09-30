@@ -5,5 +5,6 @@ scoreboard objectives add loom.wall_hall dummy
 scoreboard objectives add loom.wall_hall_x_pos dummy
 scoreboard objectives add loom.wall_hall_prev_x_pos dummy
 scoreboard objectives add loom.wall_hall_crouch minecraft.custom:minecraft.sneak_time
-scoreboard players set new_wall loom.wall_hall 0
+scoreboard players add new_wall loom.wall_hall 0
+scoreboard players add wall_move loom.wall_hall 0
 scoreboard players set wall_speed loom.wall_hall 2000
