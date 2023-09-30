@@ -13,3 +13,7 @@ tag @s remove Green
 tag @s remove Blue
 tag @s remove Gateway
 tag @s remove kill_white
+tag @s remove CMY
+
+
+attribute @s minecraft:generic.max_health base set 20 
