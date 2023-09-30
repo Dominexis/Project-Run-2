@@ -1,0 +1,1 @@
+execute align xyz positioned ~.5 ~.5 ~.5 summon marker run function kello:entity/time_mark/spawn/mark_score

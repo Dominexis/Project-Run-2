@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.escapement.bone.cog] run data modify entity @s {} merge value {transformation:[2.220446049250313e-16f,1f,1.2246467991473532e-16f,0f,1f,-2.220446049250313e-16f,0f,0.731694375f,2.719262146893782e-32f,1.2246467991473532e-16f,-1f,0f,0f,0f,0f,1f],start_interpolation:0}

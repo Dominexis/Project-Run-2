@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.wall_mellolily_pot_0.root] run function animated_java:wall_mellolily_pot_0/zzzzzzzz/tick_as_root

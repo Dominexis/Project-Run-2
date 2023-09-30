@@ -1,0 +1,1 @@
+execute as @e[type=#kello:generic/system,tag=pr.target,tag=kello.entity.ticking,tag=kello.checkpoint.active] if score @s kello.entity.checkpoint.id = #local kello.entity.checkpoint.id at @s run function kello:entity/checkpoint/state/checkpoint/entity/deactivate/untag

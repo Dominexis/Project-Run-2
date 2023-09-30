@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:melloflora_lantern_sho/zzzzzzzz/apply_variant/default/as_bone

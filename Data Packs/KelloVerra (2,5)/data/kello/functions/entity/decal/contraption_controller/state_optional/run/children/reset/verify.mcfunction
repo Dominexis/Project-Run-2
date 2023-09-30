@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.decwheel.root] run function kello:entity/decal/contraption_controller/state_optional/run/children/reset/decwheel

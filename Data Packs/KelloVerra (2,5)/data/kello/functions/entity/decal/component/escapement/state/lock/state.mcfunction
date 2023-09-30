@@ -1,0 +1,1 @@
+execute if score @s kello.entity.quantity matches 0 unless entity @p[tag=pr.target,tag=kello.riding,distance=..2] run function kello:entity/decal/component/escapement/state/idle/start

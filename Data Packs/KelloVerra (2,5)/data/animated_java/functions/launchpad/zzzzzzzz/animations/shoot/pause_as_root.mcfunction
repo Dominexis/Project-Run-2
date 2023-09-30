@@ -1,0 +1,1 @@
+tag @s remove aj.launchpad.animation.shoot

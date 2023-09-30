@@ -1,0 +1,1 @@
+tag @s remove aj.checkpoint_flag.animation.checkpoint

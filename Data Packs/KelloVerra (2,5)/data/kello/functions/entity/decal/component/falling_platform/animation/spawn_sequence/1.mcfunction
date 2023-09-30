@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=kello.entity.type.falling_platform_spawner] if score @s kello.entity.id = #local kello.entity.id run data merge entity @s {item:{id:"minecraft:leather_helmet",Count:1b,tag:{CustomModelData:351904}}}

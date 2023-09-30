@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.melloflora_lantern_sho.root] run function animated_java:melloflora_lantern_sho/zzzzzzzz/tick_as_root

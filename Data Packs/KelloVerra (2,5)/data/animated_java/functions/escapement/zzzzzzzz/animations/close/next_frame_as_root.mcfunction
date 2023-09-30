@@ -1,0 +1,1 @@
+function animated_java:escapement/zzzzzzzz/animations/close/tick_animation

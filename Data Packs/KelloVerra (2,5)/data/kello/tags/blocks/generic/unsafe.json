@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:air",
+        "minecraft:void_air",
+        "minecraft:cave_air",
+        "minecraft:brown_mushroom",
+        "minecraft:crimson_fungus",
+        "minecraft:warped_fungus",
+        "minecraft:bamboo_sapling",
+        "minecraft:sugar_cane",
+        "minecraft:vine",
+        "minecraft:water",
+        "minecraft:chain",
+        "minecraft:barrier",
+        "minecraft:jungle_fence",
+        "minecraft:iron_bars",
+        "minecraft:petrified_oak_slab",
+        "#minecraft:fences",
+        "#minecraft:fence_gates"
+    ]
+}  

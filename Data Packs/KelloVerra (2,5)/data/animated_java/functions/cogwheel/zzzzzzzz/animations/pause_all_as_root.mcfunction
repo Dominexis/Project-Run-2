@@ -1,0 +1,4 @@
+function animated_java:cogwheel/zzzzzzzz/animations/small/pause_as_root
+function animated_java:cogwheel/zzzzzzzz/animations/large/pause_as_root
+function animated_java:cogwheel/zzzzzzzz/animations/large_ground/pause_as_root
+function animated_java:cogwheel/zzzzzzzz/animations/small_ground/pause_as_root

@@ -1,0 +1,18 @@
+{
+	"replace": false,
+	"values": [
+		"animated_java:escapement/zzzzzzzz/tick",
+		"animated_java:melloflora_lantern_sho/zzzzzzzz/tick",
+		"animated_java:melloflora_lantern_med/zzzzzzzz/tick",
+		"animated_java:melloflora_lantern_lar/zzzzzzzz/tick",
+		"animated_java:cogwheel/zzzzzzzz/tick",
+		"animated_java:launchpad/zzzzzzzz/tick",
+		"animated_java:comet_flake/zzzzzzzz/tick",
+		"animated_java:checkpoint_flag/zzzzzzzz/tick",
+		"animated_java:gate/zzzzzzzz/tick",
+		"animated_java:moving_platform/zzzzzzzz/tick",
+		"animated_java:decwheel/zzzzzzzz/tick",
+		"animated_java:dangling_platform/zzzzzzzz/tick",
+		"animated_java:falling_platform/zzzzzzzz/tick"
+	]
+}

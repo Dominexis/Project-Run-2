@@ -1,0 +1,1 @@
+scoreboard players add @s kello.entity.timer 1

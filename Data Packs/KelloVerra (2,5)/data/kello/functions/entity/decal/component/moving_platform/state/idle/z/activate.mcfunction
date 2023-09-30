@@ -1,0 +1,2 @@
+execute if score @s[tag=kello.was_deactivated] kello.decal.timer matches ..0 run function kello:entity/decal/component/moving_platform/state/idle/z/pre_move
+execute if score @s[tag=!kello.was_deactivated] kello.decal.timer matches ..0 run function kello:entity/decal/component/moving_platform/state/move/start

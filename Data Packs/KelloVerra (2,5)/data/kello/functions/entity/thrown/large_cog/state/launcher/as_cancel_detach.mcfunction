@@ -1,0 +1,1 @@
+scoreboard players remove @s kello.entity.quantity 1

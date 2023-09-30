@@ -1,0 +1,1 @@
+function animated_java:moving_platform/zzzzzzzz/animations/impact/pause_as_root

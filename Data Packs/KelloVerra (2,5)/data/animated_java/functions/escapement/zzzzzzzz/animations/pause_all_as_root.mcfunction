@@ -1,0 +1,3 @@
+function animated_java:escapement/zzzzzzzz/animations/close/pause_as_root
+function animated_java:escapement/zzzzzzzz/animations/open/pause_as_root
+function animated_java:escapement/zzzzzzzz/animations/player/pause_as_root

@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:air",
+        "minecraft:void_air",
+        "minecraft:cave_air",
+        "minecraft:brown_mushroom",
+        "minecraft:crimson_fungus",
+        "minecraft:warped_fungus",
+        "minecraft:grass",
+        "minecraft:tall_grass",
+        "minecraft:pink_petals",
+        "minecraft:chain",
+        "minecraft:ladder",
+        "minecraft:pitcher_plant",
+        "minecraft:torchflower",
+        "minecraft:oak_leaves",
+        "minecraft:birch_leaves",
+        "minecraft:spruce_leaves",
+        "minecraft:jungle_leaves",
+        "minecraft:acacia_leaves",
+        "minecraft:bamboo_sapling",
+        "minecraft:nether_sprouts",
+        "minecraft:warped_roots",
+        "minecraft:sugar_cane",
+        "minecraft:vine",
+        "minecraft:water"
+    ]
+}  

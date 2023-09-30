@@ -1,0 +1,2 @@
+execute as @e[type=text_display,distance=..1.15,tag=kello.entity.type.aimdicator,tag=kello.entity.type.small,sort=nearest,limit=1] run function kello:player/cog/small/raycast/apply
+execute if score #casterminate kello.value matches 0 if entity @p[tag=pr.target,tag=kello.player.target,distance=..28] positioned ^ ^ ^.5 run function kello:player/cog/small/raycast/search

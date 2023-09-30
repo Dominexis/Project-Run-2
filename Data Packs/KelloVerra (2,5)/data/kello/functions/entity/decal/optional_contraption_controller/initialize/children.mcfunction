@@ -1,0 +1,1 @@
+execute if entity @s[tag=!kello.decal.controller_children] run function kello:entity/decal/optional_contraption_controller/state/idle/children/init

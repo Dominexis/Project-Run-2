@@ -1,0 +1,2 @@
+execute on passengers run tp @s ~ ~ ~ ~ ~
+execute if entity @s[tag=kello.entity.type.launchpad] as @e[tag=pr.target,tag=kello.entity.type.launchpad,tag=kello.entity.part.visual] run tp @s ^ ^ ^-.125 ~ ~

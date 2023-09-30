@@ -1,0 +1,1 @@
+function animated_java:mellorainn_cluster/zzzzzzzz/apply_variant/default/as_bone

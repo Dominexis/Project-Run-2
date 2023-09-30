@@ -1,0 +1,1 @@
+scoreboard players set @s kello.decal.delay 10

@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": [
+                    "minecraft:diamond_horse_armor"
+                ],
+                "nbt": "{small_cog:1b}"
+            }
+        }
+    }
+}

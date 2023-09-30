@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.melloleta_patch.root] run function animated_java:melloleta_patch/zzzzzzzz/tick_as_root

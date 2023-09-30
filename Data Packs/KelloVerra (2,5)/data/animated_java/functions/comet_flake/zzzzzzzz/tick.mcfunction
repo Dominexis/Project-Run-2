@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.comet_flake.root] run function animated_java:comet_flake/zzzzzzzz/tick_as_root

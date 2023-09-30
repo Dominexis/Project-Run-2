@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.comet_flake.bone.tail] run data modify entity @s item.tag.CustomModelData set value 75
+execute if entity @s[tag=aj.comet_flake.bone.root] run data modify entity @s item.tag.CustomModelData set value 76

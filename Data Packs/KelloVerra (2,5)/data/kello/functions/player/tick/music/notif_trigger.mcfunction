@@ -1,0 +1,1 @@
+tellraw @p ["",{"text":"[AncientApparatus]","bold":true,"color":"gold"},{"text":" If music suddenly stops/vanishes, try ","color":"gray"},{"text":"/trigger apparatus_restart_music ","color":"yellow"},{"text":"in the chat.","color":"gray"}]

@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:marker",
+        "minecraft:interaction",
+        "minecraft:item_display",
+        "minecraft:block_display",
+        "minecraft:text_display",
+        "minecraft:shulker",
+        "minecraft:pufferfish"
+    ]
+}  

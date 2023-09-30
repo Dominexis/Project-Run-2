@@ -1,0 +1,2 @@
+execute if score #type kello.value matches 0 run playsound kello:large_cogwheel_attach master @s ~ ~ ~ 0.425 1 0.425
+execute if score #type kello.value matches 1 run playsound kello:small_cogwheel_attach master @s ~ ~ ~ 0.425 1 0.425

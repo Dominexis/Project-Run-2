@@ -1,0 +1,12 @@
+To hook up your data pack into the template world, start by getting the coordinates of your plot. Go to your plot and run /trigger coords
+This will return your plot coordinates in the chat (e.g. -4, 3).
+
+Next, change the namespace in your data pack to be something unique. It should contain your name and not be generic (i.e. don't use "parkour" as a namespace).
+
+You have 5 functions to hook into the core, plot_on, plot_off, tick_plot, enter, and exit.
+
+plot_on, plot_off, and tick_plot are executed by pr:plot/main
+enter is executed by pr:plot/enter
+exit is executed by pr:plot/exit
+
+These functions contain blocks for every single plot. Navigate to your block using your plot coordinates from before. Uncomment all commented commands in your block, and change all function references to be your functions. On the actual map, this will be done manually by the project leads. You need to do this in order to test your map in singleplayer.

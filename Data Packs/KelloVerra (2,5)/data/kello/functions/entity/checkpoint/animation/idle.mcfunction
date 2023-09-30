@@ -1,0 +1,3 @@
+function animated_java:checkpoint_flag/animations/pause_all
+function animated_java:checkpoint_flag/animations/curl/stop
+function animated_java:checkpoint_flag/animations/idle/play

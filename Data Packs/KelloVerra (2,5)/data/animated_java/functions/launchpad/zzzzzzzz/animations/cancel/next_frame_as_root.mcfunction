@@ -1,0 +1,1 @@
+function animated_java:launchpad/zzzzzzzz/animations/cancel/tick_animation

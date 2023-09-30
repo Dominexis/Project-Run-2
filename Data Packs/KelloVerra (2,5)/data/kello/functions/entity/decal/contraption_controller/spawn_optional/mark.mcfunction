@@ -1,0 +1,1 @@
+execute align xyz positioned ~.5 ~.75 ~.5 summon item_display run function kello:entity/decal/contraption_controller/spawn_optional/mark_score

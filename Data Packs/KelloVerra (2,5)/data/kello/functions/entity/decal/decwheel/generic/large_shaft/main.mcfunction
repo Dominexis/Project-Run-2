@@ -1,0 +1,1 @@
+#execute if entity @s[tag=kello.empty] as @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=kello.entity.throwable,tag=kello.entity.type.thrown_cogwheel,tag=kello.entity.type.large,distance=..1.25] if score @s kello.entity.state matches 0 run function kello:entity/thrown/large_cog/state/fixed/force_start

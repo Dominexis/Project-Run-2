@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.gate.locator_origin.locator] at @s on origin run tp @s ^-0.03212 ^-0.372 ^-0.01818 ~0 ~0
+execute if entity @s[tag=aj.gate.bone.chp_1] run data modify entity @s {} merge value {transformation:[-4.666666666666667f,0f,5.715018396020982e-16f,-0.032116736407406976f,0f,4.666666666666667f,0f,-0.3719999999999999f,-5.715018396020982e-16f,0f,-4.666666666666667f,-0.018181787600641323f,0f,0f,0f,1f],start_interpolation:0}

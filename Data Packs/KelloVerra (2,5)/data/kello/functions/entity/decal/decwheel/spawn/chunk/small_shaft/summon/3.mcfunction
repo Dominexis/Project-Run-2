@@ -1,0 +1,3 @@
+data merge entity @s {id:"minecraft:item_display",Tags:["aj.decwheel.bone","aj.decwheel.bone.gear","aj.decwheel.rig_entity","aj.decwheel.root","aj.rig_root","kello.entity","kello.entity.part.shaft","kello.decal","kello.entity.type.small","kello.entity.type.cogwheel_decshaft","kello.entity.part.extension","kello.decal.controlled","kello.exclude"],transformation:[-2f,-2.4492935982947064e-16f,5.438524293787564e-32f,0f,0f,4.440892098500626e-16f,2f,0f,-2.4492935982947064e-16f,2f,-4.440892098500626e-16f,0f,0f,0f,0f,1f],interpolation_duration:1,item_display:"head",item:{id:"minecraft:magenta_stained_glass_pane",Count:1b,tag:{CustomModelData:351969}},height:40f,width:2f}
+
+function kello:entity/decal/decwheel/spawn/chunk/small_shaft/summon/init

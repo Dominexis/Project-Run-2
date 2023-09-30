@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.mellorainn_cluster.root] run function animated_java:mellorainn_cluster/zzzzzzzz/remove/as_root
+execute if entity @s[tag=!aj.mellorainn_cluster.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:mellorainn_cluster/remove/this ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

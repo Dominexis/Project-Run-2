@@ -1,0 +1,1 @@
+function animated_java:cogwheel/zzzzzzzz/animations/large/tick_animation

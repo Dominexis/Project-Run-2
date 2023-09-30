@@ -1,0 +1,26 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:air",
+        "minecraft:barrier",
+        "minecraft:void_air",
+        "minecraft:cave_air",
+        "minecraft:pointed_dripstone",
+        "minecraft:brown_mushroom",
+        "minecraft:amethyst_cluster",
+        "minecraft:small_amethyst_bud",
+        "minecraft:medium_amethyst_bud",
+        "minecraft:large_amethyst_bud",
+        "minecraft:crimson_fungus",
+        "minecraft:warped_fungus",
+        "minecraft:bamboo",
+        "minecraft:bamboo_sapling",
+        "minecraft:sugar_cane",
+        "minecraft:water",
+        "minecraft:light",
+        "#minecraft:replaceable",
+        "#minecraft:candles",
+        "#minecraft:climbable",
+        "#minecraft:flowers"
+    ]
+}

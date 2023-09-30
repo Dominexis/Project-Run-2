@@ -1,0 +1,3 @@
+execute as @e[type=item_display,tag=pr.target,tag=!kello.ignore,distance=..1.15,tag=kello.entity.type.aimdicator,tag=kello.entity.type.small,sort=nearest,limit=1] run function kello:player/cog/small/raycast/recoil/apply
+execute if score #casterminate kello.value matches 0 if entity @p[tag=pr.target,tag=kello.player.target,distance=..28] positioned ^ ^ ^.5 run function kello:player/cog/small/raycast/recoil/search
+particle soul_fire_flame ~ ~ ~ 0 0 0 0.1 2 force

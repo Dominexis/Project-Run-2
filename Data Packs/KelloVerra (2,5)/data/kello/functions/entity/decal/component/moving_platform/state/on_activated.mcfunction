@@ -1,0 +1,3 @@
+execute if score @s kello.decal.state matches 0 on passengers if entity @s[tag=kello.entity.part.platform_pointer] on origin run function animated_java:moving_platform/animations/impact/play
+execute if score @s kello.decal.state matches 1 on passengers if entity @s[tag=kello.entity.part.platform_pointer] on origin run function animated_java:dangling_platform/animations/impact/play
+function kello:entity/decal/component/moving_platform/state/idle/start

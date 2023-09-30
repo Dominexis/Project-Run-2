@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.dangling_platform.bone.root] run data modify entity @s {} merge value {transformation:[-6.041666666666667f,0f,7.398907744848593e-16f,-0.029112766249680323f,0f,6.041666666666667f,0f,4.707656246675828f,-7.398907744848593e-16f,0f,-6.041666666666667f,-0.15807467784044693f,0f,0f,0f,1f],start_interpolation:0}

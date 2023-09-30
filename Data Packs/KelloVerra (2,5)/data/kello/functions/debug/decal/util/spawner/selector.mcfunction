@@ -1,0 +1,1 @@
+give @s skeleton_spawn_egg{display:{Name:'{"text":"Decal Selector","color":"#D4FFEC","bold":true}'},Enchantments:[{}],EntityTag:{Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:1b,CanPickUpLoot:0b,Tags:["kello.entity.util","kello.entity.decal_selector"],HandItems:[{id:"minecraft:air",Count:1b},{}]}} 1

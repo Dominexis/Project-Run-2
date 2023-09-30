@@ -1,0 +1,4 @@
+function animated_java:checkpoint_flag/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:checkpoint_flag/zzzzzzzz/animations/flap/pause_as_root
+function animated_java:checkpoint_flag/zzzzzzzz/animations/checkpoint/pause_as_root
+function animated_java:checkpoint_flag/zzzzzzzz/animations/curl/pause_as_root
