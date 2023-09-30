@@ -14,6 +14,7 @@
 		"minecraft:player_head",
 		"minecraft:player_wall_head",
 		"minecraft:structure_void",
-		"minecraft:torch"
+		"minecraft:torch",
+		"minecraft:water"
 	]
 }

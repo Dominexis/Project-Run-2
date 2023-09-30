@@ -222,6 +222,7 @@ summon minecraft:armor_stand ~-38.3 ~5.5 ~-38.3 {Tags:["inquognito","inquognito.
 summon minecraft:armor_stand ~-13.7 ~5.5 ~-29.3 {Tags:["inquognito","inquognito.camera"],Rotation:[45f,0f]}
 summon minecraft:armor_stand ~-27.3 ~-1.5 ~-35.3 {Tags:["inquognito","inquognito.camera"],Rotation:[-45f,0f]}
 summon minecraft:armor_stand ~16.7 ~24.5 ~-12.3 {Tags:["inquognito","inquognito.camera"],Rotation:[-45f,0f]}
+summon minecraft:armor_stand ~-3.0 ~59.5 ~12.7 {Tags:["inquognito","inquognito.camera"],Rotation:[-45f,0f]}
 
 execute as @e[type=minecraft:armor_stand,tag=inquognito.camera] run function inquognito:logic/plot/cameras/init
 

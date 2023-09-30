@@ -130,9 +130,15 @@ execute if score enemy.36 inquognito.temp matches 80.. at @e[type=minecraft:mark
 execute as @e[type=#inquognito:enemies,scores={inquognito.frostbite_timer=1..},tag=pr.target] at @s run function inquognito:logic/abilities/gun/augments/frostbite/tick
 
 # Killboxes
-execute positioned ~-18 ~18 ~12 run kill @e[dx=6,dy=0,dz=5,predicate=inquognito:targets]
-execute positioned ~10 ~-11 ~-34 run kill @e[dx=28,dy=0,dz=17,predicate=inquognito:targets]
-execute positioned ~-36 ~-43 ~-29 run kill @e[type=!minecraft:player,dx=67,dy=0,dz=67,predicate=inquognito:targets]
+execute positioned ~-18 ~18 ~12 run kill @e[dx=6,dy=0,dz=5,predicate=inquognito:killbox_vulnerable]
+
+execute positioned ~10 ~-11 ~-34 run kill @e[dx=28,dy=0,dz=17,predicate=inquognito:killbox_vulnerable]
+
+execute positioned ~-36 ~-17.5 ~-35 run kill @e[dx=12,dy=0,dz=2,predicate=inquognito:killbox_vulnerable]
+execute positioned ~-26 ~-17.5 ~-32 run kill @e[dx=2,dy=0,dz=8,predicate=inquognito:killbox_vulnerable]
+execute positioned ~-23 ~-17.5 ~-28 run kill @e[dx=5,dy=0,dz=4,predicate=inquognito:killbox_vulnerable]
+
+execute positioned ~-36 ~-43 ~-29 run kill @e[type=!minecraft:player,dx=67,dy=0,dz=67,predicate=inquognito:killbox_vulnerable]
 execute positioned ~-36 ~-43 ~-29 as @a[dx=67,dy=0,dz=67,tag=pr.target] run function inquognito:logic/plot/boss/respawn_player
 
 # Keypad

@@ -1,5 +1,7 @@
 tag @s add inquognito.gun.nova
 
+scoreboard players set @s inquognito.gun.augments.nova_cooldown 0
+
 scoreboard players add @s inquognito.gun.augments 1
 
 function inquognito:logic/abilities/gun/update
