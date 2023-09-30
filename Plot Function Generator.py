@@ -67,7 +67,7 @@ NAMESPACES = {
     (1,5): ("inquognito", 3, True),
     (2,-5): ("decimate", 0, False, "minecraft:chest", "The Skyblock Experience", "Say hi to Jerry on the way!\n\n§6DecimateJSY97a & _TheSwagUnicorn_ & Masp005 & JPMagic"),
     (2,-3): ("intjungle", 1, False, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?\n\n§6Interstellar_1"),
-    (2,-1): ("bansed", -1, True),
+    (2,-1): ("bansed", -1, True, "minecraft:knowledge_book", "2D Parkour", "Minecraft is 2D now??\n\n§6Bansed & Henkie"),
     (2,1): ("subchronos", 3, True, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits.\n\n§6SubChronos"),
     (2,3): ("eli_marie", 1, False, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),
     (2,6): ("lifeely", 0, True, "minecraft:blast_furnace", "Blast Burner", "Phew! Sure is hot in here!\n\n§6Lifeely & Dominexis"),

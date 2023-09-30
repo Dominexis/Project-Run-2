@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:knowledge_book",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 2, -1",
+                    "text": "2D Parkour",
                     "color": "white"
                 },
                 {
-                    "text": ""
+                    "text": "  "
                 }
             ]
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Minecraft is 2D now??\n\n§6Bansed & Henkie",
                 "color": "green"
             }
         ],
