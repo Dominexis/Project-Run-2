@@ -10,6 +10,7 @@ summon item ~-4 ~-41.8 ~34 {NoGravity:1b,Age:-32768,PickupDelay:32767,Item:{id:"
 
 #adding scoreboards
 scoreboard objectives add eelaa_tridents dummy
+scoreboard objectives add eelaa_tridents_timer dummy
 scoreboard objectives add eelaa_item_count dummy
 
 

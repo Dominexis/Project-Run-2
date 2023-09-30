@@ -9,7 +9,8 @@ execute positioned ~-4 ~-41.8 ~34 as @a[tag=pr.target,distance=..2] if score @s 
 
 #checking for loyalty trident
 execute as @a[tag=pr.target] if score @s eelaa_tridents matches 2 store result score @s eelaa_item_count run clear @s trident 0
-execute as @a[tag=pr.target,scores={eelaa_item_count=0}] if score @s eelaa_tridents matches 2 run give @s trident{display:{Name:'{"text":"Loyalty","italic":false}'},Unbreakable:1b,Enchantments:[{id:"minecraft:loyalty",lvl:10s}]}
+# execute as @a[tag=pr.target,scores={eelaa_item_count=0}] if score @s eelaa_tridents matches 2 run give @s trident{display:{Name:'{"text":"Loyalty","italic":false}'},Unbreakable:1b,Enchantments:[{id:"minecraft:loyalty",lvl:10s}]}
+execute as @a[tag=pr.target,scores={eelaa_item_count=0}] if score @s eelaa_tridents matches 2 run give @s trident{display:{Name:'{"text":"Loyalty","italic":false}'},Unbreakable:1b,Enchantments:[{}]}
 execute as @a[tag=pr.target,scores={eelaa_item_count=2..}] if score @s eelaa_tridents matches 2 run clear @s trident
 
 
@@ -54,3 +55,11 @@ execute as @a[tag=pr.target,tag=!eelaa_onplate] if score @s eelaa_tridents match
 execute as @a[tag=pr.target,tag=eelaa_onplate] if score @s eelaa_tridents matches 2 at @s unless block ~ ~ ~ heavy_weighted_pressure_plate run tag @s remove eelaa_onplate
 
 
+
+
+# Kill tridents that ought not to exist
+
+execute as @e[type=trident,tag=pr.target,tag=!inGround] store result score @s eelaa_tridents run data get entity @s inGround
+tag @e[type=trident,tag=pr.target,scores={eelaa_tridents=1}] add inGround
+scoreboard players add @e[type=trident,tag=pr.target,tag=inGround] eelaa_tridents_timer 1
+kill @e[type=trident,tag=pr.target,tag=inGround,scores={eelaa_tridents_timer=30..}]

@@ -5,4 +5,5 @@
 kill @e[tag=pr.target,type=item]
 kill @e[tag=pr.target,type=trident]
 scoreboard objectives remove eelaa_tridents
+scoreboard objectives remove eelaa_tridents_timer
 scoreboard objectives remove eelaa_item_count
