@@ -32,7 +32,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -2 run fu
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -2 run function sliceolife:recall
 #execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -2 run function namespace:recall
 execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -2 run function ykw:recall
-#execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches -2 run function namespace:recall
+execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches -2 run function poldslippers:recall
 execute if score @s pr.plot_x matches 6 if score @s pr.plot_z matches -2 run function ganymede:recall
 execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -1 run function mathtriqueur:recall
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run function warshito:recall
