@@ -5,6 +5,7 @@
     "type_specific": {
       "type": "player",
       "looking_at": {
+        "type": "minecraft:interaction",
         "nbt": "{Tags:[\"pr.target\",\"titruc.interactivejump.greenblock.look\"]}"
       }
     }

@@ -1,5 +1,5 @@
 summon marker ~-6 ~-22 ~36 {Tags:["titruc.fin"]}
-summon minecraft:marker ~-25 ~0 ~-1 {Tags:["pr.target","titruc.interactivejump.checkpoint"]}
+summon minecraft:marker ~-25 ~0 ~-1 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[180.0f,0.0f]}
 summon minecraft:marker ~-24 ~1 ~-7 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-22 ~1 ~-10 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-18 ~1 ~-10 {Tags:["pr.target","titruc.interactivejump.redblock.block"]}
@@ -16,7 +16,7 @@ summon minecraft:marker ~-25 ~-4 ~3 {Tags:["pr.target","titruc.interactivejump.y
 summon minecraft:marker ~-26 ~-3 ~6 {Tags:["pr.target","titruc.interactivejump.yellowblock.block"]}
 summon minecraft:marker ~-26 ~-2 ~9 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-27 ~-1 ~12 {Tags:["pr.target","titruc.interactivejump.yellowblock.block"]}
-summon minecraft:marker ~-26 ~0 ~15 {Tags:["pr.target","titruc.interactivejump.checkpoint"]}
+summon minecraft:marker ~-26 ~0 ~15 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[0.0f,0.0f]}
 summon minecraft:marker ~-24 ~1 ~17 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-25 ~2 ~19 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-26 ~3 ~17 {Tags:["pr.target","titruc.interactivejump.block"]}
@@ -33,7 +33,7 @@ summon minecraft:marker ~-15 ~10 ~10 {Tags:["pr.target","titruc.interactivejump.
 summon minecraft:marker ~-15 ~10 ~8 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-15 ~10 ~6 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-15 ~10 ~4 {Tags:["pr.target","titruc.interactivejump.block"]}
-summon minecraft:marker ~-16 ~10 ~2 {Tags:["pr.target","titruc.interactivejump.checkpoint"]}
+summon minecraft:marker ~-16 ~10 ~2 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[90.0f,0.0f]}
 summon minecraft:marker ~-19 ~10 ~2 {Tags:["pr.target","titruc.interactivejump.greenblock.block"]}
 summon minecraft:marker ~-19 ~11 ~0 {Tags:["pr.target","titruc.interactivejump.greenblock.lookmarker"]}
 summon minecraft:marker ~-21 ~9 ~2 {Tags:["pr.target","titruc.interactivejump.greenblock.block"]}
@@ -43,7 +43,7 @@ summon minecraft:marker ~-25 ~9 ~-4 {Tags:["pr.target","titruc.interactivejump.b
 summon minecraft:marker ~-24 ~8 ~-7 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-21 ~6 ~-9 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-18 ~6 ~-9 {Tags:["pr.target","titruc.interactivejump.block"]}
-summon minecraft:marker ~-15 ~7 ~-9 {Tags:["pr.target","titruc.interactivejump.checkpoint"]}
+summon minecraft:marker ~-15 ~7 ~-9 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[-90.0f,0.0f]}
 summon minecraft:marker ~-13 ~10 ~-9 {Tags:["pr.target","titruc.interactivejump.blueblock.lookmarker"]}
 summon minecraft:marker ~-13 ~8 ~-7 {Tags:["pr.target","titruc.interactivejump.blueblock.block"]}
 summon minecraft:marker ~-13 ~9 ~-5 {Tags:["pr.target","titruc.interactivejump.block"]}
@@ -59,7 +59,7 @@ summon minecraft:marker ~0 ~16 ~-4 {Tags:["pr.target","titruc.interactivejump.bl
 summon minecraft:marker ~1 ~15 ~-2 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~2 ~15 ~0 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~3 ~14 ~4 {Tags:["pr.target","titruc.interactivejump.block"]}
-summon minecraft:marker ~3 ~11 ~6 {Tags:["pr.target","titruc.interactivejump.checkpoint"]}
+summon minecraft:marker ~3 ~11 ~6 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[0.0f,0.0f]}
 summon minecraft:marker ~3 ~10 ~9 {Tags:["pr.target","titruc.interactivejump.blackblock.block"]}
 summon minecraft:marker ~3 ~10 ~12 {Tags:["pr.target","titruc.interactivejump.blackblock.block"]}
 summon minecraft:marker ~1 ~10 ~13 {Tags:["pr.target","titruc.interactivejump.block"]}
@@ -70,7 +70,7 @@ summon minecraft:marker ~3 ~8 ~22 {Tags:["pr.target","titruc.interactivejump.bla
 summon minecraft:marker ~5 ~8 ~25 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~3 ~8 ~26 {Tags:["pr.target","titruc.interactivejump.blackblock.block"]}
 summon minecraft:marker ~2 ~8 ~30 {Tags:["pr.target","titruc.interactivejump.blackblock.block"]}
-summon minecraft:marker ~-1 ~9 ~30 {Tags:["pr.target","titruc.interactivejump.checkpoint"]}
+summon minecraft:marker ~-1 ~9 ~30 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[90.0f,0.0f]}
 summon minecraft:marker ~-4 ~10 ~30 {Tags:["pr.target","titruc.interactivejump.yellowblock.block"]}
 summon minecraft:marker ~-6 ~11 ~31 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-7 ~12 ~28 {Tags:["pr.target","titruc.interactivejump.yellowblock.block"]}
@@ -94,7 +94,7 @@ summon minecraft:marker ~-2 ~26 ~29 {Tags:["pr.target","titruc.interactivejump.b
 summon minecraft:marker ~-2 ~27 ~27 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-2 ~28 ~25 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-2 ~29 ~23 {Tags:["pr.target","titruc.interactivejump.redblock.block"]}
-summon minecraft:marker ~-4 ~30 ~23 {Tags:["pr.target","titruc.interactivejump.checkpoint"]}
+summon minecraft:marker ~-4 ~30 ~23 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[90.0f,0.0f]}
 summon minecraft:marker ~-6 ~31 ~23 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-6 ~32 ~21 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-6 ~33 ~19 {Tags:["pr.target","titruc.interactivejump.block"]}
@@ -129,7 +129,7 @@ summon minecraft:marker ~-9 ~-6 ~13 {Tags:["pr.target","titruc.interactivejump.b
 summon minecraft:marker ~-6 ~-11 ~14 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-1 ~-21 ~13 {Tags:["pr.target","titruc.interactivejump.yellowblock.lookmarker"]}
 summon minecraft:marker ~-1 ~-21 ~9 {Tags:["pr.target","titruc.interactivejump.blueblock.lookmarker"]}
-summon minecraft:marker ~-3 ~-24 ~12 {Tags:["pr.target","titruc.interactivejump.checkpoint"]}
+summon minecraft:marker ~-3 ~-24 ~12 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[-90.0f,0.0f]}
 summon minecraft:marker ~0 ~-24 ~11 {Tags:["pr.target","titruc.interactivejump.blueblock.block"]}
 summon minecraft:marker ~1 ~-24 ~15 {Tags:["pr.target","titruc.interactivejump.blueblock.block"]}
 summon minecraft:marker ~-1 ~-24 ~18 {Tags:["pr.target","titruc.interactivejump.yellowblock.block"]}
