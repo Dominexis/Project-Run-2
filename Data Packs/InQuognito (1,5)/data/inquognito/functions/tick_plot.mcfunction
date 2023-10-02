@@ -126,6 +126,34 @@ execute if score enemy.35 inquognito.temp matches 80.. at @e[type=minecraft:mark
 execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.36] run scoreboard players add enemy.36 inquognito.temp 1
 execute if score enemy.36 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.36] summon minecraft:zombie_villager run function inquognito:logic/enemies/36
 
+## Escape Sequence
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.37] run scoreboard players add enemy.37 inquognito.temp 1
+execute if score enemy.37 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.37] summon minecraft:zombie_villager run function inquognito:logic/enemies/37
+
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.38] run scoreboard players add enemy.38 inquognito.temp 1
+execute if score enemy.38 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.38] summon minecraft:zombie_villager run function inquognito:logic/enemies/38
+
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.39] run scoreboard players add enemy.39 inquognito.temp 1
+execute if score enemy.39 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.39] summon minecraft:zombie_villager run function inquognito:logic/enemies/39
+
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.40] run scoreboard players add enemy.40 inquognito.temp 1
+execute if score enemy.40 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.40] summon minecraft:zombie_villager run function inquognito:logic/enemies/40
+
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.41] run scoreboard players add enemy.41 inquognito.temp 1
+execute if score enemy.41 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.41] summon minecraft:zombie_villager run function inquognito:logic/enemies/41
+
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.42] run scoreboard players add enemy.42 inquognito.temp 1
+execute if score enemy.42 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.42] summon minecraft:zombie_villager run function inquognito:logic/enemies/42
+
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.43] run scoreboard players add enemy.43 inquognito.temp 1
+execute if score enemy.43 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.43] summon minecraft:zombie_villager run function inquognito:logic/enemies/43
+
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.44] run scoreboard players add enemy.44 inquognito.temp 1
+execute if score enemy.44 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.44] summon minecraft:zombie_villager run function inquognito:logic/enemies/44
+
+execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.45] run scoreboard players add enemy.45 inquognito.temp 1
+execute if score enemy.45 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.45] summon minecraft:warden run function inquognito:logic/enemies/45
+
 ## Frostbite
 execute as @e[type=#inquognito:enemies,scores={inquognito.frostbite_timer=1..},tag=pr.target] at @s run function inquognito:logic/abilities/gun/augments/frostbite/tick
 

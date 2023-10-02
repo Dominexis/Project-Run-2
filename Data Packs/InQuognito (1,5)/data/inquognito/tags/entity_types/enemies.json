@@ -2,6 +2,7 @@
     "values": [
 		"minecraft:creeper",
 		"minecraft:drowned",
+		"minecraft:warden",
 		"minecraft:zombie_villager"
 	]
 }

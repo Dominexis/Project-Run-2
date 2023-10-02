@@ -1,6 +1,6 @@
 tag @s add inquognito.nova
 
-scoreboard players operation @s inquognito.id = @a[tag=pr.target,limit=1] inquognito.id
+scoreboard players operation @s inquognito.id = @a[tag=pr.target,predicate=inquognito:id_match,limit=1] inquognito.id
 
 item replace entity @s armor.head with minecraft:coal_block
 

@@ -208,6 +208,9 @@ summon minecraft:item_display ~-7.5 ~-35 ~-20.9 {Tags:["inquognito","inquognito.
 
 summon minecraft:warden ~19 ~4 ~27 {Tags:["inquognito","inquognito.warden"],Rotation:[-180f,0f],Invulnerable:1b,NoAI:1b,Silent:1b}
 
+#summon minecraft:iron_golem ~-16 ~88 ~-11 {Tags:["inquognito","inquognito.iron_golem"],Rotation:[0f,0f],Invulnerable:1b,NoAI:1b,Silent:1b}
+#summon minecraft:wither ~-16 ~88 ~-5 {Tags:["inquognito","inquognito.wither"],Rotation:[0f,0f],Invulnerable:1b,NoAI:1b,Silent:1b}
+
 summon minecraft:item_display ~-38 ~49.5 ~5 {Tags:["inquognito","inquognito.sculkShrieker"],item:{id:"minecraft:sculk_shrieker",Count:1b},Rotation:[-45f,15f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
 
 summon minecraft:armor_stand ~18.3 ~52.5 ~-18.7 {Tags:["inquognito","inquognito.camera"],Rotation:[135f,0f]}
@@ -322,6 +325,26 @@ execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.34,limit=1] summo
 execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.35,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/35
 summon minecraft:marker ~-24 ~-27 ~-16 {Tags:["inquognito","inquognito.enemy_spawn.36"]}
 execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.36,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/36
+
+## Escape Sequence
+summon minecraft:marker ~-2 ~94 ~-11 {Tags:["inquognito","inquognito.enemy_spawn.37"]}
+summon minecraft:marker ~-7 ~94 ~0 {Tags:["inquognito","inquognito.enemy_spawn.38"]}
+summon minecraft:marker ~10 ~94 ~20 {Tags:["inquognito","inquognito.enemy_spawn.39"]}
+summon minecraft:marker ~29 ~94 ~32 {Tags:["inquognito","inquognito.enemy_spawn.40"]}
+summon minecraft:marker ~16 ~94 ~34 {Tags:["inquognito","inquognito.enemy_spawn.41"]}
+summon minecraft:marker ~-30 ~87 ~-21 {Tags:["inquognito","inquognito.enemy_spawn.42"]}
+summon minecraft:marker ~-20 ~87 ~-21 {Tags:["inquognito","inquognito.enemy_spawn.43"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.37,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/37
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.38,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/38
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.39,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/39
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.40,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/40
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.41,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/41
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.42,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/42
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.43,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/43
+summon minecraft:marker ~-27 ~87 ~7 {Tags:["inquognito","inquognito.enemy_spawn.44"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.44,limit=1] summon minecraft:zombie_villager run function inquognito:logic/enemies/44
+summon minecraft:marker ~-25 ~88 ~-13 {Tags:["inquognito","inquognito.enemy_spawn.45"]}
+execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.45,limit=1] summon minecraft:warden run function inquognito:logic/enemies/45
 
 # Keypad
 summon minecraft:item_frame ~-25 ~-4 ~-35 {Tags:["inquognito","inquognito.keypad.setup"],Facing:3b,Invisible:1b}

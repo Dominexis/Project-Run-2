@@ -10,8 +10,8 @@ execute if score @s inquognito.dialogue.tick matches 240 run scoreboard players 
 execute if score @s inquognito.dialogue.tick matches 240 run effect give @s minecraft:wither 1 2 true
 execute if score @s inquognito.dialogue.tick matches 240 run tag @s add inquognito.boss.darkness
 
-execute if score @s inquognito.dialogue.tick matches 440 run tag @s add inquognito.boss.darkness_particles
+execute if score @s inquognito.dialogue.tick matches 340 run tag @s add inquognito.boss.darkness_particles
 
-tellraw @s[scores={inquognito.dialogue.tick=540}] [{"text":"??? | ","color":"light_purple"},{"text":"How are you still standing? What's happening??","color":"white"}]
+tellraw @s[scores={inquognito.dialogue.tick=440}] [{"text":"??? | ","color":"light_purple"},{"text":"How are you still standing? What's happening??","color":"white"}]
 
-execute if score @s inquognito.dialogue.tick matches 540.. run function inquognito:logic/plot/boss/dialogue/reset
+execute if score @s inquognito.dialogue.tick matches 440.. run function inquognito:logic/plot/boss/dialogue/reset

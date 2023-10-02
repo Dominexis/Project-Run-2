@@ -31,6 +31,7 @@ execute if score @s inquognito.clearance.office.3 matches 1.. run function inquo
 execute positioned ~-6 ~-20 ~-25 if entity @s[tag=!inquognito.boss.start,dx=2,dy=0,dz=2] run function inquognito:logic/plot/boss/start
 
 execute if entity @s[tag=inquognito.boss.start] run function inquognito:logic/plot/boss/particles/ambient
+execute if score @s inquognito.boss.health matches 99 run function inquognito:logic/plot/boss/tractor_beam
 
 execute positioned ~-5 ~-31 ~31 if entity @s[nbt={Inventory:[{tag:{inquognito.sonic_charge:1}}]},dx=0] run function inquognito:logic/plot/boss/damage
 
