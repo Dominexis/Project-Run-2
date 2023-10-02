@@ -15,10 +15,11 @@ execute at @s run tp @s ~ ~-2 ~
 execute at @s[tag=cobra2.up] run tp @s ~ ~-1 ~
 
 # Invert camera
-execute at @s run summon minecraft:marker ~ ~ ~ {Tags:[pr.target,cobra2.m]}
+execute at @s run summon minecraft:marker ~ ~ ~ {Tags:["pr.target","cobra2.m"]}
 tp @e[tag=cobra2.m] @s
 execute store result entity @e[tag=cobra2.m,limit=1] Rotation[1] float -1 run data get entity @s Rotation[1]
 tp @s @e[tag=cobra2.m,limit=1]
 kill @e[tag=cobra2.m]
+scoreboard players reset @s cobra2.ground
 
 execute at @s run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1.8
