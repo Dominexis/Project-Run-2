@@ -13,7 +13,7 @@ execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -5 run fun
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -4 run function kirnt:exit
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -4 run function sparkour:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -4 run function klue007:exit
-#execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -4 run function namespace:exit
+execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -4 run function spooky:exit
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches -4 run function kevinc:exit
 execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -3 run function bowshot:exit
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -3 run function xekyt:exit

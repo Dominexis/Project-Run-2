@@ -1,0 +1,1 @@
+scoreboard objectives add spooky.item_count dummy
