@@ -38,7 +38,7 @@ execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -1 run fu
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run function warshito:recall
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run function cds28:recall
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -1 run function time_stream:recall
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function namespace:recall
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function lory:recall
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -1 run function snakerattler:recall
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -1 run function theswagunicorn2:recall
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -1 run function bansed:recall
@@ -63,7 +63,7 @@ execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 1 run func
 #execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 1 run function namespace:recall
 execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run function marcostrk-icy-boat-parkour:recall
 execute if score @s pr.plot_x matches -6 if score @s pr.plot_z matches 2 run function corruptide_city:recall
-execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 2 run function lory:recall
+execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 2 run function lory_water:recall
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 2 run function flying_dragon:recall
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 2 run function boss586:recall
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 2 run function applecake:recall

@@ -38,7 +38,7 @@ execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -1 run fu
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -1 run function warshito:exit
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches -1 run function cds28:exit
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -1 run function time_stream:exit
-#execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function namespace:exit
+execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -1 run function lory:exit
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -1 run function snakerattler:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -1 run function theswagunicorn2:exit
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -1 run function bansed:exit
@@ -63,7 +63,7 @@ execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 1 run func
 #execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 1 run function namespace:exit
 execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 1 run function marcostrk-icy-boat-parkour:exit
 execute if score @s pr.plot_x matches -6 if score @s pr.plot_z matches 2 run function corruptide_city:exit
-execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 2 run function lory:exit
+execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches 2 run function lory_water:exit
 execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches 2 run function flying_dragon:exit
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 2 run function boss586:exit
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 2 run function applecake:exit

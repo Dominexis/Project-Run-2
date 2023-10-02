@@ -42,8 +42,15 @@ def program():
         if not data_pack_path.is_dir():
             continue
 
+
         data_pack = data_pack_path.name
-        print("Zipping " + data_pack)
+        if data_pack in [
+            "Anas (-1,-2)",
+            "KelloVerra (2,5)"
+        ]:
+            print(f'Skipping {data_pack}')
+            continue
+        print(f'Zipping {data_pack}')
         shutil.make_archive(data_pack_path.parent.parent / "Zipped Data Packs" / data_pack, "zip", data_pack_path)
 
     print("Data packs zipped")
