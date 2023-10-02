@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:sandstone",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 3, 5",
+                    "text": "Labyrinth of Lost Souls",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "When the path is unclear, know that there will always be a guiding light from past souls.\n\n§6Cantaloupe & Technodono",
                 "color": "green"
             }
         ],
