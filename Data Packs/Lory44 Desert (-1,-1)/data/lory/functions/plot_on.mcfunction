@@ -2,8 +2,16 @@
 # It will run in your plot on the center block at Y=0
 # Use this to prepare your plot for players
 
+# use execute at 0073bfd4-016d-1b4b-0001-320713876e6e to return to plot origin
+# (yes, this is an internal Spanish joke, suffer x'P)
+summon marker ~ ~ ~ {UUID:[I;7585748,23927627,78343,327642734],CustomName:'{"text":"El Pepe"}'}
+
+execute align xyz run summon armor_stand ~31 ~18 ~36 {Tags:["lory.raft_keeper","lory.npc"],NoBasePlate:1b,ShowArms:1b,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:2363392}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:26759}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:28533}}},{id:"minecraft:player_head",Count:1b}],HandItems:[{},{}],DisabledSlots:4144959,Pose:{LeftArm:[-26f,00f,0f],RightArm:[-13f,00f,0f]},Rotation:[180f,0f]}
+
+# scoreboards
 scoreboard objectives add lory.var dummy
 scoreboard objectives add lory.snake_id dummy
+scoreboard objectives add lory.drop_raft minecraft.dropped:minecraft.bamboo_raft
 
 # giga bunch of markers for the snake parkour
 execute positioned ~-13 ~31.5 ~-3 summon minecraft:marker run function lory:marker/summon

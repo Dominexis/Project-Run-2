@@ -3,4 +3,13 @@
 # Use this to reset your plot and get rid of any laggy entities
 
 # apparently the benefit of 'type=' needs at least 1 subchunk discriminator condition, that's why 'distance='
-kill @e[type=marker,distance=0..128,tag=pr.target,tag=lory.snake_part]
+
+execute if score $snake_timer lory.var matches 0.. run function lory:snake/off
+
+kill @e[type=marker,distance=0..128,tag=lory.snake_part,limit=64]
+kill @e[distance=0..128,tag=lory.raft_keeper,limit=2]
+
+kill 0073bfd4-016d-1b4b-0001-320713876e6e
+
+kill @e[type=armor_stand,distance=0..128,tag=lory.raft_keeper,tag=lory.npc,limit=2]
+
