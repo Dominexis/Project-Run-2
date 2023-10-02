@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:iron_boots",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 2, 4",
+                    "text": "Dualism Chamber",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Travel through the dimension that knows neither up nor down.\n\n§6Maniacobra",
                 "color": "green"
             }
         ],
