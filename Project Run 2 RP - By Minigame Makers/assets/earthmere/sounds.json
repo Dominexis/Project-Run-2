@@ -1,0 +1,12 @@
+{
+    "waterfall": {
+        "sounds": [
+            {"name": "earthmere:custom/waterfall"}
+        ]
+    },
+    "end": {
+        "sounds": [
+            {"name": "earthmere:custom/end", "stream": true}
+        ]
+    }
+}

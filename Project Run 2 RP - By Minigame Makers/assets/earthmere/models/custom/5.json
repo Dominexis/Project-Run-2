@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/oxidized_cut_copper_stairs_outer",
+  "textures": {
+    "particle": "earthmere:custom/5",
+    "bottom": "minecraft:block/oxidized_cut_copper",
+    "top": "minecraft:block/oxidized_cut_copper",
+    "side": "minecraft:block/oxidized_cut_copper"
+  }
+}
