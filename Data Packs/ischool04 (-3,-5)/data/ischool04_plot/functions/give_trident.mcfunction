@@ -1,3 +1,3 @@
-give @s trident{display:{Name:'[{"text":"Infernal Destroyer","italic":false,"bold":true,"color":"dark_red"}]',Lore:['[{"text":"[","italic":false,"color":"dark_blue"},{"text":"Distance Weapon","color":"blue"},{"text":"]"}]']},Enchantments:[{id:"loyalty",lvl:3}],HideFlags:131} 1
-kill @e[type=item,nbt={Item:{id:"minecraft:trident"}},tag=pr.target]
+give @s trident{Unbreakable:1b,display:{Name:'[{"text":"Infernal Destroyer","italic":false,"bold":true,"color":"dark_red"}]',Lore:['[{"text":"[","italic":false,"color":"dark_blue"},{"text":"Distance Weapon","color":"blue"},{"text":"]"}]']},Enchantments:[{id:"loyalty",lvl:3}],HideFlags:5} 1
+kill @e[type=item,tag=pr.target,nbt={Item:{id:"minecraft:trident"}}]
 scoreboard players reset @s isch.drop.tr

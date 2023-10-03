@@ -1,0 +1,3 @@
+tp @s @e[tag=check1,tag=pr.target,limit=1]
+execute at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 1 1 1
+tellraw @s ["",{"text":"[","color":"dark_red"},{"text":"Multiple players can't play simultaneously","color":"red"},{"text":"]","color":"dark_red"},{"text":"\n"},{"text":"-","color":"gold"},{"text":"Wait until a player completes the mission to play.","color":"yellow"},{"text":"-\n","color":"gold"}]

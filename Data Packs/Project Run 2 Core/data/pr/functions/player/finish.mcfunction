@@ -30,6 +30,8 @@ tag @s remove pr.leaderboard_placement
 
 # Send to lobby
 
+gamemode adventure @s
+
 function pr:plot/advancement
 
 function pr:player/checkpoint/lobby

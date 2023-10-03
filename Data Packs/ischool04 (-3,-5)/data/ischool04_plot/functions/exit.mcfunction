@@ -22,3 +22,6 @@ tag @s remove plvl2
 tag @s remove kmc
 tag @s remove ridingS
 tag @s remove started.ride
+tag @s remove part1
+tag @s remove part2
+tag @s remove wait_response

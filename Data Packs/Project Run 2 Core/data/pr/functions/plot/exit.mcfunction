@@ -105,7 +105,6 @@ execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run func
 
 # Clear things off of the player
 
-gamemode adventure @s
 tag @s remove pr.target
 clear @s
 effect clear @s
