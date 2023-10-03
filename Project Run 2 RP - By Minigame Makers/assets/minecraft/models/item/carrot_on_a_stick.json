@@ -13,6 +13,7 @@
 		{ "predicate": { "custom_model_data": 201836 }, "model": "inquognito:items/gun/axc" },
 		{ "predicate": { "custom_model_data": 201837 }, "model": "inquognito:items/gun/xbc" },
 		{ "predicate": { "custom_model_data": 201838 }, "model": "inquognito:items/gun/abc" },
+		{ "predicate": { "custom_model_data": 318502 }, "model": "prime:item/wand" },
 		{ "predicate": { "custom_model_data": 429001}, "model": "ykw:warden_tendrils"},
 		{ "predicate": { "custom_model_data":1111690}, "model": "zombie1111:custom/laser_gun"}
 	]

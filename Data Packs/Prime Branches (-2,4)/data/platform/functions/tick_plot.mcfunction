@@ -9,7 +9,7 @@ kill @e[type=item,tag=pr.target]
 
 execute as @a[tag=pr.target] store result score @s PlatItem run clear @s carrot_on_a_stick 0
 execute as @a[tag=pr.target] at @s unless block ~ -63 ~ sea_lantern run scoreboard players set @s PlatItem 2
-give @a[tag=pr.target,scores={PlatItem=0}] carrot_on_a_stick{display:{Name:'{"text":"Create Platform","color":"gold","italic":false}'},Unbreakable:1b}
+give @a[tag=pr.target,scores={PlatItem=0}] carrot_on_a_stick{display:{Name:'{"text":"Create Platform","color":"gold","italic":false}'},Unbreakable:1b,CustomModelData:318502}
 clear @a[tag=pr.target,scores={PlatItem=2..}] carrot_on_a_stick
 
 execute as @a[tag=pr.target] at @s if block ~ ~-0.1 ~ black_stained_glass run kill @s
