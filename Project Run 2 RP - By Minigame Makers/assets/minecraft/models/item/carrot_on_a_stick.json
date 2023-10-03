@@ -4,6 +4,10 @@
 		"layer0": "item/carrot_on_a_stick"
 	},
 	"overrides": [
+		{ "predicate": { "custom_model_data": 10061 }, "model": "piemel:grappling_hook" },
+		{ "predicate": { "custom_model_data": 10062 }, "model": "piemel:target_indicator" },
+		{ "predicate": { "custom_model_data": 10063 }, "model": "piemel:swing_hook" },
+		{ "predicate": { "custom_model_data": 10064 }, "model": "piemel:launch_access" },
 		{ "predicate": { "custom_model_data": 102031}, "model": "beat_bounce:item/double_jump"},
 		{ "predicate": { "custom_model_data": 201831 }, "model": "inquognito:items/gun/xxx" },
 		{ "predicate": { "custom_model_data": 201832 }, "model": "inquognito:items/gun/axx" },

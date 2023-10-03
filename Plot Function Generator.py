@@ -87,6 +87,7 @@ NAMESPACES = {
     (4,-2): ("ykw", 3, True, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),
     (4,-1): ("rooftop_adventure_ra", 1, False, "minecraft:cobweb", "Rooftop Adventure", "Parkour across an abandoned city.\n\n§6ed1ska"),
     (4,0): ("cygnus_switch_palace", 0, True, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.\n\n§6Cygnus"),
+    (4,1): ("piemel", 2, True),
     (4,2): ("hhyes", 0, False),
     (5,-3): ("tuntan", 4, True, "minecraft:elytra", "Tunnel Tangle", "Fly through tight tunnels to escape the maze!\n\n§6mmmmmaaaaaxxxxx"),
     (5,-2): ("poldslippers", 0, True),
