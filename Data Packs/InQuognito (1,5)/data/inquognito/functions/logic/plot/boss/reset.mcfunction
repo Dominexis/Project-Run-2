@@ -1,4 +1,4 @@
-tag @s remove inquognito.boss.start
+scoreboard players set @s inquognito.floor -1
 
 tag @s remove inquognito.boss.darkness
 tag @s remove inquognito.boss.darkness_particles
@@ -9,3 +9,5 @@ execute if score @s inquognito.boss.health matches ..2 run scoreboard players op
 
 scoreboard players reset @s inquognito.boss.health
 scoreboard players reset @s inquognito.boss.heartbeat
+
+clear @s minecraft:tnt{inquognito.sonic_charge:1}

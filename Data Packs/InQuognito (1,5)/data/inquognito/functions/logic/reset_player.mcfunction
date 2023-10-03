@@ -1,6 +1,7 @@
 advancement revoke @s through inquognito:groups/all
 
 scoreboard players reset @s inquognito.id
+scoreboard players reset @s inquognito.floor
 
 scoreboard players reset @s inquognito.jump
 scoreboard players reset @s inquognito.use
@@ -50,7 +51,6 @@ tag @s remove inquognito.gun.frostbite
 tag @s remove inquognito.gun.nova
 tag @s remove inquognito.gun.trinity
 
-tag @s remove inquognito.boss.start
 tag @s remove inquognito.boss.darkness
 tag @s remove inquognito.boss.darkness_particles
 

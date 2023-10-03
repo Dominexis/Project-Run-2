@@ -5,4 +5,4 @@ function inquognito:logic/abilities/gun/damage_loop
 
 execute as @a[tag=pr.target,predicate=inquognito:id_match] at @s run playsound minecraft:entity.arrow.hit_player player @s
 
-
+say hit
