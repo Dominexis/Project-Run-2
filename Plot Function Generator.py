@@ -248,6 +248,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction")
         "# Execute exit functions\n\n" +
         "\n".join(commands) + "\n"*8 +
         "# Clear things off of the player\n\n" +
+        "gamemode adventure @s\n" +
         "tag @s remove pr.target\n" +
         "clear @s\n" +
         "effect clear @s\n" +
