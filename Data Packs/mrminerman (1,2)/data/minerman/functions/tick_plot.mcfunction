@@ -61,3 +61,8 @@ execute positioned ~1 ~2 ~6 as @a[tag=pr.target,dx=1,dy=1,dz=0,gamemode=!spectat
 execute positioned ~-2 ~2 ~6 as @a[tag=pr.target,dx=1,dy=1,dz=0,gamemode=!spectator] at @s run tp @s ~3 ~-46 ~-3
 execute positioned ~1 ~2 ~18 as @a[tag=pr.target,dx=1,dy=1,dz=0,gamemode=!spectator] at @s run tp @s ~-10 ~-46 ~-15
 execute positioned ~-2 ~2 ~18 as @a[tag=pr.target,dx=1,dy=1,dz=0,gamemode=!spectator] at @s run tp @s ~-27 ~-46 ~-15
+
+
+
+# Kill players on fire
+kill @a[tag=pr.target,predicate=minerman:on_fire]
