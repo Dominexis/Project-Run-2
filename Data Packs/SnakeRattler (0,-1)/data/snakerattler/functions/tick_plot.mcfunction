@@ -23,3 +23,5 @@ effect give @a[tag=pr.target] invisibility infinite 0 true
 scoreboard players set @a[tag=pr.target] SnakeRattler.TimeSwitch 0
 
 execute as @a[tag=pr.target] at @s if block ~ ~-0.1 ~ white_stained_glass run kill @s
+
+kill @e[type=item,tag=pr.target]
