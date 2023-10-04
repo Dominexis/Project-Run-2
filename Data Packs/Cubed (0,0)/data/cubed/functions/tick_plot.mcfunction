@@ -1,0 +1,1 @@
+execute as @a[tag=pr.target] at @s if block ~ ~ ~ structure_void run kill @s
