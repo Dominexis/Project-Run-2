@@ -23,4 +23,4 @@ execute if score #percentage inquognito.temp matches 86..90 run data modify stor
 execute if score #percentage inquognito.temp matches 91..95 run data modify storage inquognito:data hud_energy_value set value '[{"text":"\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae","color":"light_purple"},{"text":"\\u25ae","color":"white"}]'
 execute if score #percentage inquognito.temp matches 96.. run data modify storage inquognito:data hud_energy_value set value '[{"text":"\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae\\u25ae","color":"light_purple"}]'
 
-data modify storage inquognito:data hud_energy_blockage set value ''
+data modify storage inquognito:data hud_energy_blockage set value '{"text":""}'
