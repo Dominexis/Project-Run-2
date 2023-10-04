@@ -33,7 +33,7 @@ execute if score #plot pr.value matches 1109 run data modify storage pr:data tag
 # -6, 2
 execute if score #plot pr.value matches 1162 run data modify storage pr:data tag.leaderboard_name set value '{"text":"§kO§r Corruptide City §kO§r"}'
 # 6, 2
-execute if score #plot pr.value matches 1174 run data modify storage pr:data tag.leaderboard_name set value '{"text":"6, 2 Ending"}'
+execute if score #plot pr.value matches 1174 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Dynamique Wild"}'
 # -5, 3
 execute if score #plot pr.value matches 1227 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-5, 3 Ending"}'
 # 5, 3

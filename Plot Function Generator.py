@@ -97,7 +97,7 @@ NAMESPACES = {
     (5,2): ("flcme", 0, False, "minecraft:slime_block", "Tomfoolery", "Bounce around and make your way to the finish!\n\n§6flcme & MaSp005"),
     (5,3): ("wall_hall", 0, True, "minecraft:smooth_stone_slab", "Up Against the Walls", "Make your way through the hall of moving walls!\n\n§6Loominardy"),
     (6,-2): ("ganymede", 0, True, "minecraft:white_stained_glass_pane", "Colorblind", "Navigate through several enigmatic rooms using special colored lenses to reveal hidden paths.\n\n§6Ganymede & mmmmmaaaaaxxxxx"),
-    (6,2): ("titruc.interactivejump.sys", 0, True)
+    (6,2): ("titruc.interactivejump.sys", 0, True, "minecraft:flowering_azalea", "Dynamique Wild", "This cave full of nature! Look into the eyes to carve your path!\n\n§6Titruc")
 }
 
 

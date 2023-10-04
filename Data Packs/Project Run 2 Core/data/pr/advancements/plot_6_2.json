@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:flowering_azalea",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 6, 2",
+                    "text": "Dynamique Wild",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "This cave full of nature! Look into the eyes to carve your path!\n\n§6Titruc",
                 "color": "green"
             }
         ],
