@@ -63,3 +63,7 @@ execute as @e[type=trident,tag=pr.target,tag=!inGround] store result score @s ee
 tag @e[type=trident,tag=pr.target,scores={eelaa_tridents=1}] add inGround
 scoreboard players add @e[type=trident,tag=pr.target,tag=inGround] eelaa_tridents_timer 1
 kill @e[type=trident,tag=pr.target,tag=inGround,scores={eelaa_tridents_timer=30..}]
+
+
+
+effect give @a[tag=pr.target] weakness infinite 9 true
