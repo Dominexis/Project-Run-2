@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:golden_boots",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 1, -3",
+                    "text": "Biome Run",
                     "color": "white"
                 },
                 {
-                    "text": ""
+                    "text": "   "
                 }
             ]
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Run those biomes!\n\n§6Supersette",
                 "color": "green"
             }
         ],

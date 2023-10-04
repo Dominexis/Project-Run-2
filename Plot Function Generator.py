@@ -61,6 +61,7 @@ NAMESPACES = {
     (0,3): ("rambini", 0, False, "minecraft:rooted_dirt", "Crack in The World", "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini"),
     (1,-5): ("rko", 1, True, "minecraft:brick", "RKO Factory", "Parkour your way through a vast and old factory on moving machinery and conquer the challenge awaiting you.\n\n§6Rajdi & Kassar & Owca", "{CustomModelData:721011}"),
     (1,-4): ("klue007", -1, False, "minecraft:spruce_wood", "Spruce Town", "Complete parkour in a town surrounded by snowy mountains.\n\n§6klue"),
+    (1,-3): ("supersette", 4, False, "minecraft:golden_boots", "Biome Run", "Run those biomes!\n\n§6Supersette"),
     (1,-2): ("sliceolife", 0, True, "minecraft:gray_concrete", "Slice o' Life", "Navigate a bustling city!\n\n§6MegaMinerDL & mmmmmaaaaaxxxxx"),
     (1,-1): ("theswagunicorn2", 0, True, "minecraft:gilded_blackstone", "Bastion Build-Up", "Traverse your way through the Piglins' impressive construction of a massive beacon using the gold they processed in this factory.\n\n§6_TheSwagUnicorn_"),
     (1,1): ("risely", 1, False, "minecraft:name_tag", "Your Ticket Please!", "Exit through the basement or parkour your way out of the abandoned train station.\n\n§6Risely"),
