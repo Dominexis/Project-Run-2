@@ -18,7 +18,7 @@ NAMESPACES = {
     (-5,-1): ("mathtriqueur", 2, False, "minecraft:stone_bricks", "Upside-down Town", "\"Don't look down\" and \"Don't stare at the sun\" mean the same thing around here.\n\n§6Mathtriqueur"),
     (-5,1): ("dtplayers", 0, True, "minecraft:end_stone", "Space Escape", "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers"),
     (-5,2): ("lory_water", 0, True, "minecraft:water_bucket", "The Pit", "Parkour out of the pit, but don't fall into the water!\n\n§6ReynTheStrange & _Lory44 & mmmmmaaaaaxxxxx"),
-    (-5,3): ("earthmere", 4, True),
+    (-5,3): ("earthmere", 4, True, "minecraft:amethyst_shard", "Shard of Earthmere", "A shard of the land once occupied by thee, left to wither by order of decree.\n\n§6EyeCloud & Kassar & Owca"),
     (-4,-3): ("xekyt", 0, False, "minecraft:quartz_block", "Lab Leap", "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_"),
     (-4,-2): ("fuzzbearplush", 0, False, "minecraft:lime_wool", "Koopa Course", "Jump your way to the flag pole!\n\n§6Fuzzbearplush"),
     (-4,-1): ("warshito", 4, True, "minecraft:player_head", "Chromatic Climb", "Follow your color, collect the orb, and save the world!\n\n§6Warshito & Jalafito", '{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ=="}]}}}'),

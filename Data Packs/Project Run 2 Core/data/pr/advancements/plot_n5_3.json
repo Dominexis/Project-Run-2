@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:amethyst_shard",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section -5, 3",
+                    "text": "Shard of Earthmere",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "A shard of the land once occupied by thee, left to wither by order of decree.\n\n§6EyeCloud & Kassar & Owca",
                 "color": "green"
             }
         ],
