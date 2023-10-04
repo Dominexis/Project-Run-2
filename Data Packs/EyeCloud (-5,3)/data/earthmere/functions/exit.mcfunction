@@ -8,6 +8,7 @@ scoreboard players reset @s earthmere_end
 tag @s remove earthmere_start
 tag @s remove earthmere_end
 tag @s remove earthmere_launch
+tag @s remove earthmere_launch1
 tag @s remove earthmere_launch2
 
 effect clear @s minecraft:jump_boost

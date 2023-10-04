@@ -1,4 +1,5 @@
 tag @s add earthmere_launch
+tag @s add earthmere_launch1
 
 execute at @s run playsound minecraft:entity.slime.jump master @s ~ ~ ~ 5 1.2
 execute at @s run particle minecraft:block honey_block ~ ~ ~ 0.5 0 0.5 0 35 normal @s
