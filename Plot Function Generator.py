@@ -53,7 +53,7 @@ NAMESPACES = {
     (-1,3): ("woutbelt", 0, True, "minecraft:polished_blackstone", "Portal of Ages", "Navigate the currents of time to discover your path to the exit.\n\n§6WoutBelt"),
     (-1,4): ("brosephmc_mc_pr", 0, True, "minecraft:minecart", "Car Tunnel", "Jump across moving cars in a highway tunnel. Based off the Motor Course parkour maps.\n\n§6BrosephMC"),
     (-1,5): ("funkytoc_moon", 1, False, "minecraft:dead_bubble_coral_block", "Rock and Dust", "A breathtaking experience!\n\n§6FunkyToc & _TheSwagUnicorn_"),
-    (0,-4): ("sparkour", 0, False),
+    (0,-4): ("sparkour", 0, False, "minecraft:compass", "Straight", "As straightforward as it gets.\n\n§6Sparkour"),
     (0,-3): ("evilgodloki", 1, True, "minecraft:dark_oak_door", "Password Anxiety", "Stop inputting the same code!\nThat's cheating!\nTry to find another one!\n\n§6EvilGod_Loki"),
     (0,-1): ("snakerattler", 0, False, "minecraft:player_head", "A Time of War", "As you parkour around the remnants of a kingdom, time warp from time zones to get to the exits.\n\n§6SnakeRattler & _TheSwagUnicorn_", '{SkullOwner:{Id:[I;2147172735,-1468380994,-1893618298,-1175039205],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDlmN2NlYzAwYWZlOWY3YzYyNGFlOGRmNWMwMzNjYjQxOWY2ZWE0MTAxNzAyMWI5YmVmZDkxOTcwYjgzM2E1YyJ9fX0="}]}}}'),
     (0,0): ("cubed", 0, False, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),

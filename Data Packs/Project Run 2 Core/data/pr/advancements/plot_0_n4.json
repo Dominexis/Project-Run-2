@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:compass",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 0, -4",
+                    "text": "Straight",
                     "color": "white"
                 },
                 {
-                    "text": ""
+                    "text": "    "
                 }
             ]
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "As straightforward as it gets.\n\n§6Sparkour",
                 "color": "green"
             }
         ],
