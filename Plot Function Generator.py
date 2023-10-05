@@ -18,7 +18,7 @@ NAMESPACES = {
     (-5,-1): ("mathtriqueur", 2, False, "minecraft:stone_bricks", "Upside-down Town", "\"Don't look down\" and \"Don't stare at the sun\" mean the same thing around here.\n\n§6Mathtriqueur"),
     (-5,1): ("dtplayers", 0, True, "minecraft:end_stone", "Space Escape", "Escape a remote planetary mining base after a mysterious infestation damages the oxygen plant.\n\n§6DTplayers"),
     (-5,2): ("lory_water", 0, True, "minecraft:water_bucket", "The Pit", "Parkour out of the pit, but don't fall into the water!\n\n§6ReynTheStrange & _Lory44 & mmmmmaaaaaxxxxx"),
-    (-5,3): ("earthmere", 4, True, "minecraft:amethyst_shard", "Shard of Earthmere", "A shard of the land once occupied by thee, left to wither by order of decree.\n\n§6EyeCloud & Kassar & Owca"),
+    (-5,3): ("earthmere", 4, True, "minecraft:amethyst_shard", "Shard of\nEarthmere", "A shard of the land once occupied by thee, left to wither by order of decree.\n\n§6EyeCloud & Kassar & Owca"),
     (-4,-3): ("xekyt", 0, False, "minecraft:quartz_block", "Lab Leap", "Navigate through a dangerous lab!\n\n§6XeKyT & _TheSwagUnicorn_"),
     (-4,-2): ("fuzzbearplush", 0, False, "minecraft:lime_wool", "Koopa Course", "Jump your way to the flag pole!\n\n§6Fuzzbearplush"),
     (-4,-1): ("warshito", 4, True, "minecraft:player_head", "Chromatic Climb", "Follow your color, collect the orb, and save the world!\n\n§6Warshito & Jalafito", '{SkullOwner:{Id:[I;2056400680,994658796,-2146643889,-245245515],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTVkMWYxM2NiM2NlMjRkYzRmZTM0ZjJiOWJhNDY0ZmEyYzAwMzFiNDUwNWJkOGM2NzRiZjZkODc1ZjIyY2UzIn19fQ=="}]}}}'),
@@ -28,14 +28,14 @@ NAMESPACES = {
     (-4,3): ("fabulousfox", 0, True, "minecraft:reinforced_deepslate", "Cavern Shift", "A treacherous cave parkour map! Jump from moving platforms to floating obstacles and navigate through the dark depths.\n\n§6FabulousFox"),
     (-3,-5): ("ischool04_plot", 0, True),
     (-3,-4): ("snowvillage", 0, True),
-    (-3,-2): ("reuge", 0, False, "minecraft:beacon", "Skyborne Metropolis", "Navigate the captivating skies of a floating city!\n\n§6REUGE"),
+    (-3,-2): ("reuge", 0, False, "minecraft:beacon", "Skyborne\nMetropolis", "Navigate the captivating skies of a floating city!\n\n§6REUGE"),
     (-3,-1): ("cds28", 0, True, "minecraft:heart_of_the_sea", "Pinball", "Parkour across the pinball machine. Will you set a new score record?\n\n§6CDs28"),
     (-3,0): ("anikey_plot", 4, True, "minecraft:white_glazed_terracotta", "Mirror Travel", "Jumping in a Gothic building, try to go though it!\n\n§6Anikey_Chang"),
     (-3,1): ("aljaz", 0, True, "minecraft:player_head", "Snake Madness", "Scale the snakes and escape the maze!\n\n§6Aljaz14", '{SkullOwner:{Id:[I;2098679158,-283884171,-1425129158,-1065654650],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA1MDNiODFhYzAyMGM2N2MzNzc4N2I0NWM5YTI2MjIzZjliYzI2YmNhMjdmODFhZjMyZjJjZjU1ZTI0NDBiNyJ9fX0="}]}}}'),
     (-3,2): ("boss586", 3, False, "minecraft:amethyst_block", "Mystical House", "Parkour your way through a mysterious mystical cave under a house.\n\n§6Boss586 & mmmmmaaaaaxxxxx"),
     (-3,4): ("zombie1111", 0, True, "minecraft:bricks", "Monster City", "Parkour through the city and fight the monsters!\n\n§6Zombie1111 & _Elton"),
     (-3,5): ("simondmc", 2, True, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!\n\n§6SimonDMC & EurekaX"),
-    (-2,-6): ("eosand", 0, True, "minecraft:end_crystal", "Pipeline Pandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.\n\n§6EOSand"),
+    (-2,-6): ("eosand", 0, True, "minecraft:end_crystal", "Pipeline\nPandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.\n\n§6EOSand"),
     (-2,-5): ("ronanemperor", 2, True, "minecraft:sculk_shrieker", "Warden's Domain", "Parkour through the dangerous underground to reach the Warden's Domain.\n\n§6RonanEmperor"),
     (-2,-3): ("technodono_plot_-2_-3", 0, True, "minecraft:note_block", "Beat Bounce", "When your grooving to music what do you do? You bounce of course!\nIn this parkour map your jumping is out of your control, bounce to the beat and try escape the abandoned laboratory as fast as possible!\n\n§6Technodono & BrandShei"),
     (-2,-1): ("time_stream", 0, False, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
@@ -43,7 +43,7 @@ NAMESPACES = {
     (-2,3): ("stabily_time_tower_parkour", 1, False, "minecraft:ladder", "Time Tower", "Climbing to the future!\n\n§6Stabily Waqular"),
     (-2,4): ("platform", 2, False, "minecraft:green_stained_glass", "Magical Platforms", "Experience the ability to conjure glass platforms, they may last for a little longer than usual.\n\n§6P2ime & Dominexis"),
     (-2,5): ("captainargus", 3, False, "minecraft:clock", "Factory Frenzy", "Don't fall off, you're sure to get lost. Follow the carpets if you're ever uncertain.\n\n§6CaptainArgus"),
-    (-2,6): ("theswagunicorn_horse", 0, True, "minecraft:saddle", "Half Heart Horse Hustle", "Rush to the castle with your fragile steed!\n\n§6_TheSwagUnicorn_"),
+    (-2,6): ("theswagunicorn_horse", 0, True, "minecraft:saddle", "Half Heart\nHorse Hustle", "Rush to the castle with your fragile steed!\n\n§6_TheSwagUnicorn_"),
     (-1,-5): ("spinat", 0, False, "minecraft:purple_concrete_powder", "25 Pixels", "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox"),
     (-1,-4): ("kirnt", 1, False, "minecraft:oxidized_copper", "Stellar Adventure", "Leap through outer space from world to world!\n\n§6kirnt2027 & Minigame Makers"),
     (-1,-3): ("itspungpond98", 0, True, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates.\n\n§6ItsPungpond98"),
@@ -71,7 +71,7 @@ NAMESPACES = {
     (1,3): ("theswagunicorn", 0, True, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines.\n\n§6_TheSwagUnicorn_"),
     (1,4): ("rex_saltus_neon", 4, False, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night.\n\n§6Rex_Saltus & xherax"),
     (1,5): ("inquognito", 3, True),
-    (2,-5): ("decimate", 0, False, "minecraft:chest", "The Skyblock Experience", "Say hi to Jerry on the way!\n\n§6DecimateJSY97a & _TheSwagUnicorn_ & Masp005 & JPMagic"),
+    (2,-5): ("decimate", 0, False, "minecraft:chest", "The Skyblock\nExperience", "Say hi to Jerry on the way!\n\n§6DecimateJSY97a & _TheSwagUnicorn_ & Masp005 & JPMagic"),
     (2,-4): ("spooky", 2, False, "minecraft:sculk", "CyberFall", "Make your way around the city using your trident. Try Not To Fall!\n\n§6SpookyDaSpirit & Lazybrush2"),
     (2,-3): ("intjungle", 1, False, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?\n\n§6Interstellar_1"),
     (2,-1): ("bansed", -1, True, "minecraft:knowledge_book", "2D Parkour", "Minecraft is 2D now??\n\n§6Bansed & Henkie"),
@@ -79,14 +79,14 @@ NAMESPACES = {
     (2,3): ("eli_marie", 1, False, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),
     (2,4): ("cobra2", 1, True, "minecraft:iron_boots", "Dualism Chamber", "Travel through the dimension that knows neither up nor down.\n\n§6Maniacobra"),
     (2,6): ("lifeely", 0, True, "minecraft:blast_furnace", "Blast Burner", "Phew! Sure is hot in here!\n\n§6Lifeely & Dominexis"),
-    (3,-5): ("shadoweeq", 0, False, "minecraft:player_head", "Skyreach Mega Tower", "Explore changing city scenes as you make your way up to reach the top of the tower.\n\n§6shadoweeq", '{SkullOwner:{Id:[I;1543298721,250171001,-2086573174,-871347001],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY2YmIzYWQ4ZGFmMGMxNDk5YjVlNDZkY2Y0MTc2YzgzNDU0MzU1M2ExYTgxODAwOWU3Njc1ZTg5NjI5NWUxYSJ9fX0="}]}}}'),
+    (3,-5): ("shadoweeq", 0, False, "minecraft:player_head", "Skyreach\nMega Tower", "Explore changing city scenes as you make your way up to reach the top of the tower.\n\n§6shadoweeq", '{SkullOwner:{Id:[I;1543298721,250171001,-2086573174,-871347001],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY2YmIzYWQ4ZGFmMGMxNDk5YjVlNDZkY2Y0MTc2YzgzNDU0MzU1M2ExYTgxODAwOWU3Njc1ZTg5NjI5NWUxYSJ9fX0="}]}}}'),
     (3,-4): ("kevinc", 0, False, "minecraft:gold_ore", "Mine Skyisland", "There were many people who came for the treasure, and now it's empty.\n\n§6mc_Kevin_Creeper"),
     (3,-1): ("dominexis", 4, False, "minecraft:slime_block", "Slime Cave", "Careful! That stuff will kill ya!\n\n§6Dominexis"),
     (3,0): ("duality", 4, False, "minecraft:cherry_sapling", "Duality", "Choose your path of either light or dark and take on a scenic parkour adventure!\n\n§6ShadowCreeperr"),
     (3,1): ("blackcb", 1, False, "minecraft:spruce_log", "Mountain View", "Keep your momentum on the ice!\n\n§6BlackCB & Dominexis"),
     (3,2): ("im1294", 1, True, "minecraft:white_wool", "Mob Hop Scotch", "Only one swap per mob. But now that you killed it: did that help you?\n\n§6IceMaster1294"),
-    (3,4): ("proxxchf", 0, True, "minecraft:amethyst_cluster", "Crystalline Caverns", "Scale the scaffolds!\n\n§6PROxxCHF & Warshito"),
-    (3,5): ("cantaloupe", 0, True, "minecraft:sandstone", "Labyrinth of Lost Souls", "When the path is unclear, know that there will always be a guiding light from past souls.\n\n§6Cantaloupe4 & Technodono"),
+    (3,4): ("proxxchf", 0, True, "minecraft:amethyst_cluster", "Crystalline\nCaverns", "Scale the scaffolds!\n\n§6PROxxCHF & Warshito"),
+    (3,5): ("cantaloupe", 0, True, "minecraft:sandstone", "Labyrinth of\nLost Souls", "When the path is unclear, know that there will always be a guiding light from past souls.\n\n§6Cantaloupe4 & Technodono"),
     (4,-3): ("uk", 0, True, "minecraft:piston", "Puzzle Escape", "Parkour and solve puzzles to escape!\n\n§6That_UK"),
     (4,-2): ("ykw", 3, True, "minecraft:sculk_sensor", "Warden Vision", "Let sound guide you out of the darkness.\n\n§6YouKnowWhen"),
     (4,-1): ("rooftop_adventure_ra", 1, False, "minecraft:cobweb", "Rooftop Adventure", "Parkour across an abandoned city.\n\n§6ed1ska"),
@@ -98,7 +98,7 @@ NAMESPACES = {
     (5,-1): ("frostcobra", 0, True, "minecraft:calcite", "Cloud Maze", "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos"),
     (5,1): ("marcostrk-icy-boat-parkour", 1, True, "minecraft:oak_boat", "Icy Boat Parkour", "Stay snug in your boat and glide gracefully across the slippery ice.\n\n§6MarcoStrk & TimoStr"),
     (5,2): ("flcme", 0, False, "minecraft:slime_block", "Tomfoolery", "Bounce around and make your way to the finish!\n\n§6flcme & MaSp005"),
-    (5,3): ("wall_hall", 0, True, "minecraft:smooth_stone_slab", "Up Against the Walls", "Make your way through the hall of moving walls!\n\n§6Loominardy"),
+    (5,3): ("wall_hall", 0, True, "minecraft:smooth_stone_slab", "Up Against\nthe Walls", "Make your way through the hall of moving walls!\n\n§6Loominardy"),
     (6,-2): ("ganymede", 0, True, "minecraft:white_stained_glass_pane", "Colorblind", "Navigate through several enigmatic rooms using special colored lenses to reveal hidden paths.\n\n§6Ganymede & mmmmmaaaaaxxxxx"),
     (6,2): ("titruc.interactivejump.sys", 0, True, "minecraft:flowering_azalea", "Dynamique Wild", "This cave full of nature! Look into the eyes to carve your path!\n\n§6Titruc")
 }
@@ -313,7 +313,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "advancement.mcfun
 commands: list[str] = []
 for coordinate in coordinates:
     if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 3:
-        name = NAMESPACES[coordinate][4]
+        name = NAMESPACES[coordinate][4].replace("\n", " ")
     else:
         name = f'{coordinate[0]}, {coordinate[1]} Ending'
 
@@ -358,7 +358,7 @@ for coordinate in coordinates:
 
     commands.append(
         f'scoreboard players set #plot pr.value {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
-        f'execute positioned {coordinate[0]*4 + 40 - 96} -46 {coordinate[1]*4 + 40} run function pr:leaderboard/spawn/main'
+        f'execute positioned {coordinate[0]*4 + 40 - 96} -45 {coordinate[1]*4 + 40} run function pr:leaderboard/spawn/main'
     )
 commands.append("\n\n")
 for coordinate in coordinates:
@@ -369,7 +369,8 @@ for coordinate in coordinates:
         continue
     name = plot[4].replace("'", "\\'")
     newline_char = "\\\\n"
-    line_count = len(plot[5].split("§6")[-1].split(" & ")) + 2
+    line_count = len(plot[5].split("§6")[-1].split(" & ")) + len(name.split("\n")) + 1
+    name = newline_char.join(name.split("\n"))
     commands.append(
         f'summon text_display {coordinate[0]*4 - 55.5 + line_count*0.125} -46.99 {coordinate[1]*4 + 40.5} {{text:\'[{{"text":"{name}","color":"black","bold":true}},{{"text":"\\\\n\\\\n{newline_char.join(plot[5].split("§6")[-1].split(" & "))}","color":"black","bold":false}}]\',Tags:["pr.leaderboard"],background:0,transformation:{{right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],left_rotation:[-0.5f,0.5f,0.5f,0.5f],translation:[0.0f,0.0f,0.0f]}}}}'
     )
@@ -381,7 +382,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfu
         "kill @e[type=text_display,tag=pr.leaderboard]\n\n" +
         "kill @e[type=marker      ,tag=pr.leaderboard]\n\n" +
         "scoreboard players operation #plot pr.value = #spawn_plot pr.value\n" +
-        f"execute positioned {35 - 96} -46 40 run function pr:leaderboard/spawn/main\n\n" +
+        f"execute positioned {35 - 96} -45 40 run function pr:leaderboard/spawn/main\n\n" +
         "\n".join(commands)
     )
 
@@ -392,7 +393,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfu
 for coordinate in coordinates:
     if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 3:
         item = NAMESPACES[coordinate][3]
-        name = NAMESPACES[coordinate][4]
+        name = NAMESPACES[coordinate][4].replace("\n", " ")
         description = NAMESPACES[coordinate][5]
         if len(NAMESPACES[coordinate]) >= 7:
             nbt = NAMESPACES[coordinate][6]
