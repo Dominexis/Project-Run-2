@@ -94,7 +94,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 5 run fun
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 5 run function inquognito:exit
 #execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 5 run function namespace:exit
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 5 run function cantaloupe:exit
-#execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 6 run function namespace:exit
+execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 6 run function theswagunicorn_horse:exit
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run function lifeely:exit
 
 

@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:saddle",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section -2, 6",
+                    "text": "Half Heart Horse Hustle",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Rush to the castle with your fragile steed!\n\n§6_TheSwagUnicorn_",
                 "color": "green"
             }
         ],

@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:piston",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 4, -3",
+                    "text": "Puzzle Escape",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Parkour and solve puzzles to escape!\n\n§6That_UK",
                 "color": "green"
             }
         ],
