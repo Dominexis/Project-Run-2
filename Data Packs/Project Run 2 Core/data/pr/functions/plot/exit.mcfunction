@@ -22,7 +22,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches -3 run fu
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches -3 run function evilgodloki:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches -3 run function supersette:exit
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches -3 run function intjungle:exit
-#execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -3 run function namespace:exit
+execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches -3 run function uk:exit
 execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches -3 run function tuntan:exit
 execute if score @s pr.plot_x matches -6 if score @s pr.plot_z matches -2 run function andreyhero:exit
 execute if score @s pr.plot_x matches -5 if score @s pr.plot_z matches -2 run function artem:exit
@@ -108,6 +108,7 @@ execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run func
 tag @s remove pr.target
 clear @s
 effect clear @s
+title @s times 10 70 30
 experience set @s 0 levels
 experience set @s 0 points
 attribute @s minecraft:generic.max_health base set 20.0
