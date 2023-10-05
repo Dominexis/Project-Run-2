@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:slime_block",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 4, 2",
+                    "text": "Escape From Within",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Escape the reverse dropper!\n\n§6Hhyes & KaiWsMC & Dominexis",
                 "color": "green"
             }
         ],

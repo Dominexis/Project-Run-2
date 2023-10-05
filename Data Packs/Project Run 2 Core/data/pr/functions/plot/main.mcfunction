@@ -685,20 +685,20 @@ execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_1_-2 
 
 
 execute store result score #plot_player_3_-2 pr.value positioned 280.0 -64 -200.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
-#execute unless score #plot_player_3_-2 pr.value = #plot_tick_3_-2 pr.value positioned 280.0 -64 -200.0 run tag @a[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute unless score #plot_player_3_-2 pr.value = #plot_tick_3_-2 pr.value positioned 280.0 -64 -200.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator,tag=!pr.ignore] add pr.target
-#execute if score #plot_player_3_-2 pr.value matches 1 if score #plot_tick_3_-2 pr.value matches 0 positioned 328 0 -152 run function namespace:plot_on
-#execute if score #plot_player_3_-2 pr.value matches 0 if score #plot_tick_3_-2 pr.value matches 1 positioned 328 0 -152 run function namespace:plot_off
-#execute unless score #plot_player_3_-2 pr.value = #plot_tick_3_-2 pr.value run tag @a[tag=pr.target] remove pr.target
-#execute unless score #plot_player_3_-2 pr.value = #plot_tick_3_-2 pr.value run tag @e[tag=pr.target] remove pr.target
+execute unless score #plot_player_3_-2 pr.value = #plot_tick_3_-2 pr.value positioned 280.0 -64 -200.0 run tag @a[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute unless score #plot_player_3_-2 pr.value = #plot_tick_3_-2 pr.value positioned 280.0 -64 -200.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator,tag=!pr.ignore] add pr.target
+execute if score #plot_player_3_-2 pr.value matches 1 if score #plot_tick_3_-2 pr.value matches 0 positioned 328 0 -152 run function mooney:plot_on
+execute if score #plot_player_3_-2 pr.value matches 0 if score #plot_tick_3_-2 pr.value matches 1 positioned 328 0 -152 run function mooney:plot_off
+execute unless score #plot_player_3_-2 pr.value = #plot_tick_3_-2 pr.value run tag @a[tag=pr.target] remove pr.target
+execute unless score #plot_player_3_-2 pr.value = #plot_tick_3_-2 pr.value run tag @e[tag=pr.target] remove pr.target
 scoreboard players operation #plot_tick_3_-2 pr.value = #plot_player_3_-2 pr.value
 execute if score #plot_tick_3_-2 pr.value matches 1 positioned 284.0 -64 -196.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot 915
-#execute if score #plot_tick_3_-2 pr.value matches 1 positioned 284.0 -64 -196.0 run tag @a[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target
-#execute if score #plot_tick_3_-2 pr.value matches 1 positioned 284.0 -64 -196.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator,tag=!pr.ignore] add pr.target
-#execute if score #plot_tick_3_-2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-#execute if score #plot_tick_3_-2 pr.value matches 1 positioned 328 0 -152 run function namespace:tick_plot
-#execute if score #plot_tick_3_-2 pr.value matches 1 run tag @a[tag=pr.target] remove pr.target
-#execute if score #plot_tick_3_-2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+execute if score #plot_tick_3_-2 pr.value matches 1 positioned 284.0 -64 -196.0 run tag @a[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target
+execute if score #plot_tick_3_-2 pr.value matches 1 positioned 284.0 -64 -196.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator,tag=!pr.ignore] add pr.target
+execute if score #plot_tick_3_-2 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute if score #plot_tick_3_-2 pr.value matches 1 positioned 328 0 -152 run function mooney:tick_plot
+execute if score #plot_tick_3_-2 pr.value matches 1 run tag @a[tag=pr.target] remove pr.target
+execute if score #plot_tick_3_-2 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
 
