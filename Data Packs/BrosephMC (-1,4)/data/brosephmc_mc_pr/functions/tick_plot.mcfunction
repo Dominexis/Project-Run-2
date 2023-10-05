@@ -39,7 +39,7 @@ tag @a[tag=pr.target,tag=!onTheRoad] add stoppedWindSound
 #falling on the road
 execute as @a[tag=pr.target,gamemode=!spectator,gamemode=!creative] at @s if block ~ ~-1.1 ~ deepslate run playsound minecraft:entity.player.attack.knockback player @a[tag=pr.target] ~ ~ ~ 100
 execute as @a[tag=pr.target,gamemode=!spectator,gamemode=!creative] at @s if block ~ ~-1.1 ~ deepslate run playsound minecraft:entity.player.death player @a[tag=pr.target] ~ ~ ~ 5
-execute as @a[tag=pr.target,gamemode=!spectator,gamemode=!creative] at @s if block ~ ~-1.1 ~ deepslate run trigger checkpoint
+execute as @a[tag=pr.target,gamemode=!spectator,gamemode=!creative] at @s if block ~ ~-1.1 ~ deepslate run kill @s
 
 #new checkpoint
 execute as @a[tag=pr.target] at @s if block ~ ~ ~ moss_carpet run particle minecraft:happy_villager ~ ~ ~ 0.2 0.2 0.2 1 2

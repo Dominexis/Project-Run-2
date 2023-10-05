@@ -1,1 +1,1 @@
-execute as @a[tag=pr.target] at @s if block ~ ~ ~ dark_oak_slab run trigger checkpoint
+execute as @a[tag=pr.target] at @s if block ~ ~ ~ dark_oak_slab run kill @s

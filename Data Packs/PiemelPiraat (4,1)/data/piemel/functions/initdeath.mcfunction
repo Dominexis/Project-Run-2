@@ -1,1 +1,1 @@
-trigger checkpoint
+kill @s

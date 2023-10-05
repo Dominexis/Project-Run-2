@@ -11,8 +11,8 @@ execute as @a[tag=pr.target,scores={swag.HalfSec=..0}] run effect clear @s levit
 execute as @a[tag=pr.target,scores={swag.fall_flying=1}] run clear @s elytra
 
 #Kill
-execute as @a[tag=pr.target,predicate=theswagunicorn3:died] run trigger checkpoint
-execute as @a[tag=pr.target,predicate=theswagunicorn3:died2] run trigger checkpoint
-execute as @a[tag=pr.target,predicate=theswagunicorn3:died3] run trigger checkpoint
-execute as @a[tag=pr.target] at @s if block ~ ~1.8 ~ green_concrete run trigger checkpoint
-execute as @a[tag=pr.target] at @s if block ~ ~1.8 ~ black_concrete run trigger checkpoint
+execute as @a[tag=pr.target,predicate=theswagunicorn3:died] run kill @s
+execute as @a[tag=pr.target,predicate=theswagunicorn3:died2] run kill @s
+execute as @a[tag=pr.target,predicate=theswagunicorn3:died3] run kill @s
+execute as @a[tag=pr.target] at @s if block ~ ~1.8 ~ green_concrete run kill @s
+execute as @a[tag=pr.target] at @s if block ~ ~1.8 ~ black_concrete run kill @s
