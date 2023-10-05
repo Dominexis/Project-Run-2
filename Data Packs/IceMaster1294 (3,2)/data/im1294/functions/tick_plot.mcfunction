@@ -20,3 +20,5 @@ scoreboard players set @a[tag=pr.target] im1294.spider_kills 0
 # execute if score Zombies im1294.kill_count matches 1.. run function im1294:zombies/zombie_toggle
 # execute if score Skeletons im1294.kill_count matches 1.. run function im1294:skeletons/skeleton_toggle
 # execute if score Spiders im1294.kill_count matches 1.. run function im1294:spiders/spider_toggle
+
+execute as @e[type=item,tag=!im1294.processed] run function im1294:process_item
