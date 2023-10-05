@@ -3,3 +3,5 @@
 # Use this to reset your plot and get rid of any laggy entities
 execute at @e[type=armor_stand,tag=aljaza.snake] run setblock ~ ~1 ~ air
 kill @e[type=armor_stand,tag=aljaza.snake]
+
+kill @e[type=item,tag=pr.target]

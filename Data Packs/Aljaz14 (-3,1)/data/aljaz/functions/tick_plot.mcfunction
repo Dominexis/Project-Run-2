@@ -10,7 +10,7 @@ function aljaz:aljaz14/snake/tick
 function aljaz:aljaz14/elytra/tick
 
 #checkpoints
-execute positioned ~0 ~66 ~6 as @a[dx=0,dy=1,dz=0,tag=pr.target] at @s run function pr:player/checkpoint/mark
+execute positioned ~0 ~66 ~6 as @a[distance=..2,tag=pr.target] at @s run function pr:player/checkpoint/mark
 execute positioned ~-7 ~-24 ~13 as @a[dx=0,dy=1,dz=0,tag=pr.target] at @s run function pr:player/checkpoint/mark
 execute positioned ~-19 ~-35 ~-15 as @a[dx=0,dy=1,dz=0,tag=pr.target] at @s run function pr:player/checkpoint/mark
 execute positioned ~-9 ~3 ~12 as @a[dx=0,dy=1,dz=0,tag=pr.target] at @s run function pr:player/checkpoint/mark
