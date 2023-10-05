@@ -3,7 +3,7 @@ execute if block ~ ~-.1 ~ oxidized_copper if block ~ ~-2 ~ red_terracotta run fu
 execute if block ~ ~-.1 ~ black_stained_glass run function piemel:initdeath
 
 # slide triggers
-execute as @s[tag=piemel.sliding] at @e[tag=piemel.slideanchor,tag=pr.target,sort=nearest,limit=1] positioned ~ ~3 ~ run tp @s ~ ~ ~
+execute as @s[tag=piemel.sliding] at @e[tag=piemel.slideanchor,tag=pr.target,sort=nearest,limit=1] positioned ~ ~3.1 ~ run tp @s ~ ~ ~
 execute as @s[tag=piemel.sliding] if block ~ ~-10 ~ red_concrete run function piemel:slide/end
 
 # grappling gun
