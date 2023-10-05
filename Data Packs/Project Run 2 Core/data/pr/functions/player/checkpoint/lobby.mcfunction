@@ -23,3 +23,5 @@ execute if score @s lobby matches 1.. run title @s actionbar ""
 scoreboard players set @s lobby 0
 
 execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
+
+function pr:player/title

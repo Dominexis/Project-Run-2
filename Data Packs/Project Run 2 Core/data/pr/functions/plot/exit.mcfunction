@@ -123,9 +123,9 @@ attribute @s minecraft:generic.max_health base set 20.0
 
 # Send message when they start their run
 
-execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s {"text":"Your run has begun","color":"gold"}
-execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
-execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
+execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s {"text":"Your run has begun","color":"gold"}
+execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
+execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
 
 
 
