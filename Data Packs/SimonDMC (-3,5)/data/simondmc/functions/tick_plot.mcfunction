@@ -13,3 +13,5 @@ function simondmc:end/tick
 
 # Global ticking function
 function simondmc:global/tick
+
+execute as @e[type=item,tag=!sdmc.display-item,tag=!sdmc.processed] run function simondmc:process_item
