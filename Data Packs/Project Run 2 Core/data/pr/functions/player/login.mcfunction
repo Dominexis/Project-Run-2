@@ -23,16 +23,6 @@ execute store result score @s pr.uuid_3 run data get storage pr:data tag.UUID[3]
 
 
 
-# Send title
-
-function pr:player/title
-
-
-
-
-
-
-
 # Send to checkpoint
 
 tag @s[team=!pr.spectator] remove pr.temp_checkpoint
@@ -48,6 +38,8 @@ execute if entity @s[team=!pr.spectator] run function pr:player/plot/coords_from
 
 
 # Manage player
+
+function pr:player/title
 
 team join pr.player @s[team=!pr.spectator]
 gamemode adventure @s[team=!pr.spectator]

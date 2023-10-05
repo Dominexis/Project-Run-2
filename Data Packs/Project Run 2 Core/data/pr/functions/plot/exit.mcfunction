@@ -109,6 +109,8 @@ tag @s remove pr.target
 clear @s
 effect clear @s
 title @s times 10 70 30
+title @s title {"text":""}
+title @s subtitle {"text":""}
 experience set @s 0 levels
 experience set @s 0 points
 attribute @s minecraft:generic.max_health base set 20.0

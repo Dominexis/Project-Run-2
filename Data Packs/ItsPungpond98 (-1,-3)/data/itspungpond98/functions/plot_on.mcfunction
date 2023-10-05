@@ -5,6 +5,8 @@
 scoreboard objectives add itspungpond98.exit dummy
 scoreboard objectives add itspungpond98.info dummy
 scoreboard objectives add itspungpond98.item dummy
+scoreboard objectives add itspungpond98.item_cooldown dummy
+scoreboard objectives add itspungpond98.villager minecraft.custom:minecraft.talked_to_villager
 
 execute positioned ~-16 ~18 ~-21 align xyz run summon minecraft:armor_stand ~0.5 ~-1.4 ~0.5 {NoGravity: 1b, Invulnerable: 1b, ShowArms: 1b, DisabledSlots: 2039582, Pose: {}, Invisible: 1b, Tags: ["itspungpond98.givepearlescent"], Small: 0b, HandItems: [{}, {}], CustomName: '{"color":"white","extra":[{"bold":true,"color":"light_purple","text":"Pearlescent Froglight"}],"text":"Get "}', ArmorItems: [{}, {}, {}, {id: "minecraft:pearlescent_froglight", Count: 1b}], NoBasePlate: 1b, CustomNameVisible: 1b}
 execute positioned ~37 ~18 ~-13 align xyz run summon minecraft:armor_stand ~0.5 ~-1.4 ~0.5 {NoGravity: 1b, Invulnerable: 1b, ShowArms: 1b, DisabledSlots: 2039582, Pose: {}, Invisible: 1b, Tags: ["itspungpond98.giveverdant"], Small: 0b, HandItems: [{}, {}], CustomName: '{"color":"white","extra":[{"bold":true,"color":"green","text":"Verdant Froglight"}],"text":"Get "}', ArmorItems: [{}, {}, {}, {id: "minecraft:verdant_froglight", Count: 1b}], NoBasePlate: 1b, CustomNameVisible: 1b}

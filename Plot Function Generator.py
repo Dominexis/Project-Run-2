@@ -256,6 +256,8 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction")
         "clear @s\n" +
         "effect clear @s\n" +
         "title @s times 10 70 30\n" +
+        'title @s title {"text":""}\n' +
+        'title @s subtitle {"text":""}\n' +
         "experience set @s 0 levels\n" +
         "experience set @s 0 points\n" +
         "attribute @s minecraft:generic.max_health base set 20.0" + "\n"*8 +
