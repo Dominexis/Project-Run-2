@@ -24,4 +24,4 @@ scoreboard players set @s lobby 0
 
 execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
 
-function pr:player/title
+execute unless score @s spectate matches 1.. run function pr:player/title

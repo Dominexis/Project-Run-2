@@ -1,1 +1,1 @@
-execute as @a[tag=pr.target] at @s if block ~ ~ ~ structure_void run kill @s
+execute positioned ~4 ~24 ~15 run kill @a[dx=8,dy=1,dz=8,tag=pr.target]
