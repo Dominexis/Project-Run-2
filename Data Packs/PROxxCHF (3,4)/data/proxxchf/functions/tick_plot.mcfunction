@@ -1,7 +1,7 @@
 # Every tick at the center of the plot
 
 # First button
-execute if block ~-24 ~9 ~33 minecraft:birch_button[face=floor,facing=north,powered=true] run tp @p[tag=pr.target] ~-25 ~23 ~-26
+execute positioned ~-24 ~9 ~33 if block ~ ~ ~ minecraft:birch_button[face=floor,facing=north,powered=true] as @p[tag=pr.target] positioned ~24 ~-9 ~-33 run tp @s ~-25 ~23 ~-26
 execute positioned ~-24 ~9 ~33 if block ~ ~ ~ minecraft:birch_button[face=floor,facing=north,powered=true] run setblock ~ ~ ~ minecraft:birch_button[face=floor,facing=north,powered=false]
 
 # Cherry button (2nd)
