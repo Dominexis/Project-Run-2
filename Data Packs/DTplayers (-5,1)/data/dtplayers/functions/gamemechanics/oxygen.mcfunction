@@ -6,6 +6,8 @@ scoreboard players add @s dtplayers.oxygen_lose 1
 scoreboard players remove @s[scores={dtplayers.oxygen_lose=7..,dtplayers.oxygen=1..}] dtplayers.oxygen 1
 scoreboard players set @s[scores={dtplayers.oxygen_lose=7..}] dtplayers.oxygen_lose 0
 
+function pr:player/time/compute
+
 #normal oxygen title
 title @s[scores={dtplayers.oxygen=50..}] actionbar [{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true},{"text":"  ●  ","color":"gray"},{"score":{"name":"@s","objective":"dtplayers.oxygen"},"color":"#6BD3FF","bold":true},{"text":" O₂","color":"#6BD3FF","bold":"false"}]
 

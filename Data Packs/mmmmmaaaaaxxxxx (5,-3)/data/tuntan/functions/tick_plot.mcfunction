@@ -2,7 +2,7 @@
 execute as @a[scores={tuntan_clicked=1..},tag=tuntan.enoughpoints,tag=pr.target] run function pr:player/finish
 execute as @a[scores={tuntan_clicked=1..},tag=tuntan.enoughpoints,tag=pr.target] run function tuntan:exit
 
-title @a[tag=pr.target] actionbar [{"text":"Points: ","color":"yellow"},{"score":{"name":"*","objective":"tuntan_points"}},{"text":"/20   "},{"text":"Tunnels completed: "},{"score":{"name":"*","objective":"tuntan_tunnels"}},{"text":"/10   "},{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+execute as @a[tag=pr.target] run function tuntan:display_timer
 effect clear @e[tag=pr.target] levitation
 execute positioned ~-19 ~121 ~-19 run effect give @e[dx=38,dz=38,dy=17,tag=pr.target] levitation infinite 69 true
 execute as @a[tag=pr.target,predicate=tuntan:onred] run function tuntan:tostart

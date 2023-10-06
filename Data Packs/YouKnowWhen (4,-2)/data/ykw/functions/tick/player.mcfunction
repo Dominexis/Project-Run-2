@@ -12,6 +12,7 @@ execute if score @s ykw.cooldown matches 0 run scoreboard players reset @s ykw.c
 execute if score @s ykw.cooldown matches 1.. run scoreboard players remove @s ykw.cooldown 1
 
 # Cooldown text
+function pr:player/time/compute
 title @s[tag=pr.hide_timer] actionbar [{"text":"Cooldown: ","color":"dark_aqua"},{"score":{"name":"@s","objective":"ykw.cooldown_s"}},{"text":"s  Timer: "}, {"nbt":"tag.minutes","storage":"pr:data","interpret":true},":",{"nbt":"tag.seconds","storage":"pr:data","interpret":true},".",{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
 scoreboard players operation @s ykw.cooldown_s = @s ykw.cooldown
 scoreboard players add @s ykw.cooldown_s 19

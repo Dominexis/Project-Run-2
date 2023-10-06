@@ -107,8 +107,7 @@ execute as @a[tag=pr.target,scores={titruc.interactivejump.score.blue=1..20}] if
 
 
 #affichage du timer
-
-execute as @a[tag=titruc.interactivejump.title_timer,tag=pr.target] at @s run title @s actionbar ["",{"text":"\u231a \u0020"},{"score":{"name":"@s","objective":"titruc.interactivejump.score.red"},"color":"#C60002"},{"text":" \u0020 \u0020"},{"score":{"name":"@s","objective":"titruc.interactivejump.score.blue"},"color":"#00DCE5"},{"text":" \u0020 \u0020"},{"score":{"name":"@s","objective":"titruc.interactivejump.score.yellow"},"color":"#E1CB00"},{"text":" \u0020 \u0020"},{"score":{"name":"@s","objective":"titruc.interactivejump.score.green"},"color":"#00BF11"},{"text":" \u0020\u231a"},{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+execute as @a[tag=titruc.interactivejump.title_timer,tag=pr.target] at @s run function titruc.interactivejump.sys:display_timer
 
 
 #checkpoint

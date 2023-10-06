@@ -6,4 +6,4 @@ scoreboard players reset @s inquognito.boss.health
 scoreboard players reset @s inquognito.boss.heartbeat
 
 clear @s minecraft:tnt{inquognito.sonic_charge:1}
-advancement revoke @s only inquognito:groups/pickups/sonic_charge
+advancement revoke @s through inquognito:groups/pickups/sonic_charge

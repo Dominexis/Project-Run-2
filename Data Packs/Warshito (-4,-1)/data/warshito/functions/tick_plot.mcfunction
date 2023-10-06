@@ -5,7 +5,8 @@
 function warshito:kill
 
 # Show which is Ir color
-function warshito:show_color
+execute as @a[tag=pr.target] run function warshito:show_color
+kill @e[type=item,tag=pr.target]
 
 # Detect If I am ready for dialogue
 function warshito:dialogue

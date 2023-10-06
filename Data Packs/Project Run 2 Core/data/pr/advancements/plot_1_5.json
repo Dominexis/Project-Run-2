@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:sculk_sensor",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 1, 5",
+                    "text": "Sector Tau",
                     "color": "white"
                 },
                 {
-                    "text": ""
+                    "text": "  "
                 }
             ]
         ],
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Discover the source of the distress beacon.\n\n§6InQuognito & NessIsPSIRockin",
                 "color": "green"
             }
         ],

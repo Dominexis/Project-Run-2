@@ -43,7 +43,7 @@ execute if score #plot pr.value matches 1357 run data modify storage pr:data tag
 # -1, 5
 execute if score #plot pr.value matches 1359 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Rock and Dust"}'
 # 1, 5
-execute if score #plot pr.value matches 1361 run data modify storage pr:data tag.leaderboard_name set value '{"text":"1, 5 Ending"}'
+execute if score #plot pr.value matches 1361 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Sector Tau"}'
 # 3, 5
 execute if score #plot pr.value matches 1363 run data modify storage pr:data tag.leaderboard_name set value '{"text":"Labyrinth of Lost Souls"}'
 # -2, 6
