@@ -13,6 +13,7 @@ execute if score @s inquognito.dialogue matches 1 run function inquognito:logic/
 execute if score @s inquognito.dialogue matches 2 run function inquognito:logic/plot/boss/dialogue/2
 execute if score @s inquognito.dialogue matches 3 run function inquognito:logic/plot/boss/dialogue/3
 execute if score @s inquognito.dialogue matches 4 run function inquognito:logic/plot/boss/dialogue/4
+execute if score @s inquognito.dialogue matches 5 run function inquognito:logic/plot/boss/dialogue/4
 
 execute if score @s inquognito.dialogue matches 1..4 if score @s inquognito.dialogue.tick matches 1..20 run particle minecraft:shriek 0 ~-5 ~-31 ~31 0.0 0.0 0.0 0.0 1 normal @s
 

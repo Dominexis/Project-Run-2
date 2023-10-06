@@ -169,6 +169,8 @@ execute positioned ~-23 ~-17.5 ~-28 run kill @e[dx=5,dy=0,dz=4,predicate=inquogn
 execute positioned ~-36 ~-43 ~-29 run kill @e[type=!minecraft:player,dx=67,dy=0,dz=67,predicate=inquognito:killbox_vulnerable]
 execute positioned ~-36 ~-43 ~-29 as @a[dx=67,dy=0,dz=67,tag=pr.target] run function inquognito:logic/plot/boss/respawn_player
 
+execute positioned ~28 ~116 ~-6 run kill @e[dx=6,dy=0,dz=6,predicate=inquognito:killbox_vulnerable]
+
 # Keypad
 execute as @e[type=minecraft:interaction,tag=inquognito.keypad.key.button] on target run tag @s add inquognito.key.click
 execute as @e[type=minecraft:interaction,tag=inquognito.keypad.key.button] on attacker run tag @s add inquognito.key.click
@@ -179,3 +181,6 @@ execute if score tick inquognito.keypad matches 0 run kill @e[tag=inquognitokeye
 
 execute as @e[tag=inquognitokeyk] if score @s inquognito.keypad matches 1 at @s run tp @s ^ ^ ^0.05
 execute as @e[tag=inquognitokeyk] if score @s inquognito.keypad matches 1.. run scoreboard players remove @s inquognito.keypad 1
+
+# Misc
+execute positioned ~-10 ~88 ~-19 run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s

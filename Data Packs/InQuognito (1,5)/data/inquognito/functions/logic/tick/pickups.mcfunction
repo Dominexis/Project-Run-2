@@ -35,6 +35,9 @@ execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.fireRate.3,limi
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.fireRate.4,limit=1] align xyz if entity @s[advancements={inquognito:plot/pickups/fire_rate/4=false},dx=0] run function inquognito:logic/pickups/fire_rate/acquire/4
 execute at @e[type=minecraft:item_display,tag=inquognito.upgrade.fireRate.5,limit=1] align xyz if entity @s[advancements={inquognito:plot/pickups/fire_rate/5=false},dx=0] run function inquognito:logic/pickups/fire_rate/acquire/5
 
-execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge] align xyz if entity @s[nbt=!{Inventory:[{tag:{inquognito.sonic_charge:1}}]},dx=0] run function inquognito:logic/pickups/sonic_charge/acquire
+execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge.1] align xyz if entity @s[advancements={inquognito:plot/pickups/sonic_charge/1=false},nbt=!{Inventory:[{tag:{inquognito.sonic_charge.1:1}}]},dx=0] run function inquognito:logic/pickups/sonic_charge/acquire/1
+execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge.2] align xyz if entity @s[advancements={inquognito:plot/pickups/sonic_charge/2=false},nbt=!{Inventory:[{tag:{inquognito.sonic_charge.2:1}}]},dx=0] run function inquognito:logic/pickups/sonic_charge/acquire/2
+execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge.3] align xyz if entity @s[advancements={inquognito:plot/pickups/sonic_charge/3=false},nbt=!{Inventory:[{tag:{inquognito.sonic_charge.3:1}}]},dx=0] run function inquognito:logic/pickups/sonic_charge/acquire/3
+execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge.4] align xyz if entity @s[advancements={inquognito:plot/pickups/sonic_charge/4=false},nbt=!{Inventory:[{tag:{inquognito.sonic_charge.4:1}}]},dx=0] run function inquognito:logic/pickups/sonic_charge/acquire/4
 
 function inquognito:logic/tick/highlight_pickups

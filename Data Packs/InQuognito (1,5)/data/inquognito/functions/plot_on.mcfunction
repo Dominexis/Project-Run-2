@@ -65,6 +65,7 @@ scoreboard players set key.4 inquognito.keypad 0
 scoreboard players set correct inquognito.keypad 0
 scoreboard players set goal inquognito.keypad 0
 
+scoreboard players set 4 inquognito.values 4
 scoreboard players set 20 inquognito.values 20
 scoreboard players set 30 inquognito.values 30
 scoreboard players set 40 inquognito.values 40
@@ -108,8 +109,10 @@ summon minecraft:item_display ~-17 ~3 ~5 {Tags:["inquognito","inquognito.upgrade
 summon minecraft:item_display ~21 ~10 ~-21 {Tags:["inquognito","inquognito.upgrade.fireRate.4"],item:{id:"minecraft:sugar",Count:1b},Rotation:[0f,0f]}
 summon minecraft:item_display ~7.5 ~42 ~-30 {Tags:["inquognito","inquognito.upgrade.fireRate.5"],item:{id:"minecraft:sugar",Count:1b},Rotation:[180f,0f]}
 
-summon minecraft:item_display ~22 ~-20.75 ~13 {Tags:["inquognito","inquognito.sonic_charge"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~-30 ~-19.75 ~-17 {Tags:["inquognito","inquognito.sonic_charge"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-2 ~-34.75 ~-21 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.1"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~5 ~-25.75 ~-7 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.2"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~22 ~-20.75 ~13 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.3"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-30 ~-19.75 ~-17 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.4"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
 
 # Gates
 summon minecraft:marker ~0 ~49.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0f,0f]}

@@ -1,0 +1,11 @@
+{
+	"one": {
+		"sounds":[
+			{
+				"name":"inquognito:gun",
+				"stream":false,
+				"volume": 1.0
+			}
+		]
+	}
+}

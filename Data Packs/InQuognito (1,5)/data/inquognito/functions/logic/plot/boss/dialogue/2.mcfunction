@@ -8,5 +8,6 @@ tellraw @s[scores={inquognito.dialogue.tick=240}] [{"text":"??? | ","color":"lig
 execute if score @s inquognito.dialogue.tick matches 180 run scoreboard players remove @s inquognito.health 2
 execute if score @s inquognito.dialogue.tick matches 180 run effect give @s minecraft:wither 1 2 true
 execute if score @s inquognito.dialogue.tick matches 180 run scoreboard players operation @s inquognito.energy /= #2 pr.value
+execute if score @s inquognito.dialogue.tick matches 180 run tag @s add inquognito.boss.energy_cut
 
 execute if score @s inquognito.dialogue.tick matches 240.. run function inquognito:logic/plot/boss/dialogue/reset

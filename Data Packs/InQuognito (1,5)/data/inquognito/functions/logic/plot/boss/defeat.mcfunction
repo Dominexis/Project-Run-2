@@ -1,4 +1,5 @@
 scoreboard players set @s inquognito.boss.health 99
 
-tag @s remove inquognito.boss.darkness
-tag @s remove inquognito.boss.darkness_particles
+function inquognito:logic/suits/mk2_equip
+
+function inquognito:logic/plot/boss/restore_player

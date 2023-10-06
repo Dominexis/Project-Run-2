@@ -13,6 +13,7 @@ scoreboard players reset @s inquognito.upgrades
 
 scoreboard players reset @s inquognito.dialogue
 scoreboard players reset @s inquognito.dialogue.tick
+
 scoreboard players reset @s inquognito.boss.health
 scoreboard players reset @s inquognito.boss.heartbeat
 
@@ -51,8 +52,10 @@ tag @s remove inquognito.gun.frostbite
 tag @s remove inquognito.gun.nova
 tag @s remove inquognito.gun.trinity
 
+tag @s remove inquognito.boss.energy_cut
 tag @s remove inquognito.boss.darkness
 tag @s remove inquognito.boss.darkness_particles
+tag @s remove inquognito.escaping
 
 tag @s remove inquognito.win
 
@@ -62,6 +65,7 @@ tag @s remove inquognito.code.3
 
 tag @s remove inquognito.clearance.sewer
 tag @s remove inquognito.clearance.nova
+tag @s remove inquognito.clearance.boss
 
 tag @s remove inquognito.target.bounce_pad_room.1
 tag @s remove inquognito.target.bounce_pad_room.2
