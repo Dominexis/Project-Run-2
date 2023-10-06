@@ -171,12 +171,12 @@ for coordinate in coordinates:
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}unless score #plot_player_{coordinate[0]}_{coordinate[1]} pr.value = #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value run tag @e[tag=pr.target] remove pr.target\n' +
         f'{"execute if score #chunk_loaded_bool pr.value matches 1 run " if forceload_bool else ""}scoreboard players operation #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value = #plot_player_{coordinate[0]}_{coordinate[1]} pr.value\n' +
         f'execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
-        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @a[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target\n' +
-        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator,tag=!pr.ignore] add pr.target\n' +
-        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move\n' +
+        f'execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @a[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target\n' +
+        f'execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 - 4}.0 -64 {coordinate[1]*96 - 4}.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator,tag=!pr.ignore] add pr.target\n' +
+        f'execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move\n' +
         f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 positioned {coordinate[0]*96 + 40} 0 {coordinate[1]*96 + 40} run function {namespace}:tick_plot\n' +
-        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @a[tag=pr.target] remove pr.target\n' +
-        f'{comment}execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
+        f'execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @a[tag=pr.target] remove pr.target\n' +
+        f'execute {"if score #chunk_loaded_bool pr.value matches 1 " if forceload_bool else ""}if score #plot_tick_{coordinate[0]}_{coordinate[1]} pr.value matches 1 run tag @e[tag=pr.target] remove pr.target'
     )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "main.mcfunction").open("w", encoding="utf-8") as file:
@@ -258,9 +258,10 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "exit.mcfunction")
         "tag @s remove pr.target\n" +
         "clear @s\n" +
         "effect clear @s\n" +
-        "title @s times 10 70 30\n" +
-        'title @s title {"text":""}\n' +
-        'title @s subtitle {"text":""}\n' +
+        "execute unless score @s pr.title_cooldown matches 1.. run title @s times 10 70 30\n" +
+        'execute unless score @s pr.title_cooldown matches 1.. run title @s title {"text":""}\n' +
+        'execute unless score @s pr.title_cooldown matches 1.. run title @s subtitle {"text":""}\n' +
+        "scoreboard players set @s pr.title_cooldown 0\n" +
         "experience set @s 0 levels\n" +
         "experience set @s 0 points\n" +
         "attribute @s minecraft:generic.max_health base set 20.0" + "\n"*8 +

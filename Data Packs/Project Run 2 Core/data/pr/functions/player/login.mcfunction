@@ -26,8 +26,8 @@ execute store result score @s pr.uuid_3 run data get storage pr:data tag.UUID[3]
 # Send to checkpoint
 
 tag @s[team=!pr.spectator] remove pr.temp_checkpoint
-execute if entity @s[team=!pr.spectator] run function pr:player/plot/move
 execute if entity @s[team=!pr.spectator] run function pr:player/checkpoint/send_to
+scoreboard players set @s pr.plot_previous -1
 
 
 

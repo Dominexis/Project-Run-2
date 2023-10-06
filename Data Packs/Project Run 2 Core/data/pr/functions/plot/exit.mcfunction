@@ -108,9 +108,10 @@ execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run func
 tag @s remove pr.target
 clear @s
 effect clear @s
-title @s times 10 70 30
-title @s title {"text":""}
-title @s subtitle {"text":""}
+execute unless score @s pr.title_cooldown matches 1.. run title @s times 10 70 30
+execute unless score @s pr.title_cooldown matches 1.. run title @s title {"text":""}
+execute unless score @s pr.title_cooldown matches 1.. run title @s subtitle {"text":""}
+scoreboard players set @s pr.title_cooldown 0
 experience set @s 0 levels
 experience set @s 0 points
 attribute @s minecraft:generic.max_health base set 20.0

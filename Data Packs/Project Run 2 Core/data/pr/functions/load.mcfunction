@@ -4,6 +4,7 @@ scoreboard objectives add pr.value dummy
 scoreboard objectives add pr.ticks dummy
 scoreboard objectives add pr.time dummy
 scoreboard objectives add pr.id dummy
+scoreboard objectives add pr.title_cooldown dummy
 
 scoreboard objectives add pr.plot dummy
 scoreboard objectives add pr.plot_previous dummy

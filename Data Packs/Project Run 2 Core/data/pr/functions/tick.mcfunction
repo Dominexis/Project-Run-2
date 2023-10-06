@@ -35,6 +35,8 @@ scoreboard players enable @a plot
 scoreboard players enable @a relative
 scoreboard players enable @a night_vision
 
+execute as @a unless score @s pr.id = @s pr.id store result score @s pr.id run scoreboard players add #global pr.id 1
+
 scoreboard players add #global pr.ticks 1
 scoreboard players add @a pr.ticks 1
 execute as @a unless score @s pr.ticks = #global pr.ticks at @s run function pr:player/login
@@ -53,7 +55,7 @@ scoreboard players set @a pr.click 0
 execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
 
 execute as @a[tag=pr.plate_checkpoint,tag=!pr.plate_checkpoint_cooldown] at @s if block ~ ~ ~ light_weighted_pressure_plate run function pr:player/checkpoint/plate
-execute as @a[tag=pr.plate_checkpoint,tag=pr.plate_checkpoint_cooldown] at @s unless block ~ ~ ~ light_weighted_pressure_plate run tag @s remove pr.plate_checkpoint_cooldown
+execute as @a[tag=pr.plate_checkpoint_cooldown] at @s unless block ~ ~ ~ light_weighted_pressure_plate run tag @s remove pr.plate_checkpoint_cooldown
 
 execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s lobby 1
 execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s checkpoint 0
@@ -67,8 +69,7 @@ execute as @a[scores={plot=1..}] at @s run function pr:player/plot/warp/main
 execute as @a[scores={relative=1..}] at @s run function pr:player/relative
 execute as @a[scores={night_vision=1..}] at @s run function pr:player/night_vision
 
-execute as @a unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-execute as @a unless score @s pr.id = @s pr.id store result score @s pr.id run scoreboard players add #global pr.id 1
+execute as @a unless score @s pr.plot = @s pr.plot_previous if score @s pr.plot = #spawn_plot pr.value at @s run function pr:player/plot/move
 
 execute as @a if score @s pr.plot = #spawn_plot pr.value run scoreboard players set @s pr.time 0
 execute as @a unless score @s pr.plot = #spawn_plot pr.value run function pr:player/time/tick
@@ -83,6 +84,8 @@ scoreboard players remove @a[scores={pr.checkpoint_cooldown=1..}] pr.checkpoint_
 tag @a remove pr.spectator
 tag @a[team=pr.spectator] add pr.spectator
 tag @a remove pr.leaderboard_placement
+
+execute as @a[scores={pr.title_cooldown=1..}] run scoreboard players remove @s pr.title_cooldown 1
 
 
 
