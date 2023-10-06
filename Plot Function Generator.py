@@ -61,7 +61,7 @@ NAMESPACES = {
     (0,0): ("cubed", 0, False, "minecraft:gold_block", "Cubed Prologue", "Begin your run with parkour by Cubed!\n\n§6Cubed Team"),
     (0,1): ("eelaa", 0, False, "minecraft:trident", "Torrential Tridents", "Navigate through the torrential lands with your trusty trident.\n\n§6EELAA & Lazybrush2", '{Enchantments:[{}]}'),
     (0,3): ("rambini", 0, False, "minecraft:rooted_dirt", "Crack in The World", "Parkour through this abandoned place located inside a natural sinkhole: going right through a crack in the earth caused by the people who once lived there.\n\n§6Rambini"),
-    (0,4): ("lucumaprpack", 0, True),
+    (0,4): ("lucumaprpack", 0, True, "minecraft:writable_book", "Eyebrary", "A vast library containing all of mapmaking history and... flying books?!\n\n§6Lucuma & BBoy2003"),
     (1,-5): ("rko", 1, True, "minecraft:brick", "RKO Factory", "Parkour your way through a vast and old factory on moving machinery and conquer the challenge awaiting you.\n\n§6Rajdi & Kassar & Owca", "{CustomModelData:721011}"),
     (1,-4): ("klue007", -1, False, "minecraft:spruce_wood", "Spruce Town", "Complete parkour in a town surrounded by snowy mountains.\n\n§6klue"),
     (1,-3): ("supersette", 4, False, "minecraft:golden_boots", "Biome Run", "Run those biomes!\n\n§6Supersette"),
@@ -101,7 +101,7 @@ NAMESPACES = {
     (5,-1): ("frostcobra", 0, True, "minecraft:calcite", "Cloud Maze", "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos"),
     (5,1): ("marcostrk-icy-boat-parkour", 1, True, "minecraft:oak_boat", "Icy Boat Parkour", "Stay snug in your boat and glide gracefully across the slippery ice.\n\n§6MarcoStrk & TimoStr"),
     (5,2): ("flcme", 0, False, "minecraft:slime_block", "Tomfoolery", "Bounce around and make your way to the finish!\n\n§6flcme & MaSp005"),
-    (5,3): ("wall_hall", 0, True, "minecraft:smooth_stone_slab", "Up Against\nthe Walls", "Make your way through the hall of moving walls!\n\n§6Loominardy"),
+    (5,3): ("wall_hall", 0, True, "minecraft:smooth_stone_slab", "Up Against\nThe Walls", "Make your way through the hall of moving walls!\n\n§6Loominardy"),
     (6,-2): ("ganymede", 0, True, "minecraft:white_stained_glass_pane", "Colorblind", "Navigate through several enigmatic rooms using special colored lenses to reveal hidden paths.\n\n§6Ganymede & mmmmmaaaaaxxxxx"),
     (6,2): ("titruc.interactivejump.sys", 0, True, "minecraft:flowering_azalea", "Dynamique Wild", "This cave full of nature! Look into the eyes to carve your path!\n\n§6Titruc")
 }
