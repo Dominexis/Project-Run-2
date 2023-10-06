@@ -1,4 +1,6 @@
 # This function runs as and at all players that enter your plot
+execute store result score @s isch.id run scoreboard players add #global isch.id 1
+
 title @s times 20 100 20
 title @s subtitle ["",{"text":"By","italic":true,"color":"dark_red"},{"text":" ischool04","italic":true,"color":"red"}]
 title @s title ["",{"text":"[","bold":true,"color":"#FF8103"},{"text":"The Bloody Valley","bold":true,"color":"gold"},{"text":"]","bold":true,"color":"#FF8103"}]
@@ -14,7 +16,7 @@ scoreboard players reset @s isch.bnp
 scoreboard players reset @s isch.ChPl
 scoreboard players reset @s isch.kmc
 scoreboard players reset @s isch.prbt
-scoreboard players reset @s isch.dth
+scoreboard players set @s isch.dth 0
 scoreboard players reset @s isch.regen
 scoreboard players reset @s isch.drop.tr
 scoreboard players reset @s isch.drop.ch

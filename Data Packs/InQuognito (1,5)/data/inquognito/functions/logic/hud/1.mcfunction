@@ -1,7 +1,7 @@
 execute if score #percentage inquognito.temp matches ..0 run data modify storage inquognito:data hud_energy_label set value '[{"text":"Energy: ","bold":false,"color":"red"}]'
 execute if score #percentage inquognito.temp matches 1.. run data modify storage inquognito:data hud_energy_label set value '[{"text":"Energy: ","bold":false,"color":"white"}]'
 
-execute if score #percentage inquognito.temp matches ..0 run data modify storage inquognito:data hud_energy_value set value ''
+execute if score #percentage inquognito.temp matches ..0 run data modify storage inquognito:data hud_energy_value set value '{"text":""}'
 execute if score #percentage inquognito.temp matches 1..5 run data modify storage inquognito:data hud_energy_value set value '[{"text":"\\u25ae","color":"white"}]'
 execute if score #percentage inquognito.temp matches 6..10 run data modify storage inquognito:data hud_energy_value set value '[{"text":"\\u25ae\\u25ae","color":"white"}]'
 execute if score #percentage inquognito.temp matches 11..15 run data modify storage inquognito:data hud_energy_value set value '[{"text":"\\u25ae\\u25ae\\u25ae","color":"white"}]'
