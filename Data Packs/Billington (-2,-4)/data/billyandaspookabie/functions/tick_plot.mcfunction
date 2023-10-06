@@ -6,29 +6,29 @@ execute if score $doors mad_scientist matches 40 positioned ~-2 ~39 ~-9 run clon
 execute if score $doors mad_scientist matches 40 positioned ~-2 ~39 ~-9 run playsound minecraft:entity.generic.extinguish_fire master @a[distance=..12] ~ ~ ~ 0.5 0.1 0.1
 execute if score $doors mad_scientist matches 40 run scoreboard players set $doors mad_scientist 0
 
-execute positioned ~30 ~33 ~23 unless entity @e[type=shulker,tag=spooky_lift,tag=pr.target,dx=4,dy=-20,dz=4] positioned ~-30 ~-33 ~-23 run function billyandaspookabie:real/reset
+# execute positioned ~30 ~33 ~23 unless entity @e[type=shulker,tag=spooky_lift,tag=pr.target,dx=4,dy=-20,dz=4] positioned ~-30 ~-33 ~-23 run function billyandaspookabie:real/reset
 
 #lift up
 
-execute if block ~29 ~34 ~21 minecraft:spruce_button[powered=true] unless score $lift_down mad_scientist matches 1.. unless score $lift_up mad_scientist matches 1.. unless block ~31 ~33 ~22 air run function billyandaspookabie:real/liftcallup
+# execute if block ~29 ~34 ~21 minecraft:spruce_button[powered=true] unless score $lift_down mad_scientist matches 1.. unless score $lift_up mad_scientist matches 1.. unless block ~31 ~33 ~22 air run function billyandaspookabie:real/liftcallup
 
 
-execute if score $lift_up mad_scientist matches 0.. as @e[type=minecraft:armor_stand,tag=spooky_lift,tag=pr.target,distance=..60] at @s run tp @s ~ ~0.1 ~
-execute if score $lift_up mad_scientist matches 0.. run scoreboard players remove $lift_up mad_scientist 1
-execute if score $lift_up mad_scientist matches -1 as @e[tag=spooky_lift,tag=pr.target,type=minecraft:armor_stand] at @s run tp @s ~ 30.518 ~
-execute if score $lift_up mad_scientist matches -1 run fill ~33 ~36 ~22 ~31 ~33 ~22 air
-execute if score $lift_up mad_scientist matches -1 run scoreboard players reset $lift_up mad_scientist
+# execute if score $lift_up mad_scientist matches 0.. as @e[type=minecraft:armor_stand,tag=spooky_lift,tag=pr.target,distance=..60] at @s run tp @s ~ ~0.1 ~
+# execute if score $lift_up mad_scientist matches 0.. run scoreboard players remove $lift_up mad_scientist 1
+# execute if score $lift_up mad_scientist matches -1 as @e[tag=spooky_lift,tag=pr.target,type=minecraft:armor_stand] at @s run tp @s ~ 30.518 ~
+# execute if score $lift_up mad_scientist matches -1 run fill ~33 ~36 ~22 ~31 ~33 ~22 air
+# execute if score $lift_up mad_scientist matches -1 run scoreboard players reset $lift_up mad_scientist
 
 
 #lift down
 
-execute if block ~34 ~34 ~24 minecraft:spruce_button[powered=true] unless score $lift_down mad_scientist matches 1.. run function billyandaspookabie:real/liftdown
+# execute if block ~34 ~34 ~24 minecraft:spruce_button[powered=true] unless score $lift_down mad_scientist matches 1.. run function billyandaspookabie:real/liftdown
 
-execute if score $lift_down mad_scientist matches 0.. as @e[type=minecraft:armor_stand,tag=pr.target,tag=spooky_lift,distance=..60] at @s run tp @s ~ ~-0.1 ~
-execute if score $lift_down mad_scientist matches 0.. run scoreboard players remove $lift_down mad_scientist 1
-execute if score $lift_down mad_scientist matches -1 as @e[tag=spooky_lift,tag=pr.target,type=minecraft:armor_stand] at @s run tp @s ~ 12.518 ~
-execute if score $lift_down mad_scientist matches -1 run setblock ~34 ~34 ~24 spruce_button[powered=false,facing=south]
-execute if score $lift_down mad_scientist matches -1 run scoreboard players reset $lift_down mad_scientist
+# execute if score $lift_down mad_scientist matches 0.. as @e[type=minecraft:armor_stand,tag=pr.target,tag=spooky_lift,distance=..60] at @s run tp @s ~ ~-0.1 ~
+# execute if score $lift_down mad_scientist matches 0.. run scoreboard players remove $lift_down mad_scientist 1
+# execute if score $lift_down mad_scientist matches -1 as @e[tag=spooky_lift,tag=pr.target,type=minecraft:armor_stand] at @s run tp @s ~ 12.518 ~
+# execute if score $lift_down mad_scientist matches -1 run setblock ~34 ~34 ~24 spruce_button[powered=false,facing=south]
+# execute if score $lift_down mad_scientist matches -1 run scoreboard players reset $lift_down mad_scientist
 
 
 
@@ -37,7 +37,7 @@ execute if score $lift_down mad_scientist matches -1 run scoreboard players rese
 
 #clensing chamber
 
-execute if entity @a[tag=pr.target] run function billyandaspookabie:real/cleanme
+# execute if entity @a[tag=pr.target] run function billyandaspookabie:real/cleanme
 
 execute as @a[tag=pr.target] at @s if block ~ ~ ~ blackstone_stairs run kill @s
 execute as @a[tag=pr.target] at @s if block ~ ~ ~ bamboo_stairs run kill @s
