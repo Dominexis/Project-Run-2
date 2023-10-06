@@ -79,7 +79,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 3 run fun
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 3 run function rambini:recall
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 3 run function theswagunicorn:recall
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 3 run function eli_marie:recall
-#execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 3 run function namespace:recall
+execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 3 run function big_kitchen:recall
 execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 3 run function wall_hall:recall
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 4 run function zombie1111:recall
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run function platform:recall

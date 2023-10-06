@@ -1879,20 +1879,32 @@ execute if score #plot_tick_2_3 pr.value matches 1 run tag @e[tag=pr.target] rem
 
 
 execute store result score #plot_player_4_3 pr.value positioned 376.0 -64 280.0 if entity @a[dx=95,dy=383,dz=95,tag=!pr.spectator,limit=1]
-#execute unless score #plot_player_4_3 pr.value = #plot_tick_4_3 pr.value positioned 376.0 -64 280.0 run tag @a[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
-#execute unless score #plot_player_4_3 pr.value = #plot_tick_4_3 pr.value positioned 376.0 -64 280.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator,tag=!pr.ignore] add pr.target
-#execute if score #plot_player_4_3 pr.value matches 1 if score #plot_tick_4_3 pr.value matches 0 positioned 424 0 328 run function namespace:plot_on
-#execute if score #plot_player_4_3 pr.value matches 0 if score #plot_tick_4_3 pr.value matches 1 positioned 424 0 328 run function namespace:plot_off
-#execute unless score #plot_player_4_3 pr.value = #plot_tick_4_3 pr.value run tag @a[tag=pr.target] remove pr.target
-#execute unless score #plot_player_4_3 pr.value = #plot_tick_4_3 pr.value run tag @e[tag=pr.target] remove pr.target
-scoreboard players operation #plot_tick_4_3 pr.value = #plot_player_4_3 pr.value
-execute if score #plot_tick_4_3 pr.value matches 1 positioned 380.0 -64 284.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot 1236
-#execute if score #plot_tick_4_3 pr.value matches 1 positioned 380.0 -64 284.0 run tag @a[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target
-#execute if score #plot_tick_4_3 pr.value matches 1 positioned 380.0 -64 284.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator,tag=!pr.ignore] add pr.target
-#execute if score #plot_tick_4_3 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
-#execute if score #plot_tick_4_3 pr.value matches 1 positioned 424 0 328 run function namespace:tick_plot
-#execute if score #plot_tick_4_3 pr.value matches 1 run tag @a[tag=pr.target] remove pr.target
-#execute if score #plot_tick_4_3 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+scoreboard players set #check_loaded_bool pr.value 1
+execute if score #plot_player_4_3 pr.value matches 0 if score #plot_tick_4_3 pr.value matches 0 run scoreboard players set #check_loaded_bool pr.value 0
+scoreboard players set #chunk_loaded_bool pr.value 0
+execute if score #check_loaded_bool pr.value matches 1 if loaded 400 0 304 if loaded 432 0 304 if loaded 400 0 336 if loaded 432 0 336 run scoreboard players set #chunk_loaded_bool pr.value 1
+execute if score #plot_player_4_3 pr.value matches 1 if score #plot_tick_4_3 pr.value matches 0 run forceload add 400 304
+execute if score #plot_player_4_3 pr.value matches 1 if score #plot_tick_4_3 pr.value matches 0 run forceload add 432 304
+execute if score #plot_player_4_3 pr.value matches 1 if score #plot_tick_4_3 pr.value matches 0 run forceload add 400 336
+execute if score #plot_player_4_3 pr.value matches 1 if score #plot_tick_4_3 pr.value matches 0 run forceload add 432 336
+execute if score #plot_player_4_3 pr.value matches 0 if score #plot_tick_4_3 pr.value matches 1 run forceload remove 400 304
+execute if score #plot_player_4_3 pr.value matches 0 if score #plot_tick_4_3 pr.value matches 1 run forceload remove 432 304
+execute if score #plot_player_4_3 pr.value matches 0 if score #plot_tick_4_3 pr.value matches 1 run forceload remove 400 336
+execute if score #plot_player_4_3 pr.value matches 0 if score #plot_tick_4_3 pr.value matches 1 run forceload remove 432 336
+execute if score #chunk_loaded_bool pr.value matches 1 unless score #plot_player_4_3 pr.value = #plot_tick_4_3 pr.value positioned 376.0 -64 280.0 run tag @a[dx=95,dy=383,dz=95,tag=!pr.spectator] add pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 unless score #plot_player_4_3 pr.value = #plot_tick_4_3 pr.value positioned 376.0 -64 280.0 run tag @e[dx=95,dy=383,dz=95,tag=!pr.spectator,tag=!pr.ignore] add pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_player_4_3 pr.value matches 1 if score #plot_tick_4_3 pr.value matches 0 positioned 424 0 328 run function big_kitchen:plot_on
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_player_4_3 pr.value matches 0 if score #plot_tick_4_3 pr.value matches 1 positioned 424 0 328 run function big_kitchen:plot_off
+execute if score #chunk_loaded_bool pr.value matches 1 unless score #plot_player_4_3 pr.value = #plot_tick_4_3 pr.value run tag @a[tag=pr.target] remove pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 unless score #plot_player_4_3 pr.value = #plot_tick_4_3 pr.value run tag @e[tag=pr.target] remove pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 run scoreboard players operation #plot_tick_4_3 pr.value = #plot_player_4_3 pr.value
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_4_3 pr.value matches 1 positioned 380.0 -64 284.0 run scoreboard players set @a[dx=87,dy=383,dz=87,tag=!pr.spectator] pr.plot 1236
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_4_3 pr.value matches 1 positioned 380.0 -64 284.0 run tag @a[dx=87,dy=383,dz=87,tag=!pr.spectator] add pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_4_3 pr.value matches 1 positioned 380.0 -64 284.0 run tag @e[dx=87,dy=383,dz=87,tag=!pr.spectator,tag=!pr.ignore] add pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_4_3 pr.value matches 1 as @a[tag=pr.target] unless score @s pr.plot = @s pr.plot_previous at @s run function pr:player/plot/move
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_4_3 pr.value matches 1 positioned 424 0 328 run function big_kitchen:tick_plot
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_4_3 pr.value matches 1 run tag @a[tag=pr.target] remove pr.target
+execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_4_3 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
 
 
 

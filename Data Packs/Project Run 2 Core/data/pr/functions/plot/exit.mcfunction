@@ -79,7 +79,7 @@ execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 3 run fun
 execute if score @s pr.plot_x matches 0 if score @s pr.plot_z matches 3 run function rambini:exit
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 3 run function theswagunicorn:exit
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 3 run function eli_marie:exit
-#execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 3 run function namespace:exit
+execute if score @s pr.plot_x matches 4 if score @s pr.plot_z matches 3 run function big_kitchen:exit
 execute if score @s pr.plot_x matches 5 if score @s pr.plot_z matches 3 run function wall_hall:exit
 execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 4 run function zombie1111:exit
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 4 run function platform:exit

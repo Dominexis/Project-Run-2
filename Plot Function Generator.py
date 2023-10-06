@@ -95,6 +95,7 @@ NAMESPACES = {
     (4,0): ("cygnus_switch_palace", 0, True, "minecraft:purple_concrete", "Switch Palace", "The platforms switch on and off, keep your rhythm and avoid the dotted line blocks.\n\n§6Cygnus"),
     (4,1): ("piemel", 2, True),
     (4,2): ("hhyes", 0, False, "minecraft:slime_block", "Escape From Within", "Escape the reverse dropper!\n\n§6Hhyes & KaiWsMC & Dominexis"),
+    (4,3): ("big_kitchen", 1, True),
     (5,-3): ("tuntan", 4, True, "minecraft:elytra", "Tunnel Tangle", "Fly through tight tunnels to escape the maze!\n\n§6mmmmmaaaaaxxxxx"),
     (5,-2): ("polds", 0, True, "minecraft:grass_block", "Moving Madness", "Just jump. lol\n\n§6PoldsSlippers"),
     (5,-1): ("frostcobra", 0, True, "minecraft:calcite", "Cloud Maze", "Find your way through portals connected to strange places in the middle of the sky, and ascend above the clouds.\n\n§6Maniacobra & Frost_Chaos"),
