@@ -37,7 +37,7 @@ NAMESPACES = {
     (-3,5): ("simondmc", 2, True, "minecraft:big_dripleaf", "Drip Jump", "Leaf us a review!\n\n§6SimonDMC & EurekaX"),
     (-2,-6): ("eosand", 0, True, "minecraft:end_crystal", "Pipeline\nPandemonium", "Make it through four pipes of increasing complexity by facing in the direction of the correct pipe.\n\n§6EOSand"),
     (-2,-5): ("ronanemperor", 2, True, "minecraft:sculk_shrieker", "Warden's Domain", "Parkour through the dangerous underground to reach the Warden's Domain.\n\n§6RonanEmperor"),
-    (-2,-4): ("billyandaspookabie", 2, True),
+    (-2,-4): ("billyandaspookabie", 2, True, "minecraft:brewing_stand", "The Mad Scientist", "Nobody knows what he did, but it left the place in shambles.\n\n§6Billignton & aspookabie"),
     (-2,-3): ("technodono_plot_-2_-3", 0, True, "minecraft:note_block", "Beat Bounce", "When your grooving to music what do you do? You bounce of course!\nIn this parkour map your jumping is out of your control, bounce to the beat and try escape the abandoned laboratory as fast as possible!\n\n§6Technodono & BrandShei"),
     (-2,-1): ("time_stream", 0, False, "minecraft:clock", "Time Stream", "You've arrived at Time Labs Universe \"Time Stream\". Safe travels and don't get stuck in the time stream!\n\n§6P2ime"),
     (-2,1): ("theswagunicorn3", 0, False, "minecraft:feather", "Flappy Fowl", "2014 was a great year!\n\n§6_TheSwagUnicorn_"),

@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:brewing_stand",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section -2, -4",
+                    "text": "The Mad Scientist",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Nobody knows what he did, but it left the place in shambles.\n\n§6Billignton & aspookabie",
                 "color": "green"
             }
         ],
