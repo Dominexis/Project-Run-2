@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:chiseled_sandstone",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section -1, -1",
+                    "text": "Oasis",
                     "color": "white"
                 },
                 {
-                    "text": ""
+                    "text": "       "
                 }
             ]
         ],
         "frame": "goal",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Manage to parkour your way out of the oasis!\n\n§6_Lory44 & CosmicAxolotl",
                 "color": "green"
             }
         ],

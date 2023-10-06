@@ -17,7 +17,7 @@ execute align xyz positioned ~32 ~3 ~30 as @a[dx=0,dy=0,dz=0,tag=pr.target] run 
 execute if predicate lory:random_rustle positioned ~13 ~27 ~25 run particle minecraft:happy_villager ~ ~ ~ 0.5 0.5 0.5 0.01 10 normal @a[distance=..4,tag=pr.target]
 execute positioned ~13 ~27 ~25 if entity @a[distance=..7,tag=pr.target,limit=1] run function lory:barrel_tick
 
-execute as @e[distance=0..128,tag=lory.npc,tag=lory.raft_keeper,limit=1] at @s if entity @a[tag=pr.target,distance=0..15] run function lory:npc/raft_keeper/tick
+execute as @e[distance=0..128,tag=lory.npc,tag=lory.raft_keeper,tag=pr.target,limit=1] at @s if entity @a[tag=pr.target,distance=0..15] run function lory:npc/raft_keeper/tick
 
 # waterfall ambience
 execute positioned ~31 ~-1 ~26 run particle minecraft:cloud ~ ~ ~ 2 1 2.3 0 1200 force @a[distance=32..,tag=pr.target]
@@ -36,7 +36,31 @@ execute positioned ~27 ~-1 ~32 run particle minecraft:cloud ~ ~ ~ 2 1 2.3 0 100 
 # execute positioned ~27 ~-1 ~30 run playsound minecraft:weather.rain ambient @a[distance=32..64,tag=pr.target] ~ ~ ~ 0.6 0.1 0.05
 
 
+execute positioned ~-2 ~1 ~-31 as @a[distance=..8,tag=pr.target,predicate=lory:on_raft] run function lory:demount
+
+execute positioned ~-33 ~-1 ~-8 run function lory:slime_jump/0
+execute positioned ~-12 ~-1 ~28 run function lory:slime_jump/1
+execute positioned ~-27 ~-1 ~9 run function lory:slime_jump/2
+execute positioned ~-9 ~3 ~10 run function lory:slime_jump/3
+execute positioned ~25 ~-1 ~-27 run function lory:slime_jump/4
+execute positioned ~6 ~2 ~-13 run function lory:slime_jump/5
+execute positioned ~-31 ~4 ~1 run function lory:slime_jump/6
+execute positioned ~1 ~3 ~-28 run function lory:slime_jump/7
+
 # 
 execute align xyz positioned ~-19 ~16 ~-10 if entity @a[dx=20,dy=20,dz=20,tag=pr.target,limit=1] run function lory:snake/tick
 execute align xyz positioned ~-19 ~16 ~-10 unless entity @a[dx=20,dy=20,dz=20,tag=pr.target,limit=1] if score $snake_timer lory.var matches 0.. run function lory:snake/off
 
+
+
+execute positioned ~14 ~27 ~26 run tag @a[distance=..4,tag=pr.target] add lory.mission_raft
+
+
+
+# Kick players out of boats that aren't theirs
+
+execute as @a[tag=pr.target] run function lory:kick_from_boat
+
+# Kill boats that have no passengers
+
+execute positioned ~34 ~16 ~36 as @e[type=boat,distance=8..,tag=pr.target] run function lory:kill_empty_boat

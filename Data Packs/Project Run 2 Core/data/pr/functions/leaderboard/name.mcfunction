@@ -5,7 +5,7 @@ execute if score #plot pr.value matches 654 run data modify storage pr:data tag.
 # 2, -6
 execute if score #plot pr.value matches 658 run data modify storage pr:data tag.leaderboard_name set value '{"text":"2, -6 Ending"}'
 # -3, -5
-execute if score #plot pr.value matches 717 run data modify storage pr:data tag.leaderboard_name set value '{"text":"-3, -5 Ending"}'
+execute if score #plot pr.value matches 717 run data modify storage pr:data tag.leaderboard_name set value '{"text":"The Bloody Valley"}'
 # -1, -5
 execute if score #plot pr.value matches 719 run data modify storage pr:data tag.leaderboard_name set value '{"text":"25 Pixels"}'
 # 1, -5

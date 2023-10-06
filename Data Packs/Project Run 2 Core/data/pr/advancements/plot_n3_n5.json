@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:piglin_head",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section -3, -5",
+                    "text": "The Bloody Valley",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Gather your courage to fight strong warriors in the Bloody Valley, in order to unlock the powerful overworld portal.\n\n§6ischool04 & Dominexis",
                 "color": "green"
             }
         ],

@@ -11,6 +11,9 @@ execute align xyz run summon armor_stand ~31 ~18 ~36 {Tags:["lory.raft_keeper","
 # scoreboards
 scoreboard objectives add lory.var dummy
 scoreboard objectives add lory.snake_id dummy
+scoreboard objectives add lory.npc.raft_keeper.cooldown dummy
+scoreboard objectives add lory.boat_id dummy
+
 scoreboard objectives add lory.drop_raft minecraft.dropped:minecraft.bamboo_raft
 
 # giga bunch of markers for the snake parkour
@@ -80,14 +83,20 @@ execute positioned ~-11 ~20.5 ~2 summon minecraft:marker run function lory:marke
 
 
 # set constants
-### [IMPORTANT]: This value changes the lenght of the snake
-scoreboard players set $snake_lenght lory.var 6
+### [IMPORTANT]: This value changes the length of the snake
+scoreboard players set $snake_length lory.var 6
+
+### [IMPORTANT]: This value changes the distance between fronts of snakes
+scoreboard players set $snake_cycle lory.var 16
 
 ### [IMPORTANT]: This value changes the seconds of the snake timer rhythm
 scoreboard players set $snake_rhythm lory.var 3
 
+scoreboard players set #16 lory.var 16
+
 # set derivated constant for snake parkour
 scoreboard players set $snake_timer.max lory.var 64
-scoreboard players operation $snake_timer.max lory.var += $snake_lenght lory.var
+scoreboard players operation $snake_timer.max lory.var += $snake_length lory.var
 
+scoreboard players set $snake_timer lory.var -1
 
