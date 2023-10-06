@@ -54,7 +54,7 @@ scoreboard players set @a pr.click 0
 
 execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
 
-execute as @a[tag=pr.plate_checkpoint,tag=!pr.plate_checkpoint_cooldown] at @s if block ~ ~ ~ light_weighted_pressure_plate run function pr:player/checkpoint/plate
+execute as @a[team=pr.player,tag=pr.plate_checkpoint,tag=!pr.plate_checkpoint_cooldown] at @s if block ~ ~ ~ light_weighted_pressure_plate run function pr:player/checkpoint/plate
 execute as @a[tag=pr.plate_checkpoint_cooldown] at @s unless block ~ ~ ~ light_weighted_pressure_plate run tag @s remove pr.plate_checkpoint_cooldown
 
 execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s lobby 1

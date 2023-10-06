@@ -5,6 +5,6 @@ effect clear @s slow_falling
 
 # launch
 scoreboard players set #entity_yaw pr.value 2700
-scoreboard players set #entity_pitch pr.value -450
-scoreboard players set #entity_mot pr.value 1100
+scoreboard players set #entity_pitch pr.value -500
+scoreboard players set #entity_mot pr.value 880
 function pr:player/launch/apply/gimbal

@@ -1,24 +1,24 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:amethyst_shard",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 4, 1",
+                    "text": "Playground",
                     "color": "white"
                 },
                 {
-                    "text": ""
+                    "text": "  "
                 }
             ]
         ],
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Is it a bird? Is it a plane? No! It's the remains of the past.\n\n§6PiemelPiraat & MaSp005 & Owca & _TheSwagUnicorn_ & Dominexis",
                 "color": "green"
             }
         ],

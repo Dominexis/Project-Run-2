@@ -13,3 +13,7 @@ scoreboard objectives add piemel.pullprog dummy
 scoreboard objectives add piemel.swingprog dummy
 scoreboard objectives add piemel.progress dummy
 scoreboard objectives add piemel.hintto dummy
+
+
+
+summon item ~-18 ~7 ~-37 {Tags:["piemel.trident"],Item:{id:"minecraft:trident",Count:1b,tag:{Enchantments:[{}]}},Age:-32768s,PickupDelay:32767s}
