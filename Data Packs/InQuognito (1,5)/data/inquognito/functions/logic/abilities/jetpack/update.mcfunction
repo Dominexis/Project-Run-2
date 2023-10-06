@@ -1,3 +1,4 @@
+function pr:player/time/compute
 data modify storage inquognito:data hud_timer set value '[{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true},{"text":" | ","bold":false,"color":"white"}]'
 
 scoreboard players operation #percentage inquognito.temp = @s inquognito.jetpack.fuel
