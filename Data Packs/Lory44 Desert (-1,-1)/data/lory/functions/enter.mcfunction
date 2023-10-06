@@ -5,6 +5,8 @@ scoreboard players set @s lory.npc.raft_keeper.cooldown 20
 
 execute store result score @s lory.boat_id run scoreboard players add #global lory.boat_id 1
 
+tag @s add lory.oasis
+
 
 # effect give @s minecraft:resistance infinite 5 true
 

@@ -8,5 +8,7 @@ tag @s remove lory.mission_raft
 
 function lory:inventory
 
+tag @s remove lory.oasis
+
 
 stopsound @s * minecraft:item.elytra.flying
