@@ -7,3 +7,5 @@ effect give @s minecraft:blindness infinite 0 true
 function inquognito:logic/plot/boss/dialogue/reset
 execute unless score @s inquognito.upgrades >= max_upgrades inquognito.values run scoreboard players set @s inquognito.dialogue 90
 execute if score @s inquognito.upgrades >= max_upgrades inquognito.values run scoreboard players set @s inquognito.dialogue 99
+
+playsound minecraft:ui.toast.challenge_complete master @s

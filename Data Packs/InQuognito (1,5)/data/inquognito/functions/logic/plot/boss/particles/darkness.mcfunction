@@ -1,3 +1,50 @@
+execute positioned ~-4 ~-35.5 ~-14 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~-4 ~-35.5 ~-13 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~-4 ~-35.5 ~-12 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/3_face
+execute positioned ~-5 ~-36.0 ~-13 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~-6 ~-35.5 ~-13 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~-6 ~-35.5 ~-14 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+
+execute positioned ~1 ~-34.0 ~-8 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~2 ~-33.5 ~-8 rotated 180.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~1 ~-33.5 ~-7 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~1 ~-33.5 ~-6 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~2 ~-33.0 ~-5 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+
+execute positioned ~3 ~-30.5 ~-5 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~4 ~-30.5 ~-4 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~5 ~-30.5 ~-3 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~6 ~-30.5 ~-3 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~6 ~-30.5 ~-4 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+
+execute positioned ~2 ~-26.5 ~-9 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~3 ~-26.5 ~-9 rotated 180.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~4 ~-26.5 ~-9 rotated 180.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~5 ~-26.5 ~-9 rotated 180.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~6 ~-26.5 ~-9 rotated 180.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~7 ~-26.5 ~-8 rotated 180.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~7 ~-26.5 ~-7 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~7 ~-26.5 ~-6 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~7 ~-26.5 ~-5 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~7 ~-26.5 ~-4 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~6 ~-26.5 ~-4 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~5 ~-26.5 ~-4 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~4 ~-26.5 ~-4 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~3 ~-26.5 ~-5 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~2 ~-26.5 ~-6 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~2 ~-26.5 ~-7 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~2 ~-26.5 ~-8 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+
+execute positioned ~-6 ~-35.5 ~-2 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~-5 ~-36.0 ~-2 rotated 180.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~-4 ~-35.5 ~-1 rotated 180.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~-4 ~-35.5 ~ rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~-4 ~-35.5 ~1 rotated -90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+execute positioned ~-6 ~-35.5 ~-1 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~-6 ~-35.5 ~ rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/corner
+execute positioned ~-5 ~-35.5 ~ run function inquognito:logic/plot/boss/particles/darkness/square
+execute positioned ~-5 ~-35.5 ~1 rotated 90.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
+
 execute positioned ~-6 ~-32.5 ~15 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
 execute positioned ~-5 ~-32.5 ~15 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
 execute positioned ~-4 ~-32.5 ~15 rotated 0.0 0.0 run function inquognito:logic/plot/boss/particles/darkness/line
