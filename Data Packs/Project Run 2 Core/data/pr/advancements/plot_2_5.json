@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
-            "nbt": "{}"
+            "item": "minecraft:diamond_horse_armor",
+            "nbt": "{CustomModelData:351902}"
         },
         "title": [
             [
                 {
-                    "text": "Ancient Apparatus",
+                    "text": "Cogwheel Animism",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "task",
         "description": [
             {
-                "text": "Throw cogs like a maniac!\n\n§6KelloVerra",
+                "text": "A strange but powerful, and friendly?.. power of the temple hypnotizes you to take your interest towards its majestic mechanism.\n\n§6KelloVerra",
                 "color": "green"
             }
         ],

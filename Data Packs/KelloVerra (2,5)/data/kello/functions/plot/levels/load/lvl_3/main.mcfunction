@@ -32,6 +32,7 @@ scoreboard players set #init kello.entity.checkpoint.id 3
 scoreboard players set #init kello.decal.id 3
 
 scoreboard players set #uninstantiate kello.value 1
+scoreboard players set #halt_contraption_controller_checkpoint kello.value 1
 execute positioned ~-6 ~6 ~21 run function kello:entity/decal/contraption_controller/spawn_optional/main
 execute positioned ~-6 ~12 ~21 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.large_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[-90.0f,0.0f],data:{state:0,rot_mode:0}}
 execute positioned ~-6 ~10 ~22 align xyz positioned ~.25 ~.95 ~.95 summon marker run data merge entity @s {Tags:["kello.entity.type.animated_wheel","kello.has_delay","kello.decal.mech_spawn_point"],Rotation:[-90.0f,0.0f],data:{state:2,rot_mode:1,rot_speed:1,rundelay:8,invdelay:19,variant:8}}
@@ -65,9 +66,12 @@ scoreboard players set #ref_state kello.value 1
 scoreboard players set #ref_rotation kello.value 1
 
 
+
 execute as @e[type=marker,tag=kello.decal.mech_spawn_point] at @s run function kello:debug/decal/util/spawn/verify/mech/main
 
 
+
+scoreboard players set #halt_contraption_controller_checkpoint kello.value 0
 scoreboard players set #spawn_persistent kello.value 0
 scoreboard players set #uninstantiate kello.value 0
 scoreboard players set #ref_state kello.value 0
@@ -81,6 +85,7 @@ scoreboard players set #init kello.entity.checkpoint.id 3
 scoreboard players set #init kello.decal.id 4
 
 scoreboard players set #uninstantiate kello.value 1
+scoreboard players set #halt_contraption_controller_checkpoint kello.value 1
 execute positioned ~6 ~6 ~21 run function kello:entity/decal/contraption_controller/spawn_optional/main
 execute positioned ~6 ~13 ~22 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{state:2,rot_mode:1}}
 execute positioned ~6 ~13 ~20 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{state:2,rot_mode:1}}
@@ -103,6 +108,7 @@ scoreboard players set #ref_rotation_speed kello.value 1
 execute as @e[type=marker,tag=kello.decal.mech_spawn_point] at @s run function kello:debug/decal/util/spawn/verify/mech/main
 
 
+scoreboard players set #halt_contraption_controller_checkpoint kello.value 0
 scoreboard players set #spawn_persistent kello.value 0
 scoreboard players operation #selected kello.decal.id = #select_store kello.decal.id
 scoreboard players set #uninstantiate kello.value 0
@@ -172,7 +178,6 @@ execute positioned ~-4.5 ~4.5 ~19.5 summon marker run data merge entity @s {Tags
 execute positioned ~5.5 ~4.5 ~23.5 summon marker run data merge entity @s {Tags:["kello.decal.temp_spawn_point","kello.decal.unregistered","kello.decal.type.mellobanner","pr.ignore"],data:{variant:1},Rotation:[-90.0f,0.0f]}
 execute positioned ~5.5 ~4.5 ~19.5 summon marker run data merge entity @s {Tags:["kello.decal.temp_spawn_point","kello.decal.unregistered","kello.decal.type.mellobanner","pr.ignore"],data:{variant:1},Rotation:[-90.0f,0.0f]}
 execute positioned ~-2.5 ~12.0 ~22.5 summon marker run data merge entity @s {Tags:["kello.decal.type.melloflora_lantern","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[30.0f,0.0f]}
-execute positioned ~-2.5 ~12.0 ~22.5 summon marker run data merge entity @s {Tags:["kello.decal.type.melloflora_lantern","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[4.0f,0.0f]}
 execute positioned ~-1.0 ~10.0 ~21.5 summon marker run data merge entity @s {Tags:["kello.decal.type.melloflora_lantern","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[1.0f,0.0f]}
 execute positioned ~2.5 ~12.25 ~24.29 summon marker run data merge entity @s {Tags:["kello.decal.type.melloflora_lantern","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[38.0f,0.0f]}
 execute positioned ~5.5 ~10.5 ~25.29 summon marker run data merge entity @s {Tags:["kello.decal.type.melloflora_lantern","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[42.0f,0.0f]}

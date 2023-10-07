@@ -16,11 +16,13 @@ kill @e[type=marker,tag=kello.void_marker,tag=pr.ignore]
 
 kill @e[type=interaction,tag=kello.entity.interactable]
 
+function animated_java:cogwheel/remove/all
+
 
 # Um, well you see.. sometimes the entities did not get tagged by kello.entity or kello.decal, 
 # so my only way to kill them inside the confines of my plot is to use this radioactive line of code :
 
-execute positioned ~-40 -64 ~-40 run kill @e[type=!player,dx=80,dy=320,dz=80]
+execute positioned ~-44 -64 ~-44 run kill @e[type=!player,dx=83,dy=320,dz=83]
 
 
 

@@ -20,12 +20,9 @@ scoreboard players operation #local kello.player.checkpoint.id = @s kello.entity
 scoreboard players operation #local kello.entity.checkpoint.id = @s kello.entity.checkpoint.id
 scoreboard players operation #local kello.level.id = @s kello.level.id
 scoreboard players operation #local kello.player.void_y = @s kello.player.void_y
+scoreboard players set #flag_color kello.value -1
 
-execute on passengers if entity @s[tag=kello.entity.part.mark_pointer] on origin at @s as @a[tag=pr.target,distance=..2.75,gamemode=!spectator,predicate=!kello:unsafe] run function kello:entity/checkpoint/state/checkpoint/main_player
-
-# function kello:entity/checkpoint/state/checkpoint/entity/get_players
-# execute as @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=!kello.exclude,distance=..128] if score @s kello.entity.checkpoint.id = #local kello.entity.checkpoint.id run function kello:entity/checkpoint/state/checkpoint/entity/activate
-
+execute on passengers if entity @s[tag=kello.entity.part.mark_pointer] on origin at @s as @a[tag=pr.target,distance=..2.75,gamemode=!spectator,predicate=!kello:unsafe] unless score @s kello.player.checkpoint.id = #local kello.player.checkpoint.id run function kello:entity/checkpoint/state/checkpoint/main_player
 
 function kello:entity/checkpoint/state/checkpoint/set_color
 execute if score #flag_color kello.value matches 0 run summon firework_rocket ~ ~1.75 ~ {Silent:0b,LifeTime:20,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:1,Trail:1b,Colors:[I;921887],FadeColors:[I;16515033,15138559,12831956]},{Type:0,Flicker:1b,Colors:[I;16773526,10808784,10074367,9895851,16754903],FadeColors:[I;2501942]},{Type:4,Colors:[I;16580582,14611711,16316415],FadeColors:[I;1380129,659492]}]}}}}

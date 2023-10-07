@@ -52,4 +52,4 @@ scoreboard players set @s pr.checkpoint_cooldown 20
 
 # Run recall function
 
-execute at @s run function pr:player/checkpoint/recall
+execute at @s[team=pr.player] run function pr:player/checkpoint/recall

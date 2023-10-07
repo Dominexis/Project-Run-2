@@ -38,6 +38,7 @@ scoreboard objectives remove kello.ticks
 scoreboard objectives remove kello.level.id
 scoreboard objectives remove kello.level.next_id
 scoreboard objectives remove kello.entity.checkpoint.id
+scoreboard objectives remove kello.entity.ignore_checkpoint
 scoreboard objectives remove kello.entity.variant
 scoreboard objectives remove kello.entity.id
 scoreboard objectives remove kello.entity.tick_dist

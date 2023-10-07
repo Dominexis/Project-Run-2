@@ -14,7 +14,9 @@ function pr:player/checkpoint/mark
 execute if entity @s[tag=kello.player.flag_atramentum] run scoreboard players set #flag_color kello.value 0 
 execute if entity @s[tag=kello.player.flag_forestglide] run scoreboard players set #flag_color kello.value 1 
 execute if entity @s[tag=kello.player.flag_nebulae] run scoreboard players set #flag_color kello.value 2 
-execute if entity @s[tag=kello.player.flag_sundown] run scoreboard players set #flag_color kello.value 3 
+execute if entity @s[tag=kello.player.flag_sundown] run scoreboard players set #flag_color kello.value 3
+
+execute if score #flag_color kello.value matches -1 run function kello:player/setup/choose_flag_color
 
 
 scoreboard players operation @s kello.player.void_y = #local kello.player.void_y

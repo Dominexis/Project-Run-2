@@ -21,6 +21,7 @@ execute if score #uninstantiate kello.value matches 1 run scoreboard players ope
 
 execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.level.id = #local kello.level.id
 execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.entity.checkpoint.id = #init kello.entity.checkpoint.id
+execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.entity.ignore_checkpoint = #halt_contraption_controller_checkpoint kello.value
 
 # Notify
 

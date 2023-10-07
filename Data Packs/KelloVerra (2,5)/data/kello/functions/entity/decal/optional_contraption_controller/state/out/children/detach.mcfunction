@@ -1,1 +1,0 @@
-execute as @e[type=item_display,tag=pr.target,tag=kello.entity.type.thrown_cogwheel,distance=..4] run function kello:entity/decal/optional_contraption_controller/state/out/children/detach_select

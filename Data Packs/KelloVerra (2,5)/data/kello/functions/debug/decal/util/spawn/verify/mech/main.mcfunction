@@ -1,5 +1,7 @@
 data modify storage kello:data tag.temp_spawnpoint.data set from entity @s data
 
+scoreboard players set #is_dummy kello.value 0
+
 execute if score #ref_state kello.value matches 1 store result score #local kello.decal.state run data get storage kello:data tag.temp_spawnpoint.data.state 1
 execute if score #ref_rotation kello.value matches 1 store result score #local kello.decal.rot_mode run data get storage kello:data tag.temp_spawnpoint.data.rot_mode 1
 execute if score #ref_rotation_speed kello.value matches 1 store result score #local kello.decal.rot_speed run data get storage kello:data tag.temp_spawnpoint.data.rot_speed 1

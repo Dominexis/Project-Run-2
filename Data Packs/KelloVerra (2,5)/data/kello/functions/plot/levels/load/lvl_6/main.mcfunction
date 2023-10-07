@@ -319,14 +319,13 @@ scoreboard players set #ref_rotation kello.value 0
 
 ## DECO PHASE
 
-execute positioned ~2.5 ~112.5 ~-25.5 summon marker run data merge entity @s {Tags:["aj.comet_flake.root","kello.exclude","kello.decal.type.comet_flake","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{variant:1},Rotation:[78.0f,0.0f]}
 execute positioned ~1.5 ~109.0 ~-19.5 summon marker run data merge entity @s {Tags:["kello.decal.type.melloleta","kello.exclude","pr.ignore","aj.melloleta_path.root","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{variant:1},Rotation:[-90.0f,0.0f]}
 execute positioned ~-0.5 ~109.0 ~-19.5 summon marker run data merge entity @s {Tags:["kello.decal.type.melloleta","kello.exclude","pr.ignore","aj.melloleta_path.root","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{variant:1},Rotation:[90.0f,0.0f]}
 execute positioned ~-1.5 ~109.0 ~-26.5 summon marker run data merge entity @s {Tags:["kello.decal.type.melloleta","kello.exclude","aj.melloleta_patch_singular.root","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{variant:0},Rotation:[-180.0f,0.0f]}
 execute positioned ~-3.5 ~109.0 ~-23.5 summon marker run data merge entity @s {Tags:["kello.decal.type.melloleta","kello.exclude","aj.melloleta_patch_singular.root","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{variant:0},Rotation:[90.0f,0.0f]}
 execute positioned ~3.5 ~109.0 ~-22.5 summon marker run data merge entity @s {Tags:["kello.decal.type.melloleta","kello.exclude","aj.melloleta_patch_singular.root","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{variant:0},Rotation:[-90.0f,0.0f]}
 
-execute positioned ~-2.5 ~112.5 ~-4.5 summon marker run data merge entity @s {Tags:["kello.decal.type.flyfan","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:2,rot_speed:0,rot_mode:0},Rotation:[-180.0f,0.0f]}
+# execute positioned ~-2.5 ~112.5 ~-4.5 summon marker run data merge entity @s {Tags:["kello.decal.type.flyfan","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:2,rot_speed:0,rot_mode:0},Rotation:[-180.0f,0.0f]}
 execute positioned ~3.5 ~108.5 ~7.5 summon marker run data merge entity @s {Tags:["kello.decal.type.flyfan","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:2,rot_speed:0,rot_mode:1},Rotation:[90.0f,0.0f]}
 execute positioned ~2.5 ~111.5 ~10.5 summon marker run data merge entity @s {Tags:["kello.decal.type.flyfan","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:3,rot_speed:0,rot_mode:1},Rotation:[90.0f,0.0f]}
 execute positioned ~-2.5 ~109.5 ~22.5 summon marker run data merge entity @s {Tags:["kello.decal.type.flyfan","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:5,rot_speed:1,rot_mode:0},Rotation:[-90.0f,0.0f]}

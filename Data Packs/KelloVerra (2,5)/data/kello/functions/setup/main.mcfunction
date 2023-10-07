@@ -38,6 +38,7 @@ scoreboard objectives add kello.ticks dummy
 scoreboard objectives add kello.level.id dummy
 scoreboard objectives add kello.level.next_id dummy
 scoreboard objectives add kello.entity.checkpoint.id dummy
+scoreboard objectives add kello.entity.ignore_checkpoint dummy
 scoreboard objectives add kello.entity.variant dummy
 scoreboard objectives add kello.entity.id dummy
 scoreboard objectives add kello.entity.tick_dist dummy
@@ -202,7 +203,7 @@ scoreboard players set #thrown_large_cogwheel_lifetime kello.value 1600
 scoreboard players set #throw_cooldown kello.value 10
 scoreboard players set #throw_response kello.value 6
 
-scoreboard players set #entity_tick_time_maximum kello.value 20
+scoreboard players set #entity_tick_time_maximum kello.value 45
 scoreboard players set #entity_tick_time_minimum kello.value 2
 scoreboard players set #moving_platform_impact_delay kello.value 20
 
@@ -233,6 +234,8 @@ scoreboard players set #generator.initial_tick_stamp kello.value 0
 scoreboard players set #generator.current_tick_stamp kello.value 0
 scoreboard players set #generator.overflow_max_iter kello.value 2048
 scoreboard players set #generator.generate kello.value 0
+
+scoreboard players set #halt_contraption_controller_checkpoint kello.value 1
 
 
 # Storages

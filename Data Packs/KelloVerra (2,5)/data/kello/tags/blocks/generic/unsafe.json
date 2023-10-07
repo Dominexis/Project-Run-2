@@ -17,6 +17,9 @@
         "minecraft:iron_bars",
         "minecraft:petrified_oak_slab",
         "#minecraft:fences",
+        "#minecraft:candles",
+        "#minecraft:tall_flowers",
+        "#minecraft:combination_step_sound_blocks",
         "#minecraft:climbable",
         "#minecraft:corals",
         "#minecraft:fence_gates"

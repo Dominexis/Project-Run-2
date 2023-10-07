@@ -1,1 +1,0 @@
-function kello:generic/sfx/decal/contraption/chain_finish

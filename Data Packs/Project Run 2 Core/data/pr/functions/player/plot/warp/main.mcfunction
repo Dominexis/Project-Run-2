@@ -107,6 +107,10 @@ scoreboard players operation @s pr.plot_z = #z pr.value
 execute if score #lobby pr.value matches 1 run function pr:plot/enter
 execute if score #lobby pr.value matches 1 run function pr:player/checkpoint/send_to
 
+execute if entity @s[team=pr.spectator] run scoreboard players operation @s pr.plot = #spawn_plot pr.value
+execute if entity @s[team=pr.spectator] run scoreboard players operation @s pr.plot_previous = @s pr.plot
+execute if entity @s[team=pr.spectator] run function pr:player/plot/coords_from_id
+
 
 
 execute if score #lobby pr.value matches 0 run tellraw @s {"text":"You've been warped to the lobby","color":"gold"}

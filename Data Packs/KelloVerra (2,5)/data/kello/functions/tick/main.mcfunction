@@ -25,8 +25,19 @@ scoreboard players add #global kello.ticks 1
 
 # Loop entity
 
-scoreboard players set #skip_tick_boolean kello.value 0
-execute as @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=!kello.exclude] run function kello:tick/entity/verify
+scoreboard players set #skip_current_boolean kello.value 0
+
+scoreboard players set #entity_tick_boolean kello.value 0   
+scoreboard players set #entity_tick_overflow_boolean kello.value 0
+scoreboard players set #entity_tick_complete_boolean kello.value 1
+
+execute as @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=!kello.exclude] run function kello:tick/entity/activate_verify
+execute if score #entity_tick_boolean kello.value matches 1 if score #entity_tick_complete_boolean kello.value matches 1 run tag @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=!kello.exclude] remove kello.entity.activated
+
+execute if score #entity_tick_overflow_boolean kello.value matches 1 if score #entity_tick_complete_boolean kello.value matches 1 if score #terminate_entity_tick kello.value matches 0 as @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=!kello.exclude] run function kello:tick/entity/activate_verify
+execute if score #entity_tick_overflow_boolean kello.value matches 1 if score #entity_tick_complete_boolean kello.value matches 1 run tag @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=!kello.exclude] remove kello.entity.activated
+
+# execute as @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=!kello.exclude] run function kello:tick/entity/verify
 
 
 
