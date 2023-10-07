@@ -36,7 +36,9 @@ execute if score #door_timer pr.value matches 80 positioned -49 0 40 run tellraw
 execute if score #door_timer pr.value matches 80 run data merge entity @e[type=text_display,tag=pr.door_title,limit=1] {text:'{"text":"1","color":"gold"}'}
 
 
-execute if score #door_timer pr.value matches 100 positioned -32 0 40 run playsound minecraft:entity.generic.explode master @a[distance=..40] ~ ~ ~ 10
+execute if score #door_timer pr.value matches 100 positioned -32 0 40 run playsound minecraft:entity.generic.explode master @a[distance=..40] ~ ~ ~ 10 0.82
+execute if score #door_timer pr.value matches 100 positioned -32 0 40 run playsound minecraft:entity.zombie_villager.cure master @a[distance=..40] ~ ~ ~ 10 1.73
+execute if score #door_timer pr.value matches 100 positioned -32 0 40 run playsound minecraft:entity.zombie.break_wooden_door master @a[distance=..40] ~ ~ ~ 10 0.88
 execute if score #door_timer pr.value matches 100 run particle minecraft:explosion_emitter -32 4 40 0 2 2 0 20
 execute if score #door_timer pr.value matches 100 run kill @e[type=text_display,tag=pr.door_title]
 execute if score #door_timer pr.value matches 100 positioned -49 0 40 run tellraw @a[distance=..40] {"text":"Go!","color":"gold"}
