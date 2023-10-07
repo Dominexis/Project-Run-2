@@ -10,6 +10,8 @@ summon marker ~-4 ~-47 ~21 {Tags:["death"]}
 summon marker ~-5 ~-52 ~23 {Tags:["jp_key_marker"]}
 summon marker ~-31 ~-60 ~34 {Tags:["LootGoblin"]}
 
+scoreboard players set #boss_cooldown jpmagic.tmp 0
+
 
 
 #BOSSBARS

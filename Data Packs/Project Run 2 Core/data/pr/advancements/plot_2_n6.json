@@ -1,13 +1,13 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond",
+            "item": "minecraft:magma_block",
             "nbt": "{}"
         },
         "title": [
             [
                 {
-                    "text": "Section 2, -6",
+                    "text": "Volcano Lord's Luck",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "A powerful magma cube has been the keeper of a volcano for centuries. He has been given the power of luck, and will abuse that till the end. Can you take over this volcano?\n\n§6JPmagic & _TheSwagUnicorn_",
                 "color": "green"
             }
         ],

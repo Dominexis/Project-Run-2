@@ -73,7 +73,7 @@ NAMESPACES = {
     (1,3): ("theswagunicorn", 0, True, "minecraft:creeper_spawn_egg", "Kreeper Kerfuffle", "A steampunk esque house in the country that leads into creeper production lines and redstone mines.\n\n§6_TheSwagUnicorn_"),
     (1,4): ("rex_saltus_neon", 4, False, "minecraft:light_blue_concrete", "NEON", "Cubes light up the night.\n\n§6Rex_Saltus & xherax"),
     (1,5): ("inquognito", 3, True, "minecraft:sculk_sensor", "Sector Tau", "Discover the source of the distress beacon.\n\n§6InQuognito & NessIsPSIRockin"),
-    (2,-6): ("jpmagic", 0, True),
+    (2,-6): ("jpmagic", 0, True, "minecraft:magma_block", "Volcano Lord's\nLuck", "A powerful magma cube has been the keeper of a volcano for centuries. He has been given the power of luck, and will abuse that till the end. Can you take over this volcano?\n\n§6JPmagic & _TheSwagUnicorn_"),
     (2,-5): ("decimate", 0, False, "minecraft:chest", "The Skyblock\nExperience", "Say hi to Jerry on the way!\n\n§6DecimateJSY97a & _TheSwagUnicorn_ & MaSp005 & JPMagic"),
     (2,-4): ("spooky", 2, False, "minecraft:sculk", "CyberFall", "Make your way around the city using your trident. Try Not To Fall!\n\n§6SpookyDaSpirit & Lazybrush2"),
     (2,-3): ("intjungle", 1, False, "minecraft:jungle_leaves", "Dripleaf Jungle", "Parkour deep into the heart of the jungle. Will you make it out alive?\n\n§6Interstellar_1"),
@@ -322,7 +322,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "advancement.mcfun
 commands: list[str] = []
 for coordinate in coordinates:
     if coordinate in NAMESPACES and len(NAMESPACES[coordinate]) > 3:
-        name = NAMESPACES[coordinate][4].replace("\n", " ")
+        name = NAMESPACES[coordinate][4].replace("\n", " ").replace("'", "\\'")
     else:
         name = f'{coordinate[0]}, {coordinate[1]} Ending'
 

@@ -2,14 +2,10 @@
 execute at @e[tag=pr.target,tag=jpmagic.death] as @e[type=minecraft:magma_cube,tag=pr.target,distance=..50,nbt={Size:7}] run tp @s ~ -150 ~
 
 #RNG HAPPEN
-execute as @a[tag=pr.target,tag=!JP_RNG] at @s if block ~ ~ ~ polished_blackstone_pressure_plate store result score @s jpmagic.tmp at @e[tag=pr.target,type=marker,tag=LootGoblin] run loot insert ~ ~ ~ loot jpmagic:jump_rng
 execute as @a[tag=pr.target,tag=!JP_RNG] at @s if block ~ ~ ~ polished_blackstone_pressure_plate run function jpmagic:jprng
-execute as @a[tag=pr.target,tag=!JP_RNG] at @s if block ~ ~ ~ polished_blackstone_pressure_plate at @e[tag=pr.target,type=marker,tag=LootGoblin] run setblock ~ ~ ~ air
-execute as @a[tag=pr.target,tag=!JP_RNG] at @s if block ~ ~ ~ polished_blackstone_pressure_plate at @e[tag=pr.target,type=marker,tag=LootGoblin] run setblock ~ ~ ~ chest
 execute as @a[tag=pr.target] at @s if block ~ ~ ~ polished_blackstone_pressure_plate run tag @s add JP_RNG
 execute as @a[tag=pr.target] at @s unless block ~ ~ ~ polished_blackstone_pressure_plate run tag @s remove JP_RNG
 kill @e[type=item,tag=pr.target]
-scoreboard players set @a[tag=pr.target] jpmagic.tmp 0
 
 #BOSS FIGHT
 #Item Give
@@ -28,16 +24,28 @@ execute at @e[tag=pr.target,tag=jp_key_back] as @a[tag=pr.target,distance=..5,pr
 
 #Start Boss Fight
 
-execute at @e[tag=pr.target,tag=jpmagic.key_marker] if entity @p[tag=pr.target,distance=..4,predicate=jpmagic:holding_tripwire_hook] unless entity @e[tag=pr.target,tag=jpboss] run bossbar set jpmagic.volcanokeeper players @a[tag=pr.target]
-execute at @e[tag=pr.target,tag=jpmagic.key_marker] if entity @p[tag=pr.target,distance=..4,predicate=jpmagic:holding_tripwire_hook] unless entity @e[tag=pr.target,tag=jpboss] run summon minecraft:magma_cube ~ ~-5 ~-20 {Size:15,CustomName:'[{"text":"Volcano\'s Keeper","color":"gold"}]',CustomNameVisible:1b,Health:100,Tags:["jpboss"],ActiveEffects:[{Id:5,Duration:100000000,Amplifier:20,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:100f}]}
+execute at @e[tag=pr.target,tag=jpmagic.key_marker] if entity @p[tag=pr.target,distance=..4,predicate=jpmagic:holding_tripwire_hook] unless entity @e[tag=pr.target,tag=jpboss] if score #boss_cooldown jpmagic.tmp matches 0 run bossbar set jpmagic.volcanokeeper players @a[tag=pr.target]
+execute at @e[tag=pr.target,tag=jpmagic.key_marker] if entity @p[tag=pr.target,distance=..4,predicate=jpmagic:holding_tripwire_hook] unless entity @e[tag=pr.target,tag=jpboss] if score #boss_cooldown jpmagic.tmp matches 0 run summon minecraft:magma_cube ~ ~-5 ~-20 {Size:15,CustomName:'[{"text":"Volcano\'s Keeper","color":"gold"}]',CustomNameVisible:1b,Health:100,Tags:["jpboss"],ActiveEffects:[{Id:5,Duration:100000000,Amplifier:20,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:100f}]}
 execute at @e[tag=pr.target,tag=jpmagic.key_marker] run clear @a[tag=pr.target,distance=..4,predicate=jpmagic:holding_tripwire_hook] tripwire_hook
-execute at @p[tag=pr.target] store result bossbar minecraft:jpmagic.volcanokeeper value run data get entity @e[tag=pr.target,tag=jpboss,limit=1] Health 1
-execute at @p[tag=pr.target] store result bossbar minecraft:jpmagic.volcanokeeper max run attribute @e[tag=pr.target,tag=jpboss,limit=1] minecraft:generic.max_health get 1
+
+
+
+# Boss cooldown
+execute if entity @e[tag=pr.target,tag=jpboss] run scoreboard players set #boss_cooldown jpmagic.tmp 100
+execute unless entity @e[tag=pr.target,tag=jpboss] if score #boss_cooldown jpmagic.tmp matches 1.. run scoreboard players remove #boss_cooldown jpmagic.tmp 1
+
+
+# Item forcing
+execute as @a[tag=pr.target,tag=BossFighting] run function jpmagic:force_items
+
+execute store result bossbar minecraft:jpmagic.volcanokeeper value run data get entity @e[tag=pr.target,tag=jpboss,limit=1] Health 1
+execute store result bossbar minecraft:jpmagic.volcanokeeper max run attribute @e[tag=pr.target,tag=jpboss,limit=1] minecraft:generic.max_health get 1
 execute unless entity @e[tag=pr.target,tag=jpboss] run bossbar set minecraft:jpmagic.volcanokeeper visible false
 execute if entity @e[tag=pr.target,tag=jpboss] run bossbar set minecraft:jpmagic.volcanokeeper visible true
 execute at @e[tag=pr.target,tag=jpboss] run bossbar set jpmagic.volcanokeeper players @a[tag=pr.target,distance=..20]
 execute unless entity @e[tag=pr.target,tag=jpboss] run fill ~-5 ~-58 ~-3 ~-7 ~-58 ~-1 minecraft:slime_block
-execute unless entity @e[tag=pr.target,tag=jpboss] run tp @e[tag=pr.target,type=magma_cube,tag=!jpboss] ~ ~-62 ~
+execute unless entity @e[tag=pr.target,tag=jpboss] as @e[tag=pr.target,type=magma_cube,tag=!jpboss] run data merge entity @s {Size:0}
+execute unless entity @e[tag=pr.target,tag=jpboss] run tp @e[tag=pr.target,type=magma_cube,tag=!jpboss] ~ ~-1000 ~
 execute unless entity @e[tag=pr.target,tag=jpboss] run kill @e[tag=pr.target,type=magma_cube,tag=!jpboss]
 execute if entity @e[tag=pr.target,tag=jpboss] run fill ~-5 ~-58 ~-3 ~-7 ~-58 ~-1 minecraft:air
 execute positioned ~-6 ~-57 ~-2 as @a[tag=pr.target,distance=..2] at @s if block ~ ~-1 ~ minecraft:slime_block run effect give @s minecraft:levitation 1 127 true
