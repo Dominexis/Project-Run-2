@@ -34,7 +34,7 @@ scoreboard players remove #z pr.value 32768
 # Check whether in the lobby or not
 
 scoreboard players set #lobby pr.value 0
-execute if score #x pr.value matches -96..-16 if score #z pr.value matches 0..80 run scoreboard players set #lobby pr.value 1
+execute if score #x pr.value matches -104..-8 if score #z pr.value matches -8..72 run scoreboard players set #lobby pr.value 1
 
 
 
@@ -44,6 +44,8 @@ execute if score #x pr.value matches -96..-16 if score #z pr.value matches 0..80
 
 # Convert coordinates if not in the lobby
 
+execute if score #lobby pr.value matches 0 run scoreboard players add #x pr.value 8
+execute if score #lobby pr.value matches 0 run scoreboard players add #z pr.value 8
 execute if score #lobby pr.value matches 0 run scoreboard players operation #x pr.value /= #96 pr.value
 execute if score #lobby pr.value matches 0 run scoreboard players operation #z pr.value /= #96 pr.value
 execute if score #lobby pr.value matches 0 run scoreboard players operation #x pr.value *= #4 pr.value
@@ -86,6 +88,36 @@ tag @s add pr.plot_warp
 summon marker ~ ~ ~ {Tags:["pr.plot_warp"]}
 execute as @e[type=marker,tag=pr.plot_warp] run function pr:player/plot/warp/position
 tag @s remove pr.plot_warp
+
+
+
+scoreboard players add #x pr.value 32768
+scoreboard players add #z pr.value 32768
+scoreboard players operation #x pr.value %= #65536 pr.value
+scoreboard players operation #z pr.value %= #65536 pr.value
+scoreboard players remove #x pr.value 32768
+scoreboard players remove #z pr.value 32768
+scoreboard players operation #x pr.value /= #96 pr.value
+scoreboard players operation #z pr.value /= #96 pr.value
+
+scoreboard players operation #math_x pr.value = #x pr.value
+scoreboard players add #math_x pr.value 16
+scoreboard players operation #math_z pr.value = #z pr.value
+scoreboard players add #math_z pr.value 16
+scoreboard players operation #math_z pr.value *= #64 pr.value
+
+scoreboard players operation #plot pr.value = #math_x pr.value
+scoreboard players operation #plot pr.value += #math_z pr.value
+
+scoreboard players set @s pr.plot_previous -1
+scoreboard players operation @s pr.plot = #plot pr.value
+scoreboard players operation @s pr.plot_x = #x pr.value
+scoreboard players operation @s pr.plot_z = #z pr.value
+
+execute if score #lobby pr.value matches 1 run function pr:plot/enter
+execute if score #lobby pr.value matches 1 run function pr:player/checkpoint/send_to
+
+
 
 execute if score #lobby pr.value matches 0 run tellraw @s {"text":"You've been warped to the lobby","color":"gold"}
 execute if score #lobby pr.value matches 1 run tellraw @s {"text":"You've been warped to the plot","color":"gold"}

@@ -22,6 +22,6 @@ scoreboard players operation #math_z pr.value *= #64 pr.value
 scoreboard players operation #plot pr.value = #math_x pr.value
 scoreboard players operation #plot pr.value += #math_z pr.value
 
-tellraw @s [{"text":"You are in plot: ","color":"green"},{"score":{"name":"#x","objective":"pr.value"},"color":"gold"},{"text":", ","color":"gold"},{"score":{"name":"#z","objective":"pr.value"},"color":"gold"},{"text":", ID: ","color":"green"},{"score":{"name":"#plot","objective":"pr.value"},"color":"gold"}]
+tellraw @s[scores={coords=1..}] [{"text":"You are in plot: ","color":"green"},{"score":{"name":"#x","objective":"pr.value"},"color":"gold"},{"text":", ","color":"gold"},{"score":{"name":"#z","objective":"pr.value"},"color":"gold"},{"text":", ID: ","color":"green"},{"score":{"name":"#plot","objective":"pr.value"},"color":"gold"}]
 
 scoreboard players set @s coords 0

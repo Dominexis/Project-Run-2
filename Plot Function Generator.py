@@ -224,7 +224,7 @@ for coordinate in coordinates:
         side = f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run scoreboard players set @s pr.checkpoint_side -1'
 
     commands.append(
-        f'{comment}execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run function {namespace}:enter\n' +
+        f'{comment}execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} unless score @s plot matches 1.. run function {namespace}:enter\n' +
         f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} run scoreboard players set @s pr.checkpoint_y {"-4" if coordinate == (-1, 0) else checkpoint_y}\n' +
         side
     )
@@ -233,7 +233,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "enter.mcfunction"
     file.write(
         "# Execute enter functions\n\n" +
         "\n\n\n".join(commands) +
-        "\n\n\n\ntag @s add pr.target"
+        "\n\n\n\nexecute unless score @s plot matches 1.. run tag @s add pr.target"
     )
 
 
