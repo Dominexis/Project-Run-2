@@ -8,6 +8,7 @@ scoreboard objectives add jpmagic.jpkey dummy
 summon marker ~-4 ~-51 ~20 {Tags:["jpmagic.key_marker"]}
 summon marker ~-4 ~-47 ~21 {Tags:["death"]}
 summon marker ~-5 ~-52 ~23 {Tags:["jp_key_marker"]}
+summon marker ~-31 ~-60 ~34 {Tags:["LootGoblin"]}
 
 
 
