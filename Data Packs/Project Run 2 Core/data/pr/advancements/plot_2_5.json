@@ -7,7 +7,7 @@
         "title": [
             [
                 {
-                    "text": "Section 2, 5",
+                    "text": "Ancient Apparatus",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "task",
         "description": [
             {
-                "text": "Complete this section.",
+                "text": "Throw cogs like a maniac!\n\n§6KelloVerra",
                 "color": "green"
             }
         ],
