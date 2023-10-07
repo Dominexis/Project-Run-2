@@ -69,11 +69,14 @@ execute as @a[scores={plot=1..}] at @s run function pr:player/plot/warp/main
 execute as @a[scores={relative=1..}] at @s run function pr:player/relative
 execute as @a[scores={night_vision=1..}] at @s run function pr:player/night_vision
 
+execute as @a[team=pr.spectator] unless score @s pr.plot = #spawn_plot pr.value run function pr:player/spawn_plot
+
 execute as @a unless score @s pr.plot = @s pr.plot_previous if score @s pr.plot = #spawn_plot pr.value at @s run function pr:player/plot/move
 
 execute as @a if score @s pr.plot = #spawn_plot pr.value run scoreboard players set @s pr.time 0
-execute as @a unless score @s pr.plot = #spawn_plot pr.value run function pr:player/time/tick
+execute as @a[team=pr.player] unless score @s pr.plot = #spawn_plot pr.value run function pr:player/time/tick
 scoreboard players operation #previous_time pr.value = #time pr.value
+scoreboard players set @a[team=pr.spectator] pr.time 0
 
 effect give @a saturation infinite 0 true
 

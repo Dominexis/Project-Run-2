@@ -1,13 +1,3 @@
-# Reset plot score
-
-scoreboard players set @s plot 0
-
-
-
-
-
-
-
 # Get coordinates
 
 data modify storage pr:data tag.Pos set from entity @s Pos
@@ -121,3 +111,13 @@ execute if score #lobby pr.value matches 1 run function pr:player/checkpoint/sen
 
 execute if score #lobby pr.value matches 0 run tellraw @s {"text":"You've been warped to the lobby","color":"gold"}
 execute if score #lobby pr.value matches 1 run tellraw @s {"text":"You've been warped to the plot","color":"gold"}
+
+
+
+
+
+
+
+# Reset plot score
+
+scoreboard players set @s plot 0
