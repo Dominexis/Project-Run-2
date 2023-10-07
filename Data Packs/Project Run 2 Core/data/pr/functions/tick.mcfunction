@@ -60,6 +60,8 @@ execute as @a[tag=pr.plate_checkpoint_cooldown] at @s unless block ~ ~ ~ light_w
 execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s lobby 1
 execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s checkpoint 0
 
+execute as @a[team=] run trigger spectate
+
 execute as @a[scores={lobby=1..}] run function pr:player/checkpoint/lobby
 execute as @a[scores={spectate=1..}] run function pr:player/spectate
 execute as @a[scores={checkpoint=1..}] run function pr:player/checkpoint/send_to

@@ -6,4 +6,4 @@ tellraw @s {"color":"gray","text":"<Master Panda> Choose your path and venture f
 tellraw @s {"bold":"true","color":"dark_gray","text":"Created by ShadowCreeperr!"}
 execute at @s run playsound minecraft:entity.panda.ambient master @a ~ ~ ~
 tag @s add panda
-tag @s add pr.plate_checkpoint
+tag @s add pr.self_checkpoint
