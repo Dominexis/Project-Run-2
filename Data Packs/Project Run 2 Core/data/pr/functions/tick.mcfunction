@@ -137,6 +137,17 @@ execute if score #door_timer pr.value matches 1.. run function pr:door/tick
 
 
 
+# Send tips
+
+scoreboard players add #tip_timer pr.value 1
+execute if score #tip_timer pr.value matches 2400.. run function pr:tip
+
+
+
+
+
+
+
 # Compute MSPT
 
 function pr:time/get
