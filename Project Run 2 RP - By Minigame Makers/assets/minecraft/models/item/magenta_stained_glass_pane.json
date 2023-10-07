@@ -1,0 +1,512 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "minecraft:block/magenta_stained_glass"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 351901
+            },
+            "model": "kello:item/aimed/large_gear"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351902
+            },
+            "model": "kello:item/aimed/large_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351903
+            },
+            "model": "kello:item/aimed/small_gear"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351904
+            },
+            "model": "kello:item/aimed/small_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351905
+            },
+            "model": "kello:item/interactable/large_cogwheel"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351906
+            },
+            "model": "kello:item/interactable/small_cogwheel"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351907
+            },
+            "model": "kello:item/mechanic/chain"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351908
+            },
+            "model": "kello:item/mechanic/double_overhang"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351909
+            },
+            "model": "kello:item/mechanic/log/slice_0_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351910
+            },
+            "model": "kello:item/mechanic/log/slice_0_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351911
+            },
+            "model": "kello:item/mechanic/log/slice_0_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351912
+            },
+            "model": "kello:item/mechanic/planks/slice_0_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351913
+            },
+            "model": "kello:item/mechanic/planks/slice_0_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351914
+            },
+            "model": "kello:item/mechanic/planks/slice_0_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351915
+            },
+            "model": "kello:item/mechanic/planks/slice_1_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351916
+            },
+            "model": "kello:item/mechanic/planks/slice_1_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351917
+            },
+            "model": "kello:item/mechanic/planks/slice_1_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351918
+            },
+            "model": "kello:item/mechanic/planks/slice_2_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351919
+            },
+            "model": "kello:item/mechanic/planks/slice_2_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351920
+            },
+            "model": "kello:item/mechanic/planks/slice_2_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351921
+            },
+            "model": "kello:item/mechanic/single_overhang"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351922
+            },
+            "model": "kello:item/mechanic/triple_overhang"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351923
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_16"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351924
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351925
+            },
+            "model": "kello:item/visual/groundicator_sequence/base"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351926
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351927
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351928
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_10"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351929
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_11"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351930
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_12"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351931
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_13"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351932
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_14"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351933
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351934
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351935
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_4"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351936
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_5"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351937
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_6"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351938
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_7"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351939
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_8"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351940
+            },
+            "model": "kello:item/visual/groundicator_sequence/frame_9"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351941
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_15"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351942
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351943
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_10"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351944
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_11"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351945
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_12"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351946
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_13"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351947
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_14"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351948
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351949
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351950
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_4"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351951
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_5"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351952
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_6"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351953
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_7"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351954
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_8"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351955
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_9"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351956
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_17"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351957
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_18"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351958
+            },
+            "model": "kello:item/visual/areindicator_sequence/frame_19"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351959
+            },
+            "model": "kello:item/visual/areindicator_sequence/invis"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351960
+            },
+            "model": "kello:item/visual/groundicator_sequence/invis"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351961
+            },
+            "model": "kello:item/debug/sound"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351962
+            },
+            "model": "kello:item/debug/contrapt_mark"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351963
+            },
+            "model": "kello:item/debug/parkour_mark"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351964
+            },
+            "model": "kello:item/visual/halo"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351965
+            },
+            "model": "kello:item/visual/occluder"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351966
+            },
+            "model": "kello:item/debug/optional_contrapt_mark"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351967
+            },
+            "model": "kello:item/environment/small_shaft/chunk_1/small_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351968
+            },
+            "model": "kello:item/environment/small_shaft/chunk_2/small_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351969
+            },
+            "model": "kello:item/environment/small_shaft/chunk_3/small_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351970
+            },
+            "model": "kello:item/environment/small_shaft/chunk_4/small_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351971
+            },
+            "model": "kello:item/environment/large_shaft/chunk_1/large_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351972
+            },
+            "model": "kello:item/environment/large_shaft/chunk_2/large_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351973
+            },
+            "model": "kello:item/environment/large_shaft/chunk_3/large_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351974
+            },
+            "model": "kello:item/environment/large_shaft/chunk_4/large_shaft"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351975
+            },
+            "model": "kello:item/environment/large_shaft/chunk_1/large1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351976
+            },
+            "model": "kello:item/environment/large_shaft/chunk_2/large1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351977
+            },
+            "model": "kello:item/environment/large_shaft/chunk_3/large1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351978
+            },
+            "model": "kello:item/environment/large_shaft/chunk_4/large1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351979
+            },
+            "model": "kello:item/environment/small_shaft/chunk_1/small1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351980
+            },
+            "model": "kello:item/environment/small_shaft/chunk_2/small1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351981
+            },
+            "model": "kello:item/environment/small_shaft/chunk_3/small1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351982
+            },
+            "model": "kello:item/environment/small_shaft/chunk_4/small1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351983
+            },
+            "model": "item/animated_java_empty"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351984
+            },
+            "model": "kello:item/debug/load_mark"
+        }
+	]
+}

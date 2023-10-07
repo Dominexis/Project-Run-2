@@ -1,0 +1,93 @@
+{
+	"textures": {
+		"4": "kello:item/decal/checkpoint_flag/dead"
+	},
+	"elements": [
+		{
+			"from": [
+				2.5,
+				0,
+				7.9
+			],
+			"to": [
+				8.5,
+				16,
+				8.1
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					9.5,
+					-12,
+					8
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						1.25,
+						3.5
+					],
+					"texture": "#4"
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						0.25,
+						3
+					],
+					"texture": "#4"
+				},
+				"south": {
+					"uv": [
+						1.25,
+						0,
+						0,
+						3.5
+					],
+					"texture": "#4"
+				},
+				"west": {
+					"uv": [
+						1,
+						0,
+						1.25,
+						3
+					],
+					"texture": "#4"
+				},
+				"up": {
+					"uv": [
+						1.25,
+						0,
+						0,
+						0.25
+					],
+					"texture": "#4"
+				},
+				"down": {
+					"uv": [
+						1.25,
+						2.75,
+						0,
+						3
+					],
+					"texture": "#4"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

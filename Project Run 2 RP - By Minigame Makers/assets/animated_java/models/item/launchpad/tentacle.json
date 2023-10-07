@@ -1,0 +1,93 @@
+{
+	"textures": {
+		"7": "kello:item/decal/launchpad/tentacle"
+	},
+	"elements": [
+		{
+			"from": [
+				8,
+				8.2,
+				7.199999999999999
+			],
+			"to": [
+				8,
+				29.2,
+				19.200000000000003
+			],
+			"rotation": {
+				"angle": 45,
+				"axis": "x",
+				"origin": [
+					8,
+					14.4,
+					9.4
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						0,
+						7
+					],
+					"texture": "#7"
+				},
+				"east": {
+					"uv": [
+						3,
+						4.75,
+						0,
+						10
+					],
+					"texture": "#7"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						0,
+						7
+					],
+					"texture": "#7"
+				},
+				"west": {
+					"uv": [
+						0,
+						4.75,
+						3,
+						10
+					],
+					"texture": "#7"
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						0,
+						3
+					],
+					"texture": "#7"
+				},
+				"down": {
+					"uv": [
+						0,
+						0,
+						0,
+						3
+					],
+					"texture": "#7"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

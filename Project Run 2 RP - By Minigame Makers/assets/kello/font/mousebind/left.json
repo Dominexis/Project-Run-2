@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "kello:font/mousebind/left.png",
+            "ascent": 8,
+            "height": 9,
+            "chars": [
+                "\ue001","\ue002"
+            ]
+        }
+    ]
+}

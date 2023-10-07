@@ -1,0 +1,20 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "minecraft:item/diamond_horse_armor"
+	},
+	"overrides": [
+		{
+            "predicate": {
+                "custom_model_data": 351901
+            },
+            "model": "kello:item/interactable/small_cogwheel"
+		},
+		{
+            "predicate": {
+                "custom_model_data": 351902
+            },
+            "model": "kello:item/interactable/large_cogwheel"
+		}
+	]
+}

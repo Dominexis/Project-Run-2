@@ -1,0 +1,35 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "kello:item/visual/meteorspawn_pillar/5"
+	},
+	"elements": [
+		{
+			"from": [6.50102, 6.22625, -15.95557],
+			"to": [9.77375, 9.49898, 8.04443],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.13738, 8.04443, 7.31716]},
+			"faces": {
+				"east": {"uv": [0, 16, 0.33333, 0], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0, 16, 0.33333, 0], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"up": {"uv": [0, 16, 0.33333, 0], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 16, 0.33333, 0], "rotation": 180, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [9.77375, 9.49898, 8.04443],
+			"to": [6.50102, 6.22625, -15.95557],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8.13738, 8.04443, 7.31716]},
+			"faces": {
+				"east": {"uv": [0.33333, 16, 0, 0], "rotation": 270, "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0.33333, 16, 0, 0], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"up": {"uv": [0.33333, 16, 0, 0], "rotation": 180, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0.33333, 16, 0, 0], "texture": "#0", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

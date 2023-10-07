@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "kello:item/aimed/indic_idle.png",
+            "ascent": 5,
+            "height": 16,
+            "chars": ["\ue000","\ue001"]
+        }
+    ]
+}

@@ -1,0 +1,1215 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "minecraft:item/leather_chestplate"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "animated_java:item/melloflora_lantern/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "animated_java:item/melloflora_lantern/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "animated_java:item/melloflora_lantern_med/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "animated_java:item/melloflora_lantern_med/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "animated_java:item/melloflora_lantern_med/blue/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 7
+			},
+			"model": "animated_java:item/melloflora_lantern_med/blue/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 8
+			},
+			"model": "animated_java:item/melloflora_lantern_med/bud/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 9
+			},
+			"model": "animated_java:item/melloflora_lantern_med/bud/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 10
+			},
+			"model": "animated_java:item/melloflora_lantern_med/magenta/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 11
+			},
+			"model": "animated_java:item/melloflora_lantern_med/magenta/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 12
+			},
+			"model": "animated_java:item/melloflora_lantern_sho/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 13
+			},
+			"model": "animated_java:item/melloflora_lantern_sho/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 14
+			},
+			"model": "animated_java:item/melloflora_lantern_sho/blue/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 15
+			},
+			"model": "animated_java:item/melloflora_lantern_sho/blue/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 16
+			},
+			"model": "animated_java:item/melloflora_lantern_sho/magenta/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 17
+			},
+			"model": "animated_java:item/melloflora_lantern_sho/magenta/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 18
+			},
+			"model": "animated_java:item/melloflora_lantern_sho/turquoise/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 19
+			},
+			"model": "animated_java:item/melloflora_lantern_sho/turquoise/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 20
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 21
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 22
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/blue/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 23
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/blue/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 24
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/bud/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 25
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/bud/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 26
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/magenta/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 27
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/magenta/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 28
+			},
+			"model": "animated_java:item/melloflora_lantern_med/turquoise/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 29
+			},
+			"model": "animated_java:item/melloflora_lantern_med/turquoise/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 30
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/turquoise/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 31
+			},
+			"model": "animated_java:item/melloflora_lantern_lar/turquoise/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 32
+			},
+			"model": "animated_java:item/melloflora_display/petal8"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 33
+			},
+			"model": "animated_java:item/melloflora_display/petal10"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 34
+			},
+			"model": "animated_java:item/melloflora_display/petal9"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 35
+			},
+			"model": "animated_java:item/melloflora_display/petal7"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 36
+			},
+			"model": "animated_java:item/melloflora_display/petal6"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 37
+			},
+			"model": "animated_java:item/melloflora_display/petal5"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 38
+			},
+			"model": "animated_java:item/melloflora_display/petal3"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 39
+			},
+			"model": "animated_java:item/melloflora_display/petal2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 40
+			},
+			"model": "animated_java:item/melloflora_display/petal"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 41
+			},
+			"model": "animated_java:item/melloflora_display/petal4"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 42
+			},
+			"model": "animated_java:item/wall_mellolily/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 43
+			},
+			"model": "animated_java:item/cogwheel/small_cog"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 44
+			},
+			"model": "animated_java:item/cogwheel/large_cog"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 45
+			},
+			"model": "animated_java:item/cogwheel/air/small_cog"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 46
+			},
+			"model": "animated_java:item/cogwheel/air/large_cog"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 47
+			},
+			"model": "animated_java:item/cogwheel/large/small_cog"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 48
+			},
+			"model": "animated_java:item/cogwheel/large/large_cog"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 49
+			},
+			"model": "animated_java:item/cogwheel/small/small_cog"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 50
+			},
+			"model": "animated_java:item/cogwheel/small/large_cog"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 51
+			},
+			"model": "animated_java:item/wall_mellolily_small/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 52
+			},
+			"model": "animated_java:item/wall_mellolily_medium/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 53
+			},
+			"model": "animated_java:item/wall_mellolily_pot_small/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 54
+			},
+			"model": "animated_java:item/wall_mellolily_pot_0/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 55
+			},
+			"model": "animated_java:item/wall_mellolily_large/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 56
+			},
+			"model": "animated_java:item/wall_mellolily_pot_1/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 57
+			},
+			"model": "animated_java:item/melloleta_patch/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 58
+			},
+			"model": "animated_java:item/mellorainn_cluster/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 59
+			},
+			"model": "animated_java:item/comet_flake/tail"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 60
+			},
+			"model": "animated_java:item/comet_flake/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 61
+			},
+			"model": "animated_java:item/falling_platform/extra"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 62
+			},
+			"model": "animated_java:item/falling_platform/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 63
+			},
+			"model": "animated_java:item/falling_platform/air/extra"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 64
+			},
+			"model": "animated_java:item/falling_platform/air/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 65
+			},
+			"model": "animated_java:item/falling_platform/chapter_1_0/extra"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 66
+			},
+			"model": "animated_java:item/falling_platform/chapter_1_0/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 67
+			},
+			"model": "animated_java:item/falling_platform/chapter_1_1/extra"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 68
+			},
+			"model": "animated_java:item/falling_platform/chapter_1_1/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 69
+			},
+			"model": "animated_java:item/moving_platform/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 70
+			},
+			"model": "animated_java:item/moving_platform/fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 71
+			},
+			"model": "animated_java:item/moving_platform/slow/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 72
+			},
+			"model": "animated_java:item/moving_platform/static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 73
+			},
+			"model": "animated_java:item/comet_flake/large/tail"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 74
+			},
+			"model": "animated_java:item/comet_flake/large/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 75
+			},
+			"model": "animated_java:item/comet_flake/large1/tail"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 76
+			},
+			"model": "animated_java:item/comet_flake/large1/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 77
+			},
+			"model": "animated_java:item/comet_flake/medium/tail"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 78
+			},
+			"model": "animated_java:item/comet_flake/medium/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 79
+			},
+			"model": "animated_java:item/dangling_platform/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 80
+			},
+			"model": "animated_java:item/dangling_platform/fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 81
+			},
+			"model": "animated_java:item/dangling_platform/slow/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 82
+			},
+			"model": "animated_java:item/dangling_platform/static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 83
+			},
+			"model": "animated_java:item/animwheel/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 84
+			},
+			"model": "animated_java:item/animwheel/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 85
+			},
+			"model": "animated_java:item/animwheel/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 86
+			},
+			"model": "animated_java:item/animwheel/diflyfan/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 87
+			},
+			"model": "animated_java:item/animwheel/diflyfan/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 88
+			},
+			"model": "animated_java:item/animwheel/diflyfan/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 89
+			},
+			"model": "animated_java:item/animwheel/diflyfan1/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 90
+			},
+			"model": "animated_java:item/animwheel/diflyfan1/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 91
+			},
+			"model": "animated_java:item/animwheel/diflyfan1/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 92
+			},
+			"model": "animated_java:item/animwheel/diflyfan2/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 93
+			},
+			"model": "animated_java:item/animwheel/diflyfan2/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 94
+			},
+			"model": "animated_java:item/animwheel/diflyfan2/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 95
+			},
+			"model": "animated_java:item/animwheel/flyfan/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 96
+			},
+			"model": "animated_java:item/animwheel/flyfan/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 97
+			},
+			"model": "animated_java:item/animwheel/flyfan/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 98
+			},
+			"model": "animated_java:item/animwheel/flyfan1/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 99
+			},
+			"model": "animated_java:item/animwheel/flyfan1/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 100
+			},
+			"model": "animated_java:item/animwheel/flyfan1/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 101
+			},
+			"model": "animated_java:item/animwheel/flyfan2/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 102
+			},
+			"model": "animated_java:item/animwheel/flyfan2/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 103
+			},
+			"model": "animated_java:item/animwheel/flyfan2/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 104
+			},
+			"model": "animated_java:item/animwheel/gear_0_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 105
+			},
+			"model": "animated_java:item/animwheel/gear_0_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 106
+			},
+			"model": "animated_java:item/animwheel/gear_0_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 107
+			},
+			"model": "animated_java:item/animwheel/gear_0_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 108
+			},
+			"model": "animated_java:item/animwheel/gear_0_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 109
+			},
+			"model": "animated_java:item/animwheel/gear_0_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 110
+			},
+			"model": "animated_java:item/animwheel/gear_1_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 111
+			},
+			"model": "animated_java:item/animwheel/gear_1_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 112
+			},
+			"model": "animated_java:item/animwheel/gear_1_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 113
+			},
+			"model": "animated_java:item/animwheel/gear_1_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 114
+			},
+			"model": "animated_java:item/animwheel/gear_1_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 115
+			},
+			"model": "animated_java:item/animwheel/gear_1_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 116
+			},
+			"model": "animated_java:item/animwheel/gear_2_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 117
+			},
+			"model": "animated_java:item/animwheel/gear_2_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 118
+			},
+			"model": "animated_java:item/animwheel/gear_2_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 119
+			},
+			"model": "animated_java:item/animwheel/gear_2_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 120
+			},
+			"model": "animated_java:item/animwheel/gear_2_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 121
+			},
+			"model": "animated_java:item/animwheel/gear_2_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 122
+			},
+			"model": "animated_java:item/animwheel/gear_3_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 123
+			},
+			"model": "animated_java:item/animwheel/gear_3_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 124
+			},
+			"model": "animated_java:item/animwheel/gear_3_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 125
+			},
+			"model": "animated_java:item/animwheel/gear_3_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 126
+			},
+			"model": "animated_java:item/animwheel/gear_3_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 127
+			},
+			"model": "animated_java:item/animwheel/gear_3_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 128
+			},
+			"model": "animated_java:item/animwheel/gear_4_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 129
+			},
+			"model": "animated_java:item/animwheel/gear_4_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 130
+			},
+			"model": "animated_java:item/animwheel/gear_4_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 131
+			},
+			"model": "animated_java:item/animwheel/gear_4_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 132
+			},
+			"model": "animated_java:item/animwheel/gear_4_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 133
+			},
+			"model": "animated_java:item/animwheel/gear_4_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 134
+			},
+			"model": "animated_java:item/animwheel/gear_5_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 135
+			},
+			"model": "animated_java:item/animwheel/gear_5_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 136
+			},
+			"model": "animated_java:item/animwheel/gear_5_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 137
+			},
+			"model": "animated_java:item/animwheel/gear_5_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 138
+			},
+			"model": "animated_java:item/animwheel/gear_5_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 139
+			},
+			"model": "animated_java:item/animwheel/gear_5_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 140
+			},
+			"model": "animated_java:item/animwheel/gear_6_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 141
+			},
+			"model": "animated_java:item/animwheel/gear_6_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 142
+			},
+			"model": "animated_java:item/animwheel/gear_6_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 143
+			},
+			"model": "animated_java:item/animwheel/gear_6_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 144
+			},
+			"model": "animated_java:item/animwheel/gear_6_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 145
+			},
+			"model": "animated_java:item/animwheel/gear_6_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 146
+			},
+			"model": "animated_java:item/animwheel/gear_7_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 147
+			},
+			"model": "animated_java:item/animwheel/gear_7_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 148
+			},
+			"model": "animated_java:item/animwheel/gear_7_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 149
+			},
+			"model": "animated_java:item/animwheel/gear_7_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 150
+			},
+			"model": "animated_java:item/animwheel/gear_7_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 151
+			},
+			"model": "animated_java:item/animwheel/gear_7_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 152
+			},
+			"model": "animated_java:item/animwheel/gear_8_fast/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 153
+			},
+			"model": "animated_java:item/animwheel/gear_8_fast/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 154
+			},
+			"model": "animated_java:item/animwheel/gear_8_fast/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 155
+			},
+			"model": "animated_java:item/animwheel/gear_8_static/flyfan_primary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 156
+			},
+			"model": "animated_java:item/animwheel/gear_8_static/flyfan_secondary"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 157
+			},
+			"model": "animated_java:item/animwheel/gear_8_static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 158
+			},
+			"model": "animated_java:item/comet_flake/small/tail"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 159
+			},
+			"model": "animated_java:item/comet_flake/small/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 160
+			},
+			"model": "animated_java:item/melloleta_patch_singular/root"
+		}
+	],
+	"animated_java": {
+		"rigs": {
+			"melloflora_lantern": {
+				"used_ids": [
+					2,
+					3
+				]
+			},
+			"melloflora_lantern_med": {
+				"used_ids": [
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					28,
+					29
+				]
+			},
+			"melloflora_lantern_sho": {
+				"used_ids": [
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19
+				]
+			},
+			"melloflora_lantern_lar": {
+				"used_ids": [
+					20,
+					21,
+					22,
+					23,
+					24,
+					25,
+					26,
+					27,
+					30,
+					31
+				]
+			},
+			"melloflora_display": {
+				"used_ids": [
+					32,
+					33,
+					34,
+					35,
+					36,
+					37,
+					38,
+					39,
+					40,
+					41
+				]
+			},
+			"wall_mellolily": {
+				"used_ids": [
+					42
+				]
+			},
+			"cogwheel": {
+				"used_ids": [
+					43,
+					44,
+					45,
+					46,
+					47,
+					48,
+					49,
+					50
+				]
+			},
+			"wall_mellolily_small": {
+				"used_ids": [
+					51
+				]
+			},
+			"wall_mellolily_medium": {
+				"used_ids": [
+					52
+				]
+			},
+			"wall_mellolily_pot_small": {
+				"used_ids": [
+					53
+				]
+			},
+			"wall_mellolily_pot_0": {
+				"used_ids": [
+					54
+				]
+			},
+			"wall_mellolily_large": {
+				"used_ids": [
+					55
+				]
+			},
+			"wall_mellolily_pot_1": {
+				"used_ids": [
+					56
+				]
+			},
+			"melloleta_patch": {
+				"used_ids": [
+					57
+				]
+			},
+			"mellorainn_cluster": {
+				"used_ids": [
+					58
+				]
+			},
+			"comet_flake": {
+				"used_ids": [
+					59,
+					60,
+					73,
+					74,
+					75,
+					76,
+					77,
+					78,
+					158,
+					159
+				]
+			},
+			"falling_platform": {
+				"used_ids": [
+					61,
+					62,
+					63,
+					64,
+					65,
+					66,
+					67,
+					68
+				]
+			},
+			"moving_platform": {
+				"used_ids": [
+					69,
+					70,
+					71,
+					72
+				]
+			},
+			"dangling_platform": {
+				"used_ids": [
+					79,
+					80,
+					81,
+					82
+				]
+			},
+			"animwheel": {
+				"used_ids": [
+					83,
+					84,
+					85,
+					86,
+					87,
+					88,
+					89,
+					90,
+					91,
+					92,
+					93,
+					94,
+					95,
+					96,
+					97,
+					98,
+					99,
+					100,
+					101,
+					102,
+					103,
+					104,
+					105,
+					106,
+					107,
+					108,
+					109,
+					110,
+					111,
+					112,
+					113,
+					114,
+					115,
+					116,
+					117,
+					118,
+					119,
+					120,
+					121,
+					122,
+					123,
+					124,
+					125,
+					126,
+					127,
+					128,
+					129,
+					130,
+					131,
+					132,
+					133,
+					134,
+					135,
+					136,
+					137,
+					138,
+					139,
+					140,
+					141,
+					142,
+					143,
+					144,
+					145,
+					146,
+					147,
+					148,
+					149,
+					150,
+					151,
+					152,
+					153,
+					154,
+					155,
+					156,
+					157
+				]
+			},
+			"melloleta_patch_singular": {
+				"used_ids": [
+					160
+				]
+			}
+		}
+	}
+}

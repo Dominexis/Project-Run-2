@@ -1,0 +1,6 @@
+{
+	"parent": "kello:item/environment/mellobanner/0",
+	"textures": {
+		"0": "kello:item/decal/banner_2"
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"textures": {
+		"0": "kello:item/decal/escapement/escapement"
+	},
+	"elements": [
+		{
+			"from": [
+				9,
+				7,
+				8
+			],
+			"to": [
+				18,
+				15.000000000000002,
+				8
+			],
+			"rotation": {
+				"angle": -22.5,
+				"axis": "x",
+				"origin": [
+					10,
+					9,
+					8
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						16,
+						0,
+						13.75,
+						2.0000000000000004
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						13.75,
+						0,
+						16,
+						2.0000000000000004
+					],
+					"texture": "#0"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

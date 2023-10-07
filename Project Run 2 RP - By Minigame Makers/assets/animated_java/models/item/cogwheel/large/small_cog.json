@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:item/cogwheel/small_cog",
+	"textures": {
+		"2": "kello:item/trans"
+	}
+}

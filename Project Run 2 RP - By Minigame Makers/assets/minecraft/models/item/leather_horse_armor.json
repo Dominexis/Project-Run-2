@@ -1,0 +1,68 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/leather_horse_armor"
+  },
+  "overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 351901
+			},
+			"model": "kello:item/visual/launcher/dim"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351902
+			},
+			"model": "kello:item/visual/launcher/bright"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351903
+			},
+			"model": "kello:item/visual/escapement/dim"
+		},
+        {
+            "predicate": {
+                "custom_model_data": 351904
+            },
+            "model": "kello:item/mechanic/cloud/0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351905
+            },
+            "model": "kello:item/environment/billboard"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351906
+            },
+            "model": "kello:item/environment/billboard_0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351907
+            },
+            "model": "kello:item/environment/mellobanner/0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351908
+            },
+            "model": "kello:item/environment/mellobanner/1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351909
+            },
+            "model": "kello:item/environment/mellobanner/2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351910
+            },
+            "model": "kello:item/environment/billboard_music"
+        }
+	]
+}

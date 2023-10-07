@@ -1,0 +1,18 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "kello:font/black.png",
+            "ascent": 128,
+            "height": 256,
+            "chars": ["\uE000"]
+        },
+        {
+            "type": "bitmap",
+            "file": "kello:font/white.png",
+            "ascent": 128,
+            "height": 256,
+            "chars": ["\uE001"]
+        }
+    ]
+}

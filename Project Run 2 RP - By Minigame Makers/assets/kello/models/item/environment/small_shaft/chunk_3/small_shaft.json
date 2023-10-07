@@ -1,0 +1,6 @@
+{
+	"parent": "kello:item/environment/small_shaft/chunk_3/default",
+	"textures": {
+		"2": "kello:item/trans"
+	}
+}

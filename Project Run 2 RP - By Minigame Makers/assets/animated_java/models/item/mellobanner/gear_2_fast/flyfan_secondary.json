@@ -1,0 +1,15 @@
+{
+	"parent": "animated_java:item/mellobanner/flyfan_secondary",
+	"textures": {
+		"0": "kello:item/trans",
+		"7": "kello:item/trans",
+		"8": "kello:item/trans",
+		"9": "kello:item/decal/cogwheel_fast/2_f",
+		"10": "kello:item/trans",
+		"11": "kello:item/trans",
+		"12": "kello:item/trans",
+		"13": "kello:item/trans",
+		"14": "kello:item/trans",
+		"15": "kello:item/trans"
+	}
+}

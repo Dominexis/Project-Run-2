@@ -1,0 +1,6 @@
+{
+	"parent": "kello:item/visual/meteor_spawner/root",
+	"textures": {
+		"3": "kello:item/decal/melloteor_1"
+	}
+}

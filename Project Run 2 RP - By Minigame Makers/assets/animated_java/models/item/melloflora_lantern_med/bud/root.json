@@ -1,0 +1,10 @@
+{
+	"parent": "animated_java:item/melloflora_lantern_med/root",
+	"textures": {
+		"0": "kello:item/decal/melloflora_lantern_bud",
+		"1": "kello:item/decal/melloflora_loop_0",
+		"2": "kello:item/decal/melloflora_lantern_magenta",
+		"3": "kello:item/decal/melloflora_lantern_turquoise",
+		"4": "kello:item/decal/melloflora_lantern_bud"
+	}
+}

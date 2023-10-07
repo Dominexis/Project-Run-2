@@ -1,0 +1,12 @@
+{
+	"parent": "animated_java:item/decwheel/thrown_small_cog",
+	"textures": {
+		"1": "kello:item/trans",
+		"2": "kello:item/trans",
+		"3": "kello:item/trans",
+		"4": "kello:item/trans",
+		"6": "kello:item/decal/small_decwheel_3",
+		"7": "kello:item/trans",
+		"8": "kello:item/trans"
+	}
+}

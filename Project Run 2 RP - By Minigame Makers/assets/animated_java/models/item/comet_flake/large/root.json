@@ -1,0 +1,8 @@
+{
+	"parent": "animated_java:item/comet_flake/root",
+	"textures": {
+		"0": "kello:item/trans",
+		"1": "kello:item/trans",
+		"4": "kello:item/trans"
+	}
+}

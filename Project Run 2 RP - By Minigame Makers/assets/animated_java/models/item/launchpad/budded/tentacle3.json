@@ -1,0 +1,9 @@
+{
+	"parent": "animated_java:item/launchpad/tentacle3",
+	"textures": {
+		"3": "kello:item/trans",
+		"4": "kello:item/trans",
+		"5": "kello:item/trans",
+		"8": "kello:item/trans"
+	}
+}

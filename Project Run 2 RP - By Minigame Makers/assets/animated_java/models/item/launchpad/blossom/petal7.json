@@ -1,0 +1,7 @@
+{
+	"parent": "animated_java:item/launchpad/petal7",
+	"textures": {
+		"2": "kello:item/trans",
+		"8": "kello:item/trans"
+	}
+}

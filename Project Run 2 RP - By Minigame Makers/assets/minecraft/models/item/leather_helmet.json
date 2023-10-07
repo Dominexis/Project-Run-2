@@ -1,0 +1,213 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/leather_helmet",
+    "layer1": "minecraft:item/leather_helmet_overlay"
+  },
+  "overrides": [
+		{
+		  "model": "minecraft:item/leather_helmet_quartz_trim",
+		  "predicate": {
+			"trim_type": 0.1
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_iron_trim",
+		  "predicate": {
+			"trim_type": 0.2
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_netherite_trim",
+		  "predicate": {
+			"trim_type": 0.3
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_redstone_trim",
+		  "predicate": {
+			"trim_type": 0.4
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_copper_trim",
+		  "predicate": {
+			"trim_type": 0.5
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_gold_trim",
+		  "predicate": {
+			"trim_type": 0.6
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_emerald_trim",
+		  "predicate": {
+			"trim_type": 0.7
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_diamond_trim",
+		  "predicate": {
+			"trim_type": 0.8
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_lapis_trim",
+		  "predicate": {
+			"trim_type": 0.9
+		  }
+		},
+		{
+		  "model": "minecraft:item/leather_helmet_amethyst_trim",
+		  "predicate": {
+			"trim_type": 1.0
+		  }
+		},
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "kello:item/visual/halo"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "kello:item/mechanic/comet_spawner"
+		},
+        {
+            "predicate": {
+                "custom_model_data": 351903
+            },
+            "model": "kello:item/visual/meteor_spawner/bud"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351904
+            },
+            "model": "kello:item/visual/meteor_spawner/mid"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351905
+            },
+            "model": "kello:item/visual/meteor_spawner/bloom"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351906
+            },
+            "model": "kello:item/visual/meteor_spawner/boom/0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351907
+            },
+            "model": "kello:item/visual/meteor_spawner/boom/1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351908
+            },
+            "model": "kello:item/visual/meteor_spawner/boom/2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351909
+            },
+            "model": "kello:item/visual/meteor_spawner/boom/3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351910
+            },
+            "model": "kello:item/visual/meteor_spawner/boom/4"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351911
+            },
+            "model": "kello:item/visual/meteor_spawner/flash"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351912
+            },
+            "model": "kello:item/visual/attach/root_sequence/0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351913
+            },
+            "model": "kello:item/visual/attach/root_sequence/1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351914
+            },
+            "model": "kello:item/visual/attach/root_sequence/2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351915
+            },
+            "model": "kello:item/visual/attach/root_sequence/3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351916
+            },
+            "model": "kello:item/visual/attach/root_sequence/4"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351917
+            },
+            "model": "kello:item/visual/attach/root_sequence/5"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351918
+            },
+            "model": "kello:item/visual/attach/root_sequence/6"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351919
+            },
+            "model": "kello:item/visual/meteor_spawner/pillar_sequence/0"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351920
+            },
+            "model": "kello:item/visual/meteor_spawner/pillar_sequence/1"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351921
+            },
+            "model": "kello:item/visual/meteor_spawner/pillar_sequence/2"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351922
+            },
+            "model": "kello:item/visual/meteor_spawner/pillar_sequence/3"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351923
+            },
+            "model": "kello:item/visual/meteor_spawner/pillar_sequence/4"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 351924
+            },
+            "model": "kello:item/visual/occluder"
+        }
+	]
+}

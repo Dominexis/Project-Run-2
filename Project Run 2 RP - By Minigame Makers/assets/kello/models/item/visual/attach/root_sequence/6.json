@@ -1,0 +1,6 @@
+{
+    "parent": "kello:item/visual/attach/root",
+    "textures": {
+        "0": "kello:item/visual/attach/7"
+    }
+}

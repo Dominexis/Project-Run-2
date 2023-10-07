@@ -1,0 +1,107 @@
+{
+	"large_cogwheel_throw": {
+		"sounds": [
+			"kello:cogwheel_events/large/throw"
+		]
+	},
+	"large_cogwheel_recoil": {
+		"sounds": [
+			"kello:cogwheel_events/large/recoil"
+		]
+	},
+	"large_cogwheel_cooldown_finish": {
+		"sounds": [
+			"kello:cogwheel_events/large/cooldown_finish"
+		]
+	},
+	"large_cogwheel_attach": {
+		"sounds": [
+			"kello:cogwheel_events/large/attach"
+		]
+	},
+	"large_cogwheel_attach_parkour0": {
+		"sounds": [
+			"kello:cogwheel_events/large/attach_parkour_0"
+		]
+	},
+	"large_cogwheel_attach_parkour1": {
+		"sounds": [
+			"kello:cogwheel_events/large/attach_parkour_1"
+		]
+	},
+	"large_cogwheel_attach_parkour2": {
+		"sounds": [
+			"kello:cogwheel_events/large/attach_parkour_2"
+		]
+	},
+	"large_cogwheel_attach_parkour2_alt": {
+		"sounds": [
+			"kello:cogwheel_events/large/attach_parkour_2_alt"
+		]
+	},
+	"large_cogwheel_attach_launch": {
+		"sounds": [
+			"kello:cogwheel_events/large/attach_launch"
+		]
+	},
+	"large_cogwheel_attach_alt": {
+		"sounds": [
+			"kello:cogwheel_events/large/attach_alt"
+		]
+	},
+	"large_cogwheel_launch0": {
+		"sounds": [
+			"kello:cogwheel_events/large/launch_0"
+		]
+	},
+	"large_cogwheel_launch1": {
+		"sounds": [
+			"kello:cogwheel_events/large/launch_1"
+		]
+	},
+	"large_cogwheel_launch2": {
+		"sounds": [
+			"kello:cogwheel_events/large/launch_2"
+		]
+	},
+	"large_cogwheel_collect": {
+		"sounds": [
+			"kello:cogwheel_events/large/collect"
+		]
+	},
+	"music_intro": {
+		"sounds": [
+			{	"name":"kello:music/intro",	 "stream":true, "attenuation_distance":1	}
+		]
+	},
+	"music_melody": {
+		"sounds": [
+			{	"name":"kello:music/melody", "stream":true, "attenuation_distance":1	}
+		]
+	},
+	"music_final": {
+		"sounds": [
+			{	"name":"kello:music/final",	 "stream":true, "attenuation_distance":1	}
+		]
+	},
+	"music_outro": {
+		"sounds": [
+			{	"name":"kello:music/outro",	 "stream":true, "attenuation_distance":1	}
+		]
+	},
+	"transition_intro_melody": {
+		"sounds": [
+			{	"name":"kello:music/intro_trans_melody", "stream":true, "attenuation_distance":1	}
+		]
+	},
+	"transition_melody_final": {
+		"sounds": [
+			{	"name":"kello:music/melody_trans_final", "stream":true, "attenuation_distance":1	}
+		]
+	},
+	"transition_final_outro": {
+		"sounds": [
+			{	"name":"kello:music/final_trans_outro",	 "stream":true, "attenuation_distance":1	}
+		]
+	}
+}

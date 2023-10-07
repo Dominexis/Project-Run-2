@@ -1,0 +1,102 @@
+{
+	"textures": {
+		"2": "kello:item/decal/falling_platform/chapter_1/0"
+	},
+	"elements": [
+		{
+			"from": [
+				-0.2400000000000002,
+				-0.4800000000000004,
+				-0.2400000000000002
+			],
+			"to": [
+				16.240000000000002,
+				15.999999999999998,
+				16.240000000000002
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					8,
+					7.76,
+					8
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						8,
+						8,
+						0,
+						16
+					],
+					"rotation": 180,
+					"texture": "#2",
+					"tintindex": 0
+				},
+				"east": {
+					"uv": [
+						0,
+						0,
+						8,
+						8
+					],
+					"texture": "#2",
+					"tintindex": 0
+				},
+				"south": {
+					"uv": [
+						8,
+						0,
+						16,
+						8
+					],
+					"texture": "#2",
+					"tintindex": 0
+				},
+				"west": {
+					"uv": [
+						0,
+						8,
+						8,
+						16
+					],
+					"texture": "#2",
+					"tintindex": 0
+				},
+				"up": {
+					"uv": [
+						0,
+						0,
+						8,
+						8
+					],
+					"rotation": 90,
+					"texture": "#2",
+					"tintindex": 0
+				},
+				"down": {
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"rotation": 90,
+					"texture": "#2",
+					"tintindex": 0
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

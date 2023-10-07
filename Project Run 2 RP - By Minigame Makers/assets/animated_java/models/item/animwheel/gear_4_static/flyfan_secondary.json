@@ -1,0 +1,14 @@
+{
+	"parent": "animated_java:item/animwheel/flyfan_secondary",
+	"textures": {
+		"0": "kello:item/trans",
+		"7": "kello:item/trans",
+		"8": "kello:item/trans",
+		"9": "kello:item/trans",
+		"10": "kello:item/trans",
+		"12": "kello:item/trans",
+		"13": "kello:item/trans",
+		"14": "kello:item/trans",
+		"15": "kello:item/trans"
+	}
+}

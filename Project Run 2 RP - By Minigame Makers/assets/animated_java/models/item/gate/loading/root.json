@@ -1,0 +1,7 @@
+{
+	"parent": "animated_java:item/gate/root",
+	"textures": {
+		"0": "kello:item/decal/gate/loading",
+		"1": "kello:item/trans"
+	}
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "kello:item/visual/areindicator_sequence/base",
+    "textures": {
+        "1": "kello:item/decal/indic_area/13"
+    }
+}

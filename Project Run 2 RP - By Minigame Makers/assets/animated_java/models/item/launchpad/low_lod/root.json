@@ -1,0 +1,11 @@
+{
+	"parent": "animated_java:item/launchpad/root",
+	"textures": {
+		"0": "kello:item/trans",
+		"2": "kello:item/trans",
+		"3": "kello:item/trans",
+		"4": "kello:item/trans",
+		"5": "kello:item/trans",
+		"7": "kello:item/trans"
+	}
+}

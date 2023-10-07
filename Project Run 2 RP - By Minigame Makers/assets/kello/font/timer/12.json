@@ -1,0 +1,14 @@
+{
+	"providers":[
+		{
+			"type": "bitmap",
+			"file": "kello:font/generated_sequence/timer/12.png",
+			"ascent": 8,
+			"height": 16,
+			"chars": [
+				"\ue000",
+				"\ue001"
+			]
+		}
+	]
+}

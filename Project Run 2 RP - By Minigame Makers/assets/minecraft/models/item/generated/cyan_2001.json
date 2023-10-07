@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated/cube",
+    "textures": {
+        "all": "minecraft:item/generated/cyan_1"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "kello:item/visual/groundicator_sequence/base",
+    "textures": {
+        "0": "kello:item/decal/indic_ground/5"
+    }
+}

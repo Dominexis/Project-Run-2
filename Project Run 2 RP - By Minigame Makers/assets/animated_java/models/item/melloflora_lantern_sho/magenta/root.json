@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:item/melloflora_lantern_sho/root",
+	"textures": {
+		"0": "kello:item/decal/melloflora_lantern_magenta"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "kello:item/decal/billboard/logo_chp1",
+		"1": "kello:item/decal/billboard/logo_chp1_extra"
+	},
+	"elements": [
+		{
+			"from": [-1.3312, 8.72, 7.9514],
+			"to": [17.3312, 18.0512, 8.0486],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4.8896, 8.72, 8]},
+			"faces": {
+				"north": {"uv": [0.58333, 4.25, 15.33333, 11.75], "texture": "#0"},
+				"south": {"uv": [0.58333, 4.25, 15.33333, 11.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-1.84, 8.24, 7.76],
+			"to": [17.84, 8.72, 8.24],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.72, 8]},
+			"faces": {
+				"north": {"uv": [13, 0, 2.75, 0.25], "texture": "#1"},
+				"east": {"uv": [2.75, 1, 3, 1.25], "texture": "#1"},
+				"south": {"uv": [2.75, 0, 13, 0.25], "texture": "#1"},
+				"west": {"uv": [2.75, 1.25, 3, 1.5], "texture": "#1"},
+				"up": {"uv": [2.75, 0.25, 13, 0], "texture": "#1"},
+				"down": {"uv": [2.75, 0, 13, 0.25], "texture": "#1"}
+			}
+		},
+		{
+			"from": [14.72, 10.16, 7.712],
+			"to": [18.56, 14, 7.712],
+			"rotation": {"angle": -45, "axis": "z", "origin": [13.04, 9.92, 8]},
+			"faces": {
+				"north": {"uv": [5, 1, 3, 3], "texture": "#1"},
+				"south": {"uv": [3, 1, 5, 3], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-2.56, 10.16, 7.712],
+			"to": [1.28, 14, 7.712],
+			"rotation": {"angle": 45, "axis": "z", "origin": [2.96, 9.92, 8]},
+			"faces": {
+				"north": {"uv": [3, 1, 5, 3], "texture": "#1"},
+				"south": {"uv": [5, 1, 3, 3], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-4, 8.72, 8],
+			"to": [-1.36, 17.36, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.72, 8]},
+			"faces": {
+				"north": {"uv": [1.375, 0, 0, 4.5], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"south": {"uv": [0, 0, 1.375, 4.5], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 4.5], "texture": "#1"},
+				"up": {"uv": [1.375, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [1.375, 0, 0, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [17.36, 8.72, 8],
+			"to": [20, 17.36, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.72, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 1.375, 4.5], "texture": "#1"},
+				"south": {"uv": [1.375, 0, 0, 4.5], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

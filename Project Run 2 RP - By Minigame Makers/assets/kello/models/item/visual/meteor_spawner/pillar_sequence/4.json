@@ -1,0 +1,6 @@
+{
+    "parent": "kello:item/visual/meteor_spawner/pillar",
+    "textures": {
+        "0": "kello:item/visual/meteorspawn_pillar/5"
+    }
+}
