@@ -1,3 +1,0 @@
-execute if block ~ ~ ~ minecraft:stripped_jungle_log[axis=x] run data merge entity @s {block_state:{Name:"minecraft:stripped_jungle_log",Properties:{axis:"x"}}}
-execute if block ~ ~ ~ minecraft:stripped_jungle_log[axis=y] run data merge entity @s {block_state:{Name:"minecraft:stripped_jungle_log",Properties:{axis:"y"}}}
-execute if block ~ ~ ~ minecraft:stripped_jungle_log[axis=z] run data merge entity @s {block_state:{Name:"minecraft:stripped_jungle_log",Properties:{axis:"z"}}}

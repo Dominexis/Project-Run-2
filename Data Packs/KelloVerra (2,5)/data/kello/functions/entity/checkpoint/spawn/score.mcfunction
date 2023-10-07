@@ -1,5 +1,9 @@
 # Assign scores
 
+scoreboard players set @s kello.decal.active 1
+
+function kello:entity/decal/init
+
 scoreboard players operation @s kello.entity.id = #global kello.entity.id
 scoreboard players operation @s kello.entity.checkpoint.id = #global kello.entity.checkpoint.id
 execute if score #uninstantiate kello.value matches 1 run scoreboard players operation @s kello.entity.checkpoint.id = #init kello.entity.checkpoint.id

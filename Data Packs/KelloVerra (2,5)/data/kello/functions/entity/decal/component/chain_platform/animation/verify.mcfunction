@@ -1,2 +1,0 @@
-execute if entity @s[tag=kello.visual.cyan_log] run function kello:entity/decal/component/chain_platform/animation/cyan_log_sequence
-execute if entity @s[tag=kello.visual.yellow_log] run function kello:entity/decal/component/chain_platform/animation/yellow_log_sequence

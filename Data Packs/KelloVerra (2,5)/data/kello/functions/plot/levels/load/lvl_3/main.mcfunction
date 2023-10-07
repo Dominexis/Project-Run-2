@@ -34,7 +34,6 @@ scoreboard players set #init kello.decal.id 3
 scoreboard players set #uninstantiate kello.value 1
 scoreboard players set #halt_contraption_controller_checkpoint kello.value 1
 execute positioned ~-6 ~6 ~21 run function kello:entity/decal/contraption_controller/spawn_optional/main
-execute positioned ~-6 ~12 ~21 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.large_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[-90.0f,0.0f],data:{state:0,rot_mode:0}}
 execute positioned ~-6 ~10 ~22 align xyz positioned ~.25 ~.95 ~.95 summon marker run data merge entity @s {Tags:["kello.entity.type.animated_wheel","kello.has_delay","kello.decal.mech_spawn_point"],Rotation:[-90.0f,0.0f],data:{state:2,rot_mode:1,rot_speed:1,rundelay:8,invdelay:19,variant:8}}
 execute positioned ~-6 ~10 ~21 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.large_cogwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[-90.0f,0.0f],data:{state:1,rot_mode:1}}
 execute positioned ~-6 ~9 ~22 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[-90.0f,0.0f],data:{state:2,rot_mode:0}}
@@ -45,7 +44,6 @@ execute positioned ~-6 ~9 ~20 align xyz positioned ~.125 ~.75 ~.25 summon marker
 execute positioned ~-8 ~10 ~21 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.large_cogwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{state:1,rot_mode:0}}
 
 execute positioned ~-8 ~9 ~20 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],data:{state:2,rot_mode:1},Rotation:[90.0f,0.0f]}
-execute positioned ~-8 ~9 ~22 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],data:{state:2,rot_mode:1},Rotation:[90.0f,0.0f]}
 execute positioned ~-8 ~11 ~22 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],data:{state:0,rot_mode:1},Rotation:[90.0f,0.0f]}
 
 execute positioned ~-7.5 ~10.25 ~20.0 summon marker run data merge entity @s {Tags:["kello.entity.type.animated_wheel","kello.has_delay","kello.decal.mech_spawn_point"],data:{rundelay:19,invdelay:19,variant:3,state:1,rot_mode:1,rot_speed:0},Rotation:[-90.0f,0.0f]}
@@ -87,15 +85,17 @@ scoreboard players set #init kello.decal.id 4
 scoreboard players set #uninstantiate kello.value 1
 scoreboard players set #halt_contraption_controller_checkpoint kello.value 1
 execute positioned ~6 ~6 ~21 run function kello:entity/decal/contraption_controller/spawn_optional/main
-execute positioned ~6 ~13 ~22 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{state:2,rot_mode:1}}
-execute positioned ~6 ~13 ~20 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{state:2,rot_mode:1}}
 execute positioned ~6 ~12 ~21 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.large_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{state:2,rot_mode:0}}
 execute positioned ~6 ~10 ~21 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.large_cogwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{state:1,rot_mode:1}}
 execute positioned ~6 ~9 ~22 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{state:0,rot_mode:0}}
+execute positioned ~6.87 ~9.5 ~20.75 summon marker run data merge entity @s {Tags:["aj.animwheel.root","aj.rig_root","kello.entity.type.animated_wheel","kello.decal","kello.has_delay","kello.decal.mech_spawn_point","kello.entity","aj.animwheel.rig_entity","kello.entity.type.gear_5","kello.decal.type.animwheel","kello.decal.selected","pr.ignore"],data:{variant:5,rundelay:19,invdelay:11,state:0,rot_mode:0,rot_speed:1},Rotation:[-90.0f,0.0f]}
+execute positioned ~6.87 ~11.75 ~22.5 summon marker run data merge entity @s {Tags:["aj.animwheel.root","aj.rig_root","kello.entity.type.animated_wheel","kello.decal","kello.has_delay","kello.decal.mech_spawn_point","kello.entity.type.gear_8","kello.entity","aj.animwheel.rig_entity","kello.decal.type.animwheel","kello.decal.selected","pr.ignore"],data:{variant:8,rundelay:19,invdelay:11,state:1,rot_mode:1,rot_speed:1},Rotation:[-90.0f,0.0f]}
+execute positioned ~6.87 ~10.5 ~23.0 summon marker run data merge entity @s {Tags:["aj.animwheel.root","aj.rig_root","kello.entity.type.animated_wheel","kello.decal","kello.has_delay","kello.decal.mech_spawn_point","kello.entity","kello.entity.type.gear_3","aj.animwheel.rig_entity","kello.decal.type.animwheel","kello.decal.selected","pr.ignore"],data:{variant:3,rundelay:19,invdelay:11,state:1,rot_mode:0,rot_speed:1},Rotation:[-90.0f,0.0f]}
 
 execute positioned ~8 ~10 ~21 align xyz positioned ~.5 ~.5 ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.large_cogwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[-90.0f,0.0f],data:{state:1,rot_mode:0}}
 execute positioned ~7 ~1 ~21 align xyz positioned ~.5 ~ ~.5 summon marker run data merge entity @s {Tags:["kello.entity.type.gate","kello.decal.mech_spawn_point"],Rotation:[90.0f,0.0f],data:{variant:0}}
-
+execute positioned ~8.5 ~11.0 ~20.75 summon marker run data merge entity @s {Tags:["aj.animwheel.root","aj.rig_root","kello.entity.type.animated_wheel","kello.decal","kello.has_delay","kello.decal.mech_spawn_point","kello.entity","kello.entity.type.gear_3","aj.animwheel.rig_entity","kello.decal.type.animwheel","kello.decal.selected","pr.ignore"],data:{variant:3,rundelay:11,invdelay:19,state:2,rot_mode:1,rot_speed:1},Rotation:[90.0f,0.0f]}
+execute positioned ~8.5 ~9.0 ~22.75 summon marker run data merge entity @s {Tags:["aj.animwheel.root","aj.rig_root","kello.entity.type.animated_wheel","kello.decal","kello.has_delay","kello.decal.mech_spawn_point","kello.entity","aj.animwheel.rig_entity","kello.entity.type.gear_4","kello.decal.type.animwheel","kello.decal.selected","pr.ignore"],data:{variant:4,rundelay:19,invdelay:19,state:1,rot_mode:1,rot_speed:1},Rotation:[90.0f,0.0f]}
 
 scoreboard players operation #selected kello.decal.id = #init kello.decal.id
 scoreboard players set #spawn_persistent kello.value 1

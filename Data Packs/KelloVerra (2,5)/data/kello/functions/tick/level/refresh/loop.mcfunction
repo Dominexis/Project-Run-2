@@ -7,7 +7,9 @@ scoreboard players set #playercount kello.value 0
 
 # Get to the next entry
 
-execute store result score #level_id kello.value run data get storage kello:data tag.loaded_level.loop[0]
+execute store result score #level_id kello.value run data get storage kello:data tag.loaded_level.loop[0].id
+execute store result score #level_variant kello.value run data get storage kello:data tag.loaded_level.loop[0].variant
+
 
 
 

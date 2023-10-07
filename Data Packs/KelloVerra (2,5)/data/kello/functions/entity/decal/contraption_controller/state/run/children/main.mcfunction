@@ -13,13 +13,13 @@ execute if entity @s[tag=kello.decal.component] run function kello:entity/decal/
 
 # SFX sequence
 
-execute if entity @s[tag=kello.entity.type.soundsource] run function kello:entity/decal/contraption_controller/state/run/children/sfx/sequence
+# execute if entity @s[tag=kello.entity.type.soundsource] run function kello:entity/decal/contraption_controller/state/run/children/sfx/sequence
 
 
 
 # Cog
 
-execute if entity @s[tag=aj.decwheel.root] if score @s kello.decal.state matches 0.. run function kello:entity/decal/contraption_controller/state/run/children/cog
+# execute if entity @s[tag=aj.decwheel.root] if score @s kello.decal.state matches 0.. run function kello:entity/decal/contraption_controller/state/run/children/cog
 
 
 

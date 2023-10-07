@@ -12,9 +12,6 @@ scoreboard players remove #generator.iter kello.value 1
 # Iteration
 
 
-# execute summon item_display run data merge entity @s {Tags:["kello.hahalolol"],Rotation:[20.0f,20.0f]}
-# execute as @e[type=item_display,tag=kello.hahalolol] run function kello:debug/decal/util/spawn/verify/decals/process_decals
-
 scoreboard players operation #local kello.level.id = @s kello.level.id
 scoreboard players set #level_creation_mode kello.value 1
 

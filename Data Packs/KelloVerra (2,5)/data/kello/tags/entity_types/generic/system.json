@@ -7,6 +7,7 @@
         "minecraft:block_display",
         "minecraft:text_display",
         "minecraft:shulker",
-        "minecraft:pufferfish"
+        "minecraft:pufferfish",
+        "minecraft:item"
     ]
 }  

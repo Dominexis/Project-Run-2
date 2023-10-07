@@ -1,7 +1,7 @@
 # Assign scores
 
 scoreboard players operation @s kello.entity.id = #local kello.entity.id
-scoreboard players set @s kello.entity.lifetime 400
+scoreboard players set @s kello.entity.lifetime 1600
 scoreboard players add @s kello.entity.timer 0
 
 execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.level.id = #local kello.level.id

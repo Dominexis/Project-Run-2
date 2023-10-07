@@ -12,6 +12,7 @@ execute as @e[type=minecraft:item_display,tag=kello.entity.type.thrown_cogwheel,
 # Reset ID
 
 scoreboard players reset @s kello.player.id
+scoreboard players reset @s kello.player.checkpoint.id
 
 
 

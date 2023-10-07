@@ -12,7 +12,7 @@ execute if entity @s[tag=kello.decal.component] run function kello:entity/decal/
 
 # SFX sequence
 
-execute if entity @s[tag=kello.entity.type.soundsource] run function kello:entity/decal/contraption_controller/state/run/children/sfx/sequence
+# execute if entity @s[tag=kello.entity.type.soundsource] run function kello:entity/decal/contraption_controller/state/run/children/sfx/sequence
 
 
 

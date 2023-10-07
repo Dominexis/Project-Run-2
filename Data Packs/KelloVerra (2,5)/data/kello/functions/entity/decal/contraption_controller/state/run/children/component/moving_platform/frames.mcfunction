@@ -1,1 +1,1 @@
-execute if score #local kello.entity.timer matches 19 run tag @s add kello.state.force_move
+execute if score #local kello.entity.timer matches 17..19 run tag @s add kello.state.force_move

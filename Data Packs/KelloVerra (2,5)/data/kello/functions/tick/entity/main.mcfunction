@@ -1,5 +1,13 @@
 # Ticking
+
 execute if entity @s[tag=kello.entity.ticking] at @s run function kello:entity/process/init
+
+
+
+# Kill unknown dropped/duplicated item
+
+execute if entity @s[type=item] run kill
+
 
 
 # Cheap shaft fixing (i swear im out of this headache)

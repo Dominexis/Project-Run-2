@@ -1,1 +1,1 @@
-data merge storage kello:data {tag:{loaded_level:{list:[],refreshed_list:[],loop:[],id:0}}}
+data merge storage kello:data {tag:{loaded_level:{list:[],refreshed_list:[],loop:[],packet_template:{id:0,variant:0}}}}

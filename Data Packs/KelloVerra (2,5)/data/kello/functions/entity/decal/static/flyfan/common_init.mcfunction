@@ -20,9 +20,10 @@ tag @s remove kello.entity.target.new
 
 
 
-
 execute if score #rot_mode kello.value matches 0 if score #rot_speed kello.value matches 0 run function animated_java:animwheel/animations/minor_cw/play
 execute if score #rot_mode kello.value matches 0 if score #rot_speed kello.value matches 1 run function animated_java:animwheel/animations/minor_cw_f/play
 
 execute if score #rot_mode kello.value matches 1 if score #rot_speed kello.value matches 0 run function animated_java:animwheel/animations/minor_ccw/play
 execute if score #rot_mode kello.value matches 1 if score #rot_speed kello.value matches 1 run function animated_java:animwheel/animations/minor_ccw_f/play
+
+execute if score #rot_mode kello.value matches -1 run function kello:entity/decal/static/flyfan/static

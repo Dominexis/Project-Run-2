@@ -37,4 +37,4 @@ scoreboard objectives remove aj.decwheel.animation.clockwise_small_trn.loop_mode
 scoreboard objectives remove aj.decwheel.animation.counter_clockwise_small_trn.loop_mode
 scoreboard objectives remove aj.decwheel.animation.clockwise_large_trn.loop_mode
 scoreboard objectives remove aj.decwheel.animation.counter_clockwise_large_trn.loop_mode
-#tellraw @s ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The decwheel Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]
+tellraw @s ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The decwheel Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]

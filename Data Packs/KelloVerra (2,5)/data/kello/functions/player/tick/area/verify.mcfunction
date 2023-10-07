@@ -4,7 +4,8 @@ execute if entity @s[tag=!kello.player.has_triggered.entrance] positioned ~-2.25
 execute if score @s kello.player.coglected matches 0 positioned ~-1.25 ~5 ~-29.25 if entity @s[dx=2.5,dy=5,dz=2.5] run function kello:player/tick/area/coglect/large
 execute if entity @s[tag=!kello.player.has_triggered.lvl_2_start] positioned ~-1 ~1 ~-18 if entity @s[dx=2,dy=5,dz=2] run function kello:player/tick/area/lvl_2_start
 execute if entity @s[tag=!kello.player.has_triggered.lvl_2_mid] positioned ~-2 ~3 ~-8 if entity @s[dx=2,dy=5,dz=2] run function kello:player/tick/area/lvl_2_mid
-execute if entity @s[tag=!kello.player.has_triggered.lvl_3_lobby_start] positioned ~-1 ~1 ~16 if entity @s[dx=2,dy=7,dz=2] run function kello:player/tick/area/lvl_3_lobby_start
+execute if entity @s[tag=!kello.player.has_triggered.lvl_3_lobby_start_a] positioned ~10 ~1 ~20 if entity @s[dx=2,dy=7,dz=2] run function kello:player/tick/area/lvl_3_lobby_start_a
+execute if entity @s[tag=!kello.player.has_triggered.lvl_3_lobby_start_b] positioned ~-8 ~1 ~20 if entity @s[dx=2,dy=7,dz=2] run function kello:player/tick/area/lvl_3_lobby_start_b
 execute if entity @s[tag=!kello.player.has_triggered.lvl_4_pre] positioned ~-6 ~19 ~-34 if entity @s[dx=2,dy=8,dz=2] run function kello:player/tick/area/lvl_4_pre
 execute if entity @s[tag=!kello.player.has_triggered.lvl_4_pre] positioned ~4 ~19 ~-34 if entity @s[dx=2,dy=9,dz=2] run function kello:player/tick/area/lvl_4_pre
 execute if entity @s[tag=!kello.player.has_triggered.lvl_4_start] positioned ~-1 ~27 ~-35 if entity @s[dx=2,dy=5,dz=2] run function kello:player/tick/area/lvl_4_start

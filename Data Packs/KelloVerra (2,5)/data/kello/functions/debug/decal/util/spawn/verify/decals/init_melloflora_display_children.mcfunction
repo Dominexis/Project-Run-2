@@ -1,5 +1,4 @@
-execute if entity @s[tag=kello.decal.type.melloflora_cogwheel_display] on passengers run data merge entity @s {width:1.45f,height:1f}
-execute if entity @s[tag=kello.decal.type.melloflora_cogwheel_display] on passengers run data merge entity @s {brightness:{sky:15,block:12}}
+data merge entity @s {width:1.45f,height:1f,brightness:{sky:15,block:12}}
 
 
 
@@ -10,6 +9,7 @@ execute if entity @s[tag=aj.cogwheel.bone] on vehicle run data modify entity @s 
 execute if entity @s[tag=aj.cogwheel.bone.large_cog] run data merge entity @s {Tags:["aj.cogwheel.bone","kello.exclude","aj.cogwheel.rig_entity","aj.cogwheel.bone.large_cog","pr.ignore"],billboard:"vertical"}
 execute if entity @s[tag=aj.cogwheel.bone.small_cog] run kill @s
 
+tag @s add pr.ignore
 
 
 

@@ -2,6 +2,7 @@ tag @s remove kello.entity.target.new
 tag @s add kello.entity.type.gear
 tag @s add kello.decal.point
 tag @s add kello.decal.component
+tag @s add pr.ignore
 
 execute if score #variant kello.value matches 0 run tag @s add kello.entity.type.gear_0
 execute if score #variant kello.value matches 1 run tag @s add kello.entity.type.gear_1

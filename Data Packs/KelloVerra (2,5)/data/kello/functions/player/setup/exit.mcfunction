@@ -3,6 +3,8 @@
 scoreboard players operation #local kello.player.id = @s kello.player.id
 scoreboard players reset @s kello.player.void_y
 
+#! hate hate
+
 function kello:player/setup/remove
 clear @s diamond_horse_armor
 
@@ -12,6 +14,10 @@ tag @s remove kello.player.flag_nebulae
 tag @s remove kello.player.flag_sundown
 
 tag @s remove kello.player.progress.recoil_guide
+
+tag @s remove kello.player.has_recoiled_cogwheel
+tag @s remove kello.state.cogwheel_was_attached_l
+tag @s remove kello.state.cogwheel_was_attached_r
 
 scoreboard players set #logout_trigger kello.value 1
 

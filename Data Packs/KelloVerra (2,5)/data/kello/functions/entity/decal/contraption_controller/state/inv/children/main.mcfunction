@@ -13,4 +13,4 @@ execute if entity @s[tag=aj.decwheel.root] if score @s kello.decal.state matches
 
 # SFX sequence
 
-execute if entity @s[tag=kello.entity.type.soundsource] run function kello:entity/decal/contraption_controller/state/inv/children/sfx/sequence
+# execute if entity @s[tag=kello.entity.type.soundsource] run function kello:entity/decal/contraption_controller/state/inv/children/sfx/sequence
