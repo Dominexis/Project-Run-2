@@ -2,7 +2,7 @@
 execute at @e[tag=pr.target,tag=jpmagic.death] as @e[type=minecraft:magma_cube,tag=pr.target,distance=..50,nbt={Size:7}] run tp @s ~ -150 ~
 
 #RNG HAPPEN
-execute as @a[tag=pr.target,tag=!JP_RNG] at @s if block ~ ~ ~ polished_blackstone_pressure_plate store result score @s jpmagic.tmp run loot spawn ~-31 ~-60 ~34 loot jpmagic:jump_rng
+execute as @a[tag=pr.target,tag=!JP_RNG] at @s if block ~ ~ ~ polished_blackstone_pressure_plate store result score @s jpmagic.tmp run loot insert ~-31 ~-60 ~34 loot jpmagic:jump_rng
 execute as @a[tag=pr.target,tag=!JP_RNG] at @s if block ~ ~ ~ polished_blackstone_pressure_plate run function jpmagic:jprng
 execute as @a[tag=pr.target] at @s if block ~ ~ ~ polished_blackstone_pressure_plate run tag @s add JP_RNG
 execute as @a[tag=pr.target] at @s unless block ~ ~ ~ polished_blackstone_pressure_plate run tag @s remove JP_RNG
