@@ -9,4 +9,5 @@ function animated_java:decwheel/summon/small_gear
 
 # Assign scores and entity ID
 
-execute as @e[type=item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/small_score
+execute if score #is_dummy kello.value matches 0 as @e[type=item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/small_score
+execute if score #is_dummy kello.value matches 1 as @e[type=item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/dummy_score

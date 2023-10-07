@@ -1,1 +1,0 @@
-function animated_java:melloleta_patch/zzzzzzzz/apply_variant/default/as_bone

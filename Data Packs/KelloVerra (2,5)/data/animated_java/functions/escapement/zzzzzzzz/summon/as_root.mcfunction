@@ -15,7 +15,6 @@ execute if score #animation aj.i = $aj.escapement.animation.open aj.id run funct
 execute if score #animation aj.i = $aj.escapement.animation.open aj.id run scoreboard players operation @s aj.escapement.animation.open.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.escapement.animation.player aj.id run function animated_java:escapement/zzzzzzzz/animations/player/apply_frame_as_root
 execute if score #animation aj.i = $aj.escapement.animation.player aj.id run scoreboard players operation @s aj.escapement.animation.player.local_anim_time = #frame aj.i
-execute at @s run function #animated_java:escapement/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

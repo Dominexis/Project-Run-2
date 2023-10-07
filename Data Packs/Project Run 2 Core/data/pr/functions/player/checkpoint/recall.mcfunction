@@ -92,7 +92,7 @@ execute if score @s pr.plot_x matches -3 if score @s pr.plot_z matches 5 run fun
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 5 run function captainargus:recall
 execute if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 5 run function funkytoc_moon:recall
 execute if score @s pr.plot_x matches 1 if score @s pr.plot_z matches 5 run function inquognito:recall
-#execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 5 run function namespace:recall
+execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 5 run function kello:recall
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 5 run function cantaloupe:recall
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 6 run function theswagunicorn_horse:recall
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run function lifeely:recall

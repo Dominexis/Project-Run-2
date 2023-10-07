@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:animwheel/zzzzzzzz/apply_variant/gear_4_fast/as_bone

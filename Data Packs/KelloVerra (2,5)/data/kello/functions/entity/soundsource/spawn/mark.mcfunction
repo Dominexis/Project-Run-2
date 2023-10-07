@@ -1,1 +1,0 @@
-execute align xyz positioned ~.5 ~.75 ~.5 summon item_display run function kello:entity/soundsource/spawn/mark_score

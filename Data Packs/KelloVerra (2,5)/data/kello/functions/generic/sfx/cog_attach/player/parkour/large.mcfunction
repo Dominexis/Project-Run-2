@@ -9,10 +9,15 @@ playsound minecraft:item.axe.scrape master @s ~ ~ ~ 0.5 0.85 0
 playsound minecraft:item.bottle.fill master @s ~ ~ ~ 0.2 0.25 0
 playsound minecraft:block.lava.pop master @s ~ ~ ~ 0.3 0.85 0
 
+scoreboard players add @s kello.player.sfx_alt 1
+scoreboard players set @s[scores={kello.player.sfx_alt=2..}] kello.player.sfx_alt 0
+scoreboard players operation #sfx_alt kello.value = @s kello.player.sfx_alt
+
 scoreboard players operation #sfx_progress kello.value = @s kello.player.l_parkour_combo
 scoreboard players operation @s kello.player.l_combo_timer = #combo_timer kello.value
 scoreboard players add @s kello.player.l_parkour_combo 1
 
 execute if score #sfx_progress kello.value matches 0 run playsound kello:large_cogwheel_attach_parkour0 master @s ~ ~ ~ 0.725 1 0.725
 execute if score #sfx_progress kello.value matches 1 run playsound kello:large_cogwheel_attach_parkour1 master @s ~ ~ ~ 0.675 1 0.675
-execute if score #sfx_progress kello.value matches 2.. run playsound kello:large_cogwheel_attach_parkour2 master @s ~ ~ ~ 0.35 1 0.35
+execute if score #sfx_progress kello.value matches 2.. if score #sfx_alt kello.value matches 0 run playsound kello:large_cogwheel_attach_parkour2 master @s ~ ~ ~ 0.35 1 0.35
+execute if score #sfx_progress kello.value matches 2.. if score #sfx_alt kello.value matches 1 run playsound kello:large_cogwheel_attach_parkour2_alt master @s ~ ~ ~ 0.35 1 0.35

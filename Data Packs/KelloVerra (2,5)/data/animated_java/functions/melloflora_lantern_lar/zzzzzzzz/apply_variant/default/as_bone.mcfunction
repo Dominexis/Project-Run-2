@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.melloflora_lantern_lar.bone.petal] run data modify entity @s item.tag.CustomModelData set value 20
-execute if entity @s[tag=aj.melloflora_lantern_lar.bone.root] run data modify entity @s item.tag.CustomModelData set value 21

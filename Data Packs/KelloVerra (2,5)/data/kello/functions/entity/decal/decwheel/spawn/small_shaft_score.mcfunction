@@ -4,6 +4,8 @@ scoreboard players set @s kello.decal.active 1
 
 function kello:entity/decal/init
 
+scoreboard players set #genocide_type kello.value 3
+execute on passengers run function kello:entity/decal/decwheel/spawn/genocide
 
 
 

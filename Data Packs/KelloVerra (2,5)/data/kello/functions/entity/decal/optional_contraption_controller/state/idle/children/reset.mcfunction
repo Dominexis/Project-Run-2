@@ -4,6 +4,7 @@ tag @s remove kello.decal.controller_children
 
 
 execute if entity @s[tag=aj.decwheel.root] run function animated_java:decwheel/animations/pause_all
+tag @s[tag=kello.entity.type.cogwheel_shaft] add kello.empty
 
 execute if score @s kello.decal.state matches 2 run function kello:entity/decal/decwheel/animation/stop_rotate_inv
 

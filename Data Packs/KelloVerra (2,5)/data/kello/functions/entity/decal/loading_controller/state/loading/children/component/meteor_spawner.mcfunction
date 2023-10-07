@@ -1,0 +1,3 @@
+execute if score #local kello.entity.timer matches 19 run data merge entity @s {item:{id:"minecraft:leather_helmet",Count:1b,tag:{CustomModelData:351904}}}
+execute if score #local kello.entity.timer matches 18 run data merge entity @s {item:{id:"minecraft:leather_helmet",Count:1b,tag:{CustomModelData:351903}}}
+execute if score #local kello.entity.timer matches 17 run tag @s remove kello.entity.meteor_spawner_bloom

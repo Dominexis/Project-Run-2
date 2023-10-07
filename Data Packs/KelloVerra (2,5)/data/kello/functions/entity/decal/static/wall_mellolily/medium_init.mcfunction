@@ -1,0 +1,2 @@
+data merge entity @s {Tags:["kello.decal","kello.decal.type.wall_mellolily","pr.ignore","aj.wall_mellolily.root"],id:"minecraft:item_display",transformation:[-2.441666666666667f,0f,2.990179267918121e-16f,0f,0f,2.441666666666667f,0f,0f,-2.990179267918121e-16f,0f,-2.441666666666667f,0f,0f,0f,0f,1f],interpolation_duration:1,item_display:"head",item:{id:"minecraft:leather_chestplate",Count:1b,tag:{CustomModelData:52}},height:36f,width:28f}
+function kello:entity/decal/static/wall_mellolily/common_init

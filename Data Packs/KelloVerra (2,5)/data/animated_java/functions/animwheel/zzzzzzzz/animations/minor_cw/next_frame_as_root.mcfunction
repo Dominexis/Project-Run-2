@@ -1,0 +1,1 @@
+function animated_java:animwheel/zzzzzzzz/animations/minor_cw/tick_animation

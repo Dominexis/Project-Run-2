@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.melloflora_lantern_lar.root] run function animated_java:melloflora_lantern_lar/zzzzzzzz/apply_variant/bud/as_root
-execute if entity @s[tag=!aj.melloflora_lantern_lar.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:melloflora_lantern_lar/apply_variant/bud ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

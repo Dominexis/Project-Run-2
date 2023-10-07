@@ -1,2 +1,0 @@
-execute as @e[type=minecraft:item_display,tag=aj.melloflora_lantern_sho.root] run function animated_java:melloflora_lantern_sho/zzzzzzzz/remove/as_root
-kill @e[tag=aj.melloflora_lantern_sho.rig_entity]

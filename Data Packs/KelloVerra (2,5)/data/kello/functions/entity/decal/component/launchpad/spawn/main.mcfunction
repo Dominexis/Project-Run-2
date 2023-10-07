@@ -1,7 +1,7 @@
 # Spawn entity
 
 scoreboard players operation #animation aj.i = $aj.launchpad.animation.bud aj.id
-execute rotated ~ ~ run function animated_java:launchpad/summon/budded_curl
+execute rotated ~ ~ run function animated_java:launchpad/summon/low_lod
 
 
 

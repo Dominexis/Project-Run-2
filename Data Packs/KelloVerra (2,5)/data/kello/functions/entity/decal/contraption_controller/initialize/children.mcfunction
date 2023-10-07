@@ -5,4 +5,4 @@ execute if entity @s[tag=kello.decal.point] as @e[type=item_display,tag=kello.en
 tag @s remove kello.decal.target
 
 
-execute if entity @s[tag=!kello.decal.controller_children] run function kello:entity/decal/contraption_controller/state/idle/children/init
+execute if entity @s[tag=!kello.decal.controller_children] run function kello:entity/decal/contraption_controller/state/idle/children/init/main

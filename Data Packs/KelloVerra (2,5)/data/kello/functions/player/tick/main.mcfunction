@@ -60,15 +60,6 @@ function kello:player/combo/verify
 
 
 
-# Cogwheel timeouts
-
-# scoreboard players remove @s[scores={kello.player.l_cogwheel_timeout=0..}] kello.player.l_cogwheel_timeout 1
-# scoreboard players remove @s[scores={kello.player.r_cogwheel_timeout=0..}] kello.player.r_cogwheel_timeout 1
-
-# execute if score @s kello.player.l_cogwheel_timeout matches 0 run function kello:player/cog/large/throw/call_nine_one_one
-# execute if score @s kello.player.r_cogwheel_timeout matches 0 run function kello:player/cog/small/throw/call_nine_one_one
-
-
 
 # Music
 
@@ -115,6 +106,8 @@ function kello:player/cog/check
 # Actionbar
 
 function kello:player/tick/actionbar/main
+
+
 
 
 # Void logic

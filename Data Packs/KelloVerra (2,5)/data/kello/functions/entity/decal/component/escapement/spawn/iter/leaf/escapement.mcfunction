@@ -8,7 +8,7 @@ function animated_java:escapement/summon
 
 # Assign scores
 
-execute as @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=aj.escapement.root,tag=!kello.entity.type.escapement,distance=..4,sort=nearest,limit=1] run function kello:entity/decal/component/escapement/spawn/iter/leaf/escapement_score
+execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=aj.escapement.root,tag=!kello.entity.type.escapement,distance=..4,sort=nearest,limit=1] run function kello:entity/decal/component/escapement/spawn/iter/leaf/escapement_score
 
 
 

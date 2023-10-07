@@ -1,7 +1,7 @@
 scoreboard players remove @s kello.entity.timer 1
 
 tag @s add kello.entity.parkour_controller_empty_in_progress
-execute if score @s kello.entity.timer matches ..16 as @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=kello.entity.type.groundicator,distance=...5,sort=nearest,limit=1] run tag @s add kello.dead
+execute if score @s kello.entity.timer matches ..16 as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.entity.type.groundicator,distance=...5,sort=nearest,limit=1] run tag @s add kello.dead
 execute if score @s kello.entity.timer matches ..0 run function kello:entity/decal/parkour_controller/state/idle/children/emptied
 
 

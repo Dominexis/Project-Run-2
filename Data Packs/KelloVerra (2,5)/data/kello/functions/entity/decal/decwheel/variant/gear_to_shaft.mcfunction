@@ -1,4 +1,4 @@
-# Start animation
+# Modify Variants
 # Too lazy to make search tree
 
 function animated_java:decwheel/apply_variant/default

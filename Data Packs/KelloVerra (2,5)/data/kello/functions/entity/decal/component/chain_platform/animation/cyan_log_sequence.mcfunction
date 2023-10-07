@@ -1,7 +1,7 @@
 # Generated using Animautomate v1.0.0 By KelloVerra
 # Run this function as an item display entity per tick, entity will automatically terminated when the max frame is reached
 # Example of execution: 
-# /execute as @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=<your_tag>] run function <your_function_namespace>:func
+# /execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=<your_tag>] run function <your_function_namespace>:func
 
 scoreboard players add @s func.frame 1
 

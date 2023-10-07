@@ -9,7 +9,6 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:melloflora_display/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.melloflora_display.variant.default aj.id run function animated_java:melloflora_display/zzzzzzzz/apply_variant/default/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
-execute at @s run function #animated_java:melloflora_display/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

@@ -1,7 +1,9 @@
 # Spawn entity
 
 scoreboard players operation #animation aj.i = $aj.gate.animation.chp_1_open aj.id
-execute rotated ~ 0 run function animated_java:gate/summon
+execute if score #variant kello.value matches 0 rotated ~ 0 run function animated_java:gate/summon/chapter_1
+execute if score #variant kello.value matches 1 rotated ~ 0 run function animated_java:gate/summon/loading
+execute if score #variant kello.value matches 2 rotated ~ 0 run function animated_java:gate/summon/chapter_2
 
 
 

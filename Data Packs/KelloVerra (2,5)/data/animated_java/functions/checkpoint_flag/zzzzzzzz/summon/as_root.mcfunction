@@ -21,7 +21,6 @@ execute if score #animation aj.i = $aj.checkpoint_flag.animation.checkpoint aj.i
 execute if score #animation aj.i = $aj.checkpoint_flag.animation.checkpoint aj.id run scoreboard players operation @s aj.checkpoint_flag.animation.checkpoint.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.checkpoint_flag.animation.curl aj.id run function animated_java:checkpoint_flag/zzzzzzzz/animations/curl/apply_frame_as_root
 execute if score #animation aj.i = $aj.checkpoint_flag.animation.curl aj.id run scoreboard players operation @s aj.checkpoint_flag.animation.curl.local_anim_time = #frame aj.i
-execute at @s run function #animated_java:checkpoint_flag/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

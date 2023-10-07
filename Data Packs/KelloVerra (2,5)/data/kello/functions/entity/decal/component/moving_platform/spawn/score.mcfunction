@@ -1,11 +1,11 @@
 # Data
 
-tag @s remove kello.entity.target_new
+tag @s remove kello.entity.target.new
 tag @s add kello.entity
 tag @s add kello.decal
 tag @s add kello.entity.type.moving_platform
 tag @s add kello.entity.part.display_container
-tag @s add kello.ignore
+tag @s add pr.ignore
 tag @s add kello.exclude
 
 data merge entity @s {height:1f,width:2.75f,brightness:{sky:15,block:13}}

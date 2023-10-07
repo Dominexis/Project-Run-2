@@ -12,7 +12,6 @@ execute if score #variant aj.i = $aj.falling_platform.variant.air aj.id run func
 execute if score #variant aj.i = $aj.falling_platform.variant.chapter_1_0 aj.id run function animated_java:falling_platform/zzzzzzzz/apply_variant/chapter_1_0/as_root
 execute if score #variant aj.i = $aj.falling_platform.variant.chapter_1_1 aj.id run function animated_java:falling_platform/zzzzzzzz/apply_variant/chapter_1_1/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
-execute at @s run function #animated_java:falling_platform/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

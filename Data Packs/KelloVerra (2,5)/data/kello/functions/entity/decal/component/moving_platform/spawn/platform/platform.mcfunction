@@ -1,4 +1,4 @@
-data merge entity @s {Tags:["kello.entity","kello.decal","kello.exclude","kello.entity.type.moving_platform","kello.entity.part.platform","kello.ignore","kello.exclude"]}
+data merge entity @s {Tags:["kello.entity","kello.decal","kello.exclude","kello.entity.type.moving_platform","kello.entity.part.platform","pr.ignore","kello.exclude"]}
 tp @s ~ ~ ~
 
 

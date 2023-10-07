@@ -15,7 +15,7 @@ scoreboard players set @s kello.entity.timer 66
 # Children reset
 
 scoreboard players operation #local kello.decal.id = @s kello.decal.id
-execute as @e[type=#kello:generic/system,tag=pr.target,tag=!kello.ignore,tag=kello.decal] if score @s kello.decal.id = #local kello.decal.id positioned as @s run function kello:entity/decal/optional_contraption_controller/state/run/children/reset/force
+execute as @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=kello.decal] if score @s kello.decal.id = #local kello.decal.id positioned as @s run function kello:entity/decal/optional_contraption_controller/state/run/children/reset/force
 
 
 

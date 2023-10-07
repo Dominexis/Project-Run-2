@@ -9,9 +9,9 @@ tag @s add kello.entity.player.target
 
 # Recoil
 
-execute as @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=aj.cogwheel.root,tag=kello.entity.type.thrown_cogwheel,tag=kello.entity.type.large,tag=!kello.static, distance=4..  ] if score @s kello.entity.state matches 0 if score @s kello.player.id = #local kello.player.id run tag @s add kello.state.force_recoil
-execute as @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=aj.cogwheel.root,tag=kello.entity.type.thrown_cogwheel,tag=kello.entity.type.large,tag=!kello.static                ] if score @s kello.entity.state matches 3..4 if score @s kello.player.id = #local kello.player.id run tag @s add kello.state.force_recoil
-# execute as @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=aj.cogwheel.root,tag=kello.entity.type.thrown_cogwheel,tag=kello.entity.type.large,tag=!kello.static                ] if score @s kello.entity.state matches 4 if score @s kello.player.id = #local kello.player.id at @s run function kello:entity/thrown/large_cog/state/launcher/force_detach
+execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=aj.cogwheel.root,tag=kello.entity.type.thrown_cogwheel,tag=kello.entity.type.large,tag=!kello.static, distance=4..  ] if score @s kello.entity.state matches 0 if score @s kello.player.id = #local kello.player.id run tag @s add kello.state.force_recoil
+execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=aj.cogwheel.root,tag=kello.entity.type.thrown_cogwheel,tag=kello.entity.type.large,tag=!kello.static                ] if score @s kello.entity.state matches 3..4 if score @s kello.player.id = #local kello.player.id run tag @s add kello.state.force_recoil
+# execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=aj.cogwheel.root,tag=kello.entity.type.thrown_cogwheel,tag=kello.entity.type.large,tag=!kello.static                ] if score @s kello.entity.state matches 4 if score @s kello.player.id = #local kello.player.id at @s run function kello:entity/thrown/large_cog/state/launcher/force_detach
 
 
 

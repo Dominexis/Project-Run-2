@@ -1,6 +1,5 @@
 # Push scores
 
-scoreboard players operation #local kello.player.checkpoint.id = @s kello.entity.checkpoint.id
 scoreboard players set #found_players kello.value 0
 
 

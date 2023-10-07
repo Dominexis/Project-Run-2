@@ -38,7 +38,7 @@ tag @s add kello.launcher.target
 # Teleport
 
 scoreboard players operation #local kello.player.id = @s kello.player.id
-execute as @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=kello.entity.type.launchpad,tag=kello.entity.part.launchpad,distance=..4,sort=nearest,limit=1] at @s run function kello:entity/thrown/large_cog/state/launcher/as
+execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.entity.type.launchpad,tag=kello.entity.part.launchpad,distance=..4,sort=nearest,limit=1] at @s run function kello:entity/thrown/large_cog/state/launcher/as
 
 
 tag @s remove kello.launcher.target

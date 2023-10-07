@@ -1,5 +1,6 @@
 # Consistent player enter / relog setup
 
+scoreboard players operation #local kello.player.id = @s kello.player.id
 scoreboard players reset @s kello.player.void_y
 
 function kello:player/setup/remove
@@ -22,5 +23,8 @@ stopsound @s music kello:music_outro
 tag @s remove kello.music_repeat
 
 function kello:player/tick/area/reset
+
+
+execute as @e[type=marker,tag=kello.void_marker] if score @s kello.player.id = #local kello.player.id run kill @s
 
 # gamemode adventure

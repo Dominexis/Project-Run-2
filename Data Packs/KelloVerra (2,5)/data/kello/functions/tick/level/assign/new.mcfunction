@@ -7,4 +7,4 @@ data modify storage kello:data tag.loaded_level.list append from storage kello:d
 ## NOTE: EXPERIMENTAL
 
 scoreboard players operation #load_level_id kello.value = #level_id_to_assign kello.value
-execute unless score #load_level_id kello.value matches ..1 positioned as @e[type=marker,tag=kello.entity.plot_center,limit=1] run function kello:plot/levels/load/verify
+execute positioned as @e[type=marker,tag=kello.entity.plot_center,limit=1] align xyz run function kello:plot/levels/load/verify

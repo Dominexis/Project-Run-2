@@ -1,1 +1,0 @@
-execute summon shulker run function kello:entity/decal/contraption_controller/state/run/children/component/falling_platform/chapter_2/score

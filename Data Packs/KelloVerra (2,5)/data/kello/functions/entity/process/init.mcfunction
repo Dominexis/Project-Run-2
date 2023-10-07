@@ -1,13 +1,13 @@
-# Missed ticks calculation
+# Missed ticks calculation (credit dominexis nexus) NOTE: MIGHT OBSOLETE :P
 
-execute unless score @s kello.ticks = @s kello.ticks run scoreboard players set @s kello.ticks -1
-execute if score @s kello.ticks matches -1 run scoreboard players operation @s kello.ticks += #global kello.ticks
+# execute unless score @s kello.ticks = @s kello.ticks run scoreboard players set @s kello.ticks -1
+# execute if score @s kello.ticks matches -1 run scoreboard players operation @s kello.ticks += #global kello.ticks
 
-scoreboard players operation #missed_ticks kello.value = #global kello.ticks
-scoreboard players operation #missed_ticks kello.value -= @s kello.ticks
-execute if score #missed_ticks kello.value matches 5.. run scoreboard players set #missed_ticks kello.value 5
-execute if score #missed_ticks kello.value matches ..0 run scoreboard players set #missed_ticks kello.value 1
-scoreboard players operation @s kello.ticks = #global kello.ticks
+# scoreboard players operation #missed_ticks kello.value = #global kello.ticks
+# scoreboard players operation #missed_ticks kello.value -= @s kello.ticks
+# execute if score #missed_ticks kello.value matches 5.. run scoreboard players set #missed_ticks kello.value 5
+# execute if score #missed_ticks kello.value matches ..0 run scoreboard players set #missed_ticks kello.value 1
+# scoreboard players operation @s kello.ticks = #global kello.ticks
 
 
 

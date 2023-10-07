@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:comet_flake/zzzzzzzz/apply_variant/medium/as_bone

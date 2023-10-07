@@ -5,3 +5,4 @@ execute as @e[type=item_display,tag=kello.entity.type.decal_controller] if score
 
 execute if score #controller kello.value matches 0 run function kello:entity/decal/contraption_controller/initialize/children
 execute if score #controller kello.value matches 1 run function kello:entity/decal/parkour_controller/initialize/children
+execute if score #controller kello.value matches 2 run function kello:entity/decal/loading_controller/initialize/children

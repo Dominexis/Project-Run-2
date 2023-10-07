@@ -33,4 +33,4 @@ tag @s add kello.entity.type.checkpoint
 tag @s add kello.entity.part.main
 tag @s add kello.entity.ticking
 
-execute on passengers run tag @s add kello.ignore
+execute on passengers run function kello:entity/decal/init

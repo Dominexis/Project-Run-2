@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.wall_mellolily_large.root] run function animated_java:wall_mellolily_large/zzzzzzzz/remove/as_root
-execute if entity @s[tag=!aj.wall_mellolily_large.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:wall_mellolily_large/remove/this ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

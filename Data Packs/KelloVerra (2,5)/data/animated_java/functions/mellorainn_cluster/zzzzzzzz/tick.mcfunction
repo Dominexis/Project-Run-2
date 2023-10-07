@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.mellorainn_cluster.root] run function animated_java:mellorainn_cluster/zzzzzzzz/tick_as_root

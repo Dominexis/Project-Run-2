@@ -8,6 +8,7 @@ scoreboard players operation @s kello.entity.launch_power = #minimal_launchpad_p
 execute if score #uninstantiate kello.value matches 1 run scoreboard players operation @s kello.entity.launch_power = #defined_power kello.value
 
 execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.level.id = #local kello.level.id
+execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.entity.checkpoint.id = #init kello.entity.checkpoint.id
 
 function kello:entity/decal/init
 

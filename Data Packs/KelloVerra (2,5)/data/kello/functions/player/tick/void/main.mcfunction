@@ -2,7 +2,7 @@
 # Player Y Level is assigned when player is midair or after being teleported to temp checkpoint
 # Any Player Y Level will automatically assigned every 2 second interval 
 
-execute if predicate kello:midair store result score @s kello.player.y run data get entity @s Pos[1] 10
+execute if predicate kello:midair run function kello:player/tick/void/sample_y
 
 scoreboard players set #boolean kello.value 0
 scoreboard players operation #checkpoint_y kello.value = @s pr.temp_checkpoint_y

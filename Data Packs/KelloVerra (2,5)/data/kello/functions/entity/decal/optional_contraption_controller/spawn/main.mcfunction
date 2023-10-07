@@ -7,7 +7,7 @@ function kello:entity/decal/optional_contraption_controller/spawn/mark
 
 # Assign scores
 
-execute as @e[type=marker,tag=!kello.ignore,distance=..0.5,tag=kello.entity.target.spawn] positioned as @s run function kello:entity/decal/optional_contraption_controller/spawn/score
+execute as @e[type=marker,tag=!pr.ignore,distance=..0.5,tag=kello.entity.target.spawn] positioned as @s run function kello:entity/decal/optional_contraption_controller/spawn/score
 
 
 

@@ -3,7 +3,7 @@
 scoreboard players operation #local kello.player.id = @s kello.player.id
 scoreboard players set #casterminate kello.value 0
 tag @s add kello.player.target
-function kello:player/cog/small/raycast/search
+
 scoreboard players set #boolean kello.value 0
 execute positioned ^ ^ ^-1 if block ~ ~ ~ #kello:generic/cogwheel_passable run function kello:entity/thrown/small_cog/spawn/main
 execute if score #boolean kello.value matches 0 run function kello:entity/thrown/small_cog/spawn/main

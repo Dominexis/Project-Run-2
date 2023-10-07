@@ -20,6 +20,7 @@ scoreboard players operation @s kello.decal.id = #global kello.decal.id
 execute if score #uninstantiate kello.value matches 1 run scoreboard players operation @s kello.decal.id = #init kello.decal.id
 
 execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.level.id = #local kello.level.id
+execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.entity.checkpoint.id = #init kello.entity.checkpoint.id
 
 # Notify
 

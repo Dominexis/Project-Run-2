@@ -26,7 +26,7 @@ scoreboard players add #global kello.ticks 1
 # Loop entity
 
 scoreboard players set #skip_tick_boolean kello.value 0
-execute as @e[type=#kello:generic/system,tag=pr.target,tag=!kello.ignore,tag=!kello.exclude] run function kello:tick/entity/verify
+execute as @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=!kello.exclude] run function kello:tick/entity/verify
 
 
 

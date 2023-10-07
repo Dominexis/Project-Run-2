@@ -4,4 +4,4 @@ execute if entity @s[tag=aj.comet_flake.bone.tail] run data merge entity @s {bri
 data modify entity @s item.tag.display.color set value 2106383
 tp @s ~ ~ ~ ~ 0
 
-function kello:debug/decal/util/spawn/verify/decals/initialize
+# function kello:debug/decal/util/spawn/verify/decals/initialize

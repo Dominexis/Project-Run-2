@@ -1,0 +1,1 @@
+particle minecraft:instant_effect ~ ~ ~ 0.425 0.425 0.425 0.025 1 force @a[tag=pr.target,distance=..24]

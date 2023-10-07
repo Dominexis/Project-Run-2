@@ -4,6 +4,9 @@ scoreboard players set @s kello.decal.active 1
 
 function kello:entity/decal/init
 
+scoreboard players set #genocide_type kello.value 2
+execute on passengers run function kello:entity/decal/decwheel/spawn/genocide
+
 execute on passengers run data merge entity @s {brightness:{sky:2,block:14}}
 
 

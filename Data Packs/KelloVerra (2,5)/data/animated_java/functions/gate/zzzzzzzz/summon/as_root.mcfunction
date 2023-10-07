@@ -9,12 +9,14 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:gate/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.gate.variant.default aj.id run function animated_java:gate/zzzzzzzz/apply_variant/default/as_root
 execute if score #variant aj.i = $aj.gate.variant.chapter_1 aj.id run function animated_java:gate/zzzzzzzz/apply_variant/chapter_1/as_root
+execute if score #variant aj.i = $aj.gate.variant.loading aj.id run function animated_java:gate/zzzzzzzz/apply_variant/loading/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.gate.animation.chp_1_open aj.id run function animated_java:gate/zzzzzzzz/animations/chp_1_open/apply_frame_as_root
 execute if score #animation aj.i = $aj.gate.animation.chp_1_open aj.id run scoreboard players operation @s aj.gate.animation.chp_1_open.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.gate.animation.chp_1_close aj.id run function animated_java:gate/zzzzzzzz/animations/chp_1_close/apply_frame_as_root
 execute if score #animation aj.i = $aj.gate.animation.chp_1_close aj.id run scoreboard players operation @s aj.gate.animation.chp_1_close.local_anim_time = #frame aj.i
-execute at @s run function #animated_java:gate/on_summon/as_root
+execute if score #animation aj.i = $aj.gate.animation.idle aj.id run function animated_java:gate/zzzzzzzz/animations/idle/apply_frame_as_root
+execute if score #animation aj.i = $aj.gate.animation.idle aj.id run scoreboard players operation @s aj.gate.animation.idle.local_anim_time = #frame aj.i
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

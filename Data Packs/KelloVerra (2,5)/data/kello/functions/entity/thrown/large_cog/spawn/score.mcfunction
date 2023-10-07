@@ -3,8 +3,6 @@
 scoreboard players operation @s kello.player.id = #local kello.player.id
 scoreboard players operation @s kello.entity.id = #global kello.entity.id
 execute unless score #set kello.aim.id matches 0 run scoreboard players operation @s kello.aim.id = #set kello.aim.id
-#scoreboard players set @s kello.entity.air_toggle 1
-scoreboard players set @s kello.entity.link 1
 scoreboard players set @s kello.entity.owner 1
 
 

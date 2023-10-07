@@ -20,6 +20,7 @@ scoreboard objectives add kello.player.l_parkour_combo dummy
 scoreboard objectives add kello.player.r_parkour_combo dummy
 scoreboard objectives add kello.player.l_combo_timer dummy
 scoreboard objectives add kello.player.r_combo_timer dummy
+scoreboard objectives add kello.player.sfx_alt dummy
 # scoreboard objectives add kello.player.l_cogwheel_timeout dummy
 # scoreboard objectives add kello.player.r_cogwheel_timeout dummy
 scoreboard objectives add kello.player.music_progress_queue dummy
@@ -93,12 +94,12 @@ scoreboard objectives add kello.death.delay dummy
 
 
 
-#> NOTE: DEBUG TRIGGERS
+# #> NOTE: DEBUG TRIGGERS
 
-scoreboard objectives add kello.decal.gimbal_to_selection_facing trigger
-scoreboard objectives add kello.decal.pos_to_selection_facing trigger
-scoreboard objectives add kello.decal.visualize_selected_decal_id trigger
-scoreboard objectives add kello.update_rig_pos trigger
+# scoreboard objectives add kello.decal.gimbal_to_selection_facing trigger
+# scoreboard objectives add kello.decal.pos_to_selection_facing trigger
+# scoreboard objectives add kello.decal.visualize_selected_decal_id trigger
+# scoreboard objectives add kello.update_rig_pos trigger
 
 
 
@@ -151,6 +152,15 @@ scoreboard players set $decal.moving_platform kello.decal 1006
 scoreboard players set $decal.mellobanner_0 kello.decal 1007
 scoreboard players set $decal.mellobanner_1 kello.decal 1008
 scoreboard players set $decal.mellobanner_2 kello.decal 1009
+# scoreboard players set $decal.animwheel_0 kello.decal 1010
+# scoreboard players set $decal.animwheel_1 kello.decal 1011
+# scoreboard players set $decal.animwheel_2 kello.decal 1012
+# scoreboard players set $decal.animwheel_3 kello.decal 1013
+# scoreboard players set $decal.animwheel_4 kello.decal 1014
+# scoreboard players set $decal.animwheel_5 kello.decal 1015
+# scoreboard players set $decal.animwheel_6 kello.decal 1016
+# scoreboard players set $decal.animwheel_7 kello.decal 1017
+# scoreboard players set $decal.animwheel_8 kello.decal 1018
 
 # Plain decals
 scoreboard players set $decal.launchpad kello.decal 2001
@@ -159,16 +169,26 @@ scoreboard players set $decal.bg_med_melloflora_lantern kello.decal 2004
 scoreboard players set $decal.bg_lar_melloflora_lantern kello.decal 2005
 
 # Cardinal decals
-scoreboard players set $decal.bg_melloleta_patch kello.decal 3001
+scoreboard players set $decal.bg_melloleta_patch_singular kello.decal 3001
 scoreboard players set $decal.bg_melloleta_path kello.decal 3002
-scoreboard players set $decal.bg_melloleta_patch_lar kello.decal 3003
+scoreboard players set $decal.bg_melloleta_patch_areal kello.decal 3003
 scoreboard players set $decal.bg_mellorainn_cluster kello.decal 3004
 scoreboard players set $decal.bg_mellorainn_path kello.decal 3005
 scoreboard players set $decal.bg_mellorainn_cluster_lar kello.decal 3006
 scoreboard players set $decal.bg_comet_flakes_sml kello.decal 3007
 scoreboard players set $decal.bg_comet_flakes_med kello.decal 3008
 scoreboard players set $decal.bg_comet_flakes_lar kello.decal 3009
-scoreboard players set $decal.gate_0 kello.decal 3010
+scoreboard players set $decal.bg_comet_flakes_gia kello.decal 3010
+scoreboard players set $decal.gate_0 kello.decal 3011
+scoreboard players set $decal.animwheel_0 kello.decal 3012
+scoreboard players set $decal.animwheel_1 kello.decal 3013
+scoreboard players set $decal.animwheel_2 kello.decal 3014
+scoreboard players set $decal.animwheel_3 kello.decal 3015
+scoreboard players set $decal.animwheel_4 kello.decal 3016
+scoreboard players set $decal.animwheel_5 kello.decal 3017
+scoreboard players set $decal.animwheel_6 kello.decal 3018
+scoreboard players set $decal.animwheel_7 kello.decal 3019
+scoreboard players set $decal.animwheel_8 kello.decal 3020
 
 scoreboard players set #combo_timer kello.value 28
 # scoreboard players set #cogwheel_timeout_limit kello.value 240

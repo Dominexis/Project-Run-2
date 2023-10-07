@@ -1,7 +1,7 @@
 # Operation condition
 
-execute unless score #generator.iter kello.value matches 1.. run return 0
-execute if score #generator.tick_total kello.value > #generator.max_tick_time kello.value run return 0
+execute unless score #generator.iter kello.value matches 1.. run scoreboard players set #generator.skip_iteration_cycle kello.value 1
+execute if score #generator.tick_total kello.value > #generator.max_tick_time kello.value run scoreboard players set #generator.skip_iteration_cycle kello.value 1
 
 scoreboard players remove #generator.iter kello.value 1
 
@@ -24,6 +24,7 @@ scoreboard players set #level_creation_mode kello.value 0
 
 
 
+
 # Time calculation
 
 function pr:time/get
@@ -34,3 +35,8 @@ scoreboard players operation #tick_increment kello.value -= #previous_tick kello
 scoreboard players operation #previous_tick kello.value = #time pr.value
 
 scoreboard players operation #generator.tick_total kello.value += #tick_increment kello.value
+
+
+
+
+kill @s

@@ -1,0 +1,1 @@
+function animated_java:animwheel/zzzzzzzz/animations/flip/tick_animation

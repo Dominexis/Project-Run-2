@@ -1,3 +1,5 @@
+return -1
+
 # Boolean
 
 scoreboard players set #boolean kello.value 0

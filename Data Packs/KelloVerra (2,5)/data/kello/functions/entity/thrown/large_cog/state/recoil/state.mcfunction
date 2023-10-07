@@ -1,7 +1,7 @@
 # Recoil
 
-execute as @p[tag=pr.target,tag=kello.entity.player.target] at @s anchored eyes run summon marker ^ ^ ^1.8 {Tags:["kello.entity.target","kello.entity.aim","kello.entity.target_kill"]}
-execute positioned ~ ~-1 ~ if entity @e[type=marker,tag=kello.entity.target,tag=kello.entity.aim,distance=..2.75] positioned ~ ~1 ~ run function kello:entity/thrown/large_cog/state/pickup/start
+execute as @p[tag=pr.target,tag=kello.entity.player.target] at @s anchored eyes run summon marker ^ ^ ^1.8 {Tags:["kello.entity.aim","kello.entity.target_kill"]}
+execute positioned ~ ~-1 ~ if entity @e[type=marker,tag=kello.entity.aim,distance=..2.75] positioned ~ ~1 ~ run function kello:entity/thrown/large_cog/state/pickup/start
 
 
 

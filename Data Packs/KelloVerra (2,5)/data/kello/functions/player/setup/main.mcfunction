@@ -37,3 +37,8 @@ scoreboard players set #queue_new_player_event kello.value 1
 
 
 function kello:player/setup/choose_flag_color
+
+
+# Extra
+
+execute at @s summon marker run function kello:player/setup/void_mark

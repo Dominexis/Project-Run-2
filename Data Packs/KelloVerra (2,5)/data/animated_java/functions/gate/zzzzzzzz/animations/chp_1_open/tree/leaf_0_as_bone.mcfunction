@@ -1,2 +1,3 @@
-execute if entity @s[tag=aj.gate.locator_origin.locator] at @s on origin run tp @s ^-0.08643 ^0 ^-0.08912 ~0 ~0
-execute if entity @s[tag=aj.gate.bone.chp_1] run data modify entity @s {} merge value {transformation:[-4.666666666666667f,0f,5.715018396020982e-16f,-0.08642516869755877f,0f,4.666666666666667f,0f,0f,-5.715018396020982e-16f,0f,-4.666666666666667f,-0.0891223898327962f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.gate.locator_origin.locator] at @s on origin run tp @s ^-0.12374 ^0 ^0.199 ~0 ~0
+execute if entity @s[tag=aj.gate.bone.aura] run data modify entity @s {} merge value {transformation:[-4.666666666666667f,0f,5.715018396020982e-16f,-0.1237392408283288f,0f,4.666666666666667f,0f,0f,-5.715018396020982e-16f,0f,-4.666666666666667f,0.1989993179668382f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.gate.bone.root] run data modify entity @s {} merge value {transformation:[-4.670833333333333f,0f,5.720121091017429e-16f,-0.1237392408283288f,0f,4.670833333333333f,0f,0f,-5.720121091017429e-16f,0f,-4.670833333333333f,0.1989993179668382f,0f,0f,0f,1f],start_interpolation:0}

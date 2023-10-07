@@ -1,6 +1,6 @@
 # Data
 
-data merge entity @s {Tags:["kello.entity","kello.decal","kello.exclude","kello.ignore","kello.entity.type.moving_platform","kello.entity.part.pointer"],Item:{id:"minecraft:magenta_stained_glass_pane",Count:1b,tag:{CustomModelData:351983}}}
+data merge entity @s {Tags:["kello.entity","kello.decal","kello.exclude","pr.ignore","kello.entity.type.moving_platform","kello.entity.part.pointer"],Item:{id:"minecraft:magenta_stained_glass_pane",Count:1b,tag:{CustomModelData:351983}}}
 
 
 

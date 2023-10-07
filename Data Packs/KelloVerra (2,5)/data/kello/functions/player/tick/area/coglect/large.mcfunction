@@ -30,4 +30,4 @@ function kello:tick/level/assign
 
 # Sfx
 
-playsound kello:large_cogwheel_collect master @s ~ ~ ~ 1 1 1
+playsound kello:large_cogwheel_collect master @s ~ ~ ~ 0.7 1 0.7

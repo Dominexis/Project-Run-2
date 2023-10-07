@@ -1,7 +1,7 @@
 # Interactions
 
-execute if entity @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=kello.decal,tag=kello.empty,tag=kello.entity.type.cogwheel_shaft,tag=kello.entity.type.large,distance=..1.25] run function kello:entity/thrown/large_cog/state/fixed/start
-execute if entity @e[type=item_display,tag=pr.target,tag=!kello.ignore,tag=kello.entity.type.launchpad,distance=..1.875] run function kello:entity/thrown/large_cog/state/launcher/start
+execute if entity @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.decal,tag=kello.empty,tag=kello.entity.type.cogwheel_shaft,tag=kello.entity.type.large,distance=..1.25] run function kello:entity/thrown/large_cog/state/fixed/start
+execute if entity @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.entity.type.launchpad,distance=..1.875,scores={kello.entity.state=..1}] run function kello:entity/thrown/large_cog/state/launcher/start
 
 
 

@@ -18,7 +18,7 @@ execute if score #time pr.value > #entity_tick_time_limit kello.value run scoreb
 
 # AJ
 
-execute if score #skip_current_boolean kello.value matches 0 if entity @s[type=item_display,tag=aj.rig_root] run function kello:tick/aj/root
+execute if score #skip_current_boolean kello.value matches 0 if entity @s[type=item_display,tag=aj.rig_root] positioned as @s run function kello:tick/aj/root
 
 
 
