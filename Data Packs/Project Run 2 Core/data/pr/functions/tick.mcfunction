@@ -127,6 +127,16 @@ execute positioned -16 -8 16 run tp @a[team=pr.player,dx=15,dy=2,dz=47] -19 1 40
 
 
 
+# Tick door
+
+execute if score #door_timer pr.value matches 1.. run function pr:door/tick
+
+
+
+
+
+
+
 # Compute MSPT
 
 function pr:time/get
