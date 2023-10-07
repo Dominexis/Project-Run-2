@@ -1,1 +1,0 @@
-execute at @p run kill @e[tag=pr.target,tag=jpmagic.afterjump,sort=nearest,limit=1]
