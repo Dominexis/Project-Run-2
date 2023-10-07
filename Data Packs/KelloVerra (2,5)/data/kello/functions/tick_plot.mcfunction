@@ -1,5 +1,7 @@
 # This function will run every tick while players are in your plot on the center block at Y=0
 
+function animated_java:tick
+
 #particle flame ~ ~ ~ 0 0 0 0.01 1 force
 
 function pr:time/get
