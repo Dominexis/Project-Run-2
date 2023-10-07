@@ -15,10 +15,10 @@ execute positioned ~0 ~2 ~19 as @a[distance=..4,tag=pr.target,tag=!ridingS] run 
 
 
 # Handle player death logic
-execute as @a[tag=pr.target] at @s if block ~ ~-0.5 ~ lava run kill @s
-execute as @a[tag=pr.target] at @s if block ~ ~-0.5 ~ structure_void run kill @s
-execute as @a[tag=pr.target] at @s if block ~ ~-2.5 ~ structure_void run kill @s
-execute as @a[tag=pr.target] at @s if block ~ ~-3.5 ~ structure_void run kill @s
+execute as @a[tag=pr.target,scores={isch.dth=0}] at @s if block ~ ~-0.5 ~ lava run kill @s
+execute as @a[tag=pr.target,scores={isch.dth=0}] at @s if block ~ ~-0.5 ~ structure_void run kill @s
+execute as @a[tag=pr.target,scores={isch.dth=0}] at @s if block ~ ~-2.5 ~ structure_void run kill @s
+execute as @a[tag=pr.target,scores={isch.dth=0}] at @s if block ~ ~-3.5 ~ structure_void run kill @s
 # execute as @a[tag=pr.target,scores={isch.dth=1}] at @s run function ischool04_plot:player_nmldeath
 scoreboard players add @a[tag=pr.target,scores={isch.dth=1..}] isch.dth 1
 scoreboard players set @a[tag=pr.target,scores={isch.dth=10..}] isch.dth 0
