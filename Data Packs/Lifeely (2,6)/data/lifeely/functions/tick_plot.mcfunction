@@ -28,6 +28,8 @@ execute positioned ~-13 ~54 ~-6 as @a[tag=pr.target,tag=!lifeely.mount,distance=
 execute positioned ~-8 ~64 ~5 as @a[tag=pr.target,tag=!lifeely.mount,distance=..1.5] run function lifeely:snowball_3
 execute positioned ~-36 ~67 ~5 as @a[tag=pr.target,tag=!lifeely.mount,distance=..2] run function lifeely:snowball_4
 
+kill @e[type=armor_stand,tag=lifeely.armor_stand,nbt={OnGround:1b}]
+
 execute as @a[tag=pr.target] run function lifeely:check_mount
 
 execute positioned ~-14 ~ ~2 run kill @a[tag=pr.target,dx=16,dy=1,dz=31]

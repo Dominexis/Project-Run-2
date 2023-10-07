@@ -1,5 +1,5 @@
-summon minecraft:snowball ~ ~ ~ {Tags:["pr.target"],Motion:[1.1d,0.75d,0.0d],Item:{id:"minecraft:slime_block",Count:1b}}
-ride @s mount @e[type=snowball,tag=pr.target,tag=!lifeely.snowball,sort=nearest,limit=1]
-tag @e[type=snowball,tag=pr.target,tag=!lifeely.snowball] add lifeely.snowball
+summon minecraft:armor_stand ~ ~ ~ {Tags:["pr.target"],Motion:[3.3d,1.2d,0.0d],Small:1b,Invisible:1b,Silent:1b}
+ride @s mount @e[type=armor_stand,tag=pr.target,tag=!lifeely.armor_stand,sort=nearest,limit=1]
+tag @e[type=armor_stand,tag=pr.target,tag=!lifeely.armor_stand] add lifeely.armor_stand
 playsound minecraft:block.slime_block.hit master @a
 playsound minecraft:block.slime_block.break master @a
