@@ -46,7 +46,7 @@ NAMESPACES = {
     (-2,5): ("captainargus", 3, False, "minecraft:clock", "Factory Frenzy", "Don't fall off, you're sure to get lost. Follow the carpets if you're ever uncertain.\n\n§6CaptainArgus"),
     (-2,6): ("theswagunicorn_horse", 0, True, "minecraft:saddle", "Half Heart\nHorse Hustle", "Rush to the castle with your fragile steed!\n\n§6_TheSwagUnicorn_"),
     (-1,-5): ("spinat", 0, False, "minecraft:purple_concrete_powder", "25 Pixels", "Choose your path across 25 pixels of parkour!\n\n§6Die_Spinatbox"),
-    (-1,-4): ("kirnt", 1, False, "minecraft:oxidized_copper", "Stellar Adventure", "Leap through outer space from world to world!\n\n§6kirnt2027 & Minigame Makers"),
+    (-1,-4): ("kirnt", 0, False, "minecraft:oxidized_copper", "Stellar Adventure", "Leap through outer space from world to world!\n\n§6kirnt2027 & Minigame Makers"),
     (-1,-3): ("itspungpond98", 0, True, "minecraft:verdant_froglight", "The Froglight Town", "Find the froglights by following the trails, and exit through the gates.\n\n§6ItsPungpond98"),
     (-1,-2): ("maze_escape", 2, True, "minecraft:zombie_head", "Maze Escape", "Explore through the maze and search for the exit.\n\n§6Anas099"),
     (-1,-1): ("lory", 1, True, "minecraft:chiseled_sandstone", "Oasis", "Manage to parkour your way out of the oasis!\n\n§6_Lory44 & CosmicAxolotl"),
