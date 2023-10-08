@@ -29,11 +29,16 @@ scoreboard players operation #time_start pr.value = #time pr.value
 scoreboard players enable @a lobby
 scoreboard players enable @a spectate
 scoreboard players enable @a checkpoint
-scoreboard players enable @a warp
-scoreboard players enable @a coords
-scoreboard players enable @a plot
-scoreboard players enable @a relative
+scoreboard players enable @a[tag=admin] warp
+scoreboard players enable @a[tag=admin] coords
+scoreboard players enable @a[tag=admin] plot
+scoreboard players enable @a[tag=admin] relative
 scoreboard players enable @a night_vision
+
+scoreboard players reset @a[tag=!admin] warp
+scoreboard players reset @a[tag=!admin] coords
+scoreboard players reset @a[tag=!admin] plot
+scoreboard players reset @a[tag=!admin] relative
 
 execute as @a unless score @s pr.id = @s pr.id store result score @s pr.id run scoreboard players add #global pr.id 1
 

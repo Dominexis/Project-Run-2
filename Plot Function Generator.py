@@ -306,7 +306,7 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "player" / "checkpoint" / "
 commands: list[str] = []
 for coordinate in coordinates:
     commands.append(
-        f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} unless score @s spectate matches 1.. unless score @s pr.plot = #spawn_plot pr.value run advancement grant @s only pr:plot_{str(coordinate[0]).replace("-", "n")}_{str(coordinate[1]).replace("-", "n")}'
+        f'execute if score @s pr.plot_x matches {coordinate[0]} if score @s pr.plot_z matches {coordinate[1]} unless score @s spectate matches 1.. unless score @s lobby matches 1.. unless score @s pr.plot = #spawn_plot pr.value run advancement grant @s only pr:plot_{str(coordinate[0]).replace("-", "n")}_{str(coordinate[1]).replace("-", "n")}'
     )
 
 with (DATA_PACK_PATH / "data" / "pr" / "functions" / "plot" / "advancement.mcfunction").open("w", encoding="utf-8") as file:
