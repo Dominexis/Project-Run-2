@@ -18,6 +18,7 @@ Cantaloupe4
 CaptainArgus
 CoreOptd
 CosmicAxolotl
+CosmicCortexSP
 Cubed Team
 Cygnus
 DTplayers
