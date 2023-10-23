@@ -1,3 +1,10 @@
+# Check if its forcing to move
+
+execute if entity @s[tag=kello.state.force_move] run function kello:entity/decal/component/moving_platform/state/on_activated
+execute if score #state kello.value matches 2 if score #pass kello.value matches 0 run return 0
+
+
+
 # Set score
 
 scoreboard players set #state kello.value 0

@@ -5,9 +5,20 @@ scoreboard players set #casterminate kello.value 0
 tag @s add kello.player.target
 
 scoreboard players set #boolean kello.value 0
+
+execute if entity @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.entity.type.launchpad,distance=..1.875,scores={kello.entity.state=..1}] run scoreboard players set #boolean kello.value 1
+execute if entity @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.decal,tag=kello.empty,tag=kello.entity.type.cogwheel_shaft,tag=kello.entity.type.large,distance=..1.25] run scoreboard players set #boolean kello.value 1
+
+execute if score #boolean kello.value matches 0 unless block ^ ^ ^.5 #kello:generic/cogwheel_passable run particle minecraft:block_marker barrier ^ ^ ^.25 0 0 0 1 1 force @p[tag=pr.target,tag=kello.player.target]
+execute if score #boolean kello.value matches 0 unless block ^ ^ ^.5 #kello:generic/cogwheel_passable run tag @s remove kello.player.target
+execute if score #boolean kello.value matches 0 unless block ^ ^ ^.5 #kello:generic/cogwheel_passable run return 0
+
+execute if score #boolean kello.value matches 0 unless block ^ ^ ^1 #kello:generic/cogwheel_passable run particle minecraft:block_marker barrier ^ ^ ^.5 0 0 0 1 1 force @p[tag=pr.target,tag=kello.player.target]
+execute if score #boolean kello.value matches 0 unless block ^ ^ ^1 #kello:generic/cogwheel_passable run tag @s remove kello.player.target
+execute if score #boolean kello.value matches 0 unless block ^ ^ ^1 #kello:generic/cogwheel_passable run return 0
+
 execute positioned ^ ^ ^-1 if block ~ ~ ~ #kello:generic/cogwheel_passable run function kello:entity/thrown/large_cog/spawn/main
-execute if score #boolean kello.value matches 0 run function kello:entity/thrown/large_cog/spawn/main
-scoreboard players set #set kello.aim.id 0
+# scoreboard players set #set kello.aim.id 0
 tag @s remove kello.player.target
 
 # scoreboard players operation @s kello.player.l_cogwheel_timeout = #cogwheel_timeout_limit kello.value

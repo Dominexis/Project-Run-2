@@ -30,3 +30,13 @@ execute as @e[type=marker,tag=kello.entity.kill_this_now,tag=kello.entity.temp_p
 scoreboard players operation @s kello.player.checkpoint.id = #local kello.player.checkpoint.id
 scoreboard players operation @s kello.level.id = #local kello.level.id
 tag @s remove kello.player.targeted
+
+
+
+
+scoreboard players set #input pr.value 3
+function pr:generic/rng/lcg
+
+execute if score #output pr.value matches 0 run playsound kello:flag.0 master @s ~ ~1.75 ~ 0.125 1 0.0125
+execute if score #output pr.value matches 1 run playsound kello:flag.1 master @s ~ ~1.75 ~ 0.125 1 0.0125
+execute if score #output pr.value matches 2 run playsound kello:flag.2 master @s ~ ~1.75 ~ 0.125 1 0.0125

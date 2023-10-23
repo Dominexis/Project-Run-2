@@ -1,12 +1,3 @@
-# Init new players
-
-#execute unless score @s kello.player.id = @s kello.player.id run function kello:player/setup/main
-
-
-
-
-
-
 # Reference
 
 scoreboard players operation #local kello.player.id = @s kello.player.id

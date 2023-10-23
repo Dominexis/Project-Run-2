@@ -45,4 +45,4 @@ execute if entity @s[tag=kello.decal.type.flyfan] run function kello:entity/deca
 
 # tag @s remove kello.decal.init
 
-# kill @s
+execute if score #kill kello.value matches 1 run kill @s

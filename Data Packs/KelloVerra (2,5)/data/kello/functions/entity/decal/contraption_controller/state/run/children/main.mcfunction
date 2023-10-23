@@ -19,7 +19,7 @@ execute if entity @s[tag=kello.decal.component] run function kello:entity/decal/
 
 # Cog
 
-# execute if entity @s[tag=aj.decwheel.root] if score @s kello.decal.state matches 0.. run function kello:entity/decal/contraption_controller/state/run/children/cog
+execute if entity @s[tag=aj.decwheel.root] if score @s kello.decal.state matches 0.. run function kello:entity/decal/contraption_controller/state/run/children/cog
 
 
 

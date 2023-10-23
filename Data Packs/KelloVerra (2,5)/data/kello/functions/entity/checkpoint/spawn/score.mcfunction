@@ -9,7 +9,7 @@ scoreboard players operation @s kello.entity.checkpoint.id = #global kello.entit
 execute if score #uninstantiate kello.value matches 1 run scoreboard players operation @s kello.entity.checkpoint.id = #init kello.entity.checkpoint.id
 execute if score #uninstantiate kello.value matches 1 run scoreboard players operation @s kello.player.void_y = #init kello.player.void_y
 
-execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.level.id = #local kello.level.id
+execute if score #level_creation_mode kello.value matches 1 run function kello:tick/level/creation_mode
 
 scoreboard players operation #spawn_local kello.entity.checkpoint.id = #global kello.entity.checkpoint.id
 

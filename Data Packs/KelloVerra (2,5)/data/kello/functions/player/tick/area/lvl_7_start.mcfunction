@@ -5,11 +5,6 @@ scoreboard players set #level_variant_to_load kello.value 0
 function kello:tick/level/assign
 
 
-# force Music
-
-scoreboard players set @s apparatus_restart_music 1
-
-
 
 
 # Derelate

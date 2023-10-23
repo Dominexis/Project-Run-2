@@ -17,7 +17,7 @@ scoreboard players operation #sfx_progress kello.value = @s kello.player.l_parko
 scoreboard players operation @s kello.player.l_combo_timer = #combo_timer kello.value
 scoreboard players add @s kello.player.l_parkour_combo 1
 
-execute if score #sfx_progress kello.value matches 0 run playsound kello:large_cogwheel_attach_parkour0 master @s ~ ~ ~ 0.725 1 0.725
-execute if score #sfx_progress kello.value matches 1 run playsound kello:large_cogwheel_attach_parkour1 master @s ~ ~ ~ 0.675 1 0.675
+execute if score #sfx_progress kello.value matches 0 run playsound kello:large_cogwheel_attach_parkour0 master @s ~ ~ ~ 0.425 1 0.425
+execute if score #sfx_progress kello.value matches 1 run playsound kello:large_cogwheel_attach_parkour1 master @s ~ ~ ~ 0.375 1 0.375
 execute if score #sfx_progress kello.value matches 2.. if score #sfx_alt kello.value matches 0 run playsound kello:large_cogwheel_attach_parkour2 master @s ~ ~ ~ 0.35 1 0.35
 execute if score #sfx_progress kello.value matches 2.. if score #sfx_alt kello.value matches 1 run playsound kello:large_cogwheel_attach_parkour2_alt master @s ~ ~ ~ 0.35 1 0.35

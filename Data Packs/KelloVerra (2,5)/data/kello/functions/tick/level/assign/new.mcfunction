@@ -1,4 +1,4 @@
-#! NEW ASSIGNED LEVEL ID {score #level_id_to_assign kello.value}
+# DATAMANCER#! NEW ASSIGNED LEVEL ID {score #level_id_to_assign kello.value}
 
 execute store result storage kello:data tag.loaded_level.packet_template.id int 1 run scoreboard players get #level_id_to_assign kello.value
 execute store result storage kello:data tag.loaded_level.packet_template.variant int 1 run scoreboard players get #level_variant_to_load kello.value

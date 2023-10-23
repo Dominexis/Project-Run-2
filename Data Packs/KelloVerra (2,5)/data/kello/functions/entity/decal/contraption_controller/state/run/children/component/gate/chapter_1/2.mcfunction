@@ -1,7 +1,7 @@
 # Deplace hitbox
 
-execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ air replace minecraft:petrified_oak_slab[type=top]
-execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ air replace minecraft:spruce_wood
+execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ structure_void replace minecraft:petrified_oak_slab[type=top]
+execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ structure_void replace minecraft:spruce_wood
 
 
 

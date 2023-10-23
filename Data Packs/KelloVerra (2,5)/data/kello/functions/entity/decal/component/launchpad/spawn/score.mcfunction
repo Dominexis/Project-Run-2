@@ -7,7 +7,7 @@ scoreboard players set @s aj.launchpad.animation.shoot.local_anim_time 15
 scoreboard players operation @s kello.entity.launch_power = #minimal_launchpad_power kello.value
 execute if score #uninstantiate kello.value matches 1 run scoreboard players operation @s kello.entity.launch_power = #defined_power kello.value
 
-execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.level.id = #local kello.level.id
+execute if score #level_creation_mode kello.value matches 1 run function kello:tick/level/creation_mode
 execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.entity.checkpoint.id = #init kello.entity.checkpoint.id
 
 function kello:entity/decal/init

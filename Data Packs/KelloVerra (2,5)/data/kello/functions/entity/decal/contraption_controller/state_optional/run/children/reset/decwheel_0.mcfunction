@@ -29,4 +29,5 @@ execute if score @s kello.decal.state matches 3 run function kello:entity/decal/
 # Start anim
 
 execute run function kello:entity/decal/decwheel/animation/resume_rotate_run
+execute if score @s kello.decal.state matches 1 at @s summon marker run function kello:entity/decal/contraption_controller/state/run/children/large_particle_init
 execute unless entity @s[tag=kello.found_nearest_target] unless score @s kello.decal.state matches 1 unless score @s kello.decal.state matches 3 run function kello:entity/decal/decwheel/animation/resume_rotate_run

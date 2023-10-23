@@ -1,2 +1,1 @@
 scoreboard players set @s aj.animwheel.rig_loaded 1
-execute unless score @s aj.animwheel.export_version = aj.animwheel.export_version aj.i at @s run function animated_java:animwheel/zzzzzzzz/mark_outdated_rig

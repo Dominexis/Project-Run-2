@@ -1,2 +1,2 @@
-execute if entity @s[tag=kello.entity.type.large] run function kello:entity/thrown/large_cog/state/recoil/void_start
-execute if entity @s[tag=kello.entity.type.small] run function kello:entity/thrown/small_cog/state/recoil/void_start
+execute if entity @s[tag=kello.entity.type.large] run tag @s add kello.state.force_recoil
+execute if entity @s[tag=kello.entity.type.small] run tag @s add kello.state.force_recoil

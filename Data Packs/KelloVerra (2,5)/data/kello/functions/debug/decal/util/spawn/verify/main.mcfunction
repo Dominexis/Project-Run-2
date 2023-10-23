@@ -63,8 +63,9 @@ execute if score #decal kello.value = $decal.animwheel_6 kello.decal align xyz p
 execute if score #decal kello.value = $decal.animwheel_7 kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.animwheel_dummy","pr.ignore","kello.decal.init"],data:{variant:7}}
 execute if score #decal kello.value = $decal.animwheel_8 kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.animwheel_dummy","pr.ignore","kello.decal.init"],data:{variant:8}}
 
+scoreboard players set #kill kello.value 1
 execute as @e[type=marker,tag=kello.decal.spawn_point,tag=kello.decal.init,distance=..4] positioned as @s run function kello:debug/decal/util/spawn/verify/decals/process_decals
-
+scoreboard players set #kill kello.value 0
 
 
 

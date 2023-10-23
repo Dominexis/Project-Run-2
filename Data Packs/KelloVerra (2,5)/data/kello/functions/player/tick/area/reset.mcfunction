@@ -7,5 +7,8 @@ tag @s remove kello.player.has_triggered.lvl_4_pre
 tag @s remove kello.player.has_triggered.lvl_4_start
 tag @s remove kello.player.has_triggered.lvl_5_start
 tag @s remove kello.player.has_triggered.lvl_6_start
+tag @s remove kello.player.has_triggered.lvl_5_music_final_trans
 tag @s remove kello.player.has_triggered.lvl_6_music_end_trans
+tag @s remove kello.player.has_triggered.lvl_6_music_final
 tag @s remove kello.player.has_triggered.lvl_7_start
+tag @s remove kello.player.has_triggered.lvl_7_music_outro

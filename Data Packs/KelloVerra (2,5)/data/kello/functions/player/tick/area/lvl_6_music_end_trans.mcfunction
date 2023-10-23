@@ -1,6 +1,6 @@
 # Music
 
-function kello:player/tick/music/melody/queue_transition
+function kello:player/tick/music/final/queue_transition
 function kello:player/tick/music/outro/queue
 
 

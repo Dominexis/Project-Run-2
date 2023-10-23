@@ -14,7 +14,10 @@ scoreboard players reset @s kello.entity.timer
 
 # Animation
 
-execute if score @s aj.launchpad.animation.shoot.local_anim_time matches 15 run function kello:entity/decal/component/launchpad/animation/cancel
+scoreboard players set #boolean_1 kello.value 0
+
+execute if score #boolean_1 kello.value matches 0 if score @s aj.launchpad.animation.shoot.local_anim_time matches 15 run function kello:entity/decal/component/launchpad/animation/cancel
+execute if score #boolean_1 kello.value matches 0 unless entity @s[tag=aj.launchpad.animation.shoot] run function kello:entity/decal/component/launchpad/animation/cancel
 
 
 

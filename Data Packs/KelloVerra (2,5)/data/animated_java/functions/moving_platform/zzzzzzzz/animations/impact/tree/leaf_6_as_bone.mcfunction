@@ -1,1 +1,2 @@
+execute if entity @s[tag=aj.moving_platform.bone.indicator] run data modify entity @s {} merge value {transformation:[-2.0416666666666665f,0f,2.5003205482591794e-16f,0f,0f,2.0416666666666665f,0f,0.671875f,-2.5003205482591794e-16f,0f,-2.0416666666666665f,0f,0f,0f,0f,1f],start_interpolation:0}
 execute if entity @s[tag=aj.moving_platform.bone.root] run data modify entity @s {} merge value {transformation:[-2.625f,0f,3.214697847761802e-16f,0f,0f,2.625f,0f,0.515f,-3.214697847761802e-16f,0f,-2.625f,0f,0f,0f,0f,1f],start_interpolation:0}

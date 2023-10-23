@@ -16,6 +16,7 @@ execute at @s run function kello:generic/sfx/cog_pickup/large
 # Offset cooldown
 
 scoreboard players set @s[tag=kello.state.cogwheel_was_attached_l] kello.player.cog.l_cooldown -5
+scoreboard players set @s[tag=kello.state.cogwheel_was_launched_l] kello.player.cog.l_cooldown -2
 scoreboard players operation @s[tag=!kello.state.cogwheel_was_attached_l] kello.player.cog.l_cooldown += #throw_cooldown kello.value
 
 tag @s remove kello.state.cogwheel_was_attached_l

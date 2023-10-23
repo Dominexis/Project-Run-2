@@ -53,7 +53,9 @@ scoreboard players operation #prev_tick_time kello.value = #time pr.value
 
 
 
+# Init new players
 
+execute positioned ~-2.25 ~1 ~-46.25 as @a[tag=pr.target,dx=2.5,dy=5,dz=2.5] unless score @s kello.player.id = @s kello.player.id run function kello:player/setup/main
 
 # Loop player
 

@@ -19,3 +19,5 @@ execute unless score #state kello.value matches 1..4 if entity @s[tag=kello.stat
 # Detect if player log out / leave plot
 
 execute if score #logout_trigger kello.value matches 1 run function kello:entity/thrown/large_cog/state/despawn/pre_start
+
+execute if score #state kello.value matches 1 run function kello:entity/thrown/large_cog/state/recoil/state

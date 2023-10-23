@@ -60,3 +60,9 @@ scoreboard players operation @s kello.decal.id = #local kello.decal.id
 data modify storage kello:data tag.Owner set from entity @s UUID
 
 execute summon snowball run function kello:entity/decal/component/moving_platform/spawn/point
+
+
+
+# Visual
+
+execute on passengers if entity @s[tag=kello.entity.part.indicator] run function kello:entity/decal/component/moving_platform/spawn/display/indicator

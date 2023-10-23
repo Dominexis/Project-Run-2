@@ -14,6 +14,7 @@ execute if score #variant aj.i = $aj.moving_platform.variant.static aj.id run fu
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.moving_platform.animation.impact aj.id run function animated_java:moving_platform/zzzzzzzz/animations/impact/apply_frame_as_root
 execute if score #animation aj.i = $aj.moving_platform.animation.impact aj.id run scoreboard players operation @s aj.moving_platform.animation.impact.local_anim_time = #frame aj.i
+execute at @s run function #animated_java:moving_platform/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

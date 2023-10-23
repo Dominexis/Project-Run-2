@@ -16,7 +16,10 @@ scoreboard players add @s kello.player.r_combo_timer 0
 
 scoreboard players reset @s kello.player.music_progress
 
-scoreboard players set @s kello.player.checkpoint.id 0
+scoreboard players set @s apparatus_restart_music 0
+scoreboard players set @s kello.player.restart_music_cooldown 0
+
+scoreboard players set @s kello.player.checkpoint.id -1
 scoreboard players set @s kello.player.chapter 0
 
 scoreboard players set @s kello.player.cog.l -1

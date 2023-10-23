@@ -30,7 +30,7 @@ execute if score #ref_state kello.value matches 1 run scoreboard players operati
 scoreboard players operation @s kello.entity.timer = #rundelay kello.entity.timer
 scoreboard players operation @s kello.entity.delay = #invdelay kello.entity.delay
 
-execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.level.id = #local kello.level.id
+execute if score #level_creation_mode kello.value matches 1 run function kello:tick/level/creation_mode
 
 execute if score #override_brightness kello.value matches 1 on passengers if entity @s[type=item_display] run data modify entity @s brightness set from storage kello:data tag.temp_spawnpoint.data.brightness
 

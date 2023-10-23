@@ -36,7 +36,9 @@ scoreboard objectives add apparatus_restart_music trigger
 
 scoreboard objectives add kello.ticks dummy
 scoreboard objectives add kello.level.id dummy
+scoreboard objectives add kello.level.var dummy
 scoreboard objectives add kello.level.next_id dummy
+scoreboard objectives add kello.level.next_var dummy
 scoreboard objectives add kello.entity.checkpoint.id dummy
 scoreboard objectives add kello.entity.ignore_checkpoint dummy
 scoreboard objectives add kello.entity.variant dummy
@@ -56,22 +58,23 @@ scoreboard objectives add kello.entity.air_toggle dummy
 scoreboard objectives add kello.entity.quantity dummy
 scoreboard objectives add kello.entity.launch_power dummy
 
-scoreboard objectives add kello.particle.lifetime dummy
-
 scoreboard objectives add kello.decal dummy
 scoreboard objectives add kello.decal.id dummy
 scoreboard objectives add kello.decal.timer dummy
 scoreboard objectives add kello.decal.delay dummy
 scoreboard objectives add kello.decal.state dummy
+scoreboard objectives add kello.decal.sequence dummy
 scoreboard objectives add kello.decal.active dummy
 
-scoreboard objectives add kello.aim.id dummy
-scoreboard objectives add kello.aim.count dummy
-scoreboard objectives add kello.aim.scale dummy
+# scoreboard objectives add kello.aim.id dummy
+# scoreboard objectives add kello.aim.count dummy
+# scoreboard objectives add kello.aim.scale dummy
 
 scoreboard objectives add kello.component.pos_1 dummy
 scoreboard objectives add kello.component.pos_2 dummy
 scoreboard objectives add kello.component.state dummy
+
+scoreboard objectives add kello.player.logoff minecraft.custom:minecraft.leave_game
 
 scoreboard objectives add kello.component.to_y dummy
 scoreboard objectives add kello.component.to_x dummy
@@ -95,7 +98,7 @@ scoreboard objectives add kello.death.delay dummy
 
 
 
-# #> NOTE: DEBUG TRIGGERS
+#> NOTE: DEBUG TRIGGERS
 
 # scoreboard objectives add kello.decal.gimbal_to_selection_facing trigger
 # scoreboard objectives add kello.decal.pos_to_selection_facing trigger
@@ -153,15 +156,15 @@ scoreboard players set $decal.moving_platform kello.decal 1006
 scoreboard players set $decal.mellobanner_0 kello.decal 1007
 scoreboard players set $decal.mellobanner_1 kello.decal 1008
 scoreboard players set $decal.mellobanner_2 kello.decal 1009
-# scoreboard players set $decal.animwheel_0 kello.decal 1010
-# scoreboard players set $decal.animwheel_1 kello.decal 1011
-# scoreboard players set $decal.animwheel_2 kello.decal 1012
-# scoreboard players set $decal.animwheel_3 kello.decal 1013
-# scoreboard players set $decal.animwheel_4 kello.decal 1014
-# scoreboard players set $decal.animwheel_5 kello.decal 1015
-# scoreboard players set $decal.animwheel_6 kello.decal 1016
-# scoreboard players set $decal.animwheel_7 kello.decal 1017
-# scoreboard players set $decal.animwheel_8 kello.decal 1018
+scoreboard players set $decal.animwheel_0 kello.decal 1010
+scoreboard players set $decal.animwheel_1 kello.decal 1011
+scoreboard players set $decal.animwheel_2 kello.decal 1012
+scoreboard players set $decal.animwheel_3 kello.decal 1013
+scoreboard players set $decal.animwheel_4 kello.decal 1014
+scoreboard players set $decal.animwheel_5 kello.decal 1015
+scoreboard players set $decal.animwheel_6 kello.decal 1016
+scoreboard players set $decal.animwheel_7 kello.decal 1017
+scoreboard players set $decal.animwheel_8 kello.decal 1018
 
 # Plain decals
 scoreboard players set $decal.launchpad kello.decal 2001
@@ -191,7 +194,7 @@ scoreboard players set $decal.animwheel_6 kello.decal 3018
 scoreboard players set $decal.animwheel_7 kello.decal 3019
 scoreboard players set $decal.animwheel_8 kello.decal 3020
 
-scoreboard players set #combo_timer kello.value 28
+scoreboard players set #combo_timer kello.value 32
 # scoreboard players set #cogwheel_timeout_limit kello.value 240
 
 scoreboard players set #minimal_launchpad_power kello.value 1200

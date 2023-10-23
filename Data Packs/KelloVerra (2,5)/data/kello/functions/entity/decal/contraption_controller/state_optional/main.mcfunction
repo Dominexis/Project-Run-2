@@ -1,7 +1,7 @@
 # Denullify state value
 
-execute unless score @s kello.entity.state = @s kello.entity.state run function kello:entity/decal/contraption_controller/state_optional/idle/start
-execute unless score @s kello.entity.state = @s kello.entity.state run scoreboard players set @s kello.entity.state 0
+execute unless score @s kello.entity.state = @s kello.entity.state run function kello:entity/decal/contraption_controller/state_optional/out/start
+execute unless score @s kello.entity.state = @s kello.entity.state run scoreboard players set @s kello.entity.state 03
 
 
 

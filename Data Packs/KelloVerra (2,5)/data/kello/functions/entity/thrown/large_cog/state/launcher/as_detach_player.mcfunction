@@ -4,8 +4,9 @@ tp @s ~ ~ ~
 # A single tp @s isnt enough, double it to make sure consistency is maintained
 tp @s @s
 tp @s @s
+tp @s @s
 
-tag @s add kello.state.cogwheel_was_attached_l
+tag @s add kello.state.cogwheel_was_launched_l
 
 execute positioned as @s run function kello:player/launchpad/start
 

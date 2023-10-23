@@ -1,2 +1,1 @@
 scoreboard players set @s aj.melloflora_display.rig_loaded 1
-execute unless score @s aj.melloflora_display.export_version = aj.melloflora_display.export_version aj.i at @s run function animated_java:melloflora_display/zzzzzzzz/mark_outdated_rig

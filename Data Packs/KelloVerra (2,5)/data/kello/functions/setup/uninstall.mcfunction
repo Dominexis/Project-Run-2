@@ -1,3 +1,8 @@
+# Unload players
+
+execute as @a if score @s kello.player.id = @s kello.player.id run function kello:player/setup/exit
+
+
 # Assign objectives
 
 scoreboard objectives remove kello.value
@@ -37,6 +42,8 @@ scoreboard objectives remove apparatus_restart_music
 scoreboard objectives remove kello.ticks
 scoreboard objectives remove kello.level.id
 scoreboard objectives remove kello.level.next_id
+scoreboard objectives remove kello.level.var
+scoreboard objectives remove kello.level.next_var
 scoreboard objectives remove kello.entity.checkpoint.id
 scoreboard objectives remove kello.entity.ignore_checkpoint
 scoreboard objectives remove kello.entity.variant
@@ -56,22 +63,23 @@ scoreboard objectives remove kello.entity.air_toggle
 scoreboard objectives remove kello.entity.quantity
 scoreboard objectives remove kello.entity.launch_power
 
-scoreboard objectives remove kello.particle.lifetime
-
 scoreboard objectives remove kello.decal
 scoreboard objectives remove kello.decal.id
 scoreboard objectives remove kello.decal.timer
 scoreboard objectives remove kello.decal.delay
 scoreboard objectives remove kello.decal.state
+scoreboard objectives remove kello.decal.sequence
 scoreboard objectives remove kello.decal.active
 
-scoreboard objectives remove kello.aim.id
-scoreboard objectives remove kello.aim.count
-scoreboard objectives remove kello.aim.scale
+# scoreboard objectives remove kello.aim.id
+# scoreboard objectives remove kello.aim.count
+# scoreboard objectives remove kello.aim.scale
 
 scoreboard objectives remove kello.component.pos_1
 scoreboard objectives remove kello.component.pos_2
 scoreboard objectives remove kello.component.state
+
+scoreboard objectives remove kello.player.logoff
 
 scoreboard objectives remove kello.component.to_y
 scoreboard objectives remove kello.component.to_x

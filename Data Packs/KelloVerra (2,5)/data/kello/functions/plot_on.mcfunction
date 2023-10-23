@@ -28,4 +28,4 @@ summon marker ~ ~ ~ {Tags:["kello.exclude","pr.ignore","kello.entity.plot_center
 
 
 
-scoreboard players set #has_deactivated kello.value 0
+scoreboard players set #has_activated kello.value 1

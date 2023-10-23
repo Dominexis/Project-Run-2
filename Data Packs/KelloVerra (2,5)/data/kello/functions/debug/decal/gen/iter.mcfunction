@@ -13,6 +13,10 @@ scoreboard players remove #generator.iter kello.value 1
 
 
 scoreboard players operation #local kello.level.id = @s kello.level.id
+
+execute store result score @s kello.level.var run data get entity @s data.level_variant
+scoreboard players operation #local kello.level.var = @s kello.level.var
+
 scoreboard players set #level_creation_mode kello.value 1
 
 function kello:debug/decal/util/spawn/verify/decals/process_decals
