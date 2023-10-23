@@ -36,12 +36,6 @@
         },
         {
             "predicate": {
-                "custom_model_data": 351906
-            },
-            "model": "kello:item/environment/billboard_0"
-        },
-        {
-            "predicate": {
                 "custom_model_data": 351907
             },
             "model": "kello:item/environment/mellobanner/0"

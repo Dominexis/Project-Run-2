@@ -15,6 +15,12 @@
                 "custom_model_data": 351902
             },
             "model": "kello:item/interactable/large_cogwheel"
+		},
+		{
+            "predicate": {
+                "custom_model_data": 351903
+            },
+            "model": "kello:item/interactable/large_cogwheel_background"
 		}
 	]
 }

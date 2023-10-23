@@ -103,5 +103,20 @@
 		"sounds": [
 			{	"name":"kello:music/final_trans_outro",	 "stream":true, "attenuation_distance":1	}
 		]
+	},
+	"flag.0": {
+		"sounds": [
+			"kello:flag/0"
+		]
+	},
+	"flag.1": {
+		"sounds": [
+			"kello:flag/1"
+		]
+	},
+	"flag.2": {
+		"sounds": [
+			"kello:flag/2"
+		]
 	}
 }

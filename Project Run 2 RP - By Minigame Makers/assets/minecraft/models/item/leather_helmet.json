@@ -65,18 +65,6 @@
 			"trim_type": 1.0
 		  }
 		},
-		{
-			"predicate": {
-				"custom_model_data": 1
-			},
-			"model": "kello:item/visual/halo"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 2
-			},
-			"model": "kello:item/mechanic/comet_spawner"
-		},
         {
             "predicate": {
                 "custom_model_data": 351903
@@ -203,11 +191,125 @@
             },
             "model": "kello:item/visual/meteor_spawner/pillar_sequence/4"
         },
-        {
-            "predicate": {
-                "custom_model_data": 351924
-            },
-            "model": "kello:item/visual/occluder"
-        }
+		{
+			"predicate": {
+				"custom_model_data": 351925
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/0"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351926
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/1"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351927
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351928
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/3"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351929
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/4"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351930
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/5"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351931
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/6"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351932
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/7"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351933
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/8"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351934
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/9"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351935
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/10"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351936
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/11"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351937
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/12"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351938
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/13"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351939
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/14"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351940
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/15"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351941
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/16"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351942
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/17"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351943
+			},
+			"model": "animated_java:item/dangling_platform/indicatorize/18"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351944
+			},
+			"model": "animated_java:item/dangling_platform/indicator"
+		}
 	]
 }

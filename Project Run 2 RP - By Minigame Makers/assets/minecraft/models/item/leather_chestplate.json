@@ -12,18 +12,6 @@
 		},
 		{
 			"predicate": {
-				"custom_model_data": 2
-			},
-			"model": "animated_java:item/melloflora_lantern/petal"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 3
-			},
-			"model": "animated_java:item/melloflora_lantern/root"
-		},
-		{
-			"predicate": {
 				"custom_model_data": 4
 			},
 			"model": "animated_java:item/melloflora_lantern_med/petal"
@@ -252,12 +240,6 @@
 		},
 		{
 			"predicate": {
-				"custom_model_data": 42
-			},
-			"model": "animated_java:item/wall_mellolily/root"
-		},
-		{
-			"predicate": {
 				"custom_model_data": 43
 			},
 			"model": "animated_java:item/cogwheel/small_cog"
@@ -318,12 +300,6 @@
 		},
 		{
 			"predicate": {
-				"custom_model_data": 53
-			},
-			"model": "animated_java:item/wall_mellolily_pot_small/root"
-		},
-		{
-			"predicate": {
 				"custom_model_data": 54
 			},
 			"model": "animated_java:item/wall_mellolily_pot_0/root"
@@ -345,12 +321,6 @@
 				"custom_model_data": 57
 			},
 			"model": "animated_java:item/melloleta_patch/root"
-		},
-		{
-			"predicate": {
-				"custom_model_data": 58
-			},
-			"model": "animated_java:item/mellorainn_cluster/root"
 		},
 		{
 			"predicate": {
@@ -416,25 +386,25 @@
 			"predicate": {
 				"custom_model_data": 69
 			},
-			"model": "animated_java:item/moving_platform/root"
+			"model": "animated_java:item/moving_platform/indicator"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 70
 			},
-			"model": "animated_java:item/moving_platform/fast/root"
+			"model": "animated_java:item/moving_platform/root"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 71
 			},
-			"model": "animated_java:item/moving_platform/slow/root"
+			"model": "animated_java:item/moving_platform/fast/indicator"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 72
 			},
-			"model": "animated_java:item/moving_platform/static/root"
+			"model": "animated_java:item/moving_platform/fast/root"
 		},
 		{
 			"predicate": {
@@ -476,25 +446,25 @@
 			"predicate": {
 				"custom_model_data": 79
 			},
-			"model": "animated_java:item/dangling_platform/root"
+			"model": "animated_java:item/dangling_platform/indicator"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 80
 			},
-			"model": "animated_java:item/dangling_platform/fast/root"
+			"model": "animated_java:item/dangling_platform/root"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 81
 			},
-			"model": "animated_java:item/dangling_platform/slow/root"
+			"model": "animated_java:item/dangling_platform/fast/indicator"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 82
 			},
-			"model": "animated_java:item/dangling_platform/static/root"
+			"model": "animated_java:item/dangling_platform/fast/root"
 		},
 		{
 			"predicate": {
@@ -963,6 +933,54 @@
 				"custom_model_data": 160
 			},
 			"model": "animated_java:item/melloleta_patch_singular/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 161
+			},
+			"model": "animated_java:item/dangling_platform/slow/indicator"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 162
+			},
+			"model": "animated_java:item/dangling_platform/slow/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 163
+			},
+			"model": "animated_java:item/dangling_platform/static/indicator"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 164
+			},
+			"model": "animated_java:item/dangling_platform/static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 165
+			},
+			"model": "animated_java:item/moving_platform/slow/indicator"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 166
+			},
+			"model": "animated_java:item/moving_platform/slow/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 167
+			},
+			"model": "animated_java:item/moving_platform/static/indicator"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 168
+			},
+			"model": "animated_java:item/moving_platform/static/root"
 		}
 	],
 	"animated_java": {
@@ -1115,7 +1133,11 @@
 					69,
 					70,
 					71,
-					72
+					72,
+					165,
+					166,
+					167,
+					168
 				]
 			},
 			"dangling_platform": {
@@ -1123,7 +1145,11 @@
 					79,
 					80,
 					81,
-					82
+					82,
+					161,
+					162,
+					163,
+					164
 				]
 			},
 			"animwheel": {

@@ -6,30 +6,6 @@
     "overrides": [
         {
             "predicate": {
-                "custom_model_data": 351901
-            },
-            "model": "kello:item/aimed/large_gear"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351902
-            },
-            "model": "kello:item/aimed/large_shaft"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351903
-            },
-            "model": "kello:item/aimed/small_gear"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351904
-            },
-            "model": "kello:item/aimed/small_shaft"
-        },
-        {
-            "predicate": {
                 "custom_model_data": 351905
             },
             "model": "kello:item/interactable/large_cogwheel"
@@ -39,102 +15,6 @@
                 "custom_model_data": 351906
             },
             "model": "kello:item/interactable/small_cogwheel"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351907
-            },
-            "model": "kello:item/mechanic/chain"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351908
-            },
-            "model": "kello:item/mechanic/double_overhang"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351909
-            },
-            "model": "kello:item/mechanic/log/slice_0_0"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351910
-            },
-            "model": "kello:item/mechanic/log/slice_0_1"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351911
-            },
-            "model": "kello:item/mechanic/log/slice_0_2"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351912
-            },
-            "model": "kello:item/mechanic/planks/slice_0_0"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351913
-            },
-            "model": "kello:item/mechanic/planks/slice_0_1"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351914
-            },
-            "model": "kello:item/mechanic/planks/slice_0_2"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351915
-            },
-            "model": "kello:item/mechanic/planks/slice_1_0"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351916
-            },
-            "model": "kello:item/mechanic/planks/slice_1_1"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351917
-            },
-            "model": "kello:item/mechanic/planks/slice_1_2"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351918
-            },
-            "model": "kello:item/mechanic/planks/slice_2_0"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351919
-            },
-            "model": "kello:item/mechanic/planks/slice_2_1"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351920
-            },
-            "model": "kello:item/mechanic/planks/slice_2_2"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351921
-            },
-            "model": "kello:item/mechanic/single_overhang"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351922
-            },
-            "model": "kello:item/mechanic/triple_overhang"
         },
         {
             "predicate": {
@@ -381,18 +261,6 @@
                 "custom_model_data": 351963
             },
             "model": "kello:item/debug/parkour_mark"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351964
-            },
-            "model": "kello:item/visual/halo"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 351965
-            },
-            "model": "kello:item/visual/occluder"
         },
         {
             "predicate": {

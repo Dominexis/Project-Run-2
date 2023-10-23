@@ -1,0 +1,9 @@
+{
+	"parent": "animated_java:item/dangling_platform/indicator",
+	"textures": {
+		"2": "kello:item/decal/cogwheel_fast/0_f",
+		"3": "kello:item/decal/cogwheel_fast/4_f",
+		"4": "kello:item/decal/cogwheel_fast/3_f",
+		"5": "kello:item/decal/cogwheel_fast/1_f"
+	}
+}

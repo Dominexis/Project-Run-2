@@ -1,24 +1,4 @@
 {
 	"parent": "animated_java:item/moving_platform/root",
-	"textures": {
-		"0": "kello:item/trans",
-		"1": "kello:item/decal/moving_platform/sliding",
-		"2": "kello:item/decal/cogwheel/0",
-		"3": "kello:item/decal/cogwheel/4",
-		"4": "kello:item/decal/cogwheel/3",
-		"5": "kello:item/decal/cogwheel/1",
-		"6": "kello:item/decal/cogwheel_slow/0_s",
-		"7": "kello:item/decal/cogwheel_slow/1_s",
-		"8": "kello:item/decal/cogwheel_slow/2_s",
-		"9": "kello:item/decal/cogwheel_slow/3_s",
-		"10": "kello:item/decal/cogwheel_slow/4_s",
-		"11": "kello:item/decal/cogwheel_fast/0_f",
-		"12": "kello:item/decal/cogwheel_fast/1_f",
-		"13": "kello:item/decal/cogwheel_fast/2_f",
-		"14": "kello:item/decal/cogwheel_fast/3_f",
-		"15": "kello:item/decal/cogwheel_fast/4_f",
-		"16": "kello:item/decal/cogwheel/8",
-		"17": "kello:item/decal/cogwheel_fast/8_f",
-		"18": "kello:item/decal/cogwheel_slow/8_s"
-	}
+	"textures": {}
 }

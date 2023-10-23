@@ -81,7 +81,7 @@ NAMESPACES = {
     (2,1): ("subchronos", 3, True, "minecraft:honeycomb_block", "The Beehive", "Enter the beehive and avoid falling to the honey pits.\n\n§6SubChronos"),
     (2,3): ("eli_marie", 1, False, "minecraft:red_mushroom", "Mushylands", "Fun in the tunnels!\n\n§6Eli_marie"),
     (2,4): ("cobra2", 1, True, "minecraft:iron_boots", "Dualism Chamber", "Travel through the dimension that knows neither up nor down.\n\n§6Maniacobra"),
-    (2,5): ("kello", 0, True, "minecraft:diamond_horse_armor", "Cogwheel Animism", "A strange but powerful, and friendly?.. power of the temple hypnotizes you to take your interest towards its majestic mechanism.\n\n§6KelloVerra", '{CustomModelData:351902}'),
+    (2,5): ("kello", 0, True, "minecraft:diamond_horse_armor", "Ancient Apparatus", "A strange but powerful, and friendly?.. power of the temple hypnotizes you to take your interest towards its majestic mechanism.\n\n§6KelloVerra", '{CustomModelData:351902}'),
     (2,6): ("lifeely", 0, True, "minecraft:blast_furnace", "Blast Burner", "Phew! Sure is hot in here!\n\n§6Lifeely & Dominexis"),
     (3,-5): ("shadoweeq", 0, False, "minecraft:player_head", "Skyreach\nMega Tower", "Explore changing city scenes as you make your way up to reach the top of the tower.\n\n§6shadoweeq", '{SkullOwner:{Id:[I;1543298721,250171001,-2086573174,-871347001],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY2YmIzYWQ4ZGFmMGMxNDk5YjVlNDZkY2Y0MTc2YzgzNDU0MzU1M2ExYTgxODAwOWU3Njc1ZTg5NjI5NWUxYSJ9fX0="}]}}}'),
     (3,-4): ("kevinc", 0, False, "minecraft:gold_ore", "Mine Skyisland", "There were many people who came for the treasure, and now it's empty.\n\n§6mc_Kevin_Creeper"),

@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "popped_chorus_fruit",
 	"textures": {
 		"particle": "bansed:custom/bansed"
 	},

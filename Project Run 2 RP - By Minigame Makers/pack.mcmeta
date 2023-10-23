@@ -8,7 +8,7 @@
             { "text": "By ", "color": "gray" },
             { "text": "Minigame Makers", "color": "blue" },
             { "text": " - ", "color": "gray" },
-            { "text": "0.0.0", "color": "gold" }
+            { "text": "1.0.0", "color": "gold" }
         ]
 	}
 }

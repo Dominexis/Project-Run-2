@@ -3,8 +3,6 @@
 		{
 			"type": "paletted_permutations",
 			"textures": [
-				"pr:trims/models/armor/chainmail",
-				"pr:trims/models/armor/chainmail_leggings",
 				"inquognito:trims/models/armor/enemies/corrupted_growth",
 				"inquognito:trims/models/armor/enemies/corrupted_growth_leggings"
 			],

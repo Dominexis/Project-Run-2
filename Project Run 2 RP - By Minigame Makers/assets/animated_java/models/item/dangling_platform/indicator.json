@@ -1,0 +1,26 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"16": "kello:item/decal/moving_platform/moving_platform_indicator/def",
+		"particle": "kello:item/decal/moving_platform/moving_platform_indicator/12"
+	},
+	"elements": [
+		{
+			"from": [-4, 5.06122, -4],
+			"to": [20, 10.93878, 20],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 12, 12, 16], "texture": "#16"},
+				"east": {"uv": [0, 12, 12, 16], "texture": "#16"},
+				"south": {"uv": [0, 12, 12, 16], "texture": "#16"},
+				"west": {"uv": [0, 12, 12, 16], "texture": "#16"},
+				"up": {"uv": [12, 12, 0, 0], "rotation": 180, "texture": "#16"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}
