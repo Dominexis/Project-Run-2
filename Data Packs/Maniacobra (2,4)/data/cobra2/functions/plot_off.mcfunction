@@ -6,5 +6,6 @@ scoreboard objectives remove cobra2.y
 
 scoreboard objectives remove cobra2.ground
 scoreboard objectives remove cobra2.inv
+scoreboard objectives remove cobra2.ambient
 
 kill @e[tag=pr.target,tag=cobra2.text]

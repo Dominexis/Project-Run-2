@@ -6,7 +6,8 @@ tag @a[scores={cobra2.y=..35}] add cobra2.down
 
 execute as @a[tag=pr.target] at @s run function cobra2:tick_players
 
-# Ability
+# Checkpoints
+execute positioned ~ ~45 ~ as @a[tag=pr.target,distance=..2] run function pr:player/checkpoint/mark_pos
 execute positioned ~9 ~17 ~-28 as @a[tag=pr.target,tag=!cobra2.has_boots,distance=..3] run function cobra2:gain_ability
 
 # Clear boots
@@ -33,3 +34,4 @@ execute at @a[tag=pr.target,tag=cobra2.has_boots] run particle minecraft:dust 1 
 execute at @a[tag=pr.target,tag=cobra2.has_boots] run particle minecraft:dust 0 0 0 1 ~ 63.8 ~ 0.8 0 0.8 1 2
 execute at @a[tag=pr.target,tag=cobra2.has_boots] run particle minecraft:dust 0 0 0 1 ~ 6.2 ~ 0.8 0 0.8 1 2
 execute at @a[tag=pr.target,tag=cobra2.has_boots] run particle minecraft:dust 1 1 1 1 ~ 33.8 ~ 0.8 0 0.8 1 2
+scoreboard players add @a[tag=pr.target] cobra2.ambient 1
