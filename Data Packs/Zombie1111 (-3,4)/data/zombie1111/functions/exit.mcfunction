@@ -5,4 +5,4 @@ effect clear @s
 clear @s
 attribute @s generic.knockback_resistance base set 0.0
 attribute @s generic.max_health base set 20
-effect give @s instant_health 1 69
+effect give @s instant_health 1 69 true
