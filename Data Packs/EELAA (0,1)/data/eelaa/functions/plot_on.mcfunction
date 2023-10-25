@@ -15,3 +15,4 @@ scoreboard objectives add eelaa_item_count dummy
 
 
 
+setblock ~22 ~-38 ~-21 air
