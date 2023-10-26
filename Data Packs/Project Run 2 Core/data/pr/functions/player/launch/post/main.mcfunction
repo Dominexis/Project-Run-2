@@ -36,5 +36,5 @@ execute as @e[type=#pr:family/mob,distance=..16,tag=pr.entity.launch.invulnerabl
 
 # Stop sound
 
-scoreboard players set @s pr.stop_launch_sound 3
+scoreboard players set @s pr.stop_launch_sound 10
 stopsound @a[distance=..32] block minecraft:entity.generic.explode

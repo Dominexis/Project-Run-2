@@ -86,7 +86,7 @@ execute if score @s pr.plot_x matches -4 if score @s pr.plot_z matches -3 run sc
 
 
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -3 unless score @s plot matches 1.. run function technodono_plot_-2_-3:enter
-execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -3 run scoreboard players set @s pr.checkpoint_y 0
+execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -3 run scoreboard players set @s pr.checkpoint_y 1
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches -3 run scoreboard players set @s pr.checkpoint_side 0
 
 

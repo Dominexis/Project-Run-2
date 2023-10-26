@@ -46,7 +46,7 @@ def program():
         data_pack = data_pack_path.name
         if data_pack in [
             "Anas (-1,-2)",
-            # "KelloVerra (2,5)"
+            "KelloVerra (2,5)"
         ]:
             print(f'Skipping {data_pack}')
             continue

@@ -323,7 +323,7 @@ execute positioned ~-7 ~-22 ~ as @s[scores={eosand.pipe_num=10},distance=..1.5] 
 execute positioned ~-7 ~-22 ~ as @s[scores={eosand.pipe_num=10},distance=..1.5] run function eosand:colors/none
 
 # Kill armor stand
-execute positioned ~-7 ~22 ~ as @s[scores={eosand.pipe_num=10},distance=..1.5] on vehicle run kill @s
+execute positioned ~-7 ~-22 ~ as @s[scores={eosand.pipe_num=10},distance=..1.5] on vehicle run kill @s
 
 execute positioned ~-7 ~-22 ~ as @s[scores={eosand.pipe_num=10},distance=..1.5] run scoreboard players set @s eosand.pipe_num 0
 
