@@ -34,3 +34,4 @@ execute if score @s kello.entity.state matches 02 run function kello:entity/aimd
 execute if score @s kello.entity.state matches 03 run function kello:entity/aimdicator/large/state/lock/main
 
 scoreboard players operation @s kello.entity.state = #state kello.value
+return 1

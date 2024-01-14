@@ -28,3 +28,4 @@ scoreboard players reset @s kello.player.cog.l_response
 scoreboard players reset @s kello.player.cog.r_response
 scoreboard players reset @s kello.player.cog.l_cooldown
 scoreboard players reset @s kello.player.cog.r_cooldown
+return 1

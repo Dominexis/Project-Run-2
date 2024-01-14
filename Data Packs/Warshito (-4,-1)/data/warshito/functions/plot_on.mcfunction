@@ -35,3 +35,4 @@ scoreboard players set G19 warshito.Phase 0
 
 clone ~-5 ~65 ~36 ~-5 ~66 ~37 ~3 ~65 ~37
 clone ~-37 ~65 ~-5 ~-36 ~66 ~-5 ~-38 ~65 ~3
+return 1

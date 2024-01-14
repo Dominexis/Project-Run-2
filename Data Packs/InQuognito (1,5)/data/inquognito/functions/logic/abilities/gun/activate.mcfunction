@@ -5,3 +5,5 @@ scoreboard players operation @s inquognito.gun.cooldown = @s inquognito.gun.fire
 scoreboard players reset @s inquognito.use
 
 playsound inquognito:gun player @a
+
+return 1

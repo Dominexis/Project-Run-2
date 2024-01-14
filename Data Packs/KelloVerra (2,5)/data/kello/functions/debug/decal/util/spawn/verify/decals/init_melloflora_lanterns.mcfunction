@@ -17,3 +17,4 @@ execute unless entity @s[tag=aj.melloflora_lantern_sho.bone.root] unless entity 
 
 
 # function kello:debug/decal/util/spawn/verify/decals/initialize
+return 1

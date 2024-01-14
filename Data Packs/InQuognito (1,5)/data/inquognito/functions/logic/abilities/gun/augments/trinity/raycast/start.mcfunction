@@ -4,3 +4,5 @@ execute at @s run function inquognito:logic/abilities/gun/augments/trinity/move_
 execute at @s run function inquognito:logic/abilities/gun/augments/trinity/move_forward
 execute at @s run function inquognito:logic/abilities/gun/augments/trinity/move_forward
 execute at @s run function inquognito:logic/abilities/gun/augments/trinity/move_forward
+
+return 1

@@ -5,3 +5,4 @@ execute if score #music_resetting_notification_cooldown kello.value matches ..0 
 
 
 execute as @a[tag=pr.target] run function kello:player/tick/music/stop_vanilla
+return 1

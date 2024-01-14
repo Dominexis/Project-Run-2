@@ -27,3 +27,4 @@ execute as @e[tag=kello.entity.ticking,tag=kello.entity.type.moving_platform] on
 
 tag @s remove kello.state.force_move
 tag @s remove kello.state.force_deactive
+return 1

@@ -6,4 +6,5 @@ playsound minecraft:item.trident.throw block @a[tag=pr.target] ~ ~ ~ 1 0.2
 scoreboard players set #entity_mot_x pr.value -2700
 scoreboard players set #entity_mot_y pr.value 1500
 scoreboard players set #entity_mot_z pr.value 0
-execute as @s run function pr:player/launch/apply/vector
+function pr:player/launch/apply/vector
+return 1

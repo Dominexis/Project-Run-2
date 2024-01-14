@@ -115,3 +115,4 @@ scoreboard objectives remove kello.update_rig_pos
 # Storages
 
 data remove storage kello:data tag
+return 1

@@ -5,3 +5,5 @@ execute if entity @s[tag=inquognito.win] positioned ~-15 ~-62 ~15 run function i
 
 execute if score @s inquognito.dialogue matches 90 run function inquognito:logic/plot/post_game/default
 execute if score @s inquognito.dialogue matches 99 run function inquognito:logic/plot/post_game/perfection
+
+return 1

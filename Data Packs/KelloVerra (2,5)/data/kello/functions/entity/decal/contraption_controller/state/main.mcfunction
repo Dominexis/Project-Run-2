@@ -33,3 +33,4 @@ execute if score @s kello.entity.state matches 01 run function kello:entity/deca
 execute if score @s kello.entity.state matches 02 run function kello:entity/decal/contraption_controller/state/inv/main
 
 scoreboard players operation @s kello.entity.state = #state kello.value
+return 1

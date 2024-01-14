@@ -5,3 +5,4 @@ execute as @e[type=#kello:generic/system,tag=pr.target,tag=!pr.ignore,tag=kello.
 data modify entity @s Glowing set value 1b
 execute on passengers run data modify entity @s Glowing set value 1b
 tag @s add kello.decal.selected
+return 1

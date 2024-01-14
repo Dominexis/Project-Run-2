@@ -3,3 +3,4 @@
 effect clear @s minecraft:night_vision
 tag @s remove onTheRoad
 tag @s remove stoppedWindSound
+return 1

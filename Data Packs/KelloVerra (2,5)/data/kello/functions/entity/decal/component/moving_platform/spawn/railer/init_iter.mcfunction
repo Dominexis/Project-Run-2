@@ -5,3 +5,4 @@ execute store result score #x kello.component.pos_2 run data get entity @s Pos[0
 
 execute rotated as @s as @e[tag=kello.target,limit=1] positioned as @s run tp @s ~ ~ ~ ~ ~
 kill @s
+return 1

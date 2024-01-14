@@ -2,3 +2,4 @@
 # It will run in your plot on the center block at Y=0
 # Use this to prepare your plot for players
 scoreboard objectives add interstellar.item_count dummy
+return 1

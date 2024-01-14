@@ -1,2 +1,3 @@
 function pr:player/time/compute
-title @s actionbar [{"text":"Points: ","color":"yellow"},{"score":{"name":"*","objective":"tuntan_points"}},{"text":"/20   "},{"text":"Tunnels completed: "},{"score":{"name":"*","objective":"tuntan_tunnels"}},{"text":"/10   "},{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+function help:084a2c19e2016e87d8c2f20de3c084b67f3efcfbd9129ff68f5226709fc78774
+return 1

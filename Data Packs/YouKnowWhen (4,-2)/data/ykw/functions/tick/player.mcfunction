@@ -2,7 +2,7 @@ execute if score @s ykw.ecolocation matches 1.. if score @s ykw.cooldown matches
 execute if score @s ykw.ecolocation matches 1.. run scoreboard players set @s ykw.ecolocation 0
 
 # Glowing
-execute if score @s ykw.visible_for matches 0 run effect clear @s glowing
+execute if score @s ykw.visible_for matches 0 run effect clear @s minecraft:glowing
 
 # Counters
 execute if score @s ykw.visible_for matches 0 run scoreboard players reset @s ykw.visible_for
@@ -13,7 +13,7 @@ execute if score @s ykw.cooldown matches 1.. run scoreboard players remove @s yk
 
 # Cooldown text
 function pr:player/time/compute
-title @s[tag=pr.hide_timer] actionbar [{"text":"Cooldown: ","color":"dark_aqua"},{"score":{"name":"@s","objective":"ykw.cooldown_s"}},{"text":"s  Timer: "}, {"nbt":"tag.minutes","storage":"pr:data","interpret":true},":",{"nbt":"tag.seconds","storage":"pr:data","interpret":true},".",{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+function help:ca0b2e76887ab57f1b436ed0ea5990ae4762591ca26fcb2f74a855111aee578f
 scoreboard players operation @s ykw.cooldown_s = @s ykw.cooldown
 scoreboard players add @s ykw.cooldown_s 19
 scoreboard players operation @s ykw.cooldown_s /= 20 ykw.cooldown_s
@@ -26,10 +26,11 @@ execute if entity @s[tag=in_water] unless predicate ykw:entity/in_water run tag 
 
 # Darkness
 execute if entity @s[y=43,dy=0] run function ykw:events/player_jump_start
-execute if block ~ ~-1 ~ barrier run function ykw:events/player_jump_start
+execute if block ~ ~-1 ~ minecraft:barrier run function ykw:events/player_jump_start
 
 # Dissable Q
-execute at @s positioned ~ ~1 ~ as @e[type=item,tag=pr.target,distance=..2] at @s run function ykw:player/return_item
+execute at @s positioned ~ ~1 ~ as @e[type=minecraft:item,distance=..2,tag=pr.target] at @s run function ykw:player/return_item
 
 # Tp
-execute if entity @s[gamemode=!spectator] if block ~ ~-1 ~ oxidized_copper run tp @s @e[type=marker,tag=pr.target,tag=ykw.start,limit=1]
+execute if entity @s[gamemode=!spectator] if block ~ ~-1 ~ minecraft:oxidized_copper run tp @s @e[type=minecraft:marker,tag=pr.target,tag=ykw.start,limit=1]
+return 1

@@ -32,4 +32,5 @@ tp @s ~ ~ ~ ~180 ~
 
 # Ride parent entity
 
-ride @s mount @e[type=text_display,distance=..2,tag=pr.leaderboard.root,tag=pr.leaderboard.target,limit=1]
+ride @s mount @e[type=minecraft:text_display,distance=..2,tag=pr.leaderboard.root,tag=pr.leaderboard.target,limit=1]
+return 1

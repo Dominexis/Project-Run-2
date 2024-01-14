@@ -34,3 +34,4 @@ tag @a[tag=pr.target] remove lokiclick
 scoreboard players reset temp lokicode
 execute as @e[tag=loki,tag=pr.target] run data remove entity @s attack
 execute as @e[tag=loki,tag=pr.target] run data remove entity @s interaction
+return 1

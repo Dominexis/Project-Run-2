@@ -4,3 +4,4 @@ function earthmere:checkpoint/main
 function earthmere:launch/main
 
 function earthmere:misc/main
+return 1

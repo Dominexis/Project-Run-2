@@ -6,3 +6,4 @@ execute if score @s aj.anim_time matches 52 run function animated_java:animwheel
 execute if score @s aj.anim_time matches 53 run function animated_java:animwheel/zzzzzzzz/animations/minor_cw/tree/leaf_53
 execute if score @s aj.anim_time matches 54 run function animated_java:animwheel/zzzzzzzz/animations/minor_cw/tree/leaf_54
 execute if score @s aj.anim_time matches 55 run function animated_java:animwheel/zzzzzzzz/animations/minor_cw/tree/leaf_55
+return 1

@@ -25,3 +25,4 @@ tag @s add kello.entity.part.cogwheel
 tag @s add kello.entity.ticking
 
 execute on passengers run function kello:entity/thrown/large_cog/spawn/as
+return 1

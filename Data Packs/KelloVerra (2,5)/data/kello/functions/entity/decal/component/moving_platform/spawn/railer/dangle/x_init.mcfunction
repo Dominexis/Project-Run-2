@@ -11,3 +11,4 @@ execute if score @s kello.component.pos_2 < @s kello.component.pos_1 run scorebo
 tag @s add kello.parent_target
 execute align xyz positioned ~.5 ~-7.995 ~.5 rotated ~90 0 run function kello:entity/decal/component/moving_platform/spawn/dangle_main
 tag @s remove kello.parent_target
+return 1

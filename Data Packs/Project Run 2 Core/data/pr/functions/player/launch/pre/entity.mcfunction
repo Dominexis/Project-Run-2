@@ -37,3 +37,4 @@ data merge entity @s {Invulnerable:1b}
 # Add tag
 
 tag @s add pr.entity.launch.invulnerable
+return 1

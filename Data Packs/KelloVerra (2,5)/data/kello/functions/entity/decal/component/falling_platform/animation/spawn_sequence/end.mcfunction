@@ -1,2 +1,3 @@
-execute as @e[type=item_display,tag=kello.entity.type.falling_platform_spawner] if score @s kello.entity.id = #local kello.entity.id run function kello:entity/decal/component/falling_platform/spawn/chapter_1/display/reset
-execute as @e[type=item_display,tag=kello.entity.type.falling_platform,tag=kello.entity.part.boom] if score @s kello.entity.id = #local kello.entity.id run kill @s
+execute as @e[type=minecraft:item_display,tag=kello.entity.type.falling_platform_spawner] if score @s kello.entity.id = #local kello.entity.id run function kello:entity/decal/component/falling_platform/spawn/chapter_1/display/reset
+execute as @e[type=minecraft:item_display,tag=kello.entity.type.falling_platform,tag=kello.entity.part.boom] if score @s kello.entity.id = #local kello.entity.id run kill @s
+return 1

@@ -6,3 +6,4 @@ tag @s remove lokicave
 tag @s remove lokidoor
 tag @s remove lokiclick
 tag @s remove lokipush
+return 1

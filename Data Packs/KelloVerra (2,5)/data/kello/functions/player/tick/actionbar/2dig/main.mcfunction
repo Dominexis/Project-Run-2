@@ -6,3 +6,4 @@ execute if score @s kello.entity.state matches 1 run function kello:player/tick/
 execute if score @s kello.entity.state matches 1 run function kello:player/tick/actionbar/2dig/flee
 execute if score @s kello.entity.state matches 2 run function kello:player/tick/actionbar/2dig/flee_revert
 execute unless score @s kello.entity.state = #pstate kello.value run function kello:player/tick/actionbar/2dig/main
+return 1

@@ -22,6 +22,7 @@ scoreboard players operation #math_z pr.value *= #64 pr.value
 scoreboard players operation #plot pr.value = #math_x pr.value
 scoreboard players operation #plot pr.value += #math_z pr.value
 
-tellraw @s[scores={coords=1..}] [{"text":"You are in plot: ","color":"green"},{"score":{"name":"#x","objective":"pr.value"},"color":"gold"},{"text":", ","color":"gold"},{"score":{"name":"#z","objective":"pr.value"},"color":"gold"},{"text":", ID: ","color":"green"},{"score":{"name":"#plot","objective":"pr.value"},"color":"gold"}]
+tellraw @s[scores={coords=1..}] [{"text":"You are in plot: ","color":"green","type":"text"},{"score":{"name":"#x","objective":"pr.value"},"color":"gold","type":"score"},{"text":", ","color":"gold","type":"text"},{"score":{"name":"#z","objective":"pr.value"},"color":"gold","type":"score"},{"text":", ID: ","color":"green","type":"text"},{"score":{"name":"#plot","objective":"pr.value"},"color":"gold","type":"score"}]
 
 scoreboard players set @s coords 0
+return 1

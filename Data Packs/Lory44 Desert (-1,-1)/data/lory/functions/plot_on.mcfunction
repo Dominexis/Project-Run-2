@@ -4,9 +4,9 @@
 
 # use execute at 0073bfd4-016d-1b4b-0001-320713876e6e to return to plot origin
 # (yes, this is an internal Spanish joke, suffer x'P)
-summon marker ~ ~ ~ {UUID:[I;7585748,23927627,78343,327642734],CustomName:'{"text":"El Pepe"}'}
+summon minecraft:marker ~ ~ ~ {UUID:[I;7585748,23927627,78343,327642734],CustomName:'{"text":"El Pepe","type":"text"}'}
 
-execute align xyz run summon armor_stand ~31 ~18 ~36 {Tags:["lory.raft_keeper","lory.npc"],NoBasePlate:1b,ShowArms:1b,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:2363392}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:26759}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:28533}}},{id:"minecraft:player_head",Count:1b}],HandItems:[{},{}],DisabledSlots:4144959,Pose:{LeftArm:[-26f,00f,0f],RightArm:[-13f,00f,0f]},Rotation:[180f,0f]}
+execute align xyz run summon minecraft:armor_stand ~31 ~18 ~36 {Tags:["lory.raft_keeper","lory.npc"],NoBasePlate:1b,ShowArms:1b,ArmorItems:[{id:"minecraft:leather_boots",tag:{display:{color:2363392}},Count:1b},{id:"minecraft:leather_leggings",tag:{display:{color:26759}},Count:1b},{id:"minecraft:leather_chestplate",tag:{display:{color:28533}},Count:1b},{id:"minecraft:player_head",Count:1b}],HandItems:[{},{}],DisabledSlots:4144959,Pose:{LeftArm:[-26.0f,0.0f,0.0f],RightArm:[-13.0f,0.0f,0.0f]},Rotation:[180.0f,0.0f]}
 
 # scoreboards
 scoreboard objectives add lory.var dummy
@@ -100,3 +100,5 @@ scoreboard players operation $snake_timer.max lory.var += $snake_length lory.var
 
 scoreboard players set $snake_timer lory.var -1
 
+
+return 1

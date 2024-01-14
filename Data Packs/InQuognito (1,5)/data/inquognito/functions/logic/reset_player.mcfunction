@@ -84,3 +84,5 @@ tag @s remove inquognito.target.office.2
 tag @s remove inquognito.target.office.3
 
 clear @s
+
+return 1

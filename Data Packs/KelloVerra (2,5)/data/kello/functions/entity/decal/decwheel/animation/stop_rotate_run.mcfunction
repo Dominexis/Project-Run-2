@@ -3,3 +3,4 @@
 
 execute if entity @s[tag=kello.entity.type.small] run function kello:entity/decal/decwheel/animation/stop_rotate_run/small
 execute if entity @s[tag=kello.entity.type.large] run function kello:entity/decal/decwheel/animation/stop_rotate_run/large
+return 1

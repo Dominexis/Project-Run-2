@@ -6,3 +6,4 @@ scoreboard players operation #output_vector_x pr.value = #output pr.value
 scoreboard players operation #output_vector_x pr.value *= #-1 pr.value
 function pr:generic/trigonometry/cosine
 scoreboard players operation #output_vector_z pr.value = #output pr.value
+return 1

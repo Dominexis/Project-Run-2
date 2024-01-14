@@ -5,3 +5,4 @@ stopsound @s * rko:wheel
 
 tag @s add rko_nofall
 tag @s add rko_finish
+return 1

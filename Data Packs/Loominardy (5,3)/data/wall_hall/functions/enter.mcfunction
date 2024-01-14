@@ -5,3 +5,4 @@ effect give @s minecraft:jump_boost infinite 2 true
 # effect give @s minecraft:invisibility infinite 0 true
 # effect give @s minecraft:glowing infinite 0 true
 effect give @s minecraft:resistance infinite 0 true
+return 1

@@ -15,3 +15,4 @@ execute if entity @s[tag=aj.launchpad.bone.tentacle3] run data modify entity @s 
 execute if entity @s[tag=aj.launchpad.bone.large_cog] run data modify entity @s item.tag.CustomModelData set value 121
 execute if entity @s[tag=aj.launchpad.bone.shaft] run data modify entity @s item.tag.CustomModelData set value 122
 execute if entity @s[tag=aj.launchpad.bone.root] run data modify entity @s item.tag.CustomModelData set value 123
+return 1

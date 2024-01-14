@@ -1,65 +1,65 @@
 {
-  "pools": [
-    {
-      "rolls": 0,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:stone"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diorite"
+            "rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone"
+                }
+            ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:granite"
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diorite"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:air"
+                }
+            ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:andesite"
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:granite"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:air"
+                }
+            ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:cobblestone"
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:andesite"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:air"
+                }
+            ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air"
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cobblestone"
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:air"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

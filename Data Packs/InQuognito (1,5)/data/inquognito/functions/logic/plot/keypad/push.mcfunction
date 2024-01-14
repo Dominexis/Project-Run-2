@@ -15,3 +15,5 @@ execute as @e[tag=inquognitokeypush] at @s if score @s inquognito.keypad matches
 scoreboard players set @e[tag=inquognitokeypush] inquognito.keypad 3
 
 tag @e[tag=pr.target] remove inquognitokeypush
+
+return 1

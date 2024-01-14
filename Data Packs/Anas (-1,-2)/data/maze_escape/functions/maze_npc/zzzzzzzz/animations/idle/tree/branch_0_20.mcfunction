@@ -5,3 +5,4 @@ execute if score @s aj.anim_time matches 17 run function maze_escape:maze_npc/zz
 execute if score @s aj.anim_time matches 18 run function maze_escape:maze_npc/zzzzzzzz/animations/idle/tree/leaf_18
 execute if score @s aj.anim_time matches 19 run function maze_escape:maze_npc/zzzzzzzz/animations/idle/tree/leaf_19
 execute if score @s aj.anim_time matches 20 run function maze_escape:maze_npc/zzzzzzzz/animations/idle/tree/leaf_20
+return 1

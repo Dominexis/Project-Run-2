@@ -1,1 +1,2 @@
-tp @s @e[tag=tuntan.spawn,limit=1,tag=pr.target]
+tp @s @e[tag=tuntan.spawn,tag=pr.target,limit=1]
+return 1

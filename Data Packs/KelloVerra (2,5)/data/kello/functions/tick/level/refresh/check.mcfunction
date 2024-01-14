@@ -5,3 +5,4 @@ execute unless score #level_variant kello.value matches 0 unless score @s kello.
 
 execute if score #boolean kello.value matches 1 run scoreboard players add #playercount kello.value 1
 scoreboard players set #boolean kello.value 0
+return 1

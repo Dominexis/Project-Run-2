@@ -1,5 +1,7 @@
 scoreboard players set @s inquognito.clearance 1
 
-tellraw @s [{"text":"Incoming Transmission (Security Clearance Gained) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 4"}}]
+tellraw @s [{"text":"Incoming Transmission (Security Clearance Gained) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 4"},"type":"text"}]
 
 playsound minecraft:entity.player.levelup master @s
+
+return 1

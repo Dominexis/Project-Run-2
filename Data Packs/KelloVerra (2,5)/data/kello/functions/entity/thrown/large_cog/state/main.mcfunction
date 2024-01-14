@@ -36,3 +36,5 @@ execute if score @s kello.entity.state matches 04 run function kello:entity/thro
 execute if score @s kello.entity.state matches 05 run function kello:entity/thrown/large_cog/state/despawn/main
 
 scoreboard players operation @s kello.entity.state = #state kello.value
+
+return 1

@@ -4,3 +4,4 @@ execute if score @s aj.anim_time matches 16..23 run function animated_java:decwh
 execute if score @s aj.anim_time matches 24..31 run function animated_java:decwheel/zzzzzzzz/animations/counter_clockwise_small/tree/branch_24_31
 execute if score @s aj.anim_time matches 32..39 run function animated_java:decwheel/zzzzzzzz/animations/counter_clockwise_small/tree/branch_32_39
 execute if score @s aj.anim_time matches 40 run function animated_java:decwheel/zzzzzzzz/animations/counter_clockwise_small/tree/leaf_40
+return 1

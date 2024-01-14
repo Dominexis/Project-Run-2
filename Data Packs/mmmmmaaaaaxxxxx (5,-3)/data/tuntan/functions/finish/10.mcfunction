@@ -5,3 +5,4 @@ execute if entity @s[tag=!tuntan.finished10] run scoreboard players add @s tunta
 
 scoreboard players add @s[tag=!tuntan.finished10] tuntan_tunnels 1
 tag @s add tuntan.finished10
+return 1

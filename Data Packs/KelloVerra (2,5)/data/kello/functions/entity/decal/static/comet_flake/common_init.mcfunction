@@ -12,3 +12,4 @@ execute if entity @s[tag=aj.comet_flake.root] at @s on passengers run tp @s ~ ~ 
 
 function kello:debug/decal/util/spawn/verify/decals/initialize
 tag @s remove kello.target.new
+return 1

@@ -34,3 +34,4 @@ scoreboard players add #global kello.entity.id 1
 scoreboard players operation @s kello.entity.id = #global kello.entity.id
 
 scoreboard players operation @s kello.decal.id = #selected kello.decal.id
+return 1

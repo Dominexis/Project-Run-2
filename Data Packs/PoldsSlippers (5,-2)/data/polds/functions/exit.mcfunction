@@ -3,3 +3,4 @@
 
 tag @s remove polds.watertp
 tag @s remove polds.blocktp
+return 1

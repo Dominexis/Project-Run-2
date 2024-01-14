@@ -4,3 +4,4 @@ execute if score @s aj.anim_time matches 2 run function animated_java:escapement
 execute if score @s aj.anim_time matches 3 run function animated_java:escapement/zzzzzzzz/animations/close/tree/leaf_3
 execute if score @s aj.anim_time matches 4 run function animated_java:escapement/zzzzzzzz/animations/close/tree/leaf_4
 execute if score @s aj.anim_time matches 5 run function animated_java:escapement/zzzzzzzz/animations/close/tree/leaf_5
+return 1

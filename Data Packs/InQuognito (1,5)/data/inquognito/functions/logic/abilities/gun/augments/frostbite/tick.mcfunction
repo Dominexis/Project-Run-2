@@ -9,3 +9,5 @@ execute if score @s inquognito.frostbite matches 5 run particle minecraft:snowfl
 
 scoreboard players remove @s[scores={inquognito.frostbite_timer=1..}] inquognito.frostbite_timer 1
 execute if score @s inquognito.frostbite_timer matches 0 run function inquognito:logic/abilities/gun/augments/frostbite/decrease
+
+return 1

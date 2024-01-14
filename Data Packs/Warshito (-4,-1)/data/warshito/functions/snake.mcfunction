@@ -119,3 +119,4 @@ execute if score iron warshito.Sph matches 5 run place template warshito:iron_pl
 execute if score iron warshito.Sph matches 6 run place template warshito:iron_platform/pos6 ~9 ~29 ~5
 execute if score iron warshito.Sph matches 7 run place template warshito:iron_platform/pos7 ~9 ~29 ~5
 execute if score iron warshito.Sph matches 8 run place template warshito:iron_platform/pos8 ~9 ~29 ~5
+return 1

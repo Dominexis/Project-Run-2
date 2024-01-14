@@ -1,7 +1,7 @@
 # Interactions
 
-execute if entity @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.decal,tag=kello.empty,tag=kello.entity.type.cogwheel_shaft,tag=kello.entity.type.large,distance=..1.25] run function kello:entity/thrown/large_cog/state/fixed/start
-execute if entity @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.entity.type.launchpad,distance=..1.875,scores={kello.entity.state=..1}] run function kello:entity/thrown/large_cog/state/launcher/start
+execute if entity @e[type=minecraft:item_display,distance=..1.25,tag=pr.target,tag=!pr.ignore,tag=kello.decal,tag=kello.empty,tag=kello.entity.type.cogwheel_shaft,tag=kello.entity.type.large] run function kello:entity/thrown/large_cog/state/fixed/start
+execute if entity @e[type=minecraft:item_display,distance=..1.875,tag=pr.target,tag=!pr.ignore,tag=kello.entity.type.launchpad,scores={kello.entity.state=..1}] run function kello:entity/thrown/large_cog/state/launcher/start
 
 
 
@@ -10,7 +10,7 @@ execute if entity @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.en
 # Recoil
 
 execute unless score #state kello.value matches 1..4 run function kello:entity/thrown/large_cog/state/throw/fail_check
-execute unless score #state kello.value matches 1..4 unless entity @p[tag=pr.target,tag=kello.entity.player.target,distance=..16] run function kello:entity/thrown/large_cog/state/recoil/start
+execute unless score #state kello.value matches 1..4 unless entity @p[distance=..16,tag=pr.target,tag=kello.entity.player.target] run function kello:entity/thrown/large_cog/state/recoil/start
 
 execute unless score #state kello.value matches 1..4 if entity @s[tag=kello.state.force_recoil] run function kello:entity/thrown/large_cog/state/recoil/start
 
@@ -21,3 +21,4 @@ execute unless score #state kello.value matches 1..4 if entity @s[tag=kello.stat
 execute if score #logout_trigger kello.value matches 1 run function kello:entity/thrown/large_cog/state/despawn/pre_start
 
 execute if score #state kello.value matches 1 run function kello:entity/thrown/large_cog/state/recoil/state
+return 1

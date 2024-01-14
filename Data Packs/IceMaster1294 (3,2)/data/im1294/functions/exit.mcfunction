@@ -3,3 +3,4 @@
 clear @s
 effect clear @s
 #scoreboard objectives setdisplay sidebar.team.green
+return 1

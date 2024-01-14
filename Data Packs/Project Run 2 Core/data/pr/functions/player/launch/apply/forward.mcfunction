@@ -7,3 +7,4 @@ execute store result score #entity_yaw pr.value run data get storage pr:data tag
 execute store result score #entity_pitch pr.value run data get storage pr:data tag.Rotation[1] 10
 
 function pr:player/launch/apply/gimbal
+return 1

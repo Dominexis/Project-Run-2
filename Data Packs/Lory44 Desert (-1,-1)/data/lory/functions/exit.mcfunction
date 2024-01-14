@@ -12,3 +12,4 @@ tag @s remove lory.oasis
 
 
 stopsound @s * minecraft:item.elytra.flying
+return 1

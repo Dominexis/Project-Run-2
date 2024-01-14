@@ -4,3 +4,5 @@ scoreboard players set @s titruc.interactivejump.score.yellow 0
 scoreboard players set @s titruc.interactivejump.score.green 0
 kill @s
 
+
+return 1

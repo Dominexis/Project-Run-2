@@ -19,3 +19,4 @@ execute on passengers if entity @s[tag=kello.entity.part.platform_pointer] on or
 
 tag @s remove kello.state.force_move
 tag @s remove kello.state.force_deactive
+return 1

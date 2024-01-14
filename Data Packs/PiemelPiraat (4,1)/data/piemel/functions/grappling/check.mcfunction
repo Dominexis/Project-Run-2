@@ -4,3 +4,4 @@
 # data modify entity @e[tag=piemel.raytrace,tag=pr.target,limit=1] Rotation set from entity @s Rotation
 scoreboard players set raytrace piemel.values 0
 execute at @s anchored eyes positioned ^ ^ ^ run function piemel:grappling/check-rt
+return 1

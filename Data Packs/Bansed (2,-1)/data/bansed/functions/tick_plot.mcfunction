@@ -22,10 +22,10 @@ execute as @a[tag=bnsd.in2d,tag=pr.target] at @s run function bansed:in2d
 execute as @e[tag=bnsd.char,tag=pr.target] at @s run function bansed:char
 
 
-execute as @a[tag=pr.target] at @s if entity @e[tag=bnsd.cherryportal,tag=pr.target,distance=...5] run tag @s add bnsd.incherry
+execute as @a[tag=pr.target] at @s if entity @e[distance=...5,tag=bnsd.cherryportal,tag=pr.target] run tag @s add bnsd.incherry
 execute as @a[tag=bnsd.incherry,tag=pr.target] at @s run function bansed:cherryportal
 
-execute positioned ~26 ~-40 ~34 as @a[tag=pr.target,distance=..1] at @s run tp @s ~-61 ~0 ~-15
+execute positioned ~26 ~-40 ~34 as @a[distance=..1,tag=pr.target] at @s run tp @s ~-61 ~0 ~-15
 
 
 #particles
@@ -37,3 +37,5 @@ particle minecraft:dripping_water ~-20 ~-12.5 ~8 0 0 .05 0 1 normal @a
 execute as @a[tag=pr.target] at @s run function bansed:tick_prtarget
 
 
+
+return 1

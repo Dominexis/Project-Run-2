@@ -1,6 +1,6 @@
 # Deplace hitbox
 
-execute if entity @s[tag=kello.entity.platform] run setblock ~ ~ ~ air
+execute if entity @s[tag=kello.entity.platform] run setblock ~ ~ ~ minecraft:air
 
 
 
@@ -22,9 +22,10 @@ execute if entity @s[tag=kello.entity.part.platform_visual] run function kello:e
 
 # Push score to nbt
 
-data merge storage kello:value {tag:{component_entity:{transformation:{translation:[0f,0f,0f]}}}}
+data merge storage kello:value {tag:{component_entity:{transformation:{translation:[0.0f,0.0f,0.0f]}}}}
 execute store result storage kello:value tag.component_entity.transformation.translation[1] float 1 run scoreboard players get @s kello.component.to_y
 data modify entity @s transformation.translation set from storage kello:value tag.component_entity.transformation.translation
 data merge entity @s {start_interpolation:0,interpolation_duration:8}
 
-execute if entity @s[tag=kello.entity.platform] summon marker run function kello:entity/decal/contraption_controller/state/run/children/component/chain_platform/2_loc
+execute if entity @s[tag=kello.entity.platform] summon minecraft:marker run function kello:entity/decal/contraption_controller/state/run/children/component/chain_platform/2_loc
+return 1

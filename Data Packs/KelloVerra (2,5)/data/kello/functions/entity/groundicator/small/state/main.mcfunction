@@ -30,3 +30,4 @@ scoreboard players operation @s kello.entity.state = #state kello.value
 #execute if score @s kello.entity.state matches 01 run function kello:entity/groundicator/small/state/disintegrate/main
 
 #scoreboard players operation @s kello.entity.state = #state kello.value
+return 1

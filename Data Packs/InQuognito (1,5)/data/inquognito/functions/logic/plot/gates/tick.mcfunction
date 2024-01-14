@@ -25,3 +25,5 @@ execute if entity @s[tag=inquognito.gate.final_stretch.3] at @s run function inq
 execute if entity @s[tag=inquognito.gate.nova] at @s run function inquognito:logic/plot/gates/nova/tick
 
 execute if score #modulo inquognito.temp matches 0 run scoreboard players reset @s inquognito.temp
+
+return 1

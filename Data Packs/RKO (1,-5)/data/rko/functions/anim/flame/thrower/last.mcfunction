@@ -2,3 +2,4 @@ execute as @e[tag=pr.target,tag=rko_ft4,sort=arbitrary] run data merge entity @s
 
 execute positioned ~6 ~112.5 ~-7 run playsound rko:flame master @a[tag=pr.target,sort=arbitrary] ~ ~ ~ 1 1
 execute positioned ~-6 ~112.5 ~-12 run playsound rko:flame master @a[tag=pr.target,sort=arbitrary] ~ ~ ~ 1.3 1
+return 1

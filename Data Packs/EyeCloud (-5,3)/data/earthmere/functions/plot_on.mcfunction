@@ -8,3 +8,4 @@ scoreboard objectives add earthmere_start dummy
 scoreboard objectives add earthmere_end dummy
 
 function earthmere:checkpoint/spawn
+return 1

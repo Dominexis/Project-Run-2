@@ -9,3 +9,4 @@ function kello:tick/level/assign
 # Derelate
 
 tag @s add kello.player.has_triggered.lvl_5_start
+return 1

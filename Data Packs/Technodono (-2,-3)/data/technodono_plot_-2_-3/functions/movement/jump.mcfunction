@@ -5,3 +5,4 @@ tag @s add technodono_plot.single_jump
 #schedule function technodono_plot_-2_-3:movement/jump_cancel 1t append
 #playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 0.3 0.8
 #playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1
+return 1

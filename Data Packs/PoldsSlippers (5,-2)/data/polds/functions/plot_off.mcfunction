@@ -7,4 +7,5 @@ kill @e[tag=polds.blackwall,tag=pr.target]
 kill @e[tag=polds.flipper,tag=pr.target]
 kill @e[tag=polds.poldscredit,tag=pr.target]
 kill @e[tag=polds.simoncredit,tag=pr.target]
-kill @e[type=item,tag=pr.target]
+kill @e[type=minecraft:item,tag=pr.target]
+return 1

@@ -11,3 +11,4 @@ scoreboard players set @s pr.death 0
 # Respawn
 
 function pr:player/checkpoint/send_to
+return 1

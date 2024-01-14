@@ -1,1 +1,2 @@
 function animated_java:launchpad/zzzzzzzz/animations/bud/tick_animation
+return 1

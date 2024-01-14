@@ -1,5 +1,5 @@
 # say Setup
-execute as @e[type=block_display,tag=pr.target] run data modify entity @s Glowing set value 0b
+execute as @e[type=minecraft:block_display,tag=pr.target] run data modify entity @s Glowing set value 0b
 
 # Scores
 scoreboard objectives add ykw.visible_for dummy
@@ -27,4 +27,5 @@ place template ykw:end_left ~-24 ~12 ~-40
 place template ykw:end_right ~-24 ~12 ~24
 place template ykw:end_front ~23 ~11 ~-24
 
-summon marker ~-28 ~31 ~3 {Tags:["ykw.start","ykw"]}
+summon minecraft:marker ~-28 ~31 ~3 {Tags:["ykw.start","ykw"]}
+return 1

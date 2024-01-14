@@ -1,4 +1,4 @@
-data merge entity @s {width:1.45f,height:1f,brightness:{sky:15,block:12}}
+data merge entity @s {width:1.45f,height:1.0f,brightness:{sky:15,block:12}}
 
 
 
@@ -20,3 +20,4 @@ tp @s ~ ~ ~ ~ 0
 
 
 function kello:debug/decal/util/spawn/verify/decals/initialize
+return 1

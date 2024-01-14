@@ -7,4 +7,5 @@ execute rotated as @s run tp @s ~ ~ ~ ~ 0
 
 execute rotated as @s run function kello:entity/decal/parkour_controller/state/idle/children/particle_large
 
-kill
+kill @s
+return 1

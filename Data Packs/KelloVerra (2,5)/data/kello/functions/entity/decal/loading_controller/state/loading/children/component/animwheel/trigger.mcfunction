@@ -11,3 +11,4 @@ execute if entity @s[tag=kello.entity.type.flyfan] if score @s kello.decal.state
 
 execute if entity @s[tag=kello.entity.type.gear] if score @s kello.decal.state matches 0 run function kello:entity/decal/decwheel/variant/anim_fast_to_static
 execute if entity @s[tag=kello.entity.type.flyfan] if score @s kello.decal.state matches 0 run function animated_java:animwheel/animations/pause_all
+return 1

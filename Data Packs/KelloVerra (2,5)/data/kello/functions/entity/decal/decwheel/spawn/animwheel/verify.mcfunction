@@ -8,6 +8,7 @@ execute if score #variant kello.value matches 6 run function animated_java:animw
 execute if score #variant kello.value matches 7 run function animated_java:animwheel/summon/gear_7_static
 execute if score #variant kello.value matches 8 run function animated_java:animwheel/summon/gear_8_static
 
-execute if score #is_dummy kello.value matches 0 if score #variant kello.value matches 0..8 as @e[type=item_display,tag=kello.entity.target.new] run function kello:entity/decal/decwheel/spawn/animwheel/gear_init
-execute if score #is_dummy kello.value matches 1 if score #variant kello.value matches 0..8 as @e[type=item_display,tag=kello.entity.target.new] run function kello:entity/decal/decwheel/spawn/animwheel/gear_dummy_init
+execute if score #is_dummy kello.value matches 0 if score #variant kello.value matches 0..8 as @e[type=minecraft:item_display,tag=kello.entity.target.new] run function kello:entity/decal/decwheel/spawn/animwheel/gear_init
+execute if score #is_dummy kello.value matches 1 if score #variant kello.value matches 0..8 as @e[type=minecraft:item_display,tag=kello.entity.target.new] run function kello:entity/decal/decwheel/spawn/animwheel/gear_dummy_init
 execute if score #is_dummy kello.value matches 1 if score #variant kello.value matches 0..8 run kill @s
+return 1

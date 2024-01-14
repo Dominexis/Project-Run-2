@@ -10,3 +10,4 @@ execute if entity @s[tag=kello.entity,tag=!kello.decal] run function kello:entit
 # Decals
 
 execute if entity @s[tag=kello.decal] run function kello:entity/verify/decal
+return 1

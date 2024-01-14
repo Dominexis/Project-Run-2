@@ -28,3 +28,4 @@ data remove storage kello:data tag.loaded_level.loop[0]
 
 execute if data storage kello:data tag.loaded_level.loop[0] run function kello:tick/level/refresh/loop
 execute unless data storage kello:data tag.loaded_level.loop[0] run function kello:tick/level/refresh/end
+return 1

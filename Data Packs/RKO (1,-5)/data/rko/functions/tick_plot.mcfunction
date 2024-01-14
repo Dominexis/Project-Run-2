@@ -3,8 +3,9 @@
 
 function rko:loop/world
 execute as @a[tag=pr.target,sort=arbitrary] run function rko:loop/player
-execute as @e[tag=pr.target,type=minecraft:item_display,sort=arbitrary] at @s run function rko:loop/item_display
-execute as @e[tag=pr.target,type=minecraft:armor_stand,sort=arbitrary] at @s run function rko:loop/am
-execute as @e[tag=pr.target,type=minecraft:shulker,sort=arbitrary] at @s run function rko:loop/shulker
+execute as @e[type=minecraft:item_display,tag=pr.target,sort=arbitrary] at @s run function rko:loop/item_display
+execute as @e[type=minecraft:armor_stand,tag=pr.target,sort=arbitrary] at @s run function rko:loop/am
+execute as @e[type=minecraft:shulker,tag=pr.target,sort=arbitrary] at @s run function rko:loop/shulker
 
-kill @e[tag=pr.target,type=minecraft:item,sort=arbitrary]
+kill @e[type=minecraft:item,tag=pr.target,sort=arbitrary]
+return 1

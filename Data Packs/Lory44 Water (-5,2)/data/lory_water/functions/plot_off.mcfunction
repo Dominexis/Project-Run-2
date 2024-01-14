@@ -3,3 +3,4 @@
 # Use this to reset your plot and get rid of any laggy entities
 # kill @e[type=!player,tag=pr.target]
 # function lory:run_stop
+return 1

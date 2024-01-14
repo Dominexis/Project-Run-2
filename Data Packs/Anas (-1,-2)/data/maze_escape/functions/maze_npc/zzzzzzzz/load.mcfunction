@@ -22,3 +22,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.maze_npc.export_version aj.i -2397598
 scoreboard players reset * aj.maze_npc.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.maze_npc.root] run function maze_escape:maze_npc/zzzzzzzz/on_load
+return 1

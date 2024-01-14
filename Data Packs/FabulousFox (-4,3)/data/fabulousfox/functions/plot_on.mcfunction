@@ -67,3 +67,4 @@ scoreboard players set x fabulousfox_spawn_args 7
 scoreboard players set y fabulousfox_spawn_args 0
 scoreboard players set z fabulousfox_spawn_args 0
 execute positioned ~-21 ~30 ~-1 positioned ~ ~ ~1 run function fabulousfox:spawn/platform1x1
+return 1

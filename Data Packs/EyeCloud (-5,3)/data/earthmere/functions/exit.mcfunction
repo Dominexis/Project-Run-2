@@ -13,3 +13,4 @@ tag @s remove earthmere_launch2
 
 effect clear @s minecraft:jump_boost
 effect clear @s minecraft:blindness
+return 1

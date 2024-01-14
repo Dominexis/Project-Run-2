@@ -10,4 +10,5 @@ scoreboard objectives remove eosand.timer
 scoreboard objectives remove eosand.cutscenes
 scoreboard objectives remove eosand.junctions
 
-kill @e[type=armor_stand,tag=eosand.tunnel_mount,tag=pr.target]
+kill @e[type=minecraft:armor_stand,tag=eosand.tunnel_mount,tag=pr.target]
+return 1

@@ -24,3 +24,4 @@ execute if score x fabulousfox_spawn_args matches 0.. if score y fabulousfox_spa
 execute if score x fabulousfox_spawn_args matches ..0 if score y fabulousfox_spawn_args matches 0 if score z fabulousfox_spawn_args matches 0 rotated -90 0 run function fabulousfox:spawn/platform_self2
 
 tag @s remove fabulousfox_platform_init
+return 1

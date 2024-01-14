@@ -21,3 +21,4 @@ tag @s add kello.decal.controller.optional_contraption
 
 # tag @s[tag=kello.attach] add kello.empty
 # tag @s[tag=kello.attach] remove kello.attach
+return 1

@@ -9,4 +9,5 @@ function animated_java:decwheel/summon/small
 
 # Assign scores and entity ID
 
-execute as @e[type=item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/small_shaft_score
+execute as @e[type=minecraft:item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/small_shaft_score
+return 1

@@ -6,3 +6,4 @@ playsound minecraft:block.moss.break master @s ^-1 ^ ^-.25 1 1.5 0
 playsound minecraft:entity.armor_stand.break master @s ^-1 ^ ^-.25 0.25 0.75 0
 playsound minecraft:item.trident.riptide_1 master @s ^-1 ^ ^-.25 0.25 0.86 0
 playsound minecraft:block.bamboo.hit master @s ^-1 ^ ^-.25 0.85 0.85 0
+return 1

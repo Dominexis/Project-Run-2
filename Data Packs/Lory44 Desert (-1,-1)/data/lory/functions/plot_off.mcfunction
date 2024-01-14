@@ -6,11 +6,12 @@
 
 execute if score $snake_timer lory.var matches 0.. run function lory:snake/off
 
-kill @e[type=marker,distance=0..128,tag=lory.snake_part,tag=pr.target]
+kill @e[type=minecraft:marker,distance=0..128,tag=lory.snake_part,tag=pr.target]
 kill @e[distance=0..128,tag=lory.raft_keeper,tag=pr.target]
 
 kill 0073bfd4-016d-1b4b-0001-320713876e6e
 
-kill @e[type=armor_stand,distance=0..128,tag=lory.raft_keeper,tag=lory.npc,tag=pr.target]
+kill @e[type=minecraft:armor_stand,distance=0..128,tag=lory.raft_keeper,tag=lory.npc,tag=pr.target]
 
-kill @e[type=boat,tag=pr.target]
+kill @e[type=minecraft:boat,tag=pr.target]
+return 1

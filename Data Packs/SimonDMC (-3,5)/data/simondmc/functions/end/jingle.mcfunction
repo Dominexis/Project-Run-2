@@ -21,3 +21,4 @@ execute if score @s sdmc.end-jingle matches 48 run playsound minecraft:block.not
 # Send back to lobby
 execute if score @s sdmc.end-jingle matches 64.. run function simondmc:end/send_back
 execute if score @s sdmc.end-jingle matches 0.. run scoreboard players add @s sdmc.end-jingle 1
+return 1

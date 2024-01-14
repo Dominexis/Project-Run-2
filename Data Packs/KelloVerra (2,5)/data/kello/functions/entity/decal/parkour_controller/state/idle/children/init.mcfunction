@@ -17,3 +17,4 @@ scoreboard players set #spawn_persistent kello.value 0
 
 tag @s add kello.decal.controller_children
 tag @s add kello.decal.controller.parkour
+return 1

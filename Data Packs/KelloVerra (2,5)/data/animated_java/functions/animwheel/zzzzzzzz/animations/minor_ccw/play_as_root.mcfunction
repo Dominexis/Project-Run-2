@@ -5,3 +5,4 @@ execute on passengers run data modify entity @s interpolation_duration set value
 function animated_java:animwheel/zzzzzzzz/animations/minor_ccw/tree/leaf_0
 execute on passengers run data modify entity @s interpolation_duration set value 1
 tag @s add aj.animwheel.animation.minor_ccw
+return 1

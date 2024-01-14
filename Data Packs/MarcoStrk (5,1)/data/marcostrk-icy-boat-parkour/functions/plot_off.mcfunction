@@ -8,8 +8,9 @@ scoreboard objectives remove marcostrk-icy-boat-parkour-game-time
 scoreboard objectives remove marcostrk-icy-boat-parkour-tmp
 scoreboard objectives remove marcostrk-icy-boat-parkour-20
 
-kill @e[tag=marcostrk-icy-boat-parkour-Center,type=minecraft:marker]
-kill @e[tag=marcostrk-icy-boat-parkour-Jump,type=minecraft:marker]
-kill @e[tag=marcostrk-icy-boat-parkour-NoGravity,type=minecraft:marker]
-kill @e[tag=marcostrk-icy-boat-parkour-Finish,type=minecraft:marker]
-kill @e[type=boat,tag=pr.target]
+kill @e[type=minecraft:marker,tag=marcostrk-icy-boat-parkour-Center]
+kill @e[type=minecraft:marker,tag=marcostrk-icy-boat-parkour-Jump]
+kill @e[type=minecraft:marker,tag=marcostrk-icy-boat-parkour-NoGravity]
+kill @e[type=minecraft:marker,tag=marcostrk-icy-boat-parkour-Finish]
+kill @e[type=minecraft:boat,tag=pr.target]
+return 1

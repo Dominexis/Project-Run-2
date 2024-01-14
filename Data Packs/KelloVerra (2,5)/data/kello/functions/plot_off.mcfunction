@@ -10,11 +10,11 @@ function kello:plot/levels/unload/verify
 
 # Nuke everything
 
-kill @e[type=marker,tag=kello.entity.plot_center,tag=pr.ignore]
-kill @e[type=marker,tag=kello.decal.temp_spawn_point,tag=pr.ignore]
-kill @e[type=marker,tag=kello.void_marker,tag=pr.ignore]
+kill @e[type=minecraft:marker,tag=kello.entity.plot_center,tag=pr.ignore]
+kill @e[type=minecraft:marker,tag=kello.decal.temp_spawn_point,tag=pr.ignore]
+kill @e[type=minecraft:marker,tag=kello.void_marker,tag=pr.ignore]
 
-kill @e[type=interaction,tag=kello.entity.interactable]
+kill @e[type=minecraft:interaction,tag=kello.entity.interactable]
 
 function animated_java:cogwheel/remove/all
 
@@ -22,7 +22,7 @@ function animated_java:cogwheel/remove/all
 # Um, well you see.. sometimes the entities did not get tagged by kello.entity or kello.decal, 
 # so my only way to kill them inside the confines of my plot is to use this radioactive line of code :
 
-execute positioned ~-44 -64 ~-44 run kill @e[type=!player,dx=83,dy=320,dz=83]
+execute positioned ~-44 -64 ~-44 run kill @e[type=!minecraft:player,dx=83,dy=320,dz=83]
 
 
 
@@ -31,3 +31,5 @@ execute positioned ~-44 -64 ~-44 run kill @e[type=!player,dx=83,dy=320,dz=83]
 function kello:tick/level/uninitialize
 
 function kello:setup/uninstall
+
+return 1

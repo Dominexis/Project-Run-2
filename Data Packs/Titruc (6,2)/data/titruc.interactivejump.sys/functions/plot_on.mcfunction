@@ -1,1 +1,3 @@
-execute positioned ~ ~ ~ run function titruc.interactivejump.sys:load
+function titruc.interactivejump.sys:load
+
+return 1

@@ -27,3 +27,4 @@ playsound minecraft:block.candle.extinguish block @a[tag=pr.target] ~24.0 ~18.20
 playsound minecraft:block.candle.extinguish block @a[tag=pr.target] ~-26.0 ~33.20 ~31.0 0.4 2
 playsound minecraft:block.candle.extinguish block @a[tag=pr.target] ~-18.0 ~16.20 ~16.0 0.4 2
 playsound minecraft:block.candle.extinguish block @a[tag=pr.target] ~7.0 ~57.20 ~36.0 0.4 2
+return 1

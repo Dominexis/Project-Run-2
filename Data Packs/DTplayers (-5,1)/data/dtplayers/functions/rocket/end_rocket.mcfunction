@@ -7,3 +7,4 @@ tag @p[tag=pr.target] remove dtplayers.riding_rocket
 kill @s
 
 execute as @p[tag=pr.target] run function pr:player/finish
+return 1

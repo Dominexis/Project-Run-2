@@ -16,3 +16,4 @@ function pr:time/get
 scoreboard players operation tick_time kello.value = #time pr.value
 scoreboard players operation tick_time kello.value -= #initial_tick_time kello.value
 scoreboard players operation #prev_tick_time kello.value = #time pr.value
+return 1

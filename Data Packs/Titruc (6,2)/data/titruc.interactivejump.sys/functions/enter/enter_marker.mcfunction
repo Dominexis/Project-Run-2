@@ -1,4 +1,4 @@
-summon marker ~-6 ~-22 ~36 {Tags:["titruc.fin"]}
+summon minecraft:marker ~-6 ~-22 ~36 {Tags:["titruc.fin"]}
 summon minecraft:marker ~-25 ~0 ~-1 {Tags:["pr.target","titruc.interactivejump.checkpoint"],Rotation:[180.0f,0.0f]}
 summon minecraft:marker ~-24 ~1 ~-7 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-22 ~1 ~-10 {Tags:["pr.target","titruc.interactivejump.block"]}
@@ -146,3 +146,4 @@ summon minecraft:marker ~-12 ~-23 ~27 {Tags:["pr.target","titruc.interactivejump
 summon minecraft:marker ~-11 ~-22 ~30 {Tags:["pr.target","titruc.interactivejump.redblock.block"]}
 summon minecraft:marker ~-10 ~-23 ~33 {Tags:["pr.target","titruc.interactivejump.block"]}
 summon minecraft:marker ~-24 ~0 ~-4 {Tags:["pr.target","titruc.interactivejump.block"]}
+return 1

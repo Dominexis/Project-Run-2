@@ -12,3 +12,4 @@ execute store result score #entity_yaw pr.value run data get entity @s Rotation[
 scoreboard players operation #entity_pitch pr.value = #escapement_motion_pitch kello.value
 scoreboard players operation #entity_mot pr.value = #escapement_motion kello.value
 function pr:player/launch/apply/gimbal
+return 1

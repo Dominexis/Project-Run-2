@@ -34,3 +34,5 @@ scoreboard players reset temp inquognito.keypad
 
 execute as @e[tag=inquognitokey] run data remove entity @s attack
 execute as @e[tag=inquognitokey] run data remove entity @s interaction
+
+return 1

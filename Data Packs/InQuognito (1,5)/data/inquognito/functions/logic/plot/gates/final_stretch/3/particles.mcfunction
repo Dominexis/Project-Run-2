@@ -43,3 +43,5 @@ particle minecraft:dust 1.0 0.0 0.0 1.25 ^3.8 ^ ^ 0.0 0.0 0.0 0.0 1 normal @s
 particle minecraft:dust 1.0 0.0 0.0 1.25 ^4.0 ^ ^ 0.0 0.0 0.0 0.0 1 normal @s
 particle minecraft:dust 1.0 0.0 0.0 1.25 ^4.2 ^ ^ 0.0 0.0 0.0 0.0 1 normal @s
 particle minecraft:dust 1.0 0.0 0.0 1.25 ^4.4 ^ ^ 0.0 0.0 0.0 0.0 1 normal @s
+
+return 1

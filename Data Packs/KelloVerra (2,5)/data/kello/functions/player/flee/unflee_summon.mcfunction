@@ -3,3 +3,4 @@ scoreboard players operation @s kello.player.id = #local kello.player.id
 tag @s add kello.entity.local_target
 tp @s ~ ~1.25 ~ ~ ~
 tag @s remove kello.entity.local_target
+return 1

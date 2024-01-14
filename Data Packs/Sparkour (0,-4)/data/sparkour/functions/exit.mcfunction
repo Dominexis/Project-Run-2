@@ -3,3 +3,4 @@
 
 effect clear @s minecraft:saturation
 effect clear @s minecraft:night_vision
+return 1

@@ -43,3 +43,4 @@ function kello:entity/decal/component/initialize/main
 # function kello:entity/decal/decwheel/spawn/small_decshaft_iter
 execute at @s on passengers run tp @s ~ ~ ~ ~ ~
 execute if block ^ ^ ^-1 #kello:generic/iter_passable positioned ^ ^ ^-1 run function kello:entity/decal/decwheel/spawn/chunk/small_cogshaft/main
+return 1

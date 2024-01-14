@@ -6,3 +6,5 @@ scoreboard players operation key.3 inquognito.keypad = key.4 inquognito.keypad
 scoreboard players operation key.4 inquognito.keypad = temp inquognito.keypad
 
 function inquognito:logic/plot/keypad/update
+
+return 1

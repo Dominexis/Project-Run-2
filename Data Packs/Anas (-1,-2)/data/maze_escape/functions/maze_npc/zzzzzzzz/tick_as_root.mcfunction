@@ -3,3 +3,4 @@ scoreboard players add @s aj.life_time 1
 execute at @s on passengers run tp @s ~ ~ ~ ~ ~
 function maze_escape:maze_npc/zzzzzzzz/animations/tick
 function #maze_escape:maze_npc/on_tick/as_root
+return 1

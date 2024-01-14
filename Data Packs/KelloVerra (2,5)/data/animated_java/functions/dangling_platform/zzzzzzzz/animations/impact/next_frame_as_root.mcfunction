@@ -1,1 +1,2 @@
 function animated_java:dangling_platform/zzzzzzzz/animations/impact/tick_animation
+return 1

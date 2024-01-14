@@ -2,3 +2,4 @@
 # Use this to remove any scores/tags/effects/items from the player
 
 clear @s
+return 1

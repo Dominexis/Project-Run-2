@@ -5,3 +5,4 @@
 # effect clear @s minecraft:jump_boost
 # effect clear @s minecraft:invisibility
 # effect clear @s minecraft:glowing
+return 1

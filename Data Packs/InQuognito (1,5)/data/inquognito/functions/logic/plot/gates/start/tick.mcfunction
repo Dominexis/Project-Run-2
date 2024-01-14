@@ -4,4 +4,6 @@ scoreboard players operation #modulo inquognito.temp %= #2 pr.value
 
 execute if score #modulo inquognito.temp matches 0 as @a[tag=pr.target,scores={inquognito.floor=0,inquognito.clearance=0..}] run function inquognito:logic/plot/gates/start/particles
 
-execute align xyz positioned ^-2 ^ ^ as @a[tag=pr.target,scores={inquognito.floor=0,inquognito.clearance=0..},dx=4] positioned ^2.5 ^ ^ run function inquognito:logic/plot/gates/block
+execute align xyz positioned ^-2 ^ ^ as @a[dx=4,tag=pr.target,scores={inquognito.floor=0,inquognito.clearance=0..}] positioned ^2.5 ^ ^ run function inquognito:logic/plot/gates/block
+
+return 1

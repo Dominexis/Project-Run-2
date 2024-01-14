@@ -19,3 +19,4 @@ kill @e[tag=sdmc.finish-title]
 
 # Remove pond axolotl
 kill @e[tag=sdmc.pond-axolotl]
+return 1

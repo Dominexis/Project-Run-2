@@ -38,3 +38,4 @@ playsound kello:large_cogwheel_collect master @s ~ ~ ~ 0.7 1 0.7
 # Music notif
 
 function kello:player/tick/music/notif_trigger
+return 1

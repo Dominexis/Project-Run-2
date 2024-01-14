@@ -5,3 +5,4 @@
 # scoreboard objectives remove loom.wall_hall
 # scoreboard objectives remove loom.wall_hall_crouch
 # kill @e[tag=pr.target,tag=WallHall,type=minecraft:armor_stand]
+return 1

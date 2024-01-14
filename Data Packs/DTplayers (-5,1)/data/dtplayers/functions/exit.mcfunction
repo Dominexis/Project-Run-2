@@ -6,3 +6,5 @@ scoreboard players set @s dtplayers.oxygen -1
 
 tag @s remove dtplayers.in_oxygen
 
+
+return 1

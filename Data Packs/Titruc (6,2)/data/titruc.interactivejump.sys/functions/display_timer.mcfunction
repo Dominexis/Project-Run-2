@@ -1,2 +1,3 @@
 function pr:player/time/compute
-title @s actionbar ["",{"text":"\u231a \u0020"},{"score":{"name":"@s","objective":"titruc.interactivejump.score.red"},"color":"#C60002"},{"text":" \u0020 \u0020"},{"score":{"name":"@s","objective":"titruc.interactivejump.score.blue"},"color":"#00DCE5"},{"text":" \u0020 \u0020"},{"score":{"name":"@s","objective":"titruc.interactivejump.score.yellow"},"color":"#E1CB00"},{"text":" \u0020 \u0020"},{"score":{"name":"@s","objective":"titruc.interactivejump.score.green"},"color":"#00BF11"},{"text":" \u0020\u231a"},{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+function help:3bdd96cd7c0510be29f862f6128193a33f21ed7c440650f7aa47ff11659dc416
+return 1

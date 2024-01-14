@@ -6,3 +6,4 @@ execute if score @s aj.anim_time matches 20 run function maze_escape:maze_npc/zz
 execute if score @s aj.anim_time matches 21 run function maze_escape:maze_npc/zzzzzzzz/animations/wave/tree/leaf_21
 execute if score @s aj.anim_time matches 22 run function maze_escape:maze_npc/zzzzzzzz/animations/wave/tree/leaf_22
 execute if score @s aj.anim_time matches 23 run function maze_escape:maze_npc/zzzzzzzz/animations/wave/tree/leaf_23
+return 1

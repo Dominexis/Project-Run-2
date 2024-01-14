@@ -18,3 +18,5 @@ kill @e[tag=frostcobra.checkpoint]
 kill @e[tag=frostcobra.finish]
 
 forceload remove ~-40 ~-40 ~40 ~40
+
+return 1

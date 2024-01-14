@@ -9,4 +9,6 @@ execute unless score @s inquognito.boss.health matches 2.. run function inquogni
 execute if score @s[tag=inquognito.boss.energy_cut] inquognito.boss.health matches 2 run function inquognito:logic/hud/2
 execute if score @s inquognito.boss.health matches 3.. run function inquognito:logic/hud/3
 
-title @s actionbar [{"nbt":"hud_timer","storage":"inquognito:data","interpret":true},{"nbt":"hud_energy_label","storage":"inquognito:data","interpret":true},{"nbt":"hud_energy_value","storage":"inquognito:data","interpret":true},{"nbt":"hud_energy_blockage","storage":"inquognito:data","interpret":true}]
+function help:b12096bcc549af1cebc04efb262a78244f3ba22f444bfb39a9ef29bf3ed12b22
+
+return 1

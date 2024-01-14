@@ -18,3 +18,4 @@ function kello:entity/groundicator/large/animation/main
 # Terminate
 
 execute if entity @s[tag=kello.terminate] run kill @s
+return 1

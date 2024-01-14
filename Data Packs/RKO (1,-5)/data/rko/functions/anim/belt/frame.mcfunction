@@ -27,3 +27,4 @@ clone ~-12 ~31 ~5 ~-12 ~33 ~5 ~-12 ~35 ~5
 clone ~-12 ~37 ~5 ~-12 ~11 ~5 ~-12 ~10 ~5 replace move
 
 execute as @a[tag=pr.target,sort=arbitrary] run function rko:anim/belt/tp
+return 1

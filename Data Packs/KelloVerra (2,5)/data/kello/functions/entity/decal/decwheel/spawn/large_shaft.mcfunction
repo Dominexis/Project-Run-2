@@ -9,4 +9,5 @@ function animated_java:decwheel/summon/large
 
 # Assign scores and entity ID
 
-execute as @e[type=item_display,distance=..1.25,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/large_shaft_score
+execute as @e[type=minecraft:item_display,distance=..1.25,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/large_shaft_score
+return 1

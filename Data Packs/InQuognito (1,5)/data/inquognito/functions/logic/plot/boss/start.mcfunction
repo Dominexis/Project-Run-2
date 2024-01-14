@@ -6,3 +6,5 @@ scoreboard players reset @s inquognito.boss.heartbeat
 scoreboard players set @s inquognito.dialogue -1
 
 playsound minecraft:music.overworld.deep_dark music @s
+
+return 1

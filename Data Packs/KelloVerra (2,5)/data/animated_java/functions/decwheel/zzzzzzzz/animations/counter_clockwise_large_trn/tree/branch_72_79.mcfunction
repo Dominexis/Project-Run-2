@@ -6,3 +6,4 @@ execute if score @s aj.anim_time matches 76 run function animated_java:decwheel/
 execute if score @s aj.anim_time matches 77 run function animated_java:decwheel/zzzzzzzz/animations/counter_clockwise_large_trn/tree/leaf_77
 execute if score @s aj.anim_time matches 78 run function animated_java:decwheel/zzzzzzzz/animations/counter_clockwise_large_trn/tree/leaf_78
 execute if score @s aj.anim_time matches 79 run function animated_java:decwheel/zzzzzzzz/animations/counter_clockwise_large_trn/tree/leaf_79
+return 1

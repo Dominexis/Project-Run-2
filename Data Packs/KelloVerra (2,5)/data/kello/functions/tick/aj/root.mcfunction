@@ -10,3 +10,4 @@ execute if entity @s[tag=aj.gate.root] if entity @a[distance=..48] run function 
 
 # EXECUTED IN ANOTHER LOCATION : kello\functions\entity\decal\component\moving_platform\state -> as_platform.mcfunction
 # execute if entity @s[tag=aj.moving_platform.root] run function kello:tick/aj/moving_platform
+return 1

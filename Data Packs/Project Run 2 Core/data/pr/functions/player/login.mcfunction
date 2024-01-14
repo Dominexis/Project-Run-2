@@ -42,8 +42,9 @@ function pr:player/title
 team join pr.player @s[team=!pr.spectator]
 gamemode adventure @s[team=!pr.spectator]
 
-tellraw @s [{"text":"Welcome to ","color":"gold"},{"text":"Project ","color":"white"},{"text":"Run ","color":"green"},{"text":"2","color":"yellow"}]
-tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger spectate","color":"white"},{"text":" to spectate the map","color":"gray"}]
-execute unless score @s pr.plot = #spawn_plot pr.value run tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
-execute unless score @s pr.plot = #spawn_plot pr.value run tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
-tellraw @s[team=pr.spectator] [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
+tellraw @s [{"text":"Welcome to ","color":"gold","type":"text"},{"text":"Project ","color":"white","type":"text"},{"text":"Run ","color":"green","type":"text"},{"text":"2","color":"yellow","type":"text"}]
+tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray","type":"text"},{"text":"/trigger spectate","color":"white","type":"text"},{"text":" to spectate the map","color":"gray","type":"text"}]
+execute unless score @s pr.plot = #spawn_plot pr.value run tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray","type":"text"},{"text":"/trigger lobby","color":"white","type":"text"},{"text":" to return to the lobby","color":"gray","type":"text"}]
+execute unless score @s pr.plot = #spawn_plot pr.value run tellraw @s[team=!pr.spectator] [{"text":"Use ","color":"gray","type":"text"},{"text":"/trigger checkpoint","color":"white","type":"text"},{"text":" to go to the previous checkpoint","color":"gray","type":"text"}]
+tellraw @s[team=pr.spectator] [{"text":"Use ","color":"gray","type":"text"},{"text":"/trigger lobby","color":"white","type":"text"},{"text":" to return to the lobby","color":"gray","type":"text"}]
+return 1

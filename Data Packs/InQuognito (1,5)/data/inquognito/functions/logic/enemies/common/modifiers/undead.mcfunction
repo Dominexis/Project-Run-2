@@ -11,3 +11,5 @@ item replace entity @s weapon.offhand with minecraft:air
 data merge entity @s {IsBaby:0b}
 
 function inquognito:logic/enemies/common/modifiers/common
+
+return 1

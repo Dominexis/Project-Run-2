@@ -5,3 +5,4 @@ execute on passengers run data modify entity @s interpolation_duration set value
 function animated_java:checkpoint_flag/zzzzzzzz/animations/curl/tree/leaf_0
 execute on passengers run data modify entity @s interpolation_duration set value 1
 tag @s add aj.checkpoint_flag.animation.curl
+return 1

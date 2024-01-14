@@ -1,1 +1,2 @@
 function animated_java:cogwheel/zzzzzzzz/animations/large_ground/tick_animation
+return 1

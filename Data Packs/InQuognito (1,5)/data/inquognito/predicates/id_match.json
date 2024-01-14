@@ -1,24 +1,24 @@
 {
-	"condition": "minecraft:entity_scores",
-	"entity": "this",
-	"scores": {
-		"inquognito.id": {
-			"min": {
-				"type": "minecraft:score",
-				"target": {
-					"type": "minecraft:fixed",
-					"name": "test"
-				},
-				"score": "inquognito.id"
-			},
-			"max": {
-				"type": "minecraft:score",
-				"target": {
-					"type": "minecraft:fixed",
-					"name": "test"
-				},
-				"score": "inquognito.id"
-			}
-		}
-	}
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "inquognito.id": {
+            "min": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "test"
+                },
+                "score": "inquognito.id"
+            },
+            "max": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "test"
+                },
+                "score": "inquognito.id"
+            }
+        }
+    }
 }

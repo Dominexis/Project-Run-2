@@ -44,3 +44,4 @@ setblock ~-23 ~33 ~15 minecraft:smooth_red_sandstone_stairs[facing=east,half=top
 setblock ~-25 ~33 ~15 minecraft:smooth_red_sandstone_stairs[facing=west,half=top,shape=straight,waterlogged=false]
 
 setblock ~-24 ~32 ~15 minecraft:andesite_wall
+return 1

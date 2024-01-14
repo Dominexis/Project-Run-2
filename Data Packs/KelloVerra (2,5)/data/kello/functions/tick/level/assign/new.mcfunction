@@ -6,4 +6,5 @@ data modify storage kello:data tag.loaded_level.list append from storage kello:d
 
 
 scoreboard players operation #load_level_id kello.value = #level_id_to_assign kello.value
-execute positioned as @e[type=marker,tag=kello.entity.plot_center,limit=1] align xyz run function kello:plot/levels/load/verify
+execute positioned as @e[type=minecraft:marker,tag=kello.entity.plot_center,limit=1] align xyz run function kello:plot/levels/load/verify
+return 1

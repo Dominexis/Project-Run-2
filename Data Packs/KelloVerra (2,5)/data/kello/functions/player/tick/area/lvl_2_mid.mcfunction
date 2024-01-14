@@ -11,3 +11,4 @@ function kello:tick/level/assign
 # Derelate
 
 tag @s add kello.player.has_triggered.lvl_2_mid
+return 1

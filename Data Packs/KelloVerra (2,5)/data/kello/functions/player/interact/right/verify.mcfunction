@@ -7,7 +7,7 @@ function #kello:event/right_click/player/pre
 # Find entity
 
 tag @s add this
-execute as @e[type=interaction,distance=..6.75,tag=kello.entity.interactable] run function kello:player/interact/right/interact
+execute as @e[type=minecraft:interaction,distance=..6.75,tag=kello.entity.interactable] run function kello:player/interact/right/interact
 tag @s remove this
 
 
@@ -23,3 +23,4 @@ function #kello:event/right_click/player/post
 
 advancement revoke @s only kello:player/right_click
 tag @s remove kello.player.interacted
+return 1

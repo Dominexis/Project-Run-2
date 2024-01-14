@@ -3,3 +3,4 @@
 tag @s remove eosand
 scoreboard players set @s eosand.timer 0
 scoreboard players set @s eosand.cutscenes 0
+return 1

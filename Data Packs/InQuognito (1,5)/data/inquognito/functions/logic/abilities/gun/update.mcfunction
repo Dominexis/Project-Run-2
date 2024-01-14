@@ -37,3 +37,5 @@ execute if entity @s[nbt={Inventory:[{tag:{inquognito.gun:1},Slot:34b}]}] run it
 execute if entity @s[nbt={Inventory:[{tag:{inquognito.gun:1},Slot:35b}]}] run item modify entity @s inventory.26 inquognito:gun
 
 execute if entity @s[nbt={Inventory:[{tag:{inquognito.gun:1},Slot:-106b}]}] run item modify entity @s weapon.offhand inquognito:gun
+
+return 1

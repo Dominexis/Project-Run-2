@@ -7,6 +7,7 @@ scoreboard objectives remove Swag.TickDelay
 
 execute as @a[tag=pr.target] run ride @s dismount
 
-kill @e[type=cave_spider,tag=pr.target]
-kill @e[type=horse,tag=pr.target]
-kill @e[type=item,tag=pr.target]
+kill @e[type=minecraft:cave_spider,tag=pr.target]
+kill @e[type=minecraft:horse,tag=pr.target]
+kill @e[type=minecraft:item,tag=pr.target]
+return 1

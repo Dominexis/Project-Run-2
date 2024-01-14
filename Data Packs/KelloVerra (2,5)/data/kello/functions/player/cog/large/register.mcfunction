@@ -2,3 +2,4 @@
 # i'll use a timer instead + other game design advantages
 
 scoreboard players operation @s kello.player.cog.l_response = #throw_response kello.value
+return 1

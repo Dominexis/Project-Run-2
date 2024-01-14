@@ -18,3 +18,4 @@ execute unless entity @s[tag=aj.melloflora_lantern.bone.root] store result entit
 
 function kello:debug/decal/util/spawn/verify/decals/initialize
 tag @s remove kello.target.new
+return 1

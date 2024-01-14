@@ -1,6 +1,6 @@
- {
-       "pack": {
-           "description": "Artem's plot",
-           "pack_format": 15
-       }
-   }
+{
+    "pack": {
+        "description": "Artem's plot",
+        "pack_format": 26
+    }
+}

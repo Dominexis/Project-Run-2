@@ -3,3 +3,4 @@ execute if entity @s[tag=kello.entity.type.large] run scoreboard players set #st
 tag @s remove kello.static
 scoreboard players operation #local kello.player.id = @s kello.player.id
 execute as @a if score @s kello.player.id = #local kello.player.id run function kello:entity/decal/contraption_controller/state_optional/run/children/cooldown_revert/state
+return 1

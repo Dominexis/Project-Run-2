@@ -9,3 +9,5 @@ scoreboard objectives add technodono_plot.r-click_counter minecraft.used:minecra
 
 
 #enable schedules
+
+return 1

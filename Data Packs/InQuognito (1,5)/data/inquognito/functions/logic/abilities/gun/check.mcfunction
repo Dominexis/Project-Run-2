@@ -2,3 +2,5 @@ execute unless score @s inquognito.gun.cooldown matches 1.. if entity @s[scores=
 
 scoreboard players remove @s[scores={inquognito.gun.augments.nova_cooldown=1..}] inquognito.gun.augments.nova_cooldown 1
 execute if score @s inquognito.gun.cooldown matches 1.. run function inquognito:logic/abilities/gun/cooldown
+
+return 1

@@ -52,3 +52,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.animwheel.export_version aj.i 308923069
 scoreboard players reset * aj.animwheel.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.animwheel.root] run function animated_java:animwheel/zzzzzzzz/on_load
+return 1

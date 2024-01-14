@@ -7,3 +7,5 @@ scoreboard players set @s funkytoc.moon.particle.dust 0
 
 # fx
 playsound minecraft:block.beacon.activate player @s ~ ~ ~ 1 2 1
+
+return 1

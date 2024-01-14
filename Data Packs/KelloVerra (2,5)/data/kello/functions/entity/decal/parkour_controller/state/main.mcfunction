@@ -26,3 +26,4 @@ scoreboard players operation @s kello.entity.state = #state kello.value
 
 execute if score @s kello.entity.state matches 00 run function kello:entity/decal/parkour_controller/state/idle/main
 scoreboard players operation @s kello.entity.state = #state kello.value
+return 1

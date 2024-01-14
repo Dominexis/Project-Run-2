@@ -9,3 +9,4 @@ execute as @a[tag=pr.target,predicate=pytich_dropper:finish1] run tp @s ~-36 ~1 
 #Finish Left
 execute as @a[tag=pr.target,predicate=pytich_dropper:finish2] at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100
 execute as @a[tag=pr.target,predicate=pytich_dropper:finish2] run tp @s ~0 ~1 ~36 0 0
+return 1

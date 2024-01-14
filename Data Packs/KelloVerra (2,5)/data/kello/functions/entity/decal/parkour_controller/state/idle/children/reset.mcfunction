@@ -27,3 +27,4 @@ scoreboard players set #spawn_persistent kello.value 0
 
 # tag @s[tag=kello.attach] add kello.empty
 # tag @s[tag=kello.attach] remove kello.attach
+return 1

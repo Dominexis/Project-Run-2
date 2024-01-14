@@ -9,3 +9,5 @@ particle minecraft:ash ~-24.5 ~-25 ~5 2.0 2.0 2.0 0.0 5 normal @s
 particle minecraft:ash ~-26 ~-25 ~-11.5 10.0 10.0 10.0 0.0 50 normal @s
 
 particle minecraft:ash ~-5 ~-30 ~27 5.0 5.0 5.0 0.0 10 normal @s
+
+return 1

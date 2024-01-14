@@ -3,3 +3,4 @@
 # Use this to prepare your plot for players
 
 scoreboard objectives add sw.checkpCount dummy
+return 1

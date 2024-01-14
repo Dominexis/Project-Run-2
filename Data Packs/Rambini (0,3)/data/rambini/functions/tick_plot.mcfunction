@@ -14,3 +14,4 @@
 # execute positioned ~17 ~12 ~-29 as @a[tag=pr.target,distance=..2] at @s run function rambini:checkpoint
 # scoreboard players set #checkpoint rambini.checkpoint 8
 # execute positioned ~16 ~27 ~22 as @a[tag=pr.target,distance=..3] at @s run function rambini:checkpoint
+return 1

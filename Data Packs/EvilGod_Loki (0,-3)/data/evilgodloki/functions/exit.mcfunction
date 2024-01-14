@@ -5,3 +5,4 @@ tag @s remove lokidoor
 tag @s remove lokiclick
 tag @s remove lokipush
 clear @s
+return 1

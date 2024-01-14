@@ -27,7 +27,8 @@ execute if score @s kello.component.to_y matches ..-1 run scoreboard players ope
 
 # Push to nbt
 
-data merge storage kello:value {tag:{component_entity:{transformation:{translation:[0f,0f,0f]}}}}
+data merge storage kello:value {tag:{component_entity:{transformation:{translation:[0.0f,0.0f,0.0f]}}}}
 execute store result storage kello:value tag.component_entity.transformation.translation[1] float 0.001 run scoreboard players get #math kello.value
 data modify entity @s transformation.translation set from storage kello:value tag.component_entity.transformation.translation
 data merge entity @s {start_interpolation:0,interpolation_duration:11}
+return 1

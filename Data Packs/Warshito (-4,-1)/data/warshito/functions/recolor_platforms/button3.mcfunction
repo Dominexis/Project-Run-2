@@ -5,3 +5,4 @@ execute if block ~-7 ~19 ~-7 minecraft:lime_concrete run scoreboard players add 
 
 execute if score b3 warshito.ticks matches 40.. run fill ~-7 ~19 ~-7 ~-9 ~19 ~-5 minecraft:magenta_concrete
 execute if score b3 warshito.ticks matches 40.. run scoreboard players set b3 warshito.ticks 0
+return 1

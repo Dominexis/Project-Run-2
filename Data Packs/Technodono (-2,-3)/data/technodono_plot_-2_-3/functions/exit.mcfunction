@@ -18,3 +18,4 @@ effect clear @s
 clear @s minecraft:carrot_on_a_stick
 
 stopsound @s record beat_bounce:music.club_mix
+return 1

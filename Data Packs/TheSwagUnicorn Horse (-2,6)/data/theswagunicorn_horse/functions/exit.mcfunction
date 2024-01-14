@@ -3,3 +3,4 @@
 
 tag @s remove pr.plate_checkpoint
 ride @s dismount
+return 1

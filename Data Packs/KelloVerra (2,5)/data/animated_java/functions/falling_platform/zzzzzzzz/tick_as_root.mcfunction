@@ -2,3 +2,4 @@ execute unless score @s aj.falling_platform.rig_loaded = @s aj.falling_platform.
 scoreboard players add @s aj.life_time 1
 #execute at @s on passengers run tp @s ~ ~ ~ ~ ~
 function animated_java:falling_platform/zzzzzzzz/animations/tick
+return 1

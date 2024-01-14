@@ -78,3 +78,4 @@ execute if score #quadrant_x pr.value matches -1 if score #quadrant_y pr.value m
 execute if score #quadrant_x pr.value matches -1 if score #quadrant_y pr.value matches 01 run scoreboard players add #output pr.value 1800
 
 execute if score #quadrant_x pr.value matches 01 if score #quadrant_y pr.value matches -1 run scoreboard players operation #output pr.value *= #-1 pr.value
+return 1

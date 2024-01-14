@@ -2,12 +2,12 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "location": {
-        "position": {
-          "y": {
-            "max": -22
-          }
+        "location": {
+            "position": {
+                "y": {
+                    "max": -22
+                }
+            }
         }
-      }
     }
-  }
+}

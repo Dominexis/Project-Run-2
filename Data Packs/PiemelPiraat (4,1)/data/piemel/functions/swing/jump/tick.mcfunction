@@ -7,3 +7,4 @@ execute store result entity @e[tag=piemel.swingtarget,tag=pr.target,limit=1] Rot
 execute at @e[tag=piemel.swingtarget,tag=pr.target] rotated as @e[tag=piemel.swingtarget,tag=pr.target] run tp @s ^ ^ ^37.5
 scoreboard players add @s piemel.swingprog 1
 execute if score @s piemel.swingprog matches 64.. run function piemel:swing/jump/end
+return 1

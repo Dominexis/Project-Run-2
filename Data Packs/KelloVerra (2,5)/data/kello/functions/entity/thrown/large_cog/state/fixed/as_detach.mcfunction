@@ -4,4 +4,5 @@ execute if entity @s[tag=kello.attached] run scoreboard players set @s kello.ent
 function kello:entity/decal/decwheel/variant/gear_to_shaft
 
 scoreboard players operation #local kello.decal.id = @s kello.decal.id
-execute as @e[type=item_display,tag=pr.target,tag=kello.entity.type.decal_controller] if score @s kello.decal.id = #local kello.decal.id run function kello:entity/thrown/large_cog/state/fixed/as_controller_detach
+execute as @e[type=minecraft:item_display,tag=pr.target,tag=kello.entity.type.decal_controller] if score @s kello.decal.id = #local kello.decal.id run function kello:entity/thrown/large_cog/state/fixed/as_controller_detach
+return 1

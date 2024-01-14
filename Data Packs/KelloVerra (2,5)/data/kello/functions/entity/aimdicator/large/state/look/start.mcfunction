@@ -9,4 +9,5 @@ scoreboard players set #state kello.value 1
 scoreboard players set @s kello.aim.count 0
 tag @s remove kello.look
 
-data merge entity @s {text:'{"text":"\\ue001","font":"kello:aim_look","obfuscated":"true"}'}
+data merge entity @s {text:'{"text":"\\ue001","font":"kello:aim_look","obfuscated":true,"type":"text"}'}
+return 1

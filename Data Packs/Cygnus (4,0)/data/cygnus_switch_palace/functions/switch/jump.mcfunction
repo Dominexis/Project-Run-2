@@ -11,3 +11,4 @@ execute if score $cygnus_switch_state cygnus_data matches 1 if score $cygnus_did
 execute if score $cygnus_switch_state cygnus_data matches 0 if score $cygnus_did_switch_state_just_change cygnus_data matches 0 run function cygnus_switch_palace:switch/yellow_to_purple
 
 function cygnus_switch_palace:switch/change_blocks
+return 1

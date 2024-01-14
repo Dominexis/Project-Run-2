@@ -12,3 +12,4 @@ execute if score @s sdmc.start-jingle matches 24 run playsound minecraft:block.n
 
 execute if score @s sdmc.start-jingle matches 24.. run scoreboard players reset @s sdmc.start-jingle
 execute if score @s sdmc.start-jingle matches 0.. run scoreboard players add @s sdmc.start-jingle 1
+return 1

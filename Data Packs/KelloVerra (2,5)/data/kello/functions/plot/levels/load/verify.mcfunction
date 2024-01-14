@@ -9,3 +9,4 @@ execute if score #load_level_id kello.value matches 4 if score #level_variant_to
 execute if score #load_level_id kello.value matches 5 if score #level_variant_to_load kello.value matches 0 run function kello:plot/levels/load/lvl_5/main
 execute if score #load_level_id kello.value matches 6 if score #level_variant_to_load kello.value matches 0 run function kello:plot/levels/load/lvl_6/main
 execute if score #load_level_id kello.value matches 7 if score #level_variant_to_load kello.value matches 0 run function kello:plot/levels/load/lvl_7/main
+return 1

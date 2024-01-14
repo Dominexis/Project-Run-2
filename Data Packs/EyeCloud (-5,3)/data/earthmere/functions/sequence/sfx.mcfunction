@@ -19,3 +19,4 @@ particle minecraft:block_marker minecraft:oxidized_cut_copper_stairs[facing=sout
 particle minecraft:block_marker minecraft:oxidized_cut_copper_stairs[facing=west,half=bottom,shape=inner_left,waterlogged=true] ~ ~ ~ 0 0 0 0 0 force @s
 particle minecraft:block_marker minecraft:oxidized_cut_copper_stairs[facing=west,half=bottom,shape=inner_right,waterlogged=true] ~ ~ ~ 0 0 0 0 0 force @s
 particle minecraft:block_marker minecraft:oxidized_cut_copper_stairs[facing=west,half=bottom,shape=outer_left,waterlogged=true] ~ ~ ~ 0 0 0 0 0 force @s
+return 1

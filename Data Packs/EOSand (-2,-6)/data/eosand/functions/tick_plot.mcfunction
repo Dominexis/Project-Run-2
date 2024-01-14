@@ -12,10 +12,10 @@ execute if entity @a[tag=pr.target,scores={eosand.pipes=4}] run function eosand:
 
 # Doors=
 execute as @a[tag=pr.target,scores={eosand.door=1}] run function eosand:doors/door_1
-execute positioned ~-2.5 ~1.0 ~34.5 as @a[tag=pr.target,dx=4,dy=2,dz=3] run execute positioned ~2.5 ~-1.0 ~-34.5 run function eosand:doors/door_1
+execute positioned ~-2.5 ~1.0 ~34.5 as @a[dx=4,dy=2,dz=3,tag=pr.target] positioned ~2.5 ~-1.0 ~-34.5 run function eosand:doors/door_1
 
 execute as @a[tag=pr.target,scores={eosand.door=2}] run function eosand:doors/door_2
-execute positioned ~-2.5 ~1.0 ~9.5 as @a[tag=pr.target,dx=4,dy=2,dz=3] run execute positioned ~2.5 ~-1.0 ~-9.5 run function eosand:doors/door_2
+execute positioned ~-2.5 ~1.0 ~9.5 as @a[dx=4,dy=2,dz=3,tag=pr.target] positioned ~2.5 ~-1.0 ~-9.5 run function eosand:doors/door_2
 
 # Entry dialogue
 execute as @a[tag=pr.target,scores={eosand.cutscenes=1}] run function eosand:dialogues/entry
@@ -36,4 +36,5 @@ execute as @a[tag=pr.target,scores={eosand.pipes=4}] run function eosand:section
 execute as @a[tag=pr.target,scores={eosand.pipes=5}] run function eosand:dialogues/finish
 
 # End plot
-execute positioned ~ ~51 ~ as @a[tag=pr.target,distance=..0.5,scores={eosand.cutscenes=2}] run function eosand:finish
+execute positioned ~ ~51 ~ as @a[distance=..0.5,tag=pr.target,scores={eosand.cutscenes=2}] run function eosand:finish
+return 1

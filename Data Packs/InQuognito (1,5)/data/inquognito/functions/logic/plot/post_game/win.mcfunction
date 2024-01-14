@@ -9,3 +9,5 @@ execute unless score @s inquognito.upgrades >= max_upgrades inquognito.values ru
 execute if score @s inquognito.upgrades >= max_upgrades inquognito.values run scoreboard players set @s inquognito.dialogue 99
 
 playsound minecraft:ui.toast.challenge_complete master @s
+
+return 1

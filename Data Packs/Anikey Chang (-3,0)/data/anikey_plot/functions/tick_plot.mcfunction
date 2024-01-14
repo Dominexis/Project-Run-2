@@ -16,3 +16,4 @@ execute at @e[type=minecraft:marker,tag=pr.target,tag=anikey_floating_table] run
 execute as @a[gamemode=!spectator,tag=pr.target,tag=anikey_InsideMirror] at @s if entity @s[y=62,dy=1] run function anikey_plot:mirror/exit
 #out of range
 execute as @a[gamemode=!spectator,tag=pr.target,tag=anikey_InsideMirror] at @s if entity @s[y=-20,dy=-1] run function anikey_plot:mirror/out_range
+return 1

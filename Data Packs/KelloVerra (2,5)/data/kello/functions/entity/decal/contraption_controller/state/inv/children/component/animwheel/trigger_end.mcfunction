@@ -7,3 +7,4 @@ execute if entity @s[tag=kello.entity.type.gear] if score @s kello.decal.state m
 execute if entity @s[tag=kello.entity.type.flyfan] if score @s kello.decal.state matches 1 run function animated_java:animwheel/animations/pause_all
 
 tag @s add kello.entity.has_animwheel_spinning
+return 1

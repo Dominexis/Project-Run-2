@@ -24,3 +24,4 @@ scoreboard players reset @s rko.win
 effect clear @s minecraft:levitation
 effect clear @s minecraft:jump_boost
 effect clear @s minecraft:speed
+return 1

@@ -6,3 +6,4 @@ scoreboard objectives remove titruc.interactivejump.score.green
 scoreboard objectives remove titruc.interactivejump.score.black
 scoreboard objectives remove titruc.interactivejump.score.timer
 scoreboard objectives remove titruc.interactivejump.variable
+return 1

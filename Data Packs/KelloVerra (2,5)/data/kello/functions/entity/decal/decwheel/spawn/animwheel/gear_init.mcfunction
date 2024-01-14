@@ -32,9 +32,10 @@ scoreboard players operation @s kello.entity.delay = #invdelay kello.entity.dela
 
 execute if score #level_creation_mode kello.value matches 1 run function kello:tick/level/creation_mode
 
-execute if score #override_brightness kello.value matches 1 on passengers if entity @s[type=item_display] run data modify entity @s brightness set from storage kello:data tag.temp_spawnpoint.data.brightness
+execute if score #override_brightness kello.value matches 1 on passengers if entity @s[type=minecraft:item_display] run data modify entity @s brightness set from storage kello:data tag.temp_spawnpoint.data.brightness
 
 execute if entity @s[tag=kello.entity.type.animwheel] if score @s kello.decal.rot_mode matches 1 run function animated_java:animwheel/animations/flip/play
 
 
 function kello:entity/decal/component/initialize/main
+return 1

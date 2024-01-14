@@ -16,4 +16,5 @@ tag @s remove kill_white
 tag @s remove CMY
 
 
-attribute @s minecraft:generic.max_health base set 20 
+attribute @s minecraft:generic.max_health base set 20
+return 1

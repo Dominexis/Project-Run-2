@@ -5,3 +5,4 @@ execute on passengers run data modify entity @s interpolation_duration set value
 function animated_java:launchpad/zzzzzzzz/animations/bloom/tree/leaf_0
 execute on passengers run data modify entity @s interpolation_duration set value 1
 tag @s add aj.launchpad.animation.bloom
+return 1

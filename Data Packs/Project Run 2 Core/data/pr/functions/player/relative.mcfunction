@@ -18,6 +18,7 @@ scoreboard players operation #z pr.value %= #96 pr.value
 scoreboard players remove #x pr.value 48
 scoreboard players remove #z pr.value 48
 
-tellraw @s [{"text":"Your relative coordinates are: ","color":"green"},{"score":{"name":"#x","objective":"pr.value"},"color":"gold"}," ",{"score":{"name":"#y","objective":"pr.value"},"color":"gold"}," ",{"score":{"name":"#z","objective":"pr.value"},"color":"gold"}]
+tellraw @s [{"text":"Your relative coordinates are: ","color":"green","type":"text"},{"score":{"name":"#x","objective":"pr.value"},"color":"gold","type":"score"}," ",{"score":{"name":"#y","objective":"pr.value"},"color":"gold","type":"score"}," ",{"score":{"name":"#z","objective":"pr.value"},"color":"gold","type":"score"}]
 
 scoreboard players set @s relative 0
+return 1

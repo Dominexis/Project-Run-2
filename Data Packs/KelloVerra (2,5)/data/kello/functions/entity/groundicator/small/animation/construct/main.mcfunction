@@ -12,3 +12,4 @@ execute if score @s kello.entity.timer matches 3 run data modify entity @s item.
 execute if score @s kello.entity.timer matches 2 run data modify entity @s item.tag.CustomModelData set value 351937
 execute if score @s kello.entity.timer matches 1 run data modify entity @s item.tag.CustomModelData set value 351938
 execute if score @s kello.entity.timer matches 0 run tag @s remove kello.entity.anim.groundindic_construct
+return 1

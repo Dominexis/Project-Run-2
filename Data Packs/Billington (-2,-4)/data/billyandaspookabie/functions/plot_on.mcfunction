@@ -11,3 +11,4 @@ scoreboard objectives add mad_scientist dummy
 scoreboard players set $lift_up mad_scientist 64
 
 # fill ~33 ~36 ~22 ~31 ~33 ~22 iron_bars
+return 1

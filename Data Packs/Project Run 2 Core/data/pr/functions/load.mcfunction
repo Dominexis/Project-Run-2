@@ -208,3 +208,4 @@ gamerule randomTickSpeed 0
 # Initialize storage
 
 data modify storage pr:data tag set value {}
+return 1

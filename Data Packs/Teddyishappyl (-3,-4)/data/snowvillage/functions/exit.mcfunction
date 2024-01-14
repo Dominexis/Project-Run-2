@@ -5,3 +5,4 @@ clear @s
 scoreboard players reset @s teddy.checkpointbool
 scoreboard players reset @s teddy.boat
 tag @s remove teddy.in_boat
+return 1

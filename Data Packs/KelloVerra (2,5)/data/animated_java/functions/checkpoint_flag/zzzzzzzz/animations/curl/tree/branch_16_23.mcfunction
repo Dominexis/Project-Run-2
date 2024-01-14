@@ -6,3 +6,4 @@ execute if score @s aj.anim_time matches 20 run function animated_java:checkpoin
 execute if score @s aj.anim_time matches 21 run function animated_java:checkpoint_flag/zzzzzzzz/animations/curl/tree/leaf_21
 execute if score @s aj.anim_time matches 22 run function animated_java:checkpoint_flag/zzzzzzzz/animations/curl/tree/leaf_22
 execute if score @s aj.anim_time matches 23 run function animated_java:checkpoint_flag/zzzzzzzz/animations/curl/tree/leaf_23
+return 1

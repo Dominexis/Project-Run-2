@@ -9,3 +9,5 @@ execute if score @s zombie_shootlaser matches 1.. if score @s zombie_reload matc
 execute if block ~ ~-0.9 ~ #zombie1111:deathblocks run kill @s
 
 
+
+return 1

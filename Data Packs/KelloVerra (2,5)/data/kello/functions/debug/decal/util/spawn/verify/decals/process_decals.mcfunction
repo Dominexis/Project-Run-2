@@ -37,7 +37,7 @@ execute if entity @s[tag=kello.decal.type.comet_flake] run function kello:entity
 execute if entity @s[tag=kello.decal.type.large_cogwheel_display] run function kello:debug/decal/util/spawn/verify/decals/init_melloflora_display
 # execute if entity @s[tag=kello.decal.type.small_cogwheel_display] run function kello:debug/decal/util/spawn/verify/decals/init_eobonica_display
 
-execute if entity @s[tag=kello.decal.type.mellobanner] summon item_display run function kello:debug/decal/util/spawn/verify/decals/init_mellobanner
+execute if entity @s[tag=kello.decal.type.mellobanner] summon minecraft:item_display run function kello:debug/decal/util/spawn/verify/decals/init_mellobanner
 
 execute if entity @s[tag=kello.decal.type.animwheel_dummy] run function kello:entity/decal/decwheel/spawn/animwheel/verify
 
@@ -46,3 +46,4 @@ execute if entity @s[tag=kello.decal.type.flyfan] run function kello:entity/deca
 # tag @s remove kello.decal.init
 
 execute if score #kill kello.value matches 1 run kill @s
+return 1

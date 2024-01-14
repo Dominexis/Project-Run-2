@@ -17,7 +17,7 @@ execute align xyz positioned ~32 ~3 ~30 as @a[dx=0,dy=0,dz=0,tag=pr.target] run 
 execute if predicate lory:random_rustle positioned ~13 ~27 ~25 run particle minecraft:happy_villager ~ ~ ~ 0.5 0.5 0.5 0.01 10 normal @a[distance=..4,tag=pr.target]
 execute positioned ~13 ~27 ~25 if entity @a[distance=..7,tag=pr.target,limit=1] run function lory:barrel_tick
 
-execute as @e[distance=0..128,tag=lory.npc,tag=lory.raft_keeper,tag=pr.target,limit=1] at @s if entity @a[tag=pr.target,distance=0..15] run function lory:npc/raft_keeper/tick
+execute as @e[distance=0..128,tag=lory.npc,tag=lory.raft_keeper,tag=pr.target,limit=1] at @s if entity @a[distance=0..15,tag=pr.target] run function lory:npc/raft_keeper/tick
 
 # waterfall ambience
 execute positioned ~31 ~-1 ~26 run particle minecraft:cloud ~ ~ ~ 2 1 2.3 0 1200 force @a[distance=32..,tag=pr.target]
@@ -63,4 +63,5 @@ execute as @a[tag=pr.target] run function lory:kick_from_boat
 
 # Kill boats that have no passengers
 
-execute positioned ~34 ~16 ~36 as @e[type=boat,distance=8..,tag=pr.target] run function lory:kill_empty_boat
+execute positioned ~34 ~16 ~36 as @e[type=minecraft:boat,distance=8..,tag=pr.target] run function lory:kill_empty_boat
+return 1

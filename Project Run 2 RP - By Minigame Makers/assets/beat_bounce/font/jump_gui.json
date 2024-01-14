@@ -1,76 +1,94 @@
 {
-	"providers":[
-	    {
+    "providers": [
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/tempo_off.png",
             "ascent": 8,
             "height": 16,
-            "chars": ["\uEaa0"]
+            "chars": [
+                "\ueaa0"
+            ]
         },
-	    {
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/tempo_on.png",
             "ascent": 8,
             "height": 16,
-            "chars": ["\uEaa1"]
+            "chars": [
+                "\ueaa1"
+            ]
         },
-	    {
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/tempo_blank.png",
             "ascent": 15,
             "height": 32,
-            "chars": ["\uEccB"]
+            "chars": [
+                "\ueccb"
+            ]
         },
-	    {
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/tempo_0.png",
             "ascent": 15,
             "height": 32,
-            "chars": ["\uEcc0"]
+            "chars": [
+                "\uecc0"
+            ]
         },
-	    {
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/tempo_1.png",
             "ascent": 15,
             "height": 32,
-            "chars": ["\uEcc1"]
+            "chars": [
+                "\uecc1"
+            ]
         },
-	    {
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/tempo_2.png",
             "ascent": 15,
             "height": 32,
-            "chars": ["\uEcc2"]
+            "chars": [
+                "\uecc2"
+            ]
         },
-	    {
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/tempo_3.png",
             "ascent": 15,
             "height": 32,
-            "chars": ["\uEcc3"]
+            "chars": [
+                "\uecc3"
+            ]
         },
-	    {
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/tempo_4.png",
             "ascent": 15,
             "height": 32,
-            "chars": ["\uEcc4"]
+            "chars": [
+                "\uecc4"
+            ]
         },
-		{
+        {
             "type": "bitmap",
             "file": "beat_bounce:font/black_fade.png",
             "ascent": 128,
             "height": 256,
-            "chars": ["\uEFFF"]
+            "chars": [
+                "\uefff"
+            ]
         },
-		{
+        {
             "type": "space",
-            "advances":{
-				"\uE000":8,
-				"\uE010":4,
-				"\uE001":95,
-				"\uE002":40
-			}
+            "advances": {
+                "\ue000": 8,
+                "\ue010": 4,
+                "\ue001": 95,
+                "\ue002": 40
+            }
         }
-	]
+    ]
 }

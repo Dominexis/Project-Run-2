@@ -2,14 +2,189 @@
     "sources": [
         {
             "type": "single",
-            "resource": "ykw:warden_tendrils"
+            "resource": "bansed:custom/bansed"
         },
         {
-            "type": "directory",
-            "source": "custom",
-            "prefix": "custom/"
+            "type": "single",
+            "resource": "earthmere:custom/0"
         },
-	{
+        {
+            "type": "single",
+            "resource": "earthmere:custom/1"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/10"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/11"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/12"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/13"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/14"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/15"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/16"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/17"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/18"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/19"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/2"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/20"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/21"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/22"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/23"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/24"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/25"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/3"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/4"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/5"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/6"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/7"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/8"
+        },
+        {
+            "type": "single",
+            "resource": "earthmere:custom/9"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:enemies/corrupted_growth"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:items/gun/energy_frostbite"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:items/gun/barrel"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:items/gun/base"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:items/gun/energy_trans_frostbite"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:items/gun/energy"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:items/gun/energy_trans"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:miscellaneous/camera"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:miscellaneous/captive_scientist"
+        },
+        {
+            "type": "single",
+            "resource": "inquognito:miscellaneous/propeller"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/factory_box"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/factory_box_r8"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/factory_fan"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/factory_fan2"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/fire_0"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/gear_texture"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/box"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/boxr8"
+        },
+        {
+            "type": "single",
+            "resource": "rko:custom/box_top"
+        },
+        {
             "type": "single",
             "resource": "woutbelt:model/woutbelt/flag"
         },
@@ -17,20 +192,25 @@
             "type": "single",
             "resource": "woutbelt:model/woutbelt/beam"
         },
-	{
-		"type": "directory",
-		"source": "enemies",
-		"prefix": "enemies/"
-	},
-	{
-		"type": "directory",
-		"source": "items",
-		"prefix": "items/"
-	},
-	{
-		"type": "directory",
-		"source": "miscellaneous",
-		"prefix": "miscellaneous/"
-	}
+        {
+            "type": "single",
+            "resource": "ykw:warden_tendrils"
+        },
+        {
+            "type": "single",
+            "resource": "zombie1111:custom/gray"
+        },
+        {
+            "type": "single",
+            "resource": "zombie1111:custom/black"
+        },
+        {
+            "type": "single",
+            "resource": "zombie1111:custom/dark"
+        },
+        {
+            "type": "single",
+            "resource": "zombie1111:custom/white"
+        }
     ]
 }

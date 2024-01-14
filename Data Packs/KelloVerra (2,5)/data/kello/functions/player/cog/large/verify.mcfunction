@@ -15,3 +15,4 @@ execute if score #boolean kello.value matches 0 run return 0
 
 scoreboard players set @s kello.player.cog.l_response 0
 scoreboard players operation @s kello.player.cog.l_cooldown += #throw_cooldown kello.value
+return 1

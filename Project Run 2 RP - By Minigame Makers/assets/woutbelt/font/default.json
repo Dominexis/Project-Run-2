@@ -1,32 +1,47 @@
 {
-	"providers": [
-	{
-		"type": "bitmap",
-		"file": "woutbelt:titles/portal_blue.png",
-		"ascent": 8,
-		"height": 350,
-		"chars": ["❋"]
-	},
-	{
-		"type": "bitmap",
-		"file": "woutbelt:titles/portal_red.png",
-		"ascent": 8,
-		"height": 350,
-		"chars": ["❤"]
-	},
-	{
-		"type": "bitmap",
-		"file": "woutbelt:titles/portal_red.png",
-		"ascent": 8,
-		"height": 25,
-		"chars": ["✷"]
-	},
-	{
-		"type": "bitmap",
-		"file": "woutbelt:titles/portal_blue.png",
-		"ascent": 8,
-		"height": 25,
-		"chars": ["ᕯ"]
-	}]
-
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                " ": 4,
+                "\u200c": 0
+            }
+        },
+        {
+            "type": "bitmap",
+            "file": "woutbelt:titles/portal_blue.png",
+            "ascent": 8,
+            "height": 350,
+            "chars": [
+                "\u274b"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "woutbelt:titles/portal_red.png",
+            "ascent": 8,
+            "height": 350,
+            "chars": [
+                "\u2764"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "woutbelt:titles/portal_red.png",
+            "ascent": 8,
+            "height": 25,
+            "chars": [
+                "\u2737"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "woutbelt:titles/portal_blue.png",
+            "ascent": 8,
+            "height": 25,
+            "chars": [
+                "\u156f"
+            ]
+        }
+    ]
 }

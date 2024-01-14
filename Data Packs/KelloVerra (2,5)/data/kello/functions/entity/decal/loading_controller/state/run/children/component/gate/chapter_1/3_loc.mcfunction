@@ -1,8 +1,8 @@
 # VFX
 
-particle cloud ^ ^.125 ^ 0.225 0 0.225 0.025 8 force @a[distance=..8]
-particle cloud ^1 ^.125 ^ 0.225 0 0.225 0.025 8 force @a[distance=..8]
-particle cloud ^-1 ^.125 ^ 0.225 0 0.225 0.025 8 force @a[distance=..8]
+particle minecraft:cloud ^ ^.125 ^ 0.225 0 0.225 0.025 8 force @a[distance=..8]
+particle minecraft:cloud ^1 ^.125 ^ 0.225 0 0.225 0.025 8 force @a[distance=..8]
+particle minecraft:cloud ^-1 ^.125 ^ 0.225 0 0.225 0.025 8 force @a[distance=..8]
 
 # SFX
 
@@ -20,3 +20,4 @@ playsound minecraft:block.dripstone_block.break master @a[distance=..16] ~ ~ ~ 1
 playsound minecraft:item.axe.scrape master @a[distance=..16] ~ ~ ~ 0.27 0.61
 playsound minecraft:block.note_block.bell master @a[distance=..16] ~ ~ ~ 0.71 1.54
 playsound minecraft:block.amethyst_block.fall master @a[distance=..16] ~ ~ ~ 1 1.72
+return 1

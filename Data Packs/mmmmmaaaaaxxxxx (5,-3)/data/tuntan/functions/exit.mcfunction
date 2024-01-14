@@ -19,3 +19,4 @@ tag @s remove tuntan.enoughpoints
 tag @s remove tuntan.started
 tag @s remove tuntan.temp1
 tag @s remove tuntan.temp2
+return 1

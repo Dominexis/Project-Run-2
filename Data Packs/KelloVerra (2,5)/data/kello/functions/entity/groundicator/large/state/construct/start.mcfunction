@@ -11,3 +11,4 @@ scoreboard players set @s[tag=kello.groundicator.persistent] kello.entity.lifeti
 
 execute if entity @s[tag=!kello.groundicator.persistent] run function kello:entity/groundicator/large/animation/construct/apply
 execute if entity @s[tag=kello.groundicator.persistent] run function kello:entity/groundicator/large/state/construct/persistent_init
+return 1

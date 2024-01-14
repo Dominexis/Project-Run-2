@@ -25,3 +25,4 @@ scoreboard players operation #horizontal_z pr.value = #output_vector_z pr.value
 # Perform launch
 
 execute at @s run function pr:player/launch/main
+return 1

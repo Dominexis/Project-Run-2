@@ -9,5 +9,6 @@ function animated_java:decwheel/summon/large_gear
 
 # Assign scores and entity ID
 
-execute if score #is_dummy kello.value matches 0 as @e[type=item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/large_score
-execute if score #is_dummy kello.value matches 1 as @e[type=item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/dummy_score
+execute if score #is_dummy kello.value matches 0 as @e[type=minecraft:item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/large_score
+execute if score #is_dummy kello.value matches 1 as @e[type=minecraft:item_display,distance=..0.5,tag=aj.decwheel.root,tag=!kello.decal] run function kello:entity/decal/decwheel/spawn/dummy_score
+return 1

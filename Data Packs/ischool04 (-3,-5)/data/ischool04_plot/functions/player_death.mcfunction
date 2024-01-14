@@ -5,3 +5,4 @@ kill @a[tag=isch.target,tag=pr.target]
 tag @a[tag=pr.target] remove isch.target
 
 function ischool04_plot:logic/kill_mount
+return 1

@@ -11,3 +11,4 @@ function kello:tick/level/assign
 
 tag @s add kello.player.has_triggered.lvl_3_lobby_start_b
 tag @s remove kello.player.has_triggered.lvl_3_lobby_start_a
+return 1

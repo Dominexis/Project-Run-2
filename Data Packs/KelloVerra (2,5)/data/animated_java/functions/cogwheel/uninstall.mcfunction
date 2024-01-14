@@ -13,4 +13,5 @@ scoreboard objectives remove aj.cogwheel.animation.small.loop_mode
 scoreboard objectives remove aj.cogwheel.animation.large.loop_mode
 scoreboard objectives remove aj.cogwheel.animation.large_ground.loop_mode
 scoreboard objectives remove aj.cogwheel.animation.small_ground.loop_mode
-tellraw @s ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The cogwheel Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]
+tellraw @s ["",{"text":"[","type":"text"},{"text":"Animated Java","color":"aqua","type":"text"},{"text":"] ","type":"text"},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The cogwheel Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]
+return 1

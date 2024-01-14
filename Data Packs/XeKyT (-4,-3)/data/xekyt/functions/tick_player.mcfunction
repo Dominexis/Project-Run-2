@@ -8,5 +8,6 @@ execute if score True TPParticlesShow matches 1 run particle minecraft:reverse_p
 # execute as @s[predicate=xekyt:oncheckpoint] run function pr:player/checkpoint/mark
 
 #Oops You Fell
-execute as @s[predicate=xekyt:onorangestainedglass] run kill @s
-execute as @s[predicate=xekyt:onwhitestainedglass] run kill @s
+execute if entity @s[predicate=xekyt:onorangestainedglass] run kill @s
+execute if entity @s[predicate=xekyt:onwhitestainedglass] run kill @s
+return 1

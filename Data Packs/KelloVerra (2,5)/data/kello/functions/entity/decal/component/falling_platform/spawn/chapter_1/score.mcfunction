@@ -4,8 +4,8 @@ scoreboard players set #input pr.value 2
 function pr:generic/rng/lcg
 
 function animated_java:falling_platform/apply_variant/air
-execute if score #output pr.value matches 0 rotated 0 0 run scoreboard players set @s kello.entity.variant 0 
-execute if score #output pr.value matches 1 rotated 0 0 run scoreboard players set @s kello.entity.variant 1 
+execute if score #output pr.value matches 0 rotated 0 0 run scoreboard players set @s kello.entity.variant 0
+execute if score #output pr.value matches 1 rotated 0 0 run scoreboard players set @s kello.entity.variant 1
 
 
 # Assign scores
@@ -32,7 +32,7 @@ tag @s remove kello.entity.target.new
 # Summon extra components
 
 tag @s add kello.target
-execute summon shulker run function kello:entity/decal/component/falling_platform/spawn/chapter_1/platform
+execute summon minecraft:shulker run function kello:entity/decal/component/falling_platform/spawn/chapter_1/platform
 tag @s remove kello.target
 
 
@@ -50,5 +50,6 @@ scoreboard players operation @s kello.decal.id = #local kello.decal.id
 
 # Displays
 
-execute on passengers if entity @s[type=item_display,tag=aj.falling_platform.bone.root] run function kello:entity/decal/component/falling_platform/spawn/chapter_1/display/root
-execute on passengers if entity @s[type=item_display,tag=aj.falling_platform.bone.extra] run function kello:entity/decal/component/falling_platform/spawn/chapter_1/display/extra
+execute on passengers if entity @s[type=minecraft:item_display,tag=aj.falling_platform.bone.root] run function kello:entity/decal/component/falling_platform/spawn/chapter_1/display/root
+execute on passengers if entity @s[type=minecraft:item_display,tag=aj.falling_platform.bone.extra] run function kello:entity/decal/component/falling_platform/spawn/chapter_1/display/extra
+return 1

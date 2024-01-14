@@ -24,3 +24,4 @@ execute on passengers unless entity @s[tag=aj.animwheel.bone.root] run kill @s
 
 
 scoreboard players operation @s kello.entity.variant = #variant kello.value
+return 1

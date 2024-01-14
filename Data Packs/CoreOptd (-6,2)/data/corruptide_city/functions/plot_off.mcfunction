@@ -2,3 +2,4 @@
 # It will run in your plot on the center block at Y=0
 # Use this to reset your plot and get rid of any laggy entities
 kill @e[tag=corecity.kill_entities]
+return 1

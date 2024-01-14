@@ -6,11 +6,11 @@ execute if score spawn_delay frostcobra.count matches 1.. run scoreboard players
 # Kill when falling from too high even before hitting the ground
 
 execute as @a[tag=pr.target] store result score @s frostcobra.fallDistance run data get entity @s FallDistance
-execute as @a[tag=pr.target,gamemode=adventure] if score @s frostcobra.fallDistance >= MAX_FALL frostcobra.constants run kill @a[tag=pr.target,scores={frostcobra.fallDistance=10..}]
+execute as @a[gamemode=adventure,tag=pr.target] if score @s frostcobra.fallDistance >= MAX_FALL frostcobra.constants run kill @a[tag=pr.target,scores={frostcobra.fallDistance=10..}]
 
 # Kill players on ground
 
-execute as @e[tag=pr.target,gamemode=adventure] at @s if block ~ ~-1 ~ minecraft:weathered_copper run kill @s
+execute as @e[gamemode=adventure,tag=pr.target] at @s if block ~ ~-1 ~ minecraft:weathered_copper run kill @s
 
 # Particles
 
@@ -35,9 +35,11 @@ scoreboard players reset @a frostcobra.tp2
 
 # Finish
 
-execute at @e[tag=pr.target,tag=frostcobra.finish] as @a[tag=pr.target,distance=..1.7] run function pr:player/finish
+execute at @e[tag=pr.target,tag=frostcobra.finish] as @a[distance=..1.7,tag=pr.target] run function pr:player/finish
 
 # Effects
 
 execute as @a[tag=pr.target] at @s if block ~ ~-1 ~ minecraft:emerald_block run effect give @s minecraft:levitation 10 1 true
-execute positioned ~-26 ~82 ~-15 run effect give @a[tag=pr.target,distance=..8] minecraft:blindness 2 0 true
+execute positioned ~-26 ~82 ~-15 run effect give @a[distance=..8,tag=pr.target] minecraft:blindness 2 0 true
+
+return 1

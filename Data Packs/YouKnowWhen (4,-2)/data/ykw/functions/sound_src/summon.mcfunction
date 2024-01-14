@@ -1,8 +1,9 @@
-summon marker ~ ~ ~ {Tags:["ykw","ykw.sound_src","ykw.init"]}
+summon minecraft:marker ~ ~ ~ {Tags:["ykw","ykw.sound_src","ykw.init"]}
 
-scoreboard players operation @e[type=marker,tag=ykw.init,limit=1] ykw.ecolocation = distance ykw.ecolocation
-scoreboard players set @e[type=marker,tag=ykw.init,limit=1] ykw.countup 0
+scoreboard players operation @e[type=minecraft:marker,tag=ykw.init,limit=1] ykw.ecolocation = distance ykw.ecolocation
+scoreboard players set @e[type=minecraft:marker,tag=ykw.init,limit=1] ykw.countup 0
 
-tag @e[type=marker,tag=ykw.init,limit=1] remove ykw.init
+tag @e[type=minecraft:marker,tag=ykw.init,limit=1] remove ykw.init
 
 scoreboard players set distance ykw.ecolocation 20
+return 1

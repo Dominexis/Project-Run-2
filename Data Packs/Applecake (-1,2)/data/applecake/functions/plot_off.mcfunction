@@ -7,3 +7,5 @@ execute as @e[tag=ac.entity,tag=pr.target] run kill @s
 # scoreboard players reset * ac.player
 # scoreboard players reset * ac.PosY
 # scoreboard players reset * ac.body
+
+return 1

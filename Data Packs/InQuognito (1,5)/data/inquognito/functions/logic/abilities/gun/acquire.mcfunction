@@ -10,7 +10,9 @@ scoreboard players set @s inquognito.clearance 2
 
 function inquognito:logic/pickups/acquire
 
-tellraw @s [{"text":"Item acquired: ","color":"yellow"},{"text":"Varia Beam","color":"gold"}]
-tellraw @s [{"text":"Incoming Transmission (Varia Beam) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 5"}}]
+tellraw @s [{"text":"Item acquired: ","color":"yellow","type":"text"},{"text":"Varia Beam","color":"gold","type":"text"}]
+tellraw @s [{"text":"Incoming Transmission (Varia Beam) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 5"},"type":"text"}]
 
 playsound minecraft:entity.player.levelup master @s
+
+return 1

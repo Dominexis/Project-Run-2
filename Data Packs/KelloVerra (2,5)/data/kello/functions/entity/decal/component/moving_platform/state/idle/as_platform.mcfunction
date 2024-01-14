@@ -5,3 +5,4 @@ execute if score #local kello.decal.sequence matches 18.. if entity @s[tag=kello
 execute if score #local kello.decal.sequence matches 18.. if entity @s[tag=kello.entity.type.x] rotated as @s run function kello:entity/decal/component/moving_platform/state/idle/x/inverse_check
 
 execute if score #local kello.decal.sequence matches 0.. on passengers if entity @s[tag=kello.entity.part.indicator] run function kello:entity/decal/component/moving_platform/state/idle/platform_indicator
+return 1

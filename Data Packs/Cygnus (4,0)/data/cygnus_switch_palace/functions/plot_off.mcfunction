@@ -5,3 +5,4 @@
 kill @e[tag=cygnus_entity]
 scoreboard objectives remove cygnus_data
 #scoreboard objectives remove cygnus_jump
+return 1

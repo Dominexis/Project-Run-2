@@ -6,3 +6,4 @@ execute if score @s aj.anim_time matches 52 run function animated_java:decwheel/
 execute if score @s aj.anim_time matches 53 run function animated_java:decwheel/zzzzzzzz/animations/clockwise_large_trn/tree/leaf_53
 execute if score @s aj.anim_time matches 54 run function animated_java:decwheel/zzzzzzzz/animations/clockwise_large_trn/tree/leaf_54
 execute if score @s aj.anim_time matches 55 run function animated_java:decwheel/zzzzzzzz/animations/clockwise_large_trn/tree/leaf_55
+return 1

@@ -12,3 +12,4 @@ scoreboard players remove #player_check_thread_20_sec kello.value 1
 # TODO: IS TEMPORARY
 
 execute as @e[type=#kello:generic/debug,tag=kello.entity.util] at @s run function kello:debug/decal/util/main
+return 1

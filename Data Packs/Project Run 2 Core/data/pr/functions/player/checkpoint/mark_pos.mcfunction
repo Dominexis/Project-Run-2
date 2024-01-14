@@ -1,13 +1,13 @@
 # Mark checkpoint
 
-execute unless score @s pr.checkpoint_cooldown matches 1.. run summon marker ~ ~ ~ {Tags:["pr.checkpoint"]}
-execute unless score @s pr.checkpoint_cooldown matches 1.. run teleport @e[type=marker,tag=pr.checkpoint] ~ ~ ~ ~ ~
-execute unless score @s pr.checkpoint_cooldown matches 1.. run data modify storage pr:data tag set from entity @e[type=marker,tag=pr.checkpoint,limit=1] {}
+execute unless score @s pr.checkpoint_cooldown matches 1.. run summon minecraft:marker ~ ~ ~ {Tags:["pr.checkpoint"]}
+execute unless score @s pr.checkpoint_cooldown matches 1.. run teleport @e[type=minecraft:marker,tag=pr.checkpoint] ~ ~ ~ ~ ~
+execute unless score @s pr.checkpoint_cooldown matches 1.. run data modify storage pr:data tag set from entity @e[type=minecraft:marker,tag=pr.checkpoint,limit=1] {}
 execute unless score @s pr.checkpoint_cooldown matches 1.. store result score @s pr.temp_checkpoint_x run data get storage pr:data tag.Pos[0]
 execute unless score @s pr.checkpoint_cooldown matches 1.. store result score @s pr.temp_checkpoint_y run data get storage pr:data tag.Pos[1]
 execute unless score @s pr.checkpoint_cooldown matches 1.. store result score @s pr.temp_checkpoint_z run data get storage pr:data tag.Pos[2]
 execute unless score @s pr.checkpoint_cooldown matches 1.. store result score @s pr.temp_checkpoint_yaw run data get storage pr:data tag.Rotation[0]
-execute unless score @s pr.checkpoint_cooldown matches 1.. run kill @e[type=marker,tag=pr.checkpoint]
+execute unless score @s pr.checkpoint_cooldown matches 1.. run kill @e[type=minecraft:marker,tag=pr.checkpoint]
 
 execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players add @s pr.temp_checkpoint_yaw 45
 execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players operation @s pr.temp_checkpoint_yaw /= #90 pr.value
@@ -22,3 +22,4 @@ execute unless score @s pr.checkpoint_cooldown matches 1.. run tag @s add pr.tem
 
 execute unless score @s pr.checkpoint_cooldown matches 1.. align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
 execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players set @s pr.checkpoint_cooldown 20
+return 1

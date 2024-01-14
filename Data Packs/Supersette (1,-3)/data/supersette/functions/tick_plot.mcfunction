@@ -23,3 +23,4 @@ execute positioned ~-12 ~16 ~-34 as @a[dx=1,dy=1,dz=1,tag=pr.target] positioned 
 
 execute positioned ~-37 ~81 ~-25 as @a[distance=..1,tag=pr.target] positioned ~37 ~-81 ~25 positioned ~-1 ~49 ~-35 rotated 45 0 run function supersette:warp
 execute positioned ~-36 ~81 ~-31 as @a[distance=..1,tag=pr.target] positioned ~36 ~-81 ~31 positioned ~-36 ~33 ~0 rotated -90 0 run function supersette:warp
+return 1

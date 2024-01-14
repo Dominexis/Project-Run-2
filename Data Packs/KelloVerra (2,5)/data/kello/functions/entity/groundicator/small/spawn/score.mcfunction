@@ -11,6 +11,7 @@ execute if score #level_creation_mode kello.value matches 1 run function kello:t
 
 # Assign tags
 
-data merge entity @s {transformation:{scale:[1.05f,1f,1.05f]},brightness:{block:13,sky:13},view_range:15,Tags:["kello.entity","kello.entity.type.groundicator","kello.entity.part.indicator","kello.entity.type.small","kello.entity.ticking"]}
+data merge entity @s {transformation:{scale:[1.05f,1.0f,1.05f]},brightness:{block:13,sky:13},view_range:15,Tags:["kello.entity","kello.entity.type.groundicator","kello.entity.part.indicator","kello.entity.type.small","kello.entity.ticking"]}
 
 execute if score #spawn_persistent kello.value matches 1 run tag @s add kello.groundicator.persistent
+return 1

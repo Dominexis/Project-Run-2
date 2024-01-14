@@ -9,3 +9,4 @@ execute if entity @s[tag=kello.entity.type.large,tag=kello.entity.type.cogwheel_
 
 #execute if entity @s[tag=kello.entity.type.small,tag=kello.entity.type.cogwheel] run function animated_java:decwheel/apply_variant/small_gear
 #execute if entity @s[tag=kello.entity.type.large,tag=kello.entity.type.cogwheel] run function animated_java:decwheel/apply_variant/large_gear
+return 1

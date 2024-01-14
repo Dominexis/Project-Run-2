@@ -8,3 +8,4 @@ scoreboard objectives remove woutbelt_timer
 bossbar remove woutbelt:woutbelt_blue
 bossbar remove woutbelt:woutbelt_red
 kill @e[type=minecraft:text_display,tag=pr.target]
+return 1

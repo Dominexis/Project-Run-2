@@ -89,3 +89,4 @@ scoreboard players operation #math_root pr.value = #output pr.value
 scoreboard players add #math_root pr.value 1
 scoreboard players operation #math_root pr.value *= #math_root pr.value
 execute if score #math_root pr.value <= #input pr.value run scoreboard players add #output pr.value 1
+return 1

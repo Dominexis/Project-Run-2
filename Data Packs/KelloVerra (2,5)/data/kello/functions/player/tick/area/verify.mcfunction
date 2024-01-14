@@ -26,3 +26,4 @@ execute unless score @s kello.player.checkpoint.id matches 12 unless predicate k
 execute unless score @s kello.player.checkpoint.id matches 13 unless predicate kello:unsafe positioned ~-2 ~137 ~-15 if entity @s[dx=4,dy=7,dz=5] positioned as @s run function kello:player/tick/force_nearest_checkpoint
 execute unless score @s kello.player.checkpoint.id matches 14 unless predicate kello:unsafe positioned ~-2 ~153 ~22 if entity @s[dx=4,dy=7,dz=5] positioned as @s run function kello:player/tick/force_nearest_checkpoint
 execute unless score @s kello.player.checkpoint.id matches 5324 unless predicate kello:unsafe positioned ~-2 ~172 ~-17 if entity @s[dx=4,dy=7,dz=6] positioned as @s run function kello:player/tick/force_nearest_checkpoint
+return 1

@@ -204,3 +204,4 @@ execute positioned ~14 ~16 ~-23 run function earthmere:sequence/sfx
 execute positioned ~25 ~1 ~-13 run function earthmere:sequence/sfx
 execute positioned ~18 ~15 ~-11 run function earthmere:sequence/sfx
 execute positioned ~-5 ~16 ~20 run function earthmere:sequence/sfx
+return 1

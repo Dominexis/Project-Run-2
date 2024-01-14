@@ -12,3 +12,4 @@ execute if score #output pr.value matches 37..68 run tag @s add kello.player.fla
 execute if score #output pr.value matches 69..100 run tag @s add kello.player.flag_sundown
 
 # tellraw @a {"score":{"objective":"pr.value","name":"#output"}}
+return 1

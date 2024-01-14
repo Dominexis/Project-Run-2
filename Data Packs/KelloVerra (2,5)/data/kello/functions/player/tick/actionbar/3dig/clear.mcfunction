@@ -1,3 +1,4 @@
-title @s actionbar [{"text":"\ue004\ue004\ue003\ue003\ue003\ue002\ue002\ue00a","font":"kello:space","obfuscated": false},{"nbt":"tag.minutes","storage":"pr:data","interpret":true,"font": "kello:lower"},{"text":":","color":"gray","font": "kello:lower"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true,"font": "kello:lower"},{"text":".","color":"gray","font": "kello:lower"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true,"font": "kello:lower"}]
+function help:7cbdc1e11771fb744499f360573925a3b031a7d35d4194e077cb0997e44e6460
 
 execute if entity @s[tag=kello.trigger_flee,tag=!kello.player.grappling,tag=!kello.player.flee_reverting] run scoreboard players set @s kello.entity.state 1
+return 1

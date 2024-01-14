@@ -1,402 +1,430 @@
 [
-	{
-		"function": "minecraft:set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"text": "--------------------",
-				"color": "gray",
-				"bold": false,
-				"italic": false
-			},
-			{
-				"text": "A highly modular self-defense weapon known for",
-				"color": "blue",
-				"bold": false,
-				"italic": false
-			},
-			{
-				"text": "its' ability to be augmented extremely easily with upgrades.",
-				"color": "blue",
-				"bold": false,
-				"italic": false
-			},
-			{
-				"text": "--------------------",
-				"color": "gray",
-				"bold": false,
-				"italic": false
-			},
-			{
-				"text": "- [",
-				"color": "gray",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"keybind": "key.use",
-						"color": "gray",
-						"bold": false,
-						"italic": false
-					},
-					{
-						"text": "] to fire",
-						"color": "gray",
-						"bold": false,
-						"italic": false
-					}
-				]
-			},
-			{
-				"text": "--------------------",
-				"color": "gray",
-				"bold": false,
-				"italic": false
-			},
-			{
-				"text": "Damage: ",
-				"color": "aqua",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"score": {
-							"name": "@s",
-							"objective": "inquognito.gun.damage"
-						},
-						"color": "yellow"
-					}
-				]
-			},
-			{
-				"text": "Fire Rate: ",
-				"color": "aqua",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"score": {
-							"name": "@s",
-							"objective": "inquognito.gun.fireRate"
-						},
-						"color": "yellow"
-					}
-				]
-			},
-			{
-				"text": "--------------------",
-				"color": "gray",
-				"bold": false,
-				"italic": false
-			},
-			{
-				"text": "Augments Found: ",
-				"color": "gold",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"score": {
-							"name": "@s",
-							"objective": "inquognito.gun.augments"
-						},
-						"color": "white",
-						"bold": false,
-						"italic": false
-					},
-					{
-						"text": "/3",
-						"color": "yellow",
-						"bold": false,
-						"italic": false
-					}
-				]
-			}
-		],
-		"replace": true
-	},
-	{
-		"function": "minecraft:set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"text": "- ",
-				"color": "gray",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"text": "??????????",
-						"color": "red",
-						"bold": false,
-						"italic": false
-					}
-				]
-			}
-		],
-		"replace": false,
-		"conditions": [
-			{
-				"condition": "minecraft:inverted",
-				"term": {
-					"condition": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"nbt": "{Tags:[\"inquognito.gun.frostbite\"]}"
-					}
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"text": "- ",
-				"color": "gray",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"text": "Frostbite",
-						"color": "aqua",
-						"bold": false,
-						"italic": false
-					}
-				]
-			}
-		],
-		"replace": false,
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.frostbite\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"text": "- ",
-				"color": "gray",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"text": "??????????",
-						"color": "red",
-						"bold": false,
-						"italic": false
-					}
-				]
-			}
-		],
-		"replace": false,
-		"conditions": [
-			{
-				"condition": "minecraft:inverted",
-				"term": {
-					"condition": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"nbt": "{Tags:[\"inquognito.gun.nova\"]}"
-					}
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"text": "- ",
-				"color": "gray",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"text": "Nova",
-						"color": "red",
-						"bold": false,
-						"italic": false
-					}
-				]
-			}
-		],
-		"replace": false,
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.nova\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"text": "- ",
-				"color": "gray",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"text": "??????????",
-						"color": "red",
-						"bold": false,
-						"italic": false
-					}
-				]
-			}
-		],
-		"replace": false,
-		"conditions": [
-			{
-				"condition": "minecraft:inverted",
-				"term": {
-					"condition": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"nbt": "{Tags:[\"inquognito.gun.trinity\"]}"
-					}
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_lore",
-		"entity": "this",
-		"lore": [
-			{
-				"text": "- ",
-				"color": "gray",
-				"bold": false,
-				"italic": false,
-				"extra": [
-					{
-						"text": "Trinity",
-						"color": "yellow",
-						"bold": false,
-						"italic": false
-					}
-				]
-			}
-		],
-		"replace": false,
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.trinity\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:201831}"
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:201832}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.frostbite\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:201833}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.nova\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:201834}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.trinity\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:201835}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.frostbite\",\"inquognito.gun.nova\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:201836}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.frostbite\",\"inquognito.gun.trinity\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:201837}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.nova\",\"inquognito.gun.trinity\"]}"
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:201838}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_properties",
-				"entity": "this",
-				"predicate": {
-					"nbt": "{Tags:[\"inquognito.gun.frostbite\",\"inquognito.gun.nova\",\"inquognito.gun.trinity\"]}"
-				}
-			}
-		]
-	}
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "--------------------",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "type": "text"
+            },
+            {
+                "text": "A highly modular self-defense weapon known for",
+                "color": "blue",
+                "bold": false,
+                "italic": false,
+                "type": "text"
+            },
+            {
+                "text": "its' ability to be augmented extremely easily with upgrades.",
+                "color": "blue",
+                "bold": false,
+                "italic": false,
+                "type": "text"
+            },
+            {
+                "text": "--------------------",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "type": "text"
+            },
+            {
+                "text": "- [",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "keybind": "key.use",
+                        "color": "gray",
+                        "bold": false,
+                        "italic": false,
+                        "type": "keybind"
+                    },
+                    {
+                        "text": "] to fire",
+                        "color": "gray",
+                        "bold": false,
+                        "italic": false,
+                        "type": "text"
+                    }
+                ],
+                "type": "text"
+            },
+            {
+                "text": "--------------------",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "type": "text"
+            },
+            {
+                "text": "Damage: ",
+                "color": "aqua",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "score": {
+                            "name": "@s",
+                            "objective": "inquognito.gun.damage"
+                        },
+                        "color": "yellow",
+                        "type": "score"
+                    }
+                ],
+                "type": "text"
+            },
+            {
+                "text": "Fire Rate: ",
+                "color": "aqua",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "score": {
+                            "name": "@s",
+                            "objective": "inquognito.gun.fireRate"
+                        },
+                        "color": "yellow",
+                        "type": "score"
+                    }
+                ],
+                "type": "text"
+            },
+            {
+                "text": "--------------------",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "type": "text"
+            },
+            {
+                "text": "Augments Found: ",
+                "color": "gold",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "score": {
+                            "name": "@s",
+                            "objective": "inquognito.gun.augments"
+                        },
+                        "color": "white",
+                        "bold": false,
+                        "italic": false,
+                        "type": "score"
+                    },
+                    {
+                        "text": "/3",
+                        "color": "yellow",
+                        "bold": false,
+                        "italic": false,
+                        "type": "text"
+                    }
+                ],
+                "type": "text"
+            }
+        ],
+        "replace": true
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "??????????",
+                        "color": "red",
+                        "bold": false,
+                        "italic": false,
+                        "type": "text"
+                    }
+                ],
+                "type": "text"
+            }
+        ],
+        "replace": false,
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"inquognito.gun.frostbite\"]}"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "Frostbite",
+                        "color": "aqua",
+                        "bold": false,
+                        "italic": false,
+                        "type": "text"
+                    }
+                ],
+                "type": "text"
+            }
+        ],
+        "replace": false,
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.frostbite\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "??????????",
+                        "color": "red",
+                        "bold": false,
+                        "italic": false,
+                        "type": "text"
+                    }
+                ],
+                "type": "text"
+            }
+        ],
+        "replace": false,
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"inquognito.gun.nova\"]}"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "Nova",
+                        "color": "red",
+                        "bold": false,
+                        "italic": false,
+                        "type": "text"
+                    }
+                ],
+                "type": "text"
+            }
+        ],
+        "replace": false,
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.nova\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "??????????",
+                        "color": "red",
+                        "bold": false,
+                        "italic": false,
+                        "type": "text"
+                    }
+                ],
+                "type": "text"
+            }
+        ],
+        "replace": false,
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"inquognito.gun.trinity\"]}"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "- ",
+                "color": "gray",
+                "bold": false,
+                "italic": false,
+                "extra": [
+                    {
+                        "text": "Trinity",
+                        "color": "yellow",
+                        "bold": false,
+                        "italic": false,
+                        "type": "text"
+                    }
+                ],
+                "type": "text"
+            }
+        ],
+        "replace": false,
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.trinity\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:201831}"
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:201832}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.frostbite\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:201833}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.nova\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:201834}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.trinity\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:201835}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.frostbite\",\"inquognito.gun.nova\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:201836}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.frostbite\",\"inquognito.gun.trinity\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:201837}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.nova\",\"inquognito.gun.trinity\"]}"
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:201838}",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"inquognito.gun.frostbite\",\"inquognito.gun.nova\",\"inquognito.gun.trinity\"]}"
+                }
+            }
+        ]
+    }
 ]

@@ -11,3 +11,4 @@ execute if score @s kello.entity.timer matches 4 run data modify entity @s item.
 execute if score @s kello.entity.timer matches 3 run data modify entity @s item.tag.CustomModelData set value 351930
 execute if score @s kello.entity.timer matches 2 run data modify entity @s item.tag.CustomModelData set value 351931
 execute if score @s kello.entity.timer matches 1 run data modify entity @s item.tag.CustomModelData set value 351932
+return 1

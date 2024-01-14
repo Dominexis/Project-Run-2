@@ -3,4 +3,5 @@
 # Use this to reset your plot and get rid of any laggy entities
 
 kill @e[tag=sol.cp,tag=pr.target]
-setblock ~-5 ~-13 ~-3 red_terracotta
+setblock ~-5 ~-13 ~-3 minecraft:red_terracotta
+return 1

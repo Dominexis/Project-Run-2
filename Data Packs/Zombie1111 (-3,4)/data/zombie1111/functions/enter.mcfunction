@@ -4,3 +4,5 @@ scoreboard players operation @s zombie_idplayer = nextIdToGive zombie_id
 tag @s add zombiePlotPlayer
 function zombie1111:player_reset
 
+
+return 1

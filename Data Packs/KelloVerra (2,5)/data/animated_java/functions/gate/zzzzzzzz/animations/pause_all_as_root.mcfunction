@@ -1,3 +1,4 @@
 function animated_java:gate/zzzzzzzz/animations/chp_1_open/pause_as_root
 function animated_java:gate/zzzzzzzz/animations/chp_1_close/pause_as_root
 function animated_java:gate/zzzzzzzz/animations/idle/pause_as_root
+return 1

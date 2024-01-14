@@ -12,3 +12,4 @@ execute if score piston_state rko.time matches 15 run function rko:anim/piston/e
 execute if score piston_state rko.time matches 16 run function rko:anim/piston/extend
 
 execute if score piston_state rko.time matches 25.. run scoreboard players set piston_state rko.time 0
+return 1

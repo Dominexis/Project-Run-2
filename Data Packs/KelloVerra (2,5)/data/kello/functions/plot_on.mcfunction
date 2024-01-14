@@ -23,9 +23,10 @@ function animated_java:gate/zzzzzzzz/load
 # Level specific
 
 function kello:tick/level/initialize
-summon marker ~ ~ ~ {Tags:["kello.exclude","pr.ignore","kello.entity.plot_center"]}
+summon minecraft:marker ~ ~ ~ {Tags:["kello.exclude","pr.ignore","kello.entity.plot_center"]}
 
 
 
 
 scoreboard players set #has_activated kello.value 1
+return 1

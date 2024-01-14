@@ -26,3 +26,4 @@ execute if entity @s[tag=kello.entity.type.gear_8] run function animated_java:an
 
 tag @s add kello.state.fast
 tag @s remove kello.state.slow
+return 1

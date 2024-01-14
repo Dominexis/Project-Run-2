@@ -39,3 +39,4 @@
 
 
 tag @s add kello.state.force_recoil
+return 1

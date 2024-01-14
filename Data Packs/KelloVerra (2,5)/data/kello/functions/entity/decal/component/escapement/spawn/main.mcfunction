@@ -21,3 +21,4 @@ execute if score #boolean1 kello.value matches 0 run scoreboard players remove #
 
 #execute as @e[type=#kello:generic/display,tag=kello.entity.target.spawn] run function kello:entity/decal/component/escapement/spawn/score
 # tellraw @p [{"text":"> Using Selected ID => ","color":"gray"},{"score":{"name":"#selected","objective":"kello.decal.id"},"color":"white"}]
+return 1

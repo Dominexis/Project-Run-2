@@ -4,3 +4,4 @@ tp @s ~ ~ ~
 execute if score #z kello.value > @s kello.component.pos_2 rotated as @s run function kello:entity/decal/component/moving_platform/state/idle/invert
 
 tag @s remove kello.was_deactivated
+return 1

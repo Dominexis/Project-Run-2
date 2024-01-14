@@ -9,4 +9,5 @@ execute unless score #uninstantiate kello.value matches 1 run scoreboard players
 
 scoreboard players operation #animation aj.i = $aj.checkpoint_flag.animation.idle aj.id
 execute rotated 0 0 align xyz positioned ~.5 ~ ~.5 run function animated_java:checkpoint_flag/summon
-execute as @e[type=item_display,distance=..4,tag=kello.entity.checkpoint_new] run function kello:entity/checkpoint/spawn/score
+execute as @e[type=minecraft:item_display,distance=..4,tag=kello.entity.checkpoint_new] run function kello:entity/checkpoint/spawn/score
+return 1

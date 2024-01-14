@@ -4,3 +4,4 @@ kill @e[tag=pr.target,tag=bnsd.txtdisplay]
 kill @e[tag=pr.target,tag=bnsd.model]
 kill @e[tag=pr.target,tag=bnsd.entity]
 kill @e[tag=pr.target,tag=bnsd.char]
+return 1

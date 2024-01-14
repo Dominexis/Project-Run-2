@@ -1,5 +1,5 @@
-execute as @a[scores={ac.player=2},tag=pr.target] positioned ~0 ~39 ~-32 run function pr:player/checkpoint/mark_pos
-execute as @a[scores={ac.player=2},tag=pr.target] run scoreboard players set @s ac.player 1
+execute as @a[tag=pr.target,scores={ac.player=2}] positioned ~0 ~39 ~-32 run function pr:player/checkpoint/mark_pos
+execute as @a[tag=pr.target,scores={ac.player=2}] run scoreboard players set @s ac.player 1
 scoreboard players add #1 ac.delay 1
 execute if score #1 ac.delay matches 200.. positioned ~7 ~30 ~-32 run function applecake:ac/platform1
 # execute if score #1 ac.delay matches 200.. run function applecake:ac/killentitydrop
@@ -28,18 +28,19 @@ execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] run scoreboard playe
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 0..140 run tp @s ~0.4 ~ ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 141..185 run tp @s ~ ~1 ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 170..280 run tp @s ~-0.4 ~ ~
-execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3,type=armor_stand] at @s if score @s ac.temp matches 186 run tp @s ~-3.5 ~ ~
+execute as @e[type=minecraft:armor_stand,tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 186 run tp @s ~-3.5 ~ ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 280.. run tp @s ~ ~1 ~
-execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3,type=armor_stand] at @s if score @s ac.temp matches 280.. run tp @s ~ 0 ~
-execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3,type=armor_stand] at @s if score @s ac.temp matches 280.. run kill @s
+execute as @e[type=minecraft:armor_stand,tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 280.. run tp @s ~ 0 ~
+execute as @e[type=minecraft:armor_stand,tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 280.. run kill @s
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 500.. run tp @s ~ 0 ~
 execute as @e[tag=ac.entity,tag=pr.target,tag=ac.platform3] at @s if score @s ac.temp matches 500.. run kill @s
-execute as @a[scores={ac.player=1},tag=pr.target] run effect give @s minecraft:resistance 5 255 true
-execute as @a[scores={ac.player=1},tag=pr.target] run effect give @s minecraft:darkness 5 10 true
-execute as @a[scores={ac.player=1},tag=pr.target] store result score @s ac.PosY run data get entity @s Pos[1]
-execute as @a[scores={ac.player=1,ac.PosY=..-25},gamemode=!spectator,tag=pr.target] run kill @s
-execute as @a[scores={ac.player=1,ac.PosY=7..60},gamemode=!spectator,tag=pr.target] at @s if block ~ 5 ~ weathered_copper run effect give @s minecraft:levitation 1 10 true
+execute as @a[tag=pr.target,scores={ac.player=1}] run effect give @s minecraft:resistance 5 255 true
+execute as @a[tag=pr.target,scores={ac.player=1}] run effect give @s minecraft:darkness 5 10 true
+execute as @a[tag=pr.target,scores={ac.player=1}] store result score @s ac.PosY run data get entity @s Pos[1]
+execute as @a[gamemode=!spectator,tag=pr.target,scores={ac.player=1,ac.PosY=..-25}] run kill @s
+execute as @a[gamemode=!spectator,tag=pr.target,scores={ac.player=1,ac.PosY=7..60}] at @s if block ~ 5 ~ minecraft:weathered_copper run effect give @s minecraft:levitation 1 10 true
 
-execute positioned ~-6 ~42 ~-22 as @a[tag=pr.target,distance=..3] positioned ~ ~17 ~ rotated 90 0 run function pr:player/checkpoint/mark_pos
-execute positioned ~31 ~45 ~-4 as @a[tag=pr.target,distance=..6] positioned ~ ~13 ~ rotated 0 0 run function pr:player/checkpoint/mark_pos
-execute positioned ~7 ~54 ~34 as @a[tag=pr.target,distance=..3] positioned ~ ~10 ~ rotated 90 0 run function pr:player/checkpoint/mark_pos
+execute positioned ~-6 ~42 ~-22 as @a[distance=..3,tag=pr.target] positioned ~ ~17 ~ rotated 90 0 run function pr:player/checkpoint/mark_pos
+execute positioned ~31 ~45 ~-4 as @a[distance=..6,tag=pr.target] positioned ~ ~13 ~ rotated 0 0 run function pr:player/checkpoint/mark_pos
+execute positioned ~7 ~54 ~34 as @a[distance=..3,tag=pr.target] positioned ~ ~10 ~ rotated 90 0 run function pr:player/checkpoint/mark_pos
+return 1

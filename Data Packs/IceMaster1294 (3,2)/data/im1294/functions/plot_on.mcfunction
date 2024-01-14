@@ -2,7 +2,7 @@
 # It will run in your plot on the center block at Y=0
 # Use this to prepare your plot for players
 
-scoreboard objectives add im1294.kill_count dummy {"text": "Mob Counter"}
+scoreboard objectives add im1294.kill_count dummy {"text":"Mob Counter","type":"text"}
 #scoreboard objectives add im1294.skeleton_count dummy
 #scoreboard objectives add im1294.spider_count killed:spider {"text": "Spiders"}
 
@@ -30,3 +30,4 @@ scoreboard objectives add im1294.summit dummy
 function im1294:zombies/zombie_toggle
 function im1294:skeletons/skeleton_toggle
 function im1294:spiders/spider_toggle
+return 1

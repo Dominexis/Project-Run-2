@@ -2361,3 +2361,4 @@ execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_2_6 p
 execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_2_6 pr.value matches 1 positioned 232 0 616 run function lifeely:tick_plot
 execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_2_6 pr.value matches 1 run tag @a[tag=pr.target] remove pr.target
 execute if score #chunk_loaded_bool pr.value matches 1 if score #plot_tick_2_6 pr.value matches 1 run tag @e[tag=pr.target] remove pr.target
+return 1

@@ -8,3 +8,4 @@ scoreboard objectives add loom.wall_hall_crouch minecraft.custom:minecraft.sneak
 scoreboard players add new_wall loom.wall_hall 0
 scoreboard players add wall_move loom.wall_hall 0
 scoreboard players set wall_speed loom.wall_hall 2000
+return 1

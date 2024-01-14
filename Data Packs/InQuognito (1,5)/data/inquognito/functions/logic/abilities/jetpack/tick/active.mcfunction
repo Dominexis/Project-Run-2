@@ -16,3 +16,5 @@ scoreboard players set @s inquognito.jetpack.cooldown 40
 execute if score @s inquognito.jetpack.fuel matches ..0 run function inquognito:logic/abilities/jetpack/deactivate
 
 scoreboard players set @s inquognito.doubleJump.cooldown 2
+
+return 1

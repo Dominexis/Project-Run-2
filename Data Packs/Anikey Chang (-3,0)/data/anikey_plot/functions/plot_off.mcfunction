@@ -5,3 +5,4 @@
 kill @e[type=minecraft:marker,tag=anikey_tp_in]
 
 kill @e[type=minecraft:marker,tag=anikey_floating_table]
+return 1

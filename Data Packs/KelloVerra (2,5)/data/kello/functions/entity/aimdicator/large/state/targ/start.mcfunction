@@ -2,7 +2,7 @@
 
 scoreboard players set #state kello.value 2
 
-data merge entity @s {text:'{"text":"\\ue001","font":"kello:aim_targ","obfuscated":"true"}'}
+data merge entity @s {text:'{"text":"\\ue001","font":"kello:aim_targ","obfuscated":true,"type":"text"}'}
 
 
 
@@ -10,3 +10,4 @@ data merge entity @s {text:'{"text":"\\ue001","font":"kello:aim_targ","obfuscate
 # Start animation
 
 function kello:entity/aimdicator/large/animation/targ/apply
+return 1

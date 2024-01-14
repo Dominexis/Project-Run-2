@@ -19,18 +19,19 @@ execute as @a[tag=pr.target] at @s run function piemel:tick_player
 # execute positioned ~-39 ~-50 ~-39 as @e[type=item,dx=80,dy=100,dz=80,tag=pr.target] run function piemel:returnitem
 
 # tick slide
-execute positioned ~-25 ~24 ~33 as @a[tag=!piemel.sliding,distance=..1,tag=pr.target] run function piemel:slide/start
-execute positioned ~-25 ~24 ~35 as @a[tag=!piemel.sliding,distance=..1,tag=pr.target] run function piemel:slide/start
+execute positioned ~-25 ~24 ~33 as @a[distance=..1,tag=!piemel.sliding,tag=pr.target] run function piemel:slide/start
+execute positioned ~-25 ~24 ~35 as @a[distance=..1,tag=!piemel.sliding,tag=pr.target] run function piemel:slide/start
 
-execute as @e[type=minecart,tag=pr.target] at @s unless entity @a[distance=..5,tag=pr.target] run kill @s
+execute as @e[type=minecraft:minecart,tag=pr.target] at @s unless entity @a[distance=..5,tag=pr.target] run kill @s
 
 execute positioned ~-18 ~7 ~-37 as @a[distance=..1,tag=pr.target,tag=!piemel.trident] run function piemel:acquire_trident
 
-kill @e[type=item,tag=pr.target,tag=!piemel.trident]
+kill @e[type=minecraft:item,tag=pr.target,tag=!piemel.trident]
 
 
 
 # Warp pipe
 
-execute positioned ~-24 ~-42 ~24 align xyz run effect give @a[dx=2,dy=24,dz=2,tag=pr.target] levitation 1 2 true
+execute positioned ~-24 ~-42 ~24 align xyz run effect give @a[dx=2,dy=24,dz=2,tag=pr.target] minecraft:levitation 1 2 true
 execute positioned ~-23 ~-21 ~25 as @a[distance=..2,tag=pr.target] positioned ~23 ~21 ~-25 positioned ~9 ~-3 ~-34 run function piemel:warp
+return 1

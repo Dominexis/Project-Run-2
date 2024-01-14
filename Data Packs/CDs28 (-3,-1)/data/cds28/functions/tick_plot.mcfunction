@@ -14,3 +14,5 @@ effect give @a[tag=pr.target] minecraft:saturation infinite 0 true
 effect give @a[tag=pr.target] minecraft:resistance infinite 4 true
 
 
+
+return 1

@@ -1,1 +1,6 @@
-{"pack":{"pack_format":15,"description":"FlappyBird Datapack"}}
+{
+    "pack": {
+        "pack_format": 26,
+        "description": "FlappyBird Datapack"
+    }
+}

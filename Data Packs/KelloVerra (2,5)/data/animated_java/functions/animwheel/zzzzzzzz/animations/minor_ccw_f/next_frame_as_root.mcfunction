@@ -1,1 +1,2 @@
 function animated_java:animwheel/zzzzzzzz/animations/minor_ccw_f/tick_animation
+return 1

@@ -1,6 +1,6 @@
 # Detect players from the POV of checkpoint entities
 
-execute positioned ~ ~0.3 ~ run tag @a[tag=pr.target,distance=..0.7] add frostcobra.closePlayer
+execute positioned ~ ~0.3 ~ run tag @a[distance=..0.7,tag=pr.target] add frostcobra.closePlayer
 
 # Testing inequality of last checkpoint (using temporary scoreboard), so the same checkpoint doesn't trigger every tick
 
@@ -20,3 +20,5 @@ execute as @a[tag=pr.target,tag=frostcobra.addCheckpoint] at @s run function pr:
 
 scoreboard players operation @a[tag=pr.target,tag=frostcobra.addCheckpoint] frostcobra.lastCp = @s frostcobra.cpId
 tag @a[tag=pr.target] remove frostcobra.addCheckpoint
+
+return 1

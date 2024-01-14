@@ -34,3 +34,5 @@ summon minecraft:marker ~-22 ~53 ~-2 {Tags:["anikey_floating_table"]}
 
 
 
+
+return 1

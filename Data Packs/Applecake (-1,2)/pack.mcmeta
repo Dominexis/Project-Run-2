@@ -1,1 +1,6 @@
-{"pack":{"description":"Applecake - Project Run 2","pack_format":15}}
+{
+    "pack": {
+        "description": "Applecake - Project Run 2",
+        "pack_format": 26
+    }
+}

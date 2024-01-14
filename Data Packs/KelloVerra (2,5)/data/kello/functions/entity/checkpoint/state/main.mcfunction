@@ -33,3 +33,4 @@ execute if score @s kello.entity.state matches 2 run function kello:entity/check
 execute if score @s kello.entity.state matches 3 run function kello:entity/checkpoint/state/curl/main
 
 scoreboard players operation @s kello.entity.state = #state kello.value
+return 1

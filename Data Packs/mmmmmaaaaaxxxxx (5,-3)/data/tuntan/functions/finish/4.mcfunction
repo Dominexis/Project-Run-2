@@ -5,3 +5,4 @@ scoreboard players add @s[tag=!tuntan.finished4] tuntan_tunnels 1
 tag @s add tuntan.finished4
 tag @s add tuntan.temp1
 tag @s add tuntan.temp2
+return 1

@@ -15,3 +15,4 @@ tag @s add check8
 tag @s add check
 #this run the core checkpoint mark command
 function pr:player/checkpoint/mark
+return 1

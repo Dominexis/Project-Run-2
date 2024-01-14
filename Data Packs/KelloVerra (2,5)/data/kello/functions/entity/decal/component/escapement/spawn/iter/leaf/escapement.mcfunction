@@ -8,7 +8,7 @@ function animated_java:escapement/summon
 
 # Assign scores
 
-execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=aj.escapement.root,tag=!kello.entity.type.escapement,distance=..4,sort=nearest,limit=1] run function kello:entity/decal/component/escapement/spawn/iter/leaf/escapement_score
+execute as @e[type=minecraft:item_display,distance=..4,tag=pr.target,tag=!pr.ignore,tag=aj.escapement.root,tag=!kello.entity.type.escapement,sort=nearest,limit=1] run function kello:entity/decal/component/escapement/spawn/iter/leaf/escapement_score
 
 
 
@@ -16,3 +16,4 @@ execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=aj.escapement.r
 # Summon aimdicator
 
 function kello:entity/decal/component/escapement/spawn/iter/leaf/aimdicator
+return 1

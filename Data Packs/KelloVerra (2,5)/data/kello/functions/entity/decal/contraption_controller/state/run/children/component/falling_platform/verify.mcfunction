@@ -9,3 +9,4 @@ scoreboard players operation #local kello.entity.id = @s kello.entity.id
 execute if score #boolean kello.value matches 0 run function kello:entity/decal/contraption_controller/state/run/children/component/falling_platform/chapter_1/spawn
 
 tag @s remove kello.entity.meteor_spawner_bloom
+return 1

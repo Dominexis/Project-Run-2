@@ -1,11 +1,11 @@
 # kill conditions
-execute if block ~ ~-.1 ~ oxidized_copper if block ~ ~-2 ~ red_terracotta run function piemel:initdeath
-execute if block ~ ~-.1 ~ black_stained_glass run function piemel:initdeath
+execute if block ~ ~-.1 ~ minecraft:oxidized_copper if block ~ ~-2 ~ minecraft:red_terracotta run function piemel:initdeath
+execute if block ~ ~-.1 ~ minecraft:black_stained_glass run function piemel:initdeath
 
 # slide triggers
-execute as @s[tag=piemel.sliding] at @e[tag=piemel.slideanchor,tag=pr.target,sort=nearest,limit=1] positioned ~ ~3.25 ~ run tp @s ~ ~ ~ -90 40
+execute if entity @s[tag=piemel.sliding] at @e[tag=piemel.slideanchor,tag=pr.target,sort=nearest,limit=1] positioned ~ ~3.25 ~ run tp @s ~ ~ ~ -90 40
 execute at @s[tag=piemel.sliding] run tp @s @s
-execute as @s[tag=piemel.sliding] if block ~ ~-10 ~ red_concrete run function piemel:slide/end
+execute if entity @s[tag=piemel.sliding] if block ~ ~-10 ~ minecraft:red_concrete run function piemel:slide/end
 
 # grappling gun
 # tag @s remove piemel.aiminggrapple
@@ -39,6 +39,7 @@ execute as @s[tag=piemel.sliding] if block ~ ~-10 ~ red_concrete run function pi
 
 
 
-execute store result score #item_count piemel.values run clear @s trident 0
-execute if entity @s[tag=piemel.trident] if score #item_count piemel.values matches 0 run give @s trident{Enchantments:[{id:"minecraft:riptide",lvl:3s}],Unbreakable:1b}
-execute if entity @s[tag=piemel.trident] if score #item_count piemel.values matches 2.. run clear @s trident
+execute store result score #item_count piemel.values run clear @s minecraft:trident 0
+execute if entity @s[tag=piemel.trident] if score #item_count piemel.values matches 0 run give @s minecraft:trident{Enchantments:[{id:"minecraft:riptide",lvl:3s}],Unbreakable:1b}
+execute if entity @s[tag=piemel.trident] if score #item_count piemel.values matches 2.. run clear @s minecraft:trident
+return 1

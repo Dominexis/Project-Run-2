@@ -12,7 +12,7 @@ scoreboard players set maxRange zombie_rngV 30
 function zombie1111:player_shootlaser_gettarget
 scoreboard players operation @s zombie_id = nextIdToGive zombie_id
 
-tp @s ~ ~ ~ ~ ~ 
+tp @s ~ ~ ~ ~ ~
 execute store result score rot zombie_rngV run data get entity @s Rotation[0] 1000
 function zombie1111:getrandomnumber
 scoreboard players operation rValue zombie_rngV %= C_50 zombie_rngC
@@ -21,3 +21,5 @@ scoreboard players operation rValue zombie_rngV *= C_1000 zombie_rngC
 scoreboard players operation rot zombie_rngV += rValue zombie_rngV
 execute store result entity @s Rotation[0] float 0.001 run scoreboard players get rot zombie_rngV
 
+
+return 1

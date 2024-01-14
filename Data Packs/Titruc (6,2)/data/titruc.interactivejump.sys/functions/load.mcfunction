@@ -10,7 +10,8 @@ scoreboard objectives add titruc.interactivejump.standing_on_deepslate_prev dumm
 scoreboard players set titruc.interactivejump.variable.20 titruc.interactivejump.variable 20
 scoreboard players set titruc.interactivejump.variable.0 titruc.interactivejump.variable 0
 scoreboard players set titruc.interactivejump.variable.4 titruc.interactivejump.variable 4
-execute positioned ~ ~ ~ run function titruc.interactivejump.sys:enter/enter_marker
-summon marker ~ ~ ~ {Tags:["pr.target","titruc.interactivejump.ishere"]}
+function titruc.interactivejump.sys:enter/enter_marker
+summon minecraft:marker ~ ~ ~ {Tags:["pr.target","titruc.interactivejump.ishere"]}
 
-summon text_display ~-16 ~3.35 ~-10 {Tags:["titruc.hint"],text:'{"text":"Look here -->","color":"white","bold":true}',background:0,Rotation:[90.0f,0.0f]}
+summon minecraft:text_display ~-16 ~3.35 ~-10 {Tags:["titruc.hint"],text:'{"text":"Look here -->","color":"white","bold":true,"type":"text"}',background:0,Rotation:[90.0f,0.0f]}
+return 1

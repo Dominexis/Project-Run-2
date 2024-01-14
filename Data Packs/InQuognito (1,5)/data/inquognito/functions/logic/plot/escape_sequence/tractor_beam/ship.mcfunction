@@ -89,3 +89,5 @@ execute positioned ~ ~21.75 ~ run particle minecraft:dust_color_transition 0.0 0
 execute positioned ~-0.5 ~ ~-0.5 if entity @s[dx=0,dy=22,dz=0] run effect give @s minecraft:levitation 1 1 true
 
 execute positioned ~-0.5 ~16 ~-0.5 if entity @s[dx=0,dy=0,dz=0] run function inquognito:logic/plot/post_game/win
+
+return 1

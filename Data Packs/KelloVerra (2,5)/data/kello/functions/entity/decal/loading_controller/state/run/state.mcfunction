@@ -5,3 +5,4 @@ execute if score @s kello.entity.timer matches ..0 if score #generator.local_lev
 
 
 scoreboard players remove @s[scores={kello.entity.timer=1..}] kello.entity.timer 1
+return 1

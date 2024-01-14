@@ -8,4 +8,5 @@ execute if score #level_creation_mode kello.value matches 1 run function kello:t
 
 # Assign tags
 
-data merge entity @s {item:{id:"minecraft:magenta_stained_glass_pane",Count:1b,tag:{CustomModelData:351960}},transformation:{scale:[1.05f,0.95f,1.05f]},brightness:{block:15,sky:15},view_range:15,Tags:["kello.entity","kello.entity.type.placedicator","kello.entity.part.indicator","kello.entity.type.small","pr.ignore"]}
+data merge entity @s {item:{id:"minecraft:magenta_stained_glass_pane",tag:{CustomModelData:351960},Count:1b},transformation:{scale:[1.05f,0.95f,1.05f]},brightness:{block:15,sky:15},view_range:15,Tags:["kello.entity","kello.entity.type.placedicator","kello.entity.part.indicator","kello.entity.type.small","pr.ignore"]}
+return 1

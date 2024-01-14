@@ -1,15 +1,15 @@
 # detect player entering room
-execute as @a[tag=pr.target,scores={uk_range_detect=..1}] at @s if block ~ ~-2 ~ gold_block run scoreboard players add @a uk_range_detect 1
+execute as @a[tag=pr.target,scores={uk_range_detect=..1}] at @s if block ~ ~-2 ~ minecraft:gold_block run scoreboard players add @a uk_range_detect 1
 
 # give player bow
-give @a[tag=pr.target,scores={uk_range_detect=2}] bow{HideFlags:255,Unbreakable:1b,Enchantments:[{}]} 1
+give @a[tag=pr.target,scores={uk_range_detect=2}] minecraft:bow{HideFlags:255,Unbreakable:1b,Enchantments:[{}]} 1
 scoreboard players add @a[tag=pr.target,scores={uk_range_detect=2}] uk_range_detect 1
 
 # give player arrow
 execute as @a[tag=pr.target,scores={uk_range_detect=3}] store result score @s uk_arrowCount run clear @s minecraft:arrow 0
 execute as @a[tag=pr.target,scores={uk_range_detect=3}] if score @s uk_arrowCount matches 0 run item replace entity @s inventory.0 with minecraft:arrow 1
 execute as @a[tag=pr.target,scores={uk_range_detect=3}] if score @s uk_arrowCount matches 2.. run clear @s minecraft:arrow
-kill @e[type=item,tag=pr.target]
+kill @e[type=minecraft:item,tag=pr.target]
 
 # make sure player doesnt drop bow
 execute as @a[tag=pr.target,scores={uk_range_detect=3}] store result score @s uk_bowCount run clear @s minecraft:bow 0
@@ -21,7 +21,7 @@ execute as @a[tag=pr.target,scores={uk_range_detect=3}] if score uktargetHolder 
 
 # check if player hit target
 
-tp @e[type=marker,tag=uk.particle,tag=pr.target] @e[type=pillager,tag=pr.target,limit=1]
+tp @e[type=minecraft:marker,tag=uk.particle,tag=pr.target] @e[type=minecraft:pillager,tag=pr.target,limit=1]
 execute if entity @a[tag=pr.target,scores={uk_kill=1..}] run function uk:range/target_shot
 
 # execute as @e[tag=uk_targets,tag=pr.target] store result score @s uk_targetHealth run data get entity @s Health 10
@@ -43,5 +43,7 @@ execute if score uktargetHolder uk_targets matches 41.. run scoreboard players s
 
 # remove levitation if player reached ceiling
 
-execute positioned ~-40 -64 ~-40 run effect give @a[dx=80,dy=18,dz=80,tag=pr.target,scores={uk_range_detect=4}] levitation infinite 10 true
-execute as @a[tag=pr.target] at @s if block ~ ~2 ~ yellow_stained_glass if block ~ ~-2 ~ lime_stained_glass run effect clear @s minecraft:levitation
+execute positioned ~-40 -64 ~-40 run effect give @a[dx=80,dy=18,dz=80,tag=pr.target,scores={uk_range_detect=4}] minecraft:levitation infinite 10 true
+execute as @a[tag=pr.target] at @s if block ~ ~2 ~ minecraft:yellow_stained_glass if block ~ ~-2 ~ minecraft:lime_stained_glass run effect clear @s minecraft:levitation
+
+return 1

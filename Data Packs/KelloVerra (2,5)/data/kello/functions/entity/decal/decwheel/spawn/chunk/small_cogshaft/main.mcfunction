@@ -9,3 +9,4 @@ scoreboard players set #iteration kello.value 16
 # Iteration
 
 function kello:entity/decal/decwheel/spawn/chunk/small_cogshaft/iter
+return 1

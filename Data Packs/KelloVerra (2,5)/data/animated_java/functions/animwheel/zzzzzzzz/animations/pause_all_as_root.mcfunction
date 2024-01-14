@@ -3,3 +3,4 @@ function animated_java:animwheel/zzzzzzzz/animations/minor_ccw/pause_as_root
 function animated_java:animwheel/zzzzzzzz/animations/minor_cw_f/pause_as_root
 function animated_java:animwheel/zzzzzzzz/animations/minor_ccw_f/pause_as_root
 function animated_java:animwheel/zzzzzzzz/animations/flip/pause_as_root
+return 1

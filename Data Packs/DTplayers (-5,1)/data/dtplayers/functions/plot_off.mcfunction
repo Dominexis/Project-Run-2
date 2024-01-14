@@ -3,3 +3,4 @@
 #kill prop entities
 kill @e[tag=dtplayers.prop]
 kill @e[tag=dtplayers.rocket]
+return 1

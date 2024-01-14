@@ -3,3 +3,4 @@
 # Use this to prepare your plot for players
 scoreboard objectives add timerCDs dummy
 function cds28:setmarkers
+return 1

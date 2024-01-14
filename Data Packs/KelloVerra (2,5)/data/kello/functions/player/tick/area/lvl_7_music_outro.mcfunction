@@ -12,3 +12,4 @@ function kello:player/tick/music/restart/queue
 # Derelate
 
 tag @s add kello.player.has_triggered.lvl_7_music_outro
+return 1

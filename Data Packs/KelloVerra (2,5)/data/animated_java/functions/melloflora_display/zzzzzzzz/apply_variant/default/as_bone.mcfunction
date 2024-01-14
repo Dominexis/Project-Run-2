@@ -8,3 +8,4 @@ execute if entity @s[tag=aj.melloflora_display.bone.petal3] run data modify enti
 execute if entity @s[tag=aj.melloflora_display.bone.petal2] run data modify entity @s item.tag.CustomModelData set value 39
 execute if entity @s[tag=aj.melloflora_display.bone.petal] run data modify entity @s item.tag.CustomModelData set value 40
 execute if entity @s[tag=aj.melloflora_display.bone.petal4] run data modify entity @s item.tag.CustomModelData set value 41
+return 1

@@ -11,4 +11,5 @@ scoreboard objectives remove aj.escapement.animation.player.local_anim_time
 scoreboard objectives remove aj.escapement.animation.close.loop_mode
 scoreboard objectives remove aj.escapement.animation.open.loop_mode
 scoreboard objectives remove aj.escapement.animation.player.loop_mode
-tellraw @s ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The escapement Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]
+tellraw @s ["",{"text":"[","type":"text"},{"text":"Animated Java","color":"aqua","type":"text"},{"text":"] ","type":"text"},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The escapement Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]
+return 1

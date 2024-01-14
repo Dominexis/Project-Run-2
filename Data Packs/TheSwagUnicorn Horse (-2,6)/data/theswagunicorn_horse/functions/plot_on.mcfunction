@@ -4,3 +4,5 @@
 
 scoreboard objectives add Swag.HorsePing dummy
 scoreboard objectives add Swag.TickDelay dummy
+
+return 1

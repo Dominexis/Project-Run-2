@@ -20,3 +20,4 @@ tag @e[tag=pr.target] remove isch.target
 
 # execute if entity @a[tag=pr.target,tag=kmc,limit=1] as @e[type=zombified_piglin,tag=pr.target] at @s run function ischool04_plot:angry_zpiglin
 scoreboard players reset @s isch.dth
+return 1

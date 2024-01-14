@@ -9,3 +9,4 @@ playsound minecraft:item.axe.strip master @s ~ ~ ~ 0.85 1.25 0
 playsound minecraft:item.hoe.till master @s ~ ~ ~ 0.75 0.75 0
 playsound minecraft:block.lava.pop master @s ~ ~ ~ 0.8 0.85 0
 playsound minecraft:block.bamboo.hit master @s ~ ~ ~ 0.85 0.48 0
+return 1

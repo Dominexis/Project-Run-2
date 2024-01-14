@@ -3,4 +3,5 @@
 # execute as @e[tag=pr.target,tag=lory.water] at @s run function lory:water
 # execute positioned ~20 ~1 ~-2 as @a[tag=pr.target,tag=lory.playing,dx=1,dy=1,dz=4] run function lory:run_stop
 execute positioned ~-1 ~110 ~-21 as @a[dx=2,dy=2,dz=1,tag=pr.target] positioned ~1 ~-110 ~21 run function lory:win
-execute as @a[tag=pr.target] at @s if block ~ ~ ~ water run kill @s
+execute as @a[tag=pr.target] at @s if block ~ ~ ~ minecraft:water run kill @s
+return 1

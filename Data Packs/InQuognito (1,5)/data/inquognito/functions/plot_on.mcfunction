@@ -72,118 +72,118 @@ scoreboard players set 40 inquognito.values 40
 scoreboard players set 200 inquognito.values 200
 
 # Pickups
-summon minecraft:item_display ~-9 ~50.5 ~-2 {Tags:["inquognito","inquognito.gun"],item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:201831},Count:1b},Rotation:[-45f,30f],transformation:[1.25f,0f,0f,0f,0f,1.25f,0f,0f,0f,0f,1.25f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-9 ~50.5 ~-2 {Tags:["inquognito","inquognito.gun"],item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:201831},Count:1b},Rotation:[-45.0f,30.0f],transformation:[1.25f,0.0f,0.0f,0.0f,0.0f,1.25f,0.0f,0.0f,0.0f,0.0f,1.25f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
-summon minecraft:item_display ~-9 ~59 ~-38 {Tags:["inquognito","inquognito.gun.frostbite"],item:{id:"minecraft:tide_armor_trim_smithing_template",Count:1b},Rotation:[0f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~-20 ~-4 ~-33 {Tags:["inquognito","inquognito.gun.nova"],item:{id:"minecraft:eye_armor_trim_smithing_template",Count:1b},Rotation:[90f,0f]}
-summon minecraft:item_display ~-15 ~44 ~13 {Tags:["inquognito","inquognito.gun.trinity"],item:{id:"minecraft:ward_armor_trim_smithing_template",Count:1b},Rotation:[0f,0f]}
+summon minecraft:item_display ~-9 ~59 ~-38 {Tags:["inquognito","inquognito.gun.frostbite"],item:{id:"minecraft:tide_armor_trim_smithing_template",Count:1b},Rotation:[0.0f,0.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~-20 ~-4 ~-33 {Tags:["inquognito","inquognito.gun.nova"],item:{id:"minecraft:eye_armor_trim_smithing_template",Count:1b},Rotation:[90.0f,0.0f]}
+summon minecraft:item_display ~-15 ~44 ~13 {Tags:["inquognito","inquognito.gun.trinity"],item:{id:"minecraft:ward_armor_trim_smithing_template",Count:1b},Rotation:[0.0f,0.0f]}
 
-summon minecraft:item_display ~24 ~55.5 ~36 {Tags:["inquognito","inquognito.suit.mk2"],item:{id:"minecraft:diamond_chestplate",Count:1b},Rotation:[-90f,0f]}
-summon minecraft:item_display ~7 ~4.5 ~27 {Tags:["inquognito","inquognito.suit.mk3"],item:{id:"minecraft:amethyst_shard",Count:1b},Rotation:[-180f,0f]}
+summon minecraft:item_display ~24 ~55.5 ~36 {Tags:["inquognito","inquognito.suit.mk2"],item:{id:"minecraft:diamond_chestplate",Count:1b},Rotation:[-90.0f,0.0f]}
+summon minecraft:item_display ~7 ~4.5 ~27 {Tags:["inquognito","inquognito.suit.mk3"],item:{id:"minecraft:amethyst_shard",Count:1b},Rotation:[-180.0f,0.0f]}
 
-summon minecraft:item_display ~22 ~48.5 ~6 {Tags:["inquognito","inquognito.code.1"],item:{id:"minecraft:copper_ingot",Count:1b},Rotation:[135f,90f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~-5 ~49 ~-16 {Tags:["inquognito","inquognito.code.2"],item:{id:"minecraft:copper_ingot",Count:1b},Rotation:[-45f,90f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~-23 ~49 ~ {Tags:["inquognito","inquognito.code.3"],item:{id:"minecraft:copper_ingot",Count:1b},Rotation:[135f,90f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~22 ~48.5 ~6 {Tags:["inquognito","inquognito.code.1"],item:{id:"minecraft:copper_ingot",Count:1b},Rotation:[135.0f,90.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~-5 ~49 ~-16 {Tags:["inquognito","inquognito.code.2"],item:{id:"minecraft:copper_ingot",Count:1b},Rotation:[-45.0f,90.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~-23 ~49 ~ {Tags:["inquognito","inquognito.code.3"],item:{id:"minecraft:copper_ingot",Count:1b},Rotation:[135.0f,90.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
-summon minecraft:item_display ~0 ~29 ~-35.5 {Tags:["inquognito","inquognito.code.sewer"],item:{id:"minecraft:copper_ingot",Count:1b},Rotation:[135f,90f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~0 ~29 ~-35.5 {Tags:["inquognito","inquognito.code.sewer"],item:{id:"minecraft:copper_ingot",Count:1b},Rotation:[135.0f,90.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
-summon minecraft:item_display ~36 ~9 ~-6 {Tags:["inquognito","inquognito.nightVisionScope"],item:{id:"minecraft:spyglass",Count:1b},Rotation:[135f,-45f]}
+summon minecraft:item_display ~36 ~9 ~-6 {Tags:["inquognito","inquognito.nightVisionScope"],item:{id:"minecraft:spyglass",Count:1b},Rotation:[135.0f,-45.0f]}
 
-summon minecraft:item_display ~34 ~51 ~-34 {Tags:["inquognito","inquognito.upgrade.energy"],item:{id:"minecraft:nether_star",Count:1b},Rotation:[0f,0f]}
+summon minecraft:item_display ~34 ~51 ~-34 {Tags:["inquognito","inquognito.upgrade.energy"],item:{id:"minecraft:nether_star",Count:1b},Rotation:[0.0f,0.0f]}
 
-summon minecraft:item_display ~-9 ~60 ~-2 {Tags:["inquognito","inquognito.upgrade.health.1"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[180f,0f]}
-summon minecraft:item_display ~25 ~60 ~18 {Tags:["inquognito","inquognito.upgrade.health.2"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[0f,0f]}
-summon minecraft:item_display ~22 ~18 ~6 {Tags:["inquognito","inquognito.upgrade.health.3"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[180f,0f]}
-summon minecraft:item_display ~-5 ~3 ~-29 {Tags:["inquognito","inquognito.upgrade.health.4"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[0f,0f]}
-summon minecraft:item_display ~35 ~22 ~-10 {Tags:["inquognito","inquognito.upgrade.health.5"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[90f,0f]}
+summon minecraft:item_display ~-9 ~60 ~-2 {Tags:["inquognito","inquognito.upgrade.health.1"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[180.0f,0.0f]}
+summon minecraft:item_display ~25 ~60 ~18 {Tags:["inquognito","inquognito.upgrade.health.2"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[0.0f,0.0f]}
+summon minecraft:item_display ~22 ~18 ~6 {Tags:["inquognito","inquognito.upgrade.health.3"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[180.0f,0.0f]}
+summon minecraft:item_display ~-5 ~3 ~-29 {Tags:["inquognito","inquognito.upgrade.health.4"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[0.0f,0.0f]}
+summon minecraft:item_display ~35 ~22 ~-10 {Tags:["inquognito","inquognito.upgrade.health.5"],item:{id:"minecraft:slime_ball",Count:1b},Rotation:[90.0f,0.0f]}
 
-summon minecraft:item_display ~21 ~52 ~-23 {Tags:["inquognito","inquognito.upgrade.damage.1"],item:{id:"minecraft:quartz",Count:1b},Rotation:[90f,0f]}
-summon minecraft:item_display ~22 ~73 ~-35 {Tags:["inquognito","inquognito.upgrade.damage.2"],item:{id:"minecraft:quartz",Count:1b},Rotation:[-90f,0f]}
-summon minecraft:item_display ~20 ~55 ~-30 {Tags:["inquognito","inquognito.upgrade.damage.3"],item:{id:"minecraft:quartz",Count:1b},Rotation:[180f,0f]}
-summon minecraft:item_display ~32 ~15 ~-27 {Tags:["inquognito","inquognito.upgrade.damage.4"],item:{id:"minecraft:quartz",Count:1b},Rotation:[0f,0f]}
-summon minecraft:item_display ~-35 ~49 ~1.5 {Tags:["inquognito","inquognito.upgrade.damage.5"],item:{id:"minecraft:quartz",Count:1b},Rotation:[0f,0f]}
+summon minecraft:item_display ~21 ~52 ~-23 {Tags:["inquognito","inquognito.upgrade.damage.1"],item:{id:"minecraft:quartz",Count:1b},Rotation:[90.0f,0.0f]}
+summon minecraft:item_display ~22 ~73 ~-35 {Tags:["inquognito","inquognito.upgrade.damage.2"],item:{id:"minecraft:quartz",Count:1b},Rotation:[-90.0f,0.0f]}
+summon minecraft:item_display ~20 ~55 ~-30 {Tags:["inquognito","inquognito.upgrade.damage.3"],item:{id:"minecraft:quartz",Count:1b},Rotation:[180.0f,0.0f]}
+summon minecraft:item_display ~32 ~15 ~-27 {Tags:["inquognito","inquognito.upgrade.damage.4"],item:{id:"minecraft:quartz",Count:1b},Rotation:[0.0f,0.0f]}
+summon minecraft:item_display ~-35 ~49 ~1.5 {Tags:["inquognito","inquognito.upgrade.damage.5"],item:{id:"minecraft:quartz",Count:1b},Rotation:[0.0f,0.0f]}
 
-summon minecraft:item_display ~-4 ~64 ~-38 {Tags:["inquognito","inquognito.upgrade.fireRate.1"],item:{id:"minecraft:sugar",Count:1b},Rotation:[0f,0f]}
-summon minecraft:item_display ~14.5 ~63 ~-24 {Tags:["inquognito","inquognito.upgrade.fireRate.2"],item:{id:"minecraft:sugar",Count:1b},Rotation:[90f,0f]}
-summon minecraft:item_display ~-17 ~3 ~5 {Tags:["inquognito","inquognito.upgrade.fireRate.3"],item:{id:"minecraft:sugar",Count:1b},Rotation:[-90f,0f]}
-summon minecraft:item_display ~21 ~10 ~-21 {Tags:["inquognito","inquognito.upgrade.fireRate.4"],item:{id:"minecraft:sugar",Count:1b},Rotation:[0f,0f]}
-summon minecraft:item_display ~7.5 ~42 ~-30 {Tags:["inquognito","inquognito.upgrade.fireRate.5"],item:{id:"minecraft:sugar",Count:1b},Rotation:[180f,0f]}
+summon minecraft:item_display ~-4 ~64 ~-38 {Tags:["inquognito","inquognito.upgrade.fireRate.1"],item:{id:"minecraft:sugar",Count:1b},Rotation:[0.0f,0.0f]}
+summon minecraft:item_display ~14.5 ~63 ~-24 {Tags:["inquognito","inquognito.upgrade.fireRate.2"],item:{id:"minecraft:sugar",Count:1b},Rotation:[90.0f,0.0f]}
+summon minecraft:item_display ~-17 ~3 ~5 {Tags:["inquognito","inquognito.upgrade.fireRate.3"],item:{id:"minecraft:sugar",Count:1b},Rotation:[-90.0f,0.0f]}
+summon minecraft:item_display ~21 ~10 ~-21 {Tags:["inquognito","inquognito.upgrade.fireRate.4"],item:{id:"minecraft:sugar",Count:1b},Rotation:[0.0f,0.0f]}
+summon minecraft:item_display ~7.5 ~42 ~-30 {Tags:["inquognito","inquognito.upgrade.fireRate.5"],item:{id:"minecraft:sugar",Count:1b},Rotation:[180.0f,0.0f]}
 
-summon minecraft:item_display ~-2 ~-34.75 ~-21 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.1"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~5 ~-25.75 ~-7 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.2"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~22 ~-20.75 ~13 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.3"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~-30 ~-19.75 ~-17 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.4"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-2 ~-34.75 ~-21 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.1"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45.0f,0.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~5 ~-25.75 ~-7 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.2"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45.0f,0.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~22 ~-20.75 ~13 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.3"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45.0f,0.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~-30 ~-19.75 ~-17 {Tags:["inquognito","inquognito.sonic_charge","inquognito.sonic_charge.4"],item:{id:"minecraft:tnt",Count:1b},Rotation:[45.0f,0.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
 # Gates
-summon minecraft:marker ~0 ~49.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0f,0f]}
-summon minecraft:marker ~0 ~50.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0f,0f]}
-summon minecraft:marker ~0 ~51.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0f,0f]}
-summon minecraft:marker ~0 ~52.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0f,0f]}
-summon minecraft:marker ~0 ~53.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0f,0f]}
+summon minecraft:marker ~0 ~49.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~0 ~50.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~0 ~51.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~0 ~52.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~0 ~53.5 ~-38 {Tags:["inquognito","inquognito.gate","inquognito.gate.start"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~-11 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[135f,0f]}
-summon minecraft:marker ~-10 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-180f,0f]}
-summon minecraft:marker ~-9 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-180f,0f]}
-summon minecraft:marker ~-8 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-180f,0f]}
+summon minecraft:marker ~-11 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[135.0f,0.0f]}
+summon minecraft:marker ~-10 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-180.0f,0.0f]}
+summon minecraft:marker ~-9 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-180.0f,0.0f]}
+summon minecraft:marker ~-8 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-180.0f,0.0f]}
 
-summon minecraft:marker ~-7 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-135f,0f]}
-summon minecraft:marker ~-7 ~51 ~-3 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-90f,0f]}
-summon minecraft:marker ~-7 ~51 ~-2 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-90f,0f]}
-summon minecraft:marker ~-7 ~51 ~-1 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-90f,0f]}
+summon minecraft:marker ~-7 ~51 ~-4 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-135.0f,0.0f]}
+summon minecraft:marker ~-7 ~51 ~-3 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-90.0f,0.0f]}
+summon minecraft:marker ~-7 ~51 ~-2 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-90.0f,0.0f]}
+summon minecraft:marker ~-7 ~51 ~-1 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-90.0f,0.0f]}
 
-summon minecraft:marker ~-7 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-45f,0f]}
-summon minecraft:marker ~-8 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[0f,0f]}
-summon minecraft:marker ~-9 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[0f,0f]}
-summon minecraft:marker ~-10 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[0f,0f]}
+summon minecraft:marker ~-7 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[-45.0f,0.0f]}
+summon minecraft:marker ~-8 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-9 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-10 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~-11 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[45f,0f]}
-summon minecraft:marker ~-11 ~51 ~-1 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[90f,0f]}
-summon minecraft:marker ~-11 ~51 ~-2 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[90f,0f]}
-summon minecraft:marker ~-11 ~51 ~-3 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[90f,0f]}
+summon minecraft:marker ~-11 ~51 ~0 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[45.0f,0.0f]}
+summon minecraft:marker ~-11 ~51 ~-1 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[90.0f,0.0f]}
+summon minecraft:marker ~-11 ~51 ~-2 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[90.0f,0.0f]}
+summon minecraft:marker ~-11 ~51 ~-3 {Tags:["inquognito","inquognito.gate","inquognito.gate.gun"],Rotation:[90.0f,0.0f]}
 
-summon minecraft:marker ~13 ~50.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.1"],Rotation:[0f,0f]}
-summon minecraft:marker ~14 ~50.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.1"],Rotation:[0f,0f]}
-summon minecraft:marker ~15 ~50.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.1"],Rotation:[0f,0f]}
+summon minecraft:marker ~13 ~50.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.1"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~14 ~50.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.1"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~15 ~50.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.1"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~19 ~44.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.2"],Rotation:[180f,0f]}
-summon minecraft:marker ~20 ~44.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.2"],Rotation:[180f,0f]}
-summon minecraft:marker ~21 ~44.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.2"],Rotation:[180f,0f]}
+summon minecraft:marker ~19 ~44.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.2"],Rotation:[180.0f,0.0f]}
+summon minecraft:marker ~20 ~44.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.2"],Rotation:[180.0f,0.0f]}
+summon minecraft:marker ~21 ~44.5 ~-28 {Tags:["inquognito","inquognito.gate","inquognito.gate.2"],Rotation:[180.0f,0.0f]}
 
-summon minecraft:marker ~11 ~63.5 ~-25 {Tags:["inquognito","inquognito.gate","inquognito.gate.3"],Rotation:[90f,0f]}
-summon minecraft:marker ~11 ~63.5 ~-24 {Tags:["inquognito","inquognito.gate","inquognito.gate.3"],Rotation:[90f,0f]}
-summon minecraft:marker ~11 ~63.5 ~-23 {Tags:["inquognito","inquognito.gate","inquognito.gate.3"],Rotation:[90f,0f]}
+summon minecraft:marker ~11 ~63.5 ~-25 {Tags:["inquognito","inquognito.gate","inquognito.gate.3"],Rotation:[90.0f,0.0f]}
+summon minecraft:marker ~11 ~63.5 ~-24 {Tags:["inquognito","inquognito.gate","inquognito.gate.3"],Rotation:[90.0f,0.0f]}
+summon minecraft:marker ~11 ~63.5 ~-23 {Tags:["inquognito","inquognito.gate","inquognito.gate.3"],Rotation:[90.0f,0.0f]}
 
-summon minecraft:marker ~-31 ~-8.5 ~-10 {Tags:["inquognito","inquognito.gate","inquognito.gate.4"],Rotation:[0f,0f]}
-summon minecraft:marker ~-30 ~-8.5 ~-10 {Tags:["inquognito","inquognito.gate","inquognito.gate.4"],Rotation:[0f,0f]}
-summon minecraft:marker ~-29 ~-8.5 ~-10 {Tags:["inquognito","inquognito.gate","inquognito.gate.4"],Rotation:[0f,0f]}
+summon minecraft:marker ~-31 ~-8.5 ~-10 {Tags:["inquognito","inquognito.gate","inquognito.gate.4"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-30 ~-8.5 ~-10 {Tags:["inquognito","inquognito.gate","inquognito.gate.4"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-29 ~-8.5 ~-10 {Tags:["inquognito","inquognito.gate","inquognito.gate.4"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~33 ~50.5 ~-30 {Tags:["inquognito","inquognito.gate","inquognito.gate.energy"],Rotation:[0f,0f]}
-summon minecraft:marker ~34 ~50.5 ~-30 {Tags:["inquognito","inquognito.gate","inquognito.gate.energy"],Rotation:[0f,0f]}
-summon minecraft:marker ~35 ~50.5 ~-30 {Tags:["inquognito","inquognito.gate","inquognito.gate.energy"],Rotation:[0f,0f]}
+summon minecraft:marker ~33 ~50.5 ~-30 {Tags:["inquognito","inquognito.gate","inquognito.gate.energy"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~34 ~50.5 ~-30 {Tags:["inquognito","inquognito.gate","inquognito.gate.energy"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~35 ~50.5 ~-30 {Tags:["inquognito","inquognito.gate","inquognito.gate.energy"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~-10 ~58.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.frostbite"],Rotation:[0f,0f]}
-summon minecraft:marker ~-9 ~58.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.frostbite"],Rotation:[0f,0f]}
-summon minecraft:marker ~-8 ~58.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.frostbite"],Rotation:[0f,0f]}
+summon minecraft:marker ~-10 ~58.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.frostbite"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-9 ~58.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.frostbite"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-8 ~58.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.frostbite"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~-36 ~49.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.office"],Rotation:[0f,0f]}
-summon minecraft:marker ~-35 ~49.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.office"],Rotation:[0f,0f]}
-summon minecraft:marker ~-34 ~49.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.office"],Rotation:[0f,0f]}
+summon minecraft:marker ~-36 ~49.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.office"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-35 ~49.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.office"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-34 ~49.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.office"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~-5 ~3.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.1"],Rotation:[0f,0f]}
-summon minecraft:marker ~-5 ~4.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.1"],Rotation:[0f,0f]}
-summon minecraft:marker ~-5 ~5.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.1"],Rotation:[0f,0f]}
+summon minecraft:marker ~-5 ~3.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.1"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-5 ~4.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.1"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-5 ~5.5 ~3 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.1"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~-5 ~3.5 ~-6 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.2"],Rotation:[0f,0f]}
-summon minecraft:marker ~-5 ~4.5 ~-6 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.2"],Rotation:[0f,0f]}
-summon minecraft:marker ~-5 ~5.5 ~-6 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.2"],Rotation:[0f,0f]}
+summon minecraft:marker ~-5 ~3.5 ~-6 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.2"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-5 ~4.5 ~-6 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.2"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-5 ~5.5 ~-6 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.2"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~-5 ~3.5 ~-17 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.3"],Rotation:[0f,0f]}
-summon minecraft:marker ~-5 ~4.5 ~-17 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.3"],Rotation:[0f,0f]}
-summon minecraft:marker ~-5 ~5.5 ~-17 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.3"],Rotation:[0f,0f]}
+summon minecraft:marker ~-5 ~3.5 ~-17 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.3"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-5 ~4.5 ~-17 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.3"],Rotation:[0.0f,0.0f]}
+summon minecraft:marker ~-5 ~5.5 ~-17 {Tags:["inquognito","inquognito.gate","inquognito.gate.final_stretch.3"],Rotation:[0.0f,0.0f]}
 
-summon minecraft:marker ~-22 ~-3.5 ~-34 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90f,0f]}
-summon minecraft:marker ~-22 ~-3.5 ~-33 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90f,0f]}
-summon minecraft:marker ~-22 ~-3.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90f,0f]}
+summon minecraft:marker ~-22 ~-3.5 ~-34 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90.0f,0.0f]}
+summon minecraft:marker ~-22 ~-3.5 ~-33 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90.0f,0.0f]}
+summon minecraft:marker ~-22 ~-3.5 ~-32 {Tags:["inquognito","inquognito.gate","inquognito.gate.nova"],Rotation:[90.0f,0.0f]}
 
 # Targets
 summon minecraft:marker ~21.25 ~62.5 ~-34 {Tags:["inquognito","inquognito.target","inquognito.target.small","inquognito.target.energy"]}
@@ -202,49 +202,49 @@ summon minecraft:marker ~-37 ~50.5 ~12.75 {Tags:["inquognito","inquognito.target
 summon minecraft:marker ~-38 ~49.5 ~12.75 {Tags:["inquognito","inquognito.target","inquognito.target.small","inquognito.target.office.3"]}
 
 # Misc
-summon minecraft:item_display ~-26.5 ~58.5 ~-12 {Tags:["inquognito","inquognito.movingBarrier"],item:{id:"minecraft:red_stained_glass_pane",Count:1b},Rotation:[180f,0f],transformation:[2f,0f,0f,0f,0f,4f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-26.5 ~58.5 ~-12 {Tags:["inquognito","inquognito.movingBarrier"],item:{id:"minecraft:red_stained_glass_pane",Count:1b},Rotation:[180.0f,0.0f],transformation:[2.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,1.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
-summon minecraft:item_display ~3 ~57 ~-24 {Tags:["inquognito","inquognito.bouncePad"],item:{id:"minecraft:honey_block",Count:1b},transformation:[5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,5f,0f,0f,0f,0f,1f]}
-summon minecraft:text_display ~6.25 ~62.01 ~-24 {Tags:["inquognito","inquognito.bouncePadLabel"],text:'[{"text":"-=- Experiment No. Z-58 -=-\\n","color":"white","bold":true},{"text":"Exhbits strong repulsive properties","color":"gold","bold":false}]',Rotation:[-90f,-90f],background:0}
+summon minecraft:item_display ~3 ~57 ~-24 {Tags:["inquognito","inquognito.bouncePad"],item:{id:"minecraft:honey_block",Count:1b},transformation:[5.0f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,5.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:text_display ~6.25 ~62.01 ~-24 {Tags:["inquognito","inquognito.bouncePadLabel"],text:'[{"text":"-=- Experiment No. Z-58 -=-\\n","color":"white","bold":true,"type":"text"},{"text":"Exhbits strong repulsive properties","color":"gold","bold":false,"type":"text"}]',Rotation:[-90.0f,-90.0f],background:0}
 
-summon minecraft:item_display ~-7.5 ~-35 ~-20.9 {Tags:["inquognito","inquognito.captiveScientist"],item:{id:"minecraft:sugar",tag:{CustomModelData:201831},Count:1b},Rotation:[-90f,0f],transformation:[2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-7.5 ~-35 ~-20.9 {Tags:["inquognito","inquognito.captiveScientist"],item:{id:"minecraft:sugar",tag:{CustomModelData:201831},Count:1b},Rotation:[-90.0f,0.0f],transformation:[2.0f,0.0f,0.0f,0.0f,0.0f,2.0f,0.0f,0.0f,0.0f,0.0f,2.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
-summon minecraft:warden ~19 ~4 ~27 {Tags:["inquognito","inquognito.warden"],Rotation:[-180f,0f],Invulnerable:1b,NoAI:1b,Silent:1b}
+summon minecraft:warden ~19 ~4 ~27 {Tags:["inquognito","inquognito.warden"],Rotation:[-180.0f,0.0f],Invulnerable:1b,NoAI:1b,Silent:1b}
 
 #summon minecraft:iron_golem ~-16 ~88 ~-11 {Tags:["inquognito","inquognito.iron_golem"],Rotation:[0f,0f],Invulnerable:1b,NoAI:1b,Silent:1b}
 #summon minecraft:wither ~-16 ~88 ~-5 {Tags:["inquognito","inquognito.wither"],Rotation:[0f,0f],Invulnerable:1b,NoAI:1b,Silent:1b}
 
-summon minecraft:item_display ~-38 ~49.5 ~5 {Tags:["inquognito","inquognito.sculkShrieker"],item:{id:"minecraft:sculk_shrieker",Count:1b},Rotation:[-45f,15f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-38 ~49.5 ~5 {Tags:["inquognito","inquognito.sculkShrieker"],item:{id:"minecraft:sculk_shrieker",Count:1b},Rotation:[-45.0f,15.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
-summon minecraft:armor_stand ~18.3 ~52.5 ~-18.7 {Tags:["inquognito","inquognito.camera"],Rotation:[135f,0f]}
-summon minecraft:armor_stand ~24.7 ~51.5 ~-20.7 {Tags:["inquognito","inquognito.camera"],Rotation:[-135f,0f]}
-summon minecraft:armor_stand ~9 ~4.5 ~16.7 {Tags:["inquognito","inquognito.camera"],Rotation:[0f,0f]}
-summon minecraft:armor_stand ~31 ~12.5 ~16.7 {Tags:["inquognito","inquognito.camera"],Rotation:[0f,0f]}
-summon minecraft:armor_stand ~31 ~12.5 ~13.3 {Tags:["inquognito","inquognito.camera"],Rotation:[180f,0f]}
-summon minecraft:armor_stand ~14.7 ~4.5 ~-2 {Tags:["inquognito","inquognito.camera"],Rotation:[-90f,0f]}
-summon minecraft:armor_stand ~-30.3 ~4.5 ~-2 {Tags:["inquognito","inquognito.camera"],Rotation:[-90f,0f]}
-summon minecraft:armor_stand ~-30 ~4.5 ~-10.7 {Tags:["inquognito","inquognito.camera"],Rotation:[-180f,0f]}
-summon minecraft:armor_stand ~-38.3 ~5.5 ~-38.3 {Tags:["inquognito","inquognito.camera"],Rotation:[-45f,0f]}
-summon minecraft:armor_stand ~-13.7 ~5.5 ~-29.3 {Tags:["inquognito","inquognito.camera"],Rotation:[45f,0f]}
-summon minecraft:armor_stand ~-27.3 ~-1.5 ~-35.3 {Tags:["inquognito","inquognito.camera"],Rotation:[-45f,0f]}
-summon minecraft:armor_stand ~16.7 ~24.5 ~-12.3 {Tags:["inquognito","inquognito.camera"],Rotation:[-45f,0f]}
-summon minecraft:armor_stand ~-3.0 ~59.5 ~12.7 {Tags:["inquognito","inquognito.camera"],Rotation:[-45f,0f]}
+summon minecraft:armor_stand ~18.3 ~52.5 ~-18.7 {Tags:["inquognito","inquognito.camera"],Rotation:[135.0f,0.0f]}
+summon minecraft:armor_stand ~24.7 ~51.5 ~-20.7 {Tags:["inquognito","inquognito.camera"],Rotation:[-135.0f,0.0f]}
+summon minecraft:armor_stand ~9 ~4.5 ~16.7 {Tags:["inquognito","inquognito.camera"],Rotation:[0.0f,0.0f]}
+summon minecraft:armor_stand ~31 ~12.5 ~16.7 {Tags:["inquognito","inquognito.camera"],Rotation:[0.0f,0.0f]}
+summon minecraft:armor_stand ~31 ~12.5 ~13.3 {Tags:["inquognito","inquognito.camera"],Rotation:[180.0f,0.0f]}
+summon minecraft:armor_stand ~14.7 ~4.5 ~-2 {Tags:["inquognito","inquognito.camera"],Rotation:[-90.0f,0.0f]}
+summon minecraft:armor_stand ~-30.3 ~4.5 ~-2 {Tags:["inquognito","inquognito.camera"],Rotation:[-90.0f,0.0f]}
+summon minecraft:armor_stand ~-30 ~4.5 ~-10.7 {Tags:["inquognito","inquognito.camera"],Rotation:[-180.0f,0.0f]}
+summon minecraft:armor_stand ~-38.3 ~5.5 ~-38.3 {Tags:["inquognito","inquognito.camera"],Rotation:[-45.0f,0.0f]}
+summon minecraft:armor_stand ~-13.7 ~5.5 ~-29.3 {Tags:["inquognito","inquognito.camera"],Rotation:[45.0f,0.0f]}
+summon minecraft:armor_stand ~-27.3 ~-1.5 ~-35.3 {Tags:["inquognito","inquognito.camera"],Rotation:[-45.0f,0.0f]}
+summon minecraft:armor_stand ~16.7 ~24.5 ~-12.3 {Tags:["inquognito","inquognito.camera"],Rotation:[-45.0f,0.0f]}
+summon minecraft:armor_stand ~-3.0 ~59.5 ~12.7 {Tags:["inquognito","inquognito.camera"],Rotation:[-45.0f,0.0f]}
 
 execute as @e[type=minecraft:armor_stand,tag=inquognito.camera] run function inquognito:logic/plot/cameras/init
 
-summon minecraft:item_display ~22 ~-3 ~-21 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~26 ~-3 ~-28 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~12 ~1 ~-18 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~20 ~6 ~-28 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,1f]}
-summon minecraft:item_display ~25 ~6 ~-32 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,4f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~22 ~-3 ~-21 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~26 ~-3 ~-28 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~12 ~1 ~-18 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~20 ~6 ~-28 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:item_display ~25 ~6 ~-32 {Tags:["inquognito","inquognito.propeller"],item:{id:"minecraft:iron_sword",tag:{CustomModelData:201831},Count:1b},transformation:[4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,4.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
-summon minecraft:text_display ~-32 ~0.1 ~-28.75 {Tags:["inquognito"],text:'[{"text":"-=- Propulsion Suit -=-\\nTesting Chamber","color":"white","bold":true}]',Rotation:[0f,-90f],background:0}
+summon minecraft:text_display ~-32 ~0.1 ~-28.75 {Tags:["inquognito"],text:'[{"text":"-=- Propulsion Suit -=-\\nTesting Chamber","color":"white","bold":true,"type":"text"}]',Rotation:[0.0f,-90.0f],background:0}
 
-summon minecraft:text_display ~-3 ~59 ~15.49 {Tags:["inquognito"],text:'[{"text":"1 - Main ★\\n"},{"text":"B1 - Laboratory"}]',Rotation:[-180f,0f]}
-summon minecraft:text_display ~-5 ~4 ~14.49 {Tags:["inquognito"],text:'[{"text":"1 - Main\\n"},{"text":"B1 - Laboratory ★"}]',Rotation:[-180f,0f]}
+summon minecraft:text_display ~-3 ~59 ~15.49 {Tags:["inquognito"],text:'[{"text":"1 - Main ★\\n","type":"text"},{"text":"B1 - Laboratory","type":"text"}]',Rotation:[-180.0f,0.0f]}
+summon minecraft:text_display ~-5 ~4 ~14.49 {Tags:["inquognito"],text:'[{"text":"1 - Main\\n","type":"text"},{"text":"B1 - Laboratory ★","type":"text"}]',Rotation:[-180.0f,0.0f]}
 
-summon minecraft:text_display ~-7 ~58.25 ~-31.49 {Tags:["inquognito"],text:'[{"text":"SUB-ZERO\\n"},{"text":"CONTAINMENT\\n\\n"},{"text":"Temp: ","color":"white"},{"text":"-40°C","color":"aqua","bold":true}]',Rotation:[0f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
-summon minecraft:text_display ~-11 ~58.25 ~-32.51 {Tags:["inquognito"],text:'[{"text":"SUB-ZERO\\n"},{"text":"CONTAINMENT\\n\\n"},{"text":"Temp: ","color":"white"},{"text":"-40°C","color":"aqua","bold":true}]',Rotation:[180f,0f],transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:text_display ~-7 ~58.25 ~-31.49 {Tags:["inquognito"],text:'[{"text":"SUB-ZERO\\n","type":"text"},{"text":"CONTAINMENT\\n\\n","type":"text"},{"text":"Temp: ","color":"white","type":"text"},{"text":"-40°C","color":"aqua","bold":true,"type":"text"}]',Rotation:[0.0f,0.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
+summon minecraft:text_display ~-11 ~58.25 ~-32.51 {Tags:["inquognito"],text:'[{"text":"SUB-ZERO\\n","type":"text"},{"text":"CONTAINMENT\\n\\n","type":"text"},{"text":"Temp: ","color":"white","type":"text"},{"text":"-40°C","color":"aqua","bold":true,"type":"text"}]',Rotation:[180.0f,0.0f],transformation:[0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,0.5f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
 # Enemies
 ## Red Sector
@@ -350,9 +350,11 @@ summon minecraft:marker ~-25 ~88 ~-13 {Tags:["inquognito","inquognito.enemy_spaw
 execute at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.45,limit=1] summon minecraft:warden run function inquognito:logic/enemies/45
 
 # Keypad
-summon minecraft:item_frame ~-25 ~-4 ~-35 {Tags:["inquognito","inquognito.keypad.setup"],Facing:3b,Invisible:1b}
+summon minecraft:item_frame ~-25 ~-4 ~-35 {Tags:["inquognito","inquognito.keypad.setup"],Facing:3,Invisible:1b}
 execute as @e[type=minecraft:item_frame,tag=inquognito.keypad.setup,limit=1] at @s run function inquognito:logic/plot/keypad/init/frame
 
 function inquognito:logic/plot/keypad/setup
 
 function inquognito:logic/plot/keypad/answer
+
+return 1

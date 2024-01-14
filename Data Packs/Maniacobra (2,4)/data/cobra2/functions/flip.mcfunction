@@ -26,3 +26,5 @@ scoreboard players reset @s cobra2.ground
 execute at @s if block ~ ~ ~ minecraft:chiseled_quartz_block run tp @s ~ ~1 ~
 
 execute at @s run playsound minecraft:item.trident.return master @s ~ ~ ~ 1 1.8
+
+return 1

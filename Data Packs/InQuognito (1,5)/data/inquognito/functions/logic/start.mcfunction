@@ -14,7 +14,9 @@ scoreboard players set @s inquognito.floor 0
 scoreboard players set @s inquognito.upgrades 0
 scoreboard players set @s inquognito.gun.augments 0
 
-tellraw @s [{"text":"WARNING: Compound has been breached. Emergency lockdown activated.","color":"red"}]
-tellraw @s [{"text":"Incoming Transmission (Mission Briefing) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 1"}}]
+tellraw @s [{"text":"WARNING: Compound has been breached. Emergency lockdown activated.","color":"red","type":"text"}]
+tellraw @s [{"text":"Incoming Transmission (Mission Briefing) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 1"},"type":"text"}]
 
 execute positioned ~2 ~ ~ run function pr:player/checkpoint/mark_pos
+
+return 1

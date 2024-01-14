@@ -3,3 +3,4 @@
 summon minecraft:creeper ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0s,PersistenceRequired:1b}
 summon minecraft:creeper ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0s,PersistenceRequired:1b}
 summon minecraft:creeper ~ ~1.5 ~ {Silent:1b,Invulnerable:1b,ExplosionRadius:1b,Fuse:0s,PersistenceRequired:1b}
+return 1

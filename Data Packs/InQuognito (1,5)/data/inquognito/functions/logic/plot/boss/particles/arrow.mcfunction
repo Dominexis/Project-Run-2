@@ -27,3 +27,5 @@ execute positioned ~-1.2 ~1.2 ~ run particle minecraft:sculk_soul ~ ~ ~ 0.0 0.0 
 execute positioned ~1.2 ~1.2 ~ run particle minecraft:sculk_soul ~ ~ ~ 0.0 0.0 0.0 0.0 1 force @s
 
 execute positioned ~ ~-3.0 ~ run particle minecraft:reverse_portal ~ ~ ~ 0.0 0.0 0.0 0.05 10 force @s
+
+return 1

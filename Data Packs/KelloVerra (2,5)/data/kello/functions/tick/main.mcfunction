@@ -27,7 +27,7 @@ scoreboard players add #global kello.ticks 1
 
 scoreboard players set #skip_current_boolean kello.value 0
 
-scoreboard players set #entity_tick_boolean kello.value 0   
+scoreboard players set #entity_tick_boolean kello.value 0
 scoreboard players set #entity_tick_overflow_boolean kello.value 0
 scoreboard players set #entity_tick_complete_boolean kello.value 1
 
@@ -55,7 +55,7 @@ scoreboard players operation #prev_tick_time kello.value = #time pr.value
 
 # Init new players
 
-execute positioned ~-2.25 ~1 ~-46.25 as @a[tag=pr.target,dx=2.5,dy=5,dz=2.5] unless score @s kello.player.id = @s kello.player.id run function kello:player/setup/main
+execute positioned ~-2.25 ~1 ~-46.25 as @a[dx=2.5,dy=5,dz=2.5,tag=pr.target] unless score @s kello.player.id = @s kello.player.id run function kello:player/setup/main
 
 # Loop player
 
@@ -81,3 +81,4 @@ scoreboard players operation #prev_tick_time kello.value = #time pr.value
 # Decal generation
 
 execute if score #generator.generate kello.value matches 1 run function kello:debug/decal/gen/verify
+return 1

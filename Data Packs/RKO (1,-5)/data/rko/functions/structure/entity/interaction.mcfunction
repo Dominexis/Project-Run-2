@@ -25,3 +25,4 @@ summon minecraft:interaction ~-13 ~23 ~-5 {Tags:["rko_inter"],width:1.5,height:1
 summon minecraft:interaction ~-18 ~36.95 ~18 {Tags:["rko_inter"],width:5.1,height:2.1}
 
 summon minecraft:interaction ~-22.5 ~46.95 ~16.5 {Tags:["rko_inter"],width:4.1,height:1.1}
+return 1

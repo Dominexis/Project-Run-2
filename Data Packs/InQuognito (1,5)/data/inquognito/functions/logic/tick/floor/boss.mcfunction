@@ -2,7 +2,7 @@ function inquognito:logic/plot/boss/particles/ambient
 
 function inquognito:logic/plot/boss/heartbeat
 
-execute positioned ~-5 ~-31 ~31 if entity @s[nbt={Inventory:[{tag:{inquognito.sonic_charge:1}}]},dx=0] run function inquognito:logic/plot/boss/damage
+execute positioned ~-5 ~-31 ~31 if entity @s[dx=0,nbt={Inventory:[{tag:{inquognito.sonic_charge:1}}]}] run function inquognito:logic/plot/boss/damage
 
 scoreboard players add sculk_particles inquognito.temp 1
 scoreboard players operation sculk_particles inquognito.temp %= #15 pr.value
@@ -21,3 +21,5 @@ execute if score @s inquognito.dialogue matches 5 run function inquognito:logic/
 execute if score @s inquognito.dialogue matches 1..4 if score @s inquognito.dialogue.tick matches 1..20 run particle minecraft:shriek 0 ~-5 ~-31 ~31 0.0 0.0 0.0 0.0 1 normal @s
 
 execute if score @s inquognito.boss.health matches 99 run function inquognito:logic/plot/boss/tractor_beam
+
+return 1

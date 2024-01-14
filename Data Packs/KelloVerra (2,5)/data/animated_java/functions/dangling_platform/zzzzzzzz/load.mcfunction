@@ -19,3 +19,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.dangling_platform.export_version aj.i 738436258
 scoreboard players reset * aj.dangling_platform.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.dangling_platform.root] run function animated_java:dangling_platform/zzzzzzzz/on_load
+return 1

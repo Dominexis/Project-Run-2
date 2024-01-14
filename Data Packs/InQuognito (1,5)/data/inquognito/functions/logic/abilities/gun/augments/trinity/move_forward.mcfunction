@@ -6,3 +6,5 @@ teleport @s ^ ^ ^0.25
 
 scoreboard players add @s inquognito.temp 10
 kill @s[scores={inquognito.temp=900..}]
+
+return 1

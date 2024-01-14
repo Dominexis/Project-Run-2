@@ -5,3 +5,4 @@ execute on passengers run data modify entity @s interpolation_duration set value
 function animated_java:decwheel/zzzzzzzz/animations/clockwise_large_inv/tree/leaf_0
 execute on passengers run data modify entity @s interpolation_duration set value 1
 tag @s add aj.decwheel.animation.clockwise_large_inv
+return 1

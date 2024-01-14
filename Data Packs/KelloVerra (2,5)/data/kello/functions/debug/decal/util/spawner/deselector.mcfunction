@@ -1,1 +1,2 @@
-give @s blaze_spawn_egg{display:{Name:'{"text":"Decal Deselector","color":"#F56127","bold":true}'},Enchantments:[{}],EntityTag:{Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:1b,CanPickUpLoot:0b,Tags:["kello.entity.util","kello.entity.decal_deselector"],HandItems:[{id:"minecraft:air",Count:1b},{}]}} 1
+give @s minecraft:blaze_spawn_egg{display:{Name:'{"text":"Decal Deselector","color":"#F56127","bold":true,"type":"text"}'},Enchantments:[{}],EntityTag:{Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:1b,CanPickUpLoot:0b,Tags:["kello.entity.util","kello.entity.decal_deselector"],HandItems:[{id:"minecraft:air",Count:1b},{}]}} 1
+return 1

@@ -10,3 +10,4 @@ function kello:tick/level/assign
 # Tag
 
 tag @s add kello.player.has_triggered.lvl_4_pre
+return 1

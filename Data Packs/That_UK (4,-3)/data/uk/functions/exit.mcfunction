@@ -4,3 +4,4 @@
 tag @s remove uk_targetHit
 tag @s remove uk_toTp1
 tag @s remove uk_toTp2
+return 1

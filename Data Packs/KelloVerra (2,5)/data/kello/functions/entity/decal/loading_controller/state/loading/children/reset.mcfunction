@@ -20,3 +20,4 @@ tag @s add kello.decal.controller.loading
 
 # tag @s[tag=kello.attach] add kello.empty
 # tag @s[tag=kello.attach] remove kello.attach
+return 1

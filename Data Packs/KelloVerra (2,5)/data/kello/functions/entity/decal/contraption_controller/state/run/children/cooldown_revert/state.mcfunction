@@ -2,3 +2,4 @@ execute if score #state_cog_l kello.value matches 1 run scoreboard players set @
 execute if score #state_cog_r kello.value matches 1 run scoreboard players set @s kello.player.cog.r 2
 scoreboard players set #state_cog_l kello.value 0
 scoreboard players set #state_cog_r kello.value 0
+return 1

@@ -5,3 +5,5 @@ attribute @s minecraft:generic.movement_speed base set 0.25
 attribute @s minecraft:generic.armor base set 9999.0
 
 function inquognito:logic/enemies/common/modifiers/living
+
+return 1

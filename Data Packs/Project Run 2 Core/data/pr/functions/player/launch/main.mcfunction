@@ -1,6 +1,6 @@
 # Spawn marker entity
 
-execute anchored eyes run summon marker ^ ^ ^ {Tags:["pr.entity","pr.player.launch"]}
+execute anchored eyes run summon minecraft:marker ^ ^ ^ {Tags:["pr.entity","pr.player.launch"]}
 
 
 
@@ -15,8 +15,8 @@ execute anchored eyes run summon marker ^ ^ ^ {Tags:["pr.entity","pr.player.laun
 #execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..1.28] run scoreboard players set #creeper_power pr.value 1635
 #execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..0.41] run scoreboard players set #creeper_power pr.value 1200
 scoreboard players set #creeper_power pr.value 730
-execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..1.28] run scoreboard players set #creeper_power pr.value 786
-execute at @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] if entity @s[distance=..0.41] run scoreboard players set #creeper_power pr.value 931
+execute at @e[type=minecraft:marker,distance=..4,tag=pr.player.launch,limit=1] if entity @s[distance=..1.28] run scoreboard players set #creeper_power pr.value 786
+execute at @e[type=minecraft:marker,distance=..4,tag=pr.player.launch,limit=1] if entity @s[distance=..0.41] run scoreboard players set #creeper_power pr.value 931
 
 scoreboard players operation #math_00 pr.value = #creeper_power pr.value
 scoreboard players operation #math_00 pr.value *= #2 pr.value
@@ -117,13 +117,13 @@ execute store result storage pr:data tag.Owner[1] int 1 run scoreboard players g
 execute store result storage pr:data tag.Owner[2] int 1 run scoreboard players get @s pr.uuid_2
 execute store result storage pr:data tag.Owner[3] int 1 run scoreboard players get @s pr.uuid_3
 
-summon area_effect_cloud ~ ~ ~ {Tags:["pr.launch"],WaitTime:0,Duration:1,Age:-1,Radius:0.0f,ReapplicationDelay:-1,Effects:[{Id:7,Amplifier:0b,Duration:1}]}
-execute as @e[type=area_effect_cloud,tag=pr.launch,distance=..1,limit=1] run function pr:player/launch/owner/pre
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["pr.launch"],WaitTime:0,Duration:1,Age:-1,Radius:0.0f,ReapplicationDelay:-1,effects:[{id:"minecraft:instant_damage",amplifier:0b,duration:1}]}
+execute as @e[type=minecraft:area_effect_cloud,distance=..1,tag=pr.launch,limit=1] run function pr:player/launch/owner/pre
 
 
 
 scoreboard players operation #local pr.id = @s pr.id
-execute as @e[type=marker,tag=pr.player.launch,distance=..4,limit=1] run function pr:player/launch/spawn/main
+execute as @e[type=minecraft:marker,distance=..4,tag=pr.player.launch,limit=1] run function pr:player/launch/spawn/main
 
 
 
@@ -133,5 +133,6 @@ execute store result storage pr:data tag.Owner[1] int 1 run scoreboard players g
 execute store result storage pr:data tag.Owner[2] int 1 run scoreboard players get @s pr.uuid_2
 execute store result storage pr:data tag.Owner[3] int 1 run scoreboard players get @s pr.uuid_3
 
-summon area_effect_cloud ~ ~ ~ {Tags:["pr.launch"],WaitTime:0,Duration:1,Age:-1,Radius:0.0f,ReapplicationDelay:-1,Effects:[{Id:7,Amplifier:0b,Duration:1}]}
-execute as @e[type=area_effect_cloud,tag=pr.launch,distance=..1,limit=1] run function pr:player/launch/owner/post
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["pr.launch"],WaitTime:0,Duration:1,Age:-1,Radius:0.0f,ReapplicationDelay:-1,effects:[{id:"minecraft:instant_damage",amplifier:0b,duration:1}]}
+execute as @e[type=minecraft:area_effect_cloud,distance=..1,tag=pr.launch,limit=1] run function pr:player/launch/owner/post
+return 1

@@ -3,3 +3,4 @@
 scoreboard players set @s itspungpond98.info 0
 scoreboard players set @s itspungpond98.villager 0
 scoreboard players set @s itspungpond98.item_cooldown 0
+return 1

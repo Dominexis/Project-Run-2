@@ -184,11 +184,12 @@ summon minecraft:marker ~16.0 ~31 ~-7.0 {Tags:["bumper"]}
 # execute positioned ~-0.5 ~ ~-0.5 run summon minecraft:block_display ~16.0 ~31 ~-7.0 {Tags:["conduit"],block_state:{Name:"minecraft:conduit",Properties:{waterlogged:"false"}}}
 summon minecraft:marker ~-2.0 ~15 ~-3.0 {Tags:["bumper"]}
 # execute positioned ~-0.5 ~ ~-0.5 run summon minecraft:block_display ~-2.0 ~15 ~-3.0 {Tags:["conduit"],block_state:{Name:"minecraft:conduit",Properties:{waterlogged:"false"}}}
-summon minecraft:marker ~27.0 ~19 ~23.0 {Rotation:[90F,0F],Tags:["check","1"]}
-summon minecraft:marker ~32.0 ~32 ~-1.0 {Rotation:[-180F,0F],Tags:["check","2"]}
-summon minecraft:marker ~12.0 ~15 ~-30.0 {Rotation:[90F,0F],Tags:["check","3"]}
-summon minecraft:marker ~9.0 ~52 ~-24.0 {Rotation:[90F,0F],Tags:["check","4"]}
-summon minecraft:marker ~5.0 ~36 ~-7.0 {Rotation:[-180F,0F],Tags:["check","5"]}
-summon minecraft:marker ~-27.0 ~43 ~-23.0 {Rotation:[-180F,0F],Tags:["check","6"]}
-summon minecraft:marker ~-18.0 ~52 ~16.0 {Rotation:[-180F,0F],Tags:["check","7"]}
-summon minecraft:marker ~-25.0 ~26 ~7.0 {Rotation:[0F,0F],Tags:["check","8"]}
+summon minecraft:marker ~27.0 ~19 ~23.0 {Rotation:[90.0f,0.0f],Tags:["check","1"]}
+summon minecraft:marker ~32.0 ~32 ~-1.0 {Rotation:[-180.0f,0.0f],Tags:["check","2"]}
+summon minecraft:marker ~12.0 ~15 ~-30.0 {Rotation:[90.0f,0.0f],Tags:["check","3"]}
+summon minecraft:marker ~9.0 ~52 ~-24.0 {Rotation:[90.0f,0.0f],Tags:["check","4"]}
+summon minecraft:marker ~5.0 ~36 ~-7.0 {Rotation:[-180.0f,0.0f],Tags:["check","5"]}
+summon minecraft:marker ~-27.0 ~43 ~-23.0 {Rotation:[-180.0f,0.0f],Tags:["check","6"]}
+summon minecraft:marker ~-18.0 ~52 ~16.0 {Rotation:[-180.0f,0.0f],Tags:["check","7"]}
+summon minecraft:marker ~-25.0 ~26 ~7.0 {Rotation:[0.0f,0.0f],Tags:["check","8"]}
+return 1

@@ -7,3 +7,5 @@ item modify entity @s armor.head inquognito:corrupted_growth
 item modify entity @s armor.chest inquognito:corrupted_growth_armor
 item modify entity @s armor.legs inquognito:corrupted_growth_armor
 item modify entity @s armor.feet inquognito:corrupted_growth_armor
+
+return 1

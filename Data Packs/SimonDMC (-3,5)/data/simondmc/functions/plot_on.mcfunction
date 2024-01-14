@@ -4,35 +4,35 @@
 
 # Summon pickup-able items and their names
 # Display bucket (Level 1)
-summon item ~4 ~30 ~-20 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-bucket"],Item:{id:"minecraft:bucket",Count:1b},Invulnerable:1b}
-summon text_display ~4 ~30.65 ~-20 {billboard:"center",default_background:1b,text:'{"text":"Bucket"}',Tags:["sdmc.display-name"]}
+summon minecraft:item ~4 ~30 ~-20 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-bucket"],Item:{id:"minecraft:bucket",Count:1b},Invulnerable:1b}
+summon minecraft:text_display ~4 ~30.65 ~-20 {billboard:"center",default_background:1b,text:'{"text":"Bucket","type":"text"}',Tags:["sdmc.display-name"]}
 # Display crossbow (Level 2)
-summon item ~7 ~31 ~7 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-crossbow"],Item:{id:"minecraft:crossbow",Count:1b,tag:{Enchantments:[{}],ChargedProjectiles:[{},{id:"minecraft:arrow",Count:1b},{}],Charged:1b}},Invulnerable:1b}
-summon text_display ~7 ~31.65 ~7 {billboard:"center",default_background:1b,text:'{"text":"Crossbow"}',Tags:["sdmc.display-name"]}
+summon minecraft:item ~7 ~31 ~7 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-crossbow"],Item:{id:"minecraft:crossbow",tag:{Enchantments:[{}],ChargedProjectiles:[{},{id:"minecraft:arrow",Count:1b},{}],Charged:1b},Count:1b},Invulnerable:1b}
+summon minecraft:text_display ~7 ~31.65 ~7 {billboard:"center",default_background:1b,text:'{"text":"Crossbow","type":"text"}',Tags:["sdmc.display-name"]}
 # Display bone meal (Level 3)
-summon item ~27 ~27 ~20 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-bone-meal"],Item:{id:"minecraft:bone_meal",Count:1b},Invulnerable:1b}
-summon text_display ~27 ~27.65 ~20 {billboard:"center",default_background:1b,text:'{"text":"Bone Meal"}',Tags:["sdmc.display-name"]}
+summon minecraft:item ~27 ~27 ~20 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-bone-meal"],Item:{id:"minecraft:bone_meal",Count:1b},Invulnerable:1b}
+summon minecraft:text_display ~27 ~27.65 ~20 {billboard:"center",default_background:1b,text:'{"text":"Bone Meal","type":"text"}',Tags:["sdmc.display-name"]}
 # Display arrow (Level 5)
-summon item ~2 ~1 ~19 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-arrow"],Item:{id:"minecraft:arrow",Count:1b},Invulnerable:1b}
-summon text_display ~2 ~1.65 ~19 {billboard:"center",default_background:1b,text:'{"text":"Arrow"}',Tags:["sdmc.display-name"]}
+summon minecraft:item ~2 ~1 ~19 {PickupDelay:32767,Age:-32768,Tags:["sdmc.display-item","sdmc.display-arrow"],Item:{id:"minecraft:arrow",Count:1b},Invulnerable:1b}
+summon minecraft:text_display ~2 ~1.65 ~19 {billboard:"center",default_background:1b,text:'{"text":"Arrow","type":"text"}',Tags:["sdmc.display-name"]}
 
 # Summon click blocking entities
 # Chest minecart (Enterance)
-summon interaction ~-3 ~33 ~-33 {width:1.3f,height:1.3f,Tags:["sdmc.click-block"]}
+summon minecraft:interaction ~-3 ~33 ~-33 {width:1.3f,height:1.3f,Tags:["sdmc.click-block"]}
 # Glow berries (Level 4)
-summon interaction ~15 ~32 ~21 {width:1.0f,height:2.0f,Tags:["sdmc.click-block"]}
-summon interaction ~12 ~32 ~19 {width:1.0f,height:2.0f,Tags:["sdmc.click-block"]}
+summon minecraft:interaction ~15 ~32 ~21 {width:1.0f,height:2.0f,Tags:["sdmc.click-block"]}
+summon minecraft:interaction ~12 ~32 ~19 {width:1.0f,height:2.0f,Tags:["sdmc.click-block"]}
 
 # Summon level text displays
-summon text_display ~1 ~27 ~-11.5 {Rotation:[180F,0F],Tags:["sdmc.floor","sdmc.floor-1"],transformation:{left_rotation:[-0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},text:'{"text":"Level 1:\\nThe Drop","color":"#C4C4C4"}',background:16711680} 
-summon text_display ~9 ~31 ~.3 {Rotation:[90F,0F],Tags:["sdmc.floor","sdmc.floor-2"],transformation:{left_rotation:[-0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Level 2:\\nThe Chute","color":"#C4C4C4"}',background:16711680}
-summon text_display ~27 ~23 ~8.7 {Rotation:[180F,0F],Tags:["sdmc.floor","sdmc.floor-3"],transformation:{left_rotation:[-0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Level 3:\\nThe Grow","color":"#C4C4C4"}',background:16711680}
-summon text_display ~19.3 ~29.5 ~14 {Rotation:[270F,0F],Tags:["sdmc.floor","sdmc.floor-4"],transformation:{left_rotation:[-0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Level 4:\\nThe Gate","color":"#DBDBDB"}',background:16711680}
-summon text_display ~2.2 ~ ~14 {Rotation:[270F,0F],Tags:["sdmc.floor","sdmc.floor-5"],transformation:{left_rotation:[-0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Level 5:\\nThe Final Blow","color":"#FFFFFF"}',background:16711680}
-summon text_display ~25.5 ~29 ~-1 {Tags:["sdmc.floor","sdmc.floor-s"],transformation:{left_rotation:[-0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Secret:\\nThe Float!","color":"#7D0208"}',background:16711680}
+summon minecraft:text_display ~1 ~27 ~-11.5 {Rotation:[180.0f,0.0f],Tags:["sdmc.floor","sdmc.floor-1"],transformation:{left_rotation:[-0.707f,0.0f,0.0f,0.707f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[3.0f,3.0f,3.0f]},text:'{"text":"Level 1:\\nThe Drop","color":"#C4C4C4","type":"text"}',background:16711680}
+summon minecraft:text_display ~9 ~31 ~.3 {Rotation:[90.0f,0.0f],Tags:["sdmc.floor","sdmc.floor-2"],transformation:{left_rotation:[-0.707f,0.0f,0.0f,0.707f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Level 2:\\nThe Chute","color":"#C4C4C4","type":"text"}',background:16711680}
+summon minecraft:text_display ~27 ~23 ~8.7 {Rotation:[180.0f,0.0f],Tags:["sdmc.floor","sdmc.floor-3"],transformation:{left_rotation:[-0.707f,0.0f,0.0f,0.707f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Level 3:\\nThe Grow","color":"#C4C4C4","type":"text"}',background:16711680}
+summon minecraft:text_display ~19.3 ~29.5 ~14 {Rotation:[270.0f,0.0f],Tags:["sdmc.floor","sdmc.floor-4"],transformation:{left_rotation:[-0.707f,0.0f,0.0f,0.707f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Level 4:\\nThe Gate","color":"#DBDBDB","type":"text"}',background:16711680}
+summon minecraft:text_display ~2.2 ~ ~14 {Rotation:[270.0f,0.0f],Tags:["sdmc.floor","sdmc.floor-5"],transformation:{left_rotation:[-0.707f,0.0f,0.0f,0.707f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Level 5:\\nThe Final Blow","color":"#FFFFFF","type":"text"}',background:16711680}
+summon minecraft:text_display ~25.5 ~29 ~-1 {Tags:["sdmc.floor","sdmc.floor-s"],transformation:{left_rotation:[-0.707f,0.0f,0.0f,0.707f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[2.5f,2.5f,2.5f]},text:'{"text":"Secret:\\nThe Float!","color":"#7D0208","type":"text"}',background:16711680}
 
 # Summon finish text display
-summon text_display ~-15.49 ~6.1 ~13 {default_background:0b,Rotation:[-90F,0F],Tags:["sdmc.finish-title"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},text:'{"text":"ꜰɪɴɪѕʜ","color":"white"}',background:16711680}
+summon minecraft:text_display ~-15.49 ~6.1 ~13 {default_background:0b,Rotation:[-90.0f,0.0f],Tags:["sdmc.finish-title"],transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[3.0f,3.0f,3.0f]},text:'{"text":"ꜰɪɴɪѕʜ","color":"white","type":"text"}',background:16711680}
 
 # Create necessary scoreboards
 scoreboard objectives add sdmc.sys dummy
@@ -57,3 +57,4 @@ scoreboard objectives add sdmc.item.axolotl_bucket_2 dummy
 
 # Scoreboard constants
 scoreboard players set sdmc.const.1 sdmc.item-counter 1
+return 1

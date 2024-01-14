@@ -12,3 +12,5 @@ scoreboard objectives add ac.body dummy
 # scoreboard players reset * ac.stage
 # scoreboard players reset * ac.PosY
 # scoreboard players reset * ac.body
+
+return 1

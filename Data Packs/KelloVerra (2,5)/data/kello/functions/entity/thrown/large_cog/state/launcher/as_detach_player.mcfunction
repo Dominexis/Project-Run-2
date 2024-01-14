@@ -24,3 +24,4 @@ function kello:generic/sfx/cog_launch/large
 # Pickup
 
 function kello:entity/thrown/large_cog/state/pickup/start
+return 1

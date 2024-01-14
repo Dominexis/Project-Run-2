@@ -13,3 +13,4 @@ execute positioned ~26 ~-7 ~-32 as @a[dx=0,dy=1,dz=1,tag=pr.target] at @s run fu
 execute positioned ~29 ~-2 ~0 as @a[dx=0,dy=1,dz=0,tag=pr.target] at @s run function pr:player/checkpoint/mark
 execute positioned ~-18 ~-22 ~15 as @a[dx=0,dy=1,dz=1,tag=pr.target] at @s run function pr:player/checkpoint/mark
 execute positioned ~32 ~-3 ~16 as @a[distance=..6,tag=pr.target] at @s run function pr:player/checkpoint/mark
+return 1

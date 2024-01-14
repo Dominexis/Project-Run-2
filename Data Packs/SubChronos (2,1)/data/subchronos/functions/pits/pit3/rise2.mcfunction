@@ -3,3 +3,4 @@ execute at @e[type=minecraft:block_display,tag=subchronos_platform_pit3,tag=pr.t
 
 scoreboard players set pit3_rised subchronos_hive 1
 scoreboard players set pit3_moving subchronos_hive 0
+return 1

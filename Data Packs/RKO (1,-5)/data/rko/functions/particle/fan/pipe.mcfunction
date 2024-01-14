@@ -7,3 +7,4 @@ execute if score fan rko.particle matches 11 run particle minecraft:large_smoke 
 execute if score fan rko.particle matches 13 run particle minecraft:smoke ~4.32 ~4.04 ~ 0 0 -3 0.2 0 normal @a[tag=pr.target,sort=arbitrary]
 execute if score fan rko.particle matches 15 run particle minecraft:smoke ~5.92 ~6.28 ~ 0 0 -3 0.2 0 normal @a[tag=pr.target,sort=arbitrary]
 execute if score fan rko.particle matches 16 run particle minecraft:large_smoke ~1.91 ~6.54 ~ 0 0 -3 0.2 0 normal @a[tag=pr.target,sort=arbitrary]
+return 1

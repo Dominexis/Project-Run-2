@@ -75,8 +75,8 @@ execute if score #lobby pr.value matches 1 run scoreboard players set #y pr.valu
 execute if score #zone pr.value matches 1 run scoreboard players add #x pr.value 65536
 
 tag @s add pr.plot_warp
-summon marker ~ ~ ~ {Tags:["pr.plot_warp"]}
-execute as @e[type=marker,tag=pr.plot_warp] run function pr:player/plot/warp/position
+summon minecraft:marker ~ ~ ~ {Tags:["pr.plot_warp"]}
+execute as @e[type=minecraft:marker,tag=pr.plot_warp] run function pr:player/plot/warp/position
 tag @s remove pr.plot_warp
 
 
@@ -113,8 +113,8 @@ execute if entity @s[team=pr.spectator] run function pr:player/plot/coords_from_
 
 
 
-execute if score #lobby pr.value matches 0 run tellraw @s {"text":"You've been warped to the lobby","color":"gold"}
-execute if score #lobby pr.value matches 1 run tellraw @s {"text":"You've been warped to the plot","color":"gold"}
+execute if score #lobby pr.value matches 0 run tellraw @s {"text":"You've been warped to the lobby","color":"gold","type":"text"}
+execute if score #lobby pr.value matches 1 run tellraw @s {"text":"You've been warped to the plot","color":"gold","type":"text"}
 
 
 
@@ -125,3 +125,4 @@ execute if score #lobby pr.value matches 1 run tellraw @s {"text":"You've been w
 # Reset plot score
 
 scoreboard players set @s plot 0
+return 1

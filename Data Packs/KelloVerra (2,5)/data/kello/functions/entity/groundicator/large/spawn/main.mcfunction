@@ -1,6 +1,6 @@
 # Summon entity(ies)
 
-execute summon item_display run function kello:entity/groundicator/large/spawn/score
+execute summon minecraft:item_display run function kello:entity/groundicator/large/spawn/score
 
 
 
@@ -8,3 +8,4 @@ execute summon item_display run function kello:entity/groundicator/large/spawn/s
 
 scoreboard players set #disable_attach_sound kello.value 1
 execute as @p[tag=kello.entity.player.target,tag=pr.target] run function kello:generic/sfx/cog_attach/player/parkour/large
+return 1

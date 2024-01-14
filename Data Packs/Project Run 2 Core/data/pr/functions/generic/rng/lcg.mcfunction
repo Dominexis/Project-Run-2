@@ -26,3 +26,4 @@ scoreboard players operation #lcg pr.value += #lcg_bit_swap pr.value
 
 scoreboard players operation #output pr.value = #lcg pr.value
 execute if score #input pr.value matches 1.. run scoreboard players operation #output pr.value %= #input pr.value
+return 1

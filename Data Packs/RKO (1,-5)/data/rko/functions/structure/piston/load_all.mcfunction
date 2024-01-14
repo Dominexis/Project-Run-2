@@ -5,3 +5,4 @@ function rko:structure/piston/load_r1
 #function rko:structure/piston/load_r2
 function rko:structure/piston/load_l1
 #function rko:structure/piston/load_l2
+return 1

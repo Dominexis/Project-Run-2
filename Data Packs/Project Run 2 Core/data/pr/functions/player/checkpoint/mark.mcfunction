@@ -19,3 +19,4 @@ execute unless score @s pr.checkpoint_cooldown matches 1.. run tag @s add pr.tem
 
 execute unless score @s pr.checkpoint_cooldown matches 1.. at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
 execute unless score @s pr.checkpoint_cooldown matches 1.. run scoreboard players set @s pr.checkpoint_cooldown 20
+return 1

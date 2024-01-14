@@ -26,3 +26,4 @@ execute if entity @s[tag=kello.music_restart] run function kello:player/tick/mus
 # Play music
 
 playsound kello:music_outro record @s ~ ~ ~ 0.775 1 0.775
+return 1

@@ -19,10 +19,12 @@ execute as @a[tag=pr.target] at @s if score @s woutbelt_timer matches ..0 if blo
 execute as @a[tag=pr.target] at @s if score @s woutbelt_timer matches ..0 if block ~ ~-7 ~ minecraft:light_blue_concrete run function woutbelt:blue_enter
 execute as @a[tag=pr.target] at @s if block ~ ~9 ~ minecraft:lime_wool run tp @s ~ ~ ~24
 execute positioned ~ ~5 ~-23 run particle minecraft:ash ~ ~ ~ 2 1 0 0 5
-execute positioned ~ ~5 ~-23 as @a[tag=pr.target,distance=..12] run tag @s add woutbelt_blue
-execute positioned ~ ~5 ~-23 as @a[tag=pr.target,distance=..12] run tag @s remove woutbelt_red
+execute positioned ~ ~5 ~-23 as @a[distance=..12,tag=pr.target] run tag @s add woutbelt_blue
+execute positioned ~ ~5 ~-23 as @a[distance=..12,tag=pr.target] run tag @s remove woutbelt_red
 execute positioned ~ ~5 ~23 run particle minecraft:ash ~ ~ ~ 2 1 0 0 5
-execute positioned ~ ~5 ~23 as @a[tag=pr.target,distance=..12] run tag @s add woutbelt_red
-execute positioned ~ ~5 ~23 as @a[tag=pr.target,distance=..12] run tag @s remove woutbelt_blue
+execute positioned ~ ~5 ~23 as @a[distance=..12,tag=pr.target] run tag @s add woutbelt_red
+execute positioned ~ ~5 ~23 as @a[distance=..12,tag=pr.target] run tag @s remove woutbelt_blue
 bossbar set woutbelt:woutbelt_blue players @a[tag=woutbelt_blue,tag=pr.target]
 bossbar set woutbelt:woutbelt_red players @a[tag=woutbelt_red,tag=pr.target]
+
+return 1

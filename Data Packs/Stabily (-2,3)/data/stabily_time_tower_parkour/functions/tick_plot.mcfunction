@@ -23,27 +23,28 @@ execute positioned ~-13 ~131 ~-13 as @a[dx=40,dy=-1,dz=-15,tag=pr.target] at @s 
 
 #checkpoints
 #roman temple
-execute positioned ~20 ~6 ~-13 as @a[tag=pr.target,dx=2,dy=2,dz=2,scores={sw.checkpCount=0}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~18 ~13 ~14 as @a[tag=pr.target,dx=-4,dy=2,dz=3,scores={sw.checkpCount=..1}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-8 ~25 ~0 as @a[tag=pr.target,dx=3,dy=2,dz=0,scores={sw.checkpCount=..2}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-5 ~38 ~-10 as @a[tag=pr.target,dx=2,dy=2,dz=0,scores={sw.checkpCount=..3}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~20 ~6 ~-13 as @a[dx=2,dy=2,dz=2,tag=pr.target,scores={sw.checkpCount=0}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~18 ~13 ~14 as @a[dx=-4,dy=2,dz=3,tag=pr.target,scores={sw.checkpCount=..1}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-8 ~25 ~0 as @a[dx=3,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..2}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-5 ~38 ~-10 as @a[dx=2,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..3}] at @s run function stabily_time_tower_parkour:run_checkpoint
 #medival house
-execute positioned ~-4 ~49 ~7 as @a[tag=pr.target,dx=0,dy=2,dz=4,scores={sw.checkpCount=..4}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~4 ~57 ~13 as @a[tag=pr.target,dx=1,dy=2,dz=0,scores={sw.checkpCount=..5}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-11 ~66 ~-10 as @a[tag=pr.target,dx=0,dy=2,dz=1,scores={sw.checkpCount=..6}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-11 ~76 ~9 as @a[tag=pr.target,dx=0,dy=2,dz=0,scores={sw.checkpCount=..7}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-4 ~49 ~7 as @a[dx=0,dy=2,dz=4,tag=pr.target,scores={sw.checkpCount=..4}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~4 ~57 ~13 as @a[dx=1,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..5}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-11 ~66 ~-10 as @a[dx=0,dy=2,dz=1,tag=pr.target,scores={sw.checkpCount=..6}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-11 ~76 ~9 as @a[dx=0,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..7}] at @s run function stabily_time_tower_parkour:run_checkpoint
 #factory
-execute positioned ~8 ~90 ~-3 as @a[tag=pr.target,dx=1,dy=1,dz=1,scores={sw.checkpCount=..8}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-3 ~90 ~-28 as @a[tag=pr.target,dx=2,dy=2,dz=2,scores={sw.checkpCount=..9}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-9 ~91 ~-9 as @a[tag=pr.target,dx=3,dy=2,dz=0,scores={sw.checkpCount=..10}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-8 ~95 ~18 as @a[tag=pr.target,dx=1,dy=2,dz=1,scores={sw.checkpCount=..11}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-4 ~98 ~9 as @a[tag=pr.target,dx=1,dy=2,dz=1,scores={sw.checkpCount=..12}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-6 ~107 ~7 as @a[tag=pr.target,dx=2,dy=2,dz=2,scores={sw.checkpCount=..13}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~13 ~105 ~13 as @a[tag=pr.target,dx=0,dy=2,dz=0,scores={sw.checkpCount=..14}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-5 ~97 ~-9 as @a[tag=pr.target,dx=0,dy=2,dz=0,scores={sw.checkpCount=..15}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-7 ~135 ~-8 as @a[tag=pr.target,dx=0,dy=2,dz=0,scores={sw.checkpCount=..16}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~8 ~90 ~-3 as @a[dx=1,dy=1,dz=1,tag=pr.target,scores={sw.checkpCount=..8}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-3 ~90 ~-28 as @a[dx=2,dy=2,dz=2,tag=pr.target,scores={sw.checkpCount=..9}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-9 ~91 ~-9 as @a[dx=3,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..10}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-8 ~95 ~18 as @a[dx=1,dy=2,dz=1,tag=pr.target,scores={sw.checkpCount=..11}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-4 ~98 ~9 as @a[dx=1,dy=2,dz=1,tag=pr.target,scores={sw.checkpCount=..12}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-6 ~107 ~7 as @a[dx=2,dy=2,dz=2,tag=pr.target,scores={sw.checkpCount=..13}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~13 ~105 ~13 as @a[dx=0,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..14}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-5 ~97 ~-9 as @a[dx=0,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..15}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-7 ~135 ~-8 as @a[dx=0,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..16}] at @s run function stabily_time_tower_parkour:run_checkpoint
 #modern house
-execute positioned ~9 ~132 ~7 as @a[tag=pr.target,dx=0,dy=2,dz=0,scores={sw.checkpCount=..17}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~1 ~146 ~9 as @a[tag=pr.target,dx=14,dy=2,dz=0,scores={sw.checkpCount=..18}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-1 ~153 ~-2 as @a[tag=pr.target,dx=7,dy=2,dz=0,scores={sw.checkpCount=..19}] at @s run function stabily_time_tower_parkour:run_checkpoint
-execute positioned ~-8 ~95 ~18 as @a[tag=pr.target,dx=1,dy=2,dz=1,scores={sw.checkpCount=0}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~9 ~132 ~7 as @a[dx=0,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..17}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~1 ~146 ~9 as @a[dx=14,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..18}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-1 ~153 ~-2 as @a[dx=7,dy=2,dz=0,tag=pr.target,scores={sw.checkpCount=..19}] at @s run function stabily_time_tower_parkour:run_checkpoint
+execute positioned ~-8 ~95 ~18 as @a[dx=1,dy=2,dz=1,tag=pr.target,scores={sw.checkpCount=0}] at @s run function stabily_time_tower_parkour:run_checkpoint
+return 1

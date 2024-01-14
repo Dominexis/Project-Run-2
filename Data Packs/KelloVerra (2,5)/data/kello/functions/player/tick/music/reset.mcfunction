@@ -6,3 +6,4 @@ stopsound @s * kello:music_outro
 
 
 tag @s remove kello.music_restart
+return 1

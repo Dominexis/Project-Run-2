@@ -7,7 +7,7 @@ function #kello:event/left_click/player/pre
 # Find entity
 
 tag @s add this
-execute as @e[type=interaction,distance=..6.75,tag=kello.entity.interactable] run function kello:player/interact/left/interact
+execute as @e[type=minecraft:interaction,distance=..6.75,tag=kello.entity.interactable] run function kello:player/interact/left/interact
 tag @s remove this
 
 
@@ -30,3 +30,4 @@ function kello:generic/sfx/disable_att
 
 advancement revoke @s only kello:player/left_click
 tag @s remove kello.player.interacted
+return 1

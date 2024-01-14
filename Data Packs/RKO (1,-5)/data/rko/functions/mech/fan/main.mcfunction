@@ -17,3 +17,4 @@ execute positioned ~-26.5 ~48 ~28.5 unless entity @s[dx=1,dy=0,dz=1] run tag @s[
 
 execute positioned ~-23.5 ~69 ~-1.5 if entity @s[dx=2,dy=0,dz=1,tag=!rko_fan_launch6] run function rko:mech/fan/6
 execute positioned ~-23.5 ~69 ~-1.5 unless entity @s[dx=2,dy=0,dz=1] run tag @s[tag=rko_fan_launch6] remove rko_fan_launch6
+return 1

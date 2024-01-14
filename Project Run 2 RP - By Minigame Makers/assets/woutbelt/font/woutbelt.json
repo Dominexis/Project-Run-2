@@ -1,18 +1,29 @@
 {
-	"providers": [
-	{
-		"type": "bitmap",
-		"file": "woutbelt:titles/red_blure.png",
-		"ascent": 0,
-		"height": 10,
-		"chars": ["❋"]
-	},
-	{
-		"type": "bitmap",
-		"file": "woutbelt:titles/blue_blure.png",
-		"ascent": 0,
-		"height": 10,
-		"chars": ["✾"]
-	}]
-
+    "providers": [
+        {
+            "type": "space",
+            "advances": {
+                " ": 4,
+                "\u200c": 0
+            }
+        },
+        {
+            "type": "bitmap",
+            "file": "woutbelt:titles/red_blure.png",
+            "ascent": 0,
+            "height": 10,
+            "chars": [
+                "\u274b"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "woutbelt:titles/blue_blure.png",
+            "ascent": 0,
+            "height": 10,
+            "chars": [
+                "\u273e"
+            ]
+        }
+    ]
 }

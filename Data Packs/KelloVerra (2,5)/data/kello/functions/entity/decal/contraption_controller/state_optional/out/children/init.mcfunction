@@ -10,3 +10,4 @@ execute if entity @s[tag=kello.entity.type.chain_platform] run function kello:en
 
 tag @s add kello.decal.controller_children
 tag @s add kello.decal.controller.optional_contraption
+return 1

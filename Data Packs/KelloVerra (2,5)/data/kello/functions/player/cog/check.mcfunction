@@ -28,3 +28,4 @@ execute unless score @s kello.player.cog.l matches -1..0 if score @s kello.playe
 
 execute unless score @s kello.player.cog.r matches -1 unless score @s kello.player.cog.r matches 1 if score @s kello.player.cog.r_cooldown matches -1..1 unless score @s kello.player.cog.r_cooldown matches 0 run function kello:generic/sfx/cog_cooldown_finish/small_recoil
 execute unless score @s kello.player.cog.r matches -1..0 if score @s kello.player.cog.r_cooldown matches -1..1 unless score @s kello.player.cog.r_cooldown matches 0 run function kello:generic/sfx/cog_cooldown_finish/small_throw
+return 1

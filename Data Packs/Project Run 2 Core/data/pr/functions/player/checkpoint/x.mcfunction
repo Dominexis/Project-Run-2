@@ -33,3 +33,4 @@ execute if score @s pr.plot_x matches 013 positioned ~01248 ~ ~ run function pr:
 execute if score @s pr.plot_x matches 014 positioned ~01344 ~ ~ run function pr:player/checkpoint/z
 execute if score @s pr.plot_x matches 015 positioned ~01440 ~ ~ run function pr:player/checkpoint/z
 execute if score @s pr.plot_x matches 016 positioned ~01536 ~ ~ run function pr:player/checkpoint/z
+return 1

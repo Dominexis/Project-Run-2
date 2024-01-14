@@ -23,3 +23,5 @@ scoreboard players set C_-1 zombie_rngC -1
 scoreboard players set C_1000 zombie_rngC 1000
 scoreboard players set nextIdToGive zombie_id 0
 
+
+return 1

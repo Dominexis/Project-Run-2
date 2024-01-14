@@ -18,3 +18,4 @@ scoreboard players set pipes rko.ambient 234
 
 function rko:structure/entity/kill_all
 function rko:structure/load_all
+return 1

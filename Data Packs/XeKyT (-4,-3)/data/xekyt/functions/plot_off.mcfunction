@@ -1,1 +1,2 @@
 scoreboard objectives remove TPParticlesShow
+return 1

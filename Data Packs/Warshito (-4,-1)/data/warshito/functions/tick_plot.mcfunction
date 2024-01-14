@@ -6,7 +6,7 @@ function warshito:kill
 
 # Show which is Ir color
 execute as @a[tag=pr.target] run function warshito:show_color
-kill @e[type=item,tag=pr.target]
+kill @e[type=minecraft:item,tag=pr.target]
 
 # Detect If I am ready for dialogue
 function warshito:dialogue
@@ -39,5 +39,6 @@ function warshito:orb
 function warshito:end
 
 # Explain RGB CMY
-execute as @a[tag=pr.target,tag=!CMY] at @s if block ~ ~-1 ~ white_concrete_powder run tellraw @s [{"text":"Hmmm... I think this is some RGB thing... That means if I am ","italic": true,"color": "gray"},{"text":"Blue","color":"blue"},{"text":", I can step on ","color":"reset"},{"text":"Magenta ","color":"light_purple"},{"text":"and ","color":"reset"},{"text":"Cyan","color":"aqua"},{"text":".\nIf I am ","color":"reset"},{"text":"Green","color":"green"},{"text":", I can step on ","color":"reset"},{"text":"Yellow ","color":"yellow"},{"text":"and ","color":"reset"},{"text":"Cyan","color":"aqua"},{"text":".\nIf I am ","color":"reset"},{"text":"Red","color":"red"},{"text":", I can step on ","color":"reset"},{"text":"Yellow ","color":"yellow"},{"text":"and ","color":"reset"},{"text":"Magenta","color":"light_purple"},{"text":".","color":"reset"}]
-execute as @a[tag=pr.target,tag=!CMY] at @s if block ~ ~-1 ~ white_concrete_powder run tag @s add CMY
+execute as @a[tag=pr.target,tag=!CMY] at @s if block ~ ~-1 ~ minecraft:white_concrete_powder run tellraw @s [{"text":"Hmmm... I think this is some RGB thing... That means if I am ","italic":true,"color":"gray","type":"text"},{"text":"Blue","color":"blue","type":"text"},{"text":", I can step on ","color":"white","type":"text"},{"text":"Magenta ","color":"light_purple","type":"text"},{"text":"and ","color":"white","type":"text"},{"text":"Cyan","color":"aqua","type":"text"},{"text":".\nIf I am ","color":"white","type":"text"},{"text":"Green","color":"green","type":"text"},{"text":", I can step on ","color":"white","type":"text"},{"text":"Yellow ","color":"yellow","type":"text"},{"text":"and ","color":"white","type":"text"},{"text":"Cyan","color":"aqua","type":"text"},{"text":".\nIf I am ","color":"white","type":"text"},{"text":"Red","color":"red","type":"text"},{"text":", I can step on ","color":"white","type":"text"},{"text":"Yellow ","color":"yellow","type":"text"},{"text":"and ","color":"white","type":"text"},{"text":"Magenta","color":"light_purple","type":"text"},{"text":".","color":"white","type":"text"}]
+execute as @a[tag=pr.target,tag=!CMY] at @s if block ~ ~-1 ~ minecraft:white_concrete_powder run tag @s add CMY
+return 1

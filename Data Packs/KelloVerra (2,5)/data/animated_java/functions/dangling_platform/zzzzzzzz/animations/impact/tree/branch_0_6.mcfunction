@@ -5,3 +5,4 @@ execute if score @s aj.anim_time matches 3 run function animated_java:dangling_p
 execute if score @s aj.anim_time matches 4 run function animated_java:dangling_platform/zzzzzzzz/animations/impact/tree/leaf_4
 execute if score @s aj.anim_time matches 5 run function animated_java:dangling_platform/zzzzzzzz/animations/impact/tree/leaf_5
 execute if score @s aj.anim_time matches 6 run function animated_java:dangling_platform/zzzzzzzz/animations/impact/tree/leaf_6
+return 1

@@ -16,3 +16,5 @@ scoreboard players set key.4 inquognito.keypad 0
 function inquognito:logic/plot/keypad/update
 
 scoreboard players set correct inquognito.keypad 0
+
+return 1

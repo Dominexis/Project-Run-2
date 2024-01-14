@@ -12,3 +12,4 @@ function kello:tick/level/assign/loop
 
 execute if score #duplicate_boolean kello.value matches 0 run function kello:tick/level/assign/new
 execute if score #duplicate_boolean kello.value matches 1 run function kello:tick/level/assign/duplicate
+return 1

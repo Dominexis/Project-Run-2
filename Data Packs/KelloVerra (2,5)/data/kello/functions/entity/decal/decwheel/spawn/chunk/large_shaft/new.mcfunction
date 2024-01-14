@@ -13,7 +13,7 @@ scoreboard players add #global kello.entity.id 1
 scoreboard players set #controller kello.value -1
 
 # NOTE : PR.TARGET WILL BE ADDED, REMOVED FOR DEBUGGING
-execute as @e[type=item_display,tag=kello.entity.type.decal_controller] if score @s kello.decal.id = #selected kello.decal.id run function kello:entity/decal/component/initialize/controller
+execute as @e[type=minecraft:item_display,tag=kello.entity.type.decal_controller] if score @s kello.decal.id = #selected kello.decal.id run function kello:entity/decal/component/initialize/controller
 
 execute if score #controller kello.value matches 1 positioned ~ ~.125 ~ run function kello:entity/placedicator/large/spawn/main
 
@@ -21,3 +21,4 @@ execute if score #controller kello.value matches 1 positioned ~ ~.125 ~ run func
 # Iteration
 
 function kello:entity/decal/decwheel/spawn/chunk/large_shaft/iter
+return 1

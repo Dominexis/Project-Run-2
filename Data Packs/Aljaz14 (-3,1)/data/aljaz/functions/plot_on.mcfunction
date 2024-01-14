@@ -13,5 +13,6 @@ function aljaz:aljaz14/snake/snake2/summon
 function aljaz:aljaz14/snake/snake3/summon
 function aljaz:aljaz14/snake/snake4/summon
 
-summon item ~37 ~0 ~0 {Tags:["pickup"],Item:{id:"minecraft:elytra",Count:1b,tag:{Enchantments:[{}]}},PickupDelay:32767s,PersistenceRequired:1b,Age:-32768s}
-summon item ~1 ~32 ~16 {Tags:["pickup"],Item:{id:"minecraft:elytra",Count:1b,tag:{Enchantments:[{}]}},PickupDelay:32767s,PersistenceRequired:1b,Age:-32768s}
+summon minecraft:item ~37 ~0 ~0 {Tags:["pickup"],Item:{id:"minecraft:elytra",tag:{Enchantments:[{}]},Count:1b},PickupDelay:32767s,PersistenceRequired:1b,Age:-32768s}
+summon minecraft:item ~1 ~32 ~16 {Tags:["pickup"],Item:{id:"minecraft:elytra",tag:{Enchantments:[{}]},Count:1b},PickupDelay:32767s,PersistenceRequired:1b,Age:-32768s}
+return 1

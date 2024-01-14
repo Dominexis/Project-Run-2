@@ -8,3 +8,4 @@
 # kill @e[tag=collider,tag=pr.target]
 
 execute align x run tp @s ~-0.8 ~ ~
+return 1

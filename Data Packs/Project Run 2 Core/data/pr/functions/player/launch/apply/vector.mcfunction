@@ -29,3 +29,4 @@ execute if score #horizontal_magnitude pr.value matches 0 run scoreboard players
 # Perform launch
 
 execute at @s run function pr:player/launch/main
+return 1

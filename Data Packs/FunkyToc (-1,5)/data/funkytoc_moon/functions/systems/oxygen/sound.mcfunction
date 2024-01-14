@@ -12,3 +12,4 @@ execute if score #tmp.o2.sec funkytoc.moon.var matches ..7 run playsound minecra
 execute if score #tmp.o2.sec funkytoc.moon.var matches 3 run playsound minecraft:block.beacon.deactivate player @s ~ ~ ~ 2 2
 execute if score #tmp.o2.sec funkytoc.moon.var matches 2 run playsound minecraft:block.beacon.deactivate player @s ~ ~ ~ 2 2
 execute if score #tmp.o2.sec funkytoc.moon.var matches 1 run playsound minecraft:block.beacon.deactivate player @s ~ ~ ~ 2 2
+return 1

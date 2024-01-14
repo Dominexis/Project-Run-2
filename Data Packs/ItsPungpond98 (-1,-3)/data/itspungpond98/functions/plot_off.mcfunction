@@ -7,11 +7,12 @@ scoreboard players set verdant itspungpond98.exit 0
 scoreboard players set pearlescent itspungpond98.exit 0
 
 #Fill Walls
-fill ~37 ~17 ~-1 ~37 ~17 ~1 mud_brick_wall
-fill ~37 ~18 ~-1 ~37 ~19 ~1 iron_bars
+fill ~37 ~17 ~-1 ~37 ~17 ~1 minecraft:mud_brick_wall
+fill ~37 ~18 ~-1 ~37 ~19 ~1 minecraft:iron_bars
 
-fill ~-37 ~17 ~-1 ~-37 ~17 ~1 mud_brick_wall
-fill ~-37 ~18 ~-1 ~-37 ~19 ~1 iron_bars
+fill ~-37 ~17 ~-1 ~-37 ~17 ~1 minecraft:mud_brick_wall
+fill ~-37 ~18 ~-1 ~-37 ~19 ~1 minecraft:iron_bars
 
-kill @e[type=armor_stand,tag=pr.target]
-kill @e[type=villager,tag=pr.target]
+kill @e[type=minecraft:armor_stand,tag=pr.target]
+kill @e[type=minecraft:villager,tag=pr.target]
+return 1

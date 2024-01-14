@@ -5,3 +5,4 @@ execute on passengers run data modify entity @s interpolation_duration set value
 function maze_escape:maze_npc/zzzzzzzz/animations/talk/tree/leaf_0
 execute on passengers run data modify entity @s interpolation_duration set value 1
 tag @s add aj.maze_npc.animation.talk
+return 1

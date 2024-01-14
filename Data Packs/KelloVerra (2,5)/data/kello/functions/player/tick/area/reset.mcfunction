@@ -12,3 +12,4 @@ tag @s remove kello.player.has_triggered.lvl_6_music_end_trans
 tag @s remove kello.player.has_triggered.lvl_6_music_final
 tag @s remove kello.player.has_triggered.lvl_7_start
 tag @s remove kello.player.has_triggered.lvl_7_music_outro
+return 1

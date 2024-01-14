@@ -20,3 +20,4 @@ tag @s add pr.temp_checkpoint
 scoreboard players set @s pr.temp_checkpoint_sub_x 500
 scoreboard players set @s pr.temp_checkpoint_sub_y 0
 scoreboard players set @s pr.temp_checkpoint_sub_z 500
+return 1

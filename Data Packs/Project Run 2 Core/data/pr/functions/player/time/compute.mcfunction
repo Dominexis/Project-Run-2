@@ -17,3 +17,4 @@ execute if score #seconds pr.value matches 10.. run data modify storage pr:data 
 
 execute if score #minutes pr.value matches ..09 run data modify storage pr:data tag.minutes set value '["0",{"score":{"name":"#minutes","objective":"pr.value"}}]'
 execute if score #minutes pr.value matches 10.. run data modify storage pr:data tag.minutes set value '["" ,{"score":{"name":"#minutes","objective":"pr.value"}}]'
+return 1

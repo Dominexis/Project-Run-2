@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:decwheel/zzzzzzzz/animations/clockwise_large_trn/tree/leaf_34_as_bone
+return 1

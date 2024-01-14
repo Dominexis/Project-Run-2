@@ -23,7 +23,7 @@ execute store result entity @s Pos[1] double 1 run scoreboard players get #outpu
 
 # Spawn bat
 
-execute at @s run summon bat ~ ~ ~ {Tags:["pr.launch.post"],DeathLootTable:"",NoAI:1b,Silent:1b,Health:1.0f,PersistenceRequired:1b}
+execute at @s run summon minecraft:bat ~ ~ ~ {Tags:["pr.launch.post"],DeathLootTable:"",NoAI:1b,Silent:1b,Health:1.0f,PersistenceRequired:1b}
 
 
 
@@ -34,3 +34,4 @@ execute at @s run summon bat ~ ~ ~ {Tags:["pr.launch.post"],DeathLootTable:"",No
 # Remove tag
 
 tag @s remove pr.launch
+return 1

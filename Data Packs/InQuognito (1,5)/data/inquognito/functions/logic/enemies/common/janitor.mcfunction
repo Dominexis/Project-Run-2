@@ -8,3 +8,5 @@ data merge entity @s {VillagerData:{type:"plains",profession:"toolsmith",level:9
 
 function inquognito:logic/enemies/common/modifiers/undead
 function inquognito:logic/enemies/common/modifiers/infestation
+
+return 1

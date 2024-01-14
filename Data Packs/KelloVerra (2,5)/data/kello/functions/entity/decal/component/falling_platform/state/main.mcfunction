@@ -30,3 +30,4 @@ execute if score @s kello.entity.state matches 02 run function kello:entity/deca
 execute if score @s kello.entity.state matches 03 run function kello:entity/decal/component/falling_platform/state/despawn/main
 
 scoreboard players operation @s kello.entity.state = #state kello.value
+return 1

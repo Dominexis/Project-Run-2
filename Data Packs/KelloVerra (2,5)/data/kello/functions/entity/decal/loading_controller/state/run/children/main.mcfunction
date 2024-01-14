@@ -14,3 +14,4 @@ execute if entity @s[tag=kello.decal.component] run function kello:entity/decal/
 # Cog
 
 execute if entity @s[tag=aj.decwheel.root] run function kello:entity/decal/loading_controller/state/run/children/cog
+return 1

@@ -22,3 +22,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.escapement.export_version aj.i -1522482487
 scoreboard players reset * aj.escapement.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.escapement.root] run function animated_java:escapement/zzzzzzzz/on_load
+return 1

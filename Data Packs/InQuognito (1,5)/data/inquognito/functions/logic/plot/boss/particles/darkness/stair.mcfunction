@@ -10,3 +10,5 @@ execute positioned ^ ^0.1 ^0.1 run particle minecraft:sculk_soul ~ ~ ~ 0.0 0.0 0
 execute positioned ^ ^0.1 ^-0.05 run particle minecraft:sculk_soul ~ ~ ~ 0.0 0.0 0.0 0.0 1 normal @s
 execute positioned ^ ^0.1 ^-0.225 run particle minecraft:sculk_soul ~ ~ ~ 0.0 0.0 0.0 0.0 1 normal @s
 execute positioned ^ ^0.1 ^-0.4 run particle minecraft:sculk_soul ~ ~ ~ 0.0 0.0 0.0 0.0 1 normal @s
+
+return 1

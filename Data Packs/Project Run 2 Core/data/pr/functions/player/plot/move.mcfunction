@@ -38,3 +38,4 @@ execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
 # Enter new plot
 
 function pr:plot/enter
+return 1

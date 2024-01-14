@@ -1,1 +1,2 @@
-give @s zombie_spawn_egg{display:{Name:'{"text":"Decal Spawner","color":"#D4FFEC","bold":true}'},Enchantments:[{}],EntityTag:{Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:1b,CanPickUpLoot:0b,Tags:["kello.entity.util","kello.entity.decal_spawner"],HandItems:[{id:"minecraft:air",Count:1b},{}]}} 1
+give @s minecraft:zombie_spawn_egg{display:{Name:'{"text":"Decal Spawner","color":"#D4FFEC","bold":true,"type":"text"}'},Enchantments:[{}],EntityTag:{Silent:1b,Invulnerable:1b,CustomNameVisible:0b,NoAI:1b,CanPickUpLoot:0b,Tags:["kello.entity.util","kello.entity.decal_spawner"],HandItems:[{id:"minecraft:air",Count:1b},{}]}} 1
+return 1

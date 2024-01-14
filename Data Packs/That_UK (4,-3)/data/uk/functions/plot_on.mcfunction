@@ -10,4 +10,5 @@ scoreboard objectives add uk_kill minecraft.killed:minecraft.pillager
 
 scoreboard players set uktargetHolder uk_targets 0
 
-summon marker ~ ~ ~ {Tags:["uk.particle","pr.target"]}
+summon minecraft:marker ~ ~ ~ {Tags:["uk.particle","pr.target"]}
+return 1

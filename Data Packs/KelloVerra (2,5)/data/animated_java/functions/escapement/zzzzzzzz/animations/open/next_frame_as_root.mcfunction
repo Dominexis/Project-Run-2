@@ -1,1 +1,2 @@
 function animated_java:escapement/zzzzzzzz/animations/open/tick_animation
+return 1

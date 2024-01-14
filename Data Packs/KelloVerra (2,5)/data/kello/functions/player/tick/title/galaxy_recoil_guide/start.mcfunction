@@ -6,3 +6,4 @@ title @s clear
 
 
 tag @s add kello.player.progress.recoil_guide
+return 1

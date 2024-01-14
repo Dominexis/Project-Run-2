@@ -1,20 +1,21 @@
 [
-	{
-		"function": "minecraft:set_name",
-		"entity": "this",
-		"name": {
-			"text": "E.P.S",
-			"color": "white",
-			"bold": false,
-			"italic": false
-		}
-	},
-	{
-		"function": "minecraft:reference",
-		"name": "inquognito:suits/common"
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{Trim:{material:\"minecraft:netherite\",pattern:\"minecraft:dune\"}}"
-	}
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": {
+            "text": "E.P.S",
+            "color": "white",
+            "bold": false,
+            "italic": false,
+            "type": "text"
+        }
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "inquognito:suits/common"
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{Trim:{material:\"minecraft:netherite\",pattern:\"minecraft:dune\"}}"
+    }
 ]

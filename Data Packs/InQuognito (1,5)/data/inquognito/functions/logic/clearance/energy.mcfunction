@@ -29,3 +29,5 @@ execute if score @s inquognito.clearance.energy matches 10 run playsound minecra
 execute if score @s inquognito.clearance.energy matches 5 run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 1.0 0.900
 
 execute if score @s inquognito.clearance.energy matches 0 run playsound minecraft:block.note_block.bass player @s ~ ~ ~ 1.0 0.5
+
+return 1

@@ -18,3 +18,4 @@ execute positioned ~35.5 ~108 ~22.5 run tag @s[dx=8,dy=1.1,dz=30] add rko_return
 
 execute unless entity @s[tag=!rko_return_f,tag=!rko_return_p,tag=!rko_return_b] run scoreboard players set @s pr.death 1
 execute unless entity @s[tag=!rko_return_f,tag=!rko_return_p,tag=!rko_return_b] run effect give @s minecraft:jump_boost 1 255 true
+return 1

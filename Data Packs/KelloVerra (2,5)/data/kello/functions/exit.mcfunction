@@ -5,3 +5,4 @@ title @s clear
 title @s times 20 80 20
 
 function kello:player/setup/exit
+return 1

@@ -17,3 +17,4 @@ execute as @e[tag=bnsd.char,tag=pr.target] if score @s bnsd.id = @p[tag=bnsd.mov
 tag @s remove bnsd.move
 
 # execute if entity @s[gamemode=!adventure] run function bansed:leave2d
+return 1

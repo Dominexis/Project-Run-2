@@ -39,3 +39,4 @@ execute as @a[tag=pr.target,tag=kello.entity.player.target] run function kello:e
 # SFX
 
 execute as @a[tag=pr.target,tag=kello.entity.player.target] at @s run function kello:generic/sfx/cog_recoil/large
+return 1

@@ -1,1 +1,2 @@
 scoreboard objectives remove painting_parkour
+return 1

@@ -6,3 +6,4 @@ execute if score fan rko.particle matches 9 run particle minecraft:snowflake ~1.
 execute if score fan rko.particle matches 11 run particle minecraft:snowflake ~1.19 ~ ~1.25 0 3 0 0.2 0 normal @a[tag=pr.target,sort=arbitrary]
 execute if score fan rko.particle matches 13 run particle minecraft:snowflake ~1.00 ~ ~1.01 0 3 0 0.2 0 normal @a[tag=pr.target,sort=arbitrary]
 execute if score fan rko.particle matches 15 run particle minecraft:snowflake ~1.48 ~ ~1.57 0 3 0 0.2 0 normal @a[tag=pr.target,sort=arbitrary]
+return 1

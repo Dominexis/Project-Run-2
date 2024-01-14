@@ -10,3 +10,4 @@ execute on attacker store result score #boolean kello.value if entity @s[tag=thi
 
 execute if score #boolean kello.value matches 1 on attacker run tag @s add kello.player.interacted
 execute if score #boolean kello.value matches 1 run function kello:player/interact/left/entity
+return 1

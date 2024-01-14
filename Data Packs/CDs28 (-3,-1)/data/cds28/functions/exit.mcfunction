@@ -11,3 +11,4 @@ tag @s remove check6
 tag @s remove check7
 tag @s remove check8
 tag @s remove teleporting
+return 1

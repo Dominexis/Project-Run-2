@@ -1,1 +1,2 @@
-# say x
+say x
+return 1

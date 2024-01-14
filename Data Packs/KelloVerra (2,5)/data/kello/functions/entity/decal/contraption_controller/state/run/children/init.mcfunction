@@ -10,3 +10,4 @@
 
 tag @s add kello.decal.controller_children
 tag @s add kello.decal.controller.contraption
+return 1

@@ -11,9 +11,10 @@ execute if score @s marcostrk-icy-boat-parkour-checkpoint-timer matches 1 if sco
 execute if score @s marcostrk-icy-boat-parkour-checkpoint-timer matches 1 run function pr:player/checkpoint/mark
 
 # Player remounts their boat
-execute if score @s marcostrk-icy-boat-parkour-checkpoint-timer matches 1 run ride @s mount @e[type=minecraft:boat,tag=pr.target,distance=..1,sort=nearest,limit=1]
+execute if score @s marcostrk-icy-boat-parkour-checkpoint-timer matches 1 run ride @s mount @e[type=minecraft:boat,distance=..1,tag=pr.target,sort=nearest,limit=1]
 
 #####################################################################################################################################################################################
 
 # Reset timer to 0
 execute if score @s marcostrk-icy-boat-parkour-checkpoint-timer matches 20.. run scoreboard players set @s marcostrk-icy-boat-parkour-checkpoint-timer 0
+return 1

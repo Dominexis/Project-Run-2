@@ -109,8 +109,8 @@ tag @s remove pr.target
 clear @s
 effect clear @s
 execute unless score @s pr.title_cooldown matches 1.. run title @s times 10 70 30
-execute unless score @s pr.title_cooldown matches 1.. run title @s title {"text":""}
-execute unless score @s pr.title_cooldown matches 1.. run title @s subtitle {"text":""}
+execute unless score @s pr.title_cooldown matches 1.. run title @s title {"text":"","type":"text"}
+execute unless score @s pr.title_cooldown matches 1.. run title @s subtitle {"text":"","type":"text"}
 scoreboard players set @s pr.title_cooldown 0
 experience set @s 0 levels
 experience set @s 0 points
@@ -124,9 +124,9 @@ attribute @s minecraft:generic.max_health base set 20.0
 
 # Send message when they start their run
 
-execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s {"text":"Your run has begun","color":"gold"}
-execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger lobby","color":"white"},{"text":" to return to the lobby","color":"gray"}]
-execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s [{"text":"Use ","color":"gray"},{"text":"/trigger checkpoint","color":"white"},{"text":" to go to the previous checkpoint","color":"gray"}]
+execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s {"text":"Your run has begun","color":"gold","type":"text"}
+execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s [{"text":"Use ","color":"gray","type":"text"},{"text":"/trigger lobby","color":"white","type":"text"},{"text":" to return to the lobby","color":"gray","type":"text"}]
+execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if score @s pr.plot_z matches 0 unless score @s pr.plot = #spawn_plot pr.value run tellraw @s [{"text":"Use ","color":"gray","type":"text"},{"text":"/trigger checkpoint","color":"white","type":"text"},{"text":" to go to the previous checkpoint","color":"gray","type":"text"}]
 
 
 
@@ -137,3 +137,4 @@ execute unless score @s spectate matches 1.. if score @s pr.plot_x matches -1 if
 # Grant advancements
 
 function pr:plot/advancement
+return 1

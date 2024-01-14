@@ -14,3 +14,4 @@ execute if score @s earthmere_end matches 200 run function earthmere:sequence/la
 execute if score @s earthmere_end matches 240 run function earthmere:sequence/lanterns
 
 execute if score @s earthmere_end matches 255 run function pr:player/finish
+return 1

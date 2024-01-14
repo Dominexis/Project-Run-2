@@ -24,4 +24,5 @@ execute if score #boolean_1 kello.value matches 0 unless entity @s[tag=aj.launch
 
 # Visual parts
 
-execute on passengers if entity @s[type=item_display,tag=kello.entity.part.visual] run function kello:entity/decal/component/launchpad/state/idle/visual/dimmen
+execute on passengers if entity @s[type=minecraft:item_display,tag=kello.entity.part.visual] run function kello:entity/decal/component/launchpad/state/idle/visual/dimmen
+return 1

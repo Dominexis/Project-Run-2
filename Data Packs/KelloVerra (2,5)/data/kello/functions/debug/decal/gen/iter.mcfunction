@@ -41,3 +41,4 @@ scoreboard players operation #generator.tick_total kello.value += #tick_incremen
 
 
 kill @s
+return 1

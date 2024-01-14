@@ -1,6 +1,6 @@
 # Call player
 
-execute as @p[tag=pr.target,tag=kello.entity.player.target,distance=..8] run function kello:player/cog/small/recoil/pickup
+execute as @p[distance=..8,tag=pr.target,tag=kello.entity.player.target] run function kello:player/cog/small/recoil/pickup
 
 
 
@@ -9,4 +9,5 @@ execute as @p[tag=pr.target,tag=kello.entity.player.target,distance=..8] run fun
 # Terminate
 
 tag @s add aj.terminate
-kill @e[type=marker,tag=kello.entity.aim]
+kill @e[type=minecraft:marker,tag=kello.entity.aim]
+return 1

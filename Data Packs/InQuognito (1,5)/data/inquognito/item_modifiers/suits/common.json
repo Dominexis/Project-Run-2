@@ -1,30 +1,30 @@
 [
-	{
-		"function": "minecraft:set_attributes",
-		"modifiers": [
-			{
-				"attribute": "minecraft:generic.armor",
-				"name": "Armor",
-				"amount": 0,
-				"operation": "addition",
-				"slot": [
-					"head",
-					"chest",
-					"legs",
-					"feet"
-				]
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_enchantments",
-		"enchantments": {
-			"minecraft:binding_curse": 1
-		},
-		"add": true
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{Unbreakable:1b,HideFlags:255}"
-	}
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.armor",
+                "name": "Armor",
+                "amount": 0,
+                "operation": "addition",
+                "slot": [
+                    "head",
+                    "chest",
+                    "legs",
+                    "feet"
+                ]
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+            "minecraft:binding_curse": 1
+        },
+        "add": true
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{Unbreakable:1b,HideFlags:255}"
+    }
 ]

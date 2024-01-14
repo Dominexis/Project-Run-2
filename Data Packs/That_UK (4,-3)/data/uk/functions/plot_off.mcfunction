@@ -8,6 +8,7 @@ scoreboard objectives remove uk_bowCount
 scoreboard objectives remove uk_targets
 scoreboard objectives remove uk_kill
 
-kill @e[type=pillager,tag=pr.target]
-kill @e[type=marker,tag=uk.particle,tag=pr.target]
-kill @e[type=arrow,tag=pr.target]
+kill @e[type=minecraft:pillager,tag=pr.target]
+kill @e[type=minecraft:marker,tag=uk.particle,tag=pr.target]
+kill @e[type=minecraft:arrow,tag=pr.target]
+return 1

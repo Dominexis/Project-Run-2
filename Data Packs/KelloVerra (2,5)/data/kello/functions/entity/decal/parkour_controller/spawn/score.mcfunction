@@ -20,3 +20,4 @@ execute if score #level_creation_mode kello.value matches 1 run function kello:t
 execute if score #level_creation_mode kello.value matches 1 run scoreboard players operation @s kello.entity.checkpoint.id = #init kello.entity.checkpoint.id
 
 #scoreboard players operation #selected kello.decal.id = #global kello.decal.id
+return 1

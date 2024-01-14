@@ -7,3 +7,4 @@ execute if score #level_creation_mode kello.value matches 1 run function kello:t
 execute if score #ref_state kello.value matches 1 run scoreboard players operation @s kello.decal.state = #local kello.decal.state
 
 function kello:entity/decal/component/initialize/main
+return 1

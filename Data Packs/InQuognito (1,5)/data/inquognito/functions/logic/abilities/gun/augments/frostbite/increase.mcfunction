@@ -2,3 +2,5 @@ execute unless score @s inquognito.frostbite matches 5.. run scoreboard players 
 
 function inquognito:logic/abilities/gun/augments/frostbite/remove
 function inquognito:logic/abilities/gun/augments/frostbite/apply
+
+return 1

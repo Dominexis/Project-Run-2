@@ -187,7 +187,9 @@ execute positioned ~-2 ~108 ~-1 run function frostcobra:summon_checkpoint
 
 # SUMMON FINISH
 
-summon minecraft:text_display ~-23 ~130 ~-1 {text:'{"text":"\\u2691","color":"green"}',Tags:["pr.target","frostcobra.finish"],billboard:"center",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[5f,5f,5f]},background:0}
+summon minecraft:text_display ~-23 ~130 ~-1 {text:'{"text":"\\u2691","color":"green","type":"text"}',Tags:["pr.target","frostcobra.finish"],billboard:"center",transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[5.0f,5.0f,5.0f]},background:0}
 
 # Disable forceload
 forceload remove ~-40 ~-40 ~40 ~40
+
+return 1

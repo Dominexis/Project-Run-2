@@ -11,3 +11,5 @@ execute if score @s inquognito.boss.health matches 4 run scoreboard players set 
 playsound minecraft:block.sculk_shrieker.shriek hostile @s
 playsound minecraft:block.sculk_shrieker.shriek hostile @s
 playsound minecraft:block.sculk_shrieker.shriek hostile @s
+
+return 1

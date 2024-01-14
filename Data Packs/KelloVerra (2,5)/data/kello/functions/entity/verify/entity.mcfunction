@@ -9,3 +9,4 @@ execute if entity @s[tag=kello.entity.type.groundicator,tag=kello.entity.type.la
 execute if entity @s[tag=kello.entity.type.chariot] run function kello:entity/chariot/main
 execute if entity @s[tag=kello.entity.type.time_mark] run function kello:entity/time_mark/main
 execute if entity @s[tag=kello.entity.type.checkpoint] run function kello:entity/checkpoint/main
+return 1

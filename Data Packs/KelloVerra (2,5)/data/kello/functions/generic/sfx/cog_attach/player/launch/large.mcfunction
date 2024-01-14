@@ -9,3 +9,4 @@ playsound minecraft:item.axe.scrape master @s ~ ~ ~ 0.125 0.85 0
 playsound minecraft:item.bottle.fill master @s ~ ~ ~ 0.2 0.25 0
 playsound minecraft:block.lava.pop master @s ~ ~ ~ 0.45 0.85 0
 playsound kello:large_cogwheel_attach_launch master @s ~ ~ ~ 1 1 1
+return 1

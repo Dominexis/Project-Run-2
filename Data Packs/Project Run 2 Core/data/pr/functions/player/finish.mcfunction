@@ -2,7 +2,7 @@
 
 function pr:player/time/compute
 
-tellraw @s ["",{"text":"You finished in ","color":"green"},{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+function help:cbc374f7d3ba21e47bafe01a480e5cabff9f6ce2fd02a22542592a933f0eb060
 
 
 
@@ -37,4 +37,5 @@ function pr:plot/advancement
 function pr:player/checkpoint/lobby
 function pr:player/checkpoint/send_to
 
-execute at @s run summon firework_rocket ~ ~ ~ {Life:0,LifeTime:25,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Colors:[I;200],Type:2b}],Flight:1b}}}}
+execute at @s run summon minecraft:firework_rocket ~ ~ ~ {Life:0,LifeTime:25,FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Colors:[I;200],Type:2b}],Flight:1b}},Count:1b}}
+return 1

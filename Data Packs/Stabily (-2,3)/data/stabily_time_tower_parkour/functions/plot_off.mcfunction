@@ -3,3 +3,4 @@
 # Use this to reset your plot and get rid of any laggy entities
 
 scoreboard objectives remove sw.checkpCount
+return 1

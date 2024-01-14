@@ -19,3 +19,4 @@ execute if score @s[tag=aj.animwheel.root,tag=kello.entity.type.flyfan] kello.de
 
 tag @s add kello.decal.controller_children
 tag @s add kello.decal.controller.loading
+return 1

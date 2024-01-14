@@ -2,3 +2,4 @@
 
 # Clear player
 clear @s
+return 1

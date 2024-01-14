@@ -72,3 +72,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.decwheel.export_version aj.i 949893699
 scoreboard players reset * aj.decwheel.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.decwheel.root] run function animated_java:decwheel/zzzzzzzz/on_load
+return 1

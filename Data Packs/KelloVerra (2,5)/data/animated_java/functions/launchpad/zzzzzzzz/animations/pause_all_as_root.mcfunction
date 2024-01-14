@@ -2,3 +2,4 @@ function animated_java:launchpad/zzzzzzzz/animations/bloom/pause_as_root
 function animated_java:launchpad/zzzzzzzz/animations/bud/pause_as_root
 function animated_java:launchpad/zzzzzzzz/animations/shoot/pause_as_root
 function animated_java:launchpad/zzzzzzzz/animations/cancel/pause_as_root
+return 1

@@ -18,10 +18,11 @@ function pr:player/plot/coords_from_id
 execute if score @s lobby matches 1.. run function pr:player/checkpoint/send_to
 execute if score @s lobby matches 1.. run team join pr.player @s
 execute if score @s lobby matches 1.. run gamemode adventure @s
-execute if score @s lobby matches 1.. run tellraw @s {"text":"You've been sent to the lobby","color":"gold"}
+execute if score @s lobby matches 1.. run tellraw @s {"text":"You've been sent to the lobby","color":"gold","type":"text"}
 execute if score @s lobby matches 1.. run title @s actionbar ""
 scoreboard players set @s lobby 0
 
 execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
 
 execute unless score @s spectate matches 1.. run function pr:player/title
+return 1

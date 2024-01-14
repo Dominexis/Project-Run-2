@@ -6,3 +6,4 @@ execute if score @s aj.anim_time matches 12 run function animated_java:launchpad
 execute if score @s aj.anim_time matches 13 run function animated_java:launchpad/zzzzzzzz/animations/shoot/tree/leaf_13
 execute if score @s aj.anim_time matches 14 run function animated_java:launchpad/zzzzzzzz/animations/shoot/tree/leaf_14
 execute if score @s aj.anim_time matches 15 run function animated_java:launchpad/zzzzzzzz/animations/shoot/tree/leaf_15
+return 1

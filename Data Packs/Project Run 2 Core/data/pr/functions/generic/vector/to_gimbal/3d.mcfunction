@@ -40,3 +40,4 @@ scoreboard players operation #input_y pr.value = #input_vector_y pr.value
 scoreboard players operation #input_y pr.value *= #-1 pr.value
 function pr:generic/trigonometry/arctangent
 scoreboard players operation #output_pitch pr.value = #output pr.value
+return 1

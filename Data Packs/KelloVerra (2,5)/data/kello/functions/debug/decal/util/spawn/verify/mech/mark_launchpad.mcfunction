@@ -7,3 +7,4 @@ data merge storage kello:data {tag:{Rotation:[0.0f,0.0f]}}
 execute store result storage kello:data tag.Rotation[0] float 0.1 run scoreboard players get #rot_x kello.value
 execute store result storage kello:data tag.Rotation[1] float 0.1 run scoreboard players get #rot_y kello.value
 data modify entity @s Rotation set from storage kello:data tag.Rotation
+return 1

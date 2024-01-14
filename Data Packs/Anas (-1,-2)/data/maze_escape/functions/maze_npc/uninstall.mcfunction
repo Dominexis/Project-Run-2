@@ -11,3 +11,5 @@ scoreboard objectives remove aj.maze_npc.animation.idle.local_anim_time
 scoreboard objectives remove aj.maze_npc.animation.wave.loop_mode
 scoreboard objectives remove aj.maze_npc.animation.talk.loop_mode
 scoreboard objectives remove aj.maze_npc.animation.idle.loop_mode
+
+return 1

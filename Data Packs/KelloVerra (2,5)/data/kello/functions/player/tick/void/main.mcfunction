@@ -15,4 +15,5 @@ execute if score @s kello.death.delay matches 40.. run function kello:player/tic
 execute if score #boolean kello.value matches 2 run scoreboard players add @s kello.death.delay 30
 execute if score #boolean kello.value matches 1 run scoreboard players add @s kello.death.delay 8
 execute if score #boolean kello.value matches 0 if score @s kello.death.delay matches 1.. run scoreboard players remove @s kello.death.delay 1
-execute if entity @s[scores={kello.death.delay=1..},tag=kello.riding] run scoreboard players set @s kello.death.delay 0
+execute if entity @s[tag=kello.riding,scores={kello.death.delay=1..}] run scoreboard players set @s kello.death.delay 0
+return 1

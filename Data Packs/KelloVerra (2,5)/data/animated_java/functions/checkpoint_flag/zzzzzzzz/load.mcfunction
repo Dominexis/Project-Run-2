@@ -29,3 +29,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.checkpoint_flag.export_version aj.i 514156344
 scoreboard players reset * aj.checkpoint_flag.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.checkpoint_flag.root] run function animated_java:checkpoint_flag/zzzzzzzz/on_load
+return 1

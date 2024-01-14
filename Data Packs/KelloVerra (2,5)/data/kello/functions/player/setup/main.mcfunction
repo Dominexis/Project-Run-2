@@ -44,4 +44,5 @@ function kello:player/setup/choose_flag_color
 
 # Extra
 
-execute at @s summon marker run function kello:player/setup/void_mark
+execute at @s summon minecraft:marker run function kello:player/setup/void_mark
+return 1

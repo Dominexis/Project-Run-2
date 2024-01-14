@@ -16,3 +16,4 @@ function kello:entity/decal/component/moving_platform/animation/moving_pre
 
 tag @s remove kello.state.force_move
 tag @s remove kello.state.force_deactive
+return 1

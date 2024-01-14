@@ -2,8 +2,8 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "vehicle": {
-        "nbt": "{DeathTime:0s}"
-      }
+        "vehicle": {
+            "nbt": "{DeathTime:0s}"
+        }
     }
-  }
+}

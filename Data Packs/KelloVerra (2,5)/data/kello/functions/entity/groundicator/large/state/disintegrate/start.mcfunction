@@ -8,3 +8,4 @@ scoreboard players set @s kello.entity.timer 11
 # Start animation
 
 function kello:entity/groundicator/large/animation/disintegrate/apply
+return 1

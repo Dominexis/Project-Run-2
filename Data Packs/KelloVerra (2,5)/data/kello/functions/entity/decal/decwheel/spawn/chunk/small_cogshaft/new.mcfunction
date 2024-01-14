@@ -11,3 +11,4 @@ scoreboard players add #global kello.entity.id 1
 # Iteration
 
 function kello:entity/decal/decwheel/spawn/chunk/small_cogshaft/iter
+return 1

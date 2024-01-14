@@ -4,3 +4,4 @@
 tag @s remove pr.plate_checkpoint
 tag @s remove big_kitchen.warp1
 tag @s remove big_kitchen.warp2
+return 1

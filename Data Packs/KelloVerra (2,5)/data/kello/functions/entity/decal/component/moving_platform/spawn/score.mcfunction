@@ -8,7 +8,7 @@ tag @s add kello.entity.part.display_container
 tag @s add pr.ignore
 tag @s add kello.exclude
 
-data merge entity @s {height:1f,width:2.75f,brightness:{sky:15,block:13}}
+data merge entity @s {height:1.0f,width:2.75f,brightness:{sky:15,block:13}}
 data modify entity @s item.tag.CustomModelData.display.color set value 2106383
 
 
@@ -29,17 +29,17 @@ function kello:entity/decal/init
 execute on passengers run tp @s ~ ~ ~ ~ ~
 tp @s ~ ~ ~ ~ ~
 
-execute positioned ^01 ^ ^-1 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
-execute positioned ^00 ^ ^-1 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
-execute positioned ^-1 ^ ^-1 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^01 ^ ^-1 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^00 ^ ^-1 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^-1 ^ ^-1 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
 
-execute positioned ^01 ^ ^0 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
-execute positioned ^00 ^ ^0 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
-execute positioned ^-1 ^ ^0 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^01 ^ ^0 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^00 ^ ^0 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^-1 ^ ^0 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
 
-execute positioned ^01 ^ ^1 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
-execute positioned ^00 ^ ^1 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
-execute positioned ^-1 ^ ^1 summon item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^01 ^ ^1 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^00 ^ ^1 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
+execute positioned ^-1 ^ ^1 summon minecraft:item_display run function kello:entity/decal/component/moving_platform/spawn/platform/vehicle
 
 
 
@@ -59,10 +59,11 @@ scoreboard players operation @s kello.decal.id = #local kello.decal.id
 
 data modify storage kello:data tag.Owner set from entity @s UUID
 
-execute summon snowball run function kello:entity/decal/component/moving_platform/spawn/point
+execute summon minecraft:snowball run function kello:entity/decal/component/moving_platform/spawn/point
 
 
 
 # Visual
 
 execute on passengers if entity @s[tag=kello.entity.part.indicator] run function kello:entity/decal/component/moving_platform/spawn/display/indicator
+return 1

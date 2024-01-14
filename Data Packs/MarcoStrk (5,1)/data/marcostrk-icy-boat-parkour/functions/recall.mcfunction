@@ -15,3 +15,5 @@ item replace entity @s hotbar.7 with minecraft:bamboo_raft
 
 
 
+
+return 1

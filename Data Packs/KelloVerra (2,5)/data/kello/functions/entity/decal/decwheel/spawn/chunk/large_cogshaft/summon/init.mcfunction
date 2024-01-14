@@ -9,3 +9,4 @@ execute if score #ref_state kello.value matches 1 run scoreboard players operati
 data merge entity @s {brightness:{sky:2,block:14}}
 
 function kello:entity/decal/component/initialize/main
+return 1

@@ -7,3 +7,4 @@ execute positioned ~38 ~24 ~-13 run playsound rko:wheel master @a[tag=pr.target,
 # Left #
 execute positioned ~-38 ~24 ~13 run playsound rko:wheel master @a[tag=pr.target,tag=!rko_finish,tag=!rko_finish_land,sort=arbitrary] ~ ~ ~ 3.3 1
 execute positioned ~-38 ~24 ~-13 run playsound rko:wheel master @a[tag=pr.target,tag=!rko_finish,tag=!rko_finish_land,sort=arbitrary] ~ ~ ~ 3.3 1
+return 1

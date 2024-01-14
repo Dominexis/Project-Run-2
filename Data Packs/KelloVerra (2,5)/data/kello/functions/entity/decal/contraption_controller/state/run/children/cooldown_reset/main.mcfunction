@@ -4,3 +4,4 @@ scoreboard players add @s kello.entity.timer 64
 tag @s add kello.static
 scoreboard players operation #local kello.player.id = @s kello.player.id
 execute as @a if score @s kello.player.id = #local kello.player.id run function kello:entity/decal/contraption_controller/state/run/children/cooldown_reset/state
+return 1

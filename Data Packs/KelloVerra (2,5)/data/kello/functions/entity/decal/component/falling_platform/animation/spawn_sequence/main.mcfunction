@@ -6,3 +6,4 @@ execute if score @s kello.entity.timer matches 4 run function kello:entity/decal
 execute if score @s kello.entity.timer matches 3 run function kello:entity/decal/component/falling_platform/animation/spawn_sequence/4
 execute if score @s kello.entity.timer matches 2 run function kello:entity/decal/component/falling_platform/animation/spawn_sequence/5
 execute if score @s kello.entity.timer matches 1 run function kello:entity/decal/component/falling_platform/animation/spawn_sequence/end
+return 1

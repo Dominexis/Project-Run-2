@@ -1,1 +1,2 @@
 function animated_java:checkpoint_flag/zzzzzzzz/animations/flap/tick_animation
+return 1

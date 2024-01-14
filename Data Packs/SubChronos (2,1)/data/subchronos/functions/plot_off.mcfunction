@@ -10,3 +10,4 @@ execute at @e[type=minecraft:block_display,tag=subchronos_platform_pit3,tag=pr.t
 
 
 kill @e[tag=subchronos_bee,tag=pr.target]
+return 1

@@ -8,3 +8,4 @@ scoreboard players operation #z pr.value *= #64 pr.value
 
 scoreboard players operation @s pr.plot = #x pr.value
 scoreboard players operation @s pr.plot += #z pr.value
+return 1

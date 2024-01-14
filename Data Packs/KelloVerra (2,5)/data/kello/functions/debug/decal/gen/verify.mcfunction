@@ -19,7 +19,7 @@ scoreboard players operation #previous_tick kello.value = #time pr.value
 
 # Start iteration
 
-execute as @e[type=marker,tag=kello.decal.temp_spawn_point,tag=!kello.decal.unregistered] if score @s kello.level.id = #generator.local_level_id kello.value run function kello:debug/decal/gen/execute
+execute as @e[type=minecraft:marker,tag=kello.decal.temp_spawn_point,tag=!kello.decal.unregistered] if score @s kello.level.id = #generator.local_level_id kello.value run function kello:debug/decal/gen/execute
 
 
 
@@ -40,3 +40,5 @@ scoreboard players operation #generator.cycle_offset kello.value += #2 kello.val
 scoreboard players operation #generator.skip_iteration_cycle kello.value += #generator.cycle_offset kello.value
 
 
+
+return 1

@@ -155,7 +155,7 @@ execute unless entity @e[type=#inquognito:enemies,tag=inquognito.enemy.45] run s
 execute if score enemy.45 inquognito.temp matches 80.. at @e[type=minecraft:marker,tag=inquognito.enemy_spawn.45] summon minecraft:warden run function inquognito:logic/enemies/45
 
 ## Frostbite
-execute as @e[type=#inquognito:enemies,scores={inquognito.frostbite_timer=1..},tag=pr.target] at @s run function inquognito:logic/abilities/gun/augments/frostbite/tick
+execute as @e[type=#inquognito:enemies,tag=pr.target,scores={inquognito.frostbite_timer=1..}] at @s run function inquognito:logic/abilities/gun/augments/frostbite/tick
 
 # Killboxes
 execute positioned ~-18 ~18 ~12 run kill @e[dx=6,dy=0,dz=5,predicate=inquognito:killbox_vulnerable]
@@ -184,3 +184,5 @@ execute as @e[tag=inquognitokeyk] if score @s inquognito.keypad matches 1.. run 
 
 # Misc
 execute positioned ~-10 ~88 ~-19 run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s
+
+return 1

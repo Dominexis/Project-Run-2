@@ -2,3 +2,4 @@
 data merge entity @s {Tags:["kello.entity.type.meteorspawn","kello.decal.temp_spawn_point"]}
 
 scoreboard players operation @s kello.entity.timer = #countdown kello.value
+return 1

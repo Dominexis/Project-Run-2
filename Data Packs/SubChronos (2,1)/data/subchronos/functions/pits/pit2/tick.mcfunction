@@ -12,6 +12,7 @@ execute if score pit2 subchronos_hive matches 200.. run scoreboard players reset
 execute if score pit2_moving subchronos_hive matches 1 run playsound minecraft:block.honey_block.slide master @a[tag=pr.target] ~ ~ ~ 5 1
 
 #Death if falls
-execute as @a[scores={subchronos_y=54},tag=subchronos_pit2,tag=pr.target] at @a[scores={subchronos_y=54},tag=subchronos_pit2,tag=pr.target] if block ~ ~-1 ~ yellow_concrete run damage @s 1000 minecraft:sting
-execute if score pit2_rised subchronos_hive matches 1 as @a[scores={subchronos_y=54..56},tag=subchronos_pit2,tag=pr.target] at @a[scores={subchronos_y=54..56},tag=subchronos_pit2,tag=pr.target] if block ~ ~-0.4 ~ gray_terracotta run damage @s 1000 minecraft:sting
-execute if score pit2_rised subchronos_hive matches 1 as @a[scores={subchronos_y=54..56},tag=subchronos_pit2,tag=pr.target] at @a[scores={subchronos_y=54..56},tag=subchronos_pit2,tag=pr.target] if block ~ ~-0.4 ~ orange_concrete run damage @s 1000 minecraft:sting
+execute as @a[tag=subchronos_pit2,tag=pr.target,scores={subchronos_y=54}] at @a[tag=subchronos_pit2,tag=pr.target,scores={subchronos_y=54}] if block ~ ~-1 ~ minecraft:yellow_concrete run damage @s 1000 minecraft:sting
+execute if score pit2_rised subchronos_hive matches 1 as @a[tag=subchronos_pit2,tag=pr.target,scores={subchronos_y=54..56}] at @a[tag=subchronos_pit2,tag=pr.target,scores={subchronos_y=54..56}] if block ~ ~-0.4 ~ minecraft:gray_terracotta run damage @s 1000 minecraft:sting
+execute if score pit2_rised subchronos_hive matches 1 as @a[tag=subchronos_pit2,tag=pr.target,scores={subchronos_y=54..56}] at @a[tag=subchronos_pit2,tag=pr.target,scores={subchronos_y=54..56}] if block ~ ~-0.4 ~ minecraft:orange_concrete run damage @s 1000 minecraft:sting
+return 1

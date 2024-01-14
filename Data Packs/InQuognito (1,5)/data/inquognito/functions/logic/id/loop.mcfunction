@@ -5,3 +5,5 @@ execute as @a[tag=pr.target,tag=inquognito.id_set] if score @s inquognito.id = t
 
 execute unless score invalid inquognito.id matches 1 run function inquognito:logic/id/set
 execute if score invalid inquognito.id matches 1 run function inquognito:logic/id/loop
+
+return 1

@@ -1,25 +1,25 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:tnt",
-					"functions": [
-						{
-							"function": "minecraft:reference",
-							"name": "inquognito:sonic_charge"
-						}
-					]
-				}
-			]
-		}
-	],
-	"functions": [
-		{
-			"function": "minecraft:set_nbt",
-			"tag": "{inquognito.sonic_charge.1:1}"
-		}
-	]
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tnt",
+                    "functions": [
+                        {
+                            "function": "minecraft:reference",
+                            "name": "inquognito:sonic_charge"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_nbt",
+            "tag": "{inquognito.sonic_charge.1:1}"
+        }
+    ]
 }

@@ -4,3 +4,4 @@ function tuntan:tostart
 
 scoreboard players add @s[tag=!tuntan.finished9] tuntan_tunnels 1
 tag @s add tuntan.finished9
+return 1

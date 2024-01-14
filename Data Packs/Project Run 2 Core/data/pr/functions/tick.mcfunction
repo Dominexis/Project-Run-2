@@ -47,23 +47,23 @@ scoreboard players add @a pr.ticks 1
 execute as @a unless score @s pr.ticks = #global pr.ticks at @s run function pr:player/login
 
 execute as @a unless score @s pr.night_vision = @s pr.night_vision run scoreboard players set @s pr.night_vision 1
-effect give @a[team=pr.spectator,scores={pr.night_vision=1}] night_vision infinite 0 true
+effect give @a[scores={pr.night_vision=1},team=pr.spectator] minecraft:night_vision infinite 0 true
 
-clear @a[tag=!pr.self_checkpoint,scores={pr.load_checkpoint_item=1..}] warped_fungus_on_a_stick{load_checkpoint:1b}
-clear @a[tag=!pr.self_checkpoint,scores={pr.save_checkpoint_item=1..}] warped_fungus_on_a_stick{save_checkpoint:1b}
+clear @a[tag=!pr.self_checkpoint,scores={pr.load_checkpoint_item=1..}] minecraft:warped_fungus_on_a_stick{load_checkpoint:1b}
+clear @a[tag=!pr.self_checkpoint,scores={pr.save_checkpoint_item=1..}] minecraft:warped_fungus_on_a_stick{save_checkpoint:1b}
 scoreboard players set @a[tag=!pr.self_checkpoint,scores={pr.load_checkpoint_item=1..}] pr.load_checkpoint_item 0
 scoreboard players set @a[tag=!pr.self_checkpoint,scores={pr.save_checkpoint_item=1..}] pr.save_checkpoint_item 0
 
 execute as @a[tag=pr.self_checkpoint] at @s run function pr:player/checkpoint/self
 scoreboard players set @a pr.click 0
 
-execute as @e[type=player,scores={pr.death=1..}] at @s run function pr:player/respawn
+execute as @e[type=minecraft:player,scores={pr.death=1..}] at @s run function pr:player/respawn
 
-execute as @a[team=pr.player,tag=pr.plate_checkpoint,tag=!pr.plate_checkpoint_cooldown] at @s if block ~ ~ ~ light_weighted_pressure_plate run function pr:player/checkpoint/plate
-execute as @a[tag=pr.plate_checkpoint_cooldown] at @s unless block ~ ~ ~ light_weighted_pressure_plate run tag @s remove pr.plate_checkpoint_cooldown
+execute as @a[tag=pr.plate_checkpoint,tag=!pr.plate_checkpoint_cooldown,team=pr.player] at @s if block ~ ~ ~ minecraft:light_weighted_pressure_plate run function pr:player/checkpoint/plate
+execute as @a[tag=pr.plate_checkpoint_cooldown] at @s unless block ~ ~ ~ minecraft:light_weighted_pressure_plate run tag @s remove pr.plate_checkpoint_cooldown
 
-execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s lobby 1
-execute as @a[team=pr.spectator,scores={checkpoint=1..}] run scoreboard players set @s checkpoint 0
+execute as @a[scores={checkpoint=1..},team=pr.spectator] run scoreboard players set @s lobby 1
+execute as @a[scores={checkpoint=1..},team=pr.spectator] run scoreboard players set @s checkpoint 0
 
 execute as @a[team=] run trigger spectate
 
@@ -85,7 +85,7 @@ execute as @a[team=pr.player] unless score @s pr.plot = #spawn_plot pr.value run
 scoreboard players operation #previous_time pr.value = #time pr.value
 scoreboard players set @a[team=pr.spectator] pr.time 0
 
-effect give @a saturation infinite 0 true
+effect give @a minecraft:saturation infinite 0 true
 
 execute as @a[scores={pr.stop_launch_sound=1..}] run stopsound @a[distance=..32] block minecraft:entity.generic.explode
 scoreboard players remove @a[scores={pr.stop_launch_sound=1..}] pr.stop_launch_sound 1
@@ -119,7 +119,7 @@ execute positioned 0 0 0 as @e[type=#pr:family/hangable,distance=..1000,tag=!pr.
 
 # Kill checkpoint items
 
-execute as @e[type=item,tag=!pr.item_processed] run function pr:generic/process_item
+execute as @e[type=minecraft:item,tag=!pr.item_processed] run function pr:generic/process_item
 
 
 
@@ -129,7 +129,7 @@ execute as @e[type=item,tag=!pr.item_processed] run function pr:generic/process_
 
 # Octopus pit
 
-execute positioned -16 -8 16 run tp @a[team=pr.player,dx=15,dy=2,dz=47] -19 1 40 -90 0
+execute positioned -16 -8 16 run tp @a[dx=15,dy=2,dz=47,team=pr.player] -19 1 40 -90 0
 
 
 
@@ -164,7 +164,8 @@ function pr:time/get
 
 scoreboard players operation #mspt pr.value = #time pr.value
 scoreboard players operation #mspt pr.value -= #time_start pr.value
-execute if score #mspt pr.value matches ..20 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"pr.value"},"color":"green"}]
-execute if score #mspt pr.value matches 21..40 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"pr.value"},"color":"yellow"}]
-execute if score #mspt pr.value matches 41..50 run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"pr.value"},"color":"gold"}]
-execute if score #mspt pr.value matches 51.. run title @a[tag=mspt] actionbar [{"text":"MSPT: "},{"score":{"name":"#mspt","objective":"pr.value"},"color":"red"}]
+execute if score #mspt pr.value matches ..20 run title @a[tag=mspt] actionbar [{"text":"MSPT: ","type":"text"},{"score":{"name":"#mspt","objective":"pr.value"},"color":"green","type":"score"}]
+execute if score #mspt pr.value matches 21..40 run title @a[tag=mspt] actionbar [{"text":"MSPT: ","type":"text"},{"score":{"name":"#mspt","objective":"pr.value"},"color":"yellow","type":"score"}]
+execute if score #mspt pr.value matches 41..50 run title @a[tag=mspt] actionbar [{"text":"MSPT: ","type":"text"},{"score":{"name":"#mspt","objective":"pr.value"},"color":"gold","type":"score"}]
+execute if score #mspt pr.value matches 51.. run title @a[tag=mspt] actionbar [{"text":"MSPT: ","type":"text"},{"score":{"name":"#mspt","objective":"pr.value"},"color":"red","type":"score"}]
+return 1

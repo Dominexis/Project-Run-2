@@ -6,3 +6,4 @@ execute if score @s aj.anim_time matches 12 run function animated_java:gate/zzzz
 execute if score @s aj.anim_time matches 13 run function animated_java:gate/zzzzzzzz/animations/chp_1_open/tree/leaf_13
 execute if score @s aj.anim_time matches 14 run function animated_java:gate/zzzzzzzz/animations/chp_1_open/tree/leaf_14
 execute if score @s aj.anim_time matches 15 run function animated_java:gate/zzzzzzzz/animations/chp_1_open/tree/leaf_15
+return 1

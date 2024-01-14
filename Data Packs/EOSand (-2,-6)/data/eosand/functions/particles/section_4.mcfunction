@@ -14,3 +14,4 @@ execute positioned ~-26 ~50 ~-26 run function eosand:particles/junctions/yellow
 execute positioned ~26 ~50 ~-26 run function eosand:particles/junctions/green
 execute positioned ~26 ~50 ~26 run function eosand:particles/junctions/pink
 execute positioned ~ ~50 ~26 run function eosand:particles/junctions/red
+return 1

@@ -2,7 +2,8 @@
 
 tag @s add pr.plate_checkpoint
 
-tellraw @s [{"text":"Reach the castle! On your fragile steed!","bold": true,"color": "gold"}]
+tellraw @s [{"text":"Reach the castle! On your fragile steed!","bold":true,"color":"gold","type":"text"}]
 
-execute at @s run summon horse ~ ~ ~ {Silent:1b,Tame:1b,Variant:1029,Tags:["pr.target"],Attributes:[{Name:generic.max_health,Base:1},{Name:generic.movement_speed,Base:0.5},{Name:horse.jump_strength,Base:0.75}],SaddleItem:{id:"minecraft:saddle",Count:1b}}
-execute at @s run ride @s mount @e[type=horse,tag=pr.target,sort=nearest,limit=1]
+execute at @s run summon minecraft:horse ~ ~ ~ {Silent:1b,Tame:1b,Variant:1029,Tags:["pr.target"],Attributes:[{Name:"minecraft:generic.max_health",Base:1.0d},{Name:"minecraft:generic.movement_speed",Base:0.5d},{Name:"minecraft:horse.jump_strength",Base:0.75d}],SaddleItem:{id:"minecraft:saddle",Count:1b}}
+execute at @s run ride @s mount @e[type=minecraft:horse,tag=pr.target,sort=nearest,limit=1]
+return 1

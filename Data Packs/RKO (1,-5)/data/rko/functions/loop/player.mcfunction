@@ -7,3 +7,4 @@ function rko:mech/checkpoint/main
 
 # Misc #
 function rko:misc/main
+return 1

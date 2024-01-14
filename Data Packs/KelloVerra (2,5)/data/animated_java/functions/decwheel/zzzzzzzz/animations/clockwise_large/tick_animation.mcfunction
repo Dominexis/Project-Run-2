@@ -2,3 +2,4 @@ scoreboard players add @s aj.decwheel.animation.clockwise_large.local_anim_time 
 scoreboard players operation @s aj.anim_time = @s aj.decwheel.animation.clockwise_large.local_anim_time
 function animated_java:decwheel/zzzzzzzz/animations/clockwise_large/apply_frame_as_root
 execute if score @s aj.decwheel.animation.clockwise_large.local_anim_time matches 80.. run function animated_java:decwheel/zzzzzzzz/animations/clockwise_large/end
+return 1

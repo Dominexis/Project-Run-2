@@ -20,3 +20,4 @@ scoreboard players operation @s pr.temp_checkpoint_sub_z %= #1000 pr.value
 scoreboard players operation @s pr.temp_checkpoint_x /= #1000 pr.value
 scoreboard players operation @s pr.temp_checkpoint_y /= #1000 pr.value
 scoreboard players operation @s pr.temp_checkpoint_z /= #1000 pr.value
+return 1

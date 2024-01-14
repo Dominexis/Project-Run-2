@@ -27,3 +27,5 @@ scoreboard players set @s[scores={dtplayers.air_time=1..},nbt={OnGround:1b}] dtp
 #universal slowness effect
 effect give @s minecraft:slowness 1 1 true
 
+
+return 1

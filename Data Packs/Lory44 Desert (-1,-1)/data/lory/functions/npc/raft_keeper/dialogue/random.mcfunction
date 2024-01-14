@@ -19,3 +19,5 @@ execute if score #output pr.value matches 27 run function lory:npc/raft_keeper/d
 execute if score #output pr.value matches 28 run function lory:npc/raft_keeper/dialogue/random/28
 execute if score #output pr.value matches 29 run function lory:npc/raft_keeper/dialogue/random/29
 execute if score #output pr.value matches 30 run function lory:npc/raft_keeper/dialogue/random/30
+
+return 1

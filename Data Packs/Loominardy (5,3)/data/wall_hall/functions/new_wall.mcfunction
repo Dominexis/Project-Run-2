@@ -1,5 +1,5 @@
 scoreboard players set new_wall loom.wall_hall 0
-summon armor_stand ~37 ~-3 ~9 {Invulnerable:1b,Invisible:0b,Tags:["NewWall","WallHall","pr.target"]}
+summon minecraft:armor_stand ~37 ~-3 ~9 {Invulnerable:1b,Invisible:0b,Tags:["NewWall","WallHall","pr.target"]}
 
 scoreboard players set #input pr.value 22
 function pr:generic/rng/lcg
@@ -28,21 +28,22 @@ execute if score #output pr.value matches 21 run clone ~-18 ~-63 ~-39 ~-18 ~-59 
 
 scoreboard players set #input pr.value 16
 function pr:generic/rng/lcg
-execute if score #output pr.value matches 00 run fill ~38 ~ ~9 ~38 ~4 ~23 white_concrete replace stone
-execute if score #output pr.value matches 01 run fill ~38 ~ ~9 ~38 ~4 ~23 light_gray_concrete replace stone
-execute if score #output pr.value matches 02 run fill ~38 ~ ~9 ~38 ~4 ~23 gray_concrete replace stone
-execute if score #output pr.value matches 03 run fill ~38 ~ ~9 ~38 ~4 ~23 black_concrete replace stone
-execute if score #output pr.value matches 04 run fill ~38 ~ ~9 ~38 ~4 ~23 brown_concrete replace stone
-execute if score #output pr.value matches 05 run fill ~38 ~ ~9 ~38 ~4 ~23 red_concrete replace stone
-execute if score #output pr.value matches 06 run fill ~38 ~ ~9 ~38 ~4 ~23 orange_concrete replace stone
-execute if score #output pr.value matches 07 run fill ~38 ~ ~9 ~38 ~4 ~23 yellow_concrete replace stone
-execute if score #output pr.value matches 08 run fill ~38 ~ ~9 ~38 ~4 ~23 lime_concrete replace stone
-execute if score #output pr.value matches 09 run fill ~38 ~ ~9 ~38 ~4 ~23 green_concrete replace stone
-execute if score #output pr.value matches 10 run fill ~38 ~ ~9 ~38 ~4 ~23 cyan_concrete replace stone
-execute if score #output pr.value matches 11 run fill ~38 ~ ~9 ~38 ~4 ~23 light_blue_concrete replace stone
-execute if score #output pr.value matches 12 run fill ~38 ~ ~9 ~38 ~4 ~23 blue_concrete replace stone
-execute if score #output pr.value matches 13 run fill ~38 ~ ~9 ~38 ~4 ~23 purple_concrete replace stone
-execute if score #output pr.value matches 14 run fill ~38 ~ ~9 ~38 ~4 ~23 magenta_concrete replace stone
-execute if score #output pr.value matches 15 run fill ~38 ~ ~9 ~38 ~4 ~23 pink_concrete replace stone
+execute if score #output pr.value matches 00 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:white_concrete replace minecraft:stone
+execute if score #output pr.value matches 01 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:light_gray_concrete replace minecraft:stone
+execute if score #output pr.value matches 02 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:gray_concrete replace minecraft:stone
+execute if score #output pr.value matches 03 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:black_concrete replace minecraft:stone
+execute if score #output pr.value matches 04 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:brown_concrete replace minecraft:stone
+execute if score #output pr.value matches 05 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:red_concrete replace minecraft:stone
+execute if score #output pr.value matches 06 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:orange_concrete replace minecraft:stone
+execute if score #output pr.value matches 07 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:yellow_concrete replace minecraft:stone
+execute if score #output pr.value matches 08 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:lime_concrete replace minecraft:stone
+execute if score #output pr.value matches 09 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:green_concrete replace minecraft:stone
+execute if score #output pr.value matches 10 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:cyan_concrete replace minecraft:stone
+execute if score #output pr.value matches 11 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:light_blue_concrete replace minecraft:stone
+execute if score #output pr.value matches 12 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:blue_concrete replace minecraft:stone
+execute if score #output pr.value matches 13 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:purple_concrete replace minecraft:stone
+execute if score #output pr.value matches 14 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:magenta_concrete replace minecraft:stone
+execute if score #output pr.value matches 15 run fill ~38 ~ ~9 ~38 ~4 ~23 minecraft:pink_concrete replace minecraft:stone
 
 # execute as @e[type=armor_stand,tag=NewWall,tag=WallHall,tag=pr.target] store result score @s loom.wall_hall_prev_x_pos run data get entity @s Pos[0]
+return 1

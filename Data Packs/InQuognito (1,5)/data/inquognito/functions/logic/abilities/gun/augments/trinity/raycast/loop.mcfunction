@@ -11,3 +11,5 @@ scoreboard players operation lengthInner inquognito.temp = #output pr.value
 execute facing ^1 ^-1 ^ run function inquognito:logic/abilities/gun/augments/trinity/raycast/loop_inner
 scoreboard players operation lengthInner inquognito.temp = #output pr.value
 execute facing ^-1 ^-1 ^ run function inquognito:logic/abilities/gun/augments/trinity/raycast/loop_inner
+
+return 1

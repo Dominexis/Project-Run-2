@@ -3,3 +3,4 @@ execute store result score Random funkytoc.moon.var run data get entity @e[type=
 scoreboard players set #101 funkytoc.moon.var 101
 scoreboard players operation Random funkytoc.moon.var %= #101 funkytoc.moon.var
 kill @e[type=minecraft:marker,tag=funkytoc.moon.rng]
+return 1

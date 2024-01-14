@@ -10,4 +10,5 @@ scoreboard players set @s kello.aim.scale 100
 
 # Assign tags
 
-data merge entity @s {brightness:{block:15,sky:15},billboard:"center",view_range:15,text:'{"text":"\\ue001","font":"kello:aim_idle","obfuscated":"true"}',background:16768734,Tags:["kello.entity","kello.entity.type.aimdicator","kello.entity.part.indicator","kello.entity.type.small","kello.entity.ticking"]}
+data merge entity @s {brightness:{block:15,sky:15},billboard:"center",view_range:15,text:'{"text":"\\ue001","font":"kello:aim_idle","obfuscated":true,"type":"text"}',background:16768734,Tags:["kello.entity","kello.entity.type.aimdicator","kello.entity.part.indicator","kello.entity.type.small","kello.entity.ticking"]}
+return 1

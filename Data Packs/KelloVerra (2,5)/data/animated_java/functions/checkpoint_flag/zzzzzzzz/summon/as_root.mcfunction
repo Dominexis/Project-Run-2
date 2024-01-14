@@ -25,3 +25,4 @@ tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i
 scoreboard players reset #animation aj.i
+return 1

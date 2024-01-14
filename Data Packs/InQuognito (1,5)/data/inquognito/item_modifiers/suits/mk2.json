@@ -1,20 +1,21 @@
 [
-	{
-		"function": "minecraft:set_name",
-		"entity": "this",
-		"name": {
-			"text": "Propulsion Suit",
-			"color": "aqua",
-			"bold": false,
-			"italic": false
-		}
-	},
-	{
-		"function": "minecraft:reference",
-		"name": "inquognito:suits/common"
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{Trim:{material:\"minecraft:gold\",pattern:\"minecraft:rib\"}}"
-	}
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": {
+            "text": "Propulsion Suit",
+            "color": "aqua",
+            "bold": false,
+            "italic": false,
+            "type": "text"
+        }
+    },
+    {
+        "function": "minecraft:reference",
+        "name": "inquognito:suits/common"
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{Trim:{material:\"minecraft:gold\",pattern:\"minecraft:rib\"}}"
+    }
 ]

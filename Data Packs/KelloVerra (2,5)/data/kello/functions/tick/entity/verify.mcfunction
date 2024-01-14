@@ -16,7 +16,7 @@ execute if score #time pr.value > #entity_tick_time_limit kello.value run functi
 
 # AJ
 
-execute if score #skip_current_boolean kello.value matches 0 if entity @s[type=item_display,tag=aj.rig_root] positioned as @s run function kello:tick/aj/root
+execute if score #skip_current_boolean kello.value matches 0 if entity @s[type=minecraft:item_display,tag=aj.rig_root] positioned as @s run function kello:tick/aj/root
 
 
 
@@ -28,3 +28,4 @@ execute if score #skip_current_boolean kello.value matches 0 if entity @s[type=i
 # function still reference the entity therefore it will continue running its own 
 # function as if it were alive which is horrifying enough imo and here we exclude it.
 execute if score #skip_current_boolean kello.value matches 0 if score #skip_current_boolean kello.value matches 0 unless entity @s[tag=aj.terminate] run function kello:tick/entity/main
+return 1

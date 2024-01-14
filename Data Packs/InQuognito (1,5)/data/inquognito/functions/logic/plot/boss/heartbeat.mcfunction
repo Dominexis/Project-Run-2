@@ -9,3 +9,5 @@ execute if score @s inquognito.boss.health matches 3 run scoreboard players oper
 
 execute if score #modulo inquognito.temp matches 0 at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~ ~ 0.75 1.0
 execute if score #modulo inquognito.temp matches 0 run scoreboard players reset @s inquognito.boss.heartbeat
+
+return 1

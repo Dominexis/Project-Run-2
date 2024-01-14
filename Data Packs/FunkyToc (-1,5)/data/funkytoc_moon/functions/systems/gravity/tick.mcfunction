@@ -7,3 +7,5 @@ execute if entity @s[scores={funkytoc.moon.jump=1..}] run function funkytoc_moon
 
 # particles
 execute if entity @s[scores={funkytoc.moon.particle.dust=1..}] run function funkytoc_moon:systems/gravity/dust_display
+
+return 1

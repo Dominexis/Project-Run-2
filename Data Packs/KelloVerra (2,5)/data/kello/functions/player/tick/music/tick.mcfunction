@@ -8,3 +8,4 @@ execute if score @s kello.player.music_progress matches 0 run function kello:pla
 execute if score @s kello.player.music_progress matches 1 run function kello:player/tick/music/melody/tick
 execute if score @s kello.player.music_progress matches 2 run function kello:player/tick/music/final/tick
 execute if score @s kello.player.music_progress matches 3 run function kello:player/tick/music/outro/tick
+return 1

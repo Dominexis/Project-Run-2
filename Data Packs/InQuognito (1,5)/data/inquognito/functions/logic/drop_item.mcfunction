@@ -4,3 +4,5 @@ data modify entity @e[type=minecraft:item,sort=nearest,limit=1] Owner set from e
 data modify entity @e[type=minecraft:item,sort=nearest,limit=1] PickupDelay set value 0s
 
 scoreboard players reset @s inquognito.drop_item
+
+return 1

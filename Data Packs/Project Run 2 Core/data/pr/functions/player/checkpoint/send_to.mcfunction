@@ -19,7 +19,7 @@ execute if score #boolean pr.value matches 1 run function pr:player/checkpoint/l
 
 ride @s dismount
 execute if entity @s[tag=!pr.temp_checkpoint] positioned 0 0 0 run function pr:player/checkpoint/x
-execute if entity @s[tag= pr.temp_checkpoint] run function pr:player/checkpoint/temp/main
+execute if entity @s[tag=pr.temp_checkpoint] run function pr:player/checkpoint/temp/main
 
 
 
@@ -29,7 +29,7 @@ execute if entity @s[tag= pr.temp_checkpoint] run function pr:player/checkpoint/
 
 # Reset checkpoint trigger
 
-execute if score @s checkpoint matches 1.. run tellraw @s {"text":"You've been sent to the previous checkpoint","color":"gold"}
+execute if score @s checkpoint matches 1.. run tellraw @s {"text":"You've been sent to the previous checkpoint","color":"gold","type":"text"}
 scoreboard players set @s checkpoint 0
 
 execute at @s align xyz run spawnpoint @s ~0.5 ~ ~0.5 ~
@@ -53,3 +53,4 @@ scoreboard players set @s pr.checkpoint_cooldown 20
 # Run recall function
 
 execute at @s[team=pr.player] run function pr:player/checkpoint/recall
+return 1

@@ -11,3 +11,5 @@ execute positioned ~1 ~57 ~-26 if entity @s[dx=4,dy=0,dz=4] run function inquogn
 execute if score @s inquognito.clearance.office.1 matches 1.. run function inquognito:logic/plot/targets/office/1/tick
 execute if score @s inquognito.clearance.office.2 matches 1.. run function inquognito:logic/plot/targets/office/2/tick
 execute if score @s inquognito.clearance.office.3 matches 1.. run function inquognito:logic/plot/targets/office/3/tick
+
+return 1

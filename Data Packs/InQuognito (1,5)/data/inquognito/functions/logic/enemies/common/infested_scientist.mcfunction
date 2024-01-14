@@ -6,3 +6,5 @@ data merge entity @s {VillagerData:{type:"swamp",profession:"butcher",level:99}}
 
 function inquognito:logic/enemies/common/modifiers/undead
 function inquognito:logic/enemies/common/modifiers/infestation
+
+return 1

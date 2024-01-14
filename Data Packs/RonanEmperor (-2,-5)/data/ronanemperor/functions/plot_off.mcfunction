@@ -2,4 +2,5 @@
 # It will run in your plot on the center block at Y=0
 # Use this to reset your plot and get rid of any laggy entities
 
-kill @e[type=minecraft:marker, tag=ronanemperor.checkpoint]
+kill @e[type=minecraft:marker,tag=ronanemperor.checkpoint]
+return 1

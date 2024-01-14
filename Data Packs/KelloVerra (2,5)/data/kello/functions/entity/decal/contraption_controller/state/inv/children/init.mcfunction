@@ -12,3 +12,4 @@ execute if score @s kello.decal.state matches 3 run function kello:entity/decal/
 
 tag @s add kello.decal.controller_children
 tag @s add kello.decal.controller.contraption
+return 1

@@ -15,7 +15,7 @@ tag @s remove kello.player.target
 
 # Change state
 
-clear @s diamond_horse_armor{small_cog:1b}
+clear @s minecraft:diamond_horse_armor{small_cog:1b}
 scoreboard players set #crosshair_state kello.value 0
 
 
@@ -23,3 +23,4 @@ scoreboard players set #crosshair_state kello.value 0
 # SFX
 
 function kello:generic/sfx/cog_throw/small
+return 1

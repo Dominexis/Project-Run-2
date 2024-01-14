@@ -12,3 +12,4 @@ function kello:tick/level/assign
 # Tag
 
 tag @s add kello.player.has_triggered.entrance
+return 1

@@ -22,3 +22,4 @@ tag @s[tag=kello.entity.type.cogwheel_shaft] add kello.empty
 
 tag @s add kello.decal.controller_children
 tag @s add kello.decal.controller.contraption
+return 1

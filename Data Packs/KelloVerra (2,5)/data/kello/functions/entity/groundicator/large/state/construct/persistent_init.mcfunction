@@ -3,3 +3,4 @@ data merge entity @s {brightness:{block:8,sky:10}}
 tag @s remove kello.entity.ticking
 tag @s add kello.exclude
 scoreboard players set @s kello.entity.lifetime 1
+return 1

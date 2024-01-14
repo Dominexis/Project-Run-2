@@ -3,3 +3,4 @@ scoreboard players operation @s kello.level.id = #generator.local_level_id kello
 scoreboard players operation @s kello.level.var = #local kello.level.var
 
 scoreboard players operation @s kello.entity.variant = #variant kello.value
+return 1

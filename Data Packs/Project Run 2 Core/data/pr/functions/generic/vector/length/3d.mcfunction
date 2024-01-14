@@ -16,3 +16,4 @@ scoreboard players operation #input pr.value += #math_vector_z pr.value
 function pr:generic/sqrt
 
 scoreboard players operation #output pr.value *= #scale_factor pr.value
+return 1

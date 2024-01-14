@@ -30,7 +30,7 @@ function animated_java:cogwheel/apply_variant/air
 tag @s add kello.fixed.target
 # Teleport
 
-execute as @e[type=item_display,tag=pr.target,tag=!pr.ignore,tag=kello.entity.type.cogwheel_shaft,tag=kello.entity.type.small,tag=kello.empty,distance=..2,sort=nearest,limit=1] at @s run function kello:entity/thrown/small_cog/state/fixed/as
+execute as @e[type=minecraft:item_display,distance=..2,tag=pr.target,tag=!pr.ignore,tag=kello.entity.type.cogwheel_shaft,tag=kello.entity.type.small,tag=kello.empty,sort=nearest,limit=1] at @s run function kello:entity/thrown/small_cog/state/fixed/as
 
 
 
@@ -51,3 +51,4 @@ tag @s remove kello.fixed.target
 
 function kello:generic/sfx/cog_attach/ambient
 execute as @a[tag=pr.target,tag=kello.entity.player.target] at @s run function kello:generic/sfx/cog_attach/player/small
+return 1

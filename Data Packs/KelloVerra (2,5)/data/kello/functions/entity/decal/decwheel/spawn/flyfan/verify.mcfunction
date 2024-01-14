@@ -8,4 +8,5 @@ execute if score #variant kello.value matches 5 run function animated_java:animw
 # execute if score #variant kello.value matches 7 run function animated_java:animwheel/summon/gear_7_static
 # execute if score #variant kello.value matches 8 run function animated_java:animwheel/summon/gear_8_static
 
-execute if score #variant kello.value matches 0..8 as @e[type=item_display,tag=kello.entity.target.new] run function kello:entity/decal/decwheel/spawn/flyfan/init
+execute if score #variant kello.value matches 0..8 as @e[type=minecraft:item_display,tag=kello.entity.target.new] run function kello:entity/decal/decwheel/spawn/flyfan/init
+return 1

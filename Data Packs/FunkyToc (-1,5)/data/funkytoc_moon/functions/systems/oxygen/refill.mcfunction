@@ -10,3 +10,5 @@ function funkytoc_moon:systems/oxygen/display_actionbar
 
 # out loop
 execute unless block ~ ~-1 ~ minecraft:light_blue_concrete run tag @s remove funkytoc.moon.o2.refill
+
+return 1

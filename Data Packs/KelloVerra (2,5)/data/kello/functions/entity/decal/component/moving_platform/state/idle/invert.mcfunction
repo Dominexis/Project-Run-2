@@ -3,3 +3,4 @@ execute rotated as @s on passengers if entity @s[tag=kello.entity.part.platform_
 
 execute rotated as @s if entity @s[tag=kello.entity.type.z] on passengers if entity @s[tag=kello.entity.part.platform_pointer] on origin on passengers positioned as @s if entity @s[tag=kello.entity.part.indicator] run tp @s ~ ~ ~ ~ ~
 execute rotated as @s if entity @s[tag=kello.entity.type.x] on passengers if entity @s[tag=kello.entity.part.platform_pointer] on origin on passengers positioned as @s if entity @s[tag=kello.entity.part.indicator] run tp @s ~ ~ ~ ~-90 ~
+return 1

@@ -244,3 +244,4 @@ scoreboard players set #halt_contraption_controller_checkpoint kello.value 1
 # Storages
 
 data merge storage kello:data {tag:{decal_generator_instance:{id:0,list:[]}}}
+return 1

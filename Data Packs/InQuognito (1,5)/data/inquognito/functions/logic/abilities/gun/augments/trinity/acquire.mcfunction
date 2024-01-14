@@ -6,7 +6,9 @@ function inquognito:logic/abilities/gun/update
 
 function inquognito:logic/pickups/acquire
 
-tellraw @s [{"text":"Augment acquired: ","color":"yellow"},{"text":"Trinity","color":"yellow"}]
-tellraw @s [{"text":"Incoming Transmission (Augment: Trinity) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 10"}}]
+tellraw @s [{"text":"Augment acquired: ","color":"yellow","type":"text"},{"text":"Trinity","color":"yellow","type":"text"}]
+tellraw @s [{"text":"Incoming Transmission (Augment: Trinity) - [ Click to Accept ]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger inquognito.transmission set 10"},"type":"text"}]
 
 playsound minecraft:entity.player.levelup master @s
+
+return 1

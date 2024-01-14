@@ -1,6 +1,6 @@
- {
-       "pack": {
-           "description": "BlackCB plot",
-           "pack_format": 15
-       }
-   }
+{
+    "pack": {
+        "description": "BlackCB plot",
+        "pack_format": 26
+    }
+}

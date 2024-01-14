@@ -22,3 +22,4 @@ execute if score flame_state rko.time matches 28 positioned ~-6 ~112.5 ~-4 as @e
 execute if score flame_state rko.time matches 30 run function rko:anim/flame/retract/last
 
 execute if score flame_state rko.time matches 30.. run scoreboard players set flame_state rko.time 0
+return 1

@@ -14,3 +14,4 @@ execute positioned ~-23 ~69 ~-1 run function rko:particle/fan/launcher
 execute positioned ~-4 ~108.5 ~10 run function rko:particle/fan/pipe
 
 execute if score fan rko.particle matches 16.. run scoreboard players set fan rko.particle 0
+return 1

@@ -26,9 +26,9 @@ tag @s add kello.decal.point
 
 execute at @s on passengers run tp @s ~ ~ ~ ~ ~
 
-execute at @s run fill ^1 ^ ^ ^-1 ^7 ^ minecraft:petrified_oak_slab[type=top] replace air
-execute at @s run fill ^1 ^ ^ ^-1 ^7 ^ minecraft:petrified_oak_slab[type=top] replace structure_void
-execute at @s run fill ^1 ^ ^ ^-1 ^7 ^ minecraft:petrified_oak_slab[type=top] replace spruce_wood
+execute at @s run fill ^1 ^ ^ ^-1 ^7 ^ minecraft:petrified_oak_slab[type=top] replace minecraft:air
+execute at @s run fill ^1 ^ ^ ^-1 ^7 ^ minecraft:petrified_oak_slab[type=top] replace minecraft:structure_void
+execute at @s run fill ^1 ^ ^ ^-1 ^7 ^ minecraft:petrified_oak_slab[type=top] replace minecraft:spruce_wood
 
 scoreboard players add #global kello.entity.id 1
 scoreboard players operation @s kello.entity.id = #global kello.entity.id
@@ -42,3 +42,4 @@ execute if score #ref_rotation kello.value matches 1 run scoreboard players oper
 function animated_java:gate/animations/idle/play
 
 function kello:entity/decal/component/initialize/main
+return 1

@@ -26,3 +26,4 @@ execute at @s run teleport @a[tag=pr.player.target] ~ ~ ~ ~ ~
 # Terminate
 
 kill @s
+return 1

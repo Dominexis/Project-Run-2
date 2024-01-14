@@ -8,3 +8,4 @@ scoreboard players operation rValue zombie_rngV *= C_2718281 zombie_rngC
 scoreboard players operation rValue zombie_rngV /= C_1000 zombie_rngC
 scoreboard players operation rValue zombie_rngV *= C_314159 zombie_rngC
 scoreboard players operation rValue zombie_rngV *= C_2718281 zombie_rngC
+return 1

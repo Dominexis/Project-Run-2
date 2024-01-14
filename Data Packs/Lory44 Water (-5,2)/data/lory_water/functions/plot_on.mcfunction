@@ -7,3 +7,4 @@
 # summon marker ~26 ~-2 ~7 {Tags:["lory.spawnpoint"]}
 # summon marker ~36 ~1 ~ {Tags:["lory.spawnpoint"]}
 # summon marker ~32 ~-1 ~20 {Tags:["lory.spawnpoint"]}
+return 1

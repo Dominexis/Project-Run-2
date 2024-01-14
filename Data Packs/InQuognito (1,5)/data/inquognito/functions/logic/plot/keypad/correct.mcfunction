@@ -6,3 +6,5 @@ execute unless entity @s[tag=inquognitokeyused] run scoreboard players add goal 
 tag @s add inquognitokeyused
 
 execute if score goal inquognito.keypad matches 1 run tag @a[tag=pr.target,sort=nearest,limit=1] add inquognito.clearance.nova
+
+return 1

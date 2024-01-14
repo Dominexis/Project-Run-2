@@ -3,3 +3,4 @@
 # Use this to reset your plot and get rid of any laggy entities
 
 function rko:structure/entity/kill_all
+return 1

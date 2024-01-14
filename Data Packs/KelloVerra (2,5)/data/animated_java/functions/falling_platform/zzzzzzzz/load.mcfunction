@@ -16,3 +16,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.falling_platform.export_version aj.i 55555416
 scoreboard players reset * aj.falling_platform.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.falling_platform.root] run function animated_java:falling_platform/zzzzzzzz/on_load
+return 1

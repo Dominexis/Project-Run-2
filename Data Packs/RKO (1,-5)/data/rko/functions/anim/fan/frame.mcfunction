@@ -7,3 +7,4 @@ execute if score fan_state rko.time matches 3 run clone ~-7 ~134 ~4 ~3 ~144 ~4 ~
 execute if score fan_state rko.time matches 4 run clone ~7 ~134 ~4 ~17 ~144 ~4 ~-5 ~17 ~-39
 
 execute if score fan_state rko.time matches 4.. run scoreboard players set fan_state rko.time 0
+return 1

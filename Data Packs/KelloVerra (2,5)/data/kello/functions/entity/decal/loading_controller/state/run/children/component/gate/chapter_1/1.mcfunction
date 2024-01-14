@@ -15,3 +15,4 @@ playsound minecraft:block.dripstone_block.place master @a[distance=..8] ~ ~ ~ 0.
 playsound minecraft:block.dripstone_block.place master @a[distance=..8] ~ ~ ~ 0.7 0.87
 playsound minecraft:item.shield.block master @a[distance=..8] ~ ~ ~ 0.07 0.55
 playsound minecraft:item.crossbow.shoot master @a[distance=..8] ~ ~ ~ 0.06 0.5
+return 1

@@ -13,3 +13,4 @@ execute if entity @s[tag=kello.entity.type.forward_platform] run function kello:
 
 execute if entity @s[tag=kello.entity.type.attach_burst] run function kello:entity/decal/attach_burst/main
 execute if entity @s[tag=kello.entity.type.meteor_pillar] run function kello:entity/decal/meteor_pillar/main
+return 1

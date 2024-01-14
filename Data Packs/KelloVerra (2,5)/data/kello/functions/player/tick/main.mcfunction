@@ -23,7 +23,7 @@ execute if score #player_check_thread_20_sec kello.value matches ..0 run functio
 
 # Teleport interaction infront of players
 
-execute as @e[type=interaction,tag=kello.entity.interactable] if score @s kello.player.id = #local kello.player.id positioned ~ ~-5.125 ~ run tp @s ^ ^ ^1.125
+execute as @e[type=minecraft:interaction,tag=kello.entity.interactable] if score @s kello.player.id = #local kello.player.id positioned ~ ~-5.125 ~ run tp @s ^ ^ ^1.125
 
 
 
@@ -73,8 +73,8 @@ function kello:player/tick/music/main
 
 # Barrier Riser
 
-execute if entity @s[tag=!kello.riding] if block ~ ~ ~ barrier align y run tp @s ~ ~1 ~
-execute if entity @s[tag=!kello.riding] if block ~ ~1 ~ barrier align y run tp @s ~ ~1 ~
+execute if entity @s[tag=!kello.riding] if block ~ ~ ~ minecraft:barrier align y run tp @s ~ ~1 ~
+execute if entity @s[tag=!kello.riding] if block ~ ~1 ~ minecraft:barrier align y run tp @s ~ ~1 ~
 
 
 
@@ -122,3 +122,4 @@ execute if entity @s[gamemode=adventure] run function kello:player/tick/void/mai
 # Cog offhand switching detection
 
 execute if entity @s[tag=!kello.debug.no_interaction] run function kello:player/cog/flip/verify
+return 1

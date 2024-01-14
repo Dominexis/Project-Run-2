@@ -5,3 +5,4 @@ execute if score @s aj.anim_time matches 24..31 run function animated_java:cogwh
 execute if score @s aj.anim_time matches 32..39 run function animated_java:cogwheel/zzzzzzzz/animations/large/tree/branch_32_39
 execute if score @s aj.anim_time matches 40 run function animated_java:cogwheel/zzzzzzzz/animations/large/tree/leaf_40
 execute if score @s aj.anim_time matches 41 run function animated_java:cogwheel/zzzzzzzz/animations/large/tree/leaf_41
+return 1

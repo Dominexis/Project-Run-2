@@ -19,3 +19,5 @@ scoreboard players reset @a[tag=pr.target,tag=frostcobra.teleported] frostcobra.
 execute as @a[tag=pr.target,tag=frostcobra.teleported] run function pr:player/checkpoint/mark
 scoreboard players reset @a[tag=pr.target,tag=frostcobra.teleported] frostcobra.tp
 tag @a[tag=pr.target] remove frostcobra.teleported
+
+return 1

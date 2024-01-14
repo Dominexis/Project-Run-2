@@ -42,8 +42,8 @@ execute at @s positioned ^ ^ ^0.01 run function pr:player/launch/spawn/creeper
 
 # Assign creeper IDs
 
-execute at @s positioned ~ ~8192 ~ run scoreboard players operation @e[type=creeper,distance=..4,tag=pr.entity.target.launch] pr.id = #local pr.id
-execute at @s positioned ~ ~8192 ~ run tag @e[type=creeper,distance=..4,tag=pr.launch] remove pr.entity.target.launch
+execute at @s positioned ~ ~8192 ~ run scoreboard players operation @e[type=minecraft:creeper,distance=..4,tag=pr.entity.target.launch] pr.id = #local pr.id
+execute at @s positioned ~ ~8192 ~ run tag @e[type=minecraft:creeper,distance=..4,tag=pr.launch] remove pr.entity.target.launch
 
 
 
@@ -54,3 +54,4 @@ execute at @s positioned ~ ~8192 ~ run tag @e[type=creeper,distance=..4,tag=pr.l
 # Terminate
 
 kill @s
+return 1

@@ -2,13 +2,12 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "stepping_on": {
-        "block": {
-          "blocks": [
-            "minecraft:diamond_block"
-          ]
+        "stepping_on": {
+            "block": {
+                "blocks": [
+                    "minecraft:diamond_block"
+                ]
+            }
         }
-      }
     }
-  }
-  
+}

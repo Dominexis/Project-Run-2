@@ -6,3 +6,4 @@ scoreboard objectives remove technodono_plot.music_timer
 scoreboard objectives remove technodono_plot.jump_counter
 scoreboard objectives remove technodono_plot.jump_cooldown
 scoreboard objectives remove technodono_plot.r-click_counter
+return 1

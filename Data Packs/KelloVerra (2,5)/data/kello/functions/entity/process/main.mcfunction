@@ -27,4 +27,5 @@ function kello:entity/verify/main
 
 # Untarget
 
-execute if score @s kello.entity.owner matches 1 run tag @a[tag=pr.target,tag=kello.entity.player.target                       ] remove kello.entity.player.target
+execute if score @s kello.entity.owner matches 1 run tag @a[tag=pr.target,tag=kello.entity.player.target] remove kello.entity.player.target
+return 1

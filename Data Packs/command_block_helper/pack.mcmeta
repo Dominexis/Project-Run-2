@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 26,
+        "description": "Adds functions which are useful for emulating old command block behavior."
+    }
+}

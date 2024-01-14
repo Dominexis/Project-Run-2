@@ -20,3 +20,4 @@ scoreboard players operation @s kello.entity.id = #global kello.entity.id
 
 scoreboard players set #boolean kello.value 1
 scoreboard players set #boolean1 kello.value 1
+return 1

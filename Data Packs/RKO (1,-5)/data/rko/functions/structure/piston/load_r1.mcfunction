@@ -48,3 +48,4 @@ fill ~28 ~12 ~22 ~28 ~12 ~24 minecraft:stone_brick_stairs[half=bottom,facing=wes
 setblock ~27 ~16 ~21 minecraft:stone_bricks
 setblock ~28 ~16 ~21 minecraft:stone_bricks
 setblock ~27 ~16 ~23 minecraft:stone_bricks
+return 1

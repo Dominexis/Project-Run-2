@@ -6,3 +6,4 @@ scoreboard players reset @s subchronos_y
 tag @s remove subchronos_pit1
 tag @s remove subchronos_pit2
 tag @s remove subchronos_pit3
+return 1

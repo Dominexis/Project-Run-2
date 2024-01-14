@@ -4,3 +4,4 @@
 
 kill @e[tag=fabulousfox_platform,tag=pr.target]
 kill @e[tag=fabulousfox_rod,tag=pr.target]
+return 1

@@ -7,3 +7,5 @@ playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 0.4 0.9
 particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0 10 normal @s
 tag @s add technodono_plot.double_jump
 #schedule function technodono_plot_-2_-3:movement/jump_cancel 2t append
+
+return 1

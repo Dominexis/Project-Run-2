@@ -16,3 +16,4 @@ scoreboard players operation #output_vector_x pr.value *= #1000 pr.value
 scoreboard players operation #output_vector_y pr.value *= #1000 pr.value
 scoreboard players operation #output_vector_x pr.value /= #output pr.value
 scoreboard players operation #output_vector_y pr.value /= #output pr.value
+return 1

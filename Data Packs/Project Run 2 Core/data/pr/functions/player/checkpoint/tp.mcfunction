@@ -6,3 +6,4 @@ execute if score @s pr.checkpoint_side matches 01 run tp @s ~-43 ~1 ~000 -90 0
 execute if score @s pr.checkpoint_side matches 02 run tp @s ~000 ~1 ~043 180 0
 execute if score @s pr.checkpoint_side matches 03 run tp @s ~000 ~1 ~-43 0 0
 tp @s @s
+return 1

@@ -10,3 +10,4 @@ execute if entity @s[tag=kello.entity.type.optional] run function kello:entity/d
 # Animation
 
 #function kello:entity/decal/contraption_controller/animation/main
+return 1

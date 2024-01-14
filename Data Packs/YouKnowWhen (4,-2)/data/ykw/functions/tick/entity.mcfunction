@@ -10,3 +10,4 @@ execute if score @s ykw.countup matches 0.. run scoreboard players add @s ykw.co
 
 # Color
 execute if score plot ykw.cooldown matches 0 run team join ykw.color @s
+return 1

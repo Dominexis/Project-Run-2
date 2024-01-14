@@ -7,3 +7,4 @@ item replace entity @s hotbar.4 with minecraft:dark_oak_boat 1
 item replace entity @s hotbar.5 with minecraft:mangrove_boat 1
 item replace entity @s hotbar.6 with minecraft:cherry_boat 1
 item replace entity @s hotbar.7 with minecraft:bamboo_raft 1
+return 1

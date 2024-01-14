@@ -16,4 +16,5 @@ execute if entity @s[tag=aj.mellorainn_cluster.root] run function animated_java:
 
 execute if entity @s[tag=aj.comet_flake.root] run function animated_java:comet_flake/remove/this
 
-execute if entity @s[tag=kello.decal.spawn_point] run kill
+execute if entity @s[tag=kello.decal.spawn_point] run kill @s
+return 1

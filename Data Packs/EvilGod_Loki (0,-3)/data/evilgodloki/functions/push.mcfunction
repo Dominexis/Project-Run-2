@@ -17,3 +17,5 @@ scoreboard players set @e[tag=lokipush,tag=pr.target] lokicode 3
 
 tag @e[tag=pr.target] remove lokipush
 
+
+return 1

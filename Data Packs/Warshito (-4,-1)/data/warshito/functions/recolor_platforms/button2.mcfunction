@@ -5,3 +5,4 @@ execute if block ~-6 ~19 ~-11 minecraft:red_concrete run scoreboard players add 
 
 execute if score b2 warshito.ticks matches 40.. run fill ~-6 ~19 ~-11 ~-8 ~19 ~-13 minecraft:light_blue_concrete
 execute if score b2 warshito.ticks matches 40.. run scoreboard players set b2 warshito.ticks 0
+return 1

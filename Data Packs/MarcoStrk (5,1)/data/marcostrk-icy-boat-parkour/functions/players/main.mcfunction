@@ -11,6 +11,8 @@ execute if score @s marcostrk-icy-boat-parkour-inside_boat matches 1 run clear @
 
 # Gametime for Checkpoint failsave
 scoreboard players set @s marcostrk-icy-boat-parkour-20 20
-scoreboard players operation @s marcostrk-icy-boat-parkour-tmp = @s marcostrk-icy-boat-parkour-game-time 
+scoreboard players operation @s marcostrk-icy-boat-parkour-tmp = @s marcostrk-icy-boat-parkour-game-time
 scoreboard players operation @s marcostrk-icy-boat-parkour-tmp %= @s marcostrk-icy-boat-parkour-20
 execute if score @s marcostrk-icy-boat-parkour-tmp matches 0 run scoreboard players set @s marcostrk-icy-boat-parkour-died 0
+
+return 1

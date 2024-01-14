@@ -11,3 +11,5 @@ attribute @s minecraft:generic.movement_speed modifier remove 26-06-1990-0-001
 
 effect clear @s minecraft:slow_falling
 effect clear @s minecraft:levitation
+
+return 1

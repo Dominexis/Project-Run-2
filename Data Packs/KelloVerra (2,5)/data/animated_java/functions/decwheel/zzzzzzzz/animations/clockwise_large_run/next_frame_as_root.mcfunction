@@ -1,1 +1,2 @@
 function animated_java:decwheel/zzzzzzzz/animations/clockwise_large_run/tick_animation
+return 1

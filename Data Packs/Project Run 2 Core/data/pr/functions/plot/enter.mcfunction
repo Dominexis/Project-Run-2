@@ -486,3 +486,4 @@ execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 run scor
 
 
 execute unless score @s plot matches 1.. run tag @s add pr.target
+return 1

@@ -1,5 +1,6 @@
-kill @e[type=marker,tag=pr.target]
-kill @e[type=arrow,tag=pr.target]
-kill @e[type=villager,tag=pr.target]
-kill @e[type=minecart,tag=pr.target]
-kill @e[type=item,tag=pr.target]
+kill @e[type=minecraft:marker,tag=pr.target]
+kill @e[type=minecraft:arrow,tag=pr.target]
+kill @e[type=minecraft:villager,tag=pr.target]
+kill @e[type=minecraft:minecart,tag=pr.target]
+kill @e[type=minecraft:item,tag=pr.target]
+return 1

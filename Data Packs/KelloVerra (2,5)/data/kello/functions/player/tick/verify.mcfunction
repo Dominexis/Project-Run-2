@@ -24,3 +24,4 @@ execute at @s run function kello:player/tick/main
 # Instantiate interaction
 
 #execute if entity @s[tag=!kello.debug.no_interaction] run function kello:player/tick/check_interaction
+return 1

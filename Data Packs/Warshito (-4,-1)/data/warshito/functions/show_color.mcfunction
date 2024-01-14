@@ -3,14 +3,16 @@
 function pr:player/time/compute
 
 # Green
-title @s[tag=Green] actionbar [{"text":"You are ","color":"gold"},{"text":"GREEN      ","color":"green","bold":true},{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+function help:d5606f45c69ade8710c8c580b4064ef4b00ddf8c5cf670a8a0732a8c39c97dfc
 item replace entity @s[tag=Green] armor.head with minecraft:lime_concrete
 
 # Blue
-title @s[tag=Blue] actionbar [{"text":"You are ","color":"gold"},{"text":"BLUE      ","color":"blue","bold":true},{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+function help:3e059990ffd103c3970cdc240aead4419a964cb784f1fc2f6f5084351e2e8b7e
 item replace entity @s[tag=Blue] armor.head with minecraft:blue_concrete
 
 # Red
-title @s[tag=Red] actionbar [{"text":"You are ","color":"gold"},{"text":"RED      ","color":"red","bold":true},{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+function help:3fcc760e7096a8e1fcf50803f112c08c76e28e02703e01763e2080bfa6de976e
 item replace entity @s[tag=Red] armor.head with minecraft:red_concrete
 
+
+return 1

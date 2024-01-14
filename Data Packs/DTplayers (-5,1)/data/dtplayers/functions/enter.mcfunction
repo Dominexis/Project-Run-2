@@ -14,5 +14,6 @@ execute store result score @s dtplayers.rocket.id run data get entity @s UUID[0]
 tag @s add pr.hide_timer
 
 #entry dialogue
-summon creeper ~ ~-5 ~ {ExplosionRadius:0b,Fuse:0,ignited:1b}
-tellraw @s [{"text":"What was that explosion?! The ","color":"gold"},{"text":"oxygen","color":"aqua"},{"text":" system is ","color":"gold"},{"text":"offline","color":"red","bold":true},{"text":". Quick, get to the escape pod!!!","color":"gold"}]
+summon minecraft:creeper ~ ~-5 ~ {ExplosionRadius:0b,Fuse:0s,ignited:1b}
+tellraw @s [{"text":"What was that explosion?! The ","color":"gold","type":"text"},{"text":"oxygen","color":"aqua","type":"text"},{"text":" system is ","color":"gold","type":"text"},{"text":"offline","color":"red","bold":true,"type":"text"},{"text":". Quick, get to the escape pod!!!","color":"gold","type":"text"}]
+return 1

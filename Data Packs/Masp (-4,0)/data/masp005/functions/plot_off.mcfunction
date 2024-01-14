@@ -7,3 +7,4 @@ kill @e[tag=masp005.elytra]
 kill @e[tag=masp005.cover]
 kill @e[tag=masp005.storage]
 kill @e[tag=masp005.testtube]
+return 1

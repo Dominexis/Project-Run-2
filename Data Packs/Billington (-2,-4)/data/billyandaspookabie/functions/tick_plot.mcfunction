@@ -39,11 +39,12 @@ execute if score $doors mad_scientist matches 40 run scoreboard players set $doo
 
 # execute if entity @a[tag=pr.target] run function billyandaspookabie:real/cleanme
 
-execute as @a[tag=pr.target] at @s if block ~ ~ ~ blackstone_stairs run kill @s
-execute as @a[tag=pr.target] at @s if block ~ ~ ~ bamboo_stairs run kill @s
+execute as @a[tag=pr.target] at @s if block ~ ~ ~ minecraft:blackstone_stairs run kill @s
+execute as @a[tag=pr.target] at @s if block ~ ~ ~ minecraft:bamboo_stairs run kill @s
 
 execute positioned ~-8 ~26 ~21 run kill @a[dx=14,dy=3,dz=19,tag=pr.target]
 execute positioned ~2 ~25 ~-24 run kill @a[dx=33,dy=4,dz=15,tag=pr.target]
 execute positioned ~-2 ~12 ~11 run kill @a[dx=11,dy=1,dz=12,tag=pr.target]
 execute positioned ~-30 ~-3 ~10 run kill @a[dx=8,dy=2,dz=5,tag=pr.target]
 execute positioned ~-36 ~22 ~-25 run kill @a[dx=26,dy=5,dz=34,tag=pr.target]
+return 1

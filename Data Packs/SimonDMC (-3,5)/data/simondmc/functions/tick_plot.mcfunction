@@ -14,4 +14,5 @@ function simondmc:end/tick
 # Global ticking function
 function simondmc:global/tick
 
-execute as @e[type=item,tag=!sdmc.display-item,tag=!sdmc.processed] run function simondmc:process_item
+execute as @e[type=minecraft:item,tag=!sdmc.display-item,tag=!sdmc.processed] run function simondmc:process_item
+return 1

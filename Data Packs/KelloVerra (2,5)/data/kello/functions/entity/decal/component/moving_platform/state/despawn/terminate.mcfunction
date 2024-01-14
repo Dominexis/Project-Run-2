@@ -4,3 +4,4 @@ execute if score @s kello.decal.state matches 1 on passengers if entity @s[tag=k
 execute positioned as @s on passengers if entity @s[tag=kello.entity.type.moving_platform,tag=kello.entity.part.pointer] on origin run function kello:entity/decal/component/moving_platform/state/despawn/as
 execute on passengers run kill @s
 kill @s
+return 1

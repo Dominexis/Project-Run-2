@@ -4,3 +4,5 @@ effect clear @s minecraft:slow_falling
 
 # fx
 playsound minecraft:block.beacon.deactivate player @s ~ ~ ~ 1 2 1
+
+return 1

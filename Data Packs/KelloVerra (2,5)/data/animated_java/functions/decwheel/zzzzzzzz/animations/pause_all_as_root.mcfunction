@@ -14,3 +14,4 @@ function animated_java:decwheel/zzzzzzzz/animations/clockwise_small_trn/pause_as
 function animated_java:decwheel/zzzzzzzz/animations/counter_clockwise_small_trn/pause_as_root
 function animated_java:decwheel/zzzzzzzz/animations/clockwise_large_trn/pause_as_root
 function animated_java:decwheel/zzzzzzzz/animations/counter_clockwise_large_trn/pause_as_root
+return 1

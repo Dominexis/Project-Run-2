@@ -21,3 +21,4 @@ execute if score #sfx_progress kello.value matches 0 run playsound kello:large_c
 execute if score #sfx_progress kello.value matches 1 run playsound kello:large_cogwheel_attach_parkour1 master @s ~ ~ ~ 0.375 1 0.375
 execute if score #sfx_progress kello.value matches 2.. if score #sfx_alt kello.value matches 0 run playsound kello:large_cogwheel_attach_parkour2 master @s ~ ~ ~ 0.35 1 0.35
 execute if score #sfx_progress kello.value matches 2.. if score #sfx_alt kello.value matches 1 run playsound kello:large_cogwheel_attach_parkour2_alt master @s ~ ~ ~ 0.35 1 0.35
+return 1

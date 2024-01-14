@@ -14,3 +14,5 @@ execute positioned ~-0.15 ~-0.15 ~-0.15 as @e[type=#inquognito:enemies,dx=0] pos
 
 scoreboard players add @s inquognito.temp 1
 kill @s[scores={inquognito.temp=100..}]
+
+return 1

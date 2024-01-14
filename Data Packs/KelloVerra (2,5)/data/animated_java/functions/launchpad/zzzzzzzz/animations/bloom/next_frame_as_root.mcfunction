@@ -1,1 +1,2 @@
 function animated_java:launchpad/zzzzzzzz/animations/bloom/tick_animation
+return 1

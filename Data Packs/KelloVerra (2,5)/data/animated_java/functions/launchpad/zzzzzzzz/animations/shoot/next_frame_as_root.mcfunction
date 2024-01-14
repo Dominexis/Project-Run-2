@@ -1,1 +1,2 @@
 function animated_java:launchpad/zzzzzzzz/animations/shoot/tick_animation
+return 1

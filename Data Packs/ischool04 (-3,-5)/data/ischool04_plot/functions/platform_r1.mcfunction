@@ -24,3 +24,4 @@ execute at @e[tag=CCP,tag=pr.target] run setblock ~-2 ~-2 ~1 minecraft:mangrove_
 execute at @e[tag=CCP,tag=pr.target] run setblock ~1 ~-2 ~1 minecraft:mangrove_slab[type=top]
 execute at @e[tag=CCP,tag=pr.target] run playsound minecraft:entity.experience_bottle.throw master @a[tag=pr.target] ~ ~ ~ 1 1 1
 scoreboard players reset isch.ChPl isch.ChPl
+return 1

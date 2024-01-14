@@ -3,3 +3,4 @@ scoreboard players operation @s kello.player.music_timestamp += #trans_pre kello
 
 function kello:player/tick/music/transition/play
 tag @s add kello.music_restart
+return 1

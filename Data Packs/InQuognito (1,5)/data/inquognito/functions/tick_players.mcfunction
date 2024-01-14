@@ -59,3 +59,5 @@ attribute @s[scores={inquognito.health=20}] minecraft:generic.max_health base se
 attribute @s[scores={inquognito.suit=1}] minecraft:generic.armor base set 4.0
 attribute @s[scores={inquognito.suit=2}] minecraft:generic.armor base set 8.0
 attribute @s[scores={inquognito.suit=3}] minecraft:generic.armor base set 12.0
+
+return 1

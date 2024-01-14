@@ -21,3 +21,4 @@ execute if score box_state rko.time matches 4 positioned ~14 ~51 ~-1 run functio
 execute if score box_state rko.time matches 6 positioned ~14 ~51 ~-2 run function rko:anim/box/spawn/6
 
 execute if score box_state rko.time matches 6.. run scoreboard players set box_state rko.time 0
+return 1

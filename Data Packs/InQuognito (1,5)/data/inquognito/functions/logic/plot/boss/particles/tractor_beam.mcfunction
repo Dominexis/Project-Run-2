@@ -171,3 +171,5 @@ execute positioned ~ ~42.50 ~ run particle minecraft:dust_color_transition 0.0 0
 execute positioned ~ ~42.75 ~ run particle minecraft:dust_color_transition 0.0 0.5 0.75 1.0 0.0 1.0 1.0 ~ ~ ~ 0.1 0.1 0.1 0.0 1 normal @s
 
 execute positioned ~-1.5 ~ ~-1.5 if entity @s[dx=2,dy=43,dz=2] run effect give @s minecraft:levitation 1 1 true
+
+return 1

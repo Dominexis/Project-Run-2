@@ -6,3 +6,4 @@ function animated_java:decwheel/animations/pause_all
 # Tag
 
 tag @s[tag=kello.entity.type.cogwheel_shaft] remove kello.empty
+return 1

@@ -19,3 +19,5 @@ data modify storage inquognito:data Motion set from entity @s Pos
 execute summon minecraft:arrow run function inquognito:logic/enemies/common/janitor/acid_spray/init/projectile
 
 kill @s
+
+return 1

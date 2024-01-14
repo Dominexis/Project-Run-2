@@ -35,3 +35,4 @@ execute if predicate pr:random/5 run scoreboard players add #output pr.value 2
 execute if predicate pr:random/5 run scoreboard players add #output pr.value 1
 
 execute if score #input pr.value matches 1.. run scoreboard players operation #output pr.value %= #input pr.value
+return 1

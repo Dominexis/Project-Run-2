@@ -26,3 +26,4 @@ execute if entity @s[tag=kello.entity.type.gear_8,tag=!kello.state.slow] run fun
 
 tag @s remove kello.state.fast
 tag @s remove kello.state.slow
+return 1

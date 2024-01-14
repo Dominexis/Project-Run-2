@@ -1,20 +1,30 @@
 {
     "pack": {
-        "pack_format": 15,
+        "pack_format": 26,
         "description": [
             "",
-            { "text": "Project Run 2", "color": "gold", "bold": true },
+            {
+                "text": "Project Run 2",
+                "color": "gold",
+                "bold": true
+            },
             "\n",
-            { "text": "By ", "color": "gray" },
-            { "text": "Minigame Makers", "color": "blue" }
+            {
+                "text": "By ",
+                "color": "gray"
+            },
+            {
+                "text": "Minigame Makers",
+                "color": "blue"
+            }
         ]
     },
-	"filter": {
-	    "block": [
-	        {
-	            "namespace": "minecraft",
-	            "path": "advancements/.*"
-	        }
-	    ]
-	}
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancements/.*"
+            }
+        ]
+    }
 }

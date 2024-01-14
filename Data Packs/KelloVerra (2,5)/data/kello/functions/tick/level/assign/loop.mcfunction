@@ -22,3 +22,4 @@ data remove storage kello:data tag.loaded_level.loop[0]
 # Continue?
 
 execute if data storage kello:data tag.loaded_level.loop[0] run function kello:tick/level/assign/loop
+return 1

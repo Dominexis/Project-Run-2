@@ -9,8 +9,9 @@ scoreboard players set @s kello.player.checkpoint.id -1
 
 
 function kello:player/setup/main
-clear @s diamond_horse_armor
+clear @s minecraft:diamond_horse_armor
 
 
 # TODO : DEBUG
 # gamemode creative
+return 1

@@ -10,3 +10,5 @@ execute if score #tmp.o2.modulo funkytoc.moon.var matches 0 unless block ~ ~-1 ~
 # o2
 execute if score @s funkytoc.moon.oxygen matches ..0 run function funkytoc_moon:systems/oxygen/suffoc
 execute if entity @s[tag=funkytoc.moon.o2.refill] run function funkytoc_moon:systems/oxygen/refill
+
+return 1

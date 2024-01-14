@@ -16,10 +16,11 @@
 scoreboard players set #boolean kello.value 0
 
 execute unless score @s kello.entity.tick_dist matches 1..128 run scoreboard players set #boolean kello.value 1
-execute if score @s kello.entity.tick_dist matches 001..008 if entity @a[tag=pr.target,distance=..008,gamemode=!spectator] run scoreboard players set #boolean kello.value 1
-execute if score @s kello.entity.tick_dist matches 009..016 if entity @a[tag=pr.target,distance=..016,gamemode=!spectator] run scoreboard players set #boolean kello.value 1
-execute if score @s kello.entity.tick_dist matches 017..032 if entity @a[tag=pr.target,distance=..032,gamemode=!spectator] run scoreboard players set #boolean kello.value 1
-execute if score @s kello.entity.tick_dist matches 031..064 if entity @a[tag=pr.target,distance=..064,gamemode=!spectator] run scoreboard players set #boolean kello.value 1
-execute if score @s kello.entity.tick_dist matches 065..128 if entity @a[tag=pr.target,distance=..128,gamemode=!spectator] run scoreboard players set #boolean kello.value 1
+execute if score @s kello.entity.tick_dist matches 001..008 if entity @a[gamemode=!spectator,distance=..008,tag=pr.target] run scoreboard players set #boolean kello.value 1
+execute if score @s kello.entity.tick_dist matches 009..016 if entity @a[gamemode=!spectator,distance=..016,tag=pr.target] run scoreboard players set #boolean kello.value 1
+execute if score @s kello.entity.tick_dist matches 017..032 if entity @a[gamemode=!spectator,distance=..032,tag=pr.target] run scoreboard players set #boolean kello.value 1
+execute if score @s kello.entity.tick_dist matches 031..064 if entity @a[gamemode=!spectator,distance=..064,tag=pr.target] run scoreboard players set #boolean kello.value 1
+execute if score @s kello.entity.tick_dist matches 065..128 if entity @a[gamemode=!spectator,distance=..128,tag=pr.target] run scoreboard players set #boolean kello.value 1
 
 execute if score #boolean kello.value matches 1 run function kello:entity/process/main
+return 1

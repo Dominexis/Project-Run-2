@@ -39,3 +39,5 @@ execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge.1] run par
 execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge.2] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[advancements={inquognito:plot/pickups/sonic_charge/2=false},nbt=!{Inventory:[{tag:{inquognito.sonic_charge:1}}]}]
 execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge.3] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[advancements={inquognito:plot/pickups/sonic_charge/3=false},nbt=!{Inventory:[{tag:{inquognito.sonic_charge:1}}]}]
 execute at @e[type=minecraft:item_display,tag=inquognito.sonic_charge.4] run particle minecraft:portal ~ ~ ~ 0.0 0.0 0.0 0.5 1 normal @s[advancements={inquognito:plot/pickups/sonic_charge/4=false},nbt=!{Inventory:[{tag:{inquognito.sonic_charge:1}}]}]
+
+return 1

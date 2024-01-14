@@ -14,4 +14,5 @@ scoreboard players operation @s[tag=!pr.pause_timer] pr.time += #time_increment 
 
 function pr:player/time/compute
 
-title @s[tag=!pr.hide_timer,tag=!mspt] actionbar [{"nbt":"tag.minutes","storage":"pr:data","interpret":true},{"text":":","color":"gray"},{"nbt":"tag.seconds","storage":"pr:data","interpret":true},{"text":".","color":"gray"},{"nbt":"tag.milliseconds","storage":"pr:data","interpret":true}]
+function help:25cc169e32b96cf069fe8ef97079a2bccba9ee0ad7ab73a386dd8a072e440e82
+return 1

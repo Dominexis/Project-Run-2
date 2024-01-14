@@ -24,3 +24,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.gate.export_version aj.i -1062101129
 scoreboard players reset * aj.gate.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.gate.root] run function animated_java:gate/zzzzzzzz/on_load
+return 1

@@ -12,3 +12,5 @@ execute if score @s bnsd.sound.jungle matches 1401.. run playsound bansed:ambien
 execute if score @s bnsd.sound.jungle matches 1401.. run scoreboard players set @s bnsd.sound.jungle -100
 
  
+
+return 1

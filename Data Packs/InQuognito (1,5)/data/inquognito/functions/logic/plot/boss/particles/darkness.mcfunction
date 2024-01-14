@@ -149,3 +149,5 @@ execute positioned ~-25 ~-21 ~-7 rotated 180.0 0.0 positioned ^0.4 ^ ^ run funct
 execute positioned ~-24 ~-21 ~-7 rotated 180.0 0.0 positioned ^-0.4 ^ ^ run function inquognito:logic/plot/boss/particles/darkness/stair
 
 scoreboard players reset sculk_particles inquognito.temp
+
+return 1

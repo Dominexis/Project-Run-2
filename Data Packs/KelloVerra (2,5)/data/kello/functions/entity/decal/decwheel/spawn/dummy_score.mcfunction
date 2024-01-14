@@ -31,3 +31,4 @@ execute if score #variant kello.value matches 1 run tag @s add kello.entity.type
 # scoreboard players set #iteration kello.value 32
 # function kello:entity/decal/decwheel/spawn/small_decshaft_iter
 # execute if block ^ ^ ^-1 #kello:generic/iter_passable positioned ^ ^ ^-1 run function kello:entity/decal/decwheel/spawn/chunk/small_shaft/main
+return 1

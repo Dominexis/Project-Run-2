@@ -13,3 +13,4 @@ scoreboard players set $aj.loop_mode.hold aj.i 2
 scoreboard players set aj.melloflora_display.export_version aj.i -567208857
 scoreboard players reset * aj.melloflora_display.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.melloflora_display.root] run function animated_java:melloflora_display/zzzzzzzz/on_load
+return 1

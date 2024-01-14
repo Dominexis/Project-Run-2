@@ -1,7 +1,7 @@
 # Deplace hitbox
 
-execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ structure_void replace minecraft:petrified_oak_slab[type=top]
-execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ structure_void replace minecraft:spruce_wood
+execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ minecraft:structure_void replace minecraft:petrified_oak_slab[type=top]
+execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ minecraft:structure_void replace minecraft:spruce_wood
 
 
 
@@ -30,3 +30,4 @@ execute rotated as @s run fill ^1 ^ ^ ^-1 ^7 ^ structure_void replace minecraft:
 # data merge entity @s {start_interpolation:0,interpolation_duration:8}
 
 # execute if entity @s[tag=kello.entity.platform] summon marker run function kello:entity/decal/contraption_controller/state/run/children/component/chain_platform/2_loc
+return 1

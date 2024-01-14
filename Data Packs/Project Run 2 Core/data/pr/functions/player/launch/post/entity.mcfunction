@@ -28,3 +28,4 @@ scoreboard players operation @s pr.mot_z = @s pr.prev_mot_z
 # Remove tag
 
 tag @s remove pr.entity.launch.invulnerable
+return 1

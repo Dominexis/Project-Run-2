@@ -4,8 +4,8 @@
 # 1
 execute positioned ~-40 ~49 ~ as @a[distance=0..4,tag=pr.target] run function pr:player/checkpoint/mark
 # 2
-execute positioned ~31 ~57 ~-17 as @a[distance=0..4,tag=pr.target] at @s if block ~ ~-1 ~ honeycomb_block run function pr:player/checkpoint/mark
-execute positioned ~31 ~57 ~-17 as @a[distance=0..4,tag=pr.target] at @s if block ~ ~-1 ~ brown_terracotta run function pr:player/checkpoint/mark
+execute positioned ~31 ~57 ~-17 as @a[distance=0..4,tag=pr.target] at @s if block ~ ~-1 ~ minecraft:honeycomb_block run function pr:player/checkpoint/mark
+execute positioned ~31 ~57 ~-17 as @a[distance=0..4,tag=pr.target] at @s if block ~ ~-1 ~ minecraft:brown_terracotta run function pr:player/checkpoint/mark
 # 3
 execute positioned ~-3 ~3 ~10 as @a[distance=0..4,tag=pr.target] run function pr:player/checkpoint/mark
 # 4
@@ -41,4 +41,5 @@ execute if entity @a[tag=subchronos_pit3,tag=pr.target] run function subchronos:
 execute as @a[tag=pr.target] store result score @s subchronos_y run data get entity @s Pos[1]
 
 #Death if fall
-execute as @a[tag=pr.target,scores={subchronos_y=29..44}] at @s unless block ~ ~-0.1 ~ air run kill @s
+execute as @a[tag=pr.target,scores={subchronos_y=29..44}] at @s unless block ~ ~-0.1 ~ minecraft:air run kill @s
+return 1

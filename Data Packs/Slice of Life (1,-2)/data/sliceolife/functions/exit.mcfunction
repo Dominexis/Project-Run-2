@@ -3,3 +3,4 @@
 clear @s
 scoreboard players set @s sliceoflife.cp 0
 effect clear @s
+return 1
