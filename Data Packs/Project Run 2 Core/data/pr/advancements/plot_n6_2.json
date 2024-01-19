@@ -7,7 +7,7 @@
         "title": [
             [
                 {
-                    "text": "\u00a7kO\u00a7r Corruptide City \u00a7kO\u00a7r",
+                    "text": "§kO§r Corruptide City §kO§r",
                     "color": "white"
                 },
                 {
@@ -18,7 +18,7 @@
         "frame": "challenge",
         "description": [
             {
-                "text": "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n\u00a76CoreOptd",
+                "text": "It takes one smart parkourist to take down The Manager of this corrupt city!\n\n§6CoreOptd",
                 "color": "green"
             }
         ],

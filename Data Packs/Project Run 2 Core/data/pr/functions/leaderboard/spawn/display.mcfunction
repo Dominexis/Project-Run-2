@@ -22,7 +22,7 @@ data modify storage pr:data tag.leaderboard_line_2 set value '["",{"text":"2nd",
 data modify storage pr:data tag.leaderboard_line_3 set value '["",{"text":"3rd","color":"#c87b1f","bold":true},{"text":" - ","color":"gray"},{"text":"---","color":"white"},{"text":" - ","color":"gray"},{"text":"--","color":"white","bold":true},{"text":":","color":"gray"},{"text":"--","color":"white","bold":true},{"text":".","color":"gray"},{"text":"---","color":"white","bold":true}]'
 data modify storage pr:data tag.leaderboard_line_4 set value '["",{"text":"4th","color":"#b35e1f","bold":true},{"text":" - ","color":"gray"},{"text":"---","color":"white"},{"text":" - ","color":"gray"},{"text":"--","color":"white","bold":true},{"text":":","color":"gray"},{"text":"--","color":"white","bold":true},{"text":".","color":"gray"},{"text":"---","color":"white","bold":true}]'
 data modify storage pr:data tag.leaderboard_line_5 set value '["",{"text":"5th","color":"#954c1c","bold":true},{"text":" - ","color":"gray"},{"text":"---","color":"white"},{"text":" - ","color":"gray"},{"text":"--","color":"white","bold":true},{"text":":","color":"gray"},{"text":"--","color":"white","bold":true},{"text":".","color":"gray"},{"text":"---","color":"white","bold":true}]'
-function help:f04b668dc3a1f5f927d32d7d1741baee61b3915eeac0c278fb14ea9f143ded45
+data modify entity @s text set value '["",{"nbt":"tag.leaderboard_name","storage":"pr:data","interpret":true,"color":"gold","bold":true,"source":"storage","type":"nbt"},{"text":"\\n","type":"text"},{"nbt":"tag.leaderboard_line_1","storage":"pr:data","interpret":true,"source":"storage","type":"nbt"},{"text":"\\n","type":"text"},{"nbt":"tag.leaderboard_line_2","storage":"pr:data","interpret":true,"source":"storage","type":"nbt"},{"text":"\\n","type":"text"},{"nbt":"tag.leaderboard_line_3","storage":"pr:data","interpret":true,"source":"storage","type":"nbt"},{"text":"\\n","type":"text"},{"nbt":"tag.leaderboard_line_4","storage":"pr:data","interpret":true,"source":"storage","type":"nbt"},{"text":"\\n","type":"text"},{"nbt":"tag.leaderboard_line_5","storage":"pr:data","interpret":true,"source":"storage","type":"nbt"}]'
 
 
 
@@ -44,8 +44,7 @@ execute at @s facing -56 ~ 40 run tp @s ~ ~ ~ ~ ~
 
 data modify storage pr:data tag.text set from entity @s text
 execute at @s summon minecraft:text_display run function pr:leaderboard/spawn/backside
-execute summon minecraft:text_display run function pr:leaderboard/spawn/resolver
-execute summon minecraft:marker run function pr:leaderboard/spawn/data
+execute at @s summon minecraft:text_display run function pr:leaderboard/spawn/resolver
 
 
 

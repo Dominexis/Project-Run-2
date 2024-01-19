@@ -356,6 +356,9 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "name.mcfun
 # Generate leaderboard reset function
 
 commands: list[str] = []
+placement_entries = ",".join([f'p{i}:' + '{time:2147483647,text:\'[{"text":"---","color":"white"},{"text":" - ","color":"gray"},{"text":"--","color":"white","bold":true},{"text":":","color":"gray"},{"text":"--","color":"white","bold":true},{"text":".","color":"gray"},{"text":"---","color":"white","bold":true}]\'}' for i in range(1,6)])
+
+leaderboard_entries: list[str] = [f'{{plot:1039,{placement_entries}}}']
 for coordinate in coordinates:
     if (
         plots[coordinate[1]*2 + 32    ][coordinate[0]*2 + 32 + 1] == ">" or
@@ -369,6 +372,8 @@ for coordinate in coordinates:
         f'scoreboard players set #plot pr.value {(coordinate[0] + 16) + (coordinate[1] + 16)*64}\n' +
         f'execute positioned {coordinate[0]*4 + 40 - 96} -45 {coordinate[1]*4 + 40} run function pr:leaderboard/spawn/main'
     )
+
+    leaderboard_entries.append(f'{{plot:{(coordinate[0] + 16) + (coordinate[1] + 16)*64},{placement_entries}}}')
 commands.append("\n\n")
 for coordinate in coordinates:
     if coordinate not in NAMESPACES:
@@ -390,9 +395,48 @@ with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "reset.mcfu
         "kill @e[type=armor_stand ,tag=pr.leaderboard]\n\n" +
         "kill @e[type=text_display,tag=pr.leaderboard]\n\n" +
         "kill @e[type=marker      ,tag=pr.leaderboard]\n\n" +
+        f'data modify storage pr:leaderboard leaderboard set value [{",".join(leaderboard_entries)}]\n\n' +
         "scoreboard players operation #plot pr.value = #spawn_plot pr.value\n" +
         f"execute positioned {35 - 96} -45 40 run function pr:leaderboard/spawn/main\n\n" +
         "\n".join(commands)
+    )
+
+
+
+# Generate leaderboard data functions
+    
+get_commands: list[str] = []
+set_commands: list[str] = []
+for coordinate in coordinates:
+
+    if (
+        plots[coordinate[1]*2 + 32    ][coordinate[0]*2 + 32 + 1] == ">" or
+        plots[coordinate[1]*2 + 32    ][coordinate[0]*2 + 32 - 1] == "<" or
+        plots[coordinate[1]*2 + 32 + 1][coordinate[0]*2 + 32    ] == "v" or
+        plots[coordinate[1]*2 + 32 - 1][coordinate[0]*2 + 32    ] == "^"
+    ) and not coordinate == (-1, 0):
+        continue
+
+    get_commands.append(
+        f'# {coordinate[0]}, {coordinate[1]}\n' +
+        f'execute if score #plot pr.value matches {(coordinate[0] + 16) + (coordinate[1] + 16)*64} run data modify storage pr:data tag.leaderboard set from storage pr:leaderboard leaderboard[{{plot:{(coordinate[0] + 16) + (coordinate[1] + 16)*64}}}]'
+    )
+
+    set_commands.append(
+        f'# {coordinate[0]}, {coordinate[1]}\n' +
+        f'execute if score #plot pr.value matches {(coordinate[0] + 16) + (coordinate[1] + 16)*64} run data modify storage pr:leaderboard leaderboard[{{plot:{(coordinate[0] + 16) + (coordinate[1] + 16)*64}}}] set from storage pr:data tag.leaderboard'
+    )
+
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "data" / "get.mcfunction").open("w", encoding="utf-8") as file:
+    file.write(
+        "# Get leaderboard data\n\n" +
+        "\n".join(get_commands)
+    )
+
+with (DATA_PACK_PATH / "data" / "pr" / "functions" / "leaderboard" / "data" / "set.mcfunction").open("w", encoding="utf-8") as file:
+    file.write(
+        "# Set leaderboard data\n\n" +
+        "\n".join(set_commands)
     )
 
 

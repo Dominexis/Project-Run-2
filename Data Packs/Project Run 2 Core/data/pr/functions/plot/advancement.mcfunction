@@ -96,4 +96,3 @@ execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 5 unless s
 execute if score @s pr.plot_x matches 3 if score @s pr.plot_z matches 5 unless score @s spectate matches 1.. unless score @s lobby matches 1.. unless score @s pr.plot = #spawn_plot pr.value run advancement grant @s only pr:plot_3_5
 execute if score @s pr.plot_x matches -2 if score @s pr.plot_z matches 6 unless score @s spectate matches 1.. unless score @s lobby matches 1.. unless score @s pr.plot = #spawn_plot pr.value run advancement grant @s only pr:plot_n2_6
 execute if score @s pr.plot_x matches 2 if score @s pr.plot_z matches 6 unless score @s spectate matches 1.. unless score @s lobby matches 1.. unless score @s pr.plot = #spawn_plot pr.value run advancement grant @s only pr:plot_2_6
-return 1
