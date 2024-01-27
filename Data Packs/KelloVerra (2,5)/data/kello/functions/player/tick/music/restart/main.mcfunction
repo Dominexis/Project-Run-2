@@ -1,3 +1,5 @@
+# Notify
+
 tellraw @s [{"text":"[AncientApparatus] ","color":"gold","bold":true,"type":"text"},{"text":"Restarted music.","color":"white","bold":false,"type":"text"}]
 
 

@@ -1,0 +1,10 @@
+{
+	"parent": "animated_java:item/comet_flake/tail",
+	"textures": {
+		"0": "kello:item/trans",
+		"1": "kello:item/trans",
+		"2": "kello:item/trans",
+		"3": "kello:item/decal/comet_2",
+		"4": "kello:item/trans"
+	}
+}

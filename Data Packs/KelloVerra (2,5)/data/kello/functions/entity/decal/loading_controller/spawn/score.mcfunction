@@ -23,8 +23,4 @@ scoreboard players operation @s kello.decal.id = #global kello.decal.id
 execute if score #uninstantiate kello.value matches 1 run scoreboard players operation @s kello.decal.id = #init kello.decal.id
 
 execute if score #level_creation_mode kello.value matches 1 run function kello:tick/level/creation_mode
-
-# Notify
-
-# tellraw @p [{"text":"> Spawned a loading controller, using ID => ","color":"gray"},{"score":{"name":"@s","objective":"kello.decal.id"},"color":"white"}]
 return 1

@@ -37,7 +37,8 @@ tag @s remove kello.player.targeted
 scoreboard players set #input pr.value 3
 function pr:generic/rng/lcg
 
-execute if score #output pr.value matches 0 run playsound kello:flag.0 master @s ~ ~1.75 ~ 0.125 1 0.0125
-execute if score #output pr.value matches 1 run playsound kello:flag.1 master @s ~ ~1.75 ~ 0.125 1 0.0125
-execute if score #output pr.value matches 2 run playsound kello:flag.2 master @s ~ ~1.75 ~ 0.125 1 0.0125
+execute unless score #is_final kello.value matches 1 if score #output pr.value matches 0 run playsound kello:flag.0 master @s ~ ~1.75 ~ 0.125 1 0.0125
+execute unless score #is_final kello.value matches 1 if score #output pr.value matches 1 run playsound kello:flag.1 master @s ~ ~1.75 ~ 0.125 1 0.0125
+execute unless score #is_final kello.value matches 1 if score #output pr.value matches 2 run playsound kello:flag.2 master @s ~ ~1.75 ~ 0.125 1 0.0125
+execute if score #is_final kello.value matches 1 run playsound kello:flag.final master @s ~ ~1.75 ~ 0.35 1 0.275
 return 1

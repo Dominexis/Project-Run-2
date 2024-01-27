@@ -1,7 +1,7 @@
-stopsound @s * kello:music_intro
-stopsound @s * kello:music_melody
-stopsound @s * kello:music_final
-stopsound @s * kello:music_outro
+stopsound @s record kello:music_intro
+stopsound @s record kello:music_melody
+stopsound @s record kello:music_final
+stopsound @s record kello:music_outro
 
 
 

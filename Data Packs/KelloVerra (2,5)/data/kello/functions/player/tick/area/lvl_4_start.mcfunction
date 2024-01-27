@@ -1,4 +1,4 @@
-# Tutorial
+# Assign level
 
 scoreboard players set #level_id_to_assign kello.value 4
 scoreboard players set #level_variant_to_load kello.value 0

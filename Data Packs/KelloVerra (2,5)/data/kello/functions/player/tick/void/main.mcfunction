@@ -10,10 +10,19 @@ scoreboard players operation #checkpoint_y kello.value *= #10 kello.value
 execute if score @s kello.player.y < @s kello.player.void_y if score #checkpoint_y kello.value > @s kello.player.void_y run scoreboard players set #boolean kello.value 1
 execute if predicate kello:stepped_on_dead_block run scoreboard players set #boolean kello.value 2
 
-execute if score @s kello.death.delay matches 40.. run function kello:player/tick/void/death
+execute if score @s kello.death.send_delay matches ..0 if score @s kello.death.delay matches 40.. run function kello:player/tick/void/death
+execute if score @s kello.death.send_delay matches ..18 if score @s kello.death.delay matches 40.. run function kello:player/tick/void/send
+
 
 execute if score #boolean kello.value matches 2 run scoreboard players add @s kello.death.delay 30
 execute if score #boolean kello.value matches 1 run scoreboard players add @s kello.death.delay 8
 execute if score #boolean kello.value matches 0 if score @s kello.death.delay matches 1.. run scoreboard players remove @s kello.death.delay 1
+execute if score @s kello.death.send_delay matches 1.. if score @s kello.death.delay matches 1.. run scoreboard players set @s kello.death.delay 0
+
+
+execute if score @s kello.death.send_delay matches 1.. if score @s kello.death.send_delay_time matches 0 run function kello:player/tick/void/delay/0
+execute if score @s kello.death.send_delay matches 1.. if score @s kello.death.send_delay_time matches 1 run function kello:player/tick/void/delay/1
+
+
 execute if entity @s[tag=kello.riding,scores={kello.death.delay=1..}] run scoreboard players set @s kello.death.delay 0
 return 1

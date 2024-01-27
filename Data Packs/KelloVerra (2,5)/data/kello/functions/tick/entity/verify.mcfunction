@@ -8,7 +8,6 @@ tag @s add kello.entity.activated
 
 function pr:time/get
 execute if score #time pr.value > #entity_tick_time_limit kello.value run function kello:tick/entity/skip_tick
-# tellraw @a {"score":{"objective":"pr.value","name":"#time"}}
 
 
 

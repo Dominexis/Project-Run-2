@@ -150,6 +150,16 @@ scoreboard players set #ref_rotation kello.value 0
 
 ## DECO
 
+execute positioned ~18.6 ~16.6 ~-5.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity","kello.entity.world_vfx","kello.entity.type.starfield","kello.level.3_branch"]}
+execute positioned ~17.6 ~20.75 ~-25.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity","kello.entity.world_vfx","kello.entity.type.starfield","kello.level.3_branch"]}
+execute positioned ~17.5 ~14.25 ~21.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity","kello.entity.world_vfx","kello.entity.type.starfield","kello.level.3_branch"]}
+
+execute as @e[type=minecraft:marker,distance=..512,tag=kello.entity.world_vfx,tag=!kello.verified] run function kello:generic/vfx/starfield/init
+
+
+execute positioned ~19.5 ~4.5 ~1.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:1},Rotation:[-17.0f,0.0f]}
+execute positioned ~22.5 ~9.5 ~-26.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:2},Rotation:[-165.0f,0.0f]}
+execute positioned ~23.5 ~6.5 ~25.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:3},Rotation:[42.0f,0.0f]}
 execute positioned ~9.5 ~13.5 ~-27.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal","aj.wall_mellolily.root","kello.decal.type.wall_mellolily","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{level_variant:1,variant:2},Rotation:[-180.0f,0.0f]}
 execute positioned ~18.5 ~12.5 ~-6.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{level_variant:1,variant:0},Rotation:[38.0f,0.0f]}
 execute positioned ~22.5 ~10.0 ~12.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloleta","kello.decal","kello.exclude","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered","aj.melloleta_path.root"],data:{level_variant:1,variant:1},Rotation:[-180.0f,0.0f]}
@@ -191,6 +201,9 @@ execute positioned ~10.5 ~1.0 ~22.5 run summon minecraft:marker ~ ~ ~ {Tags:["ke
 execute positioned ~10.5 ~1.0 ~20.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloleta","kello.decal","kello.exclude","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered","aj.melloleta_path.root"],data:{level_variant:1,variant:1},Rotation:[0.0f,0.0f]}
 execute positioned ~13.5 ~4.0 ~24.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloleta","kello.decal","kello.exclude","aj.melloleta_patch_singular.root","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{level_variant:1,variant:0},Rotation:[0.0f,0.0f]}
 execute positioned ~22.5 ~17.5 ~-37.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal","aj.wall_mellolily.root","kello.decal.type.wall_mellolily","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{level_variant:1,variant:2},Rotation:[-90.0f,0.0f]}
+
+execute positioned ~23.5 ~7.5 ~-11.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:1},Rotation:[-142.0f,0.0f]}
+execute positioned ~16.5 ~11.5 ~-27.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:3},Rotation:[73.0f,0.0f]}
 
 function kello:debug/decal/gen/queue
 

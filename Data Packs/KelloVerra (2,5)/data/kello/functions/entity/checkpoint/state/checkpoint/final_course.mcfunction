@@ -1,0 +1,10 @@
+summon minecraft:firework_rocket ~ ~1 ~ {Glowing:1b,LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:1b,Flicker:1b,Colors:[I;16771899,14254655,14041355,16763448,16212761],FadeColors:[I;3114743,9202664,13344511,10604031,5342148]},{Type:4b,Trail:1b,Colors:[I;9294103,1106012,6750131,4915078]}]}},Count:1b}}
+summon minecraft:firework_rocket ~ ~1 ~ {Glowing:1b,LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:1b,Flicker:1b,Colors:[I;16771899,14254655,14041355,16763448,16212761],FadeColors:[I;3114743,9202664,13344511,10604031,5342148]},{Type:4b,Trail:1b,Colors:[I;9294103,1106012,6750131,4915078]}]}},Count:1b}}
+
+summon minecraft:firework_rocket ~1.5 ~ ~ {Glowing:1b,LifeTime:15,FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:2b,Flicker:1b,Colors:[I;6345101,1106012,6094727,4915078,3735518,5881343],FadeColors:[I;13724678,16758886,16746048,16735035]}]}},Count:1b}}
+summon minecraft:firework_rocket ~ ~ ~1.5 {Glowing:1b,LifeTime:16,FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:2b,Flicker:1b,Colors:[I;6345101,1106012,6094727,4915078,3735518,5881343],FadeColors:[I;13724678,16758886,16746048,16735035]}]}},Count:1b}}
+summon minecraft:firework_rocket ~ ~ ~-1.5 {Glowing:1b,LifeTime:17,FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:2b,Flicker:1b,Colors:[I;6345101,1106012,6094727,4915078,3735518,5881343],FadeColors:[I;13724678,16758886,16746048,16735035]}]}},Count:1b}}
+summon minecraft:firework_rocket ~-1.5 ~ ~ {Glowing:1b,LifeTime:18,FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:2b,Flicker:1b,Colors:[I;6345101,1106012,6094727,4915078,3735518,5881343],FadeColors:[I;13724678,16758886,16746048,16735035]}]}},Count:1b}}
+
+summon minecraft:firework_rocket ~ ~2 ~ {Glowing:1b,LifeTime:12,FireworksItem:{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:0b,Colors:[I;14942198,15464447,16776685,16446975]}]}},Count:1b}}
+return 1

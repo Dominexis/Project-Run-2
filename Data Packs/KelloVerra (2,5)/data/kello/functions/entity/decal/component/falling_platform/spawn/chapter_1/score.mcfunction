@@ -1,11 +1,10 @@
 # Assign variants
 
-scoreboard players set #input pr.value 2
+scoreboard players set #input pr.value 4
 function pr:generic/rng/lcg
 
 function animated_java:falling_platform/apply_variant/air
-execute if score #output pr.value matches 0 rotated 0 0 run scoreboard players set @s kello.entity.variant 0
-execute if score #output pr.value matches 1 rotated 0 0 run scoreboard players set @s kello.entity.variant 1
+scoreboard players operation @s kello.entity.variant = #output pr.value
 
 
 # Assign scores

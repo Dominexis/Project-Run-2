@@ -6,4 +6,6 @@ title @s clear
 
 
 tag @s add kello.player.progress.recoil_guide
+
+tag @s remove kello.death.was_transitioning
 return 1

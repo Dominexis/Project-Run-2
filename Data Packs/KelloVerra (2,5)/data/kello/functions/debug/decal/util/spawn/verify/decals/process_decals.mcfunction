@@ -24,10 +24,12 @@ execute if entity @s[tag=kello.decal.type.melloleta] run function kello:entity/d
 # execute if entity @s[tag=kello.decal.type.melloleta_patch_areal] run function kello:entity/decal/static/melloleta/patch_areal
 # execute if entity @s[tag=kello.decal.type.melloleta_path] run function kello:entity/decal/static/melloleta/path
 
-execute if entity @s[tag=kello.decal.type.melloorainn] run function kello:entity/decal/static/mellorainn/verify
+# execute if entity @s[tag=kello.decal.type.mellorainn] run function kello:entity/decal/static/mellorainn/verify
 
 # execute if entity @s[tag=kello.decal.type.mellorainn_patch] run function animated_java:mellorainn_cluster/summon
 # execute if entity @s[tag=kello.decal.type.mellorainn_cluster] run function animated_java:mellorainn_cluster/summon
+
+execute if entity @s[tag=kello.decal.type.wind_chime] run function kello:entity/decal/static/wind_chime/verify
 
 execute if entity @s[tag=kello.decal.type.comet_flake] run function kello:entity/decal/static/comet_flake/verify
 # execute if entity @s[tag=kello.decal.type.comet_medium] run function kello:entity/decal/static/comet_flake/medium

@@ -372,12 +372,6 @@
 		},
 		{
 			"predicate": {
-				"custom_model_data": 67
-			},
-			"model": "animated_java:item/falling_platform/chapter_1_1/extra"
-		},
-		{
-			"predicate": {
 				"custom_model_data": 68
 			},
 			"model": "animated_java:item/falling_platform/chapter_1_1/root"
@@ -410,37 +404,37 @@
 			"predicate": {
 				"custom_model_data": 73
 			},
-			"model": "animated_java:item/comet_flake/large/tail"
+			"model": "animated_java:item/comet_flake/medium/tail"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 74
 			},
-			"model": "animated_java:item/comet_flake/large/root"
+			"model": "animated_java:item/comet_flake/medium/root"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 75
 			},
-			"model": "animated_java:item/comet_flake/large1/tail"
+			"model": "animated_java:item/comet_flake/small/tail"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 76
 			},
-			"model": "animated_java:item/comet_flake/large1/root"
+			"model": "animated_java:item/comet_flake/small/root"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 77
 			},
-			"model": "animated_java:item/comet_flake/medium/tail"
+			"model": "animated_java:item/comet_flake/small1/tail"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 78
 			},
-			"model": "animated_java:item/comet_flake/medium/root"
+			"model": "animated_java:item/comet_flake/small1/root"
 		},
 		{
 			"predicate": {
@@ -920,13 +914,13 @@
 			"predicate": {
 				"custom_model_data": 158
 			},
-			"model": "animated_java:item/comet_flake/small/tail"
+			"model": "animated_java:item/comet_flake/small2/tail"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 159
 			},
-			"model": "animated_java:item/comet_flake/small/root"
+			"model": "animated_java:item/comet_flake/small2/root"
 		},
 		{
 			"predicate": {
@@ -981,6 +975,18 @@
 				"custom_model_data": 168
 			},
 			"model": "animated_java:item/moving_platform/static/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 169
+			},
+			"model": "animated_java:item/falling_platform/chapter_1_2/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 170
+			},
+			"model": "animated_java:item/falling_platform/chapter_1_3/root"
 		}
 	],
 	"animated_java": {
@@ -1125,7 +1131,9 @@
 					65,
 					66,
 					67,
-					68
+					68,
+					169,
+					170
 				]
 			},
 			"moving_platform": {

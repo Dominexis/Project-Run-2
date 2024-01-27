@@ -3,6 +3,9 @@
 particle minecraft:instant_effect ~ ~ ~ 0.85 0.45 0.85 0.01 25 force @a[distance=..32,tag=pr.target]
 particle minecraft:cloud ~ ~ ~ 0.85 0.45 0.85 0.01 05 force @a[distance=..32,tag=pr.target]
 
+execute unless entity @s[tag=kello.vfx.direction_indication] run tag @s add kello.vfx.hit_indication
+execute unless entity @s[tag=kello.vfx.direction_indication] run scoreboard players set @s kello.decal.sequence 16
+
 
 
 

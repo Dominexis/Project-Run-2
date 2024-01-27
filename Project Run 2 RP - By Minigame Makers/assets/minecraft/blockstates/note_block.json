@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "instrument=zombie,note=1,powered=true": {
+        "model": "kello:block/starfield/0"
+    },
+    "instrument=zombie,note=2,powered=true": {
+        "model": "kello:block/starfield/1"
+    },
+    "instrument=zombie,note=3,powered=true": {
+        "model": "kello:block/starfield/2"
+    },
+    "instrument=zombie,note=4,powered=true": {
+        "model": "kello:block/starfield/3"
+    },
+    "instrument=zombie,note=5,powered=true": {
+        "model": "kello:block/starfield/4"
+    },
+    "instrument=zombie,note=6,powered=true": {
+        "model": "kello:block/starfield/5"
+    },
+
+    
+    "instrument=zombie,note=7,powered=true": {
+      "model": "kello:block/starfield/dark/0"
+    },
+    "instrument=zombie,note=8,powered=true": {
+        "model": "kello:block/starfield/dark/1"
+    },
+    "instrument=zombie,note=9,powered=true": {
+        "model": "kello:block/starfield/dark/2"
+    },
+    "instrument=zombie,note=10,powered=true": {
+        "model": "kello:block/starfield/dark/3"
+    },
+    "instrument=zombie,note=11,powered=true": {
+        "model": "kello:block/starfield/dark/4"
+    },
+    "instrument=zombie,note=12,powered=true": {
+        "model": "kello:block/starfield/dark/5"
+    },
+
+    
+    "instrument=zombie,note=13,powered=true": {
+      "model": "kello:block/starfield/golden/0"
+    },
+    "instrument=zombie,note=14,powered=true": {
+        "model": "kello:block/starfield/golden/1"
+    },
+    "instrument=zombie,note=15,powered=true": {
+        "model": "kello:block/starfield/golden/2"
+    },
+    "instrument=zombie,note=16,powered=true": {
+        "model": "kello:block/starfield/golden/3"
+    },
+    "instrument=zombie,note=17,powered=true": {
+        "model": "kello:block/starfield/golden/4"
+    },
+    "instrument=zombie,note=18,powered=true": {
+        "model": "kello:block/starfield/golden/5"
+    }
+  }
+}

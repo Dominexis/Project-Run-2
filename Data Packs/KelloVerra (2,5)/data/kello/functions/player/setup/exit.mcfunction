@@ -25,7 +25,7 @@ scoreboard players set #logout_trigger kello.value 1
 stopsound @s record kello:music_intro
 stopsound @s record kello:music_melody
 stopsound @s record kello:music_final
-execute unless score @s kello.player.music_progress matches 3 run stopsound @s record kello:music_outro
+execute unless score @s kello.player.music_progress matches 3 run stopsound @s music kello:music_outro
 
 tag @s remove kello.music_repeat
 

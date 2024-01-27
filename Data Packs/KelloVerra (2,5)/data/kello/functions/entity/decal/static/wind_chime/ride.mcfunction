@@ -1,0 +1,3 @@
+data merge entity @s {Tags:["kello.decal.unselectable","pr.ignore","kello.exclude","kello.decal","kello.decal.type.wind_chime","kello.decal.part.display"],billboard:"vertical",id:"minecraft:item_display",transformation:[-1.0f,0.0f,1.2246467991473532e-16f,0.0f,0.0f,1.0f,0.0f,0.38259875f,-1.2246467991473532e-16f,0.0f,-1.0f,0.0f,0.0f,0.0f,0.0f,1.0f],interpolation_duration:1,item_display:"head",item:{id:"minecraft:leather_helmet",tag:{CustomModelData:351945},Count:1b}}
+ride @s mount @e[type=minecraft:item_display,distance=..1,tag=kello.entity.ride_target,sort=nearest,limit=1]
+return 1

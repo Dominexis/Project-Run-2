@@ -38,16 +38,18 @@ execute if score #decal kello.value = $decal.bg_melloleta_patch_singular kello.d
 execute if score #decal kello.value = $decal.bg_melloleta_path kello.decal align xyz positioned ~.5 ~ ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.melloleta","pr.ignore","kello.decal.init"],data:{variant:1}}
 execute if score #decal kello.value = $decal.bg_melloleta_patch_areal kello.decal align xyz positioned ~.5 ~ ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.melloleta","pr.ignore","kello.decal.init"],data:{variant:2}}
 
-execute if score #decal kello.value = $decal.bg_mellorainn_cluster kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.mellorainn","pr.ignore","kello.decal.init"],data:{variant:0}}
-execute if score #decal kello.value = $decal.bg_mellorainn_path kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.mellorainn","pr.ignore","kello.decal.init"],data:{variant:1}}
+# execute if score #decal kello.value = $decal.bg_mellorainn_cluster kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.mellorainn","pr.ignore","kello.decal.init"],data:{variant:0}}
+# execute if score #decal kello.value = $decal.bg_mellorainn_path kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.mellorainn","pr.ignore","kello.decal.init"],data:{variant:1}}
+
+execute if score #decal kello.value = $decal.bg_wind_chime kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.wind_chime","pr.ignore","kello.decal.init"],data:{variant:0}}
 
 execute if score #decal kello.value = $decal.bg_mellolily_pot_0 kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.mellolily_pot","pr.ignore","kello.decal.init"],data:{variant:0}}
 execute if score #decal kello.value = $decal.bg_mellolily_pot_1 kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.mellolily_pot","pr.ignore","kello.decal.init"],data:{variant:1}}
 
 execute if score #decal kello.value = $decal.bg_comet_flakes_sml kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.comet_flake","pr.ignore","kello.decal.init"],data:{variant:0}}
-execute if score #decal kello.value = $decal.bg_comet_flakes_med kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.comet_flake","pr.ignore","kello.decal.init"],data:{variant:1}}
-execute if score #decal kello.value = $decal.bg_comet_flakes_lar kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.comet_flake","pr.ignore","kello.decal.init"],data:{variant:2}}
-execute if score #decal kello.value = $decal.bg_comet_flakes_gia kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.comet_flake","pr.ignore","kello.decal.init"],data:{variant:3}}
+execute if score #decal kello.value = $decal.bg_comet_flakes_sml_1 kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.comet_flake","pr.ignore","kello.decal.init"],data:{variant:1}}
+execute if score #decal kello.value = $decal.bg_comet_flakes_sml_2 kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.comet_flake","pr.ignore","kello.decal.init"],data:{variant:2}}
+execute if score #decal kello.value = $decal.bg_comet_flakes_med kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.comet_flake","pr.ignore","kello.decal.init"],data:{variant:3}}
 
 execute if score #decal kello.value = $decal.mellobanner_0 kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.mellobanner","pr.ignore","kello.decal.init"],data:{variant:0}}
 execute if score #decal kello.value = $decal.mellobanner_1 kello.decal align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.spawn_point","kello.decal.type.mellobanner","pr.ignore","kello.decal.init"],data:{variant:1}}

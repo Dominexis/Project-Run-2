@@ -20,6 +20,7 @@ execute if score #animation aj.i = $aj.cogwheel.animation.large_ground aj.id run
 execute if score #animation aj.i = $aj.cogwheel.animation.large_ground aj.id run scoreboard players operation @s aj.cogwheel.animation.large_ground.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.cogwheel.animation.small_ground aj.id run function animated_java:cogwheel/zzzzzzzz/animations/small_ground/apply_frame_as_root
 execute if score #animation aj.i = $aj.cogwheel.animation.small_ground aj.id run scoreboard players operation @s aj.cogwheel.animation.small_ground.local_anim_time = #frame aj.i
+execute at @s run function #animated_java:cogwheel/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

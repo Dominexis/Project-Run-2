@@ -97,9 +97,6 @@ execute positioned ~0 ~182 ~31 align xyz positioned ~.5 ~.5 ~.5 run summon minec
 execute positioned ~0 ~182 ~33 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.meteorspawn","kello.decal.mech_spawn_point"],data:{countdown:26}}
 execute positioned ~0 ~182 ~35 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.meteorspawn","kello.decal.mech_spawn_point"],data:{countdown:28}}
 
-execute positioned ~-4 ~173 ~37 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.launchpad","kello.decal.mech_spawn_point"],data:{launch_power:1450},Rotation:[0.0f,-90.0f]}
-execute positioned ~4 ~173 ~37 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.launchpad","kello.decal.mech_spawn_point"],data:{launch_power:1450},Rotation:[0.0f,-90.0f]}
-
 scoreboard players operation #select_store kello.decal.id = #selected kello.decal.id
 scoreboard players operation #selected kello.decal.id = #init kello.decal.id
 scoreboard players set #ref_state kello.value 1
@@ -149,11 +146,67 @@ scoreboard players set #ref_rotation kello.value 0
 
 
 
+
+## CHECKPOINT PHASE
+
+scoreboard players set #init kello.entity.checkpoint.id 8326
+scoreboard players set #init kello.player.void_y 1711
+
+scoreboard players set #uninstantiate kello.value 1
+scoreboard players set #checkpoint_is_final kello.value 1
+execute positioned ~2 ~176 ~38 run function kello:entity/checkpoint/spawn/main
+execute positioned ~ ~175 ~37 run function kello:entity/checkpoint/spawn/spawn_mark
+scoreboard players set #checkpoint_is_final kello.value 0
+scoreboard players set #uninstantiate kello.value 0
+
+
+
+
+
+
+## MECHANIC PHASE
+
+scoreboard players set #init kello.decal.id 8144
+
+execute positioned ~-4 ~173 ~37 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.launchpad","kello.decal.mech_spawn_point"],data:{launch_power:1850},Rotation:[0.0f,-90.0f]}
+execute positioned ~4 ~173 ~37 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.launchpad","kello.decal.mech_spawn_point"],data:{launch_power:1850},Rotation:[0.0f,-90.0f]}
+
+
+scoreboard players set #uninstantiate kello.value 1
+scoreboard players operation #selected kello.decal.id = #init kello.decal.id
+scoreboard players set #ref_state kello.value 1
+scoreboard players set #ref_rotation kello.value 1
+scoreboard players set #ref_rotation_speed kello.value 1
+scoreboard players set #spawn_persistent kello.value 1
+
+
+execute as @e[type=minecraft:marker,tag=kello.decal.mech_spawn_point] at @s run function kello:debug/decal/util/spawn/verify/mech/main
+
+
+scoreboard players set #spawn_persistent kello.value 0
+scoreboard players operation #selected kello.decal.id = #select_store kello.decal.id
+scoreboard players set #uninstantiate kello.value 0
+scoreboard players set #ref_state kello.value 0
+scoreboard players set #ref_rotation kello.value 0
+scoreboard players set #ref_rotation_speed kello.value 0
+
+
+
+
+
+
 ## DECO PHASE
 
+execute positioned ~.5 ~177.5 ~6.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity","kello.entity.world_vfx","kello.entity.type.starfield","kello.level.7"]}
+
+execute as @e[type=minecraft:marker,distance=..512,tag=kello.entity.world_vfx,tag=!kello.verified] run function kello:generic/vfx/starfield/init
+
+execute positioned ~1.5 ~186.0 ~11.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.wind_chime","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[0.0f,0.0f]}
+execute positioned ~1.5 ~179.0 ~27.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.wind_chime","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[0.0f,0.0f]}
+execute positioned ~2.5 ~180.0 ~35.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.wind_chime","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[0.0f,0.0f]}
+execute positioned ~-1.5 ~180.0 ~35.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.wind_chime","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[0.0f,0.0f]}
+
 execute positioned ~0.5 ~185.5 ~-11.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[15.0f,0.0f]}
-# execute positioned ~0.5 ~185.5 ~-11.5 run summon marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","kello.exclude","aj.melloflora_lantern.bone","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[24.0f,0.0f]}
-# execute positioned ~0.5 ~185.5 ~-11.5 run summon marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","kello.exclude","aj.melloflora_lantern.bone","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[43.0f,0.0f]}
 execute positioned ~1.5 ~183.5 ~-9.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[5.0f,0.0f]}
 execute positioned ~-1.5 ~184.5 ~-10.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[15.0f,0.0f]}
 execute positioned ~-0.5 ~183.5 ~-14.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[15.0f,0.0f]}

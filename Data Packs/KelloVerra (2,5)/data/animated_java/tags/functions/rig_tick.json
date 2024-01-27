@@ -1,7 +1,8 @@
 {
 	"replace": false,
 	"values": [
-		"animated_java:dangling_platform/zzzzzzzz/tick",
-		"animated_java:moving_platform/zzzzzzzz/tick"
+		"animated_java:cogwheel/zzzzzzzz/tick",
+		"animated_java:launchpad/zzzzzzzz/tick",
+		"animated_java:decwheel/zzzzzzzz/tick"
 	]
 }

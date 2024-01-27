@@ -23,13 +23,13 @@ execute if score #player_check_thread_20_sec kello.value matches ..0 run functio
 
 # Teleport interaction infront of players
 
-execute as @e[type=minecraft:interaction,tag=kello.entity.interactable] if score @s kello.player.id = #local kello.player.id positioned ~ ~-5.125 ~ run tp @s ^ ^ ^1.125
+execute if score @s kello.death.send_delay matches ..16 as @e[type=minecraft:interaction,tag=kello.entity.interactable] if score @s kello.player.id = #local kello.player.id positioned ~ ~-5.125 ~ run tp @s ^ ^ ^1.125
 
 
 
 # Title sequence
 
-function kello:player/tick/title/verify
+execute if score @s kello.death.send_delay matches ..0 run function kello:player/tick/title/verify
 
 
 
@@ -39,7 +39,7 @@ function kello:player/tick/title/verify
 
 
 
-execute unless score @s kello.player.title_state matches 0..6 unless entity @s[tag=kello.player.hide_crosshair] run function kello:player/tick/crosshair/tick
+execute if score @s kello.death.send_delay matches ..0 unless score @s kello.player.title_state matches 0..6 unless entity @s[tag=kello.player.hide_crosshair] run function kello:player/tick/crosshair/tick
 
 
 
@@ -73,8 +73,8 @@ function kello:player/tick/music/main
 
 # Barrier Riser
 
-execute if entity @s[tag=!kello.riding] if block ~ ~ ~ minecraft:barrier align y run tp @s ~ ~1 ~
-execute if entity @s[tag=!kello.riding] if block ~ ~1 ~ minecraft:barrier align y run tp @s ~ ~1 ~
+execute if score @s kello.death.send_delay matches ..10 if entity @s[tag=!kello.riding] if block ~ ~ ~ minecraft:barrier align y run tp @s ~ ~1 ~
+execute if score @s kello.death.send_delay matches ..10 if entity @s[tag=!kello.riding] if block ~ ~1 ~ minecraft:barrier align y run tp @s ~ ~1 ~
 
 
 
@@ -97,7 +97,7 @@ execute if score @s kello.sound.stop_att matches 1.. run function kello:generic/
 
 # Cogwheel response timer and logic
 
-function kello:player/cog/check
+execute if score @s kello.death.send_delay matches ..14 run function kello:player/cog/check
 
 
 
@@ -121,5 +121,5 @@ execute if entity @s[gamemode=adventure] run function kello:player/tick/void/mai
 
 # Cog offhand switching detection
 
-execute if entity @s[tag=!kello.debug.no_interaction] run function kello:player/cog/flip/verify
+execute if score @s kello.death.send_delay matches ..0 if entity @s[tag=!kello.debug.no_interaction] run function kello:player/cog/flip/verify
 return 1

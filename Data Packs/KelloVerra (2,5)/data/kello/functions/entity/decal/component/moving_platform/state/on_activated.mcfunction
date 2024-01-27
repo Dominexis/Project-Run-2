@@ -3,6 +3,7 @@ execute if score @s kello.decal.state matches 1 on passengers if entity @s[tag=k
 
 # tag @s add kello.indicate_dir
 scoreboard players set @s kello.decal.sequence 20
+tag @s add kello.vfx.direction_indication
 function kello:entity/decal/component/moving_platform/state/idle/start
 
 

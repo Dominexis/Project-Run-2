@@ -310,6 +310,78 @@
 				"custom_model_data": 351944
 			},
 			"model": "animated_java:item/dangling_platform/indicator"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351945
+			},
+			"model": "kello:item/environment/melloflora_wind_chime/display"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351946
+			},
+			"model": "kello:item/environment/melloflora_wind_chime/chimes_0"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351947
+			},
+			"model": "kello:item/environment/melloflora_wind_chime/chimes_1"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351948
+			},
+			"model": "kello:item/environment/melloflora_wind_chime/chimes_2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351949
+			},
+			"model": "animated_java:item/dangling_platform/indicator_hit/0"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351949
+			},
+			"model": "animated_java:item/dangling_platform/indicator_hit/1"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351950
+			},
+			"model": "animated_java:item/dangling_platform/indicator_hit/2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351951
+			},
+			"model": "animated_java:item/dangling_platform/indicator_hit/3"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351952
+			},
+			"model": "animated_java:item/dangling_platform/indicator_hit/4"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351953
+			},
+			"model": "animated_java:item/dangling_platform/indicator_hit/5"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351954
+			},
+			"model": "animated_java:item/dangling_platform/indicator_hit/6"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 351955
+			},
+			"model": "animated_java:item/dangling_platform/indicator_hit/7"
 		}
 	]
 }

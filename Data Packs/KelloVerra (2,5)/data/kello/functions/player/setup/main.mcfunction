@@ -14,6 +14,11 @@ scoreboard players add @s kello.player.l_combo_timer 0
 scoreboard players add @s kello.player.r_combo_timer 0
 
 
+scoreboard players set @s kello.death.delay 0
+scoreboard players set @s kello.death.send_delay 0
+scoreboard players set @s kello.death.send_delay_time 0
+scoreboard players set @s kello.player.void_y -2
+
 scoreboard players reset @s kello.player.music_progress
 
 scoreboard players set @s apparatus_restart_music 0

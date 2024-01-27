@@ -1,3 +1,5 @@
+# Notify
+
 tellraw @s [{"text":"[AncientApparatus] ","color":"red","bold":true,"type":"text"},{"text":"Slow down, spamming is not permitted.","color":"white","bold":false,"type":"text"}]
 
 

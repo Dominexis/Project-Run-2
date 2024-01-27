@@ -1,2 +1,2 @@
-execute if entity @s[tag=aj.cogwheel.bone.large_cog] run data modify entity @s {} merge value {transformation:[0.7997769354073573f,0.0f,0.8974191851460466f,0.0f,0.0f,1.2020833333333334f,0.0f,0.001004375f,-0.8974191851460466f,0.0f,0.7997769354073573f,0.0f,0.0f,0.0f,0.0f,1.0f],start_interpolation:0}
+execute if entity @s[tag=aj.cogwheel.bone.large_cog] run data modify entity @s {} merge value {transformation:[0.826112744372244f,0.0f,0.9269702501681866f,0.0f,0.0f,1.2416666666666665f,0.0f,0.001004375f,-0.9269702501681866f,0.0f,0.826112744372244f,0.0f,0.0f,0.0f,0.0f,1.0f],start_interpolation:0}
 return 1

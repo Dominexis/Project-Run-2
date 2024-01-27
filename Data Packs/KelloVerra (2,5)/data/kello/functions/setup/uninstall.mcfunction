@@ -98,7 +98,8 @@ scoreboard objectives remove kello.sound.timer
 scoreboard objectives remove kello.sound.delay
 
 scoreboard objectives remove kello.death.delay
-
+scoreboard objectives remove kello.death.send_delay
+scoreboard objectives remove kello.death.send_delay_time
 
 
 

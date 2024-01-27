@@ -22,6 +22,7 @@ execute if score #animation aj.i = $aj.launchpad.animation.shoot aj.id run funct
 execute if score #animation aj.i = $aj.launchpad.animation.shoot aj.id run scoreboard players operation @s aj.launchpad.animation.shoot.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.launchpad.animation.cancel aj.id run function animated_java:launchpad/zzzzzzzz/animations/cancel/apply_frame_as_root
 execute if score #animation aj.i = $aj.launchpad.animation.cancel aj.id run scoreboard players operation @s aj.launchpad.animation.cancel.local_anim_time = #frame aj.i
+execute at @s run function #animated_java:launchpad/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

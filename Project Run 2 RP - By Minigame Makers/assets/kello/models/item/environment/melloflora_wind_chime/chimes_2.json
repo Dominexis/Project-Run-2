@@ -1,0 +1,68 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "kello:item/decal/windchime",
+		"1": "kello:item/decal/windchime_ornament"
+	},
+	"elements": [
+		{
+			"from": [-4, -1.36585, 5.38189],
+			"to": [1.67239, -1.36585, 10.61811],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, -28.23039, 8]},
+			"faces": {
+				"up": {"uv": [4.5, 0, 0, 5.5], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [4.5, 5.5, 0, 0], "rotation": 270, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [14.32761, -1.36585, 5.38189],
+			"to": [20, -1.36585, 10.61811],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, -28.23039, 8]},
+			"faces": {
+				"up": {"uv": [4.5, 5.5, 0, 0], "rotation": 90, "texture": "#0", "tintindex": 0},
+				"down": {"uv": [4.5, 0, 0, 5.5], "rotation": 270, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [5.38189, -1.36585, -4],
+			"to": [10.61811, -1.36585, 1.67239],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, -28.23039, 8]},
+			"faces": {
+				"up": {"uv": [4.5, 5.5, 0, 0], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [4.5, 0, 0, 5.5], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [5.38189, -1.36585, 14.32761],
+			"to": [10.61811, -1.36585, 20],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, -28.23039, 8]},
+			"faces": {
+				"up": {"uv": [4.5, 0, 0, 5.5], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [4.5, 5.5, 0, 0], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8, -10.73671, 4.06463],
+			"to": [8, 3.2557, 11.93537],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, -3.74051, 8]},
+			"faces": {
+				"east": {"uv": [13.5, 0, 9, 8], "texture": "#1", "tintindex": 0},
+				"west": {"uv": [9, 0, 13.5, 8], "texture": "#1", "tintindex": 0}
+			}
+		},
+		{
+			"from": [4.06463, -10.73671, 8],
+			"to": [11.93537, 3.2557, 8],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, -3.74051, 8]},
+			"faces": {
+				"north": {"uv": [4.5, 0, 0, 8], "texture": "#1", "tintindex": 0},
+				"south": {"uv": [0, 0, 4.5, 8], "texture": "#1", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

@@ -2,6 +2,8 @@
 	"parent": "animated_java:item/comet_flake/root",
 	"textures": {
 		"0": "kello:item/trans",
+		"1": "kello:item/decal/comet_1",
+		"2": "kello:item/trans",
 		"3": "kello:item/trans",
 		"4": "kello:item/trans"
 	}

@@ -1,0 +1,7 @@
+{
+	"parent": "animated_java:item/checkpoint_flag/root",
+	"textures": {
+		"0": "kello:item/decal/checkpoint_flag/final",
+		"4": "kello:item/decal/checkpoint_flag/final"
+	}
+}

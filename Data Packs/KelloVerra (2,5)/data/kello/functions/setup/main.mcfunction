@@ -32,6 +32,7 @@ scoreboard objectives add kello.player.restart_music_cooldown dummy
 scoreboard objectives add kello.player.title_state dummy
 scoreboard objectives add kello.player.title_progress dummy
 scoreboard objectives add kello.player.title_timer dummy
+scoreboard objectives add kello.player.title_timer dummy
 scoreboard objectives add apparatus_restart_music trigger
 
 scoreboard objectives add kello.ticks dummy
@@ -93,6 +94,8 @@ scoreboard objectives add kello.sound.timer dummy
 scoreboard objectives add kello.sound.delay dummy
 
 scoreboard objectives add kello.death.delay dummy
+scoreboard objectives add kello.death.send_delay dummy
+scoreboard objectives add kello.death.send_delay_time dummy
 
 
 
@@ -171,6 +174,7 @@ scoreboard players set $decal.launchpad kello.decal 2001
 scoreboard players set $decal.bg_sml_melloflora_lantern kello.decal 2003
 scoreboard players set $decal.bg_med_melloflora_lantern kello.decal 2004
 scoreboard players set $decal.bg_lar_melloflora_lantern kello.decal 2005
+scoreboard players set $decal.bg_wind_chime kello.decal 2006
 
 # Cardinal decals
 scoreboard players set $decal.bg_melloleta_patch_singular kello.decal 3001
@@ -180,9 +184,9 @@ scoreboard players set $decal.bg_mellorainn_cluster kello.decal 3004
 scoreboard players set $decal.bg_mellorainn_path kello.decal 3005
 scoreboard players set $decal.bg_mellorainn_cluster_lar kello.decal 3006
 scoreboard players set $decal.bg_comet_flakes_sml kello.decal 3007
-scoreboard players set $decal.bg_comet_flakes_med kello.decal 3008
-scoreboard players set $decal.bg_comet_flakes_lar kello.decal 3009
-scoreboard players set $decal.bg_comet_flakes_gia kello.decal 3010
+scoreboard players set $decal.bg_comet_flakes_sml_1 kello.decal 3008
+scoreboard players set $decal.bg_comet_flakes_sml_2 kello.decal 3009
+scoreboard players set $decal.bg_comet_flakes_med kello.decal 3010
 scoreboard players set $decal.gate_0 kello.decal 3011
 scoreboard players set $decal.animwheel_0 kello.decal 3012
 scoreboard players set $decal.animwheel_1 kello.decal 3013
@@ -213,6 +217,8 @@ scoreboard players set #moving_platform_impact_delay kello.value 20
 
 # Initialize variables (to avoid unexpected error)
 
+scoreboard players set #checkpoint_is_final kello.value 0
+
 scoreboard players set #music_intro_duration kello.player.music_timestamp 31200
 scoreboard players set #music_melody_duration kello.player.music_timestamp 102400
 scoreboard players set #music_final_duration kello.player.music_timestamp 128000
@@ -231,6 +237,9 @@ scoreboard players add #global kello.entity.id 0
 scoreboard players add #has_deactivated kello.value 0
 
 scoreboard players set #uninstantiate kello.value 0
+
+scoreboard players set #death_send_delay kello.value 40
+scoreboard players set #death_send_delay_short kello.value 24
 
 scoreboard players set #generator.max_tick_time kello.value 1
 scoreboard players set #generator.initial_tick_stamp kello.value 0

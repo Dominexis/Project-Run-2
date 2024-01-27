@@ -11,7 +11,6 @@ tag @s remove kello.impact
 
 function kello:entity/decal/component/moving_platform/state/on_impact
 
-
 execute if entity @s[tag=kello.entity.type.z] at @s on passengers if entity @s[tag=kello.entity.part.platform_pointer] on origin positioned as @s on passengers if entity @s[tag=kello.entity.part.indicator] run tp @s ~ ~ ~ ~ ~
 execute if entity @s[tag=kello.entity.type.x] at @s on passengers if entity @s[tag=kello.entity.part.platform_pointer] on origin positioned as @s on passengers if entity @s[tag=kello.entity.part.indicator] run tp @s ~ ~ ~ ~-90 ~
 
@@ -24,6 +23,7 @@ execute as @e[tag=kello.entity.ticking,tag=kello.entity.type.moving_platform] on
 
 # execute if score @s kello.entity.variant matches 0 run function animated_java:falling_platform/apply_variant/chapter_1_0
 # execute if score @s kello.entity.variant matches 1 run function animated_java:falling_platform/apply_variant/chapter_1_1
+
 
 tag @s remove kello.state.force_move
 tag @s remove kello.state.force_deactive

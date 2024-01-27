@@ -9,6 +9,7 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:checkpoint_flag/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.checkpoint_flag.variant.default aj.id run function animated_java:checkpoint_flag/zzzzzzzz/apply_variant/default/as_root
 execute if score #variant aj.i = $aj.checkpoint_flag.variant.atramentum aj.id run function animated_java:checkpoint_flag/zzzzzzzz/apply_variant/atramentum/as_root
+execute if score #variant aj.i = $aj.checkpoint_flag.variant.final aj.id run function animated_java:checkpoint_flag/zzzzzzzz/apply_variant/final/as_root
 execute if score #variant aj.i = $aj.checkpoint_flag.variant.forestglide aj.id run function animated_java:checkpoint_flag/zzzzzzzz/apply_variant/forestglide/as_root
 execute if score #variant aj.i = $aj.checkpoint_flag.variant.nebulae aj.id run function animated_java:checkpoint_flag/zzzzzzzz/apply_variant/nebulae/as_root
 execute if score #variant aj.i = $aj.checkpoint_flag.variant.sundown aj.id run function animated_java:checkpoint_flag/zzzzzzzz/apply_variant/sundown/as_root
@@ -21,6 +22,7 @@ execute if score #animation aj.i = $aj.checkpoint_flag.animation.checkpoint aj.i
 execute if score #animation aj.i = $aj.checkpoint_flag.animation.checkpoint aj.id run scoreboard players operation @s aj.checkpoint_flag.animation.checkpoint.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.checkpoint_flag.animation.curl aj.id run function animated_java:checkpoint_flag/zzzzzzzz/animations/curl/apply_frame_as_root
 execute if score #animation aj.i = $aj.checkpoint_flag.animation.curl aj.id run scoreboard players operation @s aj.checkpoint_flag.animation.curl.local_anim_time = #frame aj.i
+execute at @s run function #animated_java:checkpoint_flag/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i

@@ -1,0 +1,7 @@
+{
+  "parent": "kello:block/cube_particle",
+  "textures": {
+    "particle": "kello:item/visual/starfield/stars_4",
+    "all": "minecraft:block/note_block"
+  }
+}

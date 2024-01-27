@@ -1,0 +1,57 @@
+{
+	"textures": {
+		"0": "kello:item/visual/starfield/2"
+	},
+	"elements": [
+		{
+			"from": [
+				-4,
+				-3.53125,
+				8
+			],
+			"to": [
+				20,
+				20.46875,
+				8
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					5.75,
+					-3.53125,
+					8
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						16,
+						0,
+						0,
+						16
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#0"
+				}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [
+				0,
+				180,
+				0
+			]
+		}
+	}
+}

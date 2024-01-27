@@ -12,43 +12,194 @@
 		},
 		{
 			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "animated_java:item/checkpoint_flag/flag_2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "animated_java:item/checkpoint_flag/flag_1"
+		},
+		{
+			"predicate": {
 				"custom_model_data": 4
 			},
-			"model": "animated_java:item/maze_npc/bone3"
+			"model": "animated_java:item/checkpoint_flag/flag_0"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 5
 			},
-			"model": "animated_java:item/maze_npc/bone4"
+			"model": "animated_java:item/checkpoint_flag/root"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 6
 			},
-			"model": "animated_java:item/maze_npc/bone2"
+			"model": "animated_java:item/checkpoint_flag/atramentum/flag_2"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 7
 			},
-			"model": "animated_java:item/maze_npc/bone"
+			"model": "animated_java:item/checkpoint_flag/atramentum/flag_1"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 8
 			},
-			"model": "animated_java:item/maze_npc/head"
+			"model": "animated_java:item/checkpoint_flag/atramentum/flag_0"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 9
 			},
-			"model": "animated_java:item/maze_npc/body"
+			"model": "animated_java:item/checkpoint_flag/atramentum/root"
 		},
 		{
 			"predicate": {
 				"custom_model_data": 10
+			},
+			"model": "animated_java:item/checkpoint_flag/final/flag_2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 11
+			},
+			"model": "animated_java:item/checkpoint_flag/final/flag_1"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 12
+			},
+			"model": "animated_java:item/checkpoint_flag/final/flag_0"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 13
+			},
+			"model": "animated_java:item/checkpoint_flag/final/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 14
+			},
+			"model": "animated_java:item/checkpoint_flag/forestglide/flag_2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 15
+			},
+			"model": "animated_java:item/checkpoint_flag/forestglide/flag_1"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 16
+			},
+			"model": "animated_java:item/checkpoint_flag/forestglide/flag_0"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 17
+			},
+			"model": "animated_java:item/checkpoint_flag/forestglide/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 18
+			},
+			"model": "animated_java:item/checkpoint_flag/nebulae/flag_2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 19
+			},
+			"model": "animated_java:item/checkpoint_flag/nebulae/flag_1"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 20
+			},
+			"model": "animated_java:item/checkpoint_flag/nebulae/flag_0"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 21
+			},
+			"model": "animated_java:item/checkpoint_flag/nebulae/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 22
+			},
+			"model": "animated_java:item/checkpoint_flag/sundown/flag_2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 23
+			},
+			"model": "animated_java:item/checkpoint_flag/sundown/flag_1"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 24
+			},
+			"model": "animated_java:item/checkpoint_flag/sundown/flag_0"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 25
+			},
+			"model": "animated_java:item/checkpoint_flag/sundown/root"
+		},
+
+		{
+			"predicate": {
+				"custom_model_data": 101
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 104
+			},
+			"model": "animated_java:item/maze_npc/bone3"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 105
+			},
+			"model": "animated_java:item/maze_npc/bone4"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 106
+			},
+			"model": "animated_java:item/maze_npc/bone2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 107
+			},
+			"model": "animated_java:item/maze_npc/bone"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 108
+			},
+			"model": "animated_java:item/maze_npc/head"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 109
+			},
+			"model": "animated_java:item/maze_npc/body"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 110
 			},
 			"model": "animated_java:item/maze_npc/steve"
 		},
@@ -89,5 +240,37 @@
 		{"predicate": {"custom_model_data":77006}, "model": "mrminerman:item/mnrpainting"},
 		{"predicate": {"custom_model_data":77007}, "model": "mrminerman:item/mnrpaintingyt"},
 		{"predicate": {"custom_model_data":77008}, "model": "mrminerman:item/minerstatue"}
-	]
+	],
+	"animated_java": {
+		"rigs": {
+			"checkpoint_flag": {
+				"used_ids": [
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					23,
+					24,
+					25
+				]
+			}
+		}
+	}
 }

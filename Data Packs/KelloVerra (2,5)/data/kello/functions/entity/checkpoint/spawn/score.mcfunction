@@ -20,22 +20,15 @@ execute if score #local kello.level.id matches 1 run scoreboard players set @s k
 
 
 
-
-# Notify
-
-# tellraw @p [{"text":"> Spawned a checkpoint, set the local checkpoint ID => ","color":"gray"},{"score":{"name":"#spawn_local","objective":"kello.entity.checkpoint.id"},"color":"white"}]
-# tellraw @p [{"text":"> The checkpoint uses local an entity ID => ","color":"gray"},{"score":{"name":"#global","objective":"kello.entity.id"},"color":"white"}]
-
-
-
-
-
 # Assign Tags
 
 tag @s add kello.entity
 tag @s add kello.entity.type.checkpoint
 tag @s add kello.entity.part.main
 tag @s add kello.entity.ticking
+
+execute if score #checkpoint_is_final kello.value matches 1 run tag @s add kello.entity.is_final
+execute if score #checkpoint_is_final kello.value matches 1 run function animated_java:checkpoint_flag/apply_variant/final
 
 execute on passengers run function kello:entity/decal/init
 return 1

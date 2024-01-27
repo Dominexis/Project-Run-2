@@ -41,7 +41,7 @@ execute positioned ~-18.75 ~6.75 ~22.87 run summon minecraft:marker ~ ~ ~ {Tags:
 execute positioned ~-18.5 ~5.0 ~23.0 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.animated_wheel","kello.has_delay","kello.decal.mech_spawn_point","kello.decal.type.animwheel","pr.ignore"],data:{variant:3,state:1,rot_mode:0,rot_speed:1,rundelay:19,invdelay:19},Rotation:[0.0f,0.0f]}
 execute positioned ~-21.5 ~6.0 ~23.0 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.animated_wheel","kello.has_delay","kello.decal.mech_spawn_point","kello.decal.type.animwheel","pr.ignore"],data:{variant:3,state:0,rot_mode:1,rot_speed:1,rundelay:19,invdelay:19},Rotation:[0.0f,0.0f]}
 execute positioned ~-13.5 ~6.0 ~23.0 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.animated_wheel","kello.has_delay","kello.decal.mech_spawn_point","kello.decal.type.animwheel","pr.ignore"],data:{variant:3,state:0,rot_mode:1,rot_speed:1,rundelay:19,invdelay:19},Rotation:[0.0f,0.0f]}
-execute positioned ~-16.5 ~7.5 ~22.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.animated_wheel","kello.has_delay","kello.decal.mech_spawn_point","kello.decal.type.animwheel","pr.ignore"],data:{variant:5,state:2,rot_mode:0,rot_speed:1,rundelay:19,invdelay:11},Rotation:[-180.0f,0.0f]}
+execute positioned ~-16.5 ~7.5 ~22.95 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.animated_wheel","kello.has_delay","kello.decal.mech_spawn_point","kello.decal.type.animwheel","pr.ignore"],data:{variant:5,state:2,rot_mode:0,rot_speed:1,rundelay:8,invdelay:18},Rotation:[-180.0f,0.0f]}
 # execute positioned ~-16.5 ~7.5 ~22.5 run summon marker ~ ~ ~ {Tags:["kello.entity.type.small_decwheel_gear","kello.decal.mech_spawn_point","pr.ignore"],data:{state:0,rot_mode:0},Rotation:[-180.0f,0.0f]}
 execute positioned ~-19.5 ~6.5 ~22.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.large_decwheel_gear","kello.decal.mech_spawn_point","pr.ignore"],data:{state:2,rot_mode:0},Rotation:[-180.0f,0.0f]}
 
@@ -117,6 +117,7 @@ execute positioned ~-22 ~5 ~-11 align xyz positioned ~.5 ~.5 ~.5 run summon mine
 execute positioned ~-20 ~6 ~-14 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.small_decwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[0.0f,-90.0f]}
 execute positioned ~-16 ~11 ~-22 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.small_decwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[0.0f,-90.0f]}
 execute positioned ~-17 ~12 ~-31 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.small_decwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[0.0f,-90.0f]}
+execute positioned ~-22 ~4 ~7 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.large_decwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[0.0f,-90.0f]}
 
 execute positioned ~-18 ~3 ~11 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.large_cogwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[0.0f,-90.0f]}
 execute positioned ~-18 ~4 ~3 align xyz positioned ~.5 ~.5 ~.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity.type.large_cogwheel_shaft","kello.decal.mech_spawn_point"],Rotation:[0.0f,-90.0f]}
@@ -141,6 +142,13 @@ scoreboard players set #ref_rotation kello.value 0
 
 
 ## DECO
+
+execute positioned ~-17.5 ~16.25 ~17.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity","kello.entity.world_vfx","kello.entity.type.starfield","kello.level.3_branch"]}
+execute positioned ~-19.5 ~15.25 ~-2.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity","kello.entity.world_vfx","kello.entity.type.starfield","kello.level.3_branch"]}
+execute positioned ~-17.5 ~19.25 ~-25.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.entity","kello.entity.world_vfx","kello.entity.type.starfield","kello.level.3_branch"]}
+
+execute as @e[type=minecraft:marker,distance=..512,tag=kello.entity.world_vfx,tag=!kello.verified] run function kello:generic/vfx/starfield/init
+
 
 execute positioned ~-11.5 ~4.0 ~18.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloleta","kello.decal","kello.exclude","aj.melloleta_patch_singular.root","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{level_variant:2,variant:0},Rotation:[-180.0f,0.0f]}
 execute positioned ~-9.5 ~1.0 ~20.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloleta","kello.decal","kello.exclude","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered","aj.melloleta_path.root"],data:{level_variant:2,variant:1},Rotation:[-180.0f,0.0f]}
@@ -177,6 +185,21 @@ execute positioned ~-15.5 ~15.5 ~-37.5 run summon minecraft:marker ~ ~ ~ {Tags:[
 execute positioned ~-19.5 ~14.5 ~-17.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal","aj.wall_mellolily.root","kello.decal.type.wall_mellolily","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{level_variant:2,variant:2},Rotation:[-90.0f,0.0f]}
 execute positioned ~-21.0 ~10.5 ~-24.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{level_variant:2,variant:1},Rotation:[133.0f,0.0f]}
 execute positioned ~-7.5 ~13.5 ~19.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal","aj.wall_mellolily.root","kello.decal.type.wall_mellolily","kello.decal.selected","pr.ignore","kello.decal.temp_spawn_point","kello.decal.unregistered"],data:{level_variant:2,variant:2},Rotation:[0.0f,0.0f]}
+
+execute positioned ~-19.0 ~12.5 ~17.75 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[43.0f,0.0f]}
+execute positioned ~-20.5 ~10.5 ~18.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[44.0f,0.0f]}
+execute positioned ~-16.5 ~12.0 ~7.0 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[11.0f,0.0f]}
+execute positioned ~-22.25 ~13.0 ~-8.75 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[40.0f,0.0f]}
+execute positioned ~-18.0 ~14.5 ~-7.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[11.0f,0.0f]}
+execute positioned ~-19.75 ~12.0 ~-3.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[0.0f,0.0f]}
+execute positioned ~-16.5 ~17.0 ~-17.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:1},Rotation:[18.0f,0.0f]}
+execute positioned ~-16.5 ~16.0 ~-15.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[4.0f,0.0f]}
+execute positioned ~-18.5 ~14.0 ~-13.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal.type.melloflora_lantern","aj.melloflora_lantern.root","kello.exclude","kello.decal","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[29.0f,0.0f]}
+execute positioned ~-12.5 ~14.5 ~-26.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[-157.0f,0.0f]}
+execute positioned ~-22.5 ~14.0 ~-33.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:3},Rotation:[108.0f,0.0f]}
+execute positioned ~-14.25 ~9.5 ~-29.5 run summon minecraft:marker ~ ~ ~ {Tags:["aj.comet_flake.root","kello.decal","kello.exclude","kello.decal.type.comet_flake","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:0},Rotation:[-32.0f,0.0f]}
+execute positioned ~-11.5 ~15.5 ~-21.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal","aj.wall_mellolily.root","kello.decal.type.wall_mellolily","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:1},Rotation:[0.0f,0.0f]}
+execute positioned ~-25.5 ~15.5 ~-26.5 run summon minecraft:marker ~ ~ ~ {Tags:["kello.decal","aj.wall_mellolily.root","kello.decal.type.wall_mellolily","kello.decal.temp_spawn_point","kello.decal.unregistered","pr.ignore"],data:{variant:2},Rotation:[-180.0f,0.0f]}
 
 
 function kello:debug/decal/gen/queue
