@@ -8,6 +8,6 @@ scoreboard objectives remove Swag.TickDelay
 execute as @a[tag=pr.target] run ride @s dismount
 
 kill @e[type=minecraft:cave_spider,tag=pr.target]
-kill @e[type=minecraft:horse,tag=pr.target]
+execute as @e[type=minecraft:horse,tag=pr.target] run function theswagunicorn_horse:kill_horse
 kill @e[type=minecraft:item,tag=pr.target]
 return 1
