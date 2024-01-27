@@ -23,7 +23,7 @@ execute as @a[tag=technodono_plot.jump,tag=pr.target] run tag @s add technodono_
 
 #music timers
 scoreboard players add @a[tag=technodono_plot.playing,tag=pr.target] technodono_plot.music_timer 1
-execute as @a[tag=technodono_plot.playing,tag=pr.target] at @s if score @s technodono_plot.music_timer matches 3240.. run function technodono_plot_-2_-3:events/restart_music
+execute as @a[tag=technodono_plot.playing,tag=pr.target] at @s if score @s technodono_plot.music_timer matches 3840.. run function technodono_plot_-2_-3:events/restart_music
 
 #kill functions
 execute as @a[tag=technodono_plot.playing,tag=pr.target] at @s if predicate technodono_plot_-2_-3:touching_dripstone run function technodono_plot_-2_-3:events/deaths/spike_kill
