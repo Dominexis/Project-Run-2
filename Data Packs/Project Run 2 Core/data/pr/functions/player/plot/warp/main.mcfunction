@@ -104,6 +104,7 @@ scoreboard players operation @s pr.plot = #plot pr.value
 scoreboard players operation @s pr.plot_x = #x pr.value
 scoreboard players operation @s pr.plot_z = #z pr.value
 
+execute if score #lobby pr.value matches 1 run tag @s add pr.was_in_lobby
 execute if score #lobby pr.value matches 1 run function pr:plot/enter
 execute if score #lobby pr.value matches 1 run function pr:player/checkpoint/send_to
 
