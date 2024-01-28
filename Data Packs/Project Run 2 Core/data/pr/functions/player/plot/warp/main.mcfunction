@@ -99,7 +99,10 @@ scoreboard players operation #math_z pr.value *= #64 pr.value
 scoreboard players operation #plot pr.value = #math_x pr.value
 scoreboard players operation #plot pr.value += #math_z pr.value
 
-scoreboard players set @s pr.plot_previous -1
+scoreboard players operation #previous pr.plot = @s pr.plot
+scoreboard players operation #previous pr.plot_x = @s pr.plot_x
+scoreboard players operation #previous pr.plot_z = @s pr.plot_z
+
 scoreboard players operation @s pr.plot = #plot pr.value
 scoreboard players operation @s pr.plot_x = #x pr.value
 scoreboard players operation @s pr.plot_z = #z pr.value
@@ -111,6 +114,10 @@ execute if score #lobby pr.value matches 1 run function pr:player/checkpoint/sen
 execute if entity @s[team=pr.spectator] run scoreboard players operation @s pr.plot = #spawn_plot pr.value
 execute if entity @s[team=pr.spectator] run scoreboard players operation @s pr.plot_previous = @s pr.plot
 execute if entity @s[team=pr.spectator] run function pr:player/plot/coords_from_id
+
+scoreboard players operation @s pr.plot = #previous pr.plot
+scoreboard players operation @s pr.plot_x = #previous pr.plot_x
+scoreboard players operation @s pr.plot_z = #previous pr.plot_z
 
 
 

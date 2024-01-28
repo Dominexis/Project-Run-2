@@ -1,5 +1,6 @@
 # This function runs as and at all players that enter your plot
 
-scoreboard players set @s uk_range_detect 0
+tag @s add pr.plate_checkpoint
 scoreboard players set @s uk_kill 0
+scoreboard players set @s uk_code 0
 return 1

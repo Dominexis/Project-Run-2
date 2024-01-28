@@ -20,6 +20,10 @@ tag @s remove kello.state.cogwheel_was_attached_r
 tag @s remove kello.state.cogwheel_was_launched_l
 tag @s remove kello.state.cogwheel_was_launched_r
 
+tag @s remove kello.death.was_transitioning
+tag @s remove kello.music_queue
+tag @s remove kello.will_transition
+
 scoreboard players set #logout_trigger kello.value 1
 
 stopsound @s record kello:music_intro

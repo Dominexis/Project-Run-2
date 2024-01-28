@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:piston",
+            "item": "minecraft:target",
             "nbt": "{}"
         },
         "title": [
@@ -18,7 +18,7 @@
         "frame": "task",
         "description": [
             {
-                "text": "Parkour and solve puzzles to escape!\n\n§6That_UK",
+                "text": "Parkour and solve puzzles to escape!\n\n§6That_UK & Dominexis",
                 "color": "green"
             }
         ],
