@@ -3,7 +3,7 @@
 # Use this to prepare your plot for players
 
 # summons the black wall
-summon minecraft:block_display ~-23 ~1 ~14 {Tags:["polds.blackwall"],transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[-1.5f,0.0f,0.0f],scale:[2.0f,4.0f,0.5f]},block_state:{},BlockState:{}}
+summon minecraft:block_display ~-23 ~1 ~14 {Tags:["polds.blackwall"],transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[-1.5f,0.0f,0.0f],scale:[2.0f,4.0f,0.5f]},block_state:{Name:"minecraft:oxidized_copper"}}
 
 # creates system scoreboard if it is not already created
 scoreboard objectives add polds.system dummy
