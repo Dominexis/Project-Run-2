@@ -1,2 +1,2 @@
-execute positioned ~4 ~24 ~15 run kill @a[dx=8,dy=1,dz=8,tag=pr.target]
+execute positioned ~2 ~4 ~-3 run kill @a[dx=6,dy=2,dz=6,tag=pr.target]
 return 1
