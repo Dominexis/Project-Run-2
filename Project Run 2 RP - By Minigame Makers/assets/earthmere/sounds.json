@@ -8,5 +8,10 @@
         "sounds": [
             {"name": "earthmere:custom/end", "stream": true}
         ]
+    },
+    "prime": {
+        "sounds": [
+            {"name": "earthmere:custom/prime"}
+        ]
     }
 }

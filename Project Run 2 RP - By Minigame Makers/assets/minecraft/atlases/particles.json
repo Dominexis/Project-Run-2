@@ -1,0 +1,8 @@
+{
+    "sources": [
+        {
+            "type": "single",
+            "resource": "earthmere:custom/arrow_up"
+        }
+	]
+}
