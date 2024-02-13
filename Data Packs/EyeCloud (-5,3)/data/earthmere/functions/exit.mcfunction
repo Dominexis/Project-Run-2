@@ -10,6 +10,7 @@ tag @s remove earthmere_end
 tag @s remove earthmere_launch
 tag @s remove earthmere_launch1
 tag @s remove earthmere_launch2
+tag @s remove earthmere_tnt
 
 effect clear @s minecraft:jump_boost
 effect clear @s minecraft:blindness

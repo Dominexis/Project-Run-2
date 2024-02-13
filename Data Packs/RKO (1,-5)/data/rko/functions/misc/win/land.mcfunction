@@ -1,4 +1,4 @@
-title @s times 0 50 30
+title @s times 0 60 30
 title @s subtitle ""
 title @s title {"text":"\uF100","font":"rko:fade","type":"text"}
 

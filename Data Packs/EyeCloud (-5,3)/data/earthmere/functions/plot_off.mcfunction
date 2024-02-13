@@ -3,4 +3,5 @@
 # Use this to reset your plot and get rid of any laggy entities
 
 kill @e[tag=earthmere_text,tag=pr.target]
+kill @e[tag=earthmere_model,tag=pr.target]
 return 1

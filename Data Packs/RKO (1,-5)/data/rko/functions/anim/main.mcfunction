@@ -6,4 +6,5 @@ function rko:anim/fan/main
 function rko:anim/pipe_fan/main
 function rko:anim/wheel/main
 function rko:anim/flame/main
+function rko:anim/text/main
 return 1

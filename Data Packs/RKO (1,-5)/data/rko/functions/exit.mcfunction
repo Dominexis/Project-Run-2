@@ -16,10 +16,12 @@ tag @s[tag=rko_nofall_remove] remove rko_nofall_remove
 tag @s[tag=rko_return_f] remove rko_return_f
 tag @s[tag=rko_return_p] remove rko_return_p
 tag @s[tag=rko_return_b] remove rko_return_b
+tag @s[tag=rko_boost] remove rko_boost
 
 scoreboard players reset @s rko.checkpoint
 scoreboard players reset @s rko.jump
 scoreboard players reset @s rko.win
+scoreboard players reset @s RKO_Factory_Boost
 
 effect clear @s minecraft:levitation
 effect clear @s minecraft:jump_boost

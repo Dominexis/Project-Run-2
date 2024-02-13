@@ -11,6 +11,7 @@ scoreboard objectives add rko.checkpoint dummy
 scoreboard objectives add rko.hand dummy
 scoreboard objectives add rko.box dummy
 scoreboard objectives add rko.win dummy
+scoreboard objectives add RKO_Factory_Boost trigger
 
 scoreboard players set belt rko.ambient 374
 scoreboard players set factory rko.ambient 284

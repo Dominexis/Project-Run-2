@@ -10,5 +10,5 @@ tp @s[scores={rko.checkpoint=3}] ~ ~ ~ 0 0
 tp @s[scores={rko.checkpoint=4}] ~ ~ ~ 0 0
 
 # Left #
-execute if block ~ -18 ~ minecraft:sponge at @s run tp @s[scores={rko.checkpoint=1..2}] ~ ~ ~ ~180 ~
+execute unless block ~ -18 ~ minecraft:sponge at @s run tp @s[scores={rko.checkpoint=1..2}] ~ ~ ~ ~180 ~
 return 1
