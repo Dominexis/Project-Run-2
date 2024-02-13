@@ -97,6 +97,14 @@ tag @a remove pr.leaderboard_placement
 
 execute as @a[scores={pr.title_cooldown=1..}] run scoreboard players remove @s pr.title_cooldown 1
 
+execute as @a[tag=pr.launch] at @s run function pr:player/launch/apply/forward
+tag @a remove pr.launch
+
+execute as @a[gamemode=!spectator] at @s if block ~-0.3 ~-1 ~-0.3 farmland run effect give @s slow_falling 1 0 true
+execute as @a[gamemode=!spectator] at @s if block ~-0.3 ~-1 ~00.3 farmland run effect give @s slow_falling 1 0 true
+execute as @a[gamemode=!spectator] at @s if block ~00.3 ~-1 ~-0.3 farmland run effect give @s slow_falling 1 0 true
+execute as @a[gamemode=!spectator] at @s if block ~00.3 ~-1 ~00.3 farmland run effect give @s slow_falling 1 0 true
+
 
 
 
